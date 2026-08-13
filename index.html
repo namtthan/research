@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research Briefings</title>
+  <meta name="description" content="Daily research briefings and weekly gut research shortlists." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">Research intelligence</p>
+      <h1>Research Briefings</h1>
+      <p class="subtitle">Daily biotech/NAMs briefing + weekly gut research shortlist</p>
+
+      <div class="toolbar">
+        <div class="tabs" role="tablist" aria-label="Briefing type">
+          <button class="tab active" data-view="daily" role="tab" aria-selected="true">Daily Brief</button>
+          <button class="tab" data-view="weekly" role="tab" aria-selected="false">Weekly Shortlist</button>
+        </div>
+
+        <label class="search">
+          <span class="sr-only">Search briefings</span>
+          <input id="searchInput" type="search" placeholder="Search titles, topics, methods…" />
+        </label>
+      </div>
+
+      <div id="filters" class="filters" aria-label="Topic filters"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="status" class="status" hidden></section>
+    <section id="briefings"></section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>Static site. No database, no tracking, no nonsense.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
