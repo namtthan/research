@@ -1,3 +1,54 @@
 {
-  "briefings": []
+  "briefings": [
+    {
+      "date": "2026-08-13",
+      "stories": [
+        {
+          "title": "Programmable probiotic shows efficacy in non-human primates",
+          "takeaway": "Engineered bacteria sensed intestinal glucose and triggered therapeutic output in diabetic animal models.",
+          "what_happened": "A Nature study described an orally delivered engineered probiotic containing a synthetic glucose-sensing circuit. The bacteria activated therapeutic transgenes above a glucose threshold and improved glycaemic control in diabetic mice and non-human primates.",
+          "why_it_matters": "This moves microbiome therapeutics toward closed-loop living medicines and creates a plausible role for organ-chip models in testing engineered probiotics, host responses, dose-response, containment, and epithelial toxicity.",
+          "caveat": "Non-human-primate efficacy is still far from human deployment. Genetic stability, shedding, horizontal gene transfer, containment, and regulatory acceptance remain major hurdles.",
+          "tags": ["Gut microbiome", "Bioengineering", "Paper"],
+          "sources": []
+        },
+        {
+          "title": "Maternal gut appears to be a major source of infant gut strains",
+          "takeaway": "Large longitudinal sequencing data point to maternal gut strains as major founders of infant microbiomes.",
+          "what_happened": "A large mother-infant study analyzed thousands of longitudinal stool samples plus clinical and exposure variables, finding the maternal gut to be a major reservoir of strains that successfully establish in infants.",
+          "why_it_matters": "It reinforces that strain source, abundance, and ecological fitness matter—not just species presence. That logic carries directly into donor selection and interpretation of microbiome-transfer experiments.",
+          "caveat": "The cohort was relatively homogeneous and healthy, so some associations may not generalize across populations or disease contexts.",
+          "tags": ["Gut microbiome", "Paper"],
+          "sources": []
+        },
+        {
+          "title": "Global IBD microbiome atlas emphasizes geography",
+          "takeaway": "IBD-associated microbiome signatures vary with geography and epidemiological context.",
+          "what_happened": "A global IBD microbiome atlas compared gut-microbiome features across regions at different stages of IBD epidemiological development.",
+          "why_it_matters": "The idea of a single healthy microbiome becomes increasingly hard to defend. Geography, industrialization, diet, medication, and microbial strain/function can all alter the baseline against which disease is compared.",
+          "caveat": "Large cross-cohort analyses are vulnerable to batch effects, sequencing differences, medication exposure, diet, and cohort structure. Reproducible association is not the same as causality.",
+          "tags": ["Gut microbiome", "IBD", "Paper"],
+          "sources": []
+        },
+        {
+          "title": "Biotech venture money continues to favor clinical milestones",
+          "takeaway": "Large financings are concentrating around companies with assets already entering or advancing in human trials.",
+          "what_happened": "Recent biotech financings included sizable rounds for companies with clinical-stage assets and clearly defined development milestones.",
+          "why_it_matters": "For translational scientists, the valuable pitch is not merely that a platform is innovative, but that it changes a concrete candidate, dose, mechanism, or patient-selection decision.",
+          "caveat": "Strong venture rounds are concentrated among selected winners and can coexist with layoffs elsewhere. Funding headlines should not be read as a broad hiring boom.",
+          "tags": ["Biotech industry", "Funding", "Career"],
+          "sources": []
+        },
+        {
+          "title": "Biotech layoffs remain active despite stronger financing",
+          "takeaway": "Companies continue cutting non-core teams while preserving programs tied to near-term milestones.",
+          "what_happened": "Multiple biotech companies announced August workforce reductions while narrowing pipelines and extending cash runway.",
+          "why_it_matters": "When evaluating roles, the stability of the specific program and team matters more than the apparent prestige or total funding of the company.",
+          "caveat": "Layoff trackers receive more attention than expansions, so they can make the sector look worse than aggregate employment data would support.",
+          "tags": ["Biotech industry", "Career"],
+          "sources": []
+        }
+      ]
+    }
+  ]
 }
