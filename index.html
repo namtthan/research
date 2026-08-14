@@ -37,10 +37,7 @@
         background-size: 60px 60px;
       }
       .hero {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        padding: 110px 0 70px;
+        padding: 96px 0 48px;
       }
       .hero-copy {
         max-width: 900px;
@@ -49,7 +46,7 @@
       .eyebrow,
       .section-label {
         color: var(--accent);
-        font-size: 12px;
+        font-size: 15px;
         letter-spacing: 1.8px;
         text-transform: uppercase;
         margin-bottom: 18px;
@@ -64,17 +61,28 @@
         margin-right: 10px;
       }
       .hero h1 {
-        font: 400 clamp(42px, 7vw, 68px)/1.08 var(--serif);
-        margin-bottom: 18px;
+        font: 400 clamp(36px, 6vw, 52px)/1.1 var(--serif);
+        margin-bottom: 2px;
       }
       .hero h1 em {
         color: var(--accent);
         font-style: normal;
       }
+      .hero h1 .credential {
+        font-family: var(--sans);
+        font-size: 0.5em;
+        font-weight: 400;
+        color: var(--dim);
+        vertical-align: middle;
+        margin-left: 0.2em;
+      }
       .role {
-        font-size: 19px;
+        font-size: 16px;
         color: var(--muted);
-        margin-bottom: 24px;
+        margin-bottom: 4px;
+      }
+      .role + .role {
+        margin-bottom: 30px;
       }
       .role span {
         color: var(--dim);
@@ -91,7 +99,8 @@
         position: relative;
       }
       .research-equation .eq-label {
-        color: var(--text);
+        color: var(--accent);
+        font-size: 1.15em;
       }
       .research-equation .integral {
         color: var(--accent);
@@ -106,23 +115,23 @@
         line-height: 1.15;
         margin: 0 0.2em;
       }
-      .research-equation .frac span:first-child {
+      .research-equation .frac > span:first-child {
         border-bottom: 1px solid var(--muted);
         padding: 0 0.18em 0.1em;
       }
-      .research-equation .frac span:last-child {
+      .research-equation .frac > span:last-child {
         padding: 0.1em 0.18em 0;
       }
       .research-equation .arrow {
         color: var(--accent);
-        padding: 0 0.22em;
+        padding: 0 0.1em;
       }
       .equation-intro {
         max-width: 760px;
         color: var(--muted);
         font-size: 16px;
         line-height: 1.65;
-        margin-bottom: 34px;
+        margin-bottom: 30px;
       }
       .actions {
         display: flex;
@@ -155,7 +164,7 @@
         border-color: var(--accent);
       }
       section {
-        padding: 100px 0;
+        padding: 10px 0;
       }
       .section-title {
         font: 400 clamp(30px, 4vw, 42px)/1.2 var(--serif);
@@ -183,9 +192,10 @@
       }
       .stats {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         gap: 1px;
         background: var(--line);
+        margin-top: 28px;
       }
       .stat {
         background: var(--bg2);
@@ -201,6 +211,7 @@
       }
       .focus {
         grid-template-columns: repeat(3, 1fr);
+        margin-top: 36px;
       }
       .card {
         background: var(--bg2);
@@ -267,7 +278,23 @@
         font-size: 16px;
         margin-bottom: 7px;
       }
-      .meta {
+      .authors {
+        color: var(--muted);
+        font-size: 13px;
+        margin-bottom: 4px;
+      }
+      .authors .accent {
+        font-weight: 600;
+      }
+      .authors:empty:before {
+        content: "Add authors.";
+        color: var(--dim);
+        font-style: italic;
+      }
+      .cofirst {
+        color: var(--accent);
+      }
+      .journal {
         color: var(--muted);
         font-size: 14px;
       }
@@ -332,6 +359,34 @@
         color: var(--muted);
         font-size: 14px;
       }
+      .activities-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .panel h3 {
+        font: 500 19px var(--serif);
+        margin-bottom: 14px;
+        color: var(--text);
+      }
+      .simple-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .simple-list li {
+        padding: 10px 0;
+        border-bottom: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .simple-list li:last-child {
+        border-bottom: 0;
+      }
+      .simple-list:empty:before {
+        content: "Nothing added yet.";
+        color: var(--dim);
+        font-style: italic;
+        font-size: 13px;
+      }
       .contact {
         text-align: center;
       }
@@ -367,8 +422,12 @@
       @media (max-width: 850px) {
         .about,
         .focus,
-        .timeline {
+        .timeline,
+        .activities-grid {
           grid-template-columns: 1fr;
+        }
+        .stats {
+          grid-template-columns: 1fr 1fr;
         }
         .brief-card {
           grid-template-columns: 1fr;
@@ -399,8 +458,6 @@
         <div class="nav-right">
           <ul class="links">
             <li><a href="briefings.html">Research Brief</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#background">Background</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -415,21 +472,22 @@
       <section class="hero" id="top">
         <div class="hero-copy">
           <div class="eyebrow">Biomedical Engineering Research</div>
-          <h1>Nam <em>Than</em></h1>
+          <h1>Nam <em>Than</em> <span class="credential">MS</span></h1>
           <div class="role">
             Predoctoral Research Fellow
-            <span>· Cleveland Clinic ·</span>
+            <span>· Inflammation & Immunity · Cleveland Clinic</span>
+          </div>
+          <div class="role">
             PhD Candidate
-            <span>· UT Austin ·</span>
+            <span>· Biomedical Engineering · The University of Texas at Austin</span>
           </div>
           <div class="research-equation">
-            <span class="eq-label">My Research</span> =
-            <span class="integral">∫</span> (Experimental Biology + CFD +
+            <span class="eq-label">My Research Equation</span> =
+            <span class="integral">∫</span>(Experimental Biology + CFD +
             Bioinformatics) <span class="accent">d{</span>
             <span class="frac"
-              ><span>d(Organoid ⨉ Microbiome)</span><span>dPatient</span></span
-            >
-            <span class="arrow">→</span> Stretchable Gut-on-a-Chip
+              ><span><span class="accent">d</span>(Organoid <span class="accent">⨉</span> Microbiome)</span><span><span class="accent">d</span>Patient</span></span>
+            <span class="arrow">→</span>Stretchable Gut-on-a-Chip
             <span class="accent">}</span>
           </div>
           <p class="equation-intro">
@@ -437,82 +495,7 @@
             bioinformatics over patient-specific organoid and microbiome
             interaction data generated in stretchable gut-on-a-chip devices.
           </p>
-          <div class="actions">
-            <a class="btn primary" href="briefings.html"
-              >Read Research Brief →</a
-            ><a class="btn secondary" href="#publications">View publications</a>
-          </div>
         </div>
-      </section>
-      <section id="brief">
-        <div class="section-label">Research Brief</div>
-        <div class="brief-card">
-          <div>
-            <h3>Daily intelligence, without the wall of text.</h3>
-            <p>
-              Five-story daily briefings plus a weekly gut research shortlist
-              covering bioengineering, biotech, microbiome and intestinal
-              disease, organ-on-chip, NAMs, regulation, funding and relevant
-              papers. Stories expand only when you want the details.
-            </p>
-          </div>
-          <a class="btn primary" href="briefings.html">Open briefings →</a>
-        </div>
-      </section>
-      <section id="about">
-        <div class="section-label">01 · About</div>
-        <h2 class="section-title">
-          Engineering microphysiological systems to understand the
-          gut–microbiome axis
-        </h2>
-        <div class="grid about">
-          <div class="panel">
-            <p>
-              I'm a biomedical engineer working at the intersection of
-              <strong
-                >microfluidics, organ-on-a-chip technology, and host–microbiome
-                biology</strong
-              >. I develop physiologically relevant chip platforms that recreate
-              intestinal microenvironments outside the body.
-            </p>
-            <p>
-              My work spans computational modeling, device engineering,
-              bioinformatics and wet-lab biology—from chip design and
-              fabrication through biological experiments and sequencing
-              analysis.
-            </p>
-            <p>
-              Current work centers on patient-derived gut-on-a-chip and Crohn's
-              disease models, probiotic and fecal microbiota interactions,
-              epithelial barrier integrity, oxidative stress, mucosal
-              inflammation, and radiation-induced intestinal injury.
-            </p>
-          </div>
-          <div class="stats">
-            <div class="stat">
-              <div class="num">7</div>
-              <div class="label">Peer-reviewed publications</div>
-            </div>
-            <div class="stat">
-              <div class="num">4</div>
-              <div class="label">Invention disclosures</div>
-            </div>
-            <div class="stat">
-              <div class="num">10+</div>
-              <div class="label">Conference presentations</div>
-            </div>
-            <div class="stat">
-              <div class="num">6</div>
-              <div class="label">Trainees mentored</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="research">
-        <div class="section-label">02 · Research Focus</div>
-        <h2 class="section-title">
-          Human-relevant models, from device physics to disease biology
-        </h2>
         <div class="grid focus">
           <div class="card">
             <h3>Organ-on-a-chip systems</h3>
@@ -557,9 +540,42 @@
             </p>
           </div>
         </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="num" data-count=".pubs .pub">0</div>
+            <div class="label">Peer-reviewed publications</div>
+          </div>
+          <div class="stat">
+            <div class="num" data-count="#disclosuresList li">4</div>
+            <div class="label">Invention disclosures</div>
+          </div>
+          <div class="stat">
+            <div class="num" data-count="#presentationsList li">0</div>
+            <div class="label">Conference presentations</div>
+          </div>
+          <div class="stat">
+            <div class="num" data-count="#menteesList li">0</div>
+            <div class="label">Trainees mentored</div>
+          </div>
+        </div>
+      </section>
+      <section id="brief">
+        <div class="section-label">Research Brief</div>
+        <div class="brief-card">
+          <div>
+            <h3>Daily intelligence</h3>
+            <p>
+              Five-story daily briefings plus a weekly gut research shortlist
+              covering bioengineering, biotech, microbiome and intestinal
+              disease, organ-on-chip, NAMs, regulation, funding and relevant
+              papers. Stories expand only when you want the details.
+            </p>
+          </div>
+          <a class="btn primary" href="briefings.html">Open briefings →</a>
+        </div>
       </section>
       <section id="publications">
-        <div class="section-label">03 · Selected Work</div>
+        <div class="section-label">01 · Selected Work</div>
         <h2 class="section-title">Publications</h2>
         <div class="pubs">
           <div class="pub">
@@ -571,7 +587,10 @@
                 Advanced fabrication protocol of an elastic porous membrane for
                 organ-on-a-chip applications
               </h3>
-              <div class="meta">SLAS Technology</div>
+              <div class="authors">
+                <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+              </div>
+              <div class="journal">SLAS Technology</div>
             </div>
             <a
               href="https://doi.org/10.1016/j.slast.2026.100431"
@@ -589,7 +608,10 @@
                 Probiotic intervention mitigates radiation-induced intestinal
                 injury by alleviating oxidative stress in a human gut-on-a-chip
               </h3>
-              <div class="meta">Scientific Reports</div>
+              <div class="authors">
+                <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+              </div>
+              <div class="journal">Scientific Reports</div>
             </div>
             <a
               href="https://doi.org/10.1101/2025.08.10.669539"
@@ -607,7 +629,10 @@
                 Mechanostimulatory cues determine intestinal fibroblast fate and
                 profibrotic remodeling in a physiodynamic human gut-on-a-chip
               </h3>
-              <div class="meta">Advanced Science</div>
+              <div class="authors">
+                <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+              </div>
+              <div class="journal">Advanced Science</div>
             </div>
             <a
               href="https://doi.org/10.1002/advs.202516040"
@@ -625,7 +650,10 @@
                 Bioengineered human gut-on-a-chip for advancing non-clinical
                 pharmaco-toxicology
               </h3>
-              <div class="meta">
+              <div class="authors">
+                <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+              </div>
+              <div class="journal">
                 Expert Opinion on Drug Metabolism &amp; Toxicology
               </div>
             </div>
@@ -642,7 +670,10 @@
                 2023 <span class="pub-status status-published">Published</span>
               </div>
               <h3>Modelling host-microbiome interactions in organs-on-chips</h3>
-              <div class="meta">Nature Reviews Bioengineering</div>
+              <div class="authors">
+                <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+              </div>
+              <div class="journal">Nature Reviews Bioengineering</div>
             </div>
             <a
               href="https://doi.org/10.1038/s44222-023-00130-9"
@@ -654,7 +685,7 @@
         </div>
       </section>
       <section id="background">
-        <div class="section-label">04 · Background</div>
+        <div class="section-label">02 · Background</div>
         <h2 class="section-title">Education &amp; experience</h2>
         <div class="timeline">
           <div>
@@ -695,14 +726,38 @@
           </div>
         </div>
       </section>
+      <section id="activities">
+        <div class="section-label">03 · Activities</div>
+        <h2 class="section-title">Presentations &amp; mentoring</h2>
+        <div class="grid activities-grid">
+          <div class="panel">
+            <h3>Conference presentations</h3>
+            <ul class="simple-list" id="presentationsList">
+              <!-- Add one line per talk, e.g.: <li>Talk title — Conference, Year</li> -->
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Trainees mentored</h3>
+            <ul class="simple-list" id="menteesList">
+              <!-- Add one line per mentee, e.g.: <li>Name — Program, Year</li> -->
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Invention disclosures</h3>
+            <ul class="simple-list" id="disclosuresList">
+              <!-- Only add titles you're actually cleared to make public — pending/unfiled disclosures are often confidential. e.g.: <li>Disclosure title — Year</li> -->
+            </ul>
+          </div>
+        </div>
+      </section>
       <section id="contact" class="contact">
-        <div class="section-label">05 · Connect</div>
+        <div class="section-label">04 · Connect</div>
         <h2 class="section-title" style="margin-left: auto; margin-right: auto">
           Research, collaboration, or ideas
         </h2>
-        <p>Inflammation &amp; Immunity, Cleveland Clinic Research</p>
         <div class="contact-links">
           <a href="mailto:thann2@ccf.org">Email</a
+          ><a href="cv.pdf" download="Nam-Than-CV.pdf">CV</a
           ><a
             href="https://orcid.org/0000-0002-1947-6530"
             target="_blank"
@@ -783,6 +838,14 @@
         }
         fit();
         window.addEventListener("resize", fit);
+      })();
+      (function () {
+        document.querySelectorAll(".num[data-count]").forEach(function (el) {
+          var items = document.querySelectorAll(el.getAttribute("data-count"));
+          if (items.length > 0) {
+            el.textContent = items.length;
+          }
+        });
       })();
     </script>
     <script src="theme.js"></script>

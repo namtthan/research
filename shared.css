@@ -29,8 +29,8 @@ html.light {
   --text: #172126;
   --muted: #5b6970;
   --dim: #8a969b;
-  --accent: #0f9488;
-  --glow: rgba(15, 148, 136, 0.15);
+  --accent: #b45309;
+  --glow: rgba(180, 83, 9, 0.15);
   --nav-bg: rgba(255, 255, 255, 0.86);
 }
 * {
