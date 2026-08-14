@@ -25,6 +25,12 @@
     />
     <link rel="stylesheet" href="shared.css" />
     <style>
+      /* Center-align is scoped to this page only — briefings.html is a
+         dense, left-to-right reading layout (story cards, source lists)
+         that a global centering rule in shared.css would break. */
+      body {
+        text-align: center;
+      }
       .pattern {
         position: fixed;
         inset: 0;
@@ -37,28 +43,19 @@
         background-size: 60px 60px;
       }
       .hero {
-        padding: 96px 0 48px;
+        padding: 24px 0 48px;
       }
       .hero-copy {
         max-width: 900px;
         min-width: 0;
+        margin: 0 auto;
       }
-      .eyebrow,
       .section-label {
         color: var(--accent);
         font-size: 15px;
         letter-spacing: 1.8px;
         text-transform: uppercase;
         margin-bottom: 18px;
-      }
-      .eyebrow:before {
-        content: "";
-        display: inline-block;
-        width: 28px;
-        height: 1px;
-        background: var(--accent);
-        vertical-align: middle;
-        margin-right: 10px;
       }
       .hero h1 {
         font: 400 clamp(36px, 6vw, 52px)/1.1 var(--serif);
@@ -69,12 +66,19 @@
         font-style: normal;
       }
       .hero h1 .credential {
+        display: inline-block;
         font-family: var(--sans);
-        font-size: 0.5em;
-        font-weight: 400;
-        color: var(--dim);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--muted);
+        background: var(--bg2);
+        border: 1px solid var(--line2);
+        border-radius: 999px;
+        padding: 3px 11px;
         vertical-align: middle;
-        margin-left: 0.2em;
+        margin-left: 10px;
       }
       .role {
         font-size: 16px;
@@ -131,37 +135,7 @@
         color: var(--muted);
         font-size: 16px;
         line-height: 1.65;
-        margin-bottom: 30px;
-      }
-      .actions {
-        display: flex;
-        gap: 12px;
-        flex-wrap: wrap;
-      }
-      .btn {
-        display: inline-flex;
-        padding: 12px 22px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: 14px;
-        transition: 0.2s;
-      }
-      .primary {
-        background: var(--accent);
-        color: #06201c;
-        font-weight: 700;
-      }
-      .primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 24px var(--glow);
-      }
-      .secondary {
-        color: var(--text);
-        border: 1px solid var(--line2);
-      }
-      .secondary:hover {
-        color: var(--accent);
-        border-color: var(--accent);
+        margin: 0 auto 30px;
       }
       section {
         padding: 10px 0;
@@ -169,7 +143,7 @@
       .section-title {
         font: 400 clamp(30px, 4vw, 42px)/1.2 var(--serif);
         max-width: 720px;
-        margin-bottom: 42px;
+        margin: 0 auto 42px;
       }
       .grid {
         display: grid;
@@ -192,14 +166,14 @@
       }
       .stats {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 1px;
         background: var(--line);
-        margin-top: 28px;
+        margin: 0 0 28px;
       }
       .stat {
         background: var(--bg2);
-        padding: 28px;
+        padding: 18px 12px;
       }
       .num {
         font: 34px var(--serif);
@@ -228,6 +202,9 @@
         color: var(--muted);
         font-size: 15px;
       }
+      #brief {
+        padding: 96px 0 10px;
+      }
       .brief-card {
         border: 1px solid rgba(45, 212, 191, 0.28);
         background: linear-gradient(
@@ -235,20 +212,94 @@
           rgba(45, 212, 191, 0.08),
           var(--bg2)
         );
-        border-radius: 12px;
-        padding: 32px;
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 24px;
-        align-items: center;
-      }
-      .brief-card h3 {
-        font: 400 28px var(--serif);
-        margin-bottom: 8px;
+        border-radius: 10px;
+        padding: 16px 24px;
       }
       .brief-card p {
         color: var(--muted);
-        max-width: 720px;
+        font-size: 14px;
+        line-height: 1.7;
+        max-width: 680px;
+        margin: 0 auto;
+      }
+      /* Reusable badge system — pub metadata, honors/awards, activities,
+         and inline CTAs. Label text truncates with an ellipsis past a
+         fixed width; tapping a truncated badge reveals the full text in
+         a small popover right underneath it (see the badge script below). */
+      .badge-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+      .badge {
+        position: relative;
+        display: inline-flex;
+        vertical-align: middle;
+      }
+      .badge-label {
+        display: inline-block;
+        max-width: 160px;
+        padding: 4px 11px;
+        border-radius: 999px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        line-height: 1.5;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-decoration: none;
+      }
+      .badge.is-truncated .badge-label {
+        cursor: pointer;
+      }
+      .badge-teal .badge-label {
+        background: rgba(45, 212, 191, 0.12);
+        color: var(--accent);
+        border: 1px solid rgba(45, 212, 191, 0.35);
+      }
+      .badge-amber .badge-label {
+        background: rgba(224, 166, 58, 0.14);
+        color: var(--amber);
+        border: 1px solid rgba(224, 166, 58, 0.35);
+      }
+      .badge-gray .badge-label {
+        background: var(--bg2);
+        color: var(--muted);
+        border: 1px solid var(--line2);
+      }
+      .badge-white .badge-label {
+        background: var(--bg2);
+        color: var(--text);
+        border: 1px solid var(--line2);
+      }
+      .badge-tip {
+        position: absolute;
+        top: calc(100% + 6px);
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--card);
+        color: var(--text);
+        border: 1px solid var(--line2);
+        border-radius: 6px;
+        padding: 7px 11px;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: none;
+        letter-spacing: normal;
+        white-space: normal;
+        text-align: left;
+        width: max-content;
+        max-width: 240px;
+        z-index: 30;
+        display: none;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+      }
+      .badge.tip-open .badge-tip {
+        display: block;
       }
       .pubs {
         display: flex;
@@ -262,21 +313,10 @@
       .pub {
         background: var(--card);
         padding: 24px 28px;
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 16px;
-      }
-      .year {
-        color: var(--accent);
-        font-size: 12px;
-        margin-bottom: 5px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
       }
       .pub h3 {
         font-size: 16px;
-        margin-bottom: 7px;
+        margin: 0 0 7px;
       }
       .authors {
         color: var(--muted);
@@ -293,42 +333,6 @@
       }
       .cofirst {
         color: var(--accent);
-      }
-      .journal {
-        color: var(--muted);
-        font-size: 14px;
-      }
-      .pub a {
-        align-self: center;
-        color: var(--accent);
-        text-decoration: none;
-        border: 1px solid var(--line2);
-        padding: 7px 12px;
-        border-radius: 5px;
-        font-size: 12px;
-      }
-      .pub-status {
-        display: inline-block;
-        padding: 2px 9px;
-        border-radius: 999px;
-        font-size: 10px;
-        font-weight: 700;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        vertical-align: middle;
-      }
-      .pub-status.status-published,
-      .pub-status.status-accepted,
-      .pub-status.status-inpress {
-        background: rgba(224, 166, 58, 0.14);
-        color: var(--amber);
-        border: 1px solid rgba(224, 166, 58, 0.35);
-      }
-      .pub-status.status-revision,
-      .pub-status.status-preprint {
-        background: rgba(239, 107, 102, 0.12);
-        color: var(--red);
-        border: 1px solid rgba(239, 107, 102, 0.32);
       }
       .timeline {
         display: grid;
@@ -347,6 +351,7 @@
       .item {
         border-left: 1px solid var(--line);
         padding: 0 0 24px 22px;
+        text-align: left;
       }
       .item .date {
         color: var(--accent);
@@ -373,9 +378,13 @@
         margin: 0;
       }
       .simple-list li {
-        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 16px 8px;
         border-bottom: 1px solid var(--line);
-        color: var(--muted);
+        color: var(--text);
         font-size: 14px;
       }
       .simple-list li:last-child {
@@ -429,12 +438,6 @@
         .stats {
           grid-template-columns: 1fr 1fr;
         }
-        .brief-card {
-          grid-template-columns: 1fr;
-        }
-        .pub {
-          grid-template-columns: 1fr;
-        }
         section {
           padding: 72px 0;
         }
@@ -454,13 +457,15 @@
     <div class="pattern"></div>
     <nav>
       <div class="wrap nav-bar">
-        <a href="#top" class="logo">N.<span>Than</span></a>
+        <a href="#brief" class="logo">N.<span>Than</span></a>
         <div class="nav-right">
           <ul class="links">
             <li><a href="briefings.html">Research Brief</a></li>
             <li><a href="#publications">Publications</a></li>
+            <li><a href="#awards">Honors &amp; Awards</a></li>
             <li><a href="#background">Background</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#contact">Connect</a></li>
           </ul>
           <button id="themeToggle" class="theme-toggle" type="button">
             Light mode
@@ -469,9 +474,21 @@
       </div>
     </nav>
     <main class="wrap">
-      <section class="hero" id="top">
+      <section id="brief">
+        <div class="brief-card">
+          <p>
+            <span class="accent">Daily intelligence</span>: Five-story daily
+            briefings plus a weekly gut research shortlist covering
+            bioengineering, biotech, microbiome and intestinal disease,
+            organ-on-chip, NAMs, regulation, funding and relevant papers.
+            <a class="badge badge-teal" href="briefings.html"
+              ><span class="badge-label">Open briefings →</span></a
+            >
+          </p>
+        </div>
+      </section>
+      <section class="hero">
         <div class="hero-copy">
-          <div class="eyebrow">Biomedical Engineering Research</div>
           <h1>Nam <em>Than</em> <span class="credential">MS</span></h1>
           <div class="role">
             Predoctoral Research Fellow
@@ -481,6 +498,29 @@
             PhD Candidate
             <span>· Biomedical Engineering · The University of Texas at Austin</span>
           </div>
+          <div class="stats">
+            <div class="stat">
+              <div class="num" data-count=".pubs .pub">0</div>
+              <div class="label">Peer-reviewed publications</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="#disclosuresList li:not([data-placeholder])">4</div>
+              <div class="label">Invention disclosures</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="#presentationsList li:not([data-placeholder])">0</div>
+              <div class="label">Conference presentations</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="#menteesList li:not([data-placeholder])">0</div>
+              <div class="label">Trainees mentored</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="#awardsList li:not([data-placeholder])">0</div>
+              <div class="label">Honors &amp; awards</div>
+            </div>
+          </div>
+          <div class="section-label">Research Focus</div>
           <div class="research-equation">
             <span class="eq-label">My Research Equation</span> =
             <span class="integral">∫</span>(Experimental Biology + CFD +
@@ -540,152 +580,152 @@
             </p>
           </div>
         </div>
-        <div class="stats">
-          <div class="stat">
-            <div class="num" data-count=".pubs .pub">0</div>
-            <div class="label">Peer-reviewed publications</div>
-          </div>
-          <div class="stat">
-            <div class="num" data-count="#disclosuresList li">4</div>
-            <div class="label">Invention disclosures</div>
-          </div>
-          <div class="stat">
-            <div class="num" data-count="#presentationsList li">0</div>
-            <div class="label">Conference presentations</div>
-          </div>
-          <div class="stat">
-            <div class="num" data-count="#menteesList li">0</div>
-            <div class="label">Trainees mentored</div>
-          </div>
-        </div>
-      </section>
-      <section id="brief">
-        <div class="section-label">Research Brief</div>
-        <div class="brief-card">
-          <div>
-            <h3>Daily intelligence</h3>
-            <p>
-              Five-story daily briefings plus a weekly gut research shortlist
-              covering bioengineering, biotech, microbiome and intestinal
-              disease, organ-on-chip, NAMs, regulation, funding and relevant
-              papers. Stories expand only when you want the details.
-            </p>
-          </div>
-          <a class="btn primary" href="briefings.html">Open briefings →</a>
-        </div>
       </section>
       <section id="publications">
         <div class="section-label">01 · Selected Work</div>
         <h2 class="section-title">Publications</h2>
+        <!-- Status badge is intentionally neutral gray regardless of stage.
+             When adding a new entry, default the label to "Pre-print" until
+             it's actually accepted/published. -->
         <div class="pubs">
           <div class="pub">
-            <div>
-              <div class="year">
-                2026 <span class="pub-status status-published">Published</span>
-              </div>
-              <h3>
-                Advanced fabrication protocol of an elastic porous membrane for
-                organ-on-a-chip applications
-              </h3>
-              <div class="authors">
-                <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
-              </div>
-              <div class="journal">SLAS Technology</div>
+            <div class="badge-row">
+              <span class="badge badge-teal"><span class="badge-label">2026</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Published</span></span>
+              <span class="badge badge-amber"><span class="badge-label">SLAS Technology</span></span>
+              <a
+                class="badge badge-white"
+                href="https://doi.org/10.1016/j.slast.2026.100431"
+                target="_blank"
+                rel="noopener"
+                ><span class="badge-label">DOI ↗</span></a
+              >
             </div>
-            <a
-              href="https://doi.org/10.1016/j.slast.2026.100431"
-              target="_blank"
-              rel="noopener"
-              >DOI ↗</a
-            >
+            <h3>
+              Advanced fabrication protocol of an elastic porous membrane for
+              organ-on-a-chip applications
+            </h3>
+            <div class="authors">
+              Nam Than
+              <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+            </div>
           </div>
           <div class="pub">
-            <div>
-              <div class="year">
-                2026 <span class="pub-status status-published">Published</span>
-              </div>
-              <h3>
-                Probiotic intervention mitigates radiation-induced intestinal
-                injury by alleviating oxidative stress in a human gut-on-a-chip
-              </h3>
-              <div class="authors">
-                <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
-              </div>
-              <div class="journal">Scientific Reports</div>
+            <div class="badge-row">
+              <span class="badge badge-teal"><span class="badge-label">2026</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Published</span></span>
+              <span class="badge badge-amber"><span class="badge-label">Scientific Reports</span></span>
+              <a
+                class="badge badge-white"
+                href="https://doi.org/10.1101/2025.08.10.669539"
+                target="_blank"
+                rel="noopener"
+                ><span class="badge-label">DOI ↗</span></a
+              >
             </div>
-            <a
-              href="https://doi.org/10.1101/2025.08.10.669539"
-              target="_blank"
-              rel="noopener"
-              >DOI ↗</a
-            >
+            <h3>
+              Probiotic intervention mitigates radiation-induced intestinal
+              injury by alleviating oxidative stress in a human gut-on-a-chip
+            </h3>
+            <div class="authors">
+              Nam Than
+              <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+            </div>
           </div>
           <div class="pub">
-            <div>
-              <div class="year">
-                2026 <span class="pub-status status-published">Published</span>
-              </div>
-              <h3>
-                Mechanostimulatory cues determine intestinal fibroblast fate and
-                profibrotic remodeling in a physiodynamic human gut-on-a-chip
-              </h3>
-              <div class="authors">
-                <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
-              </div>
-              <div class="journal">Advanced Science</div>
+            <div class="badge-row">
+              <span class="badge badge-teal"><span class="badge-label">2026</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Published</span></span>
+              <span class="badge badge-amber"><span class="badge-label">Advanced Science</span></span>
+              <a
+                class="badge badge-white"
+                href="https://doi.org/10.1002/advs.202516040"
+                target="_blank"
+                rel="noopener"
+                ><span class="badge-label">DOI ↗</span></a
+              >
             </div>
-            <a
-              href="https://doi.org/10.1002/advs.202516040"
-              target="_blank"
-              rel="noopener"
-              >DOI ↗</a
-            >
+            <h3>
+              Mechanostimulatory cues determine intestinal fibroblast fate and
+              profibrotic remodeling in a physiodynamic human gut-on-a-chip
+            </h3>
+            <div class="authors">
+              Nam Than
+              <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+            </div>
           </div>
           <div class="pub">
-            <div>
-              <div class="year">
-                2024 <span class="pub-status status-published">Published</span>
-              </div>
-              <h3>
-                Bioengineered human gut-on-a-chip for advancing non-clinical
-                pharmaco-toxicology
-              </h3>
-              <div class="authors">
-                <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
-              </div>
-              <div class="journal">
-                Expert Opinion on Drug Metabolism &amp; Toxicology
-              </div>
+            <div class="badge-row">
+              <span class="badge badge-teal"><span class="badge-label">2024</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Published</span></span>
+              <span class="badge badge-amber"
+                ><span class="badge-label"
+                  >Expert Opinion on Drug Metabolism &amp; Toxicology</span
+                ></span
+              >
+              <a
+                class="badge badge-white"
+                href="https://doi.org/10.1080/17425255.2024.2365254"
+                target="_blank"
+                rel="noopener"
+                ><span class="badge-label">DOI ↗</span></a
+              >
             </div>
-            <a
-              href="https://doi.org/10.1080/17425255.2024.2365254"
-              target="_blank"
-              rel="noopener"
-              >DOI ↗</a
-            >
+            <h3>
+              Bioengineered human gut-on-a-chip for advancing non-clinical
+              pharmaco-toxicology
+            </h3>
+            <div class="authors">
+              Nam Than
+              <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+            </div>
           </div>
           <div class="pub">
-            <div>
-              <div class="year">
-                2023 <span class="pub-status status-published">Published</span>
-              </div>
-              <h3>Modelling host-microbiome interactions in organs-on-chips</h3>
-              <div class="authors">
-                <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
-              </div>
-              <div class="journal">Nature Reviews Bioengineering</div>
+            <div class="badge-row">
+              <span class="badge badge-teal"><span class="badge-label">2023</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Published</span></span>
+              <span class="badge badge-amber"><span class="badge-label">Nature Reviews Bioengineering</span></span>
+              <a
+                class="badge badge-white"
+                href="https://doi.org/10.1038/s44222-023-00130-9"
+                target="_blank"
+                rel="noopener"
+                ><span class="badge-label">DOI ↗</span></a
+              >
             </div>
-            <a
-              href="https://doi.org/10.1038/s44222-023-00130-9"
-              target="_blank"
-              rel="noopener"
-              >DOI ↗</a
-            >
+            <h3>Modelling host-microbiome interactions in organs-on-chips</h3>
+            <div class="authors">
+              Nam Than
+              <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+            </div>
           </div>
         </div>
       </section>
+      <section id="awards">
+        <div class="section-label">02 · Honors &amp; Awards</div>
+        <h2 class="section-title">Honors &amp; awards</h2>
+        <div class="panel">
+          <!-- Placeholder examples below. Replace year/title/badges with
+               real entries, then remove data-placeholder so the item
+               counts toward the stat at the top of the page. -->
+          <ul class="simple-list" id="awardsList">
+            <li data-placeholder>
+              <div>2025</div>
+              <span class="badge badge-teal"><span class="badge-label">Fellowship</span></span>
+              <div>[Award or fellowship title]</div>
+              <span class="badge badge-amber"><span class="badge-label">[Granting institute]</span></span>
+            </li>
+            <li data-placeholder>
+              <div>2023</div>
+              <span class="badge badge-teal"><span class="badge-label">Award</span></span>
+              <div>[Award or fellowship title]</div>
+              <span class="badge badge-amber"><span class="badge-label">[Granting institute]</span></span>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section id="background">
-        <div class="section-label">02 · Background</div>
+        <div class="section-label">03 · Background</div>
         <h2 class="section-title">Education &amp; experience</h2>
         <div class="timeline">
           <div>
@@ -727,31 +767,70 @@
         </div>
       </section>
       <section id="activities">
-        <div class="section-label">03 · Activities</div>
+        <div class="section-label">04 · Activities</div>
         <h2 class="section-title">Presentations &amp; mentoring</h2>
         <div class="grid activities-grid">
           <div class="panel">
             <h3>Conference presentations</h3>
+            <!-- Placeholder examples — replace, then remove data-placeholder. -->
             <ul class="simple-list" id="presentationsList">
-              <!-- Add one line per talk, e.g.: <li>Talk title — Conference, Year</li> -->
+              <li data-placeholder>
+                <div>2025</div>
+                <span class="badge badge-teal"><span class="badge-label">Talk</span></span>
+                <div>[Conference name]</div>
+                <span class="badge badge-amber"><span class="badge-label">[Presentation title]</span></span>
+              </li>
+              <li data-placeholder>
+                <div>2024</div>
+                <span class="badge badge-teal"><span class="badge-label">Poster</span></span>
+                <div>[Conference name]</div>
+                <span class="badge badge-amber"><span class="badge-label">[Presentation title]</span></span>
+              </li>
             </ul>
           </div>
           <div class="panel">
             <h3>Trainees mentored</h3>
+            <!-- Placeholder examples — replace, then remove data-placeholder. -->
             <ul class="simple-list" id="menteesList">
-              <!-- Add one line per mentee, e.g.: <li>Name — Program, Year</li> -->
+              <li data-placeholder>
+                <div>2023 — 2024</div>
+                <span class="badge badge-teal"><span class="badge-label">[Trainee affiliation]</span></span>
+                <div>[Trainee name]</div>
+                <span class="badge badge-amber"><span class="badge-label">[Current position]</span></span>
+              </li>
+              <li data-placeholder>
+                <div>2022 — 2023</div>
+                <span class="badge badge-teal"><span class="badge-label">[Trainee affiliation]</span></span>
+                <div>[Trainee name]</div>
+                <span class="badge badge-amber"><span class="badge-label">[Current position]</span></span>
+              </li>
             </ul>
           </div>
           <div class="panel">
             <h3>Invention disclosures</h3>
+            <!-- Placeholder examples only — do NOT replace with real titles
+                 until you're actually cleared to make them public; pending/
+                 unfiled disclosures are often confidential. Remove
+                 data-placeholder once an entry is real and public. -->
             <ul class="simple-list" id="disclosuresList">
-              <!-- Only add titles you're actually cleared to make public — pending/unfiled disclosures are often confidential. e.g.: <li>Disclosure title — Year</li> -->
+              <li data-placeholder>
+                <div>2025</div>
+                <span class="badge badge-teal"><span class="badge-label">Cleveland Clinic Innovations</span></span>
+                <div>[Invention title]</div>
+                <span class="badge badge-amber"><span class="badge-label">[Disclosure ID]</span></span>
+              </li>
+              <li data-placeholder>
+                <div>2024</div>
+                <span class="badge badge-teal"><span class="badge-label">Cleveland Clinic Innovations</span></span>
+                <div>[Invention title]</div>
+                <span class="badge badge-amber"><span class="badge-label">[Disclosure ID]</span></span>
+              </li>
             </ul>
           </div>
         </div>
       </section>
       <section id="contact" class="contact">
-        <div class="section-label">04 · Connect</div>
+        <div class="section-label">05 · Connect</div>
         <h2 class="section-title" style="margin-left: auto; margin-right: auto">
           Research, collaboration, or ideas
         </h2>
@@ -844,6 +923,38 @@
           var items = document.querySelectorAll(el.getAttribute("data-count"));
           if (items.length > 0) {
             el.textContent = items.length;
+          }
+        });
+      })();
+      (function () {
+        // Badges: ellipsis on overflow, tap-to-reveal the full text right
+        // underneath. Re-checks on resize since truncation is width-based.
+        function refreshBadges() {
+          document.querySelectorAll(".badge").forEach(function (badge) {
+            var label = badge.querySelector(".badge-label");
+            if (!label) return;
+            var oldTip = badge.querySelector(".badge-tip");
+            if (oldTip) oldTip.remove();
+            badge.classList.remove("is-truncated", "tip-open");
+            if (label.scrollWidth > label.clientWidth + 1) {
+              badge.classList.add("is-truncated");
+              var tip = document.createElement("span");
+              tip.className = "badge-tip";
+              tip.textContent = label.textContent.trim();
+              badge.appendChild(tip);
+            }
+          });
+        }
+        refreshBadges();
+        window.addEventListener("resize", refreshBadges);
+        document.addEventListener("click", function (e) {
+          var badge = e.target.closest(".badge");
+          document.querySelectorAll(".badge.tip-open").forEach(function (b) {
+            if (b !== badge) b.classList.remove("tip-open");
+          });
+          if (badge && badge.classList.contains("is-truncated")) {
+            e.preventDefault();
+            badge.classList.toggle("tip-open");
           }
         });
       })();
