@@ -1,31 +1,130 @@
 /* Shared design tokens + layout used by both index.html and briefings.html.
    Single source of truth for page width and nav so the two pages can't drift apart. */
-:root{
-  --bg:#0a0e10;
-  --bg2:#10161a;
-  --card:#131a1e;
-  --line:rgba(120,200,190,.12);
-  --line2:rgba(120,200,190,.3);
-  --text:#e8edec;
-  --muted:#9caaa8;
-  --dim:#5e6c6a;
-  --accent:#2dd4bf;
-  --amber:#e0a63a;
-  --red:#ef6b66;
-  --glow:rgba(45,212,191,.15);
-  --serif:Georgia,'Times New Roman',serif;
-  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
-  --mono:'SF Mono',Consolas,monospace;
+:root {
+  --bg: #0a0e10;
+  --bg2: #10161a;
+  --card: #131a1e;
+  --line: rgba(120, 200, 190, 0.12);
+  --line2: rgba(120, 200, 190, 0.3);
+  --text: #e8edec;
+  --muted: #9caaa8;
+  --dim: #5e6c6a;
+  --accent: #2dd4bf;
+  --amber: #e0a63a;
+  --red: #ef6b66;
+  --glow: rgba(45, 212, 191, 0.15);
+  --nav-bg: rgba(10, 14, 16, 0.86);
+  --serif: Georgia, "Times New Roman", serif;
+  --sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: "SF Mono", Consolas, monospace;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.65;font-size:17px}
-.wrap{width:min(1100px,calc(100% - 48px));margin:0 auto;position:relative;z-index:1}
-nav{position:fixed;inset:0 0 auto;z-index:100;background:rgba(10,14,16,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav-bar{height:66px;display:flex;align-items:center;justify-content:space-between}
-.logo{font:19px var(--serif);text-decoration:none;color:var(--text)}
-.logo span{color:var(--accent)}
-.links{display:flex;list-style:none;gap:28px;margin:0;padding:0}
-.links a{color:var(--muted);text-decoration:none;font-size:14px;transition:color .15s}
-.links a:hover,.links a.active{color:var(--accent);font-weight:700}
-@media(max-width:850px){.links{display:none}}
+/* Light mode: same variable names, light values. Toggled via .light class on <html>. */
+html.light {
+  --bg: #f5f7f8;
+  --bg2: #ffffff;
+  --card: #ffffff;
+  --line: rgba(31, 111, 120, 0.14);
+  --line2: rgba(31, 111, 120, 0.32);
+  --text: #172126;
+  --muted: #5b6970;
+  --dim: #8a969b;
+  --accent: #0f9488;
+  --glow: rgba(15, 148, 136, 0.15);
+  --nav-bg: rgba(255, 255, 255, 0.86);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.65;
+  font-size: 17px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.wrap {
+  width: min(1100px, calc(100% - 48px));
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+nav {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.nav-bar {
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font: 19px var(--serif);
+  text-decoration: none;
+  color: var(--text);
+}
+.logo span {
+  color: var(--accent);
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.links {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+.links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.15s;
+}
+.links a:hover,
+.links a.active {
+  color: var(--accent);
+  font-weight: 700;
+}
+.theme-toggle {
+  border: 1px solid var(--line2);
+  background: transparent;
+  color: var(--muted);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: 0.15s;
+}
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+/* Reusable: <span class="accent">text</span> anywhere on the site, instead of inline style="color:var(--accent)" */
+.accent {
+  color: var(--accent);
+}
+@media (max-width: 850px) {
+  .links {
+    display: none;
+  }
+}

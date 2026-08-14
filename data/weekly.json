@@ -12,10 +12,22 @@
           "read_first": "Start with the heterotypic tissue-recombinant experiments that swap healthy and IBD epithelium/fibroblasts, then the peristalsis-mechanics results.",
           "caveat": "The model is sophisticated but correspondingly harder to standardize. Adding immune cells, fibroblasts and mechanical deformation improves biological scope while increasing variability and reducing throughput.",
           "priority": "#1",
-          "tags": ["Organ-on-chip", "IBD", "Crohn's disease", "Fibroblasts", "Mechanobiology"],
+          "tags": [
+            "Organ-on-chip",
+            "IBD",
+            "Crohn's disease",
+            "Fibroblasts",
+            "Mechanobiology"
+          ],
           "sources": [
-            {"label": "Nature Biomedical Engineering", "url": "https://www.nature.com/articles/s41551-026-01686-8"},
-            {"label": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/42168634/"}
+            {
+              "label": "Nature Biomedical Engineering",
+              "url": "https://www.nature.com/articles/s41551-026-01686-8"
+            },
+            {
+              "label": "PubMed",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/42168634/"
+            }
           ]
         },
         {
@@ -29,7 +41,10 @@
           "priority": "#2",
           "tags": ["IBD", "Organoids", "Epigenetics", "Epithelial memory"],
           "sources": [
-            {"label": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/41903684/"}
+            {
+              "label": "PubMed",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41903684/"
+            }
           ]
         },
         {
@@ -41,10 +56,22 @@
           "read_first": "Start with the dual-isolation workflow and then the experiments comparing epithelial responses to closely related bacterial isolates.",
           "caveat": "Microinjection gives excellent apical access but is labor-intensive and low-throughput. Cultured isolates also represent only the cultivable fraction of the mucosal community.",
           "priority": "#3",
-          "tags": ["Gut microbiome", "IBD", "Organoids", "Host-microbe", "Strain effects"],
+          "tags": [
+            "Gut microbiome",
+            "IBD",
+            "Organoids",
+            "Host-microbe",
+            "Strain effects"
+          ],
           "sources": [
-            {"label": "Scientific Reports", "url": "https://www.nature.com/articles/s41598-026-46184-8"},
-            {"label": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/41922622/"}
+            {
+              "label": "Scientific Reports",
+              "url": "https://www.nature.com/articles/s41598-026-46184-8"
+            },
+            {
+              "label": "PubMed",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/41922622/"
+            }
           ]
         },
         {
@@ -58,7 +85,10 @@
           "priority": "#4",
           "tags": ["Probiotics", "IBD", "Engineered bacteria", "Drug delivery"],
           "sources": [
-            {"label": "Nature Communications", "url": "https://www.nature.com/articles/s41467-026-72027-1"}
+            {
+              "label": "Nature Communications",
+              "url": "https://www.nature.com/articles/s41467-026-72027-1"
+            }
           ]
         },
         {
@@ -72,7 +102,10 @@
           "priority": "#5",
           "tags": ["Organoids", "Barrier", "Transwell", "High throughput"],
           "sources": [
-            {"label": "npj Biomedical Innovations", "url": "https://www.nature.com/articles/s44385-026-00089-3"}
+            {
+              "label": "npj Biomedical Innovations",
+              "url": "https://www.nature.com/articles/s44385-026-00089-3"
+            }
           ]
         },
         {
@@ -84,9 +117,17 @@
           "read_first": "Read the patient-matched transcriptomic concordance analysis, especially the TNF + IFN-gamma and cytokine-cocktail comparisons.",
           "caveat": "A cytokine-defined model captures epithelial inflammation but not microbiota, stromal mechanics or immune-cell dynamics, so its disease fidelity is pathway-specific rather than comprehensive.",
           "priority": "#6",
-          "tags": ["Organoids", "Ulcerative colitis", "Transcriptomics", "Model validation"],
+          "tags": [
+            "Organoids",
+            "Ulcerative colitis",
+            "Transcriptomics",
+            "Model validation"
+          ],
           "sources": [
-            {"label": "Scientific Reports", "url": "https://www.nature.com/articles/s41598-026-54857-7"}
+            {
+              "label": "Scientific Reports",
+              "url": "https://www.nature.com/articles/s41598-026-54857-7"
+            }
           ]
         }
       ]
