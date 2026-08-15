@@ -63,7 +63,7 @@
       }
       .hero h1 em {
         color: var(--accent);
-        font-style: normal;
+        font-style: italic;
       }
       .hero h1 .credential {
         display: inline-block;
@@ -140,10 +140,16 @@
       section {
         padding: 10px 0;
       }
-      .section-title {
-        font: 400 clamp(30px, 4vw, 42px)/1.2 var(--serif);
+      /* Single consolidated heading per section — replaces the old pairing
+         of a small numbered eyebrow (.section-label) plus a separate large
+         title, which mostly repeated the same words twice. .section-label
+         itself is kept, unchanged, for the small "Research Focus" sub-label
+         inside the hero. */
+      .section-heading {
+        font: 400 clamp(28px, 3.6vw, 38px) var(--serif);
+        color: var(--accent);
         max-width: 720px;
-        margin: 0 auto 42px;
+        margin: 0 auto 36px;
       }
       .grid {
         display: grid;
@@ -251,6 +257,7 @@
         position: relative;
         display: inline-flex;
         vertical-align: middle;
+        text-decoration: none;
       }
       .badge-label {
         display: inline-block;
@@ -366,8 +373,10 @@
         color: var(--dim);
         font-style: italic;
       }
-      .cofirst {
+      .cofirst,
+      .cocorr {
         color: var(--accent);
+        cursor: help;
       }
       .pub-keywords {
         margin: 12px 0 0;
@@ -385,8 +394,16 @@
           margin-top 0.35s ease;
       }
       .pub.is-open .pub-details {
-        max-height: 800px;
+        max-height: 1400px;
         margin-top: 18px;
+      }
+      .pub-figure {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+        margin-bottom: 16px;
       }
       .pub-abstract {
         color: var(--muted);
@@ -420,19 +437,18 @@
         padding: 0 0 24px 22px;
         text-align: left;
       }
-      .item .date {
-        color: var(--accent);
-        font-size: 12px;
-      }
       .item h4 {
         margin: 4px 0;
       }
-      .item p {
-        color: var(--muted);
-        font-size: 14px;
+      /* Achievements items: badges for year/type-or-ID/institution, plain
+         text for the title — mirrors the publication-card pattern but
+         left-aligned to match this section's timeline layout. */
+      .item .badge-row {
+        justify-content: flex-start;
+        margin-bottom: 10px;
       }
       .activities-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
       .panel h3 {
         font: 500 19px var(--serif);
@@ -535,17 +551,12 @@
         <a href="#brief" class="logo">N.<span>Than</span></a>
         <div class="nav-right">
           <ul class="links">
-            <li class="nav-dropdown">
-              <a href="#brief">Home</a>
-              <ul class="dropdown-menu">
-                <li><a href="#research-focus">Research Focus</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#awards">Honors &amp; Awards</a></li>
-                <li><a href="#background">Background</a></li>
-                <li><a href="#activities">Activities</a></li>
-                <li><a href="#contact">Connect</a></li>
-              </ul>
-            </li>
+            <li><a href="#research-focus">Research Focus</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#awards">Achievements &amp; Recognitions</a></li>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#contact">Connect</a></li>
             <li><a href="briefings.html">Research Brief</a></li>
           </ul>
           <button id="themeToggle" class="theme-toggle" type="button">
@@ -582,7 +593,7 @@
               <div class="label">Peer-reviewed publications</div>
             </div>
             <div class="stat">
-              <div class="num" data-count="#disclosuresList li:not([data-placeholder])">4</div>
+              <div class="num" data-count="#disclosuresList .item:not([data-placeholder])">4</div>
               <div class="label">Invention disclosures</div>
             </div>
             <div class="stat">
@@ -594,8 +605,8 @@
               <div class="label">Trainees mentored</div>
             </div>
             <div class="stat">
-              <div class="num" data-count="#awardsList li:not([data-placeholder])">0</div>
-              <div class="label">Honors &amp; awards</div>
+              <div class="num" data-count="#awardsList .item:not([data-placeholder])">0</div>
+              <div class="label">Achievements &amp; recognitions</div>
             </div>
           </div>
           <div class="section-label" id="research-focus">Research Focus</div>
@@ -660,8 +671,7 @@
         </div>
       </section>
       <section id="publications">
-        <div class="section-label">01 · Selected Work</div>
-        <h2 class="section-title">Publications</h2>
+        <h2 class="section-heading">Publications</h2>
         <!-- Status badge is intentionally neutral gray regardless of stage.
              When adding a new entry, default the label to "Pre-print" until
              it's actually accepted/published. -->
@@ -693,8 +703,12 @@
               <span class="badge badge-gray"><span class="badge-label">PDMS Membrane</span></span>
             </div>
             <div class="pub-details">
+              <img
+                class="pub-figure"
+                src="assets/GraphicalAbstract_FabricationPaper.png"
+                alt="Graphical abstract: Advanced fabrication protocol of an elastic porous membrane for organ-on-a-chip applications"
+              />
               <p class="pub-abstract"><!-- Paste the paper's abstract here. --></p>
-              <!-- Graphical abstract (add later): <img class="pub-figure" src="..." alt="Graphical abstract"> -->
             </div>
           </div>
           <div class="pub" tabindex="0" role="button" aria-expanded="false">
@@ -715,7 +729,7 @@
               injury by alleviating oxidative stress in a human gut-on-a-chip
             </h3>
             <div class="authors">
-              <span class="accent">Nam Than</span>, Tadanori Mammoto, Donald E. Ingber & Hyun Jung Kim
+              <span class="accent">Nam Than</span>, Tadanori Mammoto, Donald E. Ingber<sup class="cocorr" title="Co-correspondence">+</sup> &amp; Hyun Jung Kim<sup class="cocorr" title="Co-correspondence">+</sup>
             </div>
             <!-- Keywords inferred from the title — check/edit before treating as final. -->
             <div class="badge-row pub-keywords">
@@ -724,8 +738,12 @@
               <span class="badge badge-gray"><span class="badge-label">Radiation Injury</span></span>
             </div>
             <div class="pub-details">
+              <img
+                class="pub-figure"
+                src="assets/GraphicalAbstract_RadiationPaper.png"
+                alt="Graphical abstract: Probiotic intervention mitigates radiation-induced intestinal injury by alleviating oxidative stress in a human gut-on-a-chip"
+              />
               <p class="pub-abstract"><!-- Paste the paper's abstract here. --></p>
-              <!-- Graphical abstract (add later): <img class="pub-figure" src="..." alt="Graphical abstract"> -->
             </div>
           </div>
           <div class="pub" tabindex="0" role="button" aria-expanded="false">
@@ -808,7 +826,7 @@
             </div>
             <h3>Modelling host-microbiome interactions in organs-on-chips</h3>
             <div class="authors">
-              Yong Cheol Shin<sup class="cofirst">*</sup>, <span class="accent">Nam Than<sup class="cofirst">*</sup></span>, Soyoun Min, Woojung Shin & Hyun Jung Kim
+              Yong Cheol Shin<sup class="cofirst" title="Equal Contribution">*</sup>, <span class="accent">Nam Than<sup class="cofirst" title="Equal Contribution">*</sup></span>, Soyoun Min, Woojung Shin<sup class="cocorr" title="Co-correspondence">+</sup> &amp; Hyun Jung Kim<sup class="cocorr" title="Co-correspondence">+</sup>
             </div>
             <!-- Keywords inferred from the title — check/edit before treating as final. -->
             <div class="badge-row pub-keywords">
@@ -824,81 +842,112 @@
         </div>
       </section>
       <section id="awards">
-        <div class="section-label">02 · Honors &amp; Awards</div>
-        <h2 class="section-title">Honors &amp; awards</h2>
-        <div class="panel">
-          <!-- Placeholder examples below. Replace year/title/badges with
-               real entries, then remove data-placeholder so the item
-               counts toward the stat at the top of the page. -->
-          <ul class="simple-list" id="awardsList">
-            <li data-placeholder>
-              <div class="li-col">
-                <div>07/2026 – 12/2026</div>
-                <span class="badge badge-gray"><span class="badge-label">SCholarship</span></span>
+        <h2 class="section-heading">Achievements &amp; Recognitions</h2>
+        <div class="timeline">
+          <div>
+            <h3>Awards &amp; Fellowships</h3>
+            <div id="awardsList">
+              <div class="item">
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">07/2026 – 12/2026</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Scholarship</span></span>
+                  <span class="badge badge-gray"><span class="badge-label">UT Austin</span></span>
+                </div>
+                <h4>Engineering Foundation Endowed Graduate Presidential Scholarship</h4>
               </div>
-              <div class="li-col">
-                <div>Engineering Foundation Endowed Graduate Presidential Scholarship</div>
-                <span class="badge badge-gray"><span class="badge-label">UT Austin</span></span>
+              <div class="item">
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">12/2024</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Award</span></span>
+                  <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic Research</span></span>
+                </div>
+                <h4>Mary B. Stark Travel Award</h4>
               </div>
-            </li>
-            <li data-placeholder>
-              <div class="li-col">
-                <div>12/2024</div>
-                <span class="badge badge-gray"><span class="badge-label">Award</span></span>
+            </div>
+          </div>
+          <div>
+            <h3>Invention Disclosures</h3>
+            <!-- Placeholder items only — do NOT replace with real titles
+                 until you're actually cleared to make them public; pending/
+                 unfiled disclosures are often confidential. Remove
+                 data-placeholder from real, cleared entries so they count
+                 toward the stat at the top of the page. -->
+            <div id="disclosuresList">
+              <div class="item">
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2025</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">IDF 2025-176</span></span>
+                  <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic Innovations</span></span>
+                </div>
+                <h4>Robust and Scalable Manufacturing of Ultrathin Porous PDMS Membranes</h4>
               </div>
-              <div class="li-col">
-                <div>Mary B. Stark Travel Award</div>
-                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic Research</span></span>
+              <div class="item" data-placeholder>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2024</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">[Disclosure ID]</span></span>
+                  <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic Innovations</span></span>
+                </div>
+                <h4>[Invention title]</h4>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section id="background">
-        <div class="section-label">03 · Background</div>
-        <h2 class="section-title">Education &amp; experience</h2>
+        <h2 class="section-heading">Education &amp; Experience</h2>
         <div class="timeline">
           <div>
             <h3>Education</h3>
             <div class="item">
-              <div class="date">2020 — Present</div>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2020 — Present</span></span>
+                <span class="badge badge-gray"><span class="badge-label">The University of Texas at Austin</span></span>
+              </div>
               <h4>PhD in Biomedical Engineering</h4>
-              <p>The University of Texas at Austin</p>
             </div>
             <div class="item">
-              <div class="date">2018 — 2020</div>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2018 — 2020</span></span>
+                <span class="badge badge-gray"><span class="badge-label">San Jose State University</span></span>
+              </div>
               <h4>MS in Biomedical Engineering</h4>
-              <p>San Jose State University</p>
             </div>
             <div class="item">
-              <div class="date">2012 — 2016</div>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2012 — 2016</span></span>
+                <span class="badge badge-gray"><span class="badge-label">University of California, Davis</span></span>
+              </div>
               <h4>BS in Biochemistry and Molecular Biology</h4>
-              <p>University of California, Davis</p>
             </div>
           </div>
           <div>
             <h3>Experience</h3>
             <div class="item">
-              <div class="date">2022 — Present</div>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2022 — Present</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span>
+              </div>
               <h4>Predoctoral Research Fellow, BioME Lab</h4>
-              <p>Cleveland Clinic</p>
             </div>
             <div class="item">
-              <div class="date">2020 — 2022</div>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2020 — 2022</span></span>
+                <span class="badge badge-gray"><span class="badge-label">The University of Texas at Austin</span></span>
+              </div>
               <h4>Graduate Research Assistant</h4>
-              <p>The University of Texas at Austin</p>
             </div>
             <div class="item">
-              <div class="date">2018 — 2020</div>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2018 — 2020</span></span>
+                <span class="badge badge-gray"><span class="badge-label">IBM Almaden Research Center</span></span>
+              </div>
               <h4>Research Intern</h4>
-              <p>IBM Almaden Research Center</p>
             </div>
           </div>
         </div>
       </section>
       <section id="activities">
-        <div class="section-label">04 · Activities</div>
-        <h2 class="section-title">Presentations &amp; mentoring</h2>
+        <h2 class="section-heading">Presentations &amp; Mentoring</h2>
         <div class="grid activities-grid">
           <div class="panel">
             <h3>Conference presentations</h3>
@@ -930,7 +979,7 @@
             <h3>Mentorship</h3>
             <!-- Placeholder examples — replace, then remove data-placeholder. -->
             <ul class="simple-list" id="menteesList">
-              <li data-placeholder>
+              <li>
                 <div class="li-col">
                   <div>2026 — Present</div>
                   <span class="badge badge-gray"><span class="badge-label">Case Western Reserve University</span></span>
@@ -952,49 +1001,15 @@
               </li>
             </ul>
           </div>
-          <div class="panel">
-            <h3>Invention disclosures</h3>
-            <!-- Placeholder examples only — do NOT replace with real titles
-                 until you're actually cleared to make them public; pending/
-                 unfiled disclosures are often confidential. Remove
-                 data-placeholder once an entry is real and public. -->
-            <ul class="simple-list" id="disclosuresList">
-              <li data-placeholder>
-                <div class="li-col">
-                  <div>2025</div>
-                  <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic Innovations</span></span>
-                </div>
-                <div class="li-col">
-                  <div>Robust and Scalable Manufacturing of Ultrathin Porous PDMS Membranes</div>
-                  <span class="badge badge-gray"><span class="badge-label">IDF 2025-176</span></span>
-                </div>
-              </li>
-              <li data-placeholder>
-                <div class="li-col">
-                  <div>2024</div>
-                  <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic Innovations</span></span>
-                </div>
-                <div class="li-col">
-                  <div>[Invention title]</div>
-                  <span class="badge badge-gray"><span class="badge-label">[Disclosure ID]</span></span>
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
       </section>
       <section id="contact" class="contact">
-        <div class="section-label">05 · Connect</div>
-        <h2 class="section-title" style="margin-left: auto; margin-right: auto">
-          Research, collaboration, or ideas
-        </h2>
-        <p>
-          Feel free to reach out for research, collaboration, or ideas!
-        </p>
+        <h2 class="section-heading">Connect</h2>
+        <p>Feel free to reach out for research, collaboration, or ideas!</p>
         <!-- LinkedIn href below is a placeholder — replace with your real profile URL. -->
         <div class="contact-links">
           <a href="mailto:thann2@ccf.org">Email</a
-          ><a href="cv.pdf" download="Nam-Than-CV.pdf">CV</a
+          ><a href="assets/CV_NamThan.pdf" download="Nam-Than-CV.pdf">CV</a
           ><a
             href="https://www.linkedin.com/in/namtthan/"
             target="_blank"
