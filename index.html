@@ -52,7 +52,7 @@
       }
       .section-label {
         color: var(--accent);
-        font-size: 15px;
+        font-size: 18px;
         letter-spacing: 1.8px;
         text-transform: uppercase;
         margin-bottom: 18px;
@@ -97,10 +97,18 @@
         font-family: var(--serif);
         white-space: nowrap;
         line-height: 1.5;
-        margin-bottom: 14px;
+        /* margin needs the auto pair, not just a bottom value — this box is
+           narrower than its parent (max-width:90%), and text-align:center
+           only centers inline content *inside* a box, not the box itself. */
+        margin: 0 auto 14px;
         font-size: 18px;
         overflow-x: hidden;
         position: relative;
+        cursor: pointer;
+      }
+      .research-equation:hover,
+      .research-equation:focus-visible {
+        color: var(--text);
       }
       .research-equation .eq-label {
         color: var(--accent);
@@ -131,25 +139,24 @@
         padding: 0 0.1em;
       }
       .equation-intro {
-        max-width: 760px;
-        color: var(--muted);
+        max-width: 800px;
+        color: var(--dim);
         font-size: 16px;
         line-height: 1.65;
-        margin: 0 auto 30px;
+        text-align: center;
+        margin: 0 auto;
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.35s ease,
+          margin-bottom 0.35s ease;
+      }
+      .equation-intro.is-open {
+        max-height: 300px;
+        margin-bottom: 30px;
       }
       section {
         padding: 10px 0;
-      }
-      /* Single consolidated heading per section — replaces the old pairing
-         of a small numbered eyebrow (.section-label) plus a separate large
-         title, which mostly repeated the same words twice. .section-label
-         itself is kept, unchanged, for the small "Research Focus" sub-label
-         inside the hero. */
-      .section-heading {
-        font: 400 clamp(28px, 3.6vw, 38px) var(--serif);
-        color: var(--accent);
-        max-width: 720px;
-        margin: 0 auto 36px;
       }
       .grid {
         display: grid;
@@ -158,17 +165,6 @@
         border: 1px solid var(--line);
         border-radius: 10px;
         overflow: hidden;
-      }
-      .about {
-        grid-template-columns: 1.2fr 0.8fr;
-      }
-      .panel {
-        background: var(--bg2);
-        padding: 32px;
-      }
-      .panel p {
-        color: var(--muted);
-        margin-bottom: 18px;
       }
       .stats {
         display: grid;
@@ -207,6 +203,18 @@
       .card p {
         color: var(--muted);
         font-size: 15px;
+      }
+      /* Placeholder image slot for each focus card. Files aren't uploaded
+         yet — see the assets/focus-*.png filenames below and the error
+         handler in the script block that hides the <img> gracefully
+         (no broken-icon) until each file actually exists. */
+      .card-figure {
+        display: block;
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 14px;
       }
       #brief {
         padding: 96px 0 10px;
@@ -251,7 +259,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
-        margin-bottom: 16px;
+        margin-bottom: 18px;
       }
       .badge {
         position: relative;
@@ -328,9 +336,35 @@
       .badge.tip-open .badge-tip {
         display: block;
       }
-      .pubs {
+      /* Keyword filter row above the publication grid, mimicking the topic
+         filters on the Research Brief page (.filters/.filter in
+         briefings.css) so the two pages feel like one system. */
+      .filters {
         display: flex;
-        flex-direction: column;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 0 28px;
+      }
+      .filter {
+        border: 1px solid var(--line);
+        background: var(--bg2);
+        color: var(--muted);
+        border-radius: 999px;
+        padding: 7px 11px;
+        cursor: pointer;
+        font-size: 0.88rem;
+        font-family: var(--sans);
+      }
+      .filter.active {
+        border-color: var(--accent);
+        color: var(--accent);
+        background: rgba(45, 212, 191, 0.07);
+      }
+      .pubs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
         gap: 14px;
       }
       .pub {
@@ -340,12 +374,21 @@
         border-left: 3px solid transparent;
         border-right: 3px solid transparent;
         border-radius: 10px;
+        text-align: left;
         cursor: pointer;
         transition:
           border-color 0.2s,
           background 0.2s,
           box-shadow 0.2s,
           transform 0.2s;
+      }
+      /* Tightened badge spacing, mirroring the .item override used in
+         Achievements/Background — badges sit close to the title instead of
+         the default .badge-row 18px gap, and align left with the rest of
+         the card instead of the default centered row. */
+      .pub .badge-row {
+        justify-content: left;
+        margin-bottom: 10px;
       }
       .pub:hover,
       .pub:focus-visible {
@@ -356,7 +399,7 @@
         transform: translateY(-2px);
       }
       .pub h3 {
-        font: 500 19px/1.4 var(--serif);
+        font: 500 16px/1.4 var(--serif);
         color: var(--text);
         margin: 0 0 10px;
       }
@@ -399,32 +442,47 @@
       }
       .pub-figure {
         display: block;
+        width: 100%;
         max-width: 100%;
-        height: auto;
+        max-height: 260px;
+        object-fit: contain;
+        background: var(--bg2);
         border-radius: 8px;
         border: 1px solid var(--line);
         margin-bottom: 16px;
       }
-      .pub-abstract {
+      /* Sub-headings inside the expand panel — same convention as the
+         Research Brief's story cards (.story-body h3 in briefings.css):
+         small teal monospace label above each block of body text. */
+      .pub-details h4 {
+        margin: 18px 0 6px;
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--accent);
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+      }
+      .pub-details h4:first-of-type {
+        margin-top: 0;
+      }
+      .pub-details p {
+        margin: 0;
         color: var(--muted);
         font-size: 14px;
         line-height: 1.75;
-        margin: 0;
-        padding-top: 18px;
-        border-top: 1px solid var(--line);
       }
-      .pub-abstract:empty:before {
-        content: "Add this paper's abstract here.";
+      .pub-details p:empty:before {
+        content: "Add this here.";
         color: var(--dim);
         font-style: italic;
       }
       .timeline {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 48px;
+        gap: 0px;
       }
       .timeline h3 {
-        font-size: 12px;
+        font-size: 13px;
         color: var(--dim);
         letter-spacing: 1.4px;
         text-transform: uppercase;
@@ -438,51 +496,26 @@
         text-align: left;
       }
       .item h4 {
-        margin: 4px 0;
+        margin: 1px 0;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .item h5 {
+        margin: 1px 0;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 400;
       }
       /* Achievements items: badges for year/type-or-ID/institution, plain
          text for the title — mirrors the publication-card pattern but
          left-aligned to match this section's timeline layout. */
       .item .badge-row {
-        justify-content: flex-start;
-        margin-bottom: 10px;
+        justify-content: left;
+        margin-bottom: 2px;
       }
       .activities-grid {
         grid-template-columns: repeat(2, 1fr);
-      }
-      .panel h3 {
-        font: 500 19px var(--serif);
-        margin-bottom: 14px;
-        color: var(--text);
-      }
-      .simple-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      .simple-list li {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 16px;
-        padding: 16px 8px;
-        border-bottom: 1px solid var(--line);
-        color: var(--text);
-        font-size: 14px;
-      }
-      .simple-list li:last-child {
-        border-bottom: 0;
-      }
-      .li-col {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 6px;
-      }
-      .simple-list:empty:before {
-        content: "Nothing added yet.";
-        color: var(--dim);
-        font-style: italic;
-        font-size: 13px;
       }
       .contact {
         text-align: center;
@@ -517,17 +550,14 @@
         text-align: center;
       }
       @media (max-width: 850px) {
-        .about,
         .focus,
         .timeline,
-        .activities-grid {
+        .activities-grid,
+        .pubs {
           grid-template-columns: 1fr;
         }
         .stats {
           grid-template-columns: 1fr 1fr;
-        }
-        .simple-list li {
-          grid-template-columns: 1fr;
         }
         section {
           padding: 72px 0;
@@ -553,9 +583,9 @@
           <ul class="links">
             <li><a href="#research-focus">Research Focus</a></li>
             <li><a href="#publications">Publications</a></li>
-            <li><a href="#awards">Achievements &amp; Recognitions</a></li>
-            <li><a href="#background">Background</a></li>
+            <li><a href="#awards">Achievements</a></li>
             <li><a href="#activities">Activities</a></li>
+            <li><a href="#background">Background</a></li>
             <li><a href="#contact">Connect</a></li>
             <li><a href="briefings.html">Research Brief</a></li>
           </ul>
@@ -569,8 +599,8 @@
       <section id="brief">
         <a class="brief-card" href="briefings.html">
           <p>
-            <span class="accent">Daily intelligence</span>: Five-story daily
-            briefings plus a weekly gut research shortlist covering
+            <span class="accent">DAILY INTELLIGENCE</span>: Selected daily
+            briefings and a weekly research shortlist covering
             bioengineering, biotech, microbiome and intestinal disease,
             organ-on-chip, NAMs, regulation, funding and relevant papers.
           </p>
@@ -593,89 +623,141 @@
               <div class="label">Peer-reviewed publications</div>
             </div>
             <div class="stat">
-              <div class="num" data-count="#disclosuresList .item:not([data-placeholder])">4</div>
+              <div class="num" data-count="#awardsList .item:not([data-placeholder])">0</div>
+              <div class="label">Awards</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="#disclosuresList .item:not([data-placeholder])">0</div>
               <div class="label">Invention disclosures</div>
             </div>
             <div class="stat">
-              <div class="num" data-count="#presentationsList li:not([data-placeholder])">0</div>
-              <div class="label">Conference presentations</div>
+              <div class="num" data-count="#presentationsList h5:not([data-placeholder])">0</div>
+              <div class="label">Presentations</div>
             </div>
             <div class="stat">
-              <div class="num" data-count="#menteesList li:not([data-placeholder])">0</div>
-              <div class="label">Trainees mentored</div>
-            </div>
-            <div class="stat">
-              <div class="num" data-count="#awardsList .item:not([data-placeholder])">0</div>
-              <div class="label">Achievements &amp; recognitions</div>
+              <div class="num" id="yearsExp">0</div>
+              <div class="label">Years of experience</div>
             </div>
           </div>
-          <div class="section-label" id="research-focus">Research Focus</div>
-          <div class="research-equation">
-            <span class="eq-label">My Research Equation</span> =
-            <span class="integral">∫</span>(Experimental Biology + CFD +
-            Bioinformatics) <span class="accent">d{</span>
-            <span class="frac"
-              ><span><span class="accent">d</span>(Organoid <span class="accent">⨉</span> Microbiome)</span><span><span class="accent">d</span>Patient</span></span>
-            <span class="arrow">→</span>Stretchable Gut-on-a-Chip
-            <span class="accent">}</span>
+        </div>
+      </section>
+      <section id="research-focus">
+        <div class="hero-copy">
+          <h2 class="section-label">Research Focus</h2>
+          <div
+            class="research-equation"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+            aria-controls="equationIntro"
+          >
+            <span class="eq-label">My Work</span> ≡
+            <span class="integral">∫</span>(Experimental Biology + CFD + Bioinformatics) 
+            <span class="accent">d[</span>(Organoid <span class="accent">⨉</span> Microbiome)</span>
+            <sub>Patient</sub><span class="arrow">→ </span>Stretchable Gut-on-a-Chip
+            <span class="accent">]</span>
           </div>
-          <p class="equation-intro">
-            I integrate wet-lab biology, computational fluid dynamics, and
-            bioinformatics over patient-specific organoid and microbiome
-            interaction data generated in stretchable gut-on-a-chip devices.
+          <p class="equation-intro" id="equationIntro">
+            My work is defined by integrating experimental biology, computational fluid dynamics, and bioinformatics to 
+            study patient-specific organoid–microbiome interactions as variables in stretchable gut-on-a-chip devices.
           </p>
         </div>
         <div class="grid focus">
           <div class="card">
             <h3>Organ-on-a-chip systems</h3>
-            <p>
-              Microfluidic gut-on-a-chip and multiplex organ-on-a-chip platforms
-              for disease modeling and pharmaco-toxicology.
-            </p>
+            <p> Microfluidic gut-on-a-chip and multiplex organ-on-a-chip platforms for disease modeling and pharmaco-toxicology. </p>
+            <img
+              class="card-figure"
+              src="assets/focus_organ_chip.png"
+              alt="Organ-on-a-chip systems"
+            />
           </div>
           <div class="card">
             <h3>Host–microbiome interactions</h3>
-            <p>
-              Probiotic and patient-derived microbiota effects on epithelial
-              oxidative stress, barrier function and inflammation.
-            </p>
+            <p>Probiotic and patient-derived microbiota effects on epithelial oxidative stress, barrier function and inflammation.</p>
+            <img
+              class="card-figure"
+              src="assets/focus_host_microbiome.png"
+              alt="Host–microbiome interactions"
+            />
           </div>
           <div class="card">
             <h3>Microfabrication</h3>
-            <p>
-              Porous PDMS membranes, photolithography, soft lithography and
-              additive manufacturing for rapid device prototyping.
-            </p>
+            <p> Porous PDMS membranes, photolithography, soft lithography and additive manufacturing for rapid device prototyping.</p>
+            <img
+              class="card-figure"
+              src="assets/focus_fabrication.png"
+              alt="Microfabrication"
+            />
           </div>
           <div class="card">
             <h3>Fluid dynamics</h3>
-            <p>
-              Finite-element and computational modeling of flow, shear stress
-              and transport in microfluidic systems.
-            </p>
+            <p> Finite-element and computational modeling of flow, shear stress and transport in microfluidic systems.</p>
+            <img
+              class="card-figure"
+              src="assets/focus_fluid_dynamics.gif"
+              alt="Fluid dynamics"
+            />
           </div>
           <div class="card">
             <h3>Bioinformatics</h3>
-            <p>
-              Single-cell and bulk RNA-seq, 16S analysis and quantitative
-              interpretation of engineered tissue systems.
-            </p>
+            <p>Single-cell and bulk RNA-seq, 16S analysis and quantitative interpretation of engineered tissue systems.</p>
+            <img
+              class="card-figure"
+              src="assets/focus_bioinformatics.png"
+              alt="Bioinformatics"
+            />
           </div>
           <div class="card">
             <h3>Translational NAMs</h3>
-            <p>
-              Human-relevant preclinical models designed around mechanistic and
-              decision-relevant endpoints.
-            </p>
+            <p>Human-centric research and safety testing tools designed to replace, reduce, or refine animal use. </p>
+            <img
+              class="card-figure"
+              src="assets/focus_translational_nams.png"
+              alt="Translational NAMs"
+            />
           </div>
         </div>
       </section>
       <section id="publications">
-        <h2 class="section-heading">Publications</h2>
+        <h2 class="section-label">Publications</h2>
         <!-- Status badge is intentionally neutral gray regardless of stage.
              When adding a new entry, default the label to "Pre-print" until
              it's actually accepted/published. -->
+        <div id="pubFilters" class="filters" aria-label="Keyword filters"></div>
         <div class="pubs">
+          <div class="pub" tabindex="0" role="button" aria-expanded="false">
+            <div class="badge-row">
+              <span class="badge badge-teal"><span class="badge-label">2026</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Published</span></span>
+              <span class="badge badge-amber badge-full"><span class="badge-label">Advanced Healthcare Materials</span></span>
+              <a
+                class="badge badge-white"
+                href="https://doi.org/10.1002/adhm.202501510"
+                target="_blank"
+                rel="noopener"
+                ><span class="badge-label">DOI ↗</span></a
+              >
+            </div>
+            <h3> Nanofiber-supported decellularized matrix membrane creates a biomimetic biochemical and biophysical niche for intestinal organoid epithelium</h3>
+            <div class="authors">
+              Jaeseung Youn<sup class="cofirst" title="Equal Contribution">*</sup>, HyunJi Kim<sup class="cofirst" title="Equal Contribution">*</sup>, <span class="accent">Nam Than</span>, Dohui Kim, Hyun Jung Kim, Dong Sung Kim
+            </div>
+            <!-- Keywords inferred from the title — check/edit before treating as final. -->
+            <div class="badge-row pub-keywords">
+              <span class="badge badge-gray"><span class="badge-label">Nanofiber Membrane</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Decellularized ECM</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Intestinal Organoids</span></span>
+            </div>
+            <div class="pub-details">
+              <h4>What Happened</h4>
+              <p>The colon-specific NaDE membrane enhances intestinal stem-cell maintenance and proliferation while promoting rare secretory epithelial lineages—including enteroendocrine, tuft, and Paneth cells—that are underrepresented on conventional synthetic membranes.</p>
+              <h4>Method / Model</h4>
+              <p>A nanofiber-supported membrane combines porcine colon-derived decellularized ECM with an ultrathin fibrous scaffold to recreate both the biochemical composition and tissue-relevant stiffness (~230 kPa) of the intestinal ECM, then supports human colon organoid-derived epithelium.</p>
+              <h4>Why It Matters</h4>
+              <p>Shows that simultaneously engineering the biochemical and mechanical niche can produce a more physiologically representative intestinal epithelium, improving membrane-based models for disease modeling, host–microbiome studies, and drug testing.</p>
+            </div>
+          </div>
           <div class="pub" tabindex="0" role="button" aria-expanded="false">
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2026</span></span>
@@ -689,12 +771,9 @@
                 ><span class="badge-label">DOI ↗</span></a
               >
             </div>
-            <h3>
-              Advanced fabrication protocol of an elastic porous membrane for
-              organ-on-a-chip applications
-            </h3>
+            <h3>Advanced fabrication protocol of an elastic porous membrane for organ-on-a-chip applications</h3>
             <div class="authors">
-              <span class="accent">Nam Than</span> & Hyun Jung Kim 
+              <span class="accent">Nam Than</span>, Hyun Jung Kim 
             </div>
             <!-- Keywords inferred from the title — check/edit before treating as final. -->
             <div class="badge-row pub-keywords">
@@ -708,7 +787,12 @@
                 src="assets/GraphicalAbstract_FabricationPaper.png"
                 alt="Graphical abstract: Advanced fabrication protocol of an elastic porous membrane for organ-on-a-chip applications"
               />
-              <p class="pub-abstract"><!-- Paste the paper's abstract here. --></p>
+              <h4>What Happened</h4>
+              <p>Heat pressing reliably produces thin, open-pore elastic PDMS membranes, while simple visual and wettability checks identify pore and bonding defects before device assembly.</p>
+              <h4>Method / Model</h4>
+              <p>Heat-press molding with pre-patterned wafers, release liners, and elastic cushioning, combined with pore-opening and surface-activation quality control.</p>
+              <h4>Why It Matters</h4>
+              <p>Provides an accessible and reproducible workflow for fabricating mechanically active organ-on-a-chip devices while reducing fabrication failures and wasted devices.</p>
             </div>
           </div>
           <div class="pub" tabindex="0" role="button" aria-expanded="false">
@@ -729,7 +813,7 @@
               injury by alleviating oxidative stress in a human gut-on-a-chip
             </h3>
             <div class="authors">
-              <span class="accent">Nam Than</span>, Tadanori Mammoto, Donald E. Ingber<sup class="cocorr" title="Co-correspondence">+</sup> &amp; Hyun Jung Kim<sup class="cocorr" title="Co-correspondence">+</sup>
+              <span class="accent">Nam Than</span>, Tadanori Mammoto, Donald E. Ingber<sup class="cocorr" title="Co-correspondence">+</sup>, Hyun Jung Kim<sup class="cocorr" title="Co-correspondence">+</sup>
             </div>
             <!-- Keywords inferred from the title — check/edit before treating as final. -->
             <div class="badge-row pub-keywords">
@@ -743,7 +827,12 @@
                 src="assets/GraphicalAbstract_RadiationPaper.png"
                 alt="Graphical abstract: Probiotic intervention mitigates radiation-induced intestinal injury by alleviating oxidative stress in a human gut-on-a-chip"
               />
-              <p class="pub-abstract"><!-- Paste the paper's abstract here. --></p>
+              <h4>What Happened</h4>
+              <p>Radiation-damaged culture medium drives oxidative stress and intestinal epithelial injury, while probiotic treatment suppresses ROS and preserves epithelial microarchitecture without directly preventing radiation-induced DNA damage.</p>
+              <h4>Method / Model</h4>
+              <p>A human gut-on-a-chip exposed to 8 Gy gamma radiation, with epithelial cells and culture medium irradiated separately or together, followed by probiotic intervention to distinguish direct radiation damage from medium-mediated oxidative injury.</p>
+              <h4>Why It Matters</h4>
+              <p>Reveals extracellular, radiation-induced oxidative stress as a major contributor to intestinal injury and supports probiotics as a potential live biotherapeutic countermeasure for GI acute radiation syndrome.</p>
             </div>
           </div>
           <div class="pub" tabindex="0" role="button" aria-expanded="false">
@@ -764,7 +853,7 @@
               profibrotic remodeling in a physiodynamic human gut-on-a-chip
             </h3>
             <div class="authors">
-              Soyoun Min, <span class="accent">Nam Than</span>, Yong Cheol Shin, Elif G. Ertugral, Chandrasekhar R. Kothapalli, Olumuyiwa Awoniyi & Hyun Jung Kim
+              Soyoun Min, <span class="accent">Nam Than</span>, Yong Cheol Shin, Elif G. Ertugral, Chandrasekhar R. Kothapalli, Olumuyiwa Awoniyi, Hyun Jung Kim
             </div>
             <!-- Keywords inferred from the title — check/edit before treating as final. -->
             <div class="badge-row pub-keywords">
@@ -773,8 +862,13 @@
               <span class="badge badge-gray"><span class="badge-label">Mechanobiology</span></span>
             </div>
             <div class="pub-details">
-              <p class="pub-abstract"><!-- Paste the paper's abstract here. --></p>
               <!-- Graphical abstract (add later): <img class="pub-figure" src="..." alt="Graphical abstract"> -->
+              <h4>What Happened</h4>
+              <p>Fluid shear stress, but not mechanical strain alone, determines fibroblast fate: normal fibroblasts undergo injury and apoptosis, while inflammation-associated fibroblasts resist shear and adopt profibrotic phenotypes. An intact epithelial barrier protects fibroblasts from this shear-induced remodeling.</p>
+              <h4>Method / Model</h4>
+              <p>A physiodynamic human gut-on-a-chip independently controls fluid shear stress and cyclic mechanical strain while modeling healthy versus inflammation-associated fibroblasts under intact or impaired epithelial barriers.</p>
+              <h4>Why It Matters</h4>
+              <p>Reveals fluid shear stress as a previously underappreciated driver of early intestinal fibrosis and epithelial barrier integrity as a biomechanical safeguard against pathological fibroblast remodeling.</p>
             </div>
           </div>
           <div class="pub" tabindex="0" role="button" aria-expanded="false">
@@ -794,21 +888,22 @@
                 ><span class="badge-label">DOI ↗</span></a
               >
             </div>
-            <h3>
-              Bioengineered human gut-on-a-chip for advancing non-clinical
-              pharmaco-toxicology
-            </h3>
-            <div class="authors">
-              Yong Cheol Shin, <span class="accent">Nam Than</span>, Soo Jin Park & Hyun Jung Kim
-            </div>
+            <h3> Bioengineered human gut-on-a-chip for advancing non-clinical pharmaco-toxicology </h3>
+            <div class="authors"> Yong Cheol Shin, <span class="accent">Nam Than</span>, Soo Jin Park, Hyun Jung Kim </div>
             <!-- Keywords inferred from the title — check/edit before treating as final. -->
             <div class="badge-row pub-keywords">
               <span class="badge badge-gray"><span class="badge-label">Gut-on-a-Chip</span></span>
               <span class="badge badge-gray"><span class="badge-label">Pharmaco-toxicology</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Review</span></span>
             </div>
             <div class="pub-details">
-              <p class="pub-abstract"><!-- Paste the paper's abstract here. --></p>
               <!-- Graphical abstract (add later): <img class="pub-figure" src="..." alt="Graphical abstract"> -->
+              <h4>What We Synthesized</h4>
+              <p>Gut-on-a-chip technologies can recreate key features of the human intestinal microenvironment, including luminal flow, mechanical motion, oxygen gradients, and live host–microbiome interactions, while enabling controlled investigation of how these</p>
+              <h4>Scope / Focus</h4>
+              <p>We review advances in human gut-on-a-chip models for studying the reciprocal interactions among drugs, the intestinal host, and the gut microbiome, with emphasis on drug metabolism and toxicity.</p>
+              <h4>Why It Matters</h4>
+              <p>Gut-on-a-chip platforms could bridge the translational gap between conventional non-clinical testing and human trials by providing more physiologically relevant and potentially more predictive models of drug response.</p>
             </div>
           </div>
           <div class="pub" tabindex="0" role="button" aria-expanded="false">
@@ -828,185 +923,382 @@
             <div class="authors">
               Yong Cheol Shin<sup class="cofirst" title="Equal Contribution">*</sup>, <span class="accent">Nam Than<sup class="cofirst" title="Equal Contribution">*</sup></span>, Soyoun Min, Woojung Shin<sup class="cocorr" title="Co-correspondence">+</sup> &amp; Hyun Jung Kim<sup class="cocorr" title="Co-correspondence">+</sup>
             </div>
-            <!-- Keywords inferred from the title — check/edit before treating as final. -->
             <div class="badge-row pub-keywords">
-              <span class="badge badge-gray"><span class="badge-label">Organs-on-Chips</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Organ-on-a-Chip</span></span>
               <span class="badge badge-gray"><span class="badge-label">Microbiome</span></span>
               <span class="badge badge-gray"><span class="badge-label">Review</span></span>
             </div>
             <div class="pub-details">
-              <p class="pub-abstract"><!-- Paste the paper's abstract here. --></p>
               <!-- Graphical abstract (add later): <img class="pub-figure" src="..." alt="Graphical abstract"> -->
+              <h4>What We Synthesized</h4>
+              <p>Organ-on-a-chip platforms can recreate dynamic host–microbiome interfaces by combining human tissues with living microbes under controlled biochemical and physical microenvironments.</p>
+              <h4>Scope / Focus</h4>
+              <p>We highlighted organ-on-a-chip strategies for modeling host–microbiome interactions across multiple in vitro systems, highlighting approaches to control microbial culture, oxygen gradients, tissue interfaces, and physiologically relevant microenvironments.</p>
+              <h4>Why It Matters</h4>
+              <p>These platforms enable mechanistic investigation of human–microbiome interactions that are difficult to isolate in animal or conventional culture models, creating opportunities to study microbiome-driven disease and develop microbiome-targeted therapies.</p>
+            </div>
+          </div>
+          <div class="pub" tabindex="0" role="button" aria-expanded="false">
+            <div class="badge-row">
+              <span class="badge badge-teal"><span class="badge-label">2023</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Published</span></span>
+              <span class="badge badge-amber badge-full"><span class="badge-label">Scientific Reports</span></span>
+              <a
+                class="badge badge-white"
+                href="https://doi.org/10.1038/s41598-022-27300-w"
+                target="_blank"
+                rel="noopener"
+                ><span class="badge-label">DOI ↗</span></a
+              >
+            </div>
+            <h3>Live probiotic bacteria administered in a pathomimetic Leaky Gut Chip ameliorate impaired epithelial barrier and mucosal inflammation</h3>
+            <div class="authors">
+              Soyoun Min<sup class="cofirst" title="Equal Contribution">*</sup>, <span class="accent">Nam Than<sup class="cofirst" title="Equal Contribution">*</sup></span>, Yong Cheol Shin, Grace Hu, Woojung Shin, Yoko M. Ambrosini, Hyun Jung Kim
+            </div>
+            <div class="badge-row pub-keywords">
+              <span class="badge badge-gray"><span class="badge-label">Gut-on-a-Chip</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Probiotics</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Leaky Gut Syndrome</span></span>
+            </div>
+            <div class="pub-details">
+              <!-- Graphical abstract (add later): <img class="pub-figure" src="..." alt="Graphical abstract"> -->
+              <h4>What We Synthesized</h4>
+              <p>Live probiotics (LGG or VSL#3) colonize the damaged intestinal mucosa and restore barrier function, tight-junction organization, and mucus production while suppressing inflammatory signaling and cytokine secretion.</p>
+              <h4>Scope / Focus</h4>
+              <p>A pathomimetic human Leaky Gut Chip uses TNF-α and IL-1β to induce persistent epithelial barrier dysfunction and inflammation under physiological flow, cyclic deformation, and an oxygen gradient, followed by live probiotic co-culture.</p>
+              <h4>Why It Matters</h4>
+              <p>Demonstrates that live probiotics can actively reverse an established dysfunctional intestinal barrier—not merely prevent damage—and establishes the Gut Chip as a platform for mechanistic testing of live biotherapeutic products.</p>
+            </div>
+          </div>
+          <div class="pub" tabindex="0" role="button" aria-expanded="false">
+            <div class="badge-row">
+              <span class="badge badge-teal"><span class="badge-label">2022</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Published</span></span>
+              <span class="badge badge-amber badge-full"><span class="badge-label">PloS One</span></span>
+              <a
+                class="badge badge-white"
+                href="https://doi.org/10.1371/journal.pone.0275517"
+                target="_blank"
+                rel="noopener"
+                ><span class="badge-label">DOI ↗</span></a
+              >
+            </div>
+            <h3>Quantitation of ethanol in UTI assay for volatile organic compound detection by electronic nose using the validated headspace GC-MS method</h3>
+            <div class="authors">
+              <span class="accent">Nam Than<sup class="cofirst" title="Equal Contribution">*</sup></span>, Zamri Chik<sup class="cofirst" title="Equal Contribution">*</sup>,  Amy Bowers, Luisa Bozano, Aminat Adebiyi
+            </div>
+            <div class="badge-row pub-keywords">
+              <span class="badge badge-gray"><span class="badge-label">Electronic Nose</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Urinary Tract Infection</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Artificial Neural Network</span></span>
+            </div>
+            <div class="pub-details">
+              <!-- Graphical abstract (add later): <img class="pub-figure" src="..." alt="Graphical abstract"> -->
+              <h4>What Happened</h4>
+              <p>Uropathogenic and nonpathogenic E. coli produce distinguishable ethanol levels and VOC fingerprints, but repeated e-nose measurements progressively alter the sample: ethanol drops by >15% within 30 minutes, reducing classification performance when later measurements are included.</p>
+              <h4>Method / Model</h4>
+              <p>A validated headspace GC-MS method quantifies ethanol in E. coli-inoculated urine alongside a six-sensor electronic nose and artificial-neural-network classification of VOC fingerprints.</p>
+              <h4>Why It Matters</h4>
+              <p>Establishes analytical quality control for e-nose training data, showing that sample stability and measurement timing must be controlled to develop reliable VOC-based, point-of-care UTI diagnostics.</p>
             </div>
           </div>
         </div>
       </section>
       <section id="awards">
-        <h2 class="section-heading">Achievements &amp; Recognitions</h2>
+        <h2 class="section-label">Achievements</h2>
         <div class="timeline">
           <div>
-            <h3>Awards &amp; Fellowships</h3>
+            <h3>Awards &amp; Honors</h3>
             <div id="awardsList">
               <div class="item">
-                <div class="badge-row">
-                  <span class="badge badge-teal"><span class="badge-label">07/2026 – 12/2026</span></span>
+                <h4>Engineering Foundation Endowed Fellowship <span class="badge badge-gray"><span class="badge-label">UT Austin</span></span> </h4>
+                <h5>Graduate Presidential Scholarship</h5> 
+                <div class="badge-row">  
+                  <span class="badge badge-teal"><span class="badge-label">2026</span></span>
                   <span class="badge badge-amber"><span class="badge-label">Scholarship</span></span>
-                  <span class="badge badge-gray"><span class="badge-label">UT Austin</span></span>
                 </div>
-                <h4>Engineering Foundation Endowed Graduate Presidential Scholarship</h4>
+                <h5>Graduate Fellowship</h5> 
+                <div class="badge-row">  
+                  <span class="badge badge-teal"><span class="badge-label">2020</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Fellowship</span></span>
+                </div>
               </div>
               <div class="item">
-                <div class="badge-row">
-                  <span class="badge badge-teal"><span class="badge-label">12/2024</span></span>
-                  <span class="badge badge-amber"><span class="badge-label">Award</span></span>
-                  <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic Research</span></span>
-                </div>
-                <h4>Mary B. Stark Travel Award</h4>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h3>Invention Disclosures</h3>
-            <!-- Placeholder items only — do NOT replace with real titles
-                 until you're actually cleared to make them public; pending/
-                 unfiled disclosures are often confidential. Remove
-                 data-placeholder from real, cleared entries so they count
-                 toward the stat at the top of the page. -->
-            <div id="disclosuresList">
-              <div class="item">
-                <div class="badge-row">
-                  <span class="badge badge-teal"><span class="badge-label">2025</span></span>
-                  <span class="badge badge-amber"><span class="badge-label">IDF 2025-176</span></span>
-                  <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic Innovations</span></span>
-                </div>
-                <h4>Robust and Scalable Manufacturing of Ultrathin Porous PDMS Membranes</h4>
-              </div>
-              <div class="item" data-placeholder>
+                <h4>Travel Awards </h4>
+                <h5>Mary B. Stark Travel Award <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h5>
                 <div class="badge-row">
                   <span class="badge badge-teal"><span class="badge-label">2024</span></span>
-                  <span class="badge badge-amber"><span class="badge-label">[Disclosure ID]</span></span>
-                  <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic Innovations</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Award</span></span>
                 </div>
-                <h4>[Invention title]</h4>
+                <h5>Mary B. Stark Travel Award <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h5>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2023</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Award</span></span>
+                </div>
+                <h5>Graduate Student Virtual Event Travel Awards <span class="badge badge-gray badge-full"><span class="badge-label">San Jose State University</span></span></h5>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2020</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Award</span></span>
+                </div>
               </div>
+              <div class="item">
+                <h4>Gut Microbiome, Yogurt and Probiotics Fellowship <span class="badge badge-gray badge-full"><span class="badge-label">Danone North America</span></span></h4>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2023-2024</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Fellowship</span></span>
+                </div>
+                <h5>Dean's Prestigious Fellowship Supplement <span class="badge badge-gray"><span class="badge-label">UT Austin</span></span></h5>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2024</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Supplement</span></span>
+                </div>
+              </div>
+              <div class="item">
+                <h4>William Lower Award <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2023</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Award</span></span>
+                </div>
+              </div>       
+              <div class="item">
+                <h4>Professional Development Awards <span class="badge badge-gray"><span class="badge-label">UT Austin</span></span></h4>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2020</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Award</span></span>
+                </div>
+              </div>  
             </div>
           </div>
-        </div>
-      </section>
-      <section id="background">
-        <h2 class="section-heading">Education &amp; Experience</h2>
-        <div class="timeline">
           <div>
-            <h3>Education</h3>
-            <div class="item">
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2020 — Present</span></span>
-                <span class="badge badge-gray"><span class="badge-label">The University of Texas at Austin</span></span>
+            <h3>Invention & Patents</h3>
+            <div id="disclosuresList">
+              <div class="item">
+                <h4>Robust and Scalable Manufacturing of Ultrathin Porous PDMS Membranes <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2025</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Disclosure</span></span>
+                </div>
               </div>
-              <h4>PhD in Biomedical Engineering</h4>
-            </div>
-            <div class="item">
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2018 — 2020</span></span>
-                <span class="badge badge-gray"><span class="badge-label">San Jose State University</span></span>
+              <div class="item">
+                <h4>Multiplex Organ-on-a-Chip (EXORM) <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2025</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Provisional Patent</span></span>
+                </div>
+                <h5>A Multiplex Organ-on-a-Chip</h5>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2022</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Disclosure</span></span>
+                </div>
               </div>
-              <h4>MS in Biomedical Engineering</h4>
-            </div>
-            <div class="item">
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2012 — 2016</span></span>
-                <span class="badge badge-gray"><span class="badge-label">University of California, Davis</span></span>
+              <div class="item">
+                <h4>Design and creation of a Leaky Gut chip model for validating probiotic effects <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2024</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Disclosure</span></span>
+                </div>
               </div>
-              <h4>BS in Biochemistry and Molecular Biology</h4>
-            </div>
-          </div>
-          <div>
-            <h3>Experience</h3>
-            <div class="item">
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2022 — Present</span></span>
-                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span>
-              </div>
-              <h4>Predoctoral Research Fellow, BioME Lab</h4>
-            </div>
-            <div class="item">
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2020 — 2022</span></span>
-                <span class="badge badge-gray"><span class="badge-label">The University of Texas at Austin</span></span>
-              </div>
-              <h4>Graduate Research Assistant</h4>
-            </div>
-            <div class="item">
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2018 — 2020</span></span>
-                <span class="badge badge-gray"><span class="badge-label">IBM Almaden Research Center</span></span>
-              </div>
-              <h4>Research Intern</h4>
             </div>
           </div>
         </div>
       </section>
       <section id="activities">
-        <h2 class="section-heading">Presentations &amp; Mentoring</h2>
-        <div class="grid activities-grid">
-          <div class="panel">
-            <h3>Conference presentations</h3>
-            <!-- Placeholder examples — replace, then remove data-placeholder. -->
-            <ul class="simple-list" id="presentationsList">
-              <li data-placeholder>
-                <div class="li-col">
-                  <div>2025</div>
-                  <span class="badge badge-gray"><span class="badge-label">Talk</span></span>
-                </div>
-                <div class="li-col">
-                  <div>[Conference name]</div>
-                  <span class="badge badge-gray"><span class="badge-label">[Presentation title]</span></span>
-                </div>
-              </li>
-              <li data-placeholder>
-                <div class="li-col">
-                  <div>2024</div>
-                  <span class="badge badge-gray"><span class="badge-label">Poster</span></span>
-                </div>
-                <div class="li-col">
-                  <div>[Conference name]</div>
-                  <span class="badge badge-gray"><span class="badge-label">[Presentation title]</span></span>
-                </div>
-              </li>
-            </ul>
+        <h2 class="section-label">Activities</h2>
+        <div class="timeline">
+          <div id="presentationsList">
+            <h3>Presentations</h3>
+            <div class="item">
+              <h4>Cold Spring Harbor Laboratory Meetings: Bioengineered Tissue Systems & Models <span class="badge badge-gray"><span class="badge-label">Conference</span></span></h4>
+              <h5>FMT-qualified microbiota mitigates epithelial oxidative stress and inflammation in a patient-derived Crohn’s disease-on-a-chip</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2025</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Poster</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Digestive Disease Week <span class="badge badge-gray"><span class="badge-label">Conference</span></span></h4>
+              <h5>Gut Microbiota Directly Controls Epithelial Oxidative Stress and Inflammatory Responses in a Patient-specific Crohn’s Disease-on-a-chip</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2023</span></span>
+                <span class="badge badge-amber badge-full"><span class="badge-label">Poster of Distinction</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>FASEB Gastrointestinal Tract XXI: Life, Death, and Disease <span class="badge badge-gray"><span class="badge-label">Conference</span></span></h4>
+              <h5>Gut Microbiota Directly Controls Epithelial Oxidative Stress and Inflammatory Responses in a Patient-specific Crohn’s Disease-on-a-chip</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2025</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Flash Talk</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Inflammation & Immunity Trainee Seminar Series <span class="badge badge-gray"><span class="badge-label">Department Seminar</span></span></h4>
+              <h5> Probiotic Intervention Mitigates Radiation-Induced Intestinal Injury by Alleviating Oxidative Stress in a Human Gut-on-a-chip</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2026</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
+              </div>
+              <h5>FMT-qualified microbiota suppresses epithelial oxidative stress and pathogenesis in a patient-derived Crohn’s disease-on-a-chip</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2025</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
+              </div>
+              <h5>Modeling host-microbiome interactions in organ-on-a-chip platforms.</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
+              </div>
+              <h5>Gut Microbiota Orchestrates Pathological Signature in a Patient-specific Crohn’s Disease-on-a-chip</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2023</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Biomedical Engineering Society Annual Meeting <span class="badge badge-gray"><span class="badge-label">Conference</span></span></h4>
+              <h5>Regenerative Effects of Live Probiotics on Mucosal Barrier and Inflammation in a Microengineered Pathomimetic Leaky Gut Chip</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2023</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
+              </div>
+              <h5>COMSOL Simulation and Analysis of the Effects of Gap Size Variation with a Constant Row Shift Fraction on Separation Resolution in Microfluidic Deterministic Lateral Displacement</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2020</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Poster</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>The Society for Laboratory Automation and Screening <span class="badge badge-gray"><span class="badge-label">Conference</span></span></h4>
+              <h5>An Electronic Nose to Differentiate Bacterial Species Based on Their Metabolic Volatile Organic Compounds</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2019</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Poster</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>American Society for Microbiology <span class="badge badge-gray"><span class="badge-label">Conference</span></span></h4>
+              <h5>In vitro Predictive Model for Urine Infected with Escherichia coli</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2019</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Poster</span></span>
+              </div>
+            </div>
+            
           </div>
-          <div class="panel">
-            <h3>Mentorship</h3>
-            <!-- Placeholder examples — replace, then remove data-placeholder. -->
-            <ul class="simple-list" id="menteesList">
-              <li>
-                <div class="li-col">
-                  <div>2026 — Present</div>
-                  <span class="badge badge-gray"><span class="badge-label">Case Western Reserve University</span></span>
-                </div>
-                <div class="li-col">
-                  <div>Jose Torrado-Rivera</div>
-                  <span class="badge badge-gray"><span class="badge-label">BioME Lab Researcher</span></span>
-                </div>
-              </li>
-              <li data-placeholder>
-                <div class="li-col">
-                  <div>2022 — 2023</div>
-                  <span class="badge badge-gray"><span class="badge-label">[Trainee affiliation]</span></span>
-                </div>
-                <div class="li-col">
-                  <div>[Trainee name]</div>
-                  <span class="badge badge-gray"><span class="badge-label">[Current position]</span></span>
-                </div>
-              </li>
-            </ul>
+          <div>
+            <h3>Outreach</h3>        
+            <div class="item">
+              <h4>Trainee Research Association <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+              <h5>Communication Committee</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2026 — Present</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Member</span></span>
+              </div>
+              <h5>Communication Committee</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024 — 2026</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Graduate Co-chair</span></span>
+              </div>
+              <h5>Buddy Mentor Program</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024 — 2026</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Graduate Mentor</span></span>
+              </div>
+            </div>   
+            <div class="item">
+              <h4>Research and Education Training Center <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+              <h5>Summer Student Poster Day </h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Judge</span></span>
+              </div>
+              <h5>Northeastern Ohio Science and Engineering Fair</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2023</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Special Award Judge</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Synopsys Championship Science Fair <span class="badge badge-gray badge-full"><span class="badge-label">Synopsys Outreach Foundation</span></span></h4>
+              <h5>Virtual Event </h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2020</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Category Judge</span></span>
+              </div>
+            </div> 
+          </div> 
+        </div>
+      </section>
+      <section id="background">
+        <h2 class="section-label">Background</h2>
+        <div class="timeline">
+          <div>
+            <h3>Education</h3>
+            <div class="item">
+              <h4>Doctor of Philosophy <span class="badge badge-gray badge-full"><span class="badge-label">The University of Texas at Austin</span></span></h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2020 — Present</span></span>
+                <span class="badge badge-amber badge-full"><span class="badge-label">Biomedical Engineering</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Master of Science <span class="badge badge-gray badge-full"><span class="badge-label">San Jose State University</span></span></h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2018 — 2020</span></span>
+                <span class="badge badge-amber badge-full"><span class="badge-label">Biomedical Engineering</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Bachelor of Science <span class="badge badge-gray badge-full"><span class="badge-label">University of California, Davis</span></span></h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2012 — 2016</span></span>
+                <span class="badge badge-amber badge-full"><span class="badge-label">Biochemistry and Molecular Biology</span></span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3>Experience</h3>
+            <div class="item">
+              <h4>Predoctoral Research Fellow <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2022 — Present</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Academia</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Graduate Research Assistant <span class="badge badge-gray badge-full"><span class="badge-label">The University of Texas at Austin</span></span></h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2020 — 2022</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Academia</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Research Intern <span class="badge badge-gray badge-full"><span class="badge-label">IBM Almaden Research Center</span></span></h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2018 — 2020</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Industry</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Instructional Student Assistant <span class="badge badge-gray badge-full"><span class="badge-label">San Jose State University</span></span></h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2018 — 2020</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Academia</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Formulation Lab Technician III <span class="badge badge-gray badge-full"><span class="badge-label">Teknova</span></span></h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2016 — 2017</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Industry</span></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section id="contact" class="contact">
-        <h2 class="section-heading">Connect</h2>
+        <h2 class="section-label">Connect</h2>
         <p>Feel free to reach out for research, collaboration, or ideas!</p>
-        <!-- LinkedIn href below is a placeholder — replace with your real profile URL. -->
         <div class="contact-links">
           <a href="mailto:thann2@ccf.org">Email</a
           ><a href="assets/CV_NamThan.pdf" download="Nam-Than-CV.pdf">CV</a
@@ -1138,8 +1430,9 @@
       })();
       (function () {
         // Publication cards: click the card background to expand the
-        // abstract/graphical-abstract panel. Clicks on badges or links
-        // inside the card are left alone so they keep their own behavior.
+        // graphical-abstract / What Happened / Method / Why It Matters
+        // panel. Clicks on badges or links inside the card are left alone
+        // so they keep their own behavior.
         function toggle(pub) {
           var open = pub.classList.toggle("is-open");
           pub.setAttribute("aria-expanded", open);
@@ -1157,6 +1450,92 @@
             }
           });
         });
+      })();
+      (function () {
+        // "Years of experience" isn't a DOM count like the other four stats
+        // — it's computed from today's date minus a fixed start year. The
+        // trailing "+" is deliberate: we only know the start YEAR (2018),
+        // not the exact month, so this is a floor, not an exact count.
+        var el = document.getElementById("yearsExp");
+        if (!el) return;
+        el.textContent = (new Date().getFullYear() - 2018) + "+";
+      })();
+      (function () {
+        // Research Focus cards: image files aren't uploaded yet. Hide the
+        // <img> instead of showing a broken-image icon until each
+        // assets/focus-*.png actually exists.
+        document.querySelectorAll(".card-figure").forEach(function (img) {
+          img.addEventListener("error", function () {
+            img.style.display = "none";
+          });
+        });
+      })();
+      (function () {
+        // Equation block: click anywhere on it to toggle the plain-English
+        // intro paragraph open/closed, same pattern as the pub cards above.
+        var eq = document.querySelector(".research-equation");
+        var intro = document.getElementById("equationIntro");
+        if (!eq || !intro) return;
+        function toggle() {
+          var open = intro.classList.toggle("is-open");
+          eq.setAttribute("aria-expanded", open);
+        }
+        eq.addEventListener("click", toggle);
+        eq.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggle();
+          }
+        });
+      })();
+      (function () {
+        // Keyword filter row above the publication grid: collect every
+        // unique tag from each card's .pub-keywords badges, render them as
+        // clickable pills (mirroring briefings.html's topic filters), and
+        // show/hide cards on click. Single-select, with "All" resetting.
+        var pubs = Array.prototype.slice.call(
+          document.querySelectorAll(".pub"),
+        );
+        var bar = document.getElementById("pubFilters");
+        if (!bar || !pubs.length) return;
+        function keywordsOf(pub) {
+          return Array.prototype.map.call(
+            pub.querySelectorAll(".pub-keywords .badge-label"),
+            function (b) {
+              return b.textContent.trim();
+            },
+          );
+        }
+        var tags = new Set();
+        pubs.forEach(function (pub) {
+          keywordsOf(pub).forEach(function (t) {
+            tags.add(t);
+          });
+        });
+        var active = "All";
+        function apply() {
+          pubs.forEach(function (pub) {
+            var show = active === "All" || keywordsOf(pub).indexOf(active) !== -1;
+            pub.style.display = show ? "" : "none";
+          });
+        }
+        function renderFilters() {
+          bar.innerHTML = "";
+          ["All"].concat(Array.from(tags).sort()).forEach(function (tag) {
+            var btn = document.createElement("button");
+            btn.type = "button";
+            btn.className = "filter" + (tag === active ? " active" : "");
+            btn.textContent = tag;
+            btn.addEventListener("click", function () {
+              active = tag;
+              renderFilters();
+              apply();
+            });
+            bar.appendChild(btn);
+          });
+        }
+        renderFilters();
+        apply();
       })();
     </script>
     <script src="theme.js"></script>
