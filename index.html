@@ -180,7 +180,7 @@
         color: var(--accent);
       }
       .label {
-        color: var(--dim);
+        color: var(--muted);
         font-size: 12px;
       }
       .focus {
@@ -206,7 +206,12 @@
         padding: 96px 0 10px;
       }
       .brief-card {
+        display: block;
+        text-decoration: none;
+        color: inherit;
         border: 1px solid rgba(45, 212, 191, 0.28);
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
         background: linear-gradient(
           135deg,
           rgba(45, 212, 191, 0.08),
@@ -214,6 +219,15 @@
         );
         border-radius: 10px;
         padding: 16px 24px;
+        transition:
+          border-color 0.2s,
+          background 0.2s;
+      }
+      .brief-card:hover,
+      .brief-card:focus-visible {
+        border-left-color: var(--accent);
+        border-right-color: var(--accent);
+        background: var(--bg2);
       }
       .brief-card p {
         color: var(--muted);
@@ -231,7 +245,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
-        margin-bottom: 12px;
+        margin-bottom: 16px;
       }
       .badge {
         position: relative;
@@ -276,6 +290,12 @@
         color: var(--text);
         border: 1px solid var(--line2);
       }
+      /* Modifier: show the label in full, never truncated (e.g. journal names). */
+      .badge-full .badge-label {
+        max-width: none;
+        overflow: visible;
+        text-overflow: clip;
+      }
       .badge-tip {
         position: absolute;
         top: calc(100% + 6px);
@@ -304,19 +324,34 @@
       .pubs {
         display: flex;
         flex-direction: column;
-        gap: 1px;
-        background: var(--line);
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        overflow: hidden;
+        gap: 14px;
       }
       .pub {
         background: var(--card);
-        padding: 24px 28px;
+        padding: 28px 32px;
+        border: 1px solid var(--line);
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-radius: 10px;
+        cursor: pointer;
+        transition:
+          border-color 0.2s,
+          background 0.2s,
+          box-shadow 0.2s,
+          transform 0.2s;
+      }
+      .pub:hover,
+      .pub:focus-visible {
+        background: var(--bg2);
+        border-left-color: var(--accent);
+        border-right-color: var(--accent);
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+        transform: translateY(-2px);
       }
       .pub h3 {
-        font-size: 16px;
-        margin: 0 0 7px;
+        font: 500 19px/1.4 var(--serif);
+        color: var(--text);
+        margin: 0 0 10px;
       }
       .authors {
         color: var(--muted);
@@ -333,6 +368,38 @@
       }
       .cofirst {
         color: var(--accent);
+      }
+      .pub-keywords {
+        margin: 12px 0 0;
+      }
+      .pub-keywords .badge-label {
+        font-size: 10px;
+        padding: 3px 9px;
+      }
+      .pub-details {
+        max-height: 0;
+        overflow: hidden;
+        text-align: left;
+        transition:
+          max-height 0.35s ease,
+          margin-top 0.35s ease;
+      }
+      .pub.is-open .pub-details {
+        max-height: 800px;
+        margin-top: 18px;
+      }
+      .pub-abstract {
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.75;
+        margin: 0;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+      }
+      .pub-abstract:empty:before {
+        content: "Add this paper's abstract here.";
+        color: var(--dim);
+        font-style: italic;
       }
       .timeline {
         display: grid;
@@ -378,10 +445,9 @@
         margin: 0;
       }
       .simple-list li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 6px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 16px;
         padding: 16px 8px;
         border-bottom: 1px solid var(--line);
         color: var(--text);
@@ -389,6 +455,12 @@
       }
       .simple-list li:last-child {
         border-bottom: 0;
+      }
+      .li-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
       }
       .simple-list:empty:before {
         content: "Nothing added yet.";
@@ -438,6 +510,9 @@
         .stats {
           grid-template-columns: 1fr 1fr;
         }
+        .simple-list li {
+          grid-template-columns: 1fr;
+        }
         section {
           padding: 72px 0;
         }
@@ -460,12 +535,18 @@
         <a href="#brief" class="logo">N.<span>Than</span></a>
         <div class="nav-right">
           <ul class="links">
+            <li class="nav-dropdown">
+              <a href="#brief">Home</a>
+              <ul class="dropdown-menu">
+                <li><a href="#research-focus">Research Focus</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#awards">Honors &amp; Awards</a></li>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Connect</a></li>
+              </ul>
+            </li>
             <li><a href="briefings.html">Research Brief</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#awards">Honors &amp; Awards</a></li>
-            <li><a href="#background">Background</a></li>
-            <li><a href="#activities">Activities</a></li>
-            <li><a href="#contact">Connect</a></li>
           </ul>
           <button id="themeToggle" class="theme-toggle" type="button">
             Light mode
@@ -475,17 +556,14 @@
     </nav>
     <main class="wrap">
       <section id="brief">
-        <div class="brief-card">
+        <a class="brief-card" href="briefings.html">
           <p>
             <span class="accent">Daily intelligence</span>: Five-story daily
             briefings plus a weekly gut research shortlist covering
             bioengineering, biotech, microbiome and intestinal disease,
             organ-on-chip, NAMs, regulation, funding and relevant papers.
-            <a class="badge badge-teal" href="briefings.html"
-              ><span class="badge-label">Open briefings →</span></a
-            >
           </p>
-        </div>
+        </a>
       </section>
       <section class="hero">
         <div class="hero-copy">
@@ -520,7 +598,7 @@
               <div class="label">Honors &amp; awards</div>
             </div>
           </div>
-          <div class="section-label">Research Focus</div>
+          <div class="section-label" id="research-focus">Research Focus</div>
           <div class="research-equation">
             <span class="eq-label">My Research Equation</span> =
             <span class="integral">∫</span>(Experimental Biology + CFD +
@@ -588,11 +666,11 @@
              When adding a new entry, default the label to "Pre-print" until
              it's actually accepted/published. -->
         <div class="pubs">
-          <div class="pub">
+          <div class="pub" tabindex="0" role="button" aria-expanded="false">
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2026</span></span>
               <span class="badge badge-gray"><span class="badge-label">Published</span></span>
-              <span class="badge badge-amber"><span class="badge-label">SLAS Technology</span></span>
+              <span class="badge badge-amber badge-full"><span class="badge-label">SLAS Technology</span></span>
               <a
                 class="badge badge-white"
                 href="https://doi.org/10.1016/j.slast.2026.100431"
@@ -606,15 +684,24 @@
               organ-on-a-chip applications
             </h3>
             <div class="authors">
-              Nam Than
-              <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+              <span class="accent">Nam Than</span> & Hyun Jung Kim 
+            </div>
+            <!-- Keywords inferred from the title — check/edit before treating as final. -->
+            <div class="badge-row pub-keywords">
+              <span class="badge badge-gray"><span class="badge-label">Organ-on-a-Chip</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Microfabrication</span></span>
+              <span class="badge badge-gray"><span class="badge-label">PDMS Membrane</span></span>
+            </div>
+            <div class="pub-details">
+              <p class="pub-abstract"><!-- Paste the paper's abstract here. --></p>
+              <!-- Graphical abstract (add later): <img class="pub-figure" src="..." alt="Graphical abstract"> -->
             </div>
           </div>
-          <div class="pub">
+          <div class="pub" tabindex="0" role="button" aria-expanded="false">
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2026</span></span>
-              <span class="badge badge-gray"><span class="badge-label">Published</span></span>
-              <span class="badge badge-amber"><span class="badge-label">Scientific Reports</span></span>
+              <span class="badge badge-gray"><span class="badge-label">In Press</span></span>
+              <span class="badge badge-amber badge-full"><span class="badge-label">Scientific Reports</span></span>
               <a
                 class="badge badge-white"
                 href="https://doi.org/10.1101/2025.08.10.669539"
@@ -628,15 +715,24 @@
               injury by alleviating oxidative stress in a human gut-on-a-chip
             </h3>
             <div class="authors">
-              Nam Than
-              <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+              <span class="accent">Nam Than</span>, Tadanori Mammoto, Donald E. Ingber & Hyun Jung Kim
+            </div>
+            <!-- Keywords inferred from the title — check/edit before treating as final. -->
+            <div class="badge-row pub-keywords">
+              <span class="badge badge-gray"><span class="badge-label">Gut-on-a-Chip</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Probiotics</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Radiation Injury</span></span>
+            </div>
+            <div class="pub-details">
+              <p class="pub-abstract"><!-- Paste the paper's abstract here. --></p>
+              <!-- Graphical abstract (add later): <img class="pub-figure" src="..." alt="Graphical abstract"> -->
             </div>
           </div>
-          <div class="pub">
+          <div class="pub" tabindex="0" role="button" aria-expanded="false">
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2026</span></span>
               <span class="badge badge-gray"><span class="badge-label">Published</span></span>
-              <span class="badge badge-amber"><span class="badge-label">Advanced Science</span></span>
+              <span class="badge badge-amber badge-full"><span class="badge-label">Advanced Science</span></span>
               <a
                 class="badge badge-white"
                 href="https://doi.org/10.1002/advs.202516040"
@@ -650,15 +746,24 @@
               profibrotic remodeling in a physiodynamic human gut-on-a-chip
             </h3>
             <div class="authors">
-              Nam Than
-              <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+              Soyoun Min, <span class="accent">Nam Than</span>, Yong Cheol Shin, Elif G. Ertugral, Chandrasekhar R. Kothapalli, Olumuyiwa Awoniyi & Hyun Jung Kim
+            </div>
+            <!-- Keywords inferred from the title — check/edit before treating as final. -->
+            <div class="badge-row pub-keywords">
+              <span class="badge badge-gray"><span class="badge-label">Gut-on-a-Chip</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Fibrosis</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Mechanobiology</span></span>
+            </div>
+            <div class="pub-details">
+              <p class="pub-abstract"><!-- Paste the paper's abstract here. --></p>
+              <!-- Graphical abstract (add later): <img class="pub-figure" src="..." alt="Graphical abstract"> -->
             </div>
           </div>
-          <div class="pub">
+          <div class="pub" tabindex="0" role="button" aria-expanded="false">
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2024</span></span>
               <span class="badge badge-gray"><span class="badge-label">Published</span></span>
-              <span class="badge badge-amber"
+              <span class="badge badge-amber badge-full"
                 ><span class="badge-label"
                   >Expert Opinion on Drug Metabolism &amp; Toxicology</span
                 ></span
@@ -676,15 +781,23 @@
               pharmaco-toxicology
             </h3>
             <div class="authors">
-              Nam Than
-              <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+              Yong Cheol Shin, <span class="accent">Nam Than</span>, Soo Jin Park & Hyun Jung Kim
+            </div>
+            <!-- Keywords inferred from the title — check/edit before treating as final. -->
+            <div class="badge-row pub-keywords">
+              <span class="badge badge-gray"><span class="badge-label">Gut-on-a-Chip</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Pharmaco-toxicology</span></span>
+            </div>
+            <div class="pub-details">
+              <p class="pub-abstract"><!-- Paste the paper's abstract here. --></p>
+              <!-- Graphical abstract (add later): <img class="pub-figure" src="..." alt="Graphical abstract"> -->
             </div>
           </div>
-          <div class="pub">
+          <div class="pub" tabindex="0" role="button" aria-expanded="false">
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2023</span></span>
               <span class="badge badge-gray"><span class="badge-label">Published</span></span>
-              <span class="badge badge-amber"><span class="badge-label">Nature Reviews Bioengineering</span></span>
+              <span class="badge badge-amber badge-full"><span class="badge-label">Nature Reviews Bioengineering</span></span>
               <a
                 class="badge badge-white"
                 href="https://doi.org/10.1038/s44222-023-00130-9"
@@ -695,8 +808,17 @@
             </div>
             <h3>Modelling host-microbiome interactions in organs-on-chips</h3>
             <div class="authors">
-              Nam Than
-              <!-- e.g.: Author One, <span class="accent">Nam Than</span>, Author Three. Co-first authors: add <sup class="cofirst">*</sup> after each name. -->
+              Yong Cheol Shin<sup class="cofirst">*</sup>, <span class="accent">Nam Than<sup class="cofirst">*</sup></span>, Soyoun Min, Woojung Shin & Hyun Jung Kim
+            </div>
+            <!-- Keywords inferred from the title — check/edit before treating as final. -->
+            <div class="badge-row pub-keywords">
+              <span class="badge badge-gray"><span class="badge-label">Organs-on-Chips</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Microbiome</span></span>
+              <span class="badge badge-gray"><span class="badge-label">Review</span></span>
+            </div>
+            <div class="pub-details">
+              <p class="pub-abstract"><!-- Paste the paper's abstract here. --></p>
+              <!-- Graphical abstract (add later): <img class="pub-figure" src="..." alt="Graphical abstract"> -->
             </div>
           </div>
         </div>
@@ -710,16 +832,24 @@
                counts toward the stat at the top of the page. -->
           <ul class="simple-list" id="awardsList">
             <li data-placeholder>
-              <div>2025</div>
-              <span class="badge badge-teal"><span class="badge-label">Fellowship</span></span>
-              <div>[Award or fellowship title]</div>
-              <span class="badge badge-amber"><span class="badge-label">[Granting institute]</span></span>
+              <div class="li-col">
+                <div>07/2026 – 12/2026</div>
+                <span class="badge badge-gray"><span class="badge-label">SCholarship</span></span>
+              </div>
+              <div class="li-col">
+                <div>Engineering Foundation Endowed Graduate Presidential Scholarship</div>
+                <span class="badge badge-gray"><span class="badge-label">UT Austin</span></span>
+              </div>
             </li>
             <li data-placeholder>
-              <div>2023</div>
-              <span class="badge badge-teal"><span class="badge-label">Award</span></span>
-              <div>[Award or fellowship title]</div>
-              <span class="badge badge-amber"><span class="badge-label">[Granting institute]</span></span>
+              <div class="li-col">
+                <div>12/2024</div>
+                <span class="badge badge-gray"><span class="badge-label">Award</span></span>
+              </div>
+              <div class="li-col">
+                <div>Mary B. Stark Travel Award</div>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic Research</span></span>
+              </div>
             </li>
           </ul>
         </div>
@@ -775,34 +905,50 @@
             <!-- Placeholder examples — replace, then remove data-placeholder. -->
             <ul class="simple-list" id="presentationsList">
               <li data-placeholder>
-                <div>2025</div>
-                <span class="badge badge-teal"><span class="badge-label">Talk</span></span>
-                <div>[Conference name]</div>
-                <span class="badge badge-amber"><span class="badge-label">[Presentation title]</span></span>
+                <div class="li-col">
+                  <div>2025</div>
+                  <span class="badge badge-gray"><span class="badge-label">Talk</span></span>
+                </div>
+                <div class="li-col">
+                  <div>[Conference name]</div>
+                  <span class="badge badge-gray"><span class="badge-label">[Presentation title]</span></span>
+                </div>
               </li>
               <li data-placeholder>
-                <div>2024</div>
-                <span class="badge badge-teal"><span class="badge-label">Poster</span></span>
-                <div>[Conference name]</div>
-                <span class="badge badge-amber"><span class="badge-label">[Presentation title]</span></span>
+                <div class="li-col">
+                  <div>2024</div>
+                  <span class="badge badge-gray"><span class="badge-label">Poster</span></span>
+                </div>
+                <div class="li-col">
+                  <div>[Conference name]</div>
+                  <span class="badge badge-gray"><span class="badge-label">[Presentation title]</span></span>
+                </div>
               </li>
             </ul>
           </div>
           <div class="panel">
-            <h3>Trainees mentored</h3>
+            <h3>Mentorship</h3>
             <!-- Placeholder examples — replace, then remove data-placeholder. -->
             <ul class="simple-list" id="menteesList">
               <li data-placeholder>
-                <div>2023 — 2024</div>
-                <span class="badge badge-teal"><span class="badge-label">[Trainee affiliation]</span></span>
-                <div>[Trainee name]</div>
-                <span class="badge badge-amber"><span class="badge-label">[Current position]</span></span>
+                <div class="li-col">
+                  <div>2026 — Present</div>
+                  <span class="badge badge-gray"><span class="badge-label">Case Western Reserve University</span></span>
+                </div>
+                <div class="li-col">
+                  <div>Jose Torrado-Rivera</div>
+                  <span class="badge badge-gray"><span class="badge-label">BioME Lab Researcher</span></span>
+                </div>
               </li>
               <li data-placeholder>
-                <div>2022 — 2023</div>
-                <span class="badge badge-teal"><span class="badge-label">[Trainee affiliation]</span></span>
-                <div>[Trainee name]</div>
-                <span class="badge badge-amber"><span class="badge-label">[Current position]</span></span>
+                <div class="li-col">
+                  <div>2022 — 2023</div>
+                  <span class="badge badge-gray"><span class="badge-label">[Trainee affiliation]</span></span>
+                </div>
+                <div class="li-col">
+                  <div>[Trainee name]</div>
+                  <span class="badge badge-gray"><span class="badge-label">[Current position]</span></span>
+                </div>
               </li>
             </ul>
           </div>
@@ -814,16 +960,24 @@
                  data-placeholder once an entry is real and public. -->
             <ul class="simple-list" id="disclosuresList">
               <li data-placeholder>
-                <div>2025</div>
-                <span class="badge badge-teal"><span class="badge-label">Cleveland Clinic Innovations</span></span>
-                <div>[Invention title]</div>
-                <span class="badge badge-amber"><span class="badge-label">[Disclosure ID]</span></span>
+                <div class="li-col">
+                  <div>2025</div>
+                  <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic Innovations</span></span>
+                </div>
+                <div class="li-col">
+                  <div>Robust and Scalable Manufacturing of Ultrathin Porous PDMS Membranes</div>
+                  <span class="badge badge-gray"><span class="badge-label">IDF 2025-176</span></span>
+                </div>
               </li>
               <li data-placeholder>
-                <div>2024</div>
-                <span class="badge badge-teal"><span class="badge-label">Cleveland Clinic Innovations</span></span>
-                <div>[Invention title]</div>
-                <span class="badge badge-amber"><span class="badge-label">[Disclosure ID]</span></span>
+                <div class="li-col">
+                  <div>2024</div>
+                  <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic Innovations</span></span>
+                </div>
+                <div class="li-col">
+                  <div>[Invention title]</div>
+                  <span class="badge badge-gray"><span class="badge-label">[Disclosure ID]</span></span>
+                </div>
               </li>
             </ul>
           </div>
@@ -834,9 +988,18 @@
         <h2 class="section-title" style="margin-left: auto; margin-right: auto">
           Research, collaboration, or ideas
         </h2>
+        <p>
+          Feel free to reach out for research, collaboration, or ideas!
+        </p>
+        <!-- LinkedIn href below is a placeholder — replace with your real profile URL. -->
         <div class="contact-links">
           <a href="mailto:thann2@ccf.org">Email</a
           ><a href="cv.pdf" download="Nam-Than-CV.pdf">CV</a
+          ><a
+            href="https://www.linkedin.com/in/namtthan/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
           ><a
             href="https://orcid.org/0000-0002-1947-6530"
             target="_blank"
@@ -956,6 +1119,28 @@
             e.preventDefault();
             badge.classList.toggle("tip-open");
           }
+        });
+      })();
+      (function () {
+        // Publication cards: click the card background to expand the
+        // abstract/graphical-abstract panel. Clicks on badges or links
+        // inside the card are left alone so they keep their own behavior.
+        function toggle(pub) {
+          var open = pub.classList.toggle("is-open");
+          pub.setAttribute("aria-expanded", open);
+        }
+        document.querySelectorAll(".pub").forEach(function (pub) {
+          pub.addEventListener("click", function (e) {
+            if (e.target.closest(".badge, a")) return;
+            toggle(pub);
+          });
+          pub.addEventListener("keydown", function (e) {
+            if (e.target !== pub) return;
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              toggle(pub);
+            }
+          });
         });
       })();
     </script>

@@ -8,7 +8,7 @@
   --line2: rgba(120, 200, 190, 0.3);
   --text: #e8edec;
   --muted: #9caaa8;
-  --dim: #5e6c6a;
+  --dim: #7c8b89; /* was #5e6c6a — that failed WCAG AA (~3.6:1) against --bg */
   --accent: #2dd4bf;
   --amber: #e0a63a;
   --red: #ef6b66;
@@ -103,6 +103,47 @@ nav {
 .links a.active {
   color: var(--accent);
   font-weight: 700;
+}
+/* "Home" nav item: clicking the label navigates to the top of index.html;
+   hovering/focusing it reveals a dropdown of that page's sections. */
+.nav-dropdown {
+  position: relative;
+}
+.nav-dropdown > a:after {
+  content: " ▾";
+  font-size: 10px;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  min-width: 190px;
+  background: var(--card);
+  border: 1px solid var(--line2);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  display: none;
+  flex-direction: column;
+  z-index: 110;
+}
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+  display: flex;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 9px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.dropdown-menu a:hover,
+.dropdown-menu a.active {
+  background: var(--bg2);
 }
 .theme-toggle {
   border: 1px solid var(--line2);
