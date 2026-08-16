@@ -100,15 +100,64 @@
         /* margin needs the auto pair, not just a bottom value — this box is
            narrower than its parent (max-width:90%), and text-align:center
            only centers inline content *inside* a box, not the box itself. */
-        margin: 0 auto 14px;
+        margin: 0 auto 4px;
         font-size: 18px;
         overflow-x: hidden;
         position: relative;
-        cursor: pointer;
+        animation: eq-entrance 0.8s ease-out both;
       }
-      .research-equation:hover,
-      .research-equation:focus-visible {
-        color: var(--text);
+      @keyframes eq-entrance {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes eq-pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+      /* A subtle, continuous pulse on the accent-colored operators —
+         entrance animation is one-time, this keeps a little life in the
+         equation afterward without being distracting. Respect
+         prefers-reduced-motion below. */
+      .research-equation .integral,
+      .research-equation .arrow {
+        animation: eq-pulse 2.6s ease-in-out infinite;
+      }
+      .research-equation .arrow {
+        animation-delay: 0.5s;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .research-equation,
+        .research-equation .integral,
+        .research-equation .arrow {
+          animation: none;
+        }
+      }
+      .eq-reveal {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0 0 14px;
+        color: var(--dim);
+        font-size: 13px;
+        font-family: var(--sans);
+        cursor: pointer;
+        text-decoration: underline dotted;
+        text-underline-offset: 3px;
+      }
+      .eq-reveal:hover,
+      .eq-reveal:focus-visible {
+        color: var(--muted);
       }
       .research-equation .eq-label {
         color: var(--accent);
@@ -139,7 +188,7 @@
         padding: 0 0.1em;
       }
       .equation-intro {
-        max-width: 800px;
+        max-width: 850px;
         color: var(--dim);
         font-size: 16px;
         line-height: 1.65;
@@ -168,13 +217,13 @@
       }
       .stats {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         gap: 1px;
         background: var(--line);
         margin: 0 0 28px;
       }
       .stat {
-        background: var(--bg2);
+        background: var(--bg);
         padding: 18px 12px;
       }
       .num {
@@ -185,24 +234,76 @@
         color: var(--muted);
         font-size: 12px;
       }
-      .focus {
-        grid-template-columns: repeat(3, 1fr);
+      /* Tile wall: each focus area is its own bordered card with real gaps
+         between them (rather than the hairline-divider .grid look used
+         elsewhere), an accent-colored heading, and a thin rule separating
+         the heading from the body — same visual language tried on
+         Achievements. .focus no longer needs the shared .grid class. */
+      /* Auto-scrolling marquee, same seamless-loop technique as the
+         mentee row below: the track holds the 6 focus cards twice
+         back-to-back, and each card's own margin-right (not a container
+         gap) supplies the spacing. That makes every one of the 12 units
+         in the track identical in width, so translateX(-50%) lands
+         exactly on the boundary between the two sets — no jump. */
+      .focus-scroll {
+        position: relative;
+        overflow: hidden;
         margin-top: 36px;
+        -webkit-mask-image: linear-gradient(
+          90deg,
+          transparent,
+          black 6%,
+          black 94%,
+          transparent
+        );
+        mask-image: linear-gradient(
+          90deg,
+          transparent,
+          black 6%,
+          black 94%,
+          transparent
+        );
+      }
+      .focus-track {
+        display: flex;
+        width: max-content;
+        will-change: transform;
       }
       .card {
-        background: var(--bg2);
-        padding: 30px;
-      }
-      .card:hover {
+        flex: 0 0 380px;
+        margin-right: 16px;
         background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 22px;
+        text-align: center;
+        cursor: pointer;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s;
+      }
+      .card:hover,
+      .card:focus-visible {
+        border-color: var(--accent);
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+      }
+      .card-head {
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 12px;
+        margin-bottom: 14px;
       }
       .card h3 {
-        font: 500 19px var(--serif);
-        margin-bottom: 10px;
+        font: 500 16px var(--serif);
+        /* White in dark mode, near-black in light mode — var(--text) is
+           the theme-adaptive token for that. A literal white would go
+           invisible against the light-mode background. */
+        color: var(--text);
+        margin: 0;
       }
       .card p {
         color: var(--muted);
-        font-size: 15px;
+        font-size: 14px;
+        margin: 14px 0 0;
       }
       /* Placeholder image slot for each focus card. Files aren't uploaded
          yet — see the assets/focus-*.png filenames below and the error
@@ -211,7 +312,7 @@
       .card-figure {
         display: block;
         width: 100%;
-        height: 140px;
+        height: 160px;
         object-fit: cover;
         border-radius: 6px;
         margin-bottom: 14px;
@@ -341,7 +442,7 @@
          briefings.css) so the two pages feel like one system. */
       .filters {
         display: flex;
-        gap: 8px;
+        gap: 6px;
         flex-wrap: wrap;
         justify-content: center;
         margin: 0 0 28px;
@@ -351,9 +452,9 @@
         background: var(--bg2);
         color: var(--muted);
         border-radius: 999px;
-        padding: 7px 11px;
+        padding: 3px 10px;
         cursor: pointer;
-        font-size: 0.88rem;
+        font-size: 11px;
         font-family: var(--sans);
       }
       .filter.active {
@@ -361,11 +462,40 @@
         color: var(--accent);
         background: rgba(45, 212, 191, 0.07);
       }
+      /* Chronological tree layout: a central trunk line with one node per
+         card, cards alternating left/right down the middle. Position is
+         computed in JS (see the script block), which places each new card
+         on whichever side is currently *shorter* — so a short card doesn't
+         leave the next card stranded under a tall neighbor. Base CSS below
+         is the no-JS fallback: cards just stack full-width, in order, with
+         no trunk. JS adds .has-tree and inline position/left/right/top/width
+         once it runs. */
       .pubs {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: start;
-        gap: 14px;
+        position: relative;
+      }
+      .pubs.has-tree:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: var(--line2);
+        transform: translateX(-1px);
+      }
+      .pub-node {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--accent);
+        border: 2px solid var(--bg2);
+        z-index: 2;
+      }
+      .pub-connector {
+        position: absolute;
+        height: 2px;
+        background: var(--line2);
       }
       .pub {
         background: var(--card);
@@ -376,6 +506,7 @@
         border-radius: 10px;
         text-align: left;
         cursor: pointer;
+        margin-bottom: 14px;
         transition:
           border-color 0.2s,
           background 0.2s,
@@ -451,6 +582,120 @@
         border: 1px solid var(--line);
         margin-bottom: 16px;
       }
+      /* Any image on the page that can be enlarged gets a zoom cursor;
+         see .lightbox below and the script block for the click handler. */
+      .pub-figure,
+      .card-figure {
+        cursor: zoom-in;
+      }
+      .lightbox {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        z-index: 200;
+      }
+      .lightbox[hidden] {
+        display: none;
+      }
+      .lightbox img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 8px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        cursor: default;
+      }
+      .lightbox-close {
+        position: absolute;
+        top: 20px;
+        right: 24px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        background: transparent;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .lightbox-close:hover {
+        border-color: #fff;
+      }
+      /* Research Focus "learn more" popup — click a focus card to open a
+         short primer (why it matters / done / doing / next), same overlay
+         pattern as .lightbox above but with a scrollable text panel
+         instead of an image. */
+      .focus-modal {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        z-index: 200;
+      }
+      .focus-modal[hidden] {
+        display: none;
+      }
+      .focus-modal-panel {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        width: 100%;
+        max-width: 620px;
+        max-height: 85vh;
+        overflow-y: auto;
+        padding: 34px 38px;
+        position: relative;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      }
+      .focus-modal-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid var(--line2);
+        background: var(--bg2);
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1;
+        cursor: pointer;
+      }
+      .focus-modal-close:hover,
+      .focus-modal-close:focus-visible {
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+      .focus-modal-panel h3 {
+        font-family: var(--serif);
+        font-size: 22px;
+        font-weight: 500;
+        margin: 0 22px 20px 0;
+        color: var(--text);
+      }
+      .focus-modal-panel h4 {
+        margin: 20px 0 6px;
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--accent);
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+      }
+      .focus-modal-panel h4:first-of-type {
+        margin-top: 0;
+      }
+      .focus-modal-panel p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.75;
+      }
       /* Sub-headings inside the expand panel — same convention as the
          Research Brief's story cards (.story-body h3 in briefings.css):
          small teal monospace label above each block of body text. */
@@ -514,6 +759,14 @@
         justify-content: left;
         margin-bottom: 2px;
       }
+      /* Amber-badge type filters, reused inside the narrower timeline
+         columns (Awards, Disclosures, Presentations, Outreach) — same
+         .filters/.filter component as Publications, just left-aligned and
+         tighter to match this section's layout. */
+      .timeline .filters {
+        justify-content: left;
+        margin: 0 0 16px;
+      }
       .activities-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -542,6 +795,100 @@
         color: var(--accent);
         border-color: var(--accent);
       }
+      /* Auto-scrolling marquee of mentee/collaborator cards. JS-driven
+         (not a CSS @keyframes loop) so the prev/next arrows can nudge the
+         position directly — see the script block. The track holds the
+         card set twice back-to-back; the loop wraps at the halfway point,
+         invisibly, since the second half is an exact copy of the first.
+         Hovering pauses it. Duplicated cards are aria-hidden so screen
+         readers don't hear everything twice. */
+      .mentee-scroll {
+        position: relative;
+        overflow: hidden;
+        margin: 26px 0;
+        -webkit-mask-image: linear-gradient(
+          90deg,
+          transparent,
+          black 6%,
+          black 94%,
+          transparent
+        );
+        mask-image: linear-gradient(
+          90deg,
+          transparent,
+          black 6%,
+          black 94%,
+          transparent
+        );
+      }
+      .mentee-track {
+        display: flex;
+        width: max-content;
+        will-change: transform;
+      }
+      /* Prev/next controls, shared by both carousels — vertically centered
+         on the track. They sit on top of whatever card is faded under the
+         edge mask, with a solid fill + shadow so they stay legible
+         regardless of what's behind them. */
+      .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 1.5px solid var(--line2);
+        background: var(--card);
+        color: var(--text);
+        font-size: 19px;
+        line-height: 1;
+        cursor: pointer;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+        transition:
+          color 0.15s,
+          border-color 0.15s,
+          background 0.15s;
+      }
+      .carousel-arrow:hover,
+      .carousel-arrow:focus-visible {
+        color: #06201c;
+        background: var(--accent);
+        border-color: var(--accent);
+      }
+      .carousel-arrow.prev {
+        left: 6px;
+      }
+      .carousel-arrow.next {
+        right: 6px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .mentee-scroll,
+        .focus-scroll {
+          overflow-x: auto;
+        }
+      }
+      .mentee-card {
+        flex: 0 0 220px;
+        margin-right: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 18px;
+        text-align: left;
+      }
+      .mentee-card h4 {
+        margin: 0 0 10px;
+        font: 500 15px var(--serif);
+        color: var(--text);
+      }
+      .mentee-card .badge-row {
+        justify-content: left;
+        margin-bottom: 0;
+      }
       footer {
         border-top: 1px solid var(--line);
         padding: 28px 0;
@@ -552,8 +899,7 @@
       @media (max-width: 850px) {
         .focus,
         .timeline,
-        .activities-grid,
-        .pubs {
+        .activities-grid {
           grid-template-columns: 1fr;
         }
         .stats {
@@ -619,24 +965,28 @@
           </div>
           <div class="stats">
             <div class="stat">
-              <div class="num" data-count=".pubs .pub">0</div>
+              <div class="num" data-count='.pubs .pub[data-status="published"], .pubs .pub[data-status="in-press"], .pubs .pub[data-status="accepted"]'>0</div>
               <div class="label">Peer-reviewed publications</div>
             </div>
             <div class="stat">
-              <div class="num" data-count="#awardsList .item:not([data-placeholder])">0</div>
-              <div class="label">Awards</div>
+              <div class="num" data-count='.pubs .pub[data-first-author]:not([data-type="review"])[data-status="published"], .pubs .pub[data-first-author]:not([data-type="review"])[data-status="in-press"], .pubs .pub[data-first-author]:not([data-type="review"])[data-status="accepted"]'>0</div>
+              <div class="label">First-author research articles</div>
             </div>
             <div class="stat">
-              <div class="num" data-count="#disclosuresList .item:not([data-placeholder])">0</div>
+              <div class="num" data-count="#awardsList .item:not([data-placeholder]) .badge-row">0</div>
+              <div class="label">Awards & Fellowships</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="#disclosuresList .item:not([data-placeholder]) .badge-row">0</div>
               <div class="label">Invention disclosures</div>
             </div>
             <div class="stat">
-              <div class="num" data-count="#presentationsList h5:not([data-placeholder])">0</div>
-              <div class="label">Presentations</div>
+              <div class="num" id="talksCount">0</div>
+              <div class="label">Talks &amp; flash talks</div>
             </div>
             <div class="stat">
-              <div class="num" id="yearsExp">0</div>
-              <div class="label">Years of experience</div>
+              <div class="num" data-count=".mentee-card:not([data-placeholder])">0</div>
+              <div class="label">Trainee mentored</div>
             </div>
           </div>
         </div>
@@ -644,93 +994,158 @@
       <section id="research-focus">
         <div class="hero-copy">
           <h2 class="section-label">Research Focus</h2>
-          <div
-            class="research-equation"
-            tabindex="0"
-            role="button"
-            aria-expanded="false"
-            aria-controls="equationIntro"
-          >
-            <span class="eq-label">My Work</span> ≡
+          <div class="research-equation">
+            <span class="eq-label">My Research</span> ≡
             <span class="integral">∫</span>(Experimental Biology + CFD + Bioinformatics) 
-            <span class="accent">d[</span>(Organoid <span class="accent">⨉</span> Microbiome)</span>
+            <span class="accent">d[</span>(Organoid <span class="accent">⨉</span> Microbiome)
             <sub>Patient</sub><span class="arrow">→ </span>Stretchable Gut-on-a-Chip
             <span class="accent">]</span>
           </div>
+          <button
+            type="button"
+            class="eq-reveal"
+            aria-expanded="false"
+            aria-controls="equationIntro"
+          >
+            Explain it
+          </button>
           <p class="equation-intro" id="equationIntro">
-            My work is defined by integrating experimental biology, computational fluid dynamics, and bioinformatics to 
-            study patient-specific organoid–microbiome interactions as variables in stretchable gut-on-a-chip devices.
+            My research is defined by the integration of experimental biology, computational fluid dynamics, and bioinformatics to study patient-specific organoid–microbiome interactions as variables in stretchable Gut-on-a-Chip devices.
           </p>
         </div>
-        <div class="grid focus">
-          <div class="card">
-            <h3>Organ-on-a-chip systems</h3>
-            <p> Microfluidic gut-on-a-chip and multiplex organ-on-a-chip platforms for disease modeling and pharmaco-toxicology. </p>
-            <img
-              class="card-figure"
-              src="assets/focus_organ_chip.png"
-              alt="Organ-on-a-chip systems"
-            />
-          </div>
-          <div class="card">
-            <h3>Host–microbiome interactions</h3>
-            <p>Probiotic and patient-derived microbiota effects on epithelial oxidative stress, barrier function and inflammation.</p>
-            <img
-              class="card-figure"
-              src="assets/focus_host_microbiome.png"
-              alt="Host–microbiome interactions"
-            />
-          </div>
-          <div class="card">
-            <h3>Microfabrication</h3>
-            <p> Porous PDMS membranes, photolithography, soft lithography and additive manufacturing for rapid device prototyping.</p>
-            <img
-              class="card-figure"
-              src="assets/focus_fabrication.png"
-              alt="Microfabrication"
-            />
-          </div>
-          <div class="card">
-            <h3>Fluid dynamics</h3>
-            <p> Finite-element and computational modeling of flow, shear stress and transport in microfluidic systems.</p>
-            <img
-              class="card-figure"
-              src="assets/focus_fluid_dynamics.gif"
-              alt="Fluid dynamics"
-            />
-          </div>
-          <div class="card">
-            <h3>Bioinformatics</h3>
-            <p>Single-cell and bulk RNA-seq, 16S analysis and quantitative interpretation of engineered tissue systems.</p>
-            <img
-              class="card-figure"
-              src="assets/focus_bioinformatics.png"
-              alt="Bioinformatics"
-            />
-          </div>
-          <div class="card">
-            <h3>Translational NAMs</h3>
-            <p>Human-centric research and safety testing tools designed to replace, reduce, or refine animal use. </p>
-            <img
-              class="card-figure"
-              src="assets/focus_translational_nams.png"
-              alt="Translational NAMs"
-            />
+        <div class="focus-scroll" data-carousel="focus">
+          <button type="button" class="carousel-arrow prev" aria-label="Scroll focus areas back">‹</button>
+          <button type="button" class="carousel-arrow next" aria-label="Scroll focus areas forward">›</button>
+          <div class="focus-track">
+            <div class="card" data-focus-key="organ-chip" tabindex="0" role="button" aria-haspopup="dialog">
+              <div class="card-head"><h3>Stretchable Organ-on-a-chip</h3></div>
+              <img
+                class="card-figure"
+                src="assets/focus_organ_chip.png"
+                alt="Organ-on-a-chip systems"
+              />
+              <p> Stretchable microfluidic gut-on-a-chip and multiplex organ-on-a-chip platforms for disease modeling and pharmaco-toxicology. </p>
+            </div>
+            <div class="card" data-focus-key="host-microbiome" tabindex="0" role="button" aria-haspopup="dialog">
+              <div class="card-head"><h3>Host–microbiome interactions</h3></div>
+              <img
+                class="card-figure"
+                src="assets/focus_host_microbiome.png"
+                alt="Host–microbiome interactions"
+              />
+              <p>Probiotic and patient-derived microbiota effects on epithelial oxidative stress, barrier function and inflammation.</p>
+            </div>
+            <div class="card" data-focus-key="translational-nams" tabindex="0" role="button" aria-haspopup="dialog">
+              <div class="card-head"><h3>Translational NAMs</h3></div>
+              <img
+                class="card-figure"
+                src="assets/focus_translational_nams.png"
+                alt="Translational NAMs"
+              />
+              <p>New Methodologies Approaches for human-centric research and safety testing tools designed to replace, reduce, or refine animal use. </p>
+            </div>
+            <div class="card" data-focus-key="bioinformatics" tabindex="0" role="button" aria-haspopup="dialog">
+              <div class="card-head"><h3>Bioinformatics</h3></div>
+              <img
+                class="card-figure"
+                src="assets/focus_bioinformatics.png"
+                alt="Bioinformatics"
+              />
+              <p>Single-cell and bulk RNA-seq, 16S analysis and quantitative interpretation of engineered tissue systems.</p>
+            </div>
+            <div class="card" data-focus-key="fluid-dynamics" tabindex="0" role="button" aria-haspopup="dialog">
+              <div class="card-head"><h3>Fluid dynamics</h3></div>
+              <img
+                class="card-figure"
+                src="assets/focus_fluid_dynamics.gif"
+                alt="Fluid dynamics"
+              />
+              <p> Finite-element and computational modeling of flow, shear stress and transport in microfluidic systems.</p>
+            </div>
+            <div class="card" data-focus-key="microfabrication" tabindex="0" role="button" aria-haspopup="dialog">
+              <div class="card-head"><h3>Microfabrication</h3></div>
+              <img
+                class="card-figure"
+                src="assets/focus_fabrication.png"
+                alt="Microfabrication"
+              />
+              <p> Porous PDMS membranes, photolithography, soft lithography and additive manufacturing for rapid device prototyping.</p>
+            </div>
+            <div class="card" data-focus-key="organ-chip" aria-hidden="true">
+              <div class="card-head"><h3>Stretchable Organ-on-a-chip</h3></div>
+              <img
+                class="card-figure"
+                src="assets/focus_organ_chip.png"
+                alt=""
+              />
+              <p> Stretchable microfluidic gut-on-a-chip and multiplex organ-on-a-chip platforms for disease modeling and pharmaco-toxicology. </p>
+            </div>
+            <div class="card" data-focus-key="host-microbiome" aria-hidden="true">
+              <div class="card-head"><h3>Host–microbiome interactions</h3></div>
+              <img
+                class="card-figure"
+                src="assets/focus_host_microbiome.png"
+                alt=""
+              />
+              <p>Probiotic and patient-derived microbiota effects on epithelial oxidative stress, barrier function and inflammation.</p>
+            </div>
+            <div class="card" data-focus-key="translational-nams" aria-hidden="true">
+              <div class="card-head"><h3>Translational NAMs</h3></div>
+              <img
+                class="card-figure"
+                src="assets/focus_translational_nams.png"
+                alt=""
+              />
+              <p>New Methodologies Approaches for human-centric research and safety testing tools designed to replace, reduce, or refine animal use. </p>
+            </div>
+            <div class="card" data-focus-key="bioinformatics" aria-hidden="true">
+              <div class="card-head"><h3>Bioinformatics</h3></div>
+              <img
+                class="card-figure"
+                src="assets/focus_bioinformatics.png"
+                alt=""
+              />
+              <p>Single-cell and bulk RNA-seq, 16S analysis and quantitative interpretation of engineered tissue systems.</p>
+            </div>
+            <div class="card" data-focus-key="fluid-dynamics" aria-hidden="true">
+              <div class="card-head"><h3>Fluid dynamics</h3></div>
+              <img
+                class="card-figure"
+                src="assets/focus_fluid_dynamics.gif"
+                alt=""
+              />
+              <p> Finite-element and computational modeling of flow, shear stress and transport in microfluidic systems.</p>
+            </div>
+            <div class="card" data-focus-key="microfabrication" aria-hidden="true">
+              <div class="card-head"><h3>Microfabrication</h3></div>
+              <img
+                class="card-figure"
+                src="assets/focus_fabrication.png"
+                alt=""
+              />
+              <p> Porous PDMS membranes, photolithography, soft lithography and additive manufacturing for rapid device prototyping.</p>
+            </div>
           </div>
         </div>
       </section>
       <section id="publications">
         <h2 class="section-label">Publications</h2>
         <!-- Status badge is intentionally neutral gray regardless of stage.
-             When adding a new entry, default the label to "Pre-print" until
-             it's actually accepted/published. -->
+             When adding a new entry, set data-status on the .pub div to one
+             of: published, in-press, accepted, preprint, in-revision. The
+             visible label can read anything ("Published", "In Press",
+             "bioRxiv Preprint", etc.) but the stat counters below only
+             count published/in-press/accepted — preprint and in-revision
+             entries are intentionally excluded from "peer-reviewed
+             publications" until they clear review. Default new entries to
+             data-status="preprint" until upgraded. -->
         <div id="pubFilters" class="filters" aria-label="Keyword filters"></div>
         <div class="pubs">
-          <div class="pub" tabindex="0" role="button" aria-expanded="false">
+          <div class="pub" data-status="published" tabindex="0" role="button" aria-expanded="false">
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2026</span></span>
               <span class="badge badge-gray"><span class="badge-label">Published</span></span>
-              <span class="badge badge-amber badge-full"><span class="badge-label">Advanced Healthcare Materials</span></span>
+              <span class="badge badge-amber"><span class="badge-label">Advanced Healthcare Materials</span></span>
               <a
                 class="badge badge-white"
                 href="https://doi.org/10.1002/adhm.202501510"
@@ -758,7 +1173,7 @@
               <p>Shows that simultaneously engineering the biochemical and mechanical niche can produce a more physiologically representative intestinal epithelium, improving membrane-based models for disease modeling, host–microbiome studies, and drug testing.</p>
             </div>
           </div>
-          <div class="pub" tabindex="0" role="button" aria-expanded="false">
+          <div class="pub" data-status="published" tabindex="0" role="button" aria-expanded="false" data-first-author>
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2026</span></span>
               <span class="badge badge-gray"><span class="badge-label">Published</span></span>
@@ -795,7 +1210,7 @@
               <p>Provides an accessible and reproducible workflow for fabricating mechanically active organ-on-a-chip devices while reducing fabrication failures and wasted devices.</p>
             </div>
           </div>
-          <div class="pub" tabindex="0" role="button" aria-expanded="false">
+          <div class="pub" data-status="in-press" tabindex="0" role="button" aria-expanded="false" data-first-author>
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2026</span></span>
               <span class="badge badge-gray"><span class="badge-label">In Press</span></span>
@@ -835,7 +1250,7 @@
               <p>Reveals extracellular, radiation-induced oxidative stress as a major contributor to intestinal injury and supports probiotics as a potential live biotherapeutic countermeasure for GI acute radiation syndrome.</p>
             </div>
           </div>
-          <div class="pub" tabindex="0" role="button" aria-expanded="false">
+          <div class="pub" data-status="published" tabindex="0" role="button" aria-expanded="false">
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2026</span></span>
               <span class="badge badge-gray"><span class="badge-label">Published</span></span>
@@ -871,11 +1286,11 @@
               <p>Reveals fluid shear stress as a previously underappreciated driver of early intestinal fibrosis and epithelial barrier integrity as a biomechanical safeguard against pathological fibroblast remodeling.</p>
             </div>
           </div>
-          <div class="pub" tabindex="0" role="button" aria-expanded="false">
+          <div class="pub" data-status="published" tabindex="0" role="button" aria-expanded="false" data-type="review">
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2024</span></span>
               <span class="badge badge-gray"><span class="badge-label">Published</span></span>
-              <span class="badge badge-amber badge-full"
+              <span class="badge badge-amber"
                 ><span class="badge-label"
                   >Expert Opinion on Drug Metabolism &amp; Toxicology</span
                 ></span
@@ -906,11 +1321,11 @@
               <p>Gut-on-a-chip platforms could bridge the translational gap between conventional non-clinical testing and human trials by providing more physiologically relevant and potentially more predictive models of drug response.</p>
             </div>
           </div>
-          <div class="pub" tabindex="0" role="button" aria-expanded="false">
+          <div class="pub" data-status="published" tabindex="0" role="button" aria-expanded="false" data-type="review">
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2023</span></span>
               <span class="badge badge-gray"><span class="badge-label">Published</span></span>
-              <span class="badge badge-amber badge-full"><span class="badge-label">Nature Reviews Bioengineering</span></span>
+              <span class="badge badge-amber"><span class="badge-label">Nature Reviews Bioengineering</span></span>
               <a
                 class="badge badge-white"
                 href="https://doi.org/10.1038/s44222-023-00130-9"
@@ -938,7 +1353,7 @@
               <p>These platforms enable mechanistic investigation of human–microbiome interactions that are difficult to isolate in animal or conventional culture models, creating opportunities to study microbiome-driven disease and develop microbiome-targeted therapies.</p>
             </div>
           </div>
-          <div class="pub" tabindex="0" role="button" aria-expanded="false">
+          <div class="pub" data-status="published" tabindex="0" role="button" aria-expanded="false" data-first-author>
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2023</span></span>
               <span class="badge badge-gray"><span class="badge-label">Published</span></span>
@@ -970,7 +1385,7 @@
               <p>Demonstrates that live probiotics can actively reverse an established dysfunctional intestinal barrier—not merely prevent damage—and establishes the Gut Chip as a platform for mechanistic testing of live biotherapeutic products.</p>
             </div>
           </div>
-          <div class="pub" tabindex="0" role="button" aria-expanded="false">
+          <div class="pub" data-status="published" tabindex="0" role="button" aria-expanded="false" data-first-author>
             <div class="badge-row">
               <span class="badge badge-teal"><span class="badge-label">2022</span></span>
               <span class="badge badge-gray"><span class="badge-label">Published</span></span>
@@ -1009,78 +1424,82 @@
         <div class="timeline">
           <div>
             <h3>Awards &amp; Honors</h3>
+            <div id="awardsFilters" class="filters" aria-label="Award type filters"></div>
             <div id="awardsList">
               <div class="item">
-                <h4>Engineering Foundation Endowed Fellowship <span class="badge badge-gray"><span class="badge-label">UT Austin</span></span> </h4>
-                <h5>Graduate Presidential Scholarship</h5> 
+                <h4>Graduate School <span class="badge badge-gray badge-full"><span class="badge-label">The University of Texas at Austin</span></span></h4>
+                <h5>Engineering Foundation Endowed Graduate Presidential Scholarship</h5> 
                 <div class="badge-row">  
                   <span class="badge badge-teal"><span class="badge-label">2026</span></span>
                   <span class="badge badge-amber"><span class="badge-label">Scholarship</span></span>
                 </div>
-                <h5>Graduate Fellowship</h5> 
+                <h5>Engineering Foundation Endowed Graduate Fellowship</h5> 
                 <div class="badge-row">  
-                  <span class="badge badge-teal"><span class="badge-label">2020</span></span>
+                  <span class="badge badge-teal"><span class="badge-label">2020-2021</span></span>
                   <span class="badge badge-amber"><span class="badge-label">Fellowship</span></span>
                 </div>
-              </div>
-              <div class="item">
-                <h4>Travel Awards </h4>
-                <h5>Mary B. Stark Travel Award <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h5>
-                <div class="badge-row">
-                  <span class="badge badge-teal"><span class="badge-label">2024</span></span>
-                  <span class="badge badge-amber"><span class="badge-label">Award</span></span>
-                </div>
-                <h5>Mary B. Stark Travel Award <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h5>
-                <div class="badge-row">
-                  <span class="badge badge-teal"><span class="badge-label">2023</span></span>
-                  <span class="badge badge-amber"><span class="badge-label">Award</span></span>
-                </div>
-                <h5>Graduate Student Virtual Event Travel Awards <span class="badge badge-gray badge-full"><span class="badge-label">San Jose State University</span></span></h5>
-                <div class="badge-row">
-                  <span class="badge badge-teal"><span class="badge-label">2020</span></span>
-                  <span class="badge badge-amber"><span class="badge-label">Award</span></span>
-                </div>
-              </div>
-              <div class="item">
-                <h4>Gut Microbiome, Yogurt and Probiotics Fellowship <span class="badge badge-gray badge-full"><span class="badge-label">Danone North America</span></span></h4>
-                <div class="badge-row">
-                  <span class="badge badge-teal"><span class="badge-label">2023-2024</span></span>
-                  <span class="badge badge-amber"><span class="badge-label">Fellowship</span></span>
-                </div>
-                <h5>Dean's Prestigious Fellowship Supplement <span class="badge badge-gray"><span class="badge-label">UT Austin</span></span></h5>
+                <h5>Dean's Prestigious Fellowship Supplement</h5>
                 <div class="badge-row">
                   <span class="badge badge-teal"><span class="badge-label">2024</span></span>
                   <span class="badge badge-amber"><span class="badge-label">Supplement</span></span>
                 </div>
+                <h5>Professional Development Award</h5>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2020</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Award</span></span>
+                </div>
               </div>
               <div class="item">
-                <h4>William Lower Award <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+                <h4>Research and Education Training Center <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+                <h5>Mary B. Stark Travel Award - FASEB 2024 </h5>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2024</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Award</span></span>
+                </div>
+                <h5>Mary B. Stark Travel Award - BMES 2023</h5>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2023</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Award</span></span>
+                </div>
+              </div>
+              <div class="item">
+                <h4>Danone North America <span class="badge badge-gray badge-full"><span class="badge-label">Danone S.A.</span></span></h4>
+                <h5>Gut Microbiome, Yogurt and Probiotics Fellowship Grant</h5>
+                <div class="badge-row">
+                  <span class="badge badge-teal"><span class="badge-label">2023-2024</span></span>
+                  <span class="badge badge-amber"><span class="badge-label">Fellowship</span></span>
+                </div>
+              </div>
+              <div class="item">
+                <h4>Cleveland Clinic Education <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+                <h5>William Lower Award</h5>
                 <div class="badge-row">
                   <span class="badge badge-teal"><span class="badge-label">2023</span></span>
                   <span class="badge badge-amber"><span class="badge-label">Award</span></span>
                 </div>
               </div>       
               <div class="item">
-                <h4>Professional Development Awards <span class="badge badge-gray"><span class="badge-label">UT Austin</span></span></h4>
+                <h4>Graduate Study <span class="badge badge-gray badge-full"><span class="badge-label">San Jose State University</span></span></h4>
+                <h5>Graduate Student Virtual Event Travel Awards - BMES 2020</h5>
                 <div class="badge-row">
                   <span class="badge badge-teal"><span class="badge-label">2020</span></span>
                   <span class="badge badge-amber"><span class="badge-label">Award</span></span>
                 </div>
-              </div>  
+              </div>
             </div>
           </div>
           <div>
             <h3>Invention & Patents</h3>
+            <div id="disclosuresFilters" class="filters" aria-label="Invention type filters"></div>
             <div id="disclosuresList">
               <div class="item">
-                <h4>Robust and Scalable Manufacturing of Ultrathin Porous PDMS Membranes <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+                <h4>Cleveland Clinic Innovations <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+                <h5>Robust and Scalable Manufacturing of Ultrathin Porous PDMS Membranes</h5>
                 <div class="badge-row">
                   <span class="badge badge-teal"><span class="badge-label">2025</span></span>
                   <span class="badge badge-amber"><span class="badge-label">Disclosure</span></span>
                 </div>
-              </div>
-              <div class="item">
-                <h4>Multiplex Organ-on-a-Chip (EXORM) <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+                <h5>Multiplex Organ-on-a-Chip (EXORM)</h5>
                 <div class="badge-row">
                   <span class="badge badge-teal"><span class="badge-label">2025</span></span>
                   <span class="badge badge-amber"><span class="badge-label">Provisional Patent</span></span>
@@ -1090,9 +1509,7 @@
                   <span class="badge badge-teal"><span class="badge-label">2022</span></span>
                   <span class="badge badge-amber"><span class="badge-label">Disclosure</span></span>
                 </div>
-              </div>
-              <div class="item">
-                <h4>Design and creation of a Leaky Gut chip model for validating probiotic effects <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
+                <h5>Design and creation of a Leaky Gut chip model for validating probiotic effects</h5>
                 <div class="badge-row">
                   <span class="badge badge-teal"><span class="badge-label">2024</span></span>
                   <span class="badge badge-amber"><span class="badge-label">Disclosure</span></span>
@@ -1103,16 +1520,54 @@
         </div>
       </section>
       <section id="activities">
-        <h2 class="section-label">Activities</h2>
+        <h2 class="section-label">Professional Activities</h2>
         <div class="timeline">
           <div id="presentationsList">
             <h3>Presentations</h3>
+            <div id="presentationsFilters" class="filters" aria-label="Presentation type filters"></div>
             <div class="item">
               <h4>Cold Spring Harbor Laboratory Meetings: Bioengineered Tissue Systems & Models <span class="badge badge-gray"><span class="badge-label">Conference</span></span></h4>
               <h5>FMT-qualified microbiota mitigates epithelial oxidative stress and inflammation in a patient-derived Crohn’s disease-on-a-chip</h5>
               <div class="badge-row">
                 <span class="badge badge-teal"><span class="badge-label">2025</span></span>
                 <span class="badge badge-amber"><span class="badge-label">Poster</span></span>
+                <span class="badge badge-gray"><span class="badge-label">New York, USA</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>FASEB Gastrointestinal Tract XXI: Life, Death, and Disease <span class="badge badge-gray"><span class="badge-label">Conference</span></span></h4>
+              <h5>Gut Microbiota Directly Controls Epithelial Oxidative Stress and Inflammatory Responses in a Patient-specific Crohn’s Disease-on-a-chip</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Flash Talk</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Banff, Canada</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Inflammation & Immunity Trainee Seminars <span class="badge badge-gray"><span class="badge-label">Department Seminar</span></span></h4>
+              <h5> Probiotic Intervention Mitigates Radiation-Induced Intestinal Injury by Alleviating Oxidative Stress in a Human Gut-on-a-chip</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2026</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span>
+              </div>
+              <h5>FMT-qualified microbiota suppresses epithelial oxidative stress and pathogenesis in a patient-derived Crohn’s disease-on-a-chip</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2025</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span>
+              </div>
+              <h5>Modeling host-microbiome interactions in organ-on-a-chip platforms.</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span>
+              </div>
+              <h5>Gut Microbiota Orchestrates Pathological Signature in a Patient-specific Crohn’s Disease-on-a-chip</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2023</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span>
               </div>
             </div>
             <div class="item">
@@ -1121,37 +1576,7 @@
               <div class="badge-row">
                 <span class="badge badge-teal"><span class="badge-label">2023</span></span>
                 <span class="badge badge-amber badge-full"><span class="badge-label">Poster of Distinction</span></span>
-              </div>
-            </div>
-            <div class="item">
-              <h4>FASEB Gastrointestinal Tract XXI: Life, Death, and Disease <span class="badge badge-gray"><span class="badge-label">Conference</span></span></h4>
-              <h5>Gut Microbiota Directly Controls Epithelial Oxidative Stress and Inflammatory Responses in a Patient-specific Crohn’s Disease-on-a-chip</h5>
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2025</span></span>
-                <span class="badge badge-amber"><span class="badge-label">Flash Talk</span></span>
-              </div>
-            </div>
-            <div class="item">
-              <h4>Inflammation & Immunity Trainee Seminar Series <span class="badge badge-gray"><span class="badge-label">Department Seminar</span></span></h4>
-              <h5> Probiotic Intervention Mitigates Radiation-Induced Intestinal Injury by Alleviating Oxidative Stress in a Human Gut-on-a-chip</h5>
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2026</span></span>
-                <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
-              </div>
-              <h5>FMT-qualified microbiota suppresses epithelial oxidative stress and pathogenesis in a patient-derived Crohn’s disease-on-a-chip</h5>
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2025</span></span>
-                <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
-              </div>
-              <h5>Modeling host-microbiome interactions in organ-on-a-chip platforms.</h5>
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2024</span></span>
-                <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
-              </div>
-              <h5>Gut Microbiota Orchestrates Pathological Signature in a Patient-specific Crohn’s Disease-on-a-chip</h5>
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2023</span></span>
-                <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Chicago, USA</span></span>
               </div>
             </div>
             <div class="item">
@@ -1160,19 +1585,22 @@
               <div class="badge-row">
                 <span class="badge badge-teal"><span class="badge-label">2023</span></span>
                 <span class="badge badge-amber"><span class="badge-label">Talk</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Seattle, USA</span></span>
               </div>
               <h5>COMSOL Simulation and Analysis of the Effects of Gap Size Variation with a Constant Row Shift Fraction on Separation Resolution in Microfluidic Deterministic Lateral Displacement</h5>
               <div class="badge-row">
                 <span class="badge badge-teal"><span class="badge-label">2020</span></span>
                 <span class="badge badge-amber"><span class="badge-label">Poster</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Virtual Event</span></span>
               </div>
             </div>
             <div class="item">
               <h4>The Society for Laboratory Automation and Screening <span class="badge badge-gray"><span class="badge-label">Conference</span></span></h4>
               <h5>An Electronic Nose to Differentiate Bacterial Species Based on Their Metabolic Volatile Organic Compounds</h5>
               <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2019</span></span>
+                <span class="badge badge-teal"><span class="badge-label">2020</span></span>
                 <span class="badge badge-amber"><span class="badge-label">Poster</span></span>
+                <span class="badge badge-gray"><span class="badge-label">San Diego, USA</span></span>
               </div>
             </div>
             <div class="item">
@@ -1181,49 +1609,56 @@
               <div class="badge-row">
                 <span class="badge badge-teal"><span class="badge-label">2019</span></span>
                 <span class="badge badge-amber"><span class="badge-label">Poster</span></span>
+                <span class="badge badge-gray"><span class="badge-label">San Francisco, USA</span></span>
               </div>
             </div>
             
           </div>
-          <div>
-            <h3>Outreach</h3>        
-            <div class="item">
-              <h4>Trainee Research Association <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
-              <h5>Communication Committee</h5>
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2026 — Present</span></span>
-                <span class="badge badge-amber"><span class="badge-label">Member</span></span>
-              </div>
-              <h5>Communication Committee</h5>
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2024 — 2026</span></span>
-                <span class="badge badge-amber"><span class="badge-label">Graduate Co-chair</span></span>
-              </div>
-              <h5>Buddy Mentor Program</h5>
-              <div class="badge-row">
-                <span class="badge badge-teal"><span class="badge-label">2024 — 2026</span></span>
-                <span class="badge badge-amber"><span class="badge-label">Graduate Mentor</span></span>
-              </div>
-            </div>   
+          <div id="outreachList">
+            <h3>Services and Outreach</h3>
+            <div id="outreachFilters" class="filters" aria-label="Outreach role filters"></div>
             <div class="item">
               <h4>Research and Education Training Center <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span></h4>
-              <h5>Summer Student Poster Day </h5>
+              <h5>Communication Committee - Member</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2026 — Present</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Service</span></span>
+                <span class="badge badge-gray badge-full"><span class="badge-label">Research Trainee Association</span></span>
+              </div>
+              <h5>Communication Committee - Graduate Co-chair</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024 — 2026</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Service</span></span>
+                <span class="badge badge-gray badge-full"><span class="badge-label">Research Trainee Association</span></span>
+              </div>
+              <h5>Buddy Mentor Program - Graduate Mentor</h5>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024 — 2026</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Mentorship</span></span>
+                <span class="badge badge-gray badge-full"><span class="badge-label">Research Trainee Association</span></span>
+              </div>
+              <h5>Summer Student Poster Day - Judge</h5>
               <div class="badge-row">
                 <span class="badge badge-teal"><span class="badge-label">2024</span></span>
-                <span class="badge badge-amber"><span class="badge-label">Judge</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Service</span></span>
               </div>
-              <h5>Northeastern Ohio Science and Engineering Fair</h5>
+            </div>
+            <div class="item">
+              <h4>Northeastern Ohio Science and Engineering Fair <span class="badge badge-gray"><span class="badge-label">Regeneron International Science and Engineering Fair</span></span></h4>
+              <h5>Special Award Judge</h5>
               <div class="badge-row">
                 <span class="badge badge-teal"><span class="badge-label">2023</span></span>
-                <span class="badge badge-amber"><span class="badge-label">Special Award Judge</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Outreach</span></span>
+                <span class="badge badge-gray badge-full"><span class="badge-label">Cleveland State University</span></span>
               </div>
             </div>
             <div class="item">
               <h4>Synopsys Championship Science Fair <span class="badge badge-gray badge-full"><span class="badge-label">Synopsys Outreach Foundation</span></span></h4>
-              <h5>Virtual Event </h5>
+              <h5>Category Judge</h5>
               <div class="badge-row">
                 <span class="badge badge-teal"><span class="badge-label">2020</span></span>
-                <span class="badge badge-amber"><span class="badge-label">Category Judge</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Outreach</span></span>
+                <span class="badge badge-gray badge-full"><span class="badge-label">Virtual Event</span></span>
               </div>
             </div> 
           </div> 
@@ -1236,6 +1671,7 @@
             <h3>Education</h3>
             <div class="item">
               <h4>Doctor of Philosophy <span class="badge badge-gray badge-full"><span class="badge-label">The University of Texas at Austin</span></span></h4>
+              <h5>Advisor: Hyun Jung Kim, PhD</h5>
               <div class="badge-row">
                 <span class="badge badge-teal"><span class="badge-label">2020 — Present</span></span>
                 <span class="badge badge-amber badge-full"><span class="badge-label">Biomedical Engineering</span></span>
@@ -1243,6 +1679,7 @@
             </div>
             <div class="item">
               <h4>Master of Science <span class="badge badge-gray badge-full"><span class="badge-label">San Jose State University</span></span></h4>
+              <h5>Advisor: Melinda Simon, PhD & Aminat Adebiyi, PhD</h5>
               <div class="badge-row">
                 <span class="badge badge-teal"><span class="badge-label">2018 — 2020</span></span>
                 <span class="badge badge-amber badge-full"><span class="badge-label">Biomedical Engineering</span></span>
@@ -1298,6 +1735,141 @@
       </section>
       <section id="contact" class="contact">
         <h2 class="section-label">Connect</h2>
+        <p>I have had the privilege of mentoring and learning from these wonderful people throughout my research career.</p>
+        <div class="mentee-scroll" data-carousel="mentee">
+          <button type="button" class="carousel-arrow prev" aria-label="Scroll mentees back">‹</button>
+          <button type="button" class="carousel-arrow next" aria-label="Scroll mentees forward">›</button>
+          <div class="mentee-track">
+            <div class="mentee-card">
+              <h4>Amit Kumar</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2025-Present</span></span>
+                <span class="badge badge-amber"><span class="badge-label">PhD student</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span>
+              </div>
+            </div>
+            <div class="mentee-card">
+              <h4>Jose Torrado-Rivera</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2026-Present</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Post-Baccalaureate Fellow</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span>
+              </div>
+            </div>
+            <div class="mentee-card">
+              <h4>Zareh Dechkounian</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024-Present</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Undergraduate Student</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Case Western Reserve University</span></span>
+              </div>
+            </div>
+            <div class="mentee-card">
+              <h4>Joo Young (Sarah) Kim</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024-2025</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Pre-med student</span></span>
+                <span class="badge badge-gray"><span class="badge-label">UH Rainbow Babies & Children’s Hospital</span></span>
+              </div>
+            </div>
+            <div class="mentee-card">
+              <h4>Sohee Kim</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024-2025</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Medical ICU Clinical Technician</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span>
+              </div>
+            </div>
+            <div class="mentee-card">
+              <h4>Meena Chandrasekharan</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Integrated Business and Engineering Honors Student</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Ohio State University</span></span>
+              </div>
+            </div>
+            <div class="mentee-card">
+              <h4>Mingzy (Cynthia) Zhang, MD</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2023-2024</span></span>
+                <span class="badge badge-amber"><span class="badge-label">General Surgery Resident</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic Florida</span></span>
+              </div>
+            </div>
+            <div class="mentee-card">
+              <h4>Grace Hu, MS</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2021-2022</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Associate Scientist II</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Abbvie Inc.</span></span>
+              </div>
+            </div>
+            <div class="mentee-card" data-placeholder aria-hidden="true">
+              <h4>Amit Kumar</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2025-Present</span></span>
+                <span class="badge badge-amber"><span class="badge-label">PhD student</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span>
+              </div>
+            </div>
+            <div class="mentee-card" data-placeholder aria-hidden="true">
+              <h4>Jose Torrado-Rivera</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2026-Present</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Post-Baccalaureate Fellow</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span>
+              </div>
+            </div>
+            <div class="mentee-card" data-placeholder aria-hidden="true">
+              <h4>Zareh Dechkounian</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024-Present</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Undergraduate Student</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Case Western Reserve University</span></span>
+              </div>
+            </div>
+            <div class="mentee-card" data-placeholder aria-hidden="true">
+              <h4>Joo Young (Sarah) Kim</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024-2025</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Pre-med student</span></span>
+                <span class="badge badge-gray"><span class="badge-label">UH Rainbow Babies & Children’s Hospital</span></span>
+              </div>
+            </div>
+            <div class="mentee-card" data-placeholder aria-hidden="true">
+              <h4>Sohee Kim</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024-2025</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Medical ICU Clinical Technician</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic</span></span>
+              </div>
+            </div>
+            <div class="mentee-card" data-placeholder aria-hidden="true">
+              <h4>Meena Chandrasekharan</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2024</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Integrated Business and Engineering Honors Student</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Ohio State University</span></span>
+              </div>
+            </div>
+            <div class="mentee-card" data-placeholder aria-hidden="true">
+              <h4>Mingzy (Cynthia) Zhang, MD</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2023-2024</span></span>
+                <span class="badge badge-amber"><span class="badge-label">General Surgery Resident</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Cleveland Clinic in Florida</span></span>
+              </div>
+            </div>
+            <div class="mentee-card" data-placeholder aria-hidden="true">
+              <h4>Grace Hu, MS</h4>
+              <div class="badge-row">
+                <span class="badge badge-teal"><span class="badge-label">2021-2022</span></span>
+                <span class="badge badge-amber"><span class="badge-label">Associate Scientist II</span></span>
+                <span class="badge badge-gray"><span class="badge-label">Abbvie Inc.</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
         <p>Feel free to reach out for research, collaboration, or ideas!</p>
         <div class="contact-links">
           <a href="mailto:thann2@ccf.org">Email</a
@@ -1327,6 +1899,38 @@
       </section>
       <footer>© 2026 Nam Than.</footer>
     </main>
+    <div
+      id="lightbox"
+      class="lightbox"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-label="Enlarged image"
+    >
+      <button class="lightbox-close" type="button" aria-label="Close">✕</button>
+      <img id="lightboxImg" src="" alt="" />
+    </div>
+    <div
+      id="focusModal"
+      class="focus-modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="focusModalTitle"
+    >
+      <div class="focus-modal-panel">
+        <button class="focus-modal-close" type="button" aria-label="Close">✕</button>
+        <h3 id="focusModalTitle"></h3>
+        <h4>Why it matters</h4>
+        <p id="focusModalWhy"></p>
+        <h4>What's been done</h4>
+        <p id="focusModalDone"></p>
+        <h4>What's being done now</h4>
+        <p id="focusModalDoing"></p>
+        <h4>What should be done next</h4>
+        <p id="focusModalNext"></p>
+      </div>
+    </div>
     <script>
       (function () {
         var navLinks = Array.prototype.slice.call(
@@ -1432,10 +2036,26 @@
         // Publication cards: click the card background to expand the
         // graphical-abstract / What Happened / Method / Why It Matters
         // panel. Clicks on badges or links inside the card are left alone
-        // so they keep their own behavior.
+        // so they keep their own behavior. Expanding/collapsing changes
+        // the card's height, which shifts every card below it on the same
+        // side of the tree (and can push a later card to the other side
+        // entirely). A single relayout *after* the 0.35s CSS transition
+        // left a window where the growing card's overflow visually
+        // covered the card below it — so instead we relayout on every
+        // animation frame for the duration of the transition, keeping
+        // downstream cards moving in step with the expanding one.
         function toggle(pub) {
           var open = pub.classList.toggle("is-open");
           pub.setAttribute("aria-expanded", open);
+          if (!window.relayoutPubs) return;
+          var start = performance.now();
+          var duration = 400; // slightly over the 0.35s CSS transition
+          (function step(now) {
+            window.relayoutPubs();
+            if (now - start < duration) {
+              requestAnimationFrame(step);
+            }
+          })(start);
         }
         document.querySelectorAll(".pub").forEach(function (pub) {
           pub.addEventListener("click", function (e) {
@@ -1452,13 +2072,144 @@
         });
       })();
       (function () {
-        // "Years of experience" isn't a DOM count like the other four stats
-        // — it's computed from today's date minus a fixed start year. The
-        // trailing "+" is deliberate: we only know the start YEAR (2018),
-        // not the exact month, so this is a floor, not an exact count.
-        var el = document.getElementById("yearsExp");
+        // Chronological tree: a central trunk with one node per card,
+        // alternating left/right — but instead of strict alternation,
+        // each new card is placed on whichever side is currently
+        // *shorter*, so a short card doesn't leave the next one stranded
+        // under a tall neighbor. Runs on load, image load, resize, and is
+        // called again by the pub-toggle and keyword-filter scripts
+        // whenever a card's height or visibility changes.
+        var container = document.querySelector(".pubs");
+        if (!container) return;
+        var allPubs = Array.prototype.slice.call(
+          container.querySelectorAll(".pub"),
+        );
+        var GAP = 24;
+        var BREAKPOINT = 850;
+
+        function clearTree() {
+          container
+            .querySelectorAll(".pub-node, .pub-connector")
+            .forEach(function (el) {
+              el.remove();
+            });
+        }
+
+        function addNode(top) {
+          var node = document.createElement("div");
+          node.className = "pub-node";
+          node.style.top = top - 6 + "px";
+          node.style.left = "calc(50% - 6px)";
+          container.appendChild(node);
+        }
+
+        function addConnector(top, side) {
+          var connector = document.createElement("div");
+          connector.className = "pub-connector";
+          connector.style.top = top - 1 + "px";
+          if (side === "left") {
+            connector.style.right = "50%";
+            connector.style.width = "40px";
+          } else {
+            connector.style.left = "50%";
+            connector.style.width = "40px";
+          }
+          container.appendChild(connector);
+        }
+
+        function layout() {
+          var pubs = allPubs.filter(function (p) {
+            return p.style.display !== "none";
+          });
+          clearTree();
+
+          if (window.innerWidth <= BREAKPOINT || !pubs.length) {
+            container.classList.remove("has-tree");
+            container.style.height = "";
+            pubs.forEach(function (p) {
+              p.style.position = "";
+              p.style.top = "";
+              p.style.left = "";
+              p.style.right = "";
+              p.style.width = "";
+            });
+            return;
+          }
+
+          container.classList.add("has-tree");
+          var leftH = 0,
+            rightH = 0;
+          var lastNodeY = -Infinity;
+          var MIN_NODE_GAP = 20; // nodes closer than this visually overlap
+          pubs.forEach(function (pub) {
+            var side = leftH <= rightH ? "left" : "right";
+            var top = side === "left" ? leftH : rightH;
+            pub.style.position = "absolute";
+            pub.style.width = "calc(50% - 40px)";
+            pub.style.top = top + "px";
+            pub.style.left = side === "left" ? "0" : "";
+            pub.style.right = side === "right" ? "0" : "";
+
+            // Two cards on opposite sides often start at (or near) the
+            // same top — e.g. the first left/right pair both start at 0 —
+            // which puts their nodes at the same height on the trunk.
+            // Nudge this node down past the last one placed so every node
+            // is visually distinct, in placement order.
+            var nodeY = top + 34; // roughly the badge row, near the card's top
+            if (nodeY - lastNodeY < MIN_NODE_GAP) {
+              nodeY = lastNodeY + MIN_NODE_GAP;
+            }
+            lastNodeY = nodeY;
+            addNode(nodeY);
+            addConnector(nodeY, side);
+
+            var h = pub.offsetHeight;
+            if (side === "left") {
+              leftH = top + h + GAP;
+            } else {
+              rightH = top + h + GAP;
+            }
+          });
+          container.style.height = Math.max(leftH, rightH) - GAP + "px";
+        }
+
+        function debounce(fn, ms) {
+          var t;
+          return function () {
+            clearTimeout(t);
+            t = setTimeout(fn, ms);
+          };
+        }
+
+        window.relayoutPubs = layout;
+        layout();
+        window.addEventListener("load", layout);
+        window.addEventListener("resize", debounce(layout, 150));
+        container.querySelectorAll(".pub-figure").forEach(function (img) {
+          img.addEventListener("load", layout);
+        });
+      })();
+      (function () {
+        // "Talks & flash talks" only counts presentation entries whose type
+        // badge reads "Talk" or "Flash Talk" — posters (including "Poster
+        // of Distinction") are excluded. This can't be a plain data-count
+        // selector since it depends on a sibling badge's text, not on
+        // element structure alone.
+        var el = document.getElementById("talksCount");
         if (!el) return;
-        el.textContent = (new Date().getFullYear() - 2018) + "+";
+        var entries = document.querySelectorAll(
+          "#presentationsList .item:not([data-placeholder]) h5",
+        );
+        var count = 0;
+        entries.forEach(function (h5) {
+          var row = h5.nextElementSibling;
+          if (!row || !row.classList.contains("badge-row")) return;
+          var typeLabel = row.querySelector(".badge-amber .badge-label");
+          if (!typeLabel) return;
+          var text = typeLabel.textContent.trim();
+          if (text === "Talk" || text === "Flash Talk") count++;
+        });
+        el.textContent = count;
       })();
       (function () {
         // Research Focus cards: image files aren't uploaded yet. Hide the
@@ -1471,28 +2222,25 @@
         });
       })();
       (function () {
-        // Equation block: click anywhere on it to toggle the plain-English
-        // intro paragraph open/closed, same pattern as the pub cards above.
-        var eq = document.querySelector(".research-equation");
+        // "What does it mean?" toggles the plain-English intro paragraph.
+        // The equation itself is no longer the click target. This is a
+        // real <button>, so Enter/Space already fire a native click event
+        // — no separate keydown handler needed (that was only required
+        // for the old div[role=button] pattern used on the pub cards).
+        var reveal = document.querySelector(".eq-reveal");
         var intro = document.getElementById("equationIntro");
-        if (!eq || !intro) return;
-        function toggle() {
+        if (!reveal || !intro) return;
+        reveal.addEventListener("click", function () {
           var open = intro.classList.toggle("is-open");
-          eq.setAttribute("aria-expanded", open);
-        }
-        eq.addEventListener("click", toggle);
-        eq.addEventListener("keydown", function (e) {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            toggle();
-          }
+          reveal.setAttribute("aria-expanded", open);
         });
       })();
       (function () {
         // Keyword filter row above the publication grid: collect every
         // unique tag from each card's .pub-keywords badges, render them as
         // clickable pills (mirroring briefings.html's topic filters), and
-        // show/hide cards on click. Single-select, with "All" resetting.
+        // show/hide cards on click. Multi-select OR: any card matching at
+        // least one active tag shows. "All" clears the selection.
         var pubs = Array.prototype.slice.call(
           document.querySelectorAll(".pub"),
         );
@@ -1512,30 +2260,385 @@
             tags.add(t);
           });
         });
-        var active = "All";
+        var active = new Set();
         function apply() {
           pubs.forEach(function (pub) {
-            var show = active === "All" || keywordsOf(pub).indexOf(active) !== -1;
+            var show =
+              active.size === 0 ||
+              keywordsOf(pub).some(function (k) {
+                return active.has(k);
+              });
             pub.style.display = show ? "" : "none";
           });
+          if (window.relayoutPubs) window.relayoutPubs();
         }
         function renderFilters() {
           bar.innerHTML = "";
-          ["All"].concat(Array.from(tags).sort()).forEach(function (tag) {
-            var btn = document.createElement("button");
-            btn.type = "button";
-            btn.className = "filter" + (tag === active ? " active" : "");
-            btn.textContent = tag;
-            btn.addEventListener("click", function () {
-              active = tag;
-              renderFilters();
-              apply();
-            });
-            bar.appendChild(btn);
+          var allBtn = document.createElement("button");
+          allBtn.type = "button";
+          allBtn.className = "filter" + (active.size === 0 ? " active" : "");
+          allBtn.textContent = "All";
+          allBtn.addEventListener("click", function () {
+            active.clear();
+            renderFilters();
+            apply();
           });
+          bar.appendChild(allBtn);
+          Array.from(tags)
+            .sort()
+            .forEach(function (tag) {
+              var btn = document.createElement("button");
+              btn.type = "button";
+              btn.className = "filter" + (active.has(tag) ? " active" : "");
+              btn.textContent = tag;
+              btn.addEventListener("click", function () {
+                if (active.has(tag)) {
+                  active.delete(tag);
+                } else {
+                  active.add(tag);
+                }
+                renderFilters();
+                apply();
+              });
+              bar.appendChild(btn);
+            });
         }
         renderFilters();
         apply();
+      })();
+      (function () {
+        // Amber-badge type filters for Awards, Disclosures, Presentations,
+        // and Outreach — same pattern as the Publications keyword filter,
+        // but at sub-entry granularity: each .item is h4 (title) followed
+        // by repeating (h5, .badge-row) pairs, and each pair has its own
+        // amber "type" badge. Filtering hides only the non-matching pairs,
+        // keeping h4 visible as the group header; the whole .item is hidden
+        // only if none of its pairs match. Multi-select OR, "All" clears.
+        function setupTypeFilter(barId, listId) {
+          var bar = document.getElementById(barId);
+          var list = document.getElementById(listId);
+          if (!bar || !list) return;
+          var items = Array.prototype.slice.call(
+            list.querySelectorAll(":scope > .item"),
+          );
+          if (!items.length) return;
+
+          function pairsOf(item) {
+            // Each h5 is immediately followed by its own .badge-row.
+            return Array.prototype.filter
+              .call(item.children, function (el) {
+                return el.tagName === "H5";
+              })
+              .map(function (h5) {
+                var row = h5.nextElementSibling;
+                return { h5: h5, row: row };
+              });
+          }
+          function typeOf(pair) {
+            if (!pair.row) return null;
+            var label = pair.row.querySelector(".badge-amber .badge-label");
+            return label ? label.textContent.trim() : null;
+          }
+          var tags = new Set();
+          items.forEach(function (item) {
+            pairsOf(item).forEach(function (pair) {
+              var t = typeOf(pair);
+              if (t) tags.add(t);
+            });
+          });
+          var active = new Set();
+          function apply() {
+            items.forEach(function (item) {
+              var pairs = pairsOf(item);
+              var anyVisible = false;
+              pairs.forEach(function (pair) {
+                var show = active.size === 0 || active.has(typeOf(pair));
+                pair.h5.style.display = show ? "" : "none";
+                if (pair.row) pair.row.style.display = show ? "" : "none";
+                if (show) anyVisible = true;
+              });
+              // Items with no h5/.badge-row pairs at all (shouldn't occur in
+              // these four lists, but guard anyway) always show under a
+              // type filter — there's nothing to filter within them.
+              item.style.display =
+                pairs.length === 0 || anyVisible ? "" : "none";
+            });
+          }
+          function renderFilters() {
+            bar.innerHTML = "";
+            var allBtn = document.createElement("button");
+            allBtn.type = "button";
+            allBtn.className = "filter" + (active.size === 0 ? " active" : "");
+            allBtn.textContent = "All";
+            allBtn.addEventListener("click", function () {
+              active.clear();
+              renderFilters();
+              apply();
+            });
+            bar.appendChild(allBtn);
+            Array.from(tags)
+              .sort()
+              .forEach(function (tag) {
+                var btn = document.createElement("button");
+                btn.type = "button";
+                btn.className = "filter" + (active.has(tag) ? " active" : "");
+                btn.textContent = tag;
+                btn.addEventListener("click", function () {
+                  if (active.has(tag)) {
+                    active.delete(tag);
+                  } else {
+                    active.add(tag);
+                  }
+                  renderFilters();
+                  apply();
+                });
+                bar.appendChild(btn);
+              });
+          }
+          renderFilters();
+          apply();
+        }
+        setupTypeFilter("awardsFilters", "awardsList");
+        setupTypeFilter("disclosuresFilters", "disclosuresList");
+        setupTypeFilter("presentationsFilters", "presentationsList");
+        setupTypeFilter("outreachFilters", "outreachList");
+      })();
+      (function () {
+        // Click any graphical abstract or focus-card image to enlarge it.
+        // stopPropagation keeps this from also triggering the parent
+        // .pub card's expand/collapse click handler.
+        var lightbox = document.getElementById("lightbox");
+        var lightboxImg = document.getElementById("lightboxImg");
+        var closeBtn = lightbox
+          ? lightbox.querySelector(".lightbox-close")
+          : null;
+        if (!lightbox || !lightboxImg || !closeBtn) return;
+        function open(img) {
+          if (!img.naturalWidth) return; // image hasn't loaded / 404'd
+          lightboxImg.src = img.currentSrc || img.src;
+          lightboxImg.alt = img.alt || "";
+          lightbox.hidden = false;
+        }
+        function close() {
+          lightbox.hidden = true;
+          lightboxImg.src = "";
+        }
+        document
+          .querySelectorAll(".pub-figure, .card-figure")
+          .forEach(function (img) {
+            img.addEventListener("click", function (e) {
+              e.stopPropagation();
+              open(img);
+            });
+          });
+        lightbox.addEventListener("click", function (e) {
+          if (e.target === lightbox) close();
+        });
+        closeBtn.addEventListener("click", close);
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") close();
+        });
+      })();
+      (function () {
+        // "Learn more" popup for each Research Focus card: click (or
+        // Enter/Space) opens a short primer on why the area matters, what
+        // has been done, what is actively being worked on, and what's
+        // still needed. Content below is a first-pass draft meant to be
+        // fact-checked and personalized, not pulled from the actual CV.
+        // The duplicate (aria-hidden) cards in the marquee's second half
+        // carry the same data-focus-key so clicking either copy works,
+        // but only the real first-half cards are focusable — aria-hidden
+        // elements shouldn't be reachable by keyboard.
+        var CONTENT = {
+          "organ-chip": {
+            title: "Stretchable Organ-on-a-chip",
+            why: "Static organ-on-chip devices miss the mechanical forces, like peristalsis and breathing motion, that shape how living tissue actually behaves and how disease develops in it.",
+            done: "Stretchable PDMS-membrane chips have reproduced basic cyclic strain in gut and lung models and shown that mechanical stretch changes epithelial differentiation and barrier function compared to static culture.",
+            doing: "Current work is making stretch, flow, and shear independently tunable within the same device, adding sensors for real-time barrier readouts, and validating with patient-derived tissue rather than immortalized cell lines.",
+            next: "Standardizing fabrication and mechanical parameters across labs so results become comparable, and scaling toward multiplexed platforms that could realistically support drug screening.",
+          },
+          "host-microbiome": {
+            title: "Host–microbiome interactions",
+            why: "Gut microbes shape epithelial oxidative stress, barrier integrity, and inflammation, but most disease models still study the epithelium on its own, without a living microbial community present.",
+            done: "Co-culture and organ-chip studies have shown that specific probiotic strains and patient-derived microbiota can reduce oxidative stress and inflammation in gut epithelium, including in disease-specific chip models like Crohn's.",
+            doing: "Work is moving from single-strain probiotics toward more complex, patient-matched microbial communities, paired with multi-omics readouts to identify mechanism rather than just correlation.",
+            next: "Longer co-culture windows that mimic chronic exposure, and connecting chip findings back to clinical outcomes such as FMT response, to learn which chip signals actually predict how a patient will respond.",
+          },
+          "translational-nams": {
+            title: "Translational NAMs",
+            why: "Animal models frequently fail to predict human drug response, and regulatory changes such as the FDA Modernization Act 2.0 have opened approval pathways to non-animal evidence, making reliable NAMs a practical, not just academic, priority.",
+            done: "Organ- and organoid-based platforms have shown proof-of-concept predictive value for specific toxicology and efficacy endpoints, and NAMs now appear directly in regulatory guidance discussions.",
+            doing: "Current efforts focus on qualifying NAMs against existing animal and clinical datasets, establishing reproducibility standards, and combining multiple platforms, chip-based, computational, and in vitro, into weight-of-evidence packages.",
+            next: "Broader inter-lab validation studies and clearer qualification pathways are still needed before NAMs can routinely replace animal testing in a submission rather than just supplement it.",
+          },
+          bioinformatics: {
+            title: "Bioinformatics",
+            why: "Organ-chip and microbiome experiments generate rich but noisy multi-omic data. Without rigorous quantitative analysis, the biology in that data is easy to misread.",
+            done: "Established pipelines already handle differential expression, 16S community profiling, and basic single-cell clustering and annotation for chip and organoid datasets.",
+            doing: "Work is shifting toward integrating multiple data types, transcriptomic, microbial, and physiological, from the same chip experiment, with tighter batch-correction standards given how small chip sample sizes typically are.",
+            next: "Chip-specific analysis standards and shared reference datasets, since most current bioinformatics tools were built for large clinical or bulk-tissue cohorts rather than small-n microfluidic experiments.",
+          },
+          "fluid-dynamics": {
+            title: "Fluid dynamics",
+            why: "Flow and shear stress physically shape how cells behave in the gut and vasculature, so device design depends on understanding the fluid mechanics inside a chip, not just choosing the right cells.",
+            done: "Finite-element and CFD models are routinely used to characterize shear stress and transport in existing microfluidic and organ-chip geometries, validated against direct flow measurements.",
+            doing: "Current modeling couples fluid dynamics with mechanical deformation in stretchable devices and with reactive transport of nutrients, drugs, and metabolites, instead of treating flow in isolation.",
+            next: "Patient- or context-specific modeling, matching a device's flow regime to physiological ranges for a given gut segment or disease state, rather than relying on generic flow assumptions.",
+          },
+          microfabrication: {
+            title: "Microfabrication",
+            why: "Every organ-chip capability, stretch, compartmentalization, imaging, is bottlenecked by whether the physical device can actually be built reproducibly and at reasonable cost.",
+            done: "Soft lithography, photolithography, and heat-pressed porous PDMS membranes have made stretchable, ultrathin, permeable membranes fabricatable in a standard academic lab.",
+            doing: "Current focus is improving batch-to-batch reproducibility, pore size, membrane thickness, bonding integrity, and simplifying protocols enough to transfer reliably between labs.",
+            next: "Moving from single-lab fabrication toward scalable manufacturing, such as additive manufacturing and standardized quality control, so chips can be produced at the volume and consistency pharma-scale screening would require.",
+          },
+        };
+        var modal = document.getElementById("focusModal");
+        if (!modal) return;
+        var modalCloseBtn = modal.querySelector(".focus-modal-close");
+        var titleEl = document.getElementById("focusModalTitle");
+        var whyEl = document.getElementById("focusModalWhy");
+        var doneEl = document.getElementById("focusModalDone");
+        var doingEl = document.getElementById("focusModalDoing");
+        var nextEl = document.getElementById("focusModalNext");
+        if (!modalCloseBtn || !titleEl || !whyEl || !doneEl || !doingEl || !nextEl)
+          return;
+        var lastFocused = null;
+        function openModal(key, triggerEl) {
+          var c = CONTENT[key];
+          if (!c) return;
+          titleEl.textContent = c.title;
+          whyEl.textContent = c.why;
+          doneEl.textContent = c.done;
+          doingEl.textContent = c.doing;
+          nextEl.textContent = c.next;
+          modal.hidden = false;
+          lastFocused = triggerEl || document.activeElement;
+          modalCloseBtn.focus();
+        }
+        function closeModal() {
+          modal.hidden = true;
+          if (lastFocused && typeof lastFocused.focus === "function") {
+            lastFocused.focus();
+          }
+        }
+        document
+          .querySelectorAll(".card[data-focus-key]")
+          .forEach(function (card) {
+            card.addEventListener("click", function () {
+              openModal(card.dataset.focusKey, card);
+            });
+            if (card.hasAttribute("tabindex")) {
+              card.addEventListener("keydown", function (e) {
+                if (e.target !== card) return;
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  openModal(card.dataset.focusKey, card);
+                }
+              });
+            }
+          });
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) closeModal();
+        });
+        modalCloseBtn.addEventListener("click", closeModal);
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && !modal.hidden) closeModal();
+        });
+      })();
+      (function () {
+        // Carousel controller shared by the Focus-area and mentee rows.
+        // JS-driven rather than a CSS @keyframes loop specifically so the
+        // prev/next arrows can nudge the position directly — offset is
+        // kept wrapped into (-halfWidth, 0] so it loops seamlessly
+        // regardless of whether the movement came from auto-scroll or a
+        // manual click.
+        var reduceMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+
+        function wrapOffset(offset, half) {
+          if (half <= 0) return 0;
+          while (offset <= -half) offset += half;
+          while (offset > 0) offset -= half;
+          return offset;
+        }
+
+        function setupMarquee(root, pxPerSecond) {
+          var track = root.querySelector(".mentee-track, .focus-track");
+          var prevBtn = root.querySelector(".carousel-arrow.prev");
+          var nextBtn = root.querySelector(".carousel-arrow.next");
+          if (!track) return;
+          var paused = false;
+          var lastTime = null;
+          var resumeTimer;
+
+          function apply() {
+            track.style.transform = "translateX(" + offset + "px)";
+          }
+          function halfWidth() {
+            return track.scrollWidth / 2;
+          }
+          // Start with the first card centered in the viewport (rather than
+          // flush against the left edge) so it's still visible for a moment
+          // once the auto-scroll starts carrying it left. Safe to wrap this
+          // through wrapOffset immediately: since the second half of the
+          // track is an exact duplicate of the first, any offset and
+          // offset-minus-half render pixel-identical, so wrapping never
+          // changes what's on screen.
+          var offset = 0;
+          var firstCard = track.firstElementChild;
+          if (firstCard) {
+            offset = (root.clientWidth - firstCard.getBoundingClientRect().width) / 2;
+          }
+          offset = wrapOffset(offset, halfWidth());
+          apply();
+          function frame(now) {
+            if (lastTime === null) lastTime = now;
+            var dt = now - lastTime;
+            lastTime = now;
+            if (!paused && !reduceMotion) {
+              offset -= (pxPerSecond * dt) / 1000;
+              offset = wrapOffset(offset, halfWidth());
+              apply();
+            }
+            requestAnimationFrame(frame);
+          }
+          requestAnimationFrame(frame);
+
+          root.addEventListener("mouseenter", function () {
+            paused = true;
+          });
+          root.addEventListener("mouseleave", function () {
+            paused = false;
+          });
+
+          var NUDGE = 240;
+          function nudge(delta) {
+            offset = wrapOffset(offset + delta, halfWidth());
+            apply();
+            paused = true;
+            clearTimeout(resumeTimer);
+            resumeTimer = setTimeout(function () {
+              paused = false;
+            }, 2200);
+          }
+          if (prevBtn) {
+            prevBtn.addEventListener("click", function () {
+              nudge(NUDGE);
+            });
+          }
+          if (nextBtn) {
+            nextBtn.addEventListener("click", function () {
+              nudge(-NUDGE);
+            });
+          }
+        }
+
+        document.querySelectorAll("[data-carousel]").forEach(function (root) {
+          var speed = root.dataset.carousel === "mentee" ? 34 : 48;
+          setupMarquee(root, speed);
+        });
       })();
     </script>
     <script src="theme.js"></script>
