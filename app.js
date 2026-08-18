@@ -2,7 +2,7 @@ const state = {
   view: "daily",
   query: "",
   topic: "All",
-  data: { daily: [], weekly: [], jobs: [] },
+  data: { daily: [], weekly: [], jobs: [], academia: [] },
 };
 
 const els = {
@@ -13,9 +13,13 @@ const els = {
   tabs: [...document.querySelectorAll(".tab")],
 };
 
+function isJobView() {
+  return state.view === "jobs" || state.view === "academia";
+}
+
 async function loadData() {
   try {
-    const [daily, weekly, jobs] = await Promise.all([
+    const [daily, weekly, jobs, academia] = await Promise.all([
       fetch("data/daily.json").then((r) => {
         if (!r.ok) throw new Error("Could not load daily briefing data");
         return r.json();
@@ -28,10 +32,15 @@ async function loadData() {
         if (!r.ok) throw new Error("Could not load industry jobs data");
         return r.json();
       }),
+      fetch("data/academia_jobs.json").then((r) => {
+        if (!r.ok) throw new Error("Could not load academia jobs data");
+        return r.json();
+      }),
     ]);
     state.data.daily = daily.briefings || [];
     state.data.weekly = weekly.briefings || [];
     state.data.jobs = jobs.briefings || [];
+    state.data.academia = academia.briefings || [];
     render();
   } catch (err) {
     els.status.hidden = false;
@@ -101,7 +110,7 @@ function jobTags(job) {
 function visibleGroups() {
   const q = state.query.trim().toLowerCase();
 
-  if (state.view === "jobs") {
+  if (isJobView()) {
     return currentItems()
       .map((group) => ({
         ...group,
@@ -130,7 +139,7 @@ function visibleGroups() {
 
 function availableTags() {
   const tags = new Set();
-  if (state.view === "jobs") {
+  if (isJobView()) {
     currentItems().forEach((g) =>
       (g.jobs || []).forEach((job) => jobTags(job).forEach((t) => tags.add(t))),
     );
@@ -276,9 +285,11 @@ function jobCard(job, index) {
     .filter(Boolean)
     .join(" · ");
 
+  const organizationLabel = state.view === "academia" ? "Institution" : "Company";
+
   body.innerHTML = `
     <div class="job-meta-grid">
-      <div><span>Company</span><strong>${escapeHTML(job.company || "—")}</strong></div>
+      <div><span>${organizationLabel}</span><strong>${escapeHTML(job.company || "—")}</strong></div>
       <div><span>Location</span><strong>${escapeHTML(job.location || "—")}</strong></div>
       <div><span>Work arrangement</span><strong>${escapeHTML(job.work_arrangement || "—")}</strong></div>
       <div><span>Term</span><strong>${escapeHTML(job.term || "—")}</strong></div>
@@ -286,7 +297,7 @@ function jobCard(job, index) {
       ${statusLine ? `<div class="job-meta-wide"><span>Posting status</span><strong>${statusLine}</strong></div>` : ""}
     </div>
     <h3>Role</h3><p>${escapeHTML(job.job_description || "")}</p>
-    ${job.company_info ? `<h3>Company</h3><p>${escapeHTML(job.company_info)}</p>` : ""}
+    ${job.company_info ? `<h3>${organizationLabel}</h3><p>${escapeHTML(job.company_info)}</p>` : ""}
     ${listBlock("Must-have requirements", job.key_must_have_requirements)}
     ${listBlock("Preferred requirements", job.preferred_requirements)}
     <h3>Why it fits my experience</h3><p>${escapeHTML(job.why_good_match || "")}</p>
@@ -307,10 +318,9 @@ function render() {
   if (!groups.length) {
     const empty = document.createElement("div");
     empty.className = "empty";
-    empty.textContent =
-      state.view === "jobs"
-        ? "No job opportunities match these filters."
-        : "No briefing items match these filters.";
+    empty.textContent = isJobView()
+      ? "No job opportunities match these filters."
+      : "No briefing items match these filters.";
     els.briefings.appendChild(empty);
     return;
   }
@@ -321,7 +331,7 @@ function render() {
     const heading = document.createElement("div");
     heading.className = "date-heading";
 
-    if (state.view === "jobs") {
+    if (isJobView()) {
       heading.innerHTML = `<div><h2>${formatDate(group.date)}</h2>${group.title ? `<p class="group-subtitle">${escapeHTML(group.title)}</p>` : ""}</div><span class="count">${group.jobs.length} role${group.jobs.length === 1 ? "" : "s"}</span>`;
       section.appendChild(heading);
       if (group.overall_takeaway) {
@@ -364,10 +374,9 @@ els.tabs.forEach((tab) =>
   tab.addEventListener("click", () => {
     state.view = tab.dataset.view;
     state.topic = "All";
-    els.search.placeholder =
-      state.view === "jobs"
-        ? "Search roles, companies, skills…"
-        : "Search titles, topics, methods…";
+    els.search.placeholder = isJobView()
+      ? "Search roles, institutions, companies, skills…"
+      : "Search titles, topics, methods…";
     els.tabs.forEach((t) => {
       const active = t === tab;
       t.classList.toggle("active", active);
