@@ -1,7 +1,7 @@
 {
   "briefings": [
     {
-      "date": "2026-08-16",
+      "date": "2026-08-17",
       "type": "industry_job_shortlist",
       "title": "Industry Role Shortlist",
       "scope": {
@@ -10,22 +10,22 @@
           "Organ-on-chip and microphysiological systems",
           "Complex in vitro and preclinical models",
           "Bioinformatics and computational biology",
-          "Tissue engineering and microfabrication",
-          "R&D scientist and assay development"
+          "Tissue engineering, bioprinting, and microfabrication",
+          "R&D scientist, translational biology, and assay development"
         ],
-        "selection_rule": "Include only roles worth serious attention; do not fill the list with generic biomedical, academic, technician, or weakly related roles."
+        "selection_rule": "Include only roles worth serious attention; broaden across adjacent high-fit directions without padding the list with generic biomedical roles."
       },
       "candidate_profile_snapshot": {
         "source": "Current namtthan/research website",
         "headline": "PhD candidate and predoctoral research fellow integrating experimental biology, computational fluid dynamics, and bioinformatics in human-relevant microphysiological systems.",
         "core_strengths": [
-          "Stretchable microfluidic gut-on-a-chip and multiplex organ-on-a-chip platforms for disease modeling and pharmaco-toxicology",
+          "Stretchable microfluidic gut-on-a-chip and multiplex organ-on-a-chip platforms",
           "Patient-derived intestinal organoids and host-microbiome co-culture",
-          "Complex epithelial disease models spanning Crohn's disease, inflammation, oxidative stress, radiation injury, fibrosis, and barrier dysfunction",
-          "Single-cell and bulk RNA-seq, 16S analysis, pathway-level interpretation, and quantitative analysis of engineered tissue systems",
-          "Computational fluid dynamics and transport modeling for microfluidic flow and shear stress",
-          "Porous PDMS membrane fabrication, photolithography, soft lithography, and additive manufacturing/3D printing for rapid prototyping",
-          "Translational New Approach Methodologies (NAMs) and human-centric alternatives to conventional animal testing",
+          "Crohn's disease, inflammation, oxidative stress, radiation injury, fibrosis, and barrier dysfunction models",
+          "Single-cell and bulk RNA-seq, 16S analysis, and pathway interpretation",
+          "Computational fluid dynamics and transport modeling",
+          "Porous PDMS membrane fabrication, photolithography, soft lithography, and additive manufacturing/3D printing",
+          "Translational NAMs and human-relevant alternatives to conventional animal testing",
           "Wet-lab assay development, microscopy, barrier/function assays, molecular biology, cell culture, troubleshooting, and experimental design"
         ]
       },
@@ -36,217 +36,186 @@
           "fit_score": 9.7,
           "title": "Research Scientist/Engineer - Tissue Engineering",
           "company": "CFD Research Corporation",
-          "company_info": "CFD Research is a 100% employee-owned U.S. technology company working across Biomedical & Life Sciences, aerospace and defense, sensing, energy, prototype development, and multiphysics simulation. Its Bio team develops microphysiological models, organ-on-chip and organoid systems for drug screening, medical-countermeasure development, and transport modeling.",
+          "company_info": "CFD Research is an employee-owned technology company with biomedical and life-science programs spanning human-relevant models, prototype development, and multiphysics simulation.",
           "location": "Huntsville, Alabama",
           "work_arrangement": "On-site",
           "term": "Permanent, full-time",
-          "salary": {
-            "min_usd": null,
-            "max_usd": null,
-            "period": "year",
-            "note": "Employer salary was not disclosed in the verified posting; third-party salary estimates are intentionally not treated as authoritative."
-          },
-          "posting_status_checked": "2026-08-16",
+          "salary": {"min_usd": null, "max_usd": null, "period": "year", "note": "Not disclosed in the posting used for this shortlist."},
+          "posting_status_checked": "2026-08-17",
           "posting_status": "Current listing found",
-          "posting_links": [
-            {
-              "label": "Current job listing",
-              "url": "https://jobs.digitalhire.com/job-listing/opening/4FJ9K0dgMRunzNJrLfYZrq"
-            },
-            {
-              "label": "CFD Research company site",
-              "url": "https://www.cfd-research.com/"
-            }
-          ],
-          "job_description": "Develop and enhance human microphysiological models using organ-on-chip and organoid platforms for drug screening, countermeasure development, and transport modeling. The role sits directly at the interface of biology and engineering and is explicitly intended for candidates who can build human in vitro systems rather than only run conventional assays.",
-          "key_must_have_requirements": [
-            "Advanced degree: MS plus approximately 3 years of relevant experience, or PhD, in Biology, Bioengineering, or a related field",
-            "Experience developing human in vitro models",
-            "Strong analytical and experimental problem-solving ability",
-            "Strong written/verbal communication and multidisciplinary teamwork",
-            "U.S. citizenship and eligibility to obtain and maintain a security clearance"
-          ],
-          "preferred_requirements": [
-            "Organ-on-chip or organoid development",
-            "Medium formulation and/or multi-organ in vitro model development",
-            "Product-development experience",
-            "Grant-writing experience"
-          ],
-          "why_good_match": "This is the cleanest translation of the current research website into an industry job. The website explicitly presents an integrated experimental-biology + CFD + bioinformatics identity built around stretchable gut-on-chip systems. The role specifically asks for organ-on-chip/organoid model development and transport modeling, so the user's microfluidics, CFD, porous-PDMS fabrication, intestinal organoid culture, disease modeling, quantitative assays, and NAM experience all reinforce the same hiring narrative rather than appearing as disconnected skills.",
-          "specific_experience_to_highlight": [
-            "Design and operation of stretchable gut-on-chip systems and multiplex microfluidic platforms",
-            "Human intestinal organoid-derived epithelium and patient-specific disease models",
-            "PDMS membrane fabrication, photolithography, soft lithography, and rapid prototyping",
-            "CFD/transport analysis of flow and shear stress in microfluidic systems",
-            "Barrier/function readouts, microscopy, molecular assays, and reproducible model characterization",
-            "NAMs and human-relevant preclinical modeling",
-            "Cross-disciplinary ability to connect device engineering with biological endpoints"
-          ],
-          "gaps_or_risks": [
-            "Security-clearance eligibility is a hard practical constraint; citizenship status should be checked before investing substantial application time",
-            "The employer may value productization and formal preclinical-development documentation more than a typical academic lab does",
-            "If the role expects multiple-organ platform experience, position the user's multiplex and transport-modeling work as evidence of platform extensibility rather than claiming unperformed multi-organ biology"
-          ],
-          "resume_tailoring": [
-            "Lead with 'Human microphysiological systems / organ-on-chip scientist-engineer' rather than a disease-specific Crohn's or gut-microbiome identity",
-            "Put organ-chip design, CFD, microfabrication, and human in vitro model development in the top third of the résumé",
-            "Use verbs such as designed, fabricated, validated, optimized, modeled, qualified, and troubleshot",
-            "Include the first-author porous elastic PDMS membrane publication prominently as proof of engineering ownership",
-            "Frame bioinformatics as an integrated model-characterization capability, not as a separate career track"
-          ],
-          "immediate_action_now": "Check the U.S.-citizenship/security-clearance requirement first. If eligible, submit a tailored application now and prioritize this role above generic R&D scientist jobs. Prepare a one-page project portfolio showing one organ-chip system from device design/fabrication through biological validation and quantitative readouts."
+          "posting_links": [{"label": "Current job listing", "url": "https://jobs.digitalhire.com/job-listing/opening/4FJ9K0dgMRunzNJrLfYZrq"}],
+          "job_description": "Develop and enhance human microphysiological models using organ-on-chip and organoid platforms for drug screening, countermeasure development, and transport modeling.",
+          "key_must_have_requirements": ["Advanced degree in biology, bioengineering, or a related field", "Experience developing human in vitro models", "Strong analytical and experimental problem solving", "Multidisciplinary communication and teamwork"],
+          "preferred_requirements": ["Organ-on-chip or organoid development", "Transport or computational modeling", "Product-development experience"],
+          "why_good_match": "This is the strongest direct overlap with the current portfolio: organ-chip development, organoids, CFD, microfabrication, quantitative biology, and human-relevant NAMs all support one coherent scientist-engineer story.",
+          "specific_experience_to_highlight": ["Stretchable gut-on-chip design and operation", "Human intestinal organoid models", "PDMS membrane fabrication and soft lithography", "CFD and transport modeling", "Barrier, imaging, ROS, and molecular readouts"],
+          "gaps_or_risks": ["Security-clearance eligibility may be a practical constraint", "Formal product-development experience may be lighter than some industry candidates"],
+          "resume_tailoring": ["Lead with human microphysiological systems / organ-on-chip scientist-engineer", "Put device design, CFD, fabrication, and model validation in the top third", "Frame bioinformatics as integrated model characterization"],
+          "immediate_action_now": "Check clearance eligibility and apply with a one-page project portfolio showing device design, fabrication, biological validation, and quantitative readouts."
         },
         {
           "priority": 2,
-          "recommendation": "APPLY_IF_SENIORITY_FITS",
-          "fit_score": 9.2,
-          "title": "Senior Scientist - Complex In Vitro Models",
-          "company": "CFD Research Corporation",
-          "company_info": "CFD Research develops multidisciplinary technology and prototype solutions and has a dedicated Biotechnology & Life Sciences effort. This opening focuses on advanced complex in vitro models for evaluation and development of medical countermeasures and explicitly includes organ-on-chip and organoid platforms.",
-          "location": "Huntsville, Alabama",
+          "recommendation": "APPLY_NOW",
+          "fit_score": 9.3,
+          "title": "Research Scientist - 3D Bioprinting",
+          "company": "Polbionica",
+          "company_info": "Polbionica is expanding a regenerative-medicine R&D presence at LabCentral and is hiring for hands-on biotechnology and 3D bioprinting research.",
+          "location": "Cambridge, Massachusetts",
           "work_arrangement": "On-site",
-          "term": "Permanent, full-time",
-          "salary": {
-            "min_usd": 74991.58,
-            "max_usd": 117390.58,
-            "period": "year",
-            "note": "Range reported in the current aggregated job listing checked on 2026-08-16."
-          },
-          "posting_status_checked": "2026-08-16",
-          "posting_status": "Current listing found in job search backend; seniority requirement makes this a stretch application",
-          "posting_links": [
-            {
-              "label": "Job posting",
-              "url": "https://to.indeed.com/aamhrpzv8bxr"
-            },
-            {
-              "label": "CFD Research company site",
-              "url": "https://www.cfd-research.com/"
-            }
-          ],
-          "job_description": "Lead design, development, optimization, and fit-for-purpose selection of advanced complex in vitro systems, including organ-on-chip and organoids, across multiple tissue types. Execute and refine assays such as immunocytochemistry, ELISA, and cytotoxicity testing; generate rigorous datasets; work with computational biologists and software engineers; and contribute to SOPs, reports, proposals, and publications.",
-          "key_must_have_requirements": [
-            "PhD plus 3 or more years of relevant experience, or equivalent, in Biology, Bioengineering, or a related field",
-            "Demonstrated expertise developing fit-for-purpose preclinical in vitro models",
-            "Ability to independently manage multiple projects and troubleshoot complex experiments",
-            "Strong analytical, scientific-writing, and verbal-communication skills",
-            "Ability to collaborate effectively in multidisciplinary teams",
-            "U.S. citizenship and ability to obtain/maintain a security clearance"
-          ],
-          "preferred_requirements": [
-            "Multi-organ or integrated in vitro systems",
-            "Drug-development or translational-research experience",
-            "Product-development environment experience",
-            "Grant or proposal writing"
-          ],
-          "why_good_match": "Scientifically, this is nearly tailor-made for the website profile: complex in vitro systems, organ-on-chip, organoids, quantitative assay development, multidisciplinary computational collaboration, and model selection based on context of use. The user also has an unusually useful combination of experimental biology, CFD, bioinformatics, microfabrication, and 3D-printing/prototyping that maps to CFD Research's broader engineering culture.",
-          "specific_experience_to_highlight": [
-            "Independent development of stretchable gut-on-chip systems",
-            "Patient-derived organoid and host-microbiome disease modeling",
-            "Quantitative model endpoints including barrier integrity, imaging, oxidative stress, and molecular readouts",
-            "Bioinformatics interpretation of engineered tissue systems",
-            "Microfabrication and additive-manufacturing experience",
-            "Scientific publications, invention work, and multidisciplinary communication"
-          ],
-          "gaps_or_risks": [
-            "The explicit PhD + 3 years requirement may place a newly graduating PhD below the intended level",
-            "Direct medical-countermeasure or defense-program experience may be absent",
-            "Formal product-development and proposal-writing experience may be lighter than candidates coming from industry or government-contract R&D"
-          ],
-          "resume_tailoring": [
-            "Present research projects as independently owned technical programs with deliverables, not as thesis chapters",
-            "Quantify model-development outcomes and validation metrics wherever possible",
-            "Bring invention disclosure, device design, and fabrication accomplishments forward to demonstrate platform ownership",
-            "Highlight mentoring, troubleshooting, protocol/SOP creation, and cross-disciplinary coordination to partially offset the industry-experience gap"
-          ],
-          "immediate_action_now": "Apply only after the Research Scientist/Engineer version unless the posting accepts academic research time toward the three-year post-PhD expectation. Use the application to test whether CFD Research will level the candidate down rather than self-rejecting; explicitly signal openness to the Scientist/Engineer level if appropriate."
+          "term": "Full-time",
+          "salary": {"min_usd": 80000, "max_usd": 110000, "period": "year", "note": "Range shown in the current listing."},
+          "posting_status_checked": "2026-08-17",
+          "posting_status": "Current listing found",
+          "posting_links": [{"label": "Job posting", "url": "https://to.indeed.com/aapfpc2vb9fw"}],
+          "job_description": "Hands-on regenerative-medicine research centered on 3D bioprinting and experimental biotechnology, with an emphasis on developing and learning new fabrication technologies.",
+          "key_must_have_requirements": ["Strong hands-on experimental research capability", "Ability to work with emerging biotechnology and fabrication workflows", "Comfort operating in a startup-style R&D environment"],
+          "preferred_requirements": ["3D bioprinting", "Tissue engineering", "Additive manufacturing", "Cell culture and biomaterials"],
+          "why_good_match": "This is one of the few current roles where the 3D-printing side of the portfolio becomes a core hiring asset rather than a side skill. It also connects naturally to microfabrication, tissue engineering, organ-chip prototyping, and wet-lab biology.",
+          "specific_experience_to_highlight": ["Additive manufacturing and rapid prototyping", "Soft lithography and PDMS fabrication", "Engineered tissue systems", "Cell culture and quantitative imaging", "Iterative device troubleshooting"],
+          "gaps_or_risks": ["Direct bioprinting experience may be shallower than general 3D-printing and microfabrication experience", "Biomaterials formulation may be more central than in current gut-chip work"],
+          "resume_tailoring": ["Lead with fabrication + biological model development", "Use the porous membrane paper as proof of hands-on engineering ownership", "Show CAD/prototyping and wet-lab skills in the same project bullets"],
+          "immediate_action_now": "Apply with a fabrication-forward resume and include a compact portfolio panel of printed prototypes, microfluidic devices, and porous-membrane fabrication."
         },
         {
           "priority": 3,
           "recommendation": "STRONG_STRETCH",
-          "fit_score": 8.1,
-          "title": "Senior Scientist, Immunology",
-          "company": "Biogen",
-          "company_info": "Biogen is a global biotechnology company focused on therapeutic discovery and development. This South San Francisco Immunology Research Unit role focuses on inflammatory and autoimmune disease mechanisms, target validation, translational research, biomarker development, and decision-enabling preclinical studies.",
-          "location": "South San Francisco, California",
-          "work_arrangement": "Frequent on-site presence required",
+          "fit_score": 9.0,
+          "title": "Senior Scientist, Organoid and Tissue Systems",
+          "company": "Conception",
+          "company_info": "Conception is a reproductive-biology biotechnology company developing functional human eggs from induced pluripotent stem cells and building advanced human tissue systems.",
+          "location": "Berkeley, California",
+          "work_arrangement": "On-site",
           "term": "Full-time",
-          "salary": {
-            "min_usd": 123000,
-            "max_usd": 164000,
-            "period": "year",
-            "note": "Employer-posted base compensation range."
-          },
-          "posting_status_checked": "2026-08-16",
-          "posting_status": "Active employer posting; posted recently",
-          "posting_links": [
-            {
-              "label": "Biogen application",
-              "url": "https://biibhr.wd3.myworkdayjobs.com/external/job/Senior-Scientist--Immunology_REQ23739"
-            }
-          ],
-          "job_description": "Design and execute in vitro and in vivo studies of inflammatory and autoimmune mechanisms; identify and validate drug targets, biomarkers, and immune pathways; build and optimize immunological assays using primary cells and disease-relevant models; and integrate complex cellular, molecular, pharmacological, and translational datasets to advance discovery programs.",
-          "key_must_have_requirements": [
-            "PhD preferred in Immunology, Cellular/Molecular Biology, Pharmacology, or a related scientific discipline",
-            "Approximately 2 or more years of relevant biotech/pharma drug-discovery or translational-research experience for PhD-level candidates",
-            "Strong experimental design and hands-on assay-development capability",
-            "Ability to work with primary cells, patient-derived samples, and disease-relevant model systems",
-            "Strong data interpretation, scientific communication, and cross-functional collaboration"
-          ],
-          "preferred_requirements": [
-            "Industry drug-discovery experience in immunology, inflammation, or autoimmune disease",
-            "Multiparametric/high-dimensional flow cytometry",
-            "Multiomics analysis including genomic, transcriptomic, proteomic, or integrated biomarker datasets",
-            "Translational biomarker strategy and preclinical-to-clinical bridging",
-            "Experience with small molecules, biologics, or cell-based therapeutics"
-          ],
-          "why_good_match": "The user's Crohn's disease, inflammatory signaling, epithelial-barrier, oxidative-stress, microbiome, fibroblast, and transcriptomic work creates a credible inflammation/autoimmune story. The website already shows both hands-on disease-model development and omics interpretation, allowing the application to bridge mechanistic biology and translational datasets rather than presenting as a pure organ-chip specialist.",
-          "specific_experience_to_highlight": [
-            "Crohn's disease patient-derived organoid models and inflammatory phenotyping",
-            "Host-microbiome effects on epithelial inflammation, ROS, barrier function, and disease pathways",
-            "Single-cell and bulk RNA-seq plus pathway-level interpretation",
-            "Mechanostimulatory/fibrotic remodeling work and fibroblast-related disease biology",
-            "Primary/complex cell culture, quantitative imaging, and functional assays",
-            "Ability to design perturbation experiments that link phenotype to mechanism"
-          ],
-          "gaps_or_risks": [
-            "The employer explicitly prefers prior biotech/pharma drug-discovery experience, which is the largest gap",
-            "High-dimensional flow cytometry may not be a demonstrated core strength",
-            "The candidate's strongest disease-model expertise is intestinal/IBD rather than broad systemic immunology",
-            "This is a Senior Scientist title and may be leveled above a fresh PhD despite strong scientific overlap"
-          ],
-          "resume_tailoring": [
-            "Do not lead with microfluidic fabrication for this application; lead with inflammatory disease biology and translational model development",
-            "Connect organ-chip experiments to target/pathway hypotheses, biomarkers, and decision-making rather than device engineering",
-            "Put scRNA-seq/bulk RNA-seq and inflammatory pathway interpretation near the top",
-            "Explicitly show experience working across epithelial, stromal/fibroblast, immune-relevant, and microbiome contexts"
-          ],
-          "immediate_action_now": "Apply as a stretch only if the application can be tailored around inflammatory disease biology rather than organ-chip engineering. Before submission, rewrite the top résumé summary and first project bullets to read like an immunology/translational-science candidate; do not reuse the CFD Research résumé."
-        }
-      ],
-      "excluded_or_status_changed": [
-        {
-          "title": "Scientist II, Complex In Vitro Models",
-          "company": "AbbVie",
-          "reason": "The employer career page now explicitly states that the vacancy has expired. It remains scientifically one of the strongest profile matches, but it should not be shown as an actionable current opening.",
-          "status_checked": "2026-08-16"
+          "salary": {"min_usd": 96215.44, "max_usd": 168757.44, "period": "year", "note": "Range shown in the current listing."},
+          "posting_status_checked": "2026-08-17",
+          "posting_status": "Current listing found",
+          "posting_links": [{"label": "Job posting", "url": "https://to.indeed.com/aafkphpgkbtd"}],
+          "job_description": "Senior-level organoid and tissue-systems role supporting advanced reproductive-biology platform development.",
+          "key_must_have_requirements": ["PhD", "Postdoctoral training or equivalent industry experience", "Approximately 3+ years post-PhD experience indicated in the listing", "Strong organoid/tissue-system expertise"],
+          "preferred_requirements": ["Advanced stem-cell or organoid culture", "Platform development", "Complex tissue systems"],
+          "why_good_match": "The scientific content is highly aligned with patient-derived organoids, engineered tissue systems, and model development. The main mismatch is career stage, not subject matter.",
+          "specific_experience_to_highlight": ["Patient-derived intestinal organoids", "Organoid-derived epithelial culture", "Engineered microenvironments", "Disease-model validation", "Cross-disciplinary platform development"],
+          "gaps_or_risks": ["The explicit post-PhD experience expectation makes this a genuine stretch", "Reproductive biology and iPSC-derived gamete systems are outside the current disease focus"],
+          "resume_tailoring": ["Lead with organoid and tissue-system development rather than gut disease", "Emphasize transferable model-development principles and reproducibility", "Do not hide the seniority gap; signal openness to appropriate leveling"],
+          "immediate_action_now": "Apply only if the role allows leveling flexibility; otherwise monitor Conception for Scientist-level organoid openings."
         },
         {
-          "title": "Scientist, Microbiome Data Science & Bioinformatics",
-          "company": "Ferring Pharmaceuticals",
-          "reason": "The employer posting listed an August 13, 2026 application end date; the current briefing date is August 16, 2026, so it is not treated as actionable even though some aggregators still surface it.",
-          "status_checked": "2026-08-16"
+          "priority": 4,
+          "recommendation": "APPLY_NOW",
+          "fit_score": 8.9,
+          "title": "Research Scientist - In Vitro Pharmacology",
+          "company": "BioLegacy Research",
+          "company_info": "BioLegacy Research is a preclinical research organization supporting biotechnology and pharmaceutical companies with in-vitro pharmacology and development studies.",
+          "location": "San Diego, California",
+          "work_arrangement": "On-site",
+          "term": "Full-time",
+          "salary": {"min_usd": 100000, "max_usd": 130000, "period": "year", "note": "Range shown in the current listing."},
+          "posting_status_checked": "2026-08-17",
+          "posting_status": "Current listing found",
+          "posting_links": [{"label": "Job posting", "url": "https://to.indeed.com/aaqfc6lq9jlb"}],
+          "job_description": "Preclinical in-vitro pharmacology role supporting development of therapeutic programs for biotech and pharmaceutical clients.",
+          "key_must_have_requirements": ["Strong in-vitro experimental skills", "Ability to design, execute, and interpret preclinical studies", "Reliable assay execution and troubleshooting"],
+          "preferred_requirements": ["Pharmacology", "Assay development", "Client-facing or CRO-style research delivery"],
+          "why_good_match": "The role uses the wet-lab, model-development, quantitative assay, and troubleshooting parts of the portfolio directly. It is less engineering-heavy than CFD Research but probably easier to translate into mainstream biotech experience.",
+          "specific_experience_to_highlight": ["Barrier/function assays", "ROS and injury assays", "Microscopy and quantitative phenotyping", "Complex in-vitro model development", "Experimental troubleshooting"],
+          "gaps_or_risks": ["Direct pharmacology/CRO experience may be limited", "The role may value standardized throughput over platform invention"],
+          "resume_tailoring": ["Emphasize reproducibility, assay optimization, controls, and decision-quality data", "Translate thesis projects into preclinical study language", "Keep device fabrication secondary"],
+          "immediate_action_now": "Prepare a pharmacology-oriented resume version emphasizing assay design, reproducibility, perturbation studies, and quantitative endpoints."
+        },
+        {
+          "priority": 5,
+          "recommendation": "APPLY_NOW",
+          "fit_score": 8.8,
+          "title": "Associate Scientist II, in vitro Preclinical Development",
+          "company": "AbbVie",
+          "company_info": "AbbVie is a global biopharmaceutical company with large discovery and preclinical-development organizations.",
+          "location": "San Diego, California",
+          "work_arrangement": "On-site",
+          "term": "Full-time",
+          "salary": {"min_usd": 58656, "max_usd": 110500, "period": "year", "note": "Range shown in the current listing."},
+          "posting_status_checked": "2026-08-17",
+          "posting_status": "Current listing found",
+          "posting_links": [{"label": "Job posting", "url": "https://to.indeed.com/aabz8w84xmhz"}],
+          "job_description": "Hands-on in-vitro preclinical-development position supporting experimental evaluation of therapeutic programs.",
+          "key_must_have_requirements": ["Hands-on in-vitro laboratory experience", "Experimental design and data interpretation", "Ability to execute reproducible preclinical workflows"],
+          "preferred_requirements": ["Preclinical development", "Assay development", "Biopharma R&D experience"],
+          "why_good_match": "This is a cleaner career-stage bridge than AbbVie's expired Complex In Vitro Models Scientist II role. It uses strong wet-lab and human-model experience while providing direct pharma preclinical-development exposure.",
+          "specific_experience_to_highlight": ["Human-relevant in-vitro models", "Organoid and epithelial culture", "Dose/perturbation studies", "Barrier, imaging, ROS, and molecular assays", "Model validation"],
+          "gaps_or_risks": ["Associate Scientist II may undershoot PhD-level title expectations depending on AbbVie's leveling", "The work may use simpler assays than the current organ-chip platform"],
+          "resume_tailoring": ["Lead with preclinical model development and assay rigor", "Use organ-chip complexity as evidence of experimental sophistication without implying every project needs a chip", "Highlight reproducibility and troubleshooting"],
+          "immediate_action_now": "Check the education/leveling section before applying; if PhD candidates are eligible, submit because this is a practical route into pharma preclinical R&D."
+        },
+        {
+          "priority": 6,
+          "recommendation": "STRONG_STRETCH",
+          "fit_score": 8.7,
+          "title": "Senior Scientist, Computational Safety & Exploratory Pharmacology",
+          "company": "Merck",
+          "company_info": "Merck's nonclinical drug-safety organization integrates computational and experimental approaches to evaluate physiological and pharmacological risk during drug development.",
+          "location": "West Point, Pennsylvania",
+          "work_arrangement": "On-site / employer-defined hybrid",
+          "term": "Full-time",
+          "salary": {"min_usd": 106200, "max_usd": 167200, "period": "year", "note": "Range shown in the current listing."},
+          "posting_status_checked": "2026-08-17",
+          "posting_status": "Current listing found",
+          "posting_links": [{"label": "Job posting", "url": "https://to.indeed.com/aaqpw6j29jsq"}],
+          "job_description": "Nonclinical drug-safety role seeking a biomedical engineer or integrative systems scientist with signal-processing and/or computational modeling experience using physiological data.",
+          "key_must_have_requirements": ["Biomedical engineering or integrative systems-science background", "Computational modeling and/or signal-processing experience", "Ability to connect quantitative models to physiological or pharmacological questions"],
+          "preferred_requirements": ["Nonclinical safety", "Physiological modeling", "Drug-development context"],
+          "why_good_match": "This is unusually relevant to the engineering side of the portfolio. CFD, transport modeling, quantitative biology, and experimental physiology can be positioned together instead of forcing a choice between computational and wet-lab identity.",
+          "specific_experience_to_highlight": ["CFD and transport modeling", "Quantitative analysis of engineered tissues", "Experimental biology used to validate models", "Mechanobiology and flow/shear-stress reasoning", "Cross-disciplinary computational/experimental work"],
+          "gaps_or_risks": ["Drug-safety pharmacology experience may be limited", "Signal processing may be less developed than CFD and bioinformatics", "Senior Scientist title may require more direct industry experience"],
+          "resume_tailoring": ["Build a computational-biomedical-engineering version of the resume", "Put modeling methods and physiological interpretation together", "De-emphasize fabrication details unless they support model validation"],
+          "immediate_action_now": "Read the exact modeling requirements closely; if CFD/physiological modeling qualifies, apply as a differentiated engineering-to-pharma transition."
+        },
+        {
+          "priority": 7,
+          "recommendation": "APPLY_NOW",
+          "fit_score": 8.6,
+          "title": "Toxicology Research Scientist",
+          "company": "Vertex Pharmaceuticals",
+          "company_info": "Vertex is a biotechnology company with a Predictive and Investigative Safety Assessment group focused on translational toxicology and drug safety.",
+          "location": "San Diego, California",
+          "work_arrangement": "On-site",
+          "term": "Full-time",
+          "salary": {"min_usd": 101600, "max_usd": 152400, "period": "year", "note": "Range shown in the current listing."},
+          "posting_status_checked": "2026-08-17",
+          "posting_status": "Current listing found",
+          "posting_links": [{"label": "Job posting", "url": "https://to.indeed.com/aa4bl99lzpw7"}],
+          "job_description": "Lab-based predictive and investigative toxicology position supporting safety assessment of therapeutic programs.",
+          "key_must_have_requirements": ["Strong experimental biology background", "Ability to investigate mechanisms of toxicity", "Quantitative data interpretation and experimental design"],
+          "preferred_requirements": ["Predictive toxicology", "Drug safety", "Human-relevant in-vitro models"],
+          "why_good_match": "Radiation injury, oxidative stress, DNA-damage, barrier failure, rescue experiments, and NAMs give a credible mechanistic-safety narrative. The role also rewards model systems that can explain why injury occurs, not merely report a phenotype.",
+          "specific_experience_to_highlight": ["Radiation-on-chip injury model", "ROS and 53BP1/DNA-damage readouts", "NAC and probiotic rescue experiments", "Barrier integrity and LDH", "Human-relevant NAM framing"],
+          "gaps_or_risks": ["Formal toxicology training may be limited", "Direct regulated safety-assessment experience may be absent"],
+          "resume_tailoring": ["Lead with mechanistic injury and safety biology rather than gut-chip fabrication", "Frame radiation work as exposure-response and mechanism-of-injury research", "Highlight rescue/intervention experiments"],
+          "immediate_action_now": "Create a toxicology-specific project section centered on radiation injury, oxidative stress, DNA damage, and barrier dysfunction before applying."
+        },
+        {
+          "priority": 8,
+          "recommendation": "APPLY_NOW",
+          "fit_score": 8.4,
+          "title": "Scientist II, Translational Research",
+          "company": "Tempus",
+          "company_info": "Tempus is a precision-medicine company combining molecular data, clinical data, and computational platforms to support translational and therapeutic research.",
+          "location": "Redwood City, California",
+          "work_arrangement": "Employer-defined",
+          "term": "Full-time",
+          "salary": {"min_usd": 90000, "max_usd": 150000, "period": "year", "note": "Range shown in the current listing."},
+          "posting_status_checked": "2026-08-17",
+          "posting_status": "Current listing found",
+          "posting_links": [{"label": "Job posting", "url": "https://to.indeed.com/aaqwx92jpscb"}],
+          "job_description": "Translational research position within a precision-medicine environment that connects biological questions with molecular and data-rich evidence.",
+          "key_must_have_requirements": ["Strong translational-science foundation", "Ability to interpret complex biological datasets", "Cross-functional scientific communication"],
+          "preferred_requirements": ["Precision medicine", "Molecular profiling", "Computational or bioinformatics analysis"],
+          "why_good_match": "This role uses the hybrid wet-lab/bioinformatics identity well. Patient-derived models, single-cell and bulk RNA-seq, pathway analysis, and disease-specific phenotyping create a credible translational story.",
+          "specific_experience_to_highlight": ["Patient-derived Crohn's organoids", "scRNA-seq and bulk RNA-seq", "Pathway interpretation", "Linking molecular signatures to barrier/inflammatory phenotypes", "Host-microbiome experiments"],
+          "gaps_or_risks": ["Clinical-data experience may be lighter than molecular/experimental experience", "The role may be less hands-on engineering than the current portfolio"],
+          "resume_tailoring": ["Lead with patient-derived translational models and omics", "Describe experiments as phenotype-to-molecular-mechanism studies", "Move CFD and fabrication to a secondary technical section"],
+          "immediate_action_now": "Prepare a translational-biology resume variant showing how patient-derived models and omics jointly answer disease questions."
         }
       ],
-      "overall_takeaway": "The highest-value market position is human-relevant model/platform scientist rather than generic biomedical engineer or generic bioinformatician. The strongest applications should sell an integrated ability to design the experimental system, engineer the microenvironment, generate mechanistic biological data, and analyze those data computationally. Bioinformatics is a differentiator; organ-on-chip and complex in vitro model ownership are the primary anchor.",
-      "immediate_week_plan": [
-        "First verify whether the CFD Research citizenship/security-clearance requirement is satisfiable.",
-        "If yes, submit the Research Scientist/Engineer - Tissue Engineering application first with a platform-development résumé.",
-        "Prepare a compact project portfolio containing one organ-chip case study: problem, device/model design, fabrication, biological validation, quantitative endpoints, and translational significance.",
-        "Submit the CFD Senior Scientist application as a stretch and explicitly remain open to leveling.",
-        "Only then tailor a separate inflammation/translational-biology résumé for Biogen; do not send the engineering-heavy CFD version.",
-        "Continue monitoring AbbVie complex-in-vitro/MPS openings because the expired role demonstrates unusually strong organizational demand for exactly this profile."
-      ]
+      "overall_takeaway": "The broader scan reinforces three credible industry lanes: human-relevant model/platform development, preclinical and mechanistic safety biology, and hybrid translational/computational biology. The strongest differentiator remains the ability to connect engineered models with real biological readouts rather than presenting as a generic biomedical engineer."
     }
   ]
 }
