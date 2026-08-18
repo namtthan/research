@@ -109,7 +109,6 @@ function jobTags(job) {
 
 function visibleGroups() {
   const q = state.query.trim().toLowerCase();
-
   if (isJobView()) {
     return currentItems()
       .map((group) => ({
@@ -123,7 +122,6 @@ function visibleGroups() {
       }))
       .filter((group) => group.jobs.length);
   }
-
   return currentItems()
     .map((group) => ({
       ...group,
@@ -170,7 +168,6 @@ function renderFilters() {
 function storyCard(story, index) {
   const details = document.createElement("details");
   details.className = "story";
-
   const summary = document.createElement("summary");
   summary.innerHTML = `
     <div>
@@ -215,6 +212,10 @@ function formatRecommendation(value = "") {
     .join(" ");
 }
 
+function isStretchRecommendation(value = "") {
+  return String(value).toLowerCase().includes("stretch");
+}
+
 function formatSalary(salary) {
   if (!salary) return "Not disclosed";
   const { min_usd, max_usd, period, note } = salary;
@@ -225,7 +226,6 @@ function formatSalary(salary) {
       currency: "USD",
       maximumFractionDigits: 0,
     }).format(value);
-
   if (min_usd != null && max_usd != null) {
     main = `${money(min_usd)}–${money(max_usd)} / ${period || "year"}`;
   } else if (min_usd != null) {
@@ -246,8 +246,8 @@ function listBlock(title, items, className = "") {
 function jobCard(job, index) {
   const details = document.createElement("details");
   details.className = "story job-card";
-
   const recommendation = formatRecommendation(job.recommendation || "");
+  const stretchClass = isStretchRecommendation(job.recommendation) ? " is-stretch" : "";
   const fit =
     job.fit_score != null
       ? `<span class="priority fit-score">Fit ${escapeHTML(job.fit_score)}/10</span>`
@@ -259,7 +259,7 @@ function jobCard(job, index) {
       <div class="story-title">${index + 1}. ${escapeHTML(job.title || "Untitled role")}${fit}</div>
       <p class="takeaway"><strong>${escapeHTML(job.company || "")}</strong>${job.location ? ` · ${escapeHTML(job.location)}` : ""}</p>
       <div class="badges">
-        ${recommendation ? `<span class="badge job-recommendation">${escapeHTML(recommendation)}</span>` : ""}
+        ${recommendation ? `<span class="badge job-recommendation${stretchClass}">${escapeHTML(recommendation)}</span>` : ""}
         ${job.work_arrangement ? `<span class="badge">${escapeHTML(job.work_arrangement)}</span>` : ""}
         ${job.term ? `<span class="badge">${escapeHTML(job.term)}</span>` : ""}
       </div>
@@ -268,14 +268,12 @@ function jobCard(job, index) {
 
   const body = document.createElement("div");
   body.className = "story-body";
-
   const links = (job.posting_links || [])
     .map(
       (link) =>
         `<li><a href="${escapeAttribute(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(link.label || link.url)}</a></li>`,
     )
     .join("");
-
   const statusLine = [
     job.posting_status ? escapeHTML(job.posting_status) : "",
     job.posting_status_checked
@@ -284,7 +282,6 @@ function jobCard(job, index) {
   ]
     .filter(Boolean)
     .join(" · ");
-
   const organizationLabel = state.view === "academia" ? "Institution" : "Company";
 
   body.innerHTML = `
@@ -330,7 +327,6 @@ function render() {
     section.className = "date-group";
     const heading = document.createElement("div");
     heading.className = "date-heading";
-
     if (isJobView()) {
       heading.innerHTML = `<div><h2>${formatDate(group.date)}</h2>${group.title ? `<p class="group-subtitle">${escapeHTML(group.title)}</p>` : ""}</div><span class="count">${group.jobs.length} role${group.jobs.length === 1 ? "" : "s"}</span>`;
       section.appendChild(heading);
@@ -344,11 +340,8 @@ function render() {
     } else {
       heading.innerHTML = `<h2>${formatDate(group.date)}</h2><span class="count">${group.stories.length} item${group.stories.length === 1 ? "" : "s"}</span>`;
       section.appendChild(heading);
-      group.stories.forEach((story, i) =>
-        section.appendChild(storyCard(story, i)),
-      );
+      group.stories.forEach((story, i) => section.appendChild(storyCard(story, i)));
     }
-
     els.briefings.appendChild(section);
   });
 }
@@ -357,15 +350,10 @@ function escapeHTML(value = "") {
   return String(value).replace(
     /[&<>"']/g,
     (c) =>
-      ({
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': "&quot;",
-        "'": "&#039;",
-      })[c],
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[c],
   );
 }
+
 function escapeAttribute(value = "") {
   return escapeHTML(value);
 }
@@ -390,4 +378,5 @@ els.search.addEventListener("input", (e) => {
   state.query = e.target.value;
   render();
 });
+
 loadData();
