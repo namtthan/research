@@ -1,0 +1,251 @@
+{
+  "briefings": [
+    {
+      "date": "2026-08-17",
+      "type": "academia_job_shortlist",
+      "title": "Academia Job Shortlist",
+      "scope": {
+        "geography": "United States; Cleveland/Ohio prioritized when a sufficiently strong match is available",
+        "seniority": "Postdoctoral positions and above",
+        "focus": [
+          "Organ-on-chip and microphysiological systems",
+          "Organoids and patient-derived models",
+          "New Approach Methodologies and human-relevant technologies",
+          "Bioinformatics and computational biology",
+          "Tissue engineering, microfabrication, and biomedical engineering",
+          "Translational gastrointestinal and inflammatory disease research"
+        ],
+        "selection_rule": "Include only academic or academic-medical-center roles that are meaningfully aligned with the candidate's research trajectory; exclude generic postdocs and faculty searches with weak scientific overlap."
+      },
+      "jobs": [
+        {
+          "priority": 1,
+          "recommendation": "STRONG_MATCH",
+          "fit_score": 9.5,
+          "title": "Associate Staff Scientist (Intestinal Organoids)",
+          "company": "Cincinnati Children's Hospital Medical Center",
+          "company_info": "Cincinnati Children's is a major academic pediatric medical center. This role is associated with the CuSTOM Accelerator, a multidisciplinary environment spanning scientists, clinicians, surgeons, bioengineers, computational scientists, and entrepreneurs working on organoid-based translational research.",
+          "location": "Cincinnati, Ohio",
+          "work_arrangement": "On-site",
+          "term": "Full-time",
+          "salary": {
+            "min_usd": 37428.13,
+            "max_usd": 62816.24,
+            "period": "year",
+            "note": "Range surfaced in the current job listing; verify the final institutional range before applying."
+          },
+          "posting_status_checked": "2026-08-17",
+          "posting_status": "Current listing found",
+          "posting_links": [
+            {
+              "label": "Job posting",
+              "url": "https://to.indeed.com/aargz9qxvdty"
+            }
+          ],
+          "job_description": "Support intestinal-organoid research within a multidisciplinary academic translational environment. The role is unusually close to the candidate's current scientific identity because organoids are not merely an assay component; they are central to the position.",
+          "key_must_have_requirements": [
+            "Relevant advanced scientific training appropriate for a staff-scientist-level intestinal-organoid role",
+            "Hands-on mammalian cell culture and organoid experience",
+            "Ability to work in a multidisciplinary academic research environment",
+            "Strong experimental execution, documentation, and communication"
+          ],
+          "preferred_requirements": [
+            "Intestinal or gastrointestinal organoid experience",
+            "Translational or patient-derived model experience",
+            "Bioengineering or computational collaboration experience"
+          ],
+          "why_good_match": "The candidate already works at the intersection of patient-derived intestinal organoids, gut-on-chip engineering, host-microbiome interactions, and translational disease modeling. This role would use the organoid expertise directly while preserving access to bioengineering and computational collaborators rather than forcing a narrow shift into a single technique.",
+          "specific_experience_to_highlight": [
+            "Patient-derived intestinal organoid culture and epithelial differentiation",
+            "Crohn's disease and inflammatory intestinal models",
+            "Organoid-to-chip translation and barrier/function characterization",
+            "Single-cell and bulk RNA-seq interpretation",
+            "Cross-disciplinary work with bioengineers and computational scientists"
+          ],
+          "gaps_or_risks": [
+            "The salary appears low relative to many PhD-level industry scientist roles",
+            "A staff scientist track may provide less independence than a postdoc designed around a future faculty transition",
+            "Confirm whether the role provides first-author publication ownership, grant-writing opportunities, and clear advancement criteria"
+          ],
+          "resume_tailoring": [
+            "Lead with patient-derived intestinal organoids and translational gastrointestinal disease models",
+            "Present gut-on-chip engineering as a differentiator that extends organoids into more physiologic systems",
+            "Include scRNA-seq and computational interpretation as evidence of end-to-end biological analysis",
+            "Emphasize independent troubleshooting and protocol development"
+          ],
+          "immediate_action_now": "Review the PI/program structure and publication expectations before applying. If there is a credible path to scientific ownership, this is one of the strongest Ohio-based academic fits and is worth contacting directly in addition to submitting the formal application."
+        },
+        {
+          "priority": 2,
+          "recommendation": "STRONG_MATCH",
+          "fit_score": 9.1,
+          "title": "Director, Research Core (Advanced Human-Relevant Technologies)",
+          "company": "University of Louisville",
+          "company_info": "The University of Louisville is a public research university. This role leads a research core centered explicitly on advanced human-relevant technologies, making it unusually aligned with organ-on-chip, NAMs, complex in vitro systems, and translational model infrastructure.",
+          "location": "Louisville, Kentucky",
+          "work_arrangement": "On-site",
+          "term": "Full-time, regular",
+          "salary": {
+            "min_usd": 120000,
+            "max_usd": 130000,
+            "period": "year",
+            "note": "Range surfaced in the current listing."
+          },
+          "posting_status_checked": "2026-08-17",
+          "posting_status": "Current listing found",
+          "posting_links": [
+            {
+              "label": "Job posting",
+              "url": "https://to.indeed.com/aamvcgdhm2n6"
+            }
+          ],
+          "job_description": "Lead an academic research core focused on advanced human-relevant technologies. The position is more infrastructure- and leadership-oriented than a traditional postdoc and would likely involve technology strategy, platform operations, collaboration, and support for investigators using next-generation human model systems.",
+          "key_must_have_requirements": [
+            "Substantial relevant research and/or research-core experience",
+            "Ability to manage complex research infrastructure and multidisciplinary collaborations",
+            "Strong scientific communication and organizational leadership",
+            "Experience relevant to advanced human-relevant model technologies"
+          ],
+          "preferred_requirements": [
+            "Organ-on-chip, microphysiological systems, organoids, or related NAM technology experience",
+            "Core-facility or shared-resource leadership",
+            "Technology implementation, validation, and user training",
+            "Grant, program, or collaborative project development"
+          ],
+          "why_good_match": "Scientifically, the title and mission are almost a direct match to the candidate's organ-on-chip/NAM identity. The candidate also brings rare breadth across device engineering, wet lab biology, microfabrication, CFD, bioinformatics, and human disease modeling. The concern is not scientific relevance but whether the role expects substantially more formal management experience than a newly graduating PhD typically has.",
+          "specific_experience_to_highlight": [
+            "Translational NAMs and human-relevant model development",
+            "Stretchable gut-on-chip platform development",
+            "Microfabrication and porous PDMS membrane technology",
+            "CFD and quantitative model characterization",
+            "Cross-platform integration of organoids, microbiome, and omics",
+            "Mentoring, protocol development, invention work, and research coordination"
+          ],
+          "gaps_or_risks": [
+            "This is a leadership position and may require significant prior core-facility or personnel-management experience",
+            "The minimum experience language may effectively target a more senior candidate",
+            "Running a core can shift effort toward operations and service rather than first-author research and independent discovery"
+          ],
+          "resume_tailoring": [
+            "Frame prior work as platform building, validation, standardization, troubleshooting, and user-facing technology development",
+            "Highlight mentoring, lab operations, documentation, and cross-disciplinary coordination",
+            "Present the invention and fabrication work as evidence of technology leadership rather than isolated engineering projects",
+            "Explicitly connect organ-on-chip work to NAM implementation and broader human-relevant technology strategy"
+          ],
+          "immediate_action_now": "Treat this as a high-value stretch role. Read the full experience requirement carefully before investing in a full application; if the management threshold is flexible, contact the hiring unit because the scientific match is unusually strong."
+        },
+        {
+          "priority": 3,
+          "recommendation": "WORTH_INVESTIGATING",
+          "fit_score": 8.4,
+          "title": "Post Doc Fellow, Department of Biomedical Engineering",
+          "company": "University of Cincinnati",
+          "company_info": "The University of Cincinnati is a major public research university with a biomedical engineering department and a large regional biomedical ecosystem. The posting is department-level, so the precise laboratory and project fit need to be verified before treating it as a serious application.",
+          "location": "Cincinnati, Ohio",
+          "work_arrangement": "On-site",
+          "term": "Full-time postdoctoral fellowship",
+          "salary": {
+            "min_usd": null,
+            "max_usd": null,
+            "period": "year",
+            "note": "Salary was not surfaced in the current listing excerpt."
+          },
+          "posting_status_checked": "2026-08-17",
+          "posting_status": "Current listing found",
+          "posting_links": [
+            {
+              "label": "Job posting",
+              "url": "https://click.appcast.io/t/DuC1Q2XMt3CP_sydUildWr6-hyvVr_b-DL8lZtqLFm2IgX3MSwdpboQS1UechX2ZuSM_MwBQnte_ZqobsRvO0Q==?sar_id=29fqussn&jpos=5"
+            }
+          ],
+          "job_description": "A biomedical engineering postdoctoral position at the University of Cincinnati. The listing excerpt does not identify enough project-specific detail to assume organ-on-chip relevance, so this should be screened by laboratory and mentor before applying.",
+          "key_must_have_requirements": [
+            "PhD or equivalent doctoral training appropriate for biomedical engineering research",
+            "Ability to conduct independent research under faculty mentorship",
+            "Strong publication, experimental, and scientific communication skills"
+          ],
+          "preferred_requirements": [
+            "Direct alignment with the hiring laboratory's technical focus",
+            "Interdisciplinary biomedical engineering experience"
+          ],
+          "why_good_match": "The candidate's background is genuinely biomedical-engineering-shaped rather than only biological: organ-on-chip development, microfabrication, CFD, wet lab, and bioinformatics all create a broad platform for an interdisciplinary BME postdoc. The role becomes high-fit only if the specific mentor works in microphysiological systems, tissue engineering, microfluidics, biomaterials, or computational/experimental integration.",
+          "specific_experience_to_highlight": [
+            "Organ-on-chip and microfluidic platform design",
+            "Soft lithography, porous PDMS membrane fabrication, and 3D-printing-assisted prototyping",
+            "CFD and transport modeling",
+            "Patient-derived organoids and advanced cell culture",
+            "Bioinformatics and quantitative biological analysis"
+          ],
+          "gaps_or_risks": [
+            "The posting is too broad to establish PI-level scientific fit from the listing alone",
+            "A generic postdoc is not automatically better than a targeted industry role or a highly aligned academic lab",
+            "Do not apply until the mentor, publication expectations, funding duration, and project ownership are clear"
+          ],
+          "resume_tailoring": [
+            "Use a balanced engineering-plus-biology CV rather than a disease-specific CV",
+            "Show technical breadth but organize it around one coherent theme: building and interrogating human-relevant engineered tissue systems",
+            "Include first-author engineering work and current disease-model manuscripts prominently"
+          ],
+          "immediate_action_now": "Identify the PI and project behind the posting first. Apply only if the lab materially advances the candidate toward independent organ-chip/NAM research rather than simply extending the PhD without adding a new capability."
+        },
+        {
+          "priority": 4,
+          "recommendation": "LONG_TERM_STRETCH",
+          "fit_score": 7.6,
+          "title": "Assistant/Associate Professor - Cell Biology and Regenerative Medicine Institute",
+          "company": "NYU Grossman School of Medicine / NYU Langone Health",
+          "company_info": "NYU Grossman School of Medicine and its Regenerative Medicine Institute are recruiting tenure-track faculty at the Assistant/Associate Professor level in cell biology and regenerative medicine.",
+          "location": "New York, New York",
+          "work_arrangement": "On-site academic faculty",
+          "term": "Tenure-track faculty",
+          "salary": {
+            "min_usd": null,
+            "max_usd": null,
+            "period": "year",
+            "note": "Salary was not surfaced in the current listing excerpt."
+          },
+          "posting_status_checked": "2026-08-17",
+          "posting_status": "Current listing found",
+          "posting_links": [
+            {
+              "label": "Job posting",
+              "url": "https://click.appcast.io/t/1F2B4LB1wZHww7sWNkmBLWGyVe7e9TipjtMP-HTbsALFZhCmcTlBZ5Ho5qdnRN7W?sar_id=29fquw8j&jpos=0"
+            }
+          ],
+          "job_description": "Tenure-track recruitment in cell biology and regenerative medicine. This is not a near-term default application for a graduating PhD, but it is relevant as a benchmark for the kind of independent research profile the candidate could target after a productive postdoctoral period.",
+          "key_must_have_requirements": [
+            "Doctoral-level scientific training",
+            "Strong record of original research and publication",
+            "Potential to establish an independent, externally funded research program",
+            "Research vision aligned with cell biology and regenerative medicine"
+          ],
+          "preferred_requirements": [
+            "Distinct independent research niche",
+            "High-impact publication trajectory",
+            "Evidence of grant potential and collaborative fit"
+          ],
+          "why_good_match": "The candidate already has the seed of a distinctive independent niche: patient-derived organoids and microbiome integrated with stretchable organ-on-chip systems, bioinformatics, CFD, and microfabrication. The current gap is career stage rather than conceptual fit. A future faculty application could be unusually differentiated if the postdoc adds stronger independence, grant ownership, and a second biological system or translational application.",
+          "specific_experience_to_highlight": [
+            "Integrated experimental biology + CFD + bioinformatics research identity",
+            "Patient-derived organoid and microbiome systems",
+            "Mechanobiology and human-relevant disease modeling",
+            "Original microfabrication/device technology",
+            "Publications, invention disclosures, and mentoring"
+          ],
+          "gaps_or_risks": [
+            "Likely premature for an immediate faculty application without postdoctoral independence",
+            "Needs a clearly articulated independent research program distinct from the PhD advisor",
+            "Needs stronger evidence of grant readiness and sustained first/senior-author output"
+          ],
+          "resume_tailoring": [
+            "Use this posting as a faculty-readiness benchmark rather than a routine application",
+            "Start shaping a future research statement around a distinct platform question, not merely extending current gut-chip projects",
+            "Track which postdoctoral opportunities would add independence, funding ownership, and new biology rather than more of the same"
+          ],
+          "immediate_action_now": "Do not prioritize this over postdoc/staff-scientist roles unless the search explicitly welcomes unusually early applicants. Use it to reverse-engineer what the next 2–4 years need to produce for a competitive faculty launch."
+        }
+      ],
+      "overall_takeaway": "For academia, the best near-term targets are not generic postdocs. Prioritize positions that add either scientific independence, a new capability, or direct ownership of human-relevant model platforms. An academic move should make the future PI story clearer, not simply extend the PhD by another title."
+    }
+  ]
+}
