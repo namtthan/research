@@ -267,7 +267,8 @@
           border-color 0.25s ease;
       }
       .card:hover,
-      .card:focus-visible {
+      .card:focus-visible,
+      .card.in-view {
         transform: translateY(-6px) scale(1.045);
         box-shadow: 0 18px 44px rgba(0, 0, 0, 0.35);
         border-color: var(--accent);
@@ -499,10 +500,10 @@
         cursor: pointer;
         margin-bottom: 14px;
         transition:
-          border-color 0.2s,
-          background 0.2s,
-          box-shadow 0.2s,
-          transform 0.2s;
+          border-color 0.25s,
+          background 0.25s,
+          box-shadow 0.25s,
+          transform 0.25s;
       }
       /* Tightened badge spacing, mirroring the .item override used in
          Achievements/Background — badges sit close to the title instead of
@@ -513,12 +514,14 @@
         margin-bottom: 10px;
       }
       .pub:hover,
-      .pub:focus-visible {
+      .pub:focus-visible,
+      .pub.in-view {
         background: var(--bg2);
         border-left-color: var(--accent);
         border-right-color: var(--accent);
-        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
-        transform: translateY(-2px);
+        box-shadow: 0 18px 44px rgba(0, 0, 0, 0.35);
+        transform: translateY(-6px) scale(1.045);
+        z-index: 3;
       }
       .pub h3 {
         font: 500 16px/1.4 var(--serif);
@@ -2514,6 +2517,67 @@
         document.addEventListener("keydown", function (e) {
           if (e.key === "Escape" && !modal.hidden) closeModal();
         });
+      })();
+      (function () {
+        // Shared touch-device stand-in for hover: both the Focus cards and
+        // the publication cards use the exact same :hover treatment
+        // (lift + scale + shadow, see .card:hover / .pub:hover), so rather
+        // than hover, whichever card is currently crossing the vertical
+        // middle of the viewport (a thin band via a shrunk rootMargin)
+        // gets .in-view added by an IntersectionObserver. Only runs on
+        // devices whose primary input has no hover (matches
+        // "(hover: none)"); real mouse/trackpad devices keep using the
+        // CSS :hover rule untouched — the Focus grid is 3-wide on desktop
+        // anyway, so "middle of the screen" wouldn't map to one card there.
+        // Skipped under reduced-motion, same as the rest of the page.
+        var reduceMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+        if (reduceMotion) return;
+        var noHoverQuery = window.matchMedia("(hover: none)");
+        function setupScrollLift(elements) {
+          if (!elements.length) return;
+          var observer = null;
+          function handleIntersect(entries) {
+            entries.forEach(function (entry) {
+              entry.target.classList.toggle("in-view", entry.isIntersecting);
+            });
+          }
+          function start() {
+            if (observer) return;
+            observer = new IntersectionObserver(handleIntersect, {
+              rootMargin: "-45% 0px -45% 0px",
+              threshold: 0,
+            });
+            elements.forEach(function (el) {
+              observer.observe(el);
+            });
+          }
+          function stop() {
+            if (!observer) return;
+            observer.disconnect();
+            observer = null;
+            elements.forEach(function (el) {
+              el.classList.remove("in-view");
+            });
+          }
+          if (noHoverQuery.matches) start();
+          noHoverQuery.addEventListener
+            ? noHoverQuery.addEventListener("change", function (e) {
+                e.matches ? start() : stop();
+              })
+            : noHoverQuery.addListener &&
+              noHoverQuery.addListener(function (e) {
+                e.matches ? start() : stop();
+              });
+        }
+        var focusGrid = document.querySelector(".focus-grid");
+        if (focusGrid) {
+          setupScrollLift(
+            Array.prototype.slice.call(focusGrid.querySelectorAll(".card")),
+          );
+        }
+        setupScrollLift(Array.prototype.slice.call(document.querySelectorAll(".pub")));
       })();
       (function () {
         // Carousel controller for the mentee row (Focus used to share
