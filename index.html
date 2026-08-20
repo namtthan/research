@@ -398,6 +398,22 @@
         color: var(--text);
         border: 1px solid var(--line2);
       }
+      /* Deliberately understated — a running count of publications in
+         chronological order (#1 = earliest, #8 = most recent), not meant
+         to compete visually with the year/status/journal/DOI badges. */
+      .badge-pubnum .badge-label {
+        padding: 1px 7px;
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        background: transparent;
+        color: var(--dim);
+        border: 1px solid var(--line);
+      }
+      .pub h3 .badge-pubnum {
+        margin-right: 8px;
+        transform: translateY(-1px);
+      }
       /* Modifier: show the label in full, never truncated (e.g. journal names). */
       .badge-full .badge-label {
         max-width: none;
@@ -1121,7 +1137,7 @@
                 ><span class="badge-label">DOI ↗</span></a
               >
             </div>
-            <h3> Nanofiber-supported decellularized matrix membrane creates a biomimetic biochemical and biophysical niche for intestinal organoid epithelium</h3>
+            <h3><span class="badge badge-pubnum"><span class="badge-label">#8</span></span> Nanofiber-supported decellularized matrix membrane creates a biomimetic biochemical and biophysical niche for intestinal organoid epithelium</h3>
             <div class="authors">
               Jaeseung Youn<sup class="cofirst" title="Equal Contribution">*</sup>, HyunJi Kim<sup class="cofirst" title="Equal Contribution">*</sup>, <span class="accent">Nam Than</span>, Dohui Kim, Hyun Jung Kim, Dong Sung Kim
             </div>
@@ -1153,7 +1169,7 @@
                 ><span class="badge-label">DOI ↗</span></a
               >
             </div>
-            <h3>Advanced fabrication protocol of an elastic porous membrane for organ-on-a-chip applications</h3>
+            <h3><span class="badge badge-pubnum"><span class="badge-label">#7</span></span> Advanced fabrication protocol of an elastic porous membrane for organ-on-a-chip applications</h3>
             <div class="authors">
               <span class="accent">Nam Than</span>, Hyun Jung Kim 
             </div>
@@ -1191,7 +1207,7 @@
               >
             </div>
             <h3>
-              Probiotic intervention mitigates radiation-induced intestinal
+              <span class="badge badge-pubnum"><span class="badge-label">#6</span></span> Probiotic intervention mitigates radiation-induced intestinal
               injury by alleviating oxidative stress in a human gut-on-a-chip
             </h3>
             <div class="authors">
@@ -1231,7 +1247,7 @@
               >
             </div>
             <h3>
-              Mechanostimulatory cues determine intestinal fibroblast fate and
+              <span class="badge badge-pubnum"><span class="badge-label">#5</span></span> Mechanostimulatory cues determine intestinal fibroblast fate and
               profibrotic remodeling in a physiodynamic human gut-on-a-chip
             </h3>
             <div class="authors">
@@ -1244,7 +1260,11 @@
               <span class="badge badge-gray"><span class="badge-label">Mechanobiology</span></span>
             </div>
             <div class="pub-details">
-              <!-- Graphical abstract (add later): <img class="pub-figure" src="..." alt="Graphical abstract"> -->
+              <img
+                class="pub-figure"
+                src="assets/Cover_AdvSci_Mechano_Fibrosis_Chip.jpg"
+                alt="Advanced Science issue cover: Mechanostimulatory cues determine intestinal fibroblast fate and profibrotic remodeling in a physiodynamic human gut-on-a-chip"
+              />
               <h4>What Happened</h4>
               <p>Fluid shear stress, but not mechanical strain alone, determines fibroblast fate: normal fibroblasts undergo injury and apoptosis, while inflammation-associated fibroblasts resist shear and adopt profibrotic phenotypes. An intact epithelial barrier protects fibroblasts from this shear-induced remodeling.</p>
               <h4>Method / Model</h4>
@@ -1270,7 +1290,7 @@
                 ><span class="badge-label">DOI ↗</span></a
               >
             </div>
-            <h3> Bioengineered human gut-on-a-chip for advancing non-clinical pharmaco-toxicology </h3>
+            <h3><span class="badge badge-pubnum"><span class="badge-label">#4</span></span> Bioengineered human gut-on-a-chip for advancing non-clinical pharmaco-toxicology </h3>
             <div class="authors"> Yong Cheol Shin, <span class="accent">Nam Than</span>, Soo Jin Park, Hyun Jung Kim </div>
             <!-- Keywords inferred from the title — check/edit before treating as final. -->
             <div class="badge-row pub-keywords">
@@ -1301,7 +1321,7 @@
                 ><span class="badge-label">DOI ↗</span></a
               >
             </div>
-            <h3>Modelling host-microbiome interactions in organs-on-chips</h3>
+            <h3><span class="badge badge-pubnum"><span class="badge-label">#3</span></span> Modelling host-microbiome interactions in organs-on-chips</h3>
             <div class="authors">
               Yong Cheol Shin<sup class="cofirst" title="Equal Contribution">*</sup>, <span class="accent">Nam Than<sup class="cofirst" title="Equal Contribution">*</sup></span>, Soyoun Min, Woojung Shin<sup class="cocorr" title="Co-correspondence">+</sup> &amp; Hyun Jung Kim<sup class="cocorr" title="Co-correspondence">+</sup>
             </div>
@@ -1333,7 +1353,7 @@
                 ><span class="badge-label">DOI ↗</span></a
               >
             </div>
-            <h3>Live probiotic bacteria administered in a pathomimetic Leaky Gut Chip ameliorate impaired epithelial barrier and mucosal inflammation</h3>
+            <h3><span class="badge badge-pubnum"><span class="badge-label">#2</span></span> Live probiotic bacteria administered in a pathomimetic Leaky Gut Chip ameliorate impaired epithelial barrier and mucosal inflammation</h3>
             <div class="authors">
               Soyoun Min<sup class="cofirst" title="Equal Contribution">*</sup>, <span class="accent">Nam Than<sup class="cofirst" title="Equal Contribution">*</sup></span>, Yong Cheol Shin, Grace Hu, Woojung Shin, Yoko M. Ambrosini, Hyun Jung Kim
             </div>
@@ -1365,7 +1385,7 @@
                 ><span class="badge-label">DOI ↗</span></a
               >
             </div>
-            <h3>Quantitation of ethanol in UTI assay for volatile organic compound detection by electronic nose using the validated headspace GC-MS method</h3>
+            <h3><span class="badge badge-pubnum"><span class="badge-label">#1</span></span> Quantitation of ethanol in UTI assay for volatile organic compound detection by electronic nose using the validated headspace GC-MS method</h3>
             <div class="authors">
               <span class="accent">Nam Than<sup class="cofirst" title="Equal Contribution">*</sup></span>, Zamri Chik<sup class="cofirst" title="Equal Contribution">*</sup>,  Amy Bowers, Luisa Bozano, Aminat Adebiyi
             </div>
