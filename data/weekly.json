@@ -12,23 +12,8 @@
           "read_first": "Start with the heterotypic tissue-recombinant experiments that swap healthy and IBD epithelium/fibroblasts, then the peristalsis-mechanics results.",
           "caveat": "The model is sophisticated but correspondingly harder to standardize. Adding immune cells, fibroblasts and mechanical deformation improves biological scope while increasing variability and reducing throughput.",
           "priority": "#1",
-          "tags": [
-            "Organ-on-chip",
-            "IBD",
-            "Crohn's disease",
-            "Fibroblasts",
-            "Mechanobiology"
-          ],
-          "sources": [
-            {
-              "label": "Nature Biomedical Engineering",
-              "url": "https://www.nature.com/articles/s41551-026-01686-8"
-            },
-            {
-              "label": "PubMed",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/42168634/"
-            }
-          ]
+          "tags": ["Organ-on-chip", "IBD", "Crohn's disease", "Fibroblasts", "Mechanobiology"],
+          "sources": [{"label": "Nature Biomedical Engineering", "url": "https://www.nature.com/articles/s41551-026-01686-8"}, {"label": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/42168634/"}]
         },
         {
           "title": "Intestinal stem cells from patients with inflammatory bowel disease retain an epigenetic memory of inflammation",
@@ -40,12 +25,7 @@
           "caveat": "Persistent epigenetic memory is not the same as a fixed genetic disease program. Culture selection and prior treatment history can still influence which epithelial states survive ex vivo.",
           "priority": "#2",
           "tags": ["IBD", "Organoids", "Epigenetics", "Epithelial memory"],
-          "sources": [
-            {
-              "label": "PubMed",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/41903684/"
-            }
-          ]
+          "sources": [{"label": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/41903684/"}]
         },
         {
           "title": "Patient-derived intestinal organoids as a model for site-specific mucosal bacterial interactions in paediatric inflammatory bowel disease",
@@ -56,23 +36,8 @@
           "read_first": "Start with the dual-isolation workflow and then the experiments comparing epithelial responses to closely related bacterial isolates.",
           "caveat": "Microinjection gives excellent apical access but is labor-intensive and low-throughput. Cultured isolates also represent only the cultivable fraction of the mucosal community.",
           "priority": "#3",
-          "tags": [
-            "Gut microbiome",
-            "IBD",
-            "Organoids",
-            "Host-microbe",
-            "Strain effects"
-          ],
-          "sources": [
-            {
-              "label": "Scientific Reports",
-              "url": "https://www.nature.com/articles/s41598-026-46184-8"
-            },
-            {
-              "label": "PubMed",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/41922622/"
-            }
-          ]
+          "tags": ["Gut microbiome", "IBD", "Organoids", "Host-microbe", "Strain effects"],
+          "sources": [{"label": "Scientific Reports", "url": "https://www.nature.com/articles/s41598-026-46184-8"}, {"label": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/41922622/"}]
         },
         {
           "title": "Bioinspired microcapsule reactor with engineered probiotics for IBD therapy",
@@ -84,12 +49,7 @@
           "caveat": "Improved delivery in animal models does not resolve the regulatory complexity of engineered live biotherapeutics, including containment, manufacturing consistency and long-term colonization behavior.",
           "priority": "#4",
           "tags": ["Probiotics", "IBD", "Engineered bacteria", "Drug delivery"],
-          "sources": [
-            {
-              "label": "Nature Communications",
-              "url": "https://www.nature.com/articles/s41467-026-72027-1"
-            }
-          ]
+          "sources": [{"label": "Nature Communications", "url": "https://www.nature.com/articles/s41467-026-72027-1"}]
         },
         {
           "title": "Human colon organoid Transwell model for investigating epithelial growth and repair",
@@ -101,12 +61,7 @@
           "caveat": "The model does not reproduce dynamic flow, tissue-tissue interfaces or mechanical deformation, so it should be viewed as complementary to rather than a replacement for organ-on-chip systems.",
           "priority": "#5",
           "tags": ["Organoids", "Barrier", "Transwell", "High throughput"],
-          "sources": [
-            {
-              "label": "npj Biomedical Innovations",
-              "url": "https://www.nature.com/articles/s44385-026-00089-3"
-            }
-          ]
+          "sources": [{"label": "npj Biomedical Innovations", "url": "https://www.nature.com/articles/s44385-026-00089-3"}]
         },
         {
           "title": "Patient-matched transcriptomics substantiate organoids as a translational model for ulcerative colitis",
@@ -117,18 +72,73 @@
           "read_first": "Read the patient-matched transcriptomic concordance analysis, especially the TNF + IFN-gamma and cytokine-cocktail comparisons.",
           "caveat": "A cytokine-defined model captures epithelial inflammation but not microbiota, stromal mechanics or immune-cell dynamics, so its disease fidelity is pathway-specific rather than comprehensive.",
           "priority": "#6",
-          "tags": [
-            "Organoids",
-            "Ulcerative colitis",
-            "Transcriptomics",
-            "Model validation"
-          ],
-          "sources": [
-            {
-              "label": "Scientific Reports",
-              "url": "https://www.nature.com/articles/s41598-026-54857-7"
-            }
-          ]
+          "tags": ["Organoids", "Ulcerative colitis", "Transcriptomics", "Model validation"],
+          "sources": [{"label": "Scientific Reports", "url": "https://www.nature.com/articles/s41598-026-54857-7"}]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "stories": [
+        {
+          "title": "UV-inactivated Lactiplantibacillus plantarum BGAN8 modulates mitochondrial gene expression and membrane potential in human intestinal epithelial cells and C. elegans",
+          "takeaway": "A non-viable probiotic can still alter epithelial mitochondrial, oxidative-stress and bioenergetic programs, separating bacterial signaling from live-colonization effects.",
+          "what_happened": "Mitrovic et al. report that UV-inactivated L. plantarum BGAN8 upregulated mitochondrial oxidative-phosphorylation genes in HT29 intestinal epithelial cells, activated mitochondrial biogenesis/cristae/ATP-related programs and partly countered kanamycin-induced mitochondrial dysfunction; parallel C. elegans experiments showed increased mitochondrial DNA content, membrane potential and mitochondrial gene expression.",
+          "method": "UV-inactivated probiotic exposure in HT29 cells with transcriptomics and mitochondrial/redox readouts, plus C. elegans mitochondrial imaging and gene-expression assays.",
+          "why_it_matters": "This is directly relevant to the VSL#3 mechanism question. Protection does not require viable bacteria in principle, so antioxidant or epithelial effects from bacterial structures and released products should be experimentally separated from community growth, colonization and microbiome remodeling. It also suggests mitochondrial readouts as a mechanistic layer beyond extracellular H2O2 scavenging.",
+          "read_first": "Start with the HT29 transcriptomic/mitochondrial results and the kanamycin rescue experiment; then compare the cross-model C. elegans validation.",
+          "caveat": "HT29 cells and C. elegans are far from a human differentiated gut chip, and increased mitochondrial gene expression or membrane potential is not automatically equivalent to improved barrier physiology.",
+          "priority": "#1",
+          "tags": ["Probiotics", "Postbiotics", "Oxidative stress", "Mitochondria", "Intestinal epithelium"],
+          "sources": [{"label": "Scientific Reports", "url": "https://www.nature.com/articles/s41598-026-67156-y"}]
+        },
+        {
+          "title": "A regulator of amino acid catabolism controls Acinetobacter baumannii gut colonization",
+          "takeaway": "A gut bacterium can sense microbiota-driven nutrient competition and switch on a specific amino-acid utilization program required for colonization.",
+          "what_happened": "Geary et al. identified AstR as the transcriptional regulator activating the A. baumannii ornithine-utilization operon astNOP. Ornithine induced the program, preferred amino acids such as glutamate suppressed it, conventional but not germ-free fecal samples activated it, and AstR was required for gut colonization in mice.",
+          "method": "Bacterial genetics, promoter reporters, phylogenetics, conventional-versus-germ-free fecal exposures and mouse intestinal colonization experiments.",
+          "why_it_matters": "For donor microbiota co-culture, this is a useful reminder that microbial abundance is an ecological output, not merely an inoculum property. Nutrient competition inside the chip can selectively change which organisms persist and therefore what epithelial phenotype you observe. Media composition can quietly become a microbiome-selection pressure.",
+          "read_first": "Read the fecal-sample promoter activation experiment and the AstR gut-colonization experiment first; together they connect nutrient sensing to in vivo fitness.",
+          "caveat": "This is a single opportunistic pathogen in a mouse colonization context, so the specific ornithine mechanism should not be generalized to complex human donor communities.",
+          "priority": "#2",
+          "tags": ["Host-microbiome", "Microbial ecology", "Metabolism", "Colonization", "Nutrient competition"],
+          "sources": [{"label": "Nature Communications", "url": "https://www.nature.com/articles/s41467-026-75861-5"}]
+        },
+        {
+          "title": "A NOD2 to the endothelium for protective gut immunity",
+          "takeaway": "A new Nature Immunology analysis highlights endothelial NOD2 signaling as an active microbial-sensing circuit that controls intestinal T-cell recruitment, not merely a passive vascular barrier.",
+          "what_happened": "Westfall and King discuss recent evidence that NOD2-dependent microbial sensing in lymph-node endothelial cells promotes antigen-specific effector and memory T-cell accumulation in gut-associated lymphoid tissues and protective mucosal immunity.",
+          "method": "News & Views synthesis of the Tsankov et al. Nature Immunology study, which used NOD2 stimulation, endothelial-cell-specific genetics, infection models, immune-cell trafficking assays and single-cell transcriptomics.",
+          "why_it_matters": "For Crohn's-chip design, it strengthens the case that endothelial compartments are biologically active interpreters of microbial signals. An epithelium-only host-microbiome model can miss genotype-dependent immune trafficking mechanisms, particularly for NOD2 biology.",
+          "read_first": "Read Figure 1 of the News & Views, then the underlying study's endothelial NOD2 transcriptional program and T-cell-homing experiments.",
+          "caveat": "The News & Views itself is not new primary evidence, and the underlying primary paper was published in July, so treat this as a newly published mechanistic synthesis rather than a newly generated dataset.",
+          "priority": "#3",
+          "tags": ["Crohn's disease", "NOD2", "Endothelium", "Mucosal immunity", "Host-microbe"],
+          "sources": [{"label": "Nature Immunology News & Views", "url": "https://www.nature.com/articles/s41590-026-02626-z"}, {"label": "Underlying Nature Immunology article", "url": "https://www.nature.com/articles/s41590-026-02595-3"}]
+        },
+        {
+          "title": "Immune and stromal tumour biology associated with neoadjuvant radiotherapy response in locally advanced rectal cancer",
+          "takeaway": "Pre-existing immune-versus-stromal tissue states correlate with subsequent response to pelvic radiotherapy, reinforcing that radiation outcome is strongly conditioned by tissue context before exposure.",
+          "what_happened": "Hillson et al. analyzed pretreatment rectal-cancer biopsies and found that good responders had greater cytotoxic-lymphocyte signatures and CD8 infiltration, whereas poor responders were enriched for epithelial-mesenchymal transition, endothelial cells and fibroblasts. The authors explicitly caution that these features were not sufficient as standalone predictive biomarkers.",
+          "method": "Pretreatment transcriptomic microarrays across two cohorts plus multiplex immunofluorescence and H&E-derived tumour-stromal ratios in a validation cohort; patients subsequently received neoadjuvant radiotherapy/chemoradiotherapy.",
+          "why_it_matters": "Although this is tumour radiobiology rather than GI-ARS, it reinforces a useful principle for your radiation chip: identical physical dose does not imply identical biological injury. Stromal and immune baseline state can determine downstream response, which argues for future organoid/fibroblast or immune-integrated radiation models.",
+          "read_first": "Read the high-versus-low NAR hallmark analysis and the validation showing cytotoxic lymphocytes in responders versus fibroblast/endothelial enrichment in poor responders.",
+          "caveat": "Tumour response to fractionated chemoradiotherapy is mechanistically different from acute normal-intestinal radiation injury, and chemotherapy is a major confounder.",
+          "priority": "#4",
+          "tags": ["Radiation", "Intestine", "Fibroblasts", "Microenvironment", "Translational radiobiology"],
+          "sources": [{"label": "British Journal of Cancer", "url": "https://www.nature.com/articles/s41416-026-03575-y"}]
+        },
+        {
+          "title": "Subtype-specific heterogeneity of anti-EGFR antibody sensitivity in KRAS-mutant colorectal cancer revealed by patient-derived organoids",
+          "takeaway": "Patient-derived intestinal tumour organoids expose clinically relevant response heterogeneity that a genotype label alone would have hidden.",
+          "what_happened": "Shogen et al. tested eight colorectal-cancer organoid lines and found that KRAS G12 mutants were generally resistant to anti-EGFR antibodies whereas KRAS G13-mutant organoids retained sensitivity similar to KRAS-wild-type lines. Transcriptomics implicated MYC-related signaling and apoptosis, and MYC inhibition partly reduced drug sensitivity.",
+          "method": "Patient-derived colorectal-cancer organoid library, anti-EGFR drug-response assays, transcriptomics, public cell-line dataset analysis and pharmacologic MYC inhibition.",
+          "why_it_matters": "The disease is cancer, but the modeling lesson transfers directly to patient-derived Crohn's organoids: collapsing donors into a broad genotype or disease label can erase functionally important heterogeneity. Your NKX2-3, MST1 and IRF5 variants should be treated as hypotheses that need phenotype-level validation rather than explanatory endpoints by themselves.",
+          "read_first": "Start with the organoid drug-sensitivity comparison across KRAS WT, G12 and G13 groups, then the MYC perturbation result that moves the paper beyond correlation.",
+          "caveat": "Only eight organoid lines were tested, so subtype conclusions—especially for KRAS G13—need larger prospective validation.",
+          "priority": "#5",
+          "tags": ["Organoids", "Patient heterogeneity", "Genotype-phenotype", "Precision medicine", "Colorectal cancer"],
+          "sources": [{"label": "Scientific Reports", "url": "https://www.nature.com/articles/s41598-026-67484-z"}]
         }
       ]
     }
