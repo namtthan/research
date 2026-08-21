@@ -17,9 +17,16 @@ h1 em { color: var(--accent); font-style: italic; }
 .filter.active { border-color: var(--accent); color: var(--accent); background: rgba(45, 212, 191, 0.07); }
 .briefings { padding: 18px 0 80px; }
 .date-group { margin: 28px 0 40px; }
-.date-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
-.date-heading h2 { font-family: var(--serif); font-weight: 400; font-size: 28px; margin: 0; }
+/* <details>/<summary>: clicking the date collapses everything under it.
+   Only the newest group starts open (see app.js) so older, presumably
+   already-read entries don't crowd the page by default. */
+.date-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 14px; cursor: pointer; list-style: none; }
+.date-heading::-webkit-details-marker { display: none; }
+.date-heading h2 { font-family: var(--serif); font-weight: 400; font-size: 28px; margin: 0; transition: color 0.15s; }
+.date-heading:hover h2 { color: var(--accent); }
+.date-meta { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
 .date-heading .count { font-family: var(--mono); font-size: 12px; color: var(--dim); white-space: nowrap; }
+.date-group[open] .date-chevron { transform: rotate(180deg); }
 .group-subtitle { margin: 3px 0 0; color: var(--muted); font-size: 13px; }
 .group-takeaway { color: var(--muted); background: var(--bg2); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; margin: 0 0 16px; line-height: 1.6; }
 .story { background: var(--card); border: 1px solid var(--line); border-radius: 10px; margin: 10px 0; overflow: clip; transition: border-color 0.2s ease; }

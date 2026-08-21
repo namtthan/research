@@ -322,13 +322,25 @@ function render() {
     return;
   }
 
-  groups.forEach((group) => {
-    const section = document.createElement("section");
+  groups.forEach((group, index) => {
+    // <details>/<summary> instead of <section>/<div>: clicking the date
+    // natively collapses everything under it, no custom JS toggle needed
+    // (same pattern already used for individual story/job cards below).
+    // Groups are sorted newest-first (see currentItems()), so only the
+    // first one starts open — older, presumably-already-read entries stay
+    // collapsed instead of crowding the page.
+    const section = document.createElement("details");
     section.className = "date-group";
-    const heading = document.createElement("div");
+    section.open = index === 0;
+    const heading = document.createElement("summary");
     heading.className = "date-heading";
+    // .date-heading is a 2-child flex row (space-between): title content on
+    // the left, count+chevron grouped into one wrapper on the right — if
+    // count and chevron were separate top-level children, space-between
+    // would spread all three apart instead of keeping count/chevron together.
+    const chevron = `<span class="chevron date-chevron" aria-hidden="true">⌄</span>`;
     if (isJobView()) {
-      heading.innerHTML = `<div><h2>${formatDate(group.date)}</h2>${group.title ? `<p class="group-subtitle">${escapeHTML(group.title)}</p>` : ""}</div><span class="count">${group.jobs.length} role${group.jobs.length === 1 ? "" : "s"}</span>`;
+      heading.innerHTML = `<div><h2>${formatDate(group.date)}</h2>${group.title ? `<p class="group-subtitle">${escapeHTML(group.title)}</p>` : ""}</div><span class="date-meta"><span class="count">${group.jobs.length} role${group.jobs.length === 1 ? "" : "s"}</span>${chevron}</span>`;
       section.appendChild(heading);
       if (group.overall_takeaway) {
         const takeaway = document.createElement("p");
@@ -338,7 +350,7 @@ function render() {
       }
       group.jobs.forEach((job, i) => section.appendChild(jobCard(job, i)));
     } else {
-      heading.innerHTML = `<h2>${formatDate(group.date)}</h2><span class="count">${group.stories.length} item${group.stories.length === 1 ? "" : "s"}</span>`;
+      heading.innerHTML = `<h2>${formatDate(group.date)}</h2><span class="date-meta"><span class="count">${group.stories.length} item${group.stories.length === 1 ? "" : "s"}</span>${chevron}</span>`;
       section.appendChild(heading);
       group.stories.forEach((story, i) => section.appendChild(storyCard(story, i)));
     }
