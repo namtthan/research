@@ -465,11 +465,8 @@
         font-size: 11px;
         font-family: var(--sans);
       }
-      .filter.active {
-        border-color: var(--accent);
-        color: var(--accent);
-        background: rgba(45, 212, 191, 0.07);
-      }
+      /* 3-state active coloring (teal/amber/red) lives in shared.css so it
+         can't drift out of sync with briefings.html's filter badges. */
       /* Chronological tree layout: a central trunk line with one node per
          card, cards alternating left/right down the middle. Position is
          computed in JS (see the script block), which places each new card
@@ -1937,6 +1934,7 @@
         <p id="focusModalNext"></p>
       </div>
     </div>
+    <script src="filters.js"></script>
     <script>
       (function () {
         var navLinks = Array.prototype.slice.call(
@@ -2243,10 +2241,10 @@
       })();
       (function () {
         // Keyword filter row above the publication grid: collect every
-        // unique tag from each card's .pub-keywords badges, render them as
-        // clickable pills (mirroring briefings.html's topic filters), and
-        // show/hide cards on click. Multi-select OR: any card matching at
-        // least one active tag shows. "All" clears the selection.
+        // unique tag from each card's .pub-keywords badges and hand them to
+        // the shared 3-state filter controller (filters.js) — click cycle
+        // teal(OR) -> amber(AND) -> red(NOT) -> off, same as every other
+        // filter row on this site (briefings.html's topic filters included).
         var pubs = Array.prototype.slice.call(
           document.querySelectorAll(".pub"),
         );
@@ -2266,60 +2264,36 @@
             tags.add(t);
           });
         });
-        var active = new Set();
+        var sortedTags = Array.from(tags).sort();
+        var ctl = createFilterController(bar, refresh);
         function apply() {
+          var matches = ctl.getMatcher();
           pubs.forEach(function (pub) {
-            var show =
-              active.size === 0 ||
-              keywordsOf(pub).some(function (k) {
-                return active.has(k);
-              });
-            pub.style.display = show ? "" : "none";
+            pub.style.display = matches(keywordsOf(pub)) ? "" : "none";
           });
           if (window.relayoutPubs) window.relayoutPubs();
         }
-        function renderFilters() {
-          bar.innerHTML = "";
-          var allBtn = document.createElement("button");
-          allBtn.type = "button";
-          allBtn.className = "filter" + (active.size === 0 ? " active" : "");
-          allBtn.textContent = "All";
-          allBtn.addEventListener("click", function () {
-            active.clear();
-            renderFilters();
-            apply();
-          });
-          bar.appendChild(allBtn);
-          Array.from(tags)
-            .sort()
-            .forEach(function (tag) {
-              var btn = document.createElement("button");
-              btn.type = "button";
-              btn.className = "filter" + (active.has(tag) ? " active" : "");
-              btn.textContent = tag;
-              btn.addEventListener("click", function () {
-                if (active.has(tag)) {
-                  active.delete(tag);
-                } else {
-                  active.add(tag);
-                }
-                renderFilters();
-                apply();
-              });
-              bar.appendChild(btn);
-            });
+        function refresh() {
+          ctl.render(sortedTags);
+          apply();
         }
-        renderFilters();
-        apply();
+        refresh();
       })();
       (function () {
-        // Amber-badge type filters for Awards, Disclosures, Presentations,
-        // and Outreach — same pattern as the Publications keyword filter,
-        // but at sub-entry granularity: each .item is h4 (title) followed
-        // by repeating (h5, .badge-row) pairs, and each pair has its own
+        // Type filters for Awards, Disclosures, Presentations, and Outreach
+        // — same shared controller as the Publications keyword filter, but
+        // at sub-entry granularity: each .item is h4 (title) followed by
+        // repeating (h5, .badge-row) pairs, and each pair has its own
         // amber "type" badge. Filtering hides only the non-matching pairs,
         // keeping h4 visible as the group header; the whole .item is hidden
-        // only if none of its pairs match. Multi-select OR, "All" clears.
+        // only if none of its pairs match.
+        //
+        // Note: each pair carries exactly one type value, so turning two
+        // different type badges to amber (AND) will correctly zero out the
+        // list — a single entry can't be two types at once. OR (teal) and
+        // NOT (red) are the practically useful gates for these four rows;
+        // AND is really only meaningful once 2+ badges are teal/red and a
+        // third, different kind of tag is added to require alongside them.
         function setupTypeFilter(barId, listId) {
           var bar = document.getElementById(barId);
           var list = document.getElementById(listId);
@@ -2352,13 +2326,16 @@
               if (t) tags.add(t);
             });
           });
-          var active = new Set();
+          var sortedTags = Array.from(tags).sort();
+          var ctl = createFilterController(bar, refresh);
           function apply() {
+            var matches = ctl.getMatcher();
             items.forEach(function (item) {
               var pairs = pairsOf(item);
               var anyVisible = false;
               pairs.forEach(function (pair) {
-                var show = active.size === 0 || active.has(typeOf(pair));
+                var t = typeOf(pair);
+                var show = matches(t ? [t] : []);
                 pair.h5.style.display = show ? "" : "none";
                 if (pair.row) pair.row.style.display = show ? "" : "none";
                 if (show) anyVisible = true;
@@ -2370,39 +2347,11 @@
                 pairs.length === 0 || anyVisible ? "" : "none";
             });
           }
-          function renderFilters() {
-            bar.innerHTML = "";
-            var allBtn = document.createElement("button");
-            allBtn.type = "button";
-            allBtn.className = "filter" + (active.size === 0 ? " active" : "");
-            allBtn.textContent = "All";
-            allBtn.addEventListener("click", function () {
-              active.clear();
-              renderFilters();
-              apply();
-            });
-            bar.appendChild(allBtn);
-            Array.from(tags)
-              .sort()
-              .forEach(function (tag) {
-                var btn = document.createElement("button");
-                btn.type = "button";
-                btn.className = "filter" + (active.has(tag) ? " active" : "");
-                btn.textContent = tag;
-                btn.addEventListener("click", function () {
-                  if (active.has(tag)) {
-                    active.delete(tag);
-                  } else {
-                    active.add(tag);
-                  }
-                  renderFilters();
-                  apply();
-                });
-                bar.appendChild(btn);
-              });
+          function refresh() {
+            ctl.render(sortedTags);
+            apply();
           }
-          renderFilters();
-          apply();
+          refresh();
         }
         setupTypeFilter("awardsFilters", "awardsList");
         setupTypeFilter("disclosuresFilters", "disclosuresList");

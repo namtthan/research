@@ -12,6 +12,12 @@
   --accent: #2dd4bf;
   --amber: #e0a63a;
   --red: #ef6b66;
+  /* Fixed teal for the 3-state filter badges (see below) — kept separate
+     from --accent because --accent itself turns amber-brown in light mode
+     a few lines down, which would make a "teal" filter badge stop being
+     teal exactly when someone switches themes. --amber/--red already don't
+     shift between themes, so this just gives teal the same guarantee. */
+  --teal: #2dd4bf;
   --glow: rgba(45, 212, 191, 0.15);
   --nav-bg: rgba(10, 14, 16, 0.86);
   --serif: Georgia, "Times New Roman", serif;
@@ -236,4 +242,28 @@ nav {
   .nav-hamburger {
     display: flex;
   }
+}
+
+/* Filter badges (".filter" inside a ".filters" row) — shared by the
+   Publications/Awards/Disclosures/Presentations/Outreach filters on
+   index.html and the topic filter on briefings.html (all four tabs).
+   Base pill styling (border, padding, layout) stays defined per-page next
+   to the rest of that page's component CSS; only the 3-state coloring is
+   centralized here so the two pages can't drift apart on what each color
+   means. See filters.js for the click-cycle logic (teal=OR, amber=AND,
+   red=NOT) that assigns these classes. */
+.filter.active.state-teal {
+  border-color: var(--teal);
+  color: var(--teal);
+  background: rgba(45, 212, 191, 0.12);
+}
+.filter.active.state-amber {
+  border-color: var(--amber);
+  color: var(--amber);
+  background: rgba(224, 166, 58, 0.14);
+}
+.filter.active.state-red {
+  border-color: var(--red);
+  color: var(--red);
+  background: rgba(239, 107, 102, 0.14);
 }

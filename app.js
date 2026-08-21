@@ -1,7 +1,6 @@
 const state = {
   view: "daily",
   query: "",
-  topic: "All",
   data: { daily: [], weekly: [], jobs: [], academia: [] },
 };
 
@@ -12,6 +11,11 @@ const els = {
   status: document.querySelector("#status"),
   tabs: [...document.querySelectorAll(".tab")],
 };
+
+// Multi-select, 3-state (teal=OR, amber=AND, red=NOT) topic filter — shared
+// controller from filters.js, same one index.html's badge rows use. Created
+// lazily on first render() so it isn't tied to load order in this file.
+let filterCtl = null;
 
 function isJobView() {
   return state.view === "jobs" || state.view === "academia";
@@ -109,13 +113,13 @@ function jobTags(job) {
 
 function visibleGroups() {
   const q = state.query.trim().toLowerCase();
+  const matches = filterCtl ? filterCtl.getMatcher() : () => true;
   if (isJobView()) {
     return currentItems()
       .map((group) => ({
         ...group,
         jobs: (group.jobs || []).filter((job) => {
-          const tags = jobTags(job);
-          const topicOK = state.topic === "All" || tags.includes(state.topic);
+          const topicOK = matches(jobTags(job));
           const queryOK = !q || jobSearchText(job).includes(q);
           return topicOK && queryOK;
         }),
@@ -126,8 +130,7 @@ function visibleGroups() {
     .map((group) => ({
       ...group,
       stories: (group.stories || []).filter((story) => {
-        const topicOK =
-          state.topic === "All" || (story.tags || []).includes(state.topic);
+        const topicOK = matches(story.tags || []);
         const queryOK = !q || storySearchText(story).includes(q);
         return topicOK && queryOK;
       }),
@@ -148,21 +151,12 @@ function availableTags() {
       ),
     );
   }
-  return ["All", ...[...tags].sort()];
+  return [...tags].sort();
 }
 
 function renderFilters() {
-  els.filters.innerHTML = "";
-  availableTags().forEach((tag) => {
-    const btn = document.createElement("button");
-    btn.className = "filter" + (state.topic === tag ? " active" : "");
-    btn.textContent = tag;
-    btn.addEventListener("click", () => {
-      state.topic = tag;
-      render();
-    });
-    els.filters.appendChild(btn);
-  });
+  if (!filterCtl) filterCtl = createFilterController(els.filters, render);
+  filterCtl.render(availableTags());
 }
 
 function storyCard(story, index) {
@@ -373,7 +367,7 @@ function escapeAttribute(value = "") {
 els.tabs.forEach((tab) =>
   tab.addEventListener("click", () => {
     state.view = tab.dataset.view;
-    state.topic = "All";
+    if (filterCtl) filterCtl.reset();
     els.search.placeholder = isJobView()
       ? "Search roles, institutions, companies, skills…"
       : "Search titles, topics, methods…";

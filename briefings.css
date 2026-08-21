@@ -14,7 +14,8 @@ h1 em { color: var(--accent); font-style: italic; }
 .search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--glow); }
 .filters { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 16px; }
 .filter { border: 1px solid var(--line); background: var(--bg2); color: var(--muted); border-radius: 999px; padding: 3px 10px; cursor: pointer; font-size: 11px; }
-.filter.active { border-color: var(--accent); color: var(--accent); background: rgba(45, 212, 191, 0.07); }
+/* 3-state active coloring (teal/amber/red) lives in shared.css so it can't
+   drift out of sync with index.html's filter badges. */
 .briefings { padding: 18px 0 80px; }
 .date-group { margin: 28px 0 40px; }
 /* <details>/<summary>: clicking the date collapses everything under it.
