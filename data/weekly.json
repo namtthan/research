@@ -139,6 +139,66 @@
           "priority": "#5",
           "tags": ["Organoids", "Patient heterogeneity", "Genotype-phenotype", "Precision medicine", "Colorectal cancer"],
           "sources": [{"label": "Scientific Reports", "url": "https://www.nature.com/articles/s41598-026-67484-z"}]
+        },
+        {
+          "title": "An innovative organoid model to screen for bacteria and their metabolites that protect against inflammation-induced colonic barrier disruption",
+          "takeaway": "A human colonoid model separates live-bacterial protection from soluble metabolite effects and identifies an indole-AhR barrier-protective mechanism.",
+          "what_happened": "Cady et al. developed an asymmetric-oxygen primary human colonoid system that supports anaerobic bacterial exposure while maintaining epithelial oxygenation. Bifidobacterium adolescentis protected against TNF plus IFN-gamma-induced barrier disruption, and cell-free conditioned medium retained protection; indole-3-lactic acid emerged as one protective metabolite acting through AhR.",
+          "method": "Primary human colonoid monolayers in an asymmetric oxygen system, live bacterial co-culture, conditioned-medium testing, metabolite screening, TEER/permeability readouts and receptor inhibition.",
+          "why_it_matters": "This is a particularly useful mechanistic template for probiotic and FMT experiments because it explicitly moves from live bacteria to conditioned medium to candidate metabolite to receptor dependence. The same ladder could help separate VSL#3's direct chemical, postbiotic and epithelial-signaling effects.",
+          "read_first": "Read the experiments comparing live B. adolescentis with conditioned medium first, then the indole-3-lactic-acid and AhR inhibition data.",
+          "caveat": "The model uses simplified bacterial exposures and short-term barrier injury, trading community realism for mechanistic clarity.",
+          "priority": "#6",
+          "tags": ["Organoids", "Host-microbiome", "Probiotics", "Barrier", "AhR", "Microbial metabolites"],
+          "sources": [{"label": "mSphere", "url": "https://journals.asm.org/doi/10.1128/msphere.00926-25"}, {"label": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/42536076/"}]
+        },
+        {
+          "title": "Microbiota-derived 10-hydroxystearic acid activates PPARα to restore gut epithelial barrier integrity and enhance anti-retroviral therapy",
+          "takeaway": "A Lactiplantibacillus-derived lipid metabolite directly activates PPARα and links microbial metabolism to mitochondrial regeneration, epigenetic remodeling and epithelial repair.",
+          "what_happened": "Kramer et al. identified 10-hydroxystearic acid (10-HSA), produced by L. plantarum, as a mediator of gut epithelial repair. Across human epithelial systems and an SIV non-human-primate model, 10-HSA directly bound PPARα, induced lipid metabolism and mitochondrial regeneration, promoted histone crotonylation and improved epithelial renewal and barrier integrity.",
+          "method": "Human intestinal epithelial models, metabolite identification, transcriptomics, structural/functional PPARα analysis, ex vivo validation and SIV-infected non-human-primate experiments.",
+          "why_it_matters": "This provides a mechanistic alternative to a simple antioxidant model of probiotic protection: a microbial metabolite can improve barrier recovery by reprogramming epithelial metabolism and regeneration. It is therefore highly relevant when interpreting protection that persists despite residual DNA damage or ROS.",
+          "read_first": "Follow the causal sequence from 10-HSA identification to PPARα engagement, mitochondrial effects and epithelial/barrier recovery.",
+          "caveat": "The study centers on HIV/SIV-associated barrier dysfunction rather than radiation injury or Crohn's disease, so the pathway should be tested rather than assumed to transfer across contexts.",
+          "priority": "#7",
+          "tags": ["Host-microbiome", "Probiotics", "Microbial metabolites", "PPARalpha", "Mitochondria", "Barrier repair"],
+          "sources": [{"label": "Nature Microbiology", "url": "https://www.nature.com/articles/s41564-026-02433-0"}, {"label": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/42533069/"}]
+        },
+        {
+          "title": "Peyer's patch M cells organize an epithelial niche that sustains group 3 innate lymphoid cells and IL-22",
+          "takeaway": "Specialized epithelial M cells actively organize an ILC3-IL-22 mucosal immune niche rather than functioning only as antigen-transport cells.",
+          "what_happened": "Cao et al. showed that Peyer's patch M cells establish a spatial epithelial-ILC3 circuit controlling ILC3 localization, proliferation and IL-22 production. Epithelial SPI-B, CCR6-dependent positioning and RANK-RANKL signaling were required, while single-cell profiling revealed tissue- and pathogen-specific M-cell states.",
+          "method": "Mouse genetics, whole-mount spatial imaging, pathogen challenge, subset-specific perturbation and single-cell profiling of SPI-B-positive intestinal epithelial cells.",
+          "why_it_matters": "The paper shows how a relatively rare epithelial subtype can exert an outsized effect on mucosal immune state and how microbial context changes epithelial programs. That is useful when interpreting rare-cell populations and condition-specific epithelial states in intestinal single-cell datasets.",
+          "read_first": "Start with the experiments establishing the M-cell-to-ILC3 spatial circuit, then the single-cell analysis of tissue- and pathogen-specific M-cell states.",
+          "caveat": "This is mouse Peyer's patch biology and depends on immune compartments absent from epithelial-only gut chips.",
+          "priority": "#8",
+          "tags": ["Intestinal epithelium", "M cells", "ILC3", "IL-22", "Mucosal immunity", "Single-cell"],
+          "sources": [{"label": "Nature Immunology", "url": "https://www.nature.com/articles/s41590-026-02606-3"}]
+        },
+        {
+          "title": "Blocking the m6Am methyltransferase PCIF1 in macrophages attenuates colitis progression by preventing neuronal damage",
+          "takeaway": "Macrophage RNA methylation controls extracellular-matrix remodeling and enteric-neuron injury, revealing another non-epithelial circuit capable of determining colitis severity.",
+          "what_happened": "Ding et al. found that macrophage Pcif1 promotes colitis and inflammation-driven enteric-neuron degeneration. Pcif1 loss altered the Znf219-Egr1 program and extracellular-matrix remodeling, increased macrophage localization to neuronal plexuses, promoted neuronal maturation and reduced inflammatory injury; pharmacological PCIF1 blockade also suppressed colitis and neuronal loss.",
+          "method": "Experimental colitis, macrophage-specific genetic perturbation, RNA-modification analysis, extracellular-matrix and enteric-neuron phenotyping, and pharmacological PCIF1 inhibition.",
+          "why_it_matters": "It reinforces that IBD phenotypes emerge from multicellular circuits beyond epithelium alone. For organ-chip interpretation, this helps define an epithelial-microbiome chip as a controlled disease module rather than a complete Crohn's model, while identifying macrophage-stromal-neuronal interactions as a future expansion axis.",
+          "read_first": "Read the macrophage Pcif1 perturbation results first, followed by the Znf219-Egr1/ECM mechanism and neuronal protection data.",
+          "caveat": "Most of the mechanistic circuit lies outside current epithelial-focused gut-chip architectures, and the translational value of PCIF1 inhibition still requires validation.",
+          "priority": "#9",
+          "tags": ["IBD", "Macrophages", "Enteric neurons", "Extracellular matrix", "Epigenetics"],
+          "sources": [{"label": "Cellular & Molecular Immunology", "url": "https://www.nature.com/articles/s41423-026-01459-y"}]
+        },
+        {
+          "title": "SynCellNet: generative AI framework for single-cell RNA sequencing data generation and validation",
+          "takeaway": "A generative-AI framework can create synthetic single-cell expression profiles to address data scarcity and class imbalance, but synthetic cells should not be mistaken for additional biological replication.",
+          "what_happened": "Aqueeb et al. developed SynCellNet to generate and validate synthetic scRNA-seq expression profiles, with particular emphasis on data scarcity and imbalanced cell classes. The study includes primary human colonic organoid scRNA-seq data among its evaluation datasets.",
+          "method": "Conditional generative modeling of single-cell gene-expression profiles with statistical and downstream validation across scRNA-seq datasets, including human colonic organoids.",
+          "why_it_matters": "This could be useful for classifier training or benchmarking rare intestinal cell populations, but it should not be used to manufacture statistical power for biological inference. Synthetic augmentation is fundamentally different from adding independent cells, donors or pseudobulk replicates.",
+          "read_first": "Read the synthetic-versus-real validation and minority-cell experiments first, with particular attention to whether downstream structure is preserved rather than merely visual similarity.",
+          "caveat": "The currently available Scientific Reports version is an unedited article-in-press version, and generative augmentation can create false confidence if synthetic observations are treated as experimental replication.",
+          "priority": "#10",
+          "tags": ["Single-cell RNA-seq", "Generative AI", "Organoids", "Bioinformatics", "Class imbalance"],
+          "sources": [{"label": "Scientific Reports", "url": "https://www.nature.com/articles/s41598-026-64435-6"}]
         }
       ]
     }
