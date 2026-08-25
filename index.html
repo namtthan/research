@@ -104,7 +104,16 @@
         font-size: 18px;
         overflow-x: hidden;
         position: relative;
-        animation: eq-entrance 0.8s ease-out both;
+        /* Pulse is delayed exactly until the entrance finishes (0.8s) rather
+           than running concurrently — both animations touch opacity, and
+           layering them from t=0 would have the later-listed one silently
+           win for the whole overlap, skipping the fade-in. Delaying the
+           pulse means entrance owns opacity uninterrupted for its 0.8s, then
+           hands off cleanly: entrance's fill ends at opacity:1, and pulse's
+           0% keyframe is also opacity:1, so the handoff has no visible pop. */
+        animation:
+          eq-entrance 0.8s ease-out both,
+          eq-pulse 2.6s ease-in-out 0.8s infinite;
       }
       @keyframes eq-entrance {
         from {
@@ -125,21 +134,9 @@
           opacity: 0.5;
         }
       }
-      /* A subtle, continuous pulse on the accent-colored operators —
-         entrance animation is one-time, this keeps a little life in the
-         equation afterward without being distracting. Respect
-         prefers-reduced-motion below. */
-      .research-equation .integral,
-      .research-equation .arrow {
-        animation: eq-pulse 2.6s ease-in-out infinite;
-      }
-      .research-equation .arrow {
-        animation-delay: 0.5s;
-      }
       @media (prefers-reduced-motion: reduce) {
         .research-equation,
-        .research-equation .integral,
-        .research-equation .arrow {
+        .eq-reveal {
           animation: none;
         }
       }
@@ -154,6 +151,10 @@
         cursor: pointer;
         text-decoration: underline dotted;
         text-underline-offset: 3px;
+        /* Same duration/delay as .research-equation's pulse (not nested
+           inside it in the DOM, so it needs its own copy) so the two stay
+           in phase instead of drifting out of sync over time. */
+        animation: eq-pulse 2.6s ease-in-out 0.8s infinite;
       }
       .eq-reveal:hover,
       .eq-reveal:focus-visible {

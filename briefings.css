@@ -6,35 +6,36 @@
 h1 { font-family: var(--serif); font-size: clamp(40px, 6vw, 64px); font-weight: 400; line-height: 1.08; margin: 0 0 18px; }
 h1 em { color: var(--accent); font-style: italic; }
 .lead { max-width: 760px; color: var(--muted); font-size: 18px; margin: 0 0 34px; }
-.toolbar { display: flex; gap: 14px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-.tabs { display: inline-flex; border: 1px solid var(--line2); border-radius: 8px; padding: 4px; background: var(--bg2); flex-wrap: wrap; }
+/* Grid, not flex — with 4 things to place (tabs, the filter toggle, search,
+   and the filter badges) and their relative position needing to change
+   between desktop and mobile (see the media query below), named grid areas
+   let each piece just declare where it goes per breakpoint instead of
+   fighting flexbox's source-order-only layout. Desktop: tabs on the left,
+   toggle+search pinned to the right with the toggle immediately left of
+   search, filters spanning the full row underneath — so the badges get the
+   whole 1100px column instead of splitting it with the toggle button.
+   Mobile: tabs, then toggle, then filters directly below the toggle, with
+   search last. */
+.toolbar {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-template-areas: "tabs toggle search" "filters filters filters";
+  align-items: center;
+  gap: 14px 10px;
+}
+.tabs { grid-area: tabs; justify-self: start; display: inline-flex; border: 1px solid var(--line2); border-radius: 8px; padding: 4px; background: var(--bg2); flex-wrap: wrap; }
 .tab { border: 0; background: transparent; color: var(--text); padding: 10px 14px; border-radius: 6px; cursor: pointer; font-weight: 600; }
 .tab.active { background: var(--accent); color: #06201c; }
+.search { grid-area: search; }
 .search input { width: min(360px, 76vw); background: var(--bg2); color: var(--text); border: 1px solid var(--line2); border-radius: 8px; padding: 11px 14px; outline: none; }
 .search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--glow); }
-/* flex-start, not center: the topic list can wrap to several rows, and
-   centering the toggle against a tall multi-row block looks adrift —
-   flex-start keeps it level with the first row, like a leading label.
-   This row is deliberately NOT inside .wrap (see briefings.html) — with
-   ~80 topic tags, confining it to the same 1100px column as the rest of
-   the page left it cramped in a corner next to the toggle button on wide
-   screens. Left padding matches .wrap's own inset formula (max(24px, half
-   the leftover width past 1100px)) so "Hide filters" still lines up under
-   "Research Brief" above it; right padding stays a flat 24px so the badge
-   row keeps growing into the rest of the viewport instead of stopping at
-   the 1100px column like everything else does. A true edge-to-edge bleed
-   (24px on both sides) was the first pass, but on anything wider than a
-   laptop it left the toggle button visibly adrift from the heading above
-   it — this asymmetric version was worth the extra complexity to avoid
-   that jog while still giving the tags most of a wide screen. */
-.filters-row { display: flex; align-items: flex-start; gap: 10px; margin-top: 16px; padding: 0 24px 0 max(24px, calc((100% - 1100px) / 2)); position: relative; z-index: 1; }
-.filters { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 0; }
+.filters { grid-area: filters; display: flex; gap: 6px; flex-wrap: wrap; margin-top: 2px; }
 .filters.is-collapsed { display: none; }
 .filter { border: 1px solid var(--line); background: var(--bg2); color: var(--muted); border-radius: 999px; padding: 3px 10px; cursor: pointer; font-size: 11px; }
 /* 3-state active coloring (teal/amber/red) lives in shared.css so it can't
    drift out of sync with index.html's filter badges. */
-/* Show/hide toggle for the whole filter row — same pill shape as .theme-toggle. */
-.filter-toggle { flex-shrink: 0; margin-top: 1px; border: 1px solid var(--line2); background: transparent; color: var(--muted); border-radius: 6px; padding: 6px 12px; font-size: 13px; cursor: pointer; transition: 0.15s; }
+/* Show/hide toggle for the filter badges — same pill shape as .theme-toggle. */
+.filter-toggle { grid-area: toggle; justify-self: start; border: 1px solid var(--line2); background: transparent; color: var(--muted); border-radius: 6px; padding: 6px 12px; font-size: 13px; cursor: pointer; transition: 0.15s; }
 .filter-toggle:hover, .filter-toggle:focus-visible { color: var(--accent); border-color: var(--accent); }
 .briefings { padding: 18px 0 80px; }
 .date-group { margin: 28px 0 40px; }
@@ -78,7 +79,10 @@ h1 em { color: var(--accent); font-style: italic; }
 .badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
 .badge, .priority { background: rgba(45, 212, 191, 0.07); border: 1px solid var(--line); border-radius: 999px; padding: 3px 8px; font-size: 11px; color: var(--muted); }
 .priority { color: var(--accent); margin-left: 8px; vertical-align: middle; }
-.fit-score { border-color: rgba(224, 166, 58, 0.45); color: var(--amber); background: rgba(224, 166, 58, 0.10); }
+/* var(--teal), not var(--accent): --accent turns amber-brown in light mode
+   (see shared.css), which would make this badge blend into the amber
+   job-recommendation badges instead of reading as a distinct teal. */
+.fit-score { border-color: rgba(45, 212, 191, 0.45); color: var(--teal); background: rgba(45, 212, 191, 0.10); }
 .job-recommendation { border-color: rgba(45, 212, 191, 0.32); color: var(--accent); }
 .job-recommendation.is-stretch { border-color: rgba(255, 92, 92, 0.38); color: #ff7b7b; background: rgba(255, 92, 92, 0.08); }
 .story-body { border-top: 1px solid var(--line); padding: 18px 22px 22px; }
@@ -102,8 +106,15 @@ h1 em { color: var(--accent); font-style: italic; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 @media (max-width: 760px) {
   .brief-hero { padding-top: 120px; }
-  .toolbar { align-items: stretch; }
+  /* Stack instead of the desktop's 2-row grid: tabs, then the toggle, then
+     the badges directly underneath it, then search last. */
+  .toolbar {
+    grid-template-columns: 1fr;
+    grid-template-areas: "tabs" "toggle" "filters" "search";
+    align-items: stretch;
+  }
   .tabs, .search, .search input { width: 100%; }
+  .filter-toggle { justify-self: start; }
   .tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2px; }
   .tab { min-width: 0; padding: 9px 4px; font-size: 11px; line-height: 1.15; white-space: normal; }
   .story summary, .story-body { padding-left: 16px; padding-right: 16px; }

@@ -122,6 +122,15 @@
               Academia Jobs
             </button>
           </div>
+          <button
+            id="filterToggle"
+            class="filter-toggle"
+            type="button"
+            aria-expanded="true"
+            aria-controls="filters"
+          >
+            Hide filters
+          </button>
           <label class="search"
             ><span class="sr-only">Search briefings</span
             ><input
@@ -129,19 +138,8 @@
               type="search"
               placeholder="Search titles, topics, methods…"
           /></label>
+          <div id="filters" class="filters" aria-label="Topic filters"></div>
         </div>
-      </div>
-      <div class="filters-row">
-        <button
-          id="filterToggle"
-          class="filter-toggle"
-          type="button"
-          aria-expanded="true"
-          aria-controls="filters"
-        >
-          Hide filters
-        </button>
-        <div id="filters" class="filters" aria-label="Topic filters"></div>
       </div>
     </header>
     <main class="wrap">
