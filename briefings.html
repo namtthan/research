@@ -130,7 +130,18 @@
               placeholder="Search titles, topics, methods…"
           /></label>
         </div>
-        <div id="filters" class="filters" aria-label="Topic filters"></div>
+        <div class="filters-row">
+          <button
+            id="filterToggle"
+            class="filter-toggle"
+            type="button"
+            aria-expanded="true"
+            aria-controls="filters"
+          >
+            Hide filters
+          </button>
+          <div id="filters" class="filters" aria-label="Topic filters"></div>
+        </div>
       </div>
     </header>
     <main class="wrap">

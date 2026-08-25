@@ -385,4 +385,37 @@ els.search.addEventListener("input", (e) => {
   render();
 });
 
+// Show/hide the whole filter-badge row. Uses a dedicated "is-collapsed"
+// class rather than the native `hidden` attribute — `.filters` already sets
+// `display: flex` in briefings.css, which has the same specificity as the
+// browser's default `[hidden] { display: none }` rule and would win the
+// cascade tie, silently leaving the row visible. Remembered per browser via
+// localStorage, same pattern theme.js already uses for the theme choice.
+(function () {
+  const toggle = document.getElementById("filterToggle");
+  if (!toggle) return;
+  const STORAGE_KEY = "briefFiltersHidden";
+  function isHidden() {
+    try {
+      return localStorage.getItem(STORAGE_KEY) === "1";
+    } catch (e) {
+      return false;
+    }
+  }
+  function apply(hidden) {
+    els.filters.classList.toggle("is-collapsed", hidden);
+    els.filters.setAttribute("aria-hidden", String(hidden));
+    toggle.textContent = hidden ? "Show filters" : "Hide filters";
+    toggle.setAttribute("aria-expanded", String(!hidden));
+  }
+  apply(isHidden());
+  toggle.addEventListener("click", () => {
+    const hidden = !els.filters.classList.contains("is-collapsed");
+    apply(hidden);
+    try {
+      localStorage.setItem(STORAGE_KEY, hidden ? "1" : "0");
+    } catch (e) {}
+  });
+})();
+
 loadData();

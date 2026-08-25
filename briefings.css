@@ -12,10 +12,18 @@ h1 em { color: var(--accent); font-style: italic; }
 .tab.active { background: var(--accent); color: #06201c; }
 .search input { width: min(360px, 76vw); background: var(--bg2); color: var(--text); border: 1px solid var(--line2); border-radius: 8px; padding: 11px 14px; outline: none; }
 .search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--glow); }
-.filters { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 16px; }
+/* flex-start, not center: the topic list can wrap to several rows, and
+   centering the toggle against a tall multi-row block looks adrift —
+   flex-start keeps it level with the first row, like a leading label. */
+.filters-row { display: flex; align-items: flex-start; gap: 10px; margin-top: 16px; }
+.filters { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 0; }
+.filters.is-collapsed { display: none; }
 .filter { border: 1px solid var(--line); background: var(--bg2); color: var(--muted); border-radius: 999px; padding: 3px 10px; cursor: pointer; font-size: 11px; }
 /* 3-state active coloring (teal/amber/red) lives in shared.css so it can't
    drift out of sync with index.html's filter badges. */
+/* Show/hide toggle for the whole filter row — same pill shape as .theme-toggle. */
+.filter-toggle { flex-shrink: 0; margin-top: 1px; border: 1px solid var(--line2); background: transparent; color: var(--muted); border-radius: 6px; padding: 6px 12px; font-size: 13px; cursor: pointer; transition: 0.15s; }
+.filter-toggle:hover, .filter-toggle:focus-visible { color: var(--accent); border-color: var(--accent); }
 .briefings { padding: 18px 0 80px; }
 .date-group { margin: 28px 0 40px; }
 /* <details>/<summary>: clicking the date collapses everything under it.
@@ -36,7 +44,7 @@ h1 em { color: var(--accent); font-style: italic; }
 .story summary { list-style: none; cursor: pointer; padding: 20px 22px; display: grid; grid-template-columns: 1fr auto; gap: 14px; align-items: start; }
 .story summary::-webkit-details-marker { display: none; }
 .story-title { font-family: var(--serif); font-size: 18px; font-weight: 500; }
-.takeaway { color: var(--muted); margin: 7px 0 0; }
+.takeaway { color: var(--text); margin: 7px 0 0; }
 .takeaway strong { color: var(--text); font-weight: 600; }
 .chevron { color: var(--accent); font-size: 1.25rem; transition: transform 0.18s; }
 .story[open] .chevron { transform: rotate(180deg); }
@@ -49,7 +57,7 @@ h1 em { color: var(--accent); font-style: italic; }
 .story-body { border-top: 1px solid var(--line); padding: 18px 22px 22px; }
 .story-body h3 { margin: 20px 0 8px; font-family: var(--mono); font-size: 15px; color: var(--accent); letter-spacing: 0.6px; text-transform: uppercase; }
 .story-body h3:first-child { margin-top: 0; }
-.story-body p { margin: 0; color: var(--muted); line-height: 1.6; }
+.story-body p { margin: 0; color: var(--text); line-height: 1.6; }
 .caveat, .risk-list { background: rgba(255, 145, 120, 0.055); border: 1px solid rgba(255, 145, 120, 0.12); border-radius: 8px; padding: 11px 13px; }
 .sources, .detail-list { margin: 8px 0 0; padding-left: 20px; color: var(--muted); }
 .sources li, .detail-list li { margin: 6px 0; line-height: 1.55; }

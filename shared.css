@@ -100,7 +100,7 @@ nav {
   padding: 0;
 }
 .links a {
-  color: var(--muted);
+  color: var(--text);
   text-decoration: none;
   font-size: 14px;
   transition: color 0.15s;
@@ -219,7 +219,7 @@ nav {
 .mobile-menu a {
   display: block;
   padding: 13px 24px;
-  color: var(--muted);
+  color: var(--text);
   text-decoration: none;
   font-size: 15px;
   border-bottom: 1px solid var(--line);
