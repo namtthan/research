@@ -191,7 +191,7 @@ function storyCard(story, index) {
     ${methodBlock}
     <h3>Why it matters</h3><p>${escapeHTML(story.why_it_matters || "")}</p>
     ${readFirstBlock}
-    <h3>Skeptical caveat</h3><p class="caveat">${escapeHTML(story.caveat || "")}</p>
+    <h3 class="caveat-heading">Skeptical caveat</h3><p class="caveat">${escapeHTML(story.caveat || "")}</p>
     ${sources ? `<h3>Sources</h3><ul class="sources">${sources}</ul>` : ""}`;
 
   details.append(summary, body);

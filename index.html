@@ -104,16 +104,45 @@
         font-size: 18px;
         overflow-x: hidden;
         position: relative;
-        /* Pulse is delayed exactly until the entrance finishes (0.8s) rather
-           than running concurrently — both animations touch opacity, and
-           layering them from t=0 would have the later-listed one silently
-           win for the whole overlap, skipping the fade-in. Delaying the
-           pulse means entrance owns opacity uninterrupted for its 0.8s, then
-           hands off cleanly: entrance's fill ends at opacity:1, and pulse's
-           0% keyframe is also opacity:1, so the handoff has no visible pop. */
+        /* Sweep is delayed exactly until the entrance finishes (0.8s) rather
+           than running concurrently — both touch opacity (the sweep via its
+           mask), and layering them from t=0 would have the later-listed one
+           silently win for the whole overlap, skipping the fade-in. Delaying
+           the sweep means entrance owns opacity uninterrupted for its 0.8s,
+           then hands off cleanly: entrance's fill ends at opacity:1, and the
+           sweep's mask is fully transparent-free (no dip in view yet) at its
+           start, so the handoff has no visible pop. */
         animation:
           eq-entrance 0.8s ease-out both,
-          eq-pulse 2.6s ease-in-out 0.8s infinite;
+          eq-sweep 2.6s ease-in-out 0.8s infinite;
+        /* The "pulse" is now a soft dim band traveling left-to-right across
+           the text, via an animated mask instead of animating opacity
+           directly — that keeps every child's own color (teal operators,
+           white text) intact instead of flattening them all to one fading
+           opacity. mask-size 300% + sliding mask-position is the standard
+           "shimmer sweep" technique: only a third of the gradient below is
+           ever in view at once, so the mid-gradient dip crosses the visible
+           text once per cycle instead of sitting there statically. */
+        -webkit-mask-image: linear-gradient(
+          90deg,
+          black 0%,
+          black 30%,
+          rgba(0, 0, 0, 0.5) 50%,
+          black 70%,
+          black 100%
+        );
+        mask-image: linear-gradient(
+          90deg,
+          black 0%,
+          black 30%,
+          rgba(0, 0, 0, 0.5) 50%,
+          black 70%,
+          black 100%
+        );
+        -webkit-mask-size: 300% 100%;
+        mask-size: 300% 100%;
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
       }
       @keyframes eq-entrance {
         from {
@@ -125,19 +154,26 @@
           transform: translateY(0);
         }
       }
-      @keyframes eq-pulse {
-        0%,
-        100% {
-          opacity: 1;
+      @keyframes eq-sweep {
+        /* mask-position 100% -> 0%, not 0% -> 100%: background/mask-position
+           increasing shifts the *window* rightward across the gradient, which
+           paradoxically makes the visible dip travel screen-right-to-left —
+           counting down instead sweeps it screen-left-to-right. */
+        from {
+          -webkit-mask-position: 100% 0;
+          mask-position: 100% 0;
         }
-        50% {
-          opacity: 0.5;
+        to {
+          -webkit-mask-position: 0% 0;
+          mask-position: 0% 0;
         }
       }
       @media (prefers-reduced-motion: reduce) {
         .research-equation,
         .eq-reveal {
           animation: none;
+          -webkit-mask-image: none;
+          mask-image: none;
         }
       }
       .eq-reveal {
@@ -151,10 +187,30 @@
         cursor: pointer;
         text-decoration: underline dotted;
         text-underline-offset: 3px;
-        /* Same duration/delay as .research-equation's pulse (not nested
-           inside it in the DOM, so it needs its own copy) so the two stay
-           in phase instead of drifting out of sync over time. */
-        animation: eq-pulse 2.6s ease-in-out 0.8s infinite;
+        /* Same duration/delay/mask as .research-equation's sweep (not nested
+           inside it in the DOM, so it needs its own copy) so the two stay in
+           phase instead of drifting out of sync over time. */
+        animation: eq-sweep 2.6s ease-in-out 0.8s infinite;
+        -webkit-mask-image: linear-gradient(
+          90deg,
+          black 0%,
+          black 30%,
+          rgba(0, 0, 0, 0.5) 50%,
+          black 70%,
+          black 100%
+        );
+        mask-image: linear-gradient(
+          90deg,
+          black 0%,
+          black 30%,
+          rgba(0, 0, 0, 0.5) 50%,
+          black 70%,
+          black 100%
+        );
+        -webkit-mask-size: 300% 100%;
+        mask-size: 300% 100%;
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
       }
       .eq-reveal:hover,
       .eq-reveal:focus-visible {

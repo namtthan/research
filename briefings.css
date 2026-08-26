@@ -89,7 +89,17 @@ h1 em { color: var(--accent); font-style: italic; }
 .story-body h3 { margin: 20px 0 8px; font-family: var(--mono); font-size: 15px; color: var(--accent); letter-spacing: 0.6px; text-transform: uppercase; }
 .story-body h3:first-child { margin-top: 0; }
 .story-body p { margin: 0; color: var(--text); line-height: 1.6; }
-.caveat, .risk-list { background: rgba(255, 145, 120, 0.055); border: 1px solid rgba(255, 145, 120, 0.12); border-radius: 8px; padding: 11px 13px; }
+/* Heading only — var(--red), not var(--accent)/amber, so it reads as a
+   distinct warning color from the neutral section headings above it.
+   Selector needs the ".story-body h3" prefix to out-specificity the
+   ".story-body h3 { color: var(--accent) }" rule above (0,1,1) — a bare
+   ".caveat-heading" (0,1,0) loses to it and silently stays accent-colored,
+   which in dark mode happens to be the same hex as teal, making the bug
+   easy to miss visually. */
+.story-body h3.caveat-heading { color: var(--red); }
+/* No box on .caveat itself (plain text, same as any other story-body p) —
+   .risk-list (job cards' "Gaps / risks" list) keeps its box, unchanged. */
+.risk-list { background: rgba(255, 145, 120, 0.055); border: 1px solid rgba(255, 145, 120, 0.12); border-radius: 8px; padding: 11px 13px; }
 .sources, .detail-list { margin: 8px 0 0; padding-left: 20px; color: var(--muted); }
 .sources li, .detail-list li { margin: 6px 0; line-height: 1.55; }
 .sources a { color: var(--accent); }
