@@ -85,6 +85,14 @@ h1 em { color: var(--accent); font-style: italic; }
 .fit-score { border-color: rgba(45, 212, 191, 0.45); color: var(--teal); background: rgba(45, 212, 191, 0.10); }
 .job-recommendation { border-color: rgba(45, 212, 191, 0.32); color: var(--accent); }
 .job-recommendation.is-stretch { border-color: rgba(255, 92, 92, 0.38); color: #ff7b7b; background: rgba(255, 92, 92, 0.08); }
+/* #ff7b7b is a pale pink-red tuned for a near-black background (~2.5:1 on
+   white — fails WCAG AA same as --amber/--red did) and isn't tied to the
+   --red variable at all, so fixing --red in shared.css doesn't reach it.
+   Deliberately not just switching this to var(--red): "stretch job" is
+   meant to read as a shade apart from the state-red filter badges, so it
+   gets its own light-mode-only override, warmer/more orange than --red's
+   #b62820, rather than being folded into the same token. */
+html.light .job-recommendation.is-stretch { border-color: rgba(182, 52, 32, 0.45); color: #b63420; background: rgba(182, 52, 32, 0.1); }
 .story-body { border-top: 1px solid var(--line); padding: 18px 22px 22px; }
 .story-body h3 { margin: 20px 0 8px; font-family: var(--mono); font-size: 15px; color: var(--accent); letter-spacing: 0.6px; text-transform: uppercase; }
 .story-body h3:first-child { margin-top: 0; }
@@ -100,6 +108,13 @@ h1 em { color: var(--accent); font-style: italic; }
 /* No box on .caveat itself (plain text, same as any other story-body p) —
    .risk-list (job cards' "Gaps / risks" list) keeps its box, unchanged. */
 .risk-list { background: rgba(255, 145, 120, 0.055); border: 1px solid rgba(255, 145, 120, 0.12); border-radius: 8px; padding: 11px 13px; }
+/* No colored text here (the list items use var(--text)), so this isn't a
+   WCAG contrast case — but the same pale-on-dark wash and border, carried
+   over verbatim onto white, would nearly disappear (a ~5% alpha fill and
+   12% alpha border read as almost nothing against near-black; against
+   white they're fainter still). Bumped alpha and switched to --red's RGB
+   so the callout stays visible as a callout in light mode too. */
+html.light .risk-list { background: rgba(182, 40, 32, 0.07); border-color: rgba(182, 40, 32, 0.18); }
 .sources, .detail-list { margin: 8px 0 0; padding-left: 20px; color: var(--muted); }
 .sources li, .detail-list li { margin: 6px 0; line-height: 1.55; }
 .sources a { color: var(--accent); }

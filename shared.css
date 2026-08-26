@@ -12,6 +12,14 @@
   --accent: #2dd4bf;
   --amber: #e0a63a;
   --red: #ef6b66;
+  /* Semi-transparent fills/borders that pair with --amber/--red on badges —
+     tokenized (instead of the rgba() literals still hardcoded at each call
+     site) so the light-mode override below can re-tint them to match the
+     new light-mode base colors, rather than leaving 1990s-dark-mode RGB
+     numbers baked into a light-theme badge. */
+  --amber-bg: rgba(224, 166, 58, 0.14);
+  --amber-border: rgba(224, 166, 58, 0.35);
+  --red-bg: rgba(239, 107, 102, 0.14);
   /* Fixed teal for the 3-state filter badges (see below) — kept separate
      from --accent because --accent itself turns amber-brown in light mode
      a few lines down, which would make a "teal" filter badge stop being
@@ -38,6 +46,22 @@ html.light {
   --accent: #b45309;
   --glow: rgba(180, 83, 9, 0.15);
   --nav-bg: rgba(255, 255, 255, 0.86);
+  /* --amber/--red as originally defined (#e0a63a, #ef6b66) are tuned for a
+     near-black background — set flat against white/--card they land at
+     ~2:1 and ~3:1 contrast, both well under WCAG AA's 4.5:1 for text, so
+     award badges, the caveat heading, and the story title all read as
+     washed-out pastel rather than a distinct signal color. These are
+     darker/more saturated versions of the same hue (same relationship
+     --accent already has to its own light counterpart, #2dd4bf → #b45309)
+     chosen to clear 4.5:1 against white with a comfortable margin — see
+     the --amber-bg/--red-bg re-tint right below, which matters just as
+     much: leaving those at the old dark-mode RGB would put the new,
+     darker text on a background tinted from the old, lighter color. */
+  --amber: #866013;
+  --amber-bg: rgba(134, 96, 19, 0.13);
+  --amber-border: rgba(134, 96, 19, 0.4);
+  --red: #b62820;
+  --red-bg: rgba(182, 40, 32, 0.12);
 }
 * {
   box-sizing: border-box;
@@ -260,10 +284,10 @@ nav {
 .filter.active.state-amber {
   border-color: var(--amber);
   color: var(--amber);
-  background: rgba(224, 166, 58, 0.14);
+  background: var(--amber-bg);
 }
 .filter.active.state-red {
   border-color: var(--red);
   color: var(--red);
-  background: rgba(239, 107, 102, 0.14);
+  background: var(--red-bg);
 }
