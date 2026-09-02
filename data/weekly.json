@@ -124,6 +124,131 @@
           "sources": [{"label": "Advanced Healthcare Materials", "url": "https://pubmed.ncbi.nlm.nih.gov/42629977/"}]
         }
       ]
+    },
+    {
+      "date": "2026-09-02",
+      "stories": [
+        {
+          "title": "Antifungal therapy improves microbiome dynamics in inflammatory bowel disease",
+          "takeaway": "Systemic fluconazole, but not oral-only nystatin, reduced intestinal Candida burden and was followed by broader bacterial/fungal community recovery, more butyrate-associated metabolism and improved disease activity in a biomarker-enriched IBD cohort.",
+          "what_happened": "Xiangyu Pan, A. Conroy, T. S. Ngima et al. (Nature Medicine; peer-reviewed research article, published September 1, 2026) report the prospective observational IVAN study in 53 patients with mild-to-moderate Crohn's disease or ulcerative colitis plus oral thrush. Fluconazole acted throughout the gastrointestinal tract, reduced intestinal Candida, increased bacterial diversity and butyrate-associated metabolic features, and was associated with improved clinical disease activity over eight weeks; nystatin cleared oral thrush but did not produce the same intestinal effects.",
+          "method": "Prospective observational comparison of systemic fluconazole versus oral nystatin in 53 IBD patients, with paired oral/fecal fungal profiling, bacterial microbiome analysis, metabolite modules and longitudinal clinical outcomes.",
+          "why_it_matters": "This is unusually relevant to host-microbiome work because it demonstrates that manipulating one kingdom—the mycobiome—can reorganize bacterial community structure and metabolite output. It argues that donor microbiota phenotypes on-chip may depend on fungi as well as bacteria, and suggests a concrete precision-microbiome stratifier: intestinal/oral Candida burden.",
+          "read_first": "Read the intestinal Candida reduction and microbiome-remodeling results first, then Fig. 4 on metabolite changes and Fig. 5 on clinical outcomes/progression.",
+          "caveat": "The study was not randomized or placebo-controlled and was not designed to prove antifungal therapeutic efficacy. Patients were selected for thrush, so the findings cannot yet be generalized to unselected IBD populations.",
+          "priority": "#1",
+          "tags": ["IBD", "Crohn's disease", "Mycobiome", "Gut microbiome", "Butyrate", "Precision medicine"],
+          "sources": [{"label": "Nature Medicine", "url": "https://www.nature.com/articles/s41591-026-04616-y"}, {"label": "Weill Cornell Medicine", "url": "https://news.weill.cornell.edu/news/2026/09/antifungal-therapy-shows-potential-for-ibd-patients-with-candida-overgrowth"}]
+        },
+        {
+          "title": "Concerted changes in the pediatric single-cell intestinal ecosystem before and after anti-TNF blockade",
+          "takeaway": "A final-version single-cell atlas links baseline intestinal cell-state composition to pediatric Crohn's severity and anti-TNF response, and suggests treatment can shift the ecosystem toward states resembling more severe adult disease.",
+          "what_happened": "Hengqi Betty Zheng, Benjamin A. Doran, Alison Yu, Kyle Kimler et al. (eLife; peer-reviewed Version of Record, September 1, 2026; previously available as a reviewed preprint) profiled diagnostic small-intestinal biopsies from 14 untreated children with Crohn's disease, follow-up biopsies from eight after treatment, and 13 non-inflammatory controls. Using a new tree-based cell-state tool, ARBOL, they built pediatric Crohn's and control atlases totaling more than 200,000 cells and identified immune and epithelial states associated with severity and treatment response.",
+          "method": "Longitudinal human small-intestinal scRNA-seq before and after therapy, ARBOL hierarchical cell-state analysis, clinical-response stratification and integration with adult Crohn's single-cell datasets.",
+          "why_it_matters": "This is a useful reference atlas for interpreting your chip scRNA-seq: increased inflammatory immune states coexist with loss of metabolically specialized epithelial states, so a change in epithelial composition may be biologically meaningful rather than merely a clustering artifact. ARBOL is also worth examining as an alternative way to represent continuous cell-state structure.",
+          "read_first": "Start with the diagnostic cell-state atlas and severity-associated composition changes, then the longitudinal anti-TNF comparison and adult-dataset integration.",
+          "caveat": "The cohort is small and geographically narrow, and it cannot directly resolve microbiome, genetic or dietary drivers. The final paper is new this week, but the underlying work previously existed as a reviewed preprint.",
+          "priority": "#2",
+          "tags": ["Crohn's disease", "Single-cell", "Pediatric IBD", "Anti-TNF", "Cell states", "Bioinformatics"],
+          "sources": [{"label": "eLife", "url": "https://doi.org/10.7554/eLife.91792.3"}, {"label": "eLife press summary", "url": "https://elifesciences.org/for-the-press/a5aef790/single-cell-map-helps-predict-childhood-crohn-s-severity-and-treatment-response"}]
+        },
+        {
+          "title": "A Single-organoid Workflow for quantitative Imaging classiFication and Tracking (SWIFT)",
+          "takeaway": "SWIFT turns routine brightfield movies into single-organoid segmentation, phenotyping and longitudinal tracking with little manual annotation, and reveals dynamic Wnt-dependent morphology in intestinal organoids.",
+          "what_happened": "Lucie Bracq, Romain Guiet, Sandra Offner, Béatrice Kunz, Gisou van der Goot and Nathalie Brandenberg (Communications Biology; peer-reviewed research article, September 1, 2026) combine YOLOv8, Segment Anything and application-specific classification into a modular pipeline that works across organoid types and microscope systems. In intestinal organoids, the pipeline resolves time-dependent Wnt-driven morphological transitions that would be difficult to quantify manually.",
+          "method": "Time-lapse brightfield imaging, object detection with YOLOv8, SAM-based segmentation, phenotype classification and identity tracking at the individual-organoid level.",
+          "why_it_matters": "This is directly actionable for your organoid work. It could replace crude endpoint perimeter measurements with longitudinal growth, budding, morphology and fate trajectories at single-organoid resolution—especially useful for comparing normal, Crohn's and CRC organoids under ROCK inhibition, ECM changes or oxidative stimulation.",
+          "read_first": "Read the workflow/validation figure first, then the intestinal-organoid Wnt perturbation results showing how SWIFT detects dynamic morphological state transitions.",
+          "caveat": "Morphology remains a proxy for biological state; robust tracking does not automatically tell you which lineage or molecular program caused a morphological transition. Performance also depends on image quality and representative training annotations.",
+          "priority": "#3",
+          "tags": ["Organoids", "Image analysis", "Machine learning", "Intestinal organoids", "Morphogenesis", "Methods"],
+          "sources": [{"label": "Communications Biology", "url": "https://www.nature.com/articles/s42003-026-10768-x"}]
+        },
+        {
+          "title": "NLRP3 deficiency alleviates colitis in association with short-chain fatty acid–producing bacteria",
+          "takeaway": "Host NLRP3 activation status changes both colitis severity and whether an SCFA-producing probiotic can protect, linking inflammasome state to microbiota-mediated therapeutic response.",
+          "what_happened": "Xue Guo, Jing Xu, Hanchang He et al. (AMB Express; peer-reviewed research article, September 1, 2026) found elevated NLRP3 in active UC and DSS colitis. Nlrp3 deletion reduced inflammation, preserved SCFA-producing taxa and restored fecal propionate/butyrate. Clostridium butyricum improved colitis in wild-type mice but added no benefit in Nlrp3-deficient mice and lost efficacy when NLRP3 was pharmacologically activated.",
+          "method": "Human UC tissue observations, DSS mouse colitis, Nlrp3 knockout, microbiome profiling, fecal SCFA quantification, Clostridium butyricum supplementation and pharmacologic NLRP3 activation.",
+          "why_it_matters": "This is a strong host-genotype/host-state × microbe interaction example. In a patient-derived gut-chip context, the same probiotic or donor microbiota may behave differently depending on epithelial inflammasome status; this is precisely the kind of interaction that whole-community comparisons can obscure.",
+          "read_first": "Read the Nlrp3-knockout microbiome/SCFA results, then the Clostridium butyricum rescue and nigericin experiments that test dependence on host NLRP3 state.",
+          "caveat": "Most causal evidence is from DSS mice, and the human data are observational. NLRP3 effects are cell-type dependent, so epithelial-only chips may capture only part of the mechanism.",
+          "priority": "#4",
+          "tags": ["IBD", "NLRP3", "Probiotics", "SCFA", "Clostridium butyricum", "Host-microbiome"],
+          "sources": [{"label": "AMB Express", "url": "https://link.springer.com/article/10.1186/s13568-026-02112-7"}]
+        },
+        {
+          "title": "MetaCAT enables reconstruction of high-quality microbial genomes and their association with host traits from metagenomic data",
+          "takeaway": "MetaCAT combines metagenome binning, microbial SNP calling and host-association analysis in one scalable framework, improving both reconstruction accuracy and computational efficiency.",
+          "what_happened": "Cong-Cong Liu, Shan-Shan Dong, Jing Guo, Zhen Xu et al. (Nature Microbiology; peer-reviewed methods/research article, September 1, 2026) introduce MetaCAT, which combines k-mer frequency and read coverage with a sparse weighted Dirichlet-process Gaussian-mixture model. It also supports microbial SNP discovery and metagenome-wide association with host traits; colorectal-cancer cohorts revealed previously unrecognized marker species and microbial SNP associations.",
+          "method": "Metagenome-assembled genome reconstruction, probabilistic clustering, k-mer/read-depth integration, microbial SNP calling, metagenome-wide association studies and benchmarking across simulated/real cohorts.",
+          "why_it_matters": "If you move from 16S toward shotgun metagenomics for donor microbiota, this is directly relevant. It offers a path from 'which taxa changed?' to strain/genome-level variation and host-trait associations, which could be paired with chip phenotypes such as TEER, ROS or inflammatory pathways.",
+          "read_first": "Read Fig. 1 for the MetaCAT architecture, Fig. 2 for benchmarking, then the disease-cohort association analysis rather than the algorithm derivation first.",
+          "caveat": "The disease demonstration is colorectal cancer rather than IBD, and association remains association; microbial SNPs linked to a host trait still require functional perturbation to establish mechanism.",
+          "priority": "#5",
+          "tags": ["Metagenomics", "Bioinformatics", "Gut microbiome", "Microbial genomics", "SNP", "Host traits"],
+          "sources": [{"label": "Nature Microbiology", "url": "https://www.nature.com/articles/s41564-026-02472-7"}]
+        },
+        {
+          "title": "Sublethal rifampicin enhances the tolerance of Lactobacillus delbrueckii subsp. bulgaricus to food processing and intestinal retention through protein aggregation",
+          "takeaway": "Sublethal antibiotic stress drives a reversible dormant state in a probiotic bacterium that improves stress tolerance and intestinal retention through protein aggregation—an important warning that pre-exposure history can alter microbial fitness.",
+          "what_happened": "Liang Liu, Zhongxia Li, Can Di et al. (Microbiome; peer-reviewed research article, September 1, 2026) show that sublethal rifampicin induces reversible dormancy in L. delbrueckii subsp. bulgaricus, with lower ATP and impaired division but enhanced acid/alkali/heat tolerance, longer intestinal retention in mice and greater influence on community structure. Disrupting protein aggregates abolished the tolerance phenotype; single-cell RNA-seq revealed a stress-adapted subpopulation masked by bulk RNA-seq.",
+          "method": "Sublethal antibiotic conditioning, physiological stress assays, mouse intestinal-retention experiments, protein-aggregate disruption/proteomics, bulk RNA-seq and bacterial single-cell RNA-seq.",
+          "why_it_matters": "This is a useful confounder for microbiota-chip studies: how bacteria were cultured or stressed before inoculation may change persistence under oxygen, flow, nutrient and pH stress. In other words, inoculum history can become an experimental variable even when starting CFU is identical.",
+          "read_first": "Start with the stress-tolerance and intestinal-retention results, then the protein-aggregate perturbation and single-cell heterogeneity data.",
+          "caveat": "The phenotype was induced by rifampicin in one Lactobacillus strain and should not be generalized to complex donor communities. Enhanced persistence is not automatically beneficial and may alter ecology in unintended ways.",
+          "priority": "#6",
+          "tags": ["Probiotics", "Lactobacillus", "Microbial fitness", "Stress adaptation", "Single-cell", "Colonization"],
+          "sources": [{"label": "Microbiome", "url": "https://link.springer.com/article/10.1186/s40168-026-02517-3"}]
+        },
+        {
+          "title": "Bifidobacterium pseudocatenulatum alleviates neonatal calf diarrhea via acetate-associated attenuation of pathogen-induced Th17/IL-17A inflammatory responses",
+          "takeaway": "A live Bifidobacterium strain and its acetate output suppress pathogen-associated intestinal inflammation through an FFAR2-linked Th17/IL-17A mechanism, giving a clean microbe→metabolite→host signaling chain.",
+          "what_happened": "Mingyang Hu, Wenjuan Du, Wenyue Li et al. (Microbiome; peer-reviewed research article, September 1, 2026) found that healthy-calf FMT enriched B. pseudocatenulatum and fecal acetate. Live B. pseudocatenulatum increased acetate and reduced inflammatory phenotypes in complementary mouse models; heat-killed bacteria were less effective, and FFAR2 blockade weakened protection.",
+          "method": "Calf disease/remission microbiome analysis, FMT, live versus heat-killed Bifidobacterium, acetate quantification, complementary murine inflammatory models and pharmacologic FFAR2 blockade.",
+          "why_it_matters": "The design is conceptually useful for your FMT-qualified versus disease-microbiota experiments because it decomposes a community effect into candidate strain, metabolite and receptor. It also reinforces the need to distinguish live-microbe effects from postbiotic/metabolite effects.",
+          "read_first": "Read the FMT→Bifidobacterium/acetate association first, then the live-versus-killed comparison and FFAR2-blockade experiment.",
+          "caveat": "The primary disease model is neonatal calf diarrhea, not human IBD. The Th17 axis also requires immune context that an epithelial-only chip cannot fully reproduce.",
+          "priority": "#7",
+          "tags": ["Bifidobacterium", "Acetate", "Postbiotics", "Th17", "FFAR2", "Host-microbiome"],
+          "sources": [{"label": "Microbiome", "url": "https://link.springer.com/article/10.1186/s40168-026-02524-4"}]
+        },
+        {
+          "title": "Amelioration of H2O2-induced post-weaning intestinal damage in piglets by terpinen-4-ol through enhanced epithelial renewal",
+          "takeaway": "Terpinen-4-ol countered H2O2-driven villus injury, apoptosis and stem-cell loss while restoring secretory/absorptive differentiation, with Wnt/β-catenin activation as a candidate mechanism.",
+          "what_happened": "Lihuai Yu, Yanling Liu, Changwei Zhang et al. (BMC Veterinary Research; peer-reviewed research article, September 1, 2026) challenged weaned piglets with H2O2 and found reduced villus height, impaired Ki67, increased caspase-3 and loss of Lgr5/Bmi1 and differentiated-cell markers. Terpinen-4-ol reversed many of these changes and was associated with restored Wnt/β-catenin signaling.",
+          "method": "In vivo H2O2 intestinal-injury model in 32 weaned piglets, histomorphometry, proliferation/apoptosis assays, intestinal stem-cell and differentiation markers, and Wnt/β-catenin pathway analysis.",
+          "why_it_matters": "This directly intersects your oxidative-stress organoid data. It suggests that an apparent 'growth response' after H2O2 should be interpreted alongside stemness, lineage allocation and apoptosis—not perimeter alone—and points to Wnt/β-catenin as one plausible repair axis to test.",
+          "read_first": "Read the villus/crypt morphology plus Ki67/caspase-3 data, then Lgr5/Bmi1 and differentiated-cell markers, and finally the Wnt/β-catenin result.",
+          "caveat": "This is a piglet feed-additive study using systemic H2O2 challenge, not a human organoid or chip model. The Wnt link is associative rather than a definitive pathway-intervention experiment.",
+          "priority": "#8",
+          "tags": ["Oxidative stress", "H2O2", "Intestinal stem cells", "Wnt", "Epithelial renewal", "Barrier"],
+          "sources": [{"label": "BMC Veterinary Research", "url": "https://link.springer.com/article/10.1186/s12917-026-05827-8"}]
+        },
+        {
+          "title": "Human stewardship in the age of organoids",
+          "takeaway": "A Nature Methods perspective argues that organoid/NAM biobanks need continuing stewardship—not one-time consent and ethics review—as models become longer-lived, more functionally complex and more translationally valuable.",
+          "what_happened": "Pradipta Ghosh, Sara Gianella, Courtney Tindle, Karine Dubé et al. (Nature Methods; perspective/commentary, September 2, 2026) propose a stewardship framework that tracks human-derived organoid resources across increasing functional relevance, persistence and translational utility, explicitly positioning next-generation NAM biobanks within that continuum.",
+          "method": "Ethics/governance perspective integrating organoid science, biobanking, donor relationships, translational use and New Approach Methodology stewardship.",
+          "why_it_matters": "For patient-derived organoid and gut-chip programs, this is strategically important even though it is not mechanistic biology. As models become reusable patient-specific platforms—especially when paired with microbiome, genomics and commercialization—the governance burden grows with the scientific value of the model.",
+          "read_first": "Read Fig. 1, which positions next-generation NAM biobanks along functional relevance, persistence and translational utility, then the recommendations for ongoing stewardship.",
+          "caveat": "This is a normative perspective, not empirical validation. It will not tell you how to improve a chip experimentally, but it may matter substantially for consent language, biobank design, data reuse and future translation.",
+          "priority": "#9",
+          "tags": ["Organoids", "NAMs", "Biobanking", "Ethics", "Patient-derived models", "Translation"],
+          "sources": [{"label": "Nature Methods", "url": "https://www.nature.com/articles/s41592-026-03228-1"}]
+        },
+        {
+          "title": "Dynamic biomass micro–nanofibre framework for entrapment and clearance of gastrointestinal microplastics",
+          "takeaway": "An oral alginate–chitin scaffold physically traps diverse microplastics across gastric and intestinal pH, accelerates fecal clearance and partially restores tight junctions, inflammatory markers and SCFA-producing microbiota in mice.",
+          "what_happened": "Yang Wu, Fangtian Liu, Yifei Liu et al. (Nature Nanotechnology; peer-reviewed research article, September 2, 2026) engineered a pH-responsive alginate–chitin micro/nanofibre framework. It captured multiple microplastic chemistries in simulated GI conditions, reduced colonic microplastic signal by roughly half within two hours in mice, and over 13 weeks improved ZO-1, occludin and claudin-5 while lowering inflammatory markers and promoting recovery of SCFA-producing genera.",
+          "method": "Biomaterial engineering, dynamic simulated gastrointestinal digestion, adsorption/entrapment measurements across pH, mouse oral exposure/clearance studies, tight-junction and inflammatory readouts, and 16S microbiome profiling.",
+          "why_it_matters": "The most transferable part is methodological: it couples a GI exposure/removal intervention to barrier and microbiome endpoints rather than treating them separately. That same logic fits gut-chip toxicology/NAM studies where a material or contaminant can be evaluated simultaneously for transport, epithelial injury and microbiome effects.",
+          "read_first": "Read Fig. 2 for capture efficiency, Fig. 4 for gastrointestinal clearance/barrier damage, and Fig. 5 for long-term barrier and microbiome recovery.",
+          "caveat": "The therapeutic platform targets microplastic exposure rather than IBD, and the key biological validation is in mice. The microbiome changes may be secondary to lower exposure rather than a direct effect of the scaffold.",
+          "priority": "#10",
+          "tags": ["Intestinal barrier", "Microbiome", "Toxicology", "Biomaterials", "NAMs", "Microplastics"],
+          "sources": [{"label": "Nature Nanotechnology", "url": "https://www.nature.com/articles/s41565-026-02266-2"}]
+        }
+      ]
     }
   ]
 }
