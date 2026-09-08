@@ -1,0 +1,86 @@
+name: Append Sept 8 daily brief
+
+on:
+  push:
+    paths:
+      - '.github/workflows/append-daily-2026-09-08.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  append:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Append or replace Sept 8 briefing
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('data/daily.json')
+          data = json.loads(path.read_text())
+          briefing = {
+            "date": "2026-09-08",
+            "stories": [
+              {
+                "title": "Novartis' $12B Avidity bet takes a Phase 3 hit",
+                "takeaway": "What changed: days after pelacarsen failed, del-desiran also missed its Phase 3 endpoint, putting a second major Novartis growth bet under pressure.",
+                "what_happened": "Novartis said September 8 that del-desiran, the myotonic-dystrophy RNA therapy acquired in its $12 billion purchase of Avidity, failed a Phase 3 trial. Reuters reported Novartis shares fell about 9%, erasing roughly $29.6 billion in market value, as investors reassessed an asset that analysts had expected could reach about $3.1 billion in peak annual sales.",
+                "why_it_matters": "This is the uncomfortable endpoint of translational science: target engagement, platform enthusiasm and expensive M&A do not substitute for human efficacy. For human-relevant model work, the commercial value is in discriminating candidates and indications before a late-stage trial does it at vastly higher cost.",
+                "caveat": "Full trial data are not yet public, and one failed endpoint does not invalidate Avidity's RNA platform or the wider oligonucleotide modality. The failure could still reflect indication biology, endpoint choice or drug-specific limitations.",
+                "tags": ["Biotech industry", "M&A", "Clinical trials", "RNA therapeutics", "Career"],
+                "sources": [{"label": "Reuters", "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/novartis-announces-trial-setback-del-desiran-drug-2026-09-08/"}]
+              },
+              {
+                "title": "Multi-organ chips may need a common stem-cell origin, not just connected plumbing",
+                "takeaway": "A new Nature Reviews Bioengineering comment argues that deriving organ modules from one pluripotent stem-cell source could improve physiological integration across multi-organ systems.",
+                "what_happened": "Published September 7, the comment argues that multi-organ-on-chip systems have not yet delivered the integrated drug-development and disease models once anticipated. The authors propose building organoid-on-chip modules from a single pluripotent stem-cell source rather than connecting separately cultured mature tissues.",
+                "why_it_matters": "For organ-chip design, this sharpens an important comparison: connecting mature modules gives experimental modularity, while a shared developmental and genetic origin may give better cross-organ coherence. Donor consistency and coordinated cell-state maturation could matter as much as the tubing between compartments.",
+                "caveat": "This is a forward-looking comment, not prospective evidence that common-source multi-organ chips improve PK/PD prediction, reproducibility or regulatory acceptance. Developmental integration could also add substantial culture complexity.",
+                "tags": ["Organ-on-chip", "MPS", "Organoids", "Pluripotent stem cells", "NAMs"],
+                "sources": [{"label": "Nature Reviews Bioengineering", "url": "https://www.nature.com/articles/s44222-026-00496-6"}]
+              },
+              {
+                "title": "IRIS reconstructs a cell's signaling history from transcriptomes",
+                "takeaway": "A Nature Methods framework learns transferable pathway-response fingerprints from perturbation screens and uses them to infer prior signaling exposures at single-cell resolution.",
+                "what_happened": "Published September 8, researchers built a combinatorial signaling-perturbation atlas in pluripotent stem cells and trained IRIS, a neural-network transfer-learning model. IRIS generalized across cell types and species, reconstructed signaling histories in mouse gastrulation data and helped narrow signaling conditions needed to engineer specific cell fates.",
+                "why_it_matters": "For organoids and chip single-cell data, this moves beyond asking which markers are high toward asking what signaling history produced the observed state. The same experimental-computational logic could help interpret differentiation trajectories or rationally refine organoid-to-monolayer protocols.",
+                "caveat": "The framework is centered on developmental pathways and controlled perturbation data. Inflammatory disease states, microbiome exposure and mechanically stimulated chip cultures may violate its transfer assumptions, so inferred signaling still needs direct perturbation validation.",
+                "tags": ["Bioinformatics", "Single-cell", "Organoids", "Machine learning", "Bioengineering"],
+                "sources": [{"label": "Nature Methods", "url": "https://www.nature.com/articles/s41592-026-03213-8"}]
+              },
+              {
+                "title": "ADARx tests the 2026 biotech IPO window with a broad siRNA pipeline",
+                "takeaway": "An AbbVie-backed RNA biotech with multiple clinical programs has filed for Nasdaq, another sign that public capital is available to companies with tangible clinical depth.",
+                "what_happened": "ADARx filed an S-1 on September 4 and disclosed plans to use most IPO proceeds on three clinical-stage siRNA programs, including Phase 2 agazisiran, Phase 3 onvuzosiran and Phase 1 ADX-626. Fierce Biotech reported the company entered 2026 with about $427.3 million in cash and previously received $335 million upfront from AbbVie in an option-based partnership.",
+                "why_it_matters": "For career planning, this is a better signal than a generic 'IPO market is back' headline: investors appear more willing to finance RNA companies that already have multiple defined clinical milestones. Deep pipelines can support hiring, but they also concentrate pressure on execution and cash burn.",
+                "caveat": "The offering is not yet priced or completed, and a registration filing is not proof that investors will accept the eventual valuation. A broad pipeline can diversify scientific risk while simultaneously stretching development resources.",
+                "tags": ["Biotech industry", "IPO", "siRNA", "Funding", "Career"],
+                "sources": [{"label": "Fierce Biotech", "url": "https://www.fiercebiotech.com/biotech/abbvie-backed-adarx-plans-ipo-fund-array-clinical-stage-sirna-therapies"}, {"label": "SEC", "url": "https://www.sec.gov/Archives/edgar/data/1802369/000119312526383838/d903461ds1.htm"}]
+              },
+              {
+                "title": "Microbiome sequencing gets a contamination reality check",
+                "takeaway": "A new Nature Reviews Microbiology Genome Watch argues that low-biomass microbial signals need prospective contamination-aware sequencing before they are treated as biology.",
+                "what_happened": "Published September 7, the article examines how contamination and methodological assumptions can create or distort apparent host-associated microbial signatures and highlights prospective contamination-aware sequencing as a way to separate biological signal from technical noise.",
+                "why_it_matters": "The lesson transfers directly to mucosal and organ-chip microbiome work: reagent blanks, extraction controls, randomized batches and contamination-aware analysis should be first-class design features, especially when biomass is low. Otherwise a convincing 'disease-associated taxon' can be an expensive reagent signature wearing a lab coat.",
+                "caveat": "The article focuses on tumor-associated microbiomes rather than IBD. Contamination control improves confidence in detection, but it cannot establish whether a genuine microbial signal is causal, functionally relevant or representative of the living gut community.",
+                "tags": ["Gut microbiome", "Bioinformatics", "Quality control", "Reproducibility", "Methods"],
+                "sources": [{"label": "Nature Reviews Microbiology", "url": "https://www.nature.com/articles/s41579-026-01365-0"}]
+              }
+            ]
+          }
+          data['briefings'] = [b for b in data.get('briefings', []) if b.get('date') != briefing['date']]
+          data['briefings'].append(briefing)
+          path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n')
+          PY
+      - name: Commit update
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/daily.json
+          git commit -m 'Add daily research brief for 2026-09-08'
+          git push
