@@ -249,6 +249,131 @@
           "sources": [{"label": "Nature Nanotechnology", "url": "https://www.nature.com/articles/s41565-026-02266-2"}]
         }
       ]
+    },
+    {
+      "date": "2026-09-09",
+      "stories": [
+        {
+          "title": "Depleting luminal cysteine with engineered Bacteroides vulgatus alleviates experimental colitis by suppressing Th17 differentiation through an ATF6-dependent mechanism",
+          "takeaway": "A metabolically engineered B. vulgatus scavenges luminal cysteine, suppresses pathogenic Th17 differentiation through ATF6-linked signaling and improves barrier/inflammation phenotypes in experimental colitis.",
+          "what_happened": "Jianghao Wang, Zhe-Xian Tian, Shanwen Chen et al. (Inflammation Research; peer-reviewed research article, September 5, 2026) engineered B. vulgatus BV1608 by adding the E. coli cyuP cysteine transporter. In acute and chronic DSS colitis, BV1608 showed enhanced cysteine uptake/colonization, reduced inflammatory activity and permeability, restored tight-junction proteins, and reduced lamina-propria Th17 cells. Cystine restriction activated ATF6 in CD4 T cells and was associated with BATF2 upregulation; ATF6 loss-of-function partially reversed the Th17 suppression.",
+          "method": "Metabolic engineering of B. vulgatus, anaerobic culture and cysteine-uptake assays, acute/chronic DSS colitis, 16S profiling, barrier/permeability assays, flow cytometry, RNA-seq, ChIP-qPCR and ATF6 perturbation in Th17-polarizing cultures.",
+          "why_it_matters": "This is a strong example of converting a microbiome association into a controllable microbe-to-metabolite-to-immune mechanism. It suggests a useful design principle for gut-chip experiments: manipulate a defined microbial nutrient sink while measuring epithelial barrier and host signaling, rather than relying only on whole-community abundance changes.",
+          "read_first": "Start with Fig. 1 for BV1608 engineering and cysteine uptake, Fig. 4 for barrier restoration, Fig. 5 for Th17 suppression, and Fig. 6 for the cystine-restriction/ATF6 mechanism.",
+          "caveat": "The causal disease evidence is mainly DSS mouse data. Cysteine is also a glutathione precursor, so deliberately depleting it could plausibly worsen oxidative stress in other contexts; the authors report no colonic GSH/MDA worsening under their tested conditions, but that safety window should not be assumed to generalize.",
+          "priority": "#1",
+          "tags": ["IBD", "Engineered probiotics", "Bacteroides", "Th17", "ATF6", "Barrier", "Microbial metabolism"],
+          "sources": [{"label": "Inflammation Research", "url": "https://link.springer.com/article/10.1007/s00011-026-02341-3"}]
+        },
+        {
+          "title": "Gut microbiota-derived imidazole propionate promotes primary sclerosing cholangitis via p38 signalling",
+          "takeaway": "The microbial metabolite imidazole propionate drives a pro-inflammatory, pro-fibrotic program in human PSC cholangiocyte organoids and promotes biliary injury through p38-to-mTORC1 signaling.",
+          "what_happened": "Antonio Molinaro, Peder Rustøen Braadland, Guido Carpino et al. (Nature Metabolism; peer-reviewed research article, September 4, 2026) identified elevated circulating imidazole propionate (ImP) in primary sclerosing cholangitis and linked high levels to worse transplant-free survival. ImP induced inflammatory and fibrogenic secretion in PSC-derived cholangiocyte organoids and activated mTORC1. Chronic ImP exposure produced portal inflammation/fibrosis in mice, while p38γ/δ signaling was positioned upstream of mTORC1; microbiota-based ImP production was also modeled in colonized germ-free mice.",
+          "method": "Human metabolomics and outcomes analysis, patient-derived cholangiocyte organoids, transcriptomic/signaling assays, chronic mouse metabolite exposure, p38 genetic perturbation and gnotobiotic microbial metabolite-production experiments.",
+          "why_it_matters": "Although the target organ is bile duct, this is exactly the kind of causal host-microbiome chain worth emulating in Crohn's-chip work: clinical metabolite association → patient-derived organoid perturbation → signaling pathway → in-vivo validation. PSC's strong IBD association also makes the gut-liver axis biologically relevant rather than merely adjacent.",
+          "read_first": "Prioritize the patient-derived organoid experiments and mTORC1 activation, then the p38γ/δ perturbation and gnotobiotic ImP-production experiments.",
+          "caveat": "PSC is not intestinal IBD, and some organoid exposures use concentrations above typical circulating levels. The in-vivo phenotype is a biliary/fibrotic endpoint, so intestinal epithelial effects cannot be inferred directly.",
+          "priority": "#2",
+          "tags": ["Microbial metabolites", "IBD", "PSC", "Organoids", "Fibrosis", "p38", "mTORC1"],
+          "sources": [{"label": "Nature Metabolism", "url": "https://www.nature.com/articles/s42255-026-01600-1"}]
+        },
+        {
+          "title": "Building and regenerating intestines by manipulating intestinal stem cells",
+          "takeaway": "A major field Roadmap reframes intestinal stem-cell identity as niche-dependent and plastic, and maps how that biology can be exploited for mucosal repair and ex-vivo intestinal regeneration.",
+          "what_happened": "Calvin J. Kuo, Sarah Blutt, Mark Donowitz, Mary K. Estes, Chandan Guha, Ophir D. Klein, Linheng Li, Jason R. Spence, Michael A. Helmrath and colleagues (Nature Reviews Gastroenterology & Hepatology; Roadmap, September 3, 2026) synthesize work from the NIDDK Intestinal Stem Cell Consortium and the broader field. The review emphasizes active versus facultative/revival stem states, the niche as a determinant of regeneration, pathogen–stem-cell interactions and emerging cellular/pharmacological approaches to intestinal repair.",
+          "method": "High-level expert Roadmap integrating intestinal stem-cell biology, organoid models, niche architecture, injury repair, infection, transplantation and regenerative strategies.",
+          "why_it_matters": "This is an unusually useful conceptual reference for interpreting your cycling-stem → TA → mature-cell trajectories. It argues against treating stem labels as fixed identities and instead emphasizes context-dependent regenerative states—important when comparing germ-free, disease-microbiota and FMT-qualified chip conditions.",
+          "read_first": "Read Fig. 1 on homeostatic versus injury-repair models, Fig. 3 on small-intestinal versus colonic niche components, then the sections on facultative/revival stem states and regenerative intervention strategies.",
+          "caveat": "This is a Roadmap/review, not a new perturbation dataset. The field still lacks a single universally accepted lineage model for every injury context, so it should guide hypotheses rather than be used to force one trajectory interpretation onto scRNA-seq data.",
+          "priority": "#3",
+          "tags": ["Intestinal stem cells", "Organoids", "Regeneration", "Cell plasticity", "Niche", "Injury repair"],
+          "sources": [{"label": "Nature Reviews Gastroenterology & Hepatology", "url": "https://www.nature.com/articles/s41575-026-01242-4"}]
+        },
+        {
+          "title": "Integrating multi-omics technologies to decipher microbiome functions",
+          "takeaway": "A new microbiome multi-omics Perspective argues that additional omics layers are useful only when they add functional information beyond lower-complexity measurements, with longitudinal paired sampling and host phenotyping as key design requirements.",
+          "what_happened": "T. Van Den Bossche, E. A. Lazau, V. T. E. Aho and colleagues (Nature Communications; Perspective, September 8, 2026) lay out an operational roadmap for integrating metagenomics, metatranscriptomics, metaproteomics and metabolomics. They emphasize shared source material, time-aligned sampling, standardized metadata/QC, reproducible workflows and explicit benchmarking of the incremental biological value contributed by each omics layer. Crohn's disease is highlighted as an example where proteomic/metabolomic layers can resolve disease patterns not captured by metagenomics or host genetics alone.",
+          "method": "Cross-disciplinary Perspective synthesizing microbiome multi-omics study design, computational integration, metadata standards, benchmarking, FAIR principles and validation strategies.",
+          "why_it_matters": "This is directly relevant to your current shallow-WGS/HUMAnN work. The practical message is that taxonomic agreement between Kraken2/MetaPhlAn is not the endpoint: functional interpretation is strongest when measured or inferred microbial activity is linked to a matched host phenotype such as TEER, ROS, cytokines or scRNA-seq, ideally longitudinally.",
+          "read_first": "Read Table 1 on what each omics layer can and cannot tell you, Fig. 1 on cross-layer information flow, the Crohn's disease example, and the 'Foundational requirements' plus benchmarking sections.",
+          "caveat": "This is a Perspective, not evidence that more omics automatically improves inference. In fact its most important warning is the opposite: expensive layers can add noise, missingness and batch effects if they are not justified by a specific biological question.",
+          "priority": "#4",
+          "tags": ["Gut microbiome", "Metagenomics", "Multi-omics", "Bioinformatics", "Crohn's disease", "Reproducibility"],
+          "sources": [{"label": "Nature Communications", "url": "https://www.nature.com/articles/s41467-026-77539-4"}]
+        },
+        {
+          "title": "Construction of Vascularized Intestinal Organoids Based on Scaffolds, Hydrogels, and 3D Printing Technologies and Their Applications in Drug Delivery",
+          "takeaway": "A new review compares scaffold-, hydrogel- and 3D-printing-based strategies for vascularizing intestinal organoids, with an emphasis on perfusion, maturation and drug-delivery applications.",
+          "what_happened": "Mi Zhao, Peisen Liang, Jiayu Zhang, Yujiao Li, Wen Tian et al. (International Journal of Nanomedicine; peer-reviewed review, September 7, 2026) survey engineering approaches to overcome the diffusion and maturation limits of avascular intestinal organoids. The review organizes scaffold, hydrogel and additive-manufacturing strategies and discusses how vascular integration could improve drug transport, tissue viability and translational use.",
+          "method": "Engineering-focused review of vascularized intestinal organoid approaches spanning biomaterial scaffolds, hydrogels, endothelial integration and 3D printing, with drug-delivery applications.",
+          "why_it_matters": "This sits directly at the intersection of your organoid, microfabrication and bioprinting interests. It is useful for deciding when a vascular compartment adds genuine transport biology versus simply adding another cell type, and for comparing static vascularized organoids with perfused organoid-on-chip approaches.",
+          "read_first": "Start with the comparison of scaffold, hydrogel and 3D-printing strategies, then the sections on perfusion/function and drug-delivery applications rather than the general organoid background.",
+          "caveat": "The evidence base is heterogeneous and much of the field remains proof-of-concept. Vascular marker expression is not equivalent to a stable, lumenized, perfusable network with physiological flow, so claims of 'vascularization' need careful scrutiny.",
+          "priority": "#5",
+          "tags": ["Intestinal organoids", "Vascularization", "3D printing", "Hydrogels", "Biofabrication", "Drug delivery"],
+          "sources": [{"label": "International Journal of Nanomedicine", "url": "https://www.dovepress.com/construction-of-vascularized-intestinal-organoids-based-on-scaffolds-h-peer-reviewed-fulltext-article-IJN"}]
+        },
+        {
+          "title": "A pancreatic cancer organoid-macrophage co-culture using starPEG-heparin hydrogel deciphers tumor-immune cell interactions",
+          "takeaway": "A chemically defined starPEG-heparin matrix supports patient-derived organoids and macrophages together and reveals organoid-specific education of macrophages toward distinct M2/TAM-like states.",
+          "what_happened": "Julius Thyen, Victor A. Sioson, Daniel Haak, Beatrix Jahnke et al. (npj Precision Oncology; peer-reviewed research article, September 5, 2026) established PDAC patient-derived organoid–macrophage co-cultures in a fully defined starPEG-heparin hydrogel. Flow cytometry, transcriptomics and cytokine profiling showed that organoids drive macrophages toward M2/TAM-like phenotypes, with differences across patient organoid lines; matched primary tissue multiplex IHC supported the in-vitro polarization pattern.",
+          "method": "Patient-derived organoids, primary macrophage differentiation, synthetic tunable hydrogel co-culture, medium optimization, flow cytometry, bulk transcriptomics, secretome profiling and matched-tissue multiplex immunohistochemistry.",
+          "why_it_matters": "The disease is pancreatic cancer, but the model-design lesson is highly transferable to Crohn's chips: a defined matrix and shared medium can support a reductionist human organoid–immune co-culture in which one can distinguish donor/epithelial cues from matrix mechanics. That is cleaner mechanistically than adding a whole immune compartment without knowing which interaction drives the phenotype.",
+          "read_first": "Read the co-culture-medium optimization, Fig. 4 on the defined hydrogel, Fig. 5 on macrophage polarization, and the matched-tissue validation.",
+          "caveat": "The main co-cultures use healthy-donor monocyte-derived macrophages rather than fully autologous tissue-resident macrophages, and macrophage effects back onto organoid epithelial states were not the central question. PDAC biology also differs substantially from mucosal inflammation.",
+          "priority": "#6",
+          "tags": ["Organoids", "Immune co-culture", "Macrophages", "Hydrogels", "Patient-derived models", "Tissue engineering"],
+          "sources": [{"label": "npj Precision Oncology", "url": "https://www.nature.com/articles/s41698-026-01678-6"}]
+        },
+        {
+          "title": "Multi-omics analysis identifies macrophage immunometabolic signatures in ulcerative colitis",
+          "takeaway": "Integrated single-cell and bulk transcriptomics point to a UC macrophage program enriched for ROS/NADPH-oxidase and inflammatory metabolism, with six candidate markers validated at the protein level.",
+          "what_happened": "Rui Zhang, Huifang Zhang, Zhifeng Wang, Yonggang Wang and Zhongwei Jia (Frontiers in Cellular and Infection Microbiology; peer-reviewed research article, September 3, 2026) integrated scRNA-seq, bulk transcriptomics, WGCNA and machine learning to identify six macrophage-associated genes—CYBB, CR1, INPP5D, CTSH, IFI16 and NCF4. Pseudotime and CellChat analyses linked macrophage states to inflammatory signaling, and H&E/Western blotting provided tissue-level validation.",
+          "method": "scRNA-seq, bulk RNA-seq, WGCNA, LASSO/SVM-RFE/random forest, pseudotime, CellChat, pathway analysis, ROC testing and small-scale tissue histology/protein validation.",
+          "why_it_matters": "CYBB/NCF4 are particularly interesting for your Crohn's-chip oxidative-stress phenotype because they connect immune-cell NADPH oxidase activity to inflammatory state. More broadly, the paper offers a comparison point for deciding whether ROS-associated pathways in epithelial-only chip scRNA-seq are host-intrinsic or could reflect a missing myeloid component.",
+          "read_first": "Start with the macrophage single-cell atlas and pathway enrichment, then the six-gene feature selection and tissue validation; treat the ROC curves as secondary rather than the headline.",
+          "caveat": "This is heavily computational and the reported AUCs above 0.98 raise a real overfitting concern despite external datasets. The six genes are candidate markers/regulators, not proven causal drivers, and the experimental tissue validation is small.",
+          "priority": "#7",
+          "tags": ["Ulcerative colitis", "Macrophages", "Single-cell", "Multi-omics", "Oxidative stress", "Bioinformatics"],
+          "sources": [{"label": "Frontiers in Cellular and Infection Microbiology", "url": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2026.1858403/full"}]
+        },
+        {
+          "title": "Microbial exopolysaccharides as bioactive modulators of intestinal health: a systematic review",
+          "takeaway": "Across 28 in-vivo studies, microbial exopolysaccharides repeatedly associate with improved epithelial integrity, altered inflammation, microbiome remodeling and higher SCFA production, suggesting a postbiotic-like intervention that does not require live bacteria.",
+          "what_happened": "Chloe J. McGovern and Elad Tako (Frontiers in Nutrition; systematic review, September 7, 2026) systematically evaluated 28 animal studies testing microbial exopolysaccharides (EPS) as isolated interventions. Reported outcomes included intestinal morphology, epithelial/barrier markers, inflammatory measures, microbiome composition and SCFA production. The authors deliberately excluded mixed synbiotic/postbiotic formulations to isolate EPS-associated effects.",
+          "method": "PRISMA-style systematic review of 28 controlled in-vivo animal studies, with SYRCLE risk-of-bias assessment and qualitative synthesis because of substantial heterogeneity in EPS source, structure, dose and outcomes.",
+          "why_it_matters": "For probiotic-versus-postbiotic experiments, EPS are attractive because they can retain microbial bioactivity without introducing a replicating organism into a damaged barrier model. They would be straightforward to test as a defined exposure in a gut chip and could help separate bacterial structural products from live-community effects.",
+          "read_first": "Read the study-characteristics and risk-of-bias tables, then the sections on epithelial integrity/inflammation and SCFA/microbiome outcomes rather than relying on the overall positive conclusion.",
+          "caveat": "Nearly all evidence is animal-based, doses and EPS chemistry are poorly standardized, and the authors could not perform a quantitative meta-analysis. 'EPS' is a chemically broad category, so a class-wide beneficial effect should not be assumed.",
+          "priority": "#8",
+          "tags": ["Postbiotics", "Probiotics", "Exopolysaccharides", "Intestinal barrier", "SCFA", "Systematic review"],
+          "sources": [{"label": "Frontiers in Nutrition", "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1885879/full"}]
+        },
+        {
+          "title": "Bile Acid Metabolism as a Unifying Readout for Diet, Microbiome Function, and Gastrointestinal Disease",
+          "takeaway": "A new Perspective argues that the bile-acid pool should be treated as a shared quantitative output linking diet, microbial metabolism and host signaling rather than as a peripheral metabolomics endpoint.",
+          "what_happened": "Jason Dichter (The FASEB Journal; Perspective, first published September 3, 2026) synthesizes how host synthesis and microbial deconjugation, dehydroxylation and reconjugation generate a chemically diverse bile-acid pool sensed through receptors such as FXR and TGR5. The paper argues that microbiome and dietary intervention studies should routinely measure bile acids and proposes longitudinal, targeted measurement as a translational bridge.",
+          "method": "Mechanistic Perspective integrating bile-acid biochemistry, microbial enzymology, diet–microbiome interactions, receptor signaling and translational/clinical measurement strategies.",
+          "why_it_matters": "For FMT-qualified versus Crohn's microbiota, bile acids are a plausible functional readout that can distinguish communities with similar species composition but different metabolic activity. They are also experimentally attractive because targeted LC-MS gives a quantitative bridge between microbial pathway predictions and epithelial host responses.",
+          "read_first": "Read the graphical abstract/Fig. 1 on diet→microbial enzymes→bile-acid pool→host receptors, then the section explaining what the bile-acid pool reveals and the four proposed research recommendations.",
+          "caveat": "This is a Perspective and several proposed clinical/dietary applications remain speculative. Bile-acid signaling is concentration- and compartment-dependent, so stool, luminal and circulating measurements are not interchangeable.",
+          "priority": "#9",
+          "tags": ["Microbial metabolites", "Bile acids", "Gut microbiome", "Diet", "FXR", "TGR5", "Metabolomics"],
+          "sources": [{"label": "The FASEB Journal", "url": "https://faseb.onlinelibrary.wiley.com/doi/10.1096/fj.202602616RR"}]
+        },
+        {
+          "title": "Gut microbiota composition outperforms chronological age in predicting systemic inflammation and incident disease risk",
+          "takeaway": "In 1,199 adults, microbiota composition explained more variance in systemic inflammatory markers than chronological age, while a low-diversity Bacteroides 2 enterotype predicted a more inflammatory profile and higher future disease risk.",
+          "what_happened": "Carsten Eriksen, Ioanna Chatzigiannidou, Rasmus Kaae Dehli et al. (Nature Communications; peer-reviewed article, September 8, 2026) analyzed fecal microbiota profiles, 30 plasma cytokines and 19 biochemical/physiological measures in the population-based DanFunD cohort. Microbiota composition explained more variance than age for 97% of cytokines and 84% of physiological variables. The Bacteroides 2 enterotype was associated with an inflammaging-like profile and future incident disease risk, whereas a high-diversity enterotype associated with lower inflammation and risk.",
+          "method": "Population cohort study of 1,199 adults with fecal microbiota profiling, plasma cytokines, physiological measures, enterotype analysis, variance partitioning, prospective disease follow-up and mediation analysis.",
+          "why_it_matters": "This is not an IBD mechanism paper, but it reinforces a practical point for donor microbiota experiments: community structure can encode a strong inflammatory phenotype even before a specific disease label is considered. That supports treating donor-level microbiome state as a biological covariate rather than assuming 'healthy' donors are interchangeable.",
+          "read_first": "Read the comparison of microbiota-versus-age variance explained, then the Bacteroides 2 enterotype cytokine profile and prospective incident-disease analysis.",
+          "caveat": "The study is observational and population-level; enterotypes are coarse ecological summaries and do not identify the causal taxa/metabolites. It also does not establish that transferring a Bacteroides 2 community would reproduce the systemic phenotype.",
+          "priority": "#10",
+          "tags": ["Gut microbiome", "Inflammation", "Enterotypes", "Bacteroides", "Cohort", "Host-microbiome"],
+          "sources": [{"label": "Nature Communications", "url": "https://www.nature.com/articles/s41467-026-77499-9"}]
+        }
+      ]
     }
   ]
 }
