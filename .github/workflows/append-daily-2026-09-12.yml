@@ -1,0 +1,97 @@
+name: Append daily brief 2026-09-12
+
+on:
+  push:
+    paths:
+      - '.github/workflows/append-daily-2026-09-12.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Append or replace daily brief
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('data/daily.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          entry = {
+            "date": "2026-09-12",
+            "stories": [
+              {
+                "title": "Scholar Rock turns myostatin biology into its first FDA approval",
+                "takeaway": "FDA approved Isembyld (apitegromab) for spinal muscular atrophy, the first muscle-targeted treatment designed to improve motor function on top of existing SMA therapies.",
+                "what_happened": "FDA approved Scholar Rock's Isembyld on September 11 for children and adults with spinal muscular atrophy. Apitegromab blocks activation of myostatin, a negative regulator of muscle growth, and late-stage data showed significant motor-function improvement versus placebo. It is Scholar Rock's first approved product.",
+                "why_it_matters": "This is a useful translational contrast: existing SMA therapies address the underlying SMN biology, while Isembyld targets downstream muscle physiology. It shows that a complementary human-function endpoint can create regulatory and commercial value even after disease-modifying therapies already exist—a relevant model for bioengineering platforms that add decision-relevant function rather than merely another molecular readout.",
+                "caveat": "SMA is a rare, unusually well-defined disease, and this approval does not validate myostatin blockade broadly in other settings such as obesity-related muscle preservation. Real-world durability and combination use still need follow-up.",
+                "tags": ["FDA", "Biotech industry", "SMA", "Myostatin", "Drug approval"],
+                "sources": [{"label": "Reuters", "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-approves-scholar-rocks-muscle-weakness-drug-2026-09-11/"}]
+              },
+              {
+                "title": "GSK closes an egg-based flu-vaccine plant as manufacturing technology shifts",
+                "takeaway": "GSK plans to close its Dresden vaccine factory by summer 2027, putting 641 jobs at risk as demand for traditional egg-based flu vaccines declines.",
+                "what_happened": "GSK said it will shut its Dresden, Germany, vaccine manufacturing facility by summer 2027. The site makes traditional egg-based influenza vaccines, and the company cited declining demand; German union IGBCE said 641 jobs are at risk.",
+                "why_it_matters": "For career planning, this is the manufacturing-side version of platform obsolescence: even large-pharma jobs can be exposed when a production technology loses demand. Skills in flexible bioprocessing, automation, analytical validation and newer vaccine/manufacturing platforms are more portable than expertise tied to one legacy process.",
+                "caveat": "One plant closure does not mean egg-based flu vaccines are disappearing or that vaccine manufacturing overall is contracting. Site economics and GSK-specific portfolio choices may matter as much as technology substitution.",
+                "tags": ["Biotech industry", "Manufacturing", "Vaccines", "Workforce", "Career"],
+                "sources": [{"label": "Reuters", "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/gsk-shut-vaccine-factory-germany-putting-641-jobs-risk-2026-09-11/"}]
+              },
+              {
+                "title": "Luma launches a $410M life-sciences fund with a 15-year clock",
+                "takeaway": "A new venture fund is explicitly extending the standard VC timeline to match the slower development cycle of biomedical companies.",
+                "what_happened": "Luma Group launched LumaBio I, a $410 million life-sciences fund structured as a 15-year vehicle rather than the more typical 10-year venture fund. The firm argues that longer holding periods better fit the time required for biomedical companies to mature and has already backed nine companies.",
+                "why_it_matters": "The structure is a useful funding signal for translational bioengineering: patient capital is better aligned with technologies that need years of validation, regulatory work and clinical de-risking. For organ-chip and human-model companies, that is a better fit than expecting platform validation and commercial adoption on software-like timelines.",
+                "caveat": "A longer fund life does not automatically mean investors will tolerate weak milestones or take more early-stage scientific risk. It can simply give successful assets more time to compound, and one fund does not reset the broader biotech VC market.",
+                "tags": ["Biotech industry", "Venture capital", "Funding", "Career", "Capital markets"],
+                "sources": [{"label": "Wall Street Journal", "url": "https://www.wsj.com/pro/venture-capital/luma-a-life-sciences-investor-debuts-a-410-million-fund-fcc4be8d"}]
+              },
+              {
+                "title": "Gut microbiota composition beats chronological age at predicting systemic inflammation",
+                "takeaway": "In 1,199 adults, microbiome composition explained more inflammatory and physiological variation than age and identified an inflammaging-like state decades early.",
+                "what_happened": "A Nature Communications study published September 8 analyzed fecal microbiota, 30 plasma cytokines and 19 physiological measures in 1,199 adults aged 20–72. Microbiota composition explained more variance than age for 97% of cytokines and 84% of physiological variables. A Bacteroides 2 enterotype showed an inflammaging-like phenotype up to 37 years earlier and was associated with higher future disease risk, whereas a high-diversity enterotype tracked with lower inflammation and risk.",
+                "why_it_matters": "For gut-microbiome and chip experiments, this challenges the habit of defining a 'healthy control' mainly by donor age. Microbial ecological state and systemic inflammatory phenotype may be more informative donor covariates when selecting FMT communities or interpreting why two nominally healthy donors produce different epithelial responses.",
+                "caveat": "This is observational population biology, not proof that changing enterotype will reduce inflammation or disease. Diet, medication, lifestyle and other host factors can shape both microbiota and inflammatory state, and the findings need replication across populations.",
+                "tags": ["Gut microbiome", "Inflammation", "Aging", "Biomarkers", "Paper"],
+                "sources": [{"label": "Nature Communications", "url": "https://www.nature.com/articles/s41467-026-77499-9"}]
+              },
+              {
+                "title": "EMA opens a safe-harbour NAM data pilot for organoids and microphysiological systems",
+                "takeaway": "Developers can now submit NAM datasets outside a marketing application and receive non-binding regulatory-readiness feedback without putting a product review at risk.",
+                "what_happened": "EMA launched its voluntary data submission pilot on September 1 for companies, method developers, CROs and academic laboratories. The pilot accepts NAM data—including organoids, microphysiological systems and computational models—outside marketing-authorisation procedures and provides independent, non-binding feedback on regulatory readiness and next steps. Applications are expected to remain open through September 2027.",
+                "why_it_matters": "For organ-on-chip translation, this is a concrete route to learn what regulators actually need before formal qualification. The valuable skill set shifts from simply building a sophisticated model toward defining context of use, validation criteria, interoperable data and a briefing package that a regulator can interrogate.",
+                "caveat": "This is a learning and feedback mechanism, not qualification or blanket acceptance of NAM evidence. EMA explicitly describes the feedback as non-binding and non-decisional, so animal-study replacement still depends on method-specific evidence and regulatory context.",
+                "tags": ["EMA", "NAMs", "Organ-on-chip", "Regulatory", "Validation"],
+                "sources": [{"label": "European Medicines Agency", "url": "https://www.ema.europa.eu/fr/node/286170"}]
+              }
+            ]
+          }
+
+          briefs = data.setdefault('briefings', [])
+          for i, old in enumerate(briefs):
+              if old.get('date') == entry['date']:
+                  briefs[i] = entry
+                  break
+          else:
+              briefs.append(entry)
+
+          path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+      - name: Commit website data
+        shell: bash
+        run: |
+          git config user.name 'research-brief-bot'
+          git config user.email 'research-brief-bot@users.noreply.github.com'
+          git add data/daily.json
+          if git diff --cached --quiet; then
+            echo 'No changes needed.'
+          else
+            git commit -m 'Add daily research brief for 2026-09-12'
+            git push
+          fi
