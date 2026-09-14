@@ -1,0 +1,95 @@
+name: Append Daily Research Brief 2026-09-14
+
+on:
+  push:
+    paths:
+      - '.github/workflows/append-daily-2026-09-14.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-daily-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Append or replace September 14 briefing
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('data/daily.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          entry = {
+            "date": "2026-09-14",
+            "stories": [
+              {
+                "title": "Electra targets a near-$1B valuation as the biotech IPO window stays selectively open",
+                "takeaway": "Electra is seeking up to $346.7M in a U.S. IPO, another sign that public capital is available for late-clinical-stage biotechs with a visible approval path.",
+                "what_happened": "Electra Therapeutics set terms on September 14 for an IPO of about 21.67 million shares at $14–$16 each, targeting a valuation of up to $977.6 million and proceeds of up to $346.7 million. Its lead antibody ipsoprubart is in a global approval-supporting study for secondary hemophagocytic lymphohistiocytosis, with proceeds also supporting ELA822 and working capital.",
+                "why_it_matters": "For biotech career planning, this is a cleaner market signal than aggregate VC totals: investors are still willing to fund companies that can point to a late-stage asset, a defined regulatory milestone and a concrete use of proceeds. Platform breadth helps, but clinical maturity is what is reopening the door.",
+                "caveat": "The IPO is not yet priced or completed, and the broader fall listing window remains more fragile than the headline suggests. A successful offering would validate investor appetite for Electra's risk profile, not a broad recovery in early-stage biotech hiring.",
+                "tags": ["Biotech industry", "IPO", "Funding", "Career", "Clinical development"],
+                "sources": [
+                  {"label": "Reuters", "url": "https://www.reuters.com/legal/litigation/electra-therapeutics-targets-9776-million-valuation-us-ipo-2026-09-14/"}
+                ]
+              },
+              {
+                "title": "BioNTech gets a positive Phase 3 survival signal after its recent colorectal mRNA setback",
+                "takeaway": "What changed: two weeks after BioNTech halted a colorectal-cancer mRNA vaccine trial, a different oncology program—gotistobart—reported a Phase 3 overall-survival benefit in lung cancer.",
+                "what_happened": "BioNTech said September 14 that the Phase 3 PRESERVE-003 trial of gotistobart in previously treated squamous non-small-cell lung cancer met its primary overall-survival endpoint. The company said the antibody candidate nearly doubled survival compared with standard chemotherapy and plans to discuss the data with regulators.",
+                "why_it_matters": "This is a useful antidote to treating a biotech company as one platform thesis. BioNTech can have a major failure in one modality and indication while another asset succeeds. For career decisions, pipeline diversity and program-level evidence matter more than company-wide labels such as 'mRNA company' or 'AI company.'",
+                "caveat": "The result is company-reported and full peer-reviewed Phase 3 data are not yet available. A positive survival endpoint still has to survive scrutiny of effect size, safety, subgroup consistency and the regulatory package.",
+                "tags": ["Biotech industry", "Clinical trials", "Oncology", "Phase 3", "Career"],
+                "sources": [
+                  {"label": "Reuters", "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/biontech-says-lung-cancer-drug-candidate-prolonged-lives-trial-2026-09-14/"}
+                ]
+              },
+              {
+                "title": "Peristaltic forces drive colorectal-cancer invasion through PIEZO1–YAP1 signaling",
+                "takeaway": "A colorectal organ-chip study shows that mechanical compression is not background physiology: peristaltic-like forces can actively increase tumor invasion.",
+                "what_happened": "A Communications Biology study used a colorectal-cancer organ-on-chip with tumor epithelial and endothelial compartments separated by a porous membrane and applied peristaltic-like mechanical compression. Mechanical stimulation increased invasion, and single-cell RNA sequencing showed enrichment of mechanosensitive programs in invaded cells. PIEZO1 knockdown disrupted YAP1-linked mechanotransduction and reduced invasion.",
+                "why_it_matters": "This is directly relevant to stretchable gut-chip design because it separates mechanics from decoration: cyclic force changes cell state and disease behavior through a defined pathway. The stronger experimental question is therefore not whether stretch makes a chip look more physiological, but which mechanosensitive programs it creates and whether those programs match human disease.",
+                "caveat": "The model addresses colorectal cancer rather than inflammatory bowel disease, and imposed chip mechanics remain an approximation of heterogeneous human peristalsis. PIEZO1–YAP1 association also does not mean the pathway explains every mechanically induced invasion phenotype in vivo.",
+                "tags": ["Organ-on-chip", "Mechanobiology", "Colorectal cancer", "PIEZO1", "YAP1", "Paper"],
+                "sources": [
+                  {"label": "Communications Biology", "url": "https://www.nature.com/articles/s42003-026-10926-1"}
+                ]
+              },
+              {
+                "title": "A gut epithelial receptor links colitis, Lactobacillus metabolism and anxiety",
+                "takeaway": "GPR35 loss in intestinal epithelium disrupted L. reuteri–derived indole-3-lactic acid and increased anxiety-like behavior during colitis, connecting a microbial metabolite to a defined gut–brain pathway.",
+                "what_happened": "A Microbiome study published September 11 used intestinal-epithelial GPR35 knockout mice and found greater colitis-associated anxiety, reduced Limosilactobacillus reuteri and lower indole-3-lactic acid. ILA treatment improved anxiety-like behavior through AhR–IL-22 signaling and reduced hippocampal astrocyte activation. Patients with ulcerative colitis plus anxiety also had lower circulating ILA and lower mucosal L. reuteri abundance.",
+                "why_it_matters": "For host–microbiome experiments, the appealing part is the causal chain: epithelial sensor → microbial ecology → defined metabolite → distal host response. That is far more experimentally useful than a generic dysbiosis association and suggests chip studies can test the local GPR35–microbe–ILA portion without pretending to recreate the entire gut–brain axis.",
+                "caveat": "Most causal evidence comes from mouse colitis and behavioral assays. The human data are associative, and neither probiotic L. reuteri nor ILA supplementation has been shown to treat anxiety in people with IBD.",
+                "tags": ["IBD", "Gut microbiome", "GPR35", "Indole-3-lactic acid", "Gut-brain axis", "Paper"],
+                "sources": [
+                  {"label": "Microbiome", "url": "https://link.springer.com/article/10.1186/s40168-026-02534-2"}
+                ]
+              },
+              {
+                "title": "A new NAM framework starts from clinical outcomes instead of model complexity",
+                "takeaway": "A Lab Animal perspective proposes Clinical Outcome Pathways to decide which NAMs should be combined and what evidence they actually need to reproduce.",
+                "what_happened": "A September 11 perspective argues that NAM adoption has advanced faster in toxicology than in basic and translational biomedical research. The authors propose adapting Clinical Outcome Pathways—frameworks that connect mechanistic events to clinically meaningful outcomes—to select, combine and interpret organoids, organ chips, computational approaches and other NAMs while explicitly acknowledging model boundaries.",
+                "why_it_matters": "For organ-chip research, this is a useful design inversion: begin with the human outcome or decision, identify the biological steps that must be captured, and only then decide whether flow, stretch, microbiota, immune cells or multi-organ coupling are necessary. That is much harder to dismiss than adding complexity first and inventing its justification afterward.",
+                "caveat": "This is a conceptual framework, not prospective evidence that Clinical Outcome Pathways improve prediction or regulatory acceptance. The hard work remains choosing valid clinical anchors and demonstrating that individual NAM readouts reliably map onto them.",
+                "tags": ["NAMs", "Organ-on-chip", "Clinical translation", "Validation", "Biomedical research", "Perspective"],
+                "sources": [
+                  {"label": "Lab Animal", "url": "https://www.nature.com/articles/s41684-026-01806-6"}
+                ]
+              }
+            ]
+          }
+
+          briefings = [b for b in data.get('briefings', []) if b.get('date') != entry['date']]
+          briefings.append(entry)
+          briefings.sort(key=lambda b: b.get('date', ''))
+          data['briefings'] = briefings
+          path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily.json
+          git commit -m "Add September 14 daily research brief"
+          git push
