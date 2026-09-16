@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-16",
+  "stories": [
+    {
+      "title": "First-line FMT shows a rapid signal in checkpoint-inhibitor colitis",
+      "takeaway": "A Phase I/II study moves FMT upstream from rescue therapy: 10 of 13 patients improved, often within days, without starting with systemic immunosuppression.",
+      "what_happened": "MD Anderson investigators reported first-line fecal microbiota transplantation for immune checkpoint inhibitor-mediated diarrhea and colitis in Cell Reports Medicine. Nearly 77% of the first 13 patients responded, median symptom improvement was 1.5 days, and eight of ten responders remained in remission during follow-up. Responders also showed shifts toward bacteria associated with healthier gut ecology and distinct immune-marker changes.",
+      "why_it_matters": "This is unusually relevant to FMT modeling because it treats microbiome manipulation as an active therapeutic intervention rather than merely a correlate of inflammation. It strengthens the translational rationale for measuring both epithelial phenotype and microbial ecological change when testing FMT-qualified communities.",
+      "caveat": "Thirteen patients is a very small, uncontrolled early-phase cohort. Rapid symptom improvement is encouraging, but randomized comparison against steroids or biologics is needed before claiming first-line superiority.",
+      "tags": ["FMT", "Gut microbiome", "Colitis", "Clinical trial", "Immunotherapy"],
+      "sources": [
+        {"label": "Cell Reports Medicine / DOI", "url": "https://doi.org/10.1016/j.xcrm.2026.103044"},
+        {"label": "MD Anderson summary", "url": "https://medicalxpress.com/news/2026-09-fecal-microbiota-transplantation-immunotherapy-colitis.html"}
+      ]
+    },
+    {
+      "title": "Clevers-linked protocol turns intestinal organoid morphology into longitudinal single-cell data",
+      "takeaway": "A new Nature Protocols workflow combines up to 120 hours of live imaging with lineage reconstruction, perturbation and endpoint multiplexed staining.",
+      "what_happened": "Spoelstra and colleagues published an end-to-end workflow for long-term imaging of 2D and 3D intestinal organoids. The protocol integrates drug treatment, laser ablation or FRAP, live confocal imaging, in situ fixation, multiplexed antibody staining and OrganoidTracker-based single-cell lineage reconstruction, allowing dynamic cell-state inference rather than relying only on endpoint morphology.",
+      "why_it_matters": "For gut-chip and organoid work, this is a practical upgrade from perimeter, height or endpoint-marker measurements. Linking morphology and reporter dynamics to individual lineage histories could distinguish true regenerative state transitions from simple proliferation or stress-induced shape changes.",
+      "caveat": "The workflow is microscopy-intensive, takes roughly two weeks and can introduce phototoxicity; translating it into continuously perfused chips will require substantial imaging and tracking adaptation.",
+      "tags": ["Intestinal organoids", "Live imaging", "Lineage tracing", "Quantitative biology", "Bioengineering"],
+      "sources": [
+        {"label": "Nature Protocols", "url": "https://www.nature.com/articles/s41596-026-01432-z"}
+      ]
+    },
+    {
+      "title": "RegCell raises $66M to push antigen-specific immune tolerance toward the clinic",
+      "takeaway": "The financing combines $44M in Series A capital with about $22M in non-dilutive Japanese funding to move epigenetically reprogrammed Treg biology into human testing.",
+      "what_happened": "RegCell secured $66 million in new funding to advance a platform that aims to reprogram pathogenic T cells into stable, disease-relevant regulatory T cells. The company says the financing will support an IND submission and advance a second autoimmune indication through Phase 2 proof of concept.",
+      "why_it_matters": "The industry signal is broader than Tregs: capital is still available for mechanistically ambitious immune-engineering platforms when they have a crisp translational path. For inflammatory-disease careers, immune tolerance and cell-state reprogramming are increasingly investable alternatives to chronic broad immunosuppression.",
+      "caveat": "The platform remains preclinical. Nobel-linked biology and a large syndicate de-risk the financing story, not the clinical efficacy, manufacturability or durability of reprogrammed tolerance.",
+      "tags": ["Biotech funding", "Autoimmune disease", "Tregs", "Cell therapy", "Career"],
+      "sources": [
+        {"label": "Fierce Biotech", "url": "https://www.fiercebiotech.com/biotech/fierce-biotech-fundraising-tracker-26"},
+        {"label": "RegCell funding report", "url": "https://finance.yahoo.com/healthcare/articles/regcell-secures-66-million-additional-130000327.html"}
+      ]
+    },
+    {
+      "title": "FDA clears an in-vivo CD20 CAR-T IND, pushing cell therapy closer to direct programming",
+      "takeaway": "IASO Bio says the FDA cleared IASO208 for U.S. clinical testing, another step toward generating therapeutic CAR-T cells inside the patient rather than through ex-vivo manufacturing.",
+      "what_happened": "IASO Biotechnology announced FDA IND clearance for IASO208, a CD20-targeted in-vivo CAR-T program for hematologic and autoimmune indications. The program joins a growing class of approaches designed to bypass conventional autologous cell collection, engineering and reinfusion workflows.",
+      "why_it_matters": "For bioengineering careers, the interesting shift is from engineering cells as a manufactured product toward engineering delivery systems that program cells in situ. If the approach works, vector design, targeting, pharmacology and safety assays become as central as cell-manufacturing expertise.",
+      "caveat": "This is IND clearance, not clinical validation, and the available information is company-reported. In-vivo programming creates its own hard problems: cell-type specificity, dose control, persistence and off-target genetic modification.",
+      "tags": ["FDA", "In-vivo CAR-T", "Cell engineering", "Autoimmune disease", "Biotech industry"],
+      "sources": [
+        {"label": "IASO Bio announcement", "url": "https://www.prnewswire.com/news-releases/iaso-bios-cd20-targeted-in-vivo-car-t-therapy-iaso208-receives-fda-ind-clearance-302880431.html"}
+      ]
+    },
+    {
+      "title": "Human intestinal tuft cells emerge as damage-resistant reserve stem cells after irradiation",
+      "takeaway": "New human organoid work presented from the Clevers/Drost ecosystem suggests intestinal tuft cells can proliferate after IL-4/IL-13 stimulation and regenerate major epithelial lineages following radiation injury.",
+      "what_happened": "A Utrecht University doctoral defense summarized work using human adult stem-cell-derived organoids showing a notable species difference: unlike the largely post-mitotic tuft-cell paradigm from mice, human intestinal tuft cells can behave as a damage-resistant reserve stem-cell pool. Type-2 cytokine stimulation promoted proliferation and multilineage epithelial regeneration after irradiation, and the work also describes a synthetic Wnt–IL-13 fusion strategy to stimulate repair.",
+      "why_it_matters": "This is directly provocative for radiation-on-chip work. Post-irradiation recovery may depend on rare lineage-specific survivor populations, so bulk proliferation, ROS and barrier measurements can miss the cells actually driving regeneration. Tuft-cell abundance and fate would be a high-value mechanistic readout in human radiation injury models.",
+      "caveat": "This item is based on a dissertation summary rather than a newly published peer-reviewed article, and the generality across donors, radiation doses and chip environments still needs independent validation.",
+      "tags": ["Radiation injury", "Intestinal organoids", "Tuft cells", "Regeneration", "Human models"],
+      "sources": [
+        {"label": "Utrecht University", "url": "https://utrecht-universiteit.nl/en/events/phd-defense-the-biology-of-human-tuft-cells"}
+      ]
+    }
+  ]
+}
