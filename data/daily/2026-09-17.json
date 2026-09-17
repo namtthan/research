@@ -1,0 +1,63 @@
+{
+  "date": "2026-09-17",
+  "stories": [
+    {
+      "title": "FDA's Expedited IND Pilot tests rolling review before first-in-human trials",
+      "takeaway": "FDA is now accepting sponsor–research-institution pairs for a pilot that lets IND components be reviewed as they are completed rather than waiting for one finished package.",
+      "what_happened": "FDA finalized and opened its Expedited IND Pilot on September 15. Sponsors partner with a qualified research institution that can advise across nonclinical, CMC and clinical disciplines; FDA can review individual IND components on a rolling basis. Applications close October 30 and the agency expects to select 8–10 pairs for the initial cohort.",
+      "why_it_matters": "The interesting career signal is the formalization of a translational middle layer between academic discovery and FDA submission. Human-relevant model groups that can generate decision-grade pharmacology or toxicology data and understand context-of-use, CMC and regulatory evidence could become more valuable partners to drug developers—not merely technology vendors.",
+      "caveat": "The pilot does not lower FDA's evidentiary authority, and novel platforms are supported only as used in the specific IND rather than receiving broad platform qualification. Eight to ten pairs is also too small to know whether the model will materially shorten development timelines.",
+      "tags": ["FDA", "Regulatory", "Drug development", "NAMs", "Career"],
+      "sources": [
+        {"label": "FDA press announcement", "url": "https://www.fda.gov/news-events/press-announcements/fda-launches-expedited-ind-pilot-begins-accepting-applications"},
+        {"label": "FDA Expedited IND Pilot", "url": "https://www.fda.gov/industry/fda-actions-accelerate-and-modernize-early-and-late-stage-clinical-development/fda-expedited-investigational-new-drug-ind-pilot-program"}
+      ]
+    },
+    {
+      "title": "Novo Nordisk bets up to $1.4B on turning injectable biology into oral drugs",
+      "takeaway": "Novo Nordisk and Orbis Medicines signed an oral-drug discovery and licensing deal worth up to $1.4 billion, reinforcing delivery format as a major source of therapeutic differentiation.",
+      "what_happened": "Novo Nordisk and Orbis Medicines announced a collaboration to discover and develop oral therapies for cardiometabolic disease, an area currently dominated by injectable biologics and peptides. The potential deal value reaches $1.4 billion through upfront and milestone economics.",
+      "why_it_matters": "This is a useful bioengineering lesson: a molecule's biology is only half the product. Delivery route, exposure profile, manufacturability and patient usability can create enormous value around an already validated target space. Translational models that compare formulations or exposure kinetics can therefore answer commercially meaningful questions beyond simple efficacy screening.",
+      "caveat": "The $1.4 billion is a milestone-heavy headline rather than cash paid today, and converting injectable-class pharmacology into an oral molecule can sacrifice potency, selectivity or exposure control.",
+      "tags": ["Biotech industry", "Drug delivery", "Licensing", "Cardiometabolic", "Pharma"],
+      "sources": [
+        {"label": "Reuters", "url": "https://www.reuters.com/legal/litigation/novo-orbis-sign-up-14-billion-deal-develop-oral-drugs-2026-09-17/"}
+      ]
+    },
+    {
+      "title": "Sling raises $123M to carry a repurposed kinase inhibitor through Phase 3",
+      "takeaway": "Sling Therapeutics' Series C shows that late-stage de-risking can attract nine-figure capital even when the asset itself originated elsewhere.",
+      "what_happened": "Sling Therapeutics raised $123 million in Series C financing to advance linsitinib through Phase 3 development for thyroid eye disease and potentially commercialization. The oral IGF-1R inhibitor was originally developed by Astellas for cancer before Sling licensed it in 2022 and redirected it toward thyroid eye disease.",
+      "why_it_matters": "For biotech careers, this is another reminder that valuable R&D is not synonymous with inventing a molecule from scratch. Repositioning an asset requires disease biology, biomarkers, trial design and translational evidence—the same decision-oriented skill set that sophisticated preclinical models should ultimately support.",
+      "caveat": "A large Series C reflects investor conviction, not Phase 3 success. Repurposing reduces some chemistry and safety uncertainty but does not eliminate indication-specific efficacy or commercialization risk.",
+      "tags": ["Biotech funding", "Series C", "Clinical development", "Drug repurposing", "Career"],
+      "sources": [
+        {"label": "Reuters", "url": "https://www.reuters.com/legal/litigation/sling-therapeutics-raises-123-million-advance-thyroid-eye-disease-drug-2026-09-16/"},
+        {"label": "Fierce Biotech fundraising tracker", "url": "https://www.fiercebiotech.com/biotech/fierce-biotech-fundraising-tracker-26"}
+      ]
+    },
+    {
+      "title": "A liver-on-chip perspective argues that development—not adult anatomy—should be the engineering blueprint",
+      "takeaway": "A new Communications Biology perspective proposes 'reverse bioengineering': reconstruct the developmental processes that create liver function rather than merely miniaturizing the adult organ.",
+      "what_happened": "Ken-ichiro Kamei argues that persistent limitations in liver organoids and liver-on-chip systems are partly conceptual. The proposed framework starts from human developmental principles and uses them to determine which cellular interactions, spatial organization and dynamic cues an engineered model must recreate.",
+      "why_it_matters": "The argument transfers well to intestinal chips. A model optimized only to resemble an adult villus at endpoint may miss the morphogenetic processes that establish and repair that architecture. For gut-chip design, asking which cues generate crypt–villus organization, lineage maturation and regeneration can be more informative than adding complexity because it looks physiological.",
+      "caveat": "This is a perspective rather than comparative validation data. Developmental fidelity could also add complexity that is unnecessary for a narrowly defined toxicology or screening context of use.",
+      "tags": ["Organ-on-chip", "NAMs", "Developmental biology", "Tissue engineering", "Model design"],
+      "sources": [
+        {"label": "Communications Biology", "url": "https://www.nature.com/articles/s42003-026-10887-5"}
+      ]
+    },
+    {
+      "title": "IBD microbiome adaptation is hiding in antisense RNA, not just pathway abundance",
+      "takeaway": "Nature Microbiology shows that strand-aware metatranscriptomics captures microbial stress adaptation in active IBD that conventional abundance-focused metagenomics can miss.",
+      "what_happened": "Researchers developed metastrand to jointly analyze strand-aware metatranscriptomes and metagenomes. Across IBD cohorts, antisense-RNA programs converged during active disease, tracked fecal metabolites and calprotectin, and were linked to insertion-sequence dynamics and subsequent genome rearrangements. Similar responses appeared in experimental colitis, gastroenteritis and oxidative-stress experiments.",
+      "why_it_matters": "This sharpens the interpretation of shotgun WGS and HUMAnN results: pathway abundance measures encoded potential, while microbes under inflammatory or oxidative pressure can alter regulation and even genome structure without a dramatic taxonomic shift. For CD-chip microbiome work, pairing host ROS phenotypes with microbial transcriptomics could reveal whether the community is actively responding to the oxidative niche rather than merely carrying oxidative-stress genes.",
+      "caveat": "The paper identifies a powerful disease-associated adaptive signature, but antisense transcription is technically demanding to measure and does not by itself prove that these microbial changes cause epithelial injury. Stool-derived signals also may not represent the mucosa-associated community on-chip.",
+      "tags": ["IBD", "Gut microbiome", "Metatranscriptomics", "Oxidative stress", "Bioinformatics"],
+      "sources": [
+        {"label": "Nature Microbiology", "url": "https://www.nature.com/articles/s41564-026-02442-z"},
+        {"label": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/42575975/"}
+      ]
+    }
+  ]
+}
