@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-19",
+  "stories": [
+    {
+      "title": "TRex Bio files for a $100M IPO around tissue-level immune biology",
+      "takeaway": "The biotech IPO window is staying open for differentiated inflammatory-disease platforms, even before lead clinical readouts arrive.",
+      "what_happened": "TRex Bio filed on September 18 to raise up to $100 million on Nasdaq. Its platform maps regulatory T-cell biology in fresh human skin, gut and lung tissue; lead TNFR2 agonist TRB-061 is in Phase 1b, while IBD candidate TRB-071 is expected to enter Phase 1 in the first half of 2027. Eli Lilly is both an investor and discovery partner.",
+      "why_it_matters": "This is unusually relevant to a human-model career: TRex is explicitly building drug discovery around functional biology in fresh human tissue rather than treating human models as a late validation step. It is a concrete example of human-relevant experimental systems sitting near the center of a venture-backed therapeutic platform.",
+      "caveat": "An IPO filing is not a successful IPO, and TRB-061 has not yet produced the clinical efficacy data expected in 2027. Platform sophistication still has to survive human trials.",
+      "tags": ["Biotech industry", "IPO", "Inflammation", "Treg", "Human models", "Career"],
+      "sources": [
+        {"label": "Reuters", "url": "https://www.reuters.com/legal/litigation/retension-pharmaceuticals-trex-bio-file-us-ipo-biotech-momentum-continues-2026-09-18/"},
+        {"label": "Renaissance Capital", "url": "https://www.renaissancecapital.com/IPO-Center/News/121771/autoimmune-and-inflammatory-diseases-biotech-trex-bio-files-for-a-100"}
+      ]
+    },
+    {
+      "title": "Zeydovio gets EU regulatory backing for short bowel syndrome",
+      "takeaway": "A long-acting GLP-2 analogue moved a step toward approval after reducing dependence on parenteral nutrition and fluids in intestinal-failure patients.",
+      "what_happened": "EMA's CHMP issued a positive opinion for Zealand Pharma's Zeydovio (glepaglutide) on September 18. In Phase 3, 65.7% of twice-weekly treated patients achieved at least a 20% reduction in parenteral support versus 38.9% on placebo, and roughly one in seven discontinued support entirely after 24 weeks. A European Commission decision is expected in about 67 days.",
+      "why_it_matters": "This is a useful intestinal-model benchmark because the clinically meaningful endpoint is not merely epithelial morphology or a biomarker: it is restored absorptive function sufficient to reduce external nutritional support. Gut models intended for regenerative or drug-development work should ultimately connect mechanistic readouts to similarly functional outcomes.",
+      "caveat": "A positive CHMP opinion is not yet marketing authorization, and the trial tests systemic therapeutic benefit in complex intestinal failure that an epithelial chip alone cannot reproduce.",
+      "tags": ["Intestinal disease", "EMA", "Short bowel syndrome", "GLP-2", "Regulatory", "Clinical development"],
+      "sources": [
+        {"label": "Reuters", "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/zealand-pharmas-short-bowel-syndrome-drug-wins-backing-eu-panel-2026-09-18/"}
+      ]
+    },
+    {
+      "title": "U.S. defense program pulls organ-on-chip NAMs into medical-countermeasure development",
+      "takeaway": "React4life says its MPS platform has entered a U.S. government prototype program aimed at reducing animal dependence in CBRN countermeasure development.",
+      "what_happened": "React4life announced that it entered an Other Transaction Authority prototype agreement supporting human-relevant NAMs for medical countermeasures against chemical, biological, radiological and nuclear threats. The stated objective is to de-risk countermeasure development and shorten timelines using organ-on-chip and microphysiological technologies.",
+      "why_it_matters": "For organ-chip translation, this is a valuable demand signal outside conventional pharma: government programs are beginning to procure MPS capabilities for mission-driven development. Radiation and injury models are particularly well positioned when they can produce reproducible, decision-grade efficacy or toxicity endpoints.",
+      "caveat": "The available public detail is primarily a company announcement; contract value, validation criteria and whether the platform will outperform established countermeasure assays have not been disclosed. Treat this as adoption evidence, not proof of predictive validity.",
+      "tags": ["Organ-on-chip", "NAMs", "MPS", "Government", "Radiation", "Translation"],
+      "sources": [
+        {"label": "React4life", "url": "https://www.react4life.com/organ-on-chip-technology-medical-countermeasures/"}
+      ]
+    },
+    {
+      "title": "Roche puts up to $1B behind combinatorial bispecific discovery for immune disease",
+      "takeaway": "Large pharma is paying for platforms that can systematically search enormous therapeutic design spaces, not merely for one preselected antibody.",
+      "what_happened": "Roche and Dualitas announced a research collaboration worth up to $1 billion in which Dualitas will evaluate more than 300,000 bispecific antibody combinations to identify candidates for immune-mediated diseases.",
+      "why_it_matters": "The broader career signal is platformization: high-value R&D increasingly couples scalable experimental systems with systematic search and downstream validation. Organ-chip platforms become more commercially compelling when they can screen or rank many mechanistic hypotheses reproducibly rather than functioning as bespoke one-off models.",
+      "caveat": "The $1 billion figure is milestone-heavy potential value, not cash paid today, and a large combinatorial search space can generate candidates faster than biology can validate their relevance.",
+      "tags": ["Biotech industry", "Roche", "Bispecific antibodies", "Immunology", "Platform biotech", "Drug discovery"],
+      "sources": [
+        {"label": "BioPharma Dive", "url": "https://www.biopharmadive.com/news/roche-dualitas-bispecific-antibodies-immune/830573/"}
+      ]
+    },
+    {
+      "title": "A systematic review maps where gut-on-chip host–microbiome models still fall short",
+      "takeaway": "The field is expanding, but reproducibility, physiological validation and microbial-culture standardization remain the bottlenecks between clever devices and dependable host–microbiome models.",
+      "what_happened": "A systematic review published September 15 in Microorganisms surveys gut-on-chip platforms used for host–microbiome studies, comparing how systems reproduce intestinal architecture, flow, oxygen conditions, microbial co-culture and host responses.",
+      "why_it_matters": "This is useful as a design audit for your own microbiota-chip work: adding microbiota is not itself the innovation. The stronger contribution is demonstrating what controlled co-culture reveals that organoids, Transwells or static assays cannot—especially barrier function, oxidative stress, spatial organization and patient-specific responses.",
+      "caveat": "A systematic review aggregates a heterogeneous and still relatively young literature; it cannot establish that gut chips predict clinical microbiome responses better than simpler models, and publication bias likely favors technically successful systems.",
+      "tags": ["Gut-on-chip", "Microbiome", "Host-microbiome", "Organ-on-chip", "NAMs", "Review"],
+      "sources": [
+        {"label": "Microorganisms", "url": "https://www.mdpi.com/2076-2607/14/9/2059"}
+      ]
+    }
+  ]
+}
