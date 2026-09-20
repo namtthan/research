@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-20",
+  "stories": [
+    {
+      "title": "FDA turns NAM precedent into a searchable regulatory database",
+      "takeaway": "FDA has published concrete examples of NAMs that already appeared in approved-drug review packages, giving developers something more useful than abstract enthusiasm: precedent.",
+      "what_happened": "FDA's newly updated NAMs resources include a searchable Database of Use Case Examples drawn from public application review materials. Users can search by method and trace where approaches such as complex in vitro, 2D in vitro, in chemico and in silico methods appeared in specific approved-drug reviews.",
+      "why_it_matters": "For organ-chip translation, this changes the homework. Instead of asking only whether FDA 'accepts NAMs,' developers can study how a method was framed, what endpoint it supported and where it sat in the total evidence package. That context-of-use thinking is directly relevant to making an MPS regulatory rather than merely academic.",
+      "caveat": "The database is explicitly illustrative, not a whitelist. Prior use of a method does not mean FDA will accept the same method for another product, endpoint or context of use.",
+      "tags": ["FDA", "NAMs", "Regulatory", "Organ-on-chip", "Validation"],
+      "sources": [
+        {"label": "FDA — NAMs Database of Use Case Examples", "url": "https://www.fda.gov/drugs/cder-streamlined-nonclinical-studies-and-acceptable-new-approach-methodologies-nams/new-approach-methodologies-nams-database-use-case-examples"},
+        {"label": "FDA — CDER Streamlined Nonclinical Studies and Acceptable NAMs", "url": "https://www.fda.gov/drugs/science-and-research-drugs/cder-streamlined-nonclinical-studies-and-acceptable-new-approach-methodologies-nams"}
+      ]
+    },
+    {
+      "title": "A reported White House plan could put NIH grant awards under a new political review layer",
+      "takeaway": "A proposed board involving NIH leadership and the White House budget office could materially change the uncertainty around U.S. academic research funding if implemented.",
+      "what_happened": "Reuters, citing Politico, reported on September 20 that President Trump has directed budget director Russ Vought to draft an executive order creating a board involving Vought and NIH Director Jay Bhattacharya to evaluate NIH grant funding, with decisions requiring unanimity.",
+      "why_it_matters": "For an early-career investigator planning F32-to-independent-funding progression, this is potentially more consequential than another biotech financing round. If implemented, award risk could depend not only on peer review and institute priorities but on an additional centralized decision layer, strengthening the case for diversified funding and translational partnerships.",
+      "caveat": "This is a reported proposal, not an implemented NIH policy. The executive order could change, face legal or congressional constraints, or never take effect in the reported form.",
+      "tags": ["NIH", "Funding", "Career", "Research policy", "Fellowships"],
+      "sources": [
+        {"label": "Reuters — reported NIH funding proposal", "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/trump-seeks-bring-health-research-funding-under-his-control-politico-reports-2026-09-20/"}
+      ]
+    },
+    {
+      "title": "IBD prevention framework moves the exposome from confounder to experimental variable",
+      "takeaway": "A new Nature Reviews Gastroenterology & Hepatology perspective argues that environmental exposures should be treated as modifiable drivers of IBD risk rather than background noise.",
+      "what_happened": "Agrawal, Midya and Colombel synthesize physical, chemical, biological and psychosocial components of the IBD exposome and propose a framework for primary and primordial prevention by modifying environmental risk before or during disease development.",
+      "why_it_matters": "This fits organ-chip methodology unusually well: chips can impose defined diet-derived metabolites, microbial products, chemicals, oxygen states and mechanical exposures while holding host genotype constant. That makes them potentially useful for converting epidemiologic exposome associations into causal epithelial mechanisms.",
+      "caveat": "It is a perspective and prevention framework, not proof that modifying any particular exposure prevents IBD. Many exposures are correlated, temporally dynamic and difficult to reproduce faithfully in vitro.",
+      "tags": ["IBD", "Exposome", "Gut-on-chip", "Intestinal disease", "Prevention"],
+      "sources": [
+        {"label": "Nature Reviews Gastroenterology & Hepatology — The exposome and inflammatory bowel disease", "url": "https://www.nature.com/subjects/inflammatory-bowel-disease/nrgastro"}
+      ]
+    },
+    {
+      "title": "FDA puts an NGS-based NAM adoption problem on the September 23 agenda",
+      "takeaway": "FDA's upcoming biologics workshop is a useful case study in what regulatory adoption actually requires: analytical validation, interpretation standards and integration into an existing safety framework.",
+      "what_happened": "CBER will convene a September 23 workshop on next-generation sequencing for adventitious-agent detection in biologics. FDA explicitly describes NGS-based detection as a NAM that could broaden contaminant detection while reducing animal use, and the agenda focuses on validation, data interpretation and implementation gaps.",
+      "why_it_matters": "The lesson transfers directly to organ chips. Regulators do not adopt a technology because it is newer or more human-like; they need defined performance, interpretable outputs and a clear role in an existing decision pathway. Those are useful design constraints for MPS validation studies and a valuable regulatory-science career skill set.",
+      "caveat": "NGS contaminant detection is analytically much more bounded than a multicellular organ chip, so its validation pathway may be substantially easier and should not be treated as a direct template for MPS qualification.",
+      "tags": ["FDA", "NAMs", "NGS", "Biologics", "Regulatory science"],
+      "sources": [
+        {"label": "FDA — September 23 NGS workshop", "url": "https://www.fda.gov/vaccines-blood-biologics/office-therapeutic-products-otp-events-meetings-and-workshops/fda-scientific-public-workshop-next-generation-sequencing-adventitious-agent-detection-biologics"}
+      ]
+    },
+    {
+      "title": "Encoded Therapeutics' $275M round shows where biotech capital is concentrating",
+      "takeaway": "Large private rounds are still available, but increasingly behind programs that combine clinical de-risking with a credible manufacturing and pivotal-development plan.",
+      "what_happened": "Encoded Therapeutics closed a $275 million Series F led by GV and another healthcare fund. The financing supports a pivotal study of ETX101 for SCN1A-positive Dravet syndrome, expansion into older patients, internal GMP manufacturing scale-up and advancement of ETX301 toward a 2027 IND.",
+      "why_it_matters": "Compare this with early platform financing: the money is now paying for pivotal evidence, manufacturing capability and the next asset simultaneously. For a bioengineering career, technologies that shorten those expensive development steps—or generate evidence credible enough to change a go/no-go decision—have a much clearer commercial value proposition.",
+      "caveat": "A $275M financing demonstrates investor conviction and capital requirements, not clinical success. Late-stage genetic medicines still carry efficacy, durability, CMC and commercialization risk.",
+      "tags": ["Biotech funding", "Gene therapy", "Series F", "Clinical development", "Career"],
+      "sources": [
+        {"label": "Wilson Sonsini — Encoded Therapeutics $275M Series F", "url": "https://www.wsgr.com/en/insights/wilson-sonsi­ni-advises-encoded-therapeutics-on-dollar275-million-series-f.html"}
+      ]
+    }
+  ]
+}
