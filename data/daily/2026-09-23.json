@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-23",
+  "stories": [
+    {
+      "title": "SystImmune gets FDA IND clearance with organ-on-chip and human-tissue NAMs in the package",
+      "takeaway": "A sponsor says human organ-on-chip systems and primary human tissues helped support an FDA-cleared IND for a bispecific antibody—one of the most concrete regulatory signals yet for human-relevant nonclinical evidence.",
+      "what_happened": "SystImmune announced September 22 that FDA cleared the IND for SI-B037, a bispecific antibody, and that the submission used NAMs in its integrated nonclinical safety and translational assessment package. Public reporting says the approach included human organ-on-chip systems and primary human tissue models.",
+      "why_it_matters": "For organ-chip translation, this is stronger than another policy statement: a NAM-containing package crossed an actual IND decision point. The useful next question for the field is exactly which chip endpoints, comparators and context-of-use claims FDA found decision-relevant—details that matter far more than simply saying a chip was used.",
+      "caveat": "The detailed FDA review package is not yet public in the sources available today, and the strongest claims about how much animal testing was replaced come from the company and secondary reporting. IND clearance also does not constitute formal qualification of the chip platform for other drugs.",
+      "tags": ["FDA", "NAMs", "Organ-on-chip", "IND", "Bispecific antibodies", "Regulatory science"],
+      "sources": [
+        {"label": "BioSpace / SystImmune announcement", "url": "https://www.biospace.com/press-releases/systimmune-receives-fda-clearance-of-ind-application-for-bispecific-antibody-si-b037"}
+      ]
+    },
+    {
+      "title": "FDA rewrites its nonclinical-testing terminology to stop implying that animal studies are the only route",
+      "takeaway": "What changed from last week's NAM database story: FDA has now published rulemaking that replaces animal-specific language with broader 'nonclinical' terminology across drug and biologics regulations.",
+      "what_happened": "On September 22, FDA published proposed/direct-final-rule actions replacing references to 'animal tests' or 'animal studies' with 'nonclinical tests' or 'nonclinical studies' and defining those terms in line with FDORA. The change explicitly accommodates appropriately justified non-animal methods while leaving evidentiary standards intact.",
+      "why_it_matters": "This removes a regulatory-language mismatch that has lingered even after Congress authorized alternatives. For a future MPS investigator, the opportunity shifts from arguing that NAMs are legally permissible to demonstrating fit-for-purpose performance, human biological relevance, technical characterization and a clear context of use.",
+      "caveat": "This is enabling language, not a lowered safety bar. Complex organ chips still face harder reproducibility and validation problems than analytically bounded NAMs, and significant adverse comments could alter the direct-final-rule path.",
+      "tags": ["FDA", "NAMs", "Regulation", "Organ-on-chip", "Nonclinical testing"],
+      "sources": [
+        {"label": "Federal Register — Nonclinical Testing Terminology", "url": "https://thefederalregister.org/documents/2026-19349/nonclinical-testing-terminology"}
+      ]
+    },
+    {
+      "title": "Nanoplasmonic organoid-on-chip reads drug response continuously instead of waiting for an endpoint",
+      "takeaway": "A brainstem-organoid microfluidic platform couples living human tissue to optical sensing and follows dopamine drug response over hours—turning an organoid from a static assay into a time-resolved sensor.",
+      "what_happened": "Researchers at Sungkyunkwan University reported an ACS Nano platform combining Parkinson's patient-derived brainstem organoids, microfluidic drug delivery and an ultrasensitive nanoplasmonic sensor. The system tracked dopamine secretion continuously over 12 hours after L-DOPA exposure and resolved dose-dependent response dynamics.",
+      "why_it_matters": "The design principle transfers well to gut chips: continuous secreted-marker sensing can reveal onset, peak and recovery kinetics that endpoint ELISA, ROS imaging or TEER snapshots miss. Integrating sensing with perfusion may ultimately be more valuable than adding yet another structural feature to a chip.",
+      "caveat": "The current demonstration is disease- and analyte-specific, and a 12-hour pharmacodynamic readout does not establish long-term predictive validity. Sensor integration also adds calibration, fouling and manufacturing complexity.",
+      "tags": ["Organoid-on-chip", "Biosensors", "Microfluidics", "Parkinson's disease", "Bioengineering"],
+      "sources": [
+        {"label": "Newswise research summary", "url": "https://www.newswise.com/articles/skku-research-team-led-by-professor-inki-kim-develops-ultra-sensitive-nanoplasmonic-biochip-housing-parkinson-s-patient-derived-mini-brain"}
+      ]
+    },
+    {
+      "title": "Cell-free fecal filtrate improves gut and liver injury in experimental alcohol-associated liver disease",
+      "takeaway": "Filtering out intact microbes did not erase the therapeutic signal, strengthening the case that non-cellular microbiome products can carry meaningful biological activity.",
+      "what_happened": "A September 22 Microbiology Spectrum study administered 0.22-µm-filtered stool slurry from healthy mice to a murine alcohol-associated liver-disease model and assessed intestinal/hepatic injury, inflammation, microbiome composition and metabolomics after treatment.",
+      "why_it_matters": "For FMT-on-chip work, this offers a sharp mechanistic comparison: whole microbiota versus sterile filtrate. If a protective epithelial phenotype survives filtration, the causal search can move toward metabolites, phages, extracellular vesicles or other soluble/particle-associated products rather than requiring engraftment of an intact community.",
+      "caveat": "This is a mouse ALD model, not Crohn's disease, and filtration does not identify the active component. A 'cell-free' preparation is biologically complex and can still contain phages, vesicles, macromolecules and metabolites.",
+      "tags": ["Gut microbiome", "FMT", "Fecal filtrate", "Metabolites", "Host-microbiome", "Barrier"],
+      "sources": [
+        {"label": "Microbiology Spectrum record", "url": "https://www.lifescience.net/publications/2216646/fecal-filtrate-transplantation-attenuates-liver-an/"}
+      ]
+    },
+    {
+      "title": "Dialybrid raises €15M as a tissue-engineered vascular graft reaches first-in-human implantation",
+      "takeaway": "The financing arrived alongside a clinical milestone, illustrating again that bioengineering capital becomes easier to justify once a device crosses from materials performance into human use.",
+      "what_happened": "Dialybrid announced a €15 million Series A and the first human implantation of its Silkothane arteriovenous graft in an Italian pilot trial. The hybrid graft is designed to integrate with host vessels while providing durable hemodialysis access.",
+      "why_it_matters": "For a bioengineering career, compare this with early platform stories: investors are funding a defined clinical problem, a manufacturable product and a human validation path—not engineering elegance alone. That same discipline is useful when positioning organ-chip inventions or microfluidic hardware commercially.",
+      "caveat": "One first-in-human implantation says little about long-term patency, infection, thrombosis or superiority to existing grafts. The financing validates investor willingness to fund the program, not clinical performance.",
+      "tags": ["Bioengineering", "Series A", "Biomaterials", "Medical devices", "First-in-human", "Career"],
+      "sources": [
+        {"label": "Dialybrid financing and first-in-human announcement", "url": "https://www.biospace.com/press-releases/dialybrid-secures-15-million-series-a-round-and-announces-successful-first-in-human-implant-of-novel-silkothane-arteriovenous-graft-for-vascular-access-in-hemodialysis"}
+      ]
+    }
+  ]
+}
