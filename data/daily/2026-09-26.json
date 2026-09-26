@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-26",
+  "stories": [
+    {
+      "title": "Novo Nordisk puts up to €1.165B behind long-acting peptide delivery",
+      "takeaway": "Drug delivery itself is commanding platform-scale deal economics when it can turn weekly injections into monthly or quarterly dosing.",
+      "what_happened": "Novo Nordisk licensed Nanexa's PharmaShell atomic-layer-deposition technology for up to five peptide programs in obesity, type 2 diabetes and other cardiometabolic indications. Nanexa is eligible for up to €1.165 billion, including €615 million in upfront, development and regulatory milestones, plus low-single-digit royalties.",
+      "why_it_matters": "This is a useful bioengineering business lesson: enabling technology can become strategic IP when it solves a costly product constraint. For your own engineering work, the commercial question is not whether a device is clever, but whether it materially improves dosing, throughput, reproducibility or another development bottleneck.",
+      "caveat": "The headline €1.165 billion is milestone-heavy rather than guaranteed, and sustained-release peptide formulations still have to demonstrate acceptable pharmacokinetics, tolerability and manufacturability in humans.",
+      "tags": ["Biotech industry", "Drug delivery", "Licensing", "Novo Nordisk", "Bioengineering"],
+      "sources": [
+        {"label": "Nanexa–Novo agreement", "url": "https://www.prnewswire.com/news-releases/nanexa-and-novo-enter-into-eur-1-165-billion-global-license-and-collaboration-agreement-for-long-acting-injectables-302890175.html"},
+        {"label": "Reuters market report", "url": "https://live.euronext.com/en/financial-news/nanexa-shares-soar-eu117-billion-novo-nordisk-deal-injection-technology"}
+      ]
+    },
+    {
+      "title": "Basecamp Research raises $140M to move AI-designed therapeutics toward the clinic",
+      "takeaway": "Another large AI-biotech round is shifting the burden of proof from model performance to whether computational design can produce development-ready medicines.",
+      "what_happened": "Basecamp Research closed an oversubscribed $140 million Series C led by S32, with participation from NVIDIA and other investors. The company plans to train new EDEN models and advance AI-designed therapeutics, beginning with in vivo cell therapy, toward clinical development.",
+      "why_it_matters": "For a bioengineering career, this reinforces the value of experimental systems that generate high-quality perturbation data or rapidly validate AI-generated hypotheses. AI can propose candidates cheaply; credible human-relevant biology increasingly becomes the expensive filter.",
+      "caveat": "The disclosed therapeutic programs remain preclinical. A large financing round validates investor conviction, not the claim that AI-designed medicines will have better clinical success rates.",
+      "tags": ["Biotech funding", "AI drug discovery", "Series C", "Cell therapy", "Career"],
+      "sources": [
+        {"label": "Basecamp Research financing", "url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html"}
+      ]
+    },
+    {
+      "title": "Functional precision oncology attracts seed capital for testing living patient cells",
+      "takeaway": "Investors are backing direct functional drug-response assays as a complement to genomic prediction—a model with obvious parallels to patient-specific organoids and chips.",
+      "what_happened": "Prevision Medicine raised $5.4 million in seed funding to commercialize a single-cell platform that exposes living tumor-derived cells from individual patients to treatment libraries. The company says the funding will support commercialization, regulatory work, reimbursement and European expansion.",
+      "why_it_matters": "This is close to the strongest commercial value proposition for patient-derived MPS: do not merely recreate disease; generate a result that could rank treatments for an individual patient. Functional phenotyping and genomic biomarkers answer different questions, and combining them may be more defensible than competing with sequencing alone.",
+      "caveat": "Retrospective or ex vivo drug-response correlations do not establish prospective clinical utility. The hard test is whether assay-guided treatment improves patient outcomes versus current decision making.",
+      "tags": ["Precision medicine", "Functional assays", "Biotech funding", "Patient-derived models", "Career"],
+      "sources": [
+        {"label": "Prevision Medicine financing", "url": "https://www.previsionmedicine.com/news/press-release-prevision-medicine-raises-5-4m-in-seed-funding-round"}
+      ]
+    },
+    {
+      "title": "Persistent epithelial cell-death signaling predicts IBD relapse even during remission",
+      "takeaway": "A large human-tissue study argues that apparently healed IBD epithelium can retain an intrinsic, relapse-associated death program beneath clinical remission.",
+      "what_happened": "A Science study analyzing roughly 900 intestinal biopsies plus patient-derived organoids found RIPK1-independent necroptotic signaling in IBD tissue, including non-inflamed tissue, followed by iNOS-assisted mitochondrial apoptosis of absorptive cells and PUMA-mediated intestinal stem-cell death. Stronger cell-death signaling was associated with subsequent relapse.",
+      "why_it_matters": "This strongly supports a susceptibility component in intestinal disease rather than treating epithelial injury as merely a downstream consequence of dysbiosis or inflammation. For your CD-chip framework, a powerful experiment would ask whether patient-derived epithelium retains this stress-prone state before microbial exposure and whether healthy microbiota can suppress phenotype without erasing the underlying susceptibility.",
+      "caveat": "Association with later relapse does not prove the death program is the initiating cause of disease, and organoid preservation of the phenotype still cannot reproduce the immune and microbial environment that shapes it in vivo.",
+      "tags": ["IBD", "Crohn's disease", "Organoids", "Epithelial cell death", "Disease susceptibility"],
+      "sources": [
+        {"label": "Science paper on PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/42658927/"},
+        {"label": "Study summary", "url": "https://www.sciencedaily.com/releases/2026/09/260918024814.htm"}
+      ]
+    },
+    {
+      "title": "Ketone-body signaling emerges as a candidate lever for intestinal regeneration after radiation",
+      "takeaway": "A new radiation-injury study links PPARδ–HMGCS2 signaling and β-hydroxybutyrate to intestinal stem-cell survival and crypt regeneration.",
+      "what_happened": "Researchers using 9.5-Gy total-body irradiation in mice and intestinal organoids report that activating PPARδ increased Hmgcs2 expression and promoted intestinal stem-cell regeneration, while β-hydroxybutyrate improved crypt survival and stem-cell numbers after irradiation.",
+      "why_it_matters": "This is directly testable in a radiation-on-chip system and adds a metabolic-recovery axis to the ROS-centered injury model. Comparing NAC-like radical suppression with β-OHB/PPARδ-driven regenerative rescue could separate preventing initial oxidative injury from accelerating epithelial recovery after damage has already occurred.",
+      "caveat": "The work relies heavily on a severe mouse total-body-irradiation model and organoids; protection in that setting does not establish efficacy in human intestinal tissue, and pharmacologic PPARδ manipulation has broader metabolic effects that complicate interpretation.",
+      "tags": ["Radiation injury", "Intestinal stem cells", "Organoids", "PPARδ", "Metabolism", "Gut-on-chip"],
+      "sources": [
+        {"label": "Research article", "url": "https://journals.sagepub.com/doi/10.1177/15593258261459243"}
+      ]
+    }
+  ]
+}
