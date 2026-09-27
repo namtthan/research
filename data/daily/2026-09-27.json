@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-27",
+  "stories": [
+    {
+      "title": "FDA gives Precigen's AdenoVerse a platform technology designation",
+      "takeaway": "FDA is beginning to reward validated therapeutic platforms by letting later products reuse manufacturing and preclinical knowledge instead of rebuilding the evidence base from scratch.",
+      "what_happened": "FDA granted Precigen's AdenoVerse immunotherapy platform a Platform Technology Designation after its use in the approved product PAPZIMEOS. The designation can support earlier FDA engagement and allow knowledge from the approved product—including manufacturing and preclinical information—to inform later AdenoVerse programs.",
+      "why_it_matters": "This is an instructive regulatory comparison for organ-on-chip platforms. A one-off chip can support one study; a true platform becomes more valuable when reproducibility is strong enough that regulators can trust what carries over between applications. For MPS, that argues for standardized fabrication, QC and performance benchmarks rather than rebuilding every model as a bespoke academic experiment.",
+      "caveat": "This designation applies to a therapeutic manufacturing/development platform already represented in an FDA-approved product, not to NAMs. Organ-chip evidence will still need its own context-of-use validation before similar reuse logic becomes realistic.",
+      "tags": ["FDA", "Regulatory", "Platform technology", "Biotech industry", "Translational science"],
+      "sources": [
+        {"label": "Precigen announcement", "url": "https://www.nasdaq.com/press-release/precigen-receives-fda-platform-technology-designation-adenoverse-platform-2026-09-21"}
+      ]
+    },
+    {
+      "title": "Big-pharma restructuring is still squeezing the biotech job market",
+      "takeaway": "The sector's financing recovery is not translating into broad employment security: large companies continue cutting and consolidating while selectively funding priority programs.",
+      "what_happened": "BioSpace's September layoff update reports that Novo Nordisk's workforce is down about 13,000 over the past year, including previously announced restructuring, while Bristol Myers Squibb plans 265 additional cuts at its Princeton site and Johnson & Johnson is cutting 87 roles in New Brunswick. Novo emphasized that not all of its workforce reduction represents layoffs; attrition and unfilled roles also contributed.",
+      "why_it_matters": "For an approaching PhD-to-postdoc or industry transition, this favors building portable expertise rather than targeting a single employer: human-relevant models, quantitative biology, microfluidics and regulatory-facing assay development can transfer across pharma, CROs, MPS companies and academia. The contrast is important: biotech capital markets are reopening selectively, but headcount remains tightly managed.",
+      "caveat": "Layoff trackers aggregate different events and business causes, and workforce contraction at large pharma does not imply that every scientific specialty is shrinking; companies can cut overall headcount while hiring aggressively in priority areas.",
+      "tags": ["Career", "Biotech industry", "Layoffs", "Pharma", "Hiring"],
+      "sources": [
+        {"label": "BioSpace 2026 layoff tracker", "url": "https://www.biospace.com/biospace-layoff-tracker"}
+      ]
+    },
+    {
+      "title": "Antifungal treatment reshapes both fungal and bacterial communities in IBD",
+      "takeaway": "A Nature Medicine study suggests that targeting Candida can reorganize the wider gut ecosystem and improve disease-associated readouts, making the mycobiome more than a side character in IBD.",
+      "what_happened": "In a prospective observational study of 53 patients with mild-to-moderate Crohn's disease or ulcerative colitis and oral Candida overgrowth, gastrointestinal fluconazole reduced intestinal Candida burden, increased bacterial diversity and short-chain-fatty-acid-producing taxa, altered metabolites and cross-kingdom networks, and coincided with improved disease activity over eight weeks; oral-only nystatin did not produce the same intestinal effects.",
+      "why_it_matters": "Your CD/FMT framework currently emphasizes bacterial community composition and epithelial responses. This paper argues that fungi can alter the bacterial-metabolite landscape upstream of those phenotypes. A future chip experiment comparing bacteria-only versus bacteria-plus-fungi communities could test whether epithelial ROS and barrier injury attributed to 'dysbiosis' partly depend on cross-kingdom interactions.",
+      "caveat": "This was not a randomized placebo-controlled efficacy trial, the cohort was small and enriched for patients with oral fungal overgrowth, so improved disease activity cannot be cleanly attributed to Candida depletion itself.",
+      "tags": ["IBD", "Crohn's disease", "Gut microbiome", "Mycobiome", "Candida", "Host-microbiome"],
+      "sources": [
+        {"label": "Nature Medicine", "url": "https://www.nature.com/articles/s41591-026-04616-y"}
+      ]
+    },
+    {
+      "title": "Biodegradable PLGA membranes challenge the permanent-divider assumption in organ chips",
+      "takeaway": "A new Lab on a Chip platform makes the porous membrane tunable and degradable, opening a path from membrane-separated co-culture toward a tissue-built interface.",
+      "what_happened": "University of Utah researchers integrated thermally fused, near-field-electrospun PLGA membranes into a two-channel microfluidic chip. Changing the number of stacked layers tuned pore diameter from roughly 12 to 33 micrometers along with porosity and permeability; the transparent membrane supported endothelial-stromal co-culture, TEER measurement and ZO-1-positive barrier formation.",
+      "why_it_matters": "This is directly relevant to porous-membrane chip fabrication. Your heat-pressed PDMS membrane prioritizes elasticity and mechanical deformation; PLGA trades that advantage for biodegradability and ECM-like fibrous architecture. The interesting design question is whether a temporary membrane could provide initial alignment and compartmentalization, then disappear after cells establish their own interface.",
+      "caveat": "The demonstrated culture window is much shorter than the membrane's degradation timescale, so the attractive 'membrane disappears and tissue takes over' concept has not yet been functionally demonstrated. PLGA also does not solve applications requiring repeated elastic strain.",
+      "tags": ["Organ-on-chip", "Microfluidics", "PLGA", "Porous membrane", "Biomaterials", "Bioengineering"],
+      "sources": [
+        {"label": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/42609170/"},
+        {"label": "DOI", "url": "https://doi.org/10.1039/d6lc00296j"}
+      ]
+    },
+    {
+      "title": "Hydrogel–microfluidic integration is becoming the next design layer for organ-on-chip",
+      "takeaway": "A new Lab on a Chip review argues that chips gain physiological relevance when flow control is paired with tunable 3D extracellular matrices rather than treating PDMS geometry as the whole model.",
+      "what_happened": "Researchers from the University of Melbourne reviewed strategies combining hydrogels with microfluidic organ-on-chip systems, focusing on how matrix mechanics, biochemical cues and transport can be engineered alongside controlled perfusion to better reproduce tissue microenvironments.",
+      "why_it_matters": "This frames a useful next step for gut-chip engineering: flow and stretch control the boundary conditions, while matrix composition and stiffness control what cells physically experience. For patient-derived intestinal models, separating those two engineering knobs could help distinguish epithelial-intrinsic disease phenotypes from microenvironment-induced ones.",
+      "caveat": "This is a review rather than a new validation study, and adding tunable hydrogels can make fabrication, imaging, diffusion and between-lab reproducibility worse. More physiological complexity only earns its keep when it improves a defined biological or predictive endpoint.",
+      "tags": ["Organ-on-chip", "Hydrogels", "Microfluidics", "ECM", "Tissue engineering", "NAMs"],
+      "sources": [
+        {"label": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/42758100/"},
+        {"label": "DOI", "url": "https://doi.org/10.1039/d6lc00628k"}
+      ]
+    }
+  ]
+}
