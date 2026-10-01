@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-01",
+  "stories": [
+    {
+      "title": "Sanofi and Regeneron expand their immunology alliance in a deal worth up to $8B",
+      "takeaway": "A $1 billion upfront commitment to four next-generation long-acting antibodies shows big pharma is still willing to pay heavily for validated biology and a partnership model that has already produced a blockbuster.",
+      "what_happened": "Sanofi and Regeneron expanded their long-running alliance to co-develop and co-commercialize four Regeneron-invented long-acting antibodies targeting IL-13, IL-4xIL-13, IL-4 and IL-4Ralpha. Regeneron receives $1 billion upfront and could receive up to $7 billion more in milestones; costs and future profits will be split equally. REGN20423 is already in Phase 1 and the other three programs are expected to enter the clinic in 2027.",
+      "why_it_matters": "The industry signal is less about another giant licensing number and more about repeatability: platforms become strategically valuable when they repeatedly generate clinically credible assets. For a bioengineering career, that is a useful benchmark for platform thinking—build technology that can produce multiple decision-grade outputs rather than one impressive demonstration.",
+      "caveat": "The headline $8 billion is mostly contingent milestones, not cash changing hands today, and the programs still concentrate heavily on the same type-2-inflammation biology that created Dupixent rather than diversifying Sanofi into an entirely new therapeutic area.",
+      "tags": ["Biotech industry", "Immunology", "Pharma partnership", "Licensing", "Antibodies", "Career"],
+      "sources": [
+        {"label": "Regeneron", "url": "https://investor.regeneron.com/news-releases/news-release-details/regeneron-and-sanofi-expand-global-alliance-multiple-next"},
+        {"label": "Reuters", "url": "https://www.reuters.com/legal/litigation/sanofi-pay-regeneron-1-billion-upfront-expanded-immunology-deal-2026-10-01/"}
+      ]
+    },
+    {
+      "title": "Foghorn cuts about 40% of staff after its Lilly oncology partnership collapses",
+      "takeaway": "A large pharma partnership can extend a biotech's runway, but it does not remove binary scientific risk—and when the partnered asset fails, headcount can follow quickly.",
+      "what_happened": "Foghorn Therapeutics announced a roughly 40% workforce reduction after it and Eli Lilly decided not to advance an oncology candidate beyond early dose escalation and ended another collaborative cancer program. Foghorn is narrowing its portfolio to preserve cash and says its remaining resources should support prioritized programs into the second half of 2029.",
+      "why_it_matters": "For career planning, this is the counterweight to today's Sanofi-Regeneron story: biotech partnerships are not equivalent to stability. When evaluating industry roles, cash runway, number of independently financed programs, clinical maturity and dependence on a single partner can matter as much as the scientific brand name attached to the company.",
+      "caveat": "A restructuring can improve runway and focus, so layoffs do not necessarily mean the remaining platform is scientifically broken; however, losing partnered programs removes external validation and materially concentrates risk.",
+      "tags": ["Biotech industry", "Layoffs", "Career", "Oncology", "Partnership risk", "Runway"],
+      "sources": [
+        {"label": "Barron's", "url": "https://www.barrons.com/articles/foghorn-therapeutics-stock-lilly-cancer-job-cuts-d43e6a0f"}
+      ]
+    },
+    {
+      "title": "FDA opens a nationwide call for scientists to join its advisory committees",
+      "takeaway": "FDA is actively recruiting scientific and technical experts, including self-nominations—a concrete regulatory-science career route rather than another generic networking opportunity.",
+      "what_happened": "FDA launched a nationwide recruitment effort on September 30 for scientific, technical, professional and consumer members across advisory committees with current or anticipated vacancies. Self-nominations are accepted; scientific and other voting-member nominations submitted by November 30 receive first consideration for near-term vacancies, and appointments can run up to four years.",
+      "why_it_matters": "This is worth keeping on the radar as your career develops because advisory service sits directly at the interface of engineering evidence and regulatory decisions. Expertise in microphysiological systems, human-relevant models and bioengineering could become increasingly useful as FDA encounters more NAM-containing submissions, even if a newly graduating PhD may not yet have the seniority expected for many voting positions.",
+      "caveat": "FDA did not specify how many vacancies exist or guarantee demand for organ-on-chip expertise, and advisory membership generally favors established subject-matter experts with a substantial track record.",
+      "tags": ["FDA", "Career", "Regulatory science", "Advisory committees", "NAMs", "Public service"],
+      "sources": [
+        {"label": "FDA", "url": "https://www.fda.gov/news-events/press-announcements/fda-launches-nationwide-effort-expand-scientific-expertise-and-consumer-voices-advisory-committees"},
+        {"label": "Reuters", "url": "https://www.reuters.com/legal/litigation/fda-seeks-scientists-consumer-representatives-advisory-panels-2026-09-30/"}
+      ]
+    },
+    {
+      "title": "NIH flags microphysiological systems as a priority for diabetes pilot studies",
+      "takeaway": "NIDDK is explicitly inviting investigator-initiated MPS proposals, reinforcing that NAM funding is spreading from regulatory toxicology into disease-mechanism research.",
+      "what_happened": "An NIH highlighted topic posted September 10 identifies microphysiological-system pilot studies in diabetes research as an area of interest through September 2028. NIH specifically points to long-term human-cell culture, real-time observation, biosensors, frequent sampling and multi-tissue connectivity as MPS advantages, with applications spanning beta-cell biology, complications and inter-organ physiology.",
+      "why_it_matters": "This is a useful funding signal for an organ-chip researcher: the strongest grant framing is increasingly not 'we built a chip,' but 'this human model uniquely resolves a disease question that conventional culture or animals cannot.' It also broadens the postdoc/fellowship landscape beyond intestinal models toward metabolic and multi-organ MPS programs.",
+      "caveat": "This is a highlighted NIH research topic, not a dedicated NOFO with ring-fenced money. Applications still compete through parent or other broad funding announcements, so the signal of interest should not be mistaken for an easier payline.",
+      "tags": ["NIH", "Funding", "MPS", "NAMs", "Diabetes", "Organ-on-chip", "Career"],
+      "sources": [
+        {"label": "NIH Grants & Funding", "url": "https://grants.nih.gov/funding/find-a-fit-for-your-research/highlighted-topics/122"}
+      ]
+    },
+    {
+      "title": "Candida-specific Th17 cells connect the oral mycobiome to pathogenic gut immunity in Crohn's disease",
+      "takeaway": "A recent Immunity study argues that Crohn's-relevant microbial exposure may arrive from outside the gut bacterial community: oral Candida can seed antigen-specific T-cell responses that become pathogenic in the intestine.",
+      "what_happened": "Researchers traced Candida albicans-reactive Th17 cells across oral and intestinal compartments and found that these antigen-restricted cells can acquire pathogenic features during intestinal inflammation. The work supports an oral-gut immune axis in which fungal antigens and Candida-reactive T cells contribute to Crohn's-associated inflammation.",
+      "why_it_matters": "For host-microbiome gut-chip studies, this complicates the usual bacteria-plus-epithelium picture. A patient microbiome can differ not only in bacterial ROS or metabolites but also in fungi and the adaptive immune memory they recruit. It strengthens the rationale for eventually adding defined immune components when asking why two microbial communities produce different epithelial outcomes.",
+      "caveat": "The mechanistic advance is immune-centric; an epithelial-microbiota chip without adaptive immune cells cannot reproduce the central Th17 mechanism, and association with Crohn's inflammation does not establish Candida as a universal disease driver across patients.",
+      "tags": ["Crohn's disease", "Gut microbiome", "Mycobiome", "Candida", "Th17", "Host-microbiome", "Immunity"],
+      "sources": [
+        {"label": "PubMed / Immunity", "url": "https://pubmed.ncbi.nlm.nih.gov/42447860/"}
+      ]
+    }
+  ]
+}
