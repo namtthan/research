@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-02",
+  "stories": [
+    {
+      "title": "Dartmouth is hiring specifically at the organ-chip–embedded-systems interface",
+      "takeaway": "A new integrated-MPS cluster is recruiting postdocs and staff scientists who can combine microfluidics and organ-on-chip work with sensing, electronics, fabrication or systems engineering—an unusually direct match to where the field is heading.",
+      "what_happened": "Dartmouth researchers Tam Vu and Wei Ouyang are recruiting postdoctoral researchers and staff scientists for an integrated microphysiological systems program spanning embedded systems, microfabrication/MEMS, microfluidics, organs-on-chips, prototyping and packaging. Candidates are expected to bring strength in at least two of those areas; applications remain open despite an originally stated October 1 target start date.",
+      "why_it_matters": "This is a concrete career signal for an organ-chip researcher: groups are increasingly hiring for system integration rather than chip biology alone. Your microfluidic flow-control, fabrication and organ-chip experience maps well to that direction, and adding instrumentation/sensor integration would make the profile even more differentiated for postdoc or staff-scientist roles.",
+      "caveat": "The posting does not disclose salary, funding duration or a formal application deadline, and the electronics/embedded-systems component may favor candidates with deeper hardware experience than a conventional tissue-engineering PhD.",
+      "tags": ["Career", "Organ-on-chip", "MPS", "Microfluidics", "Sensors", "Systems engineering", "Postdoc"],
+      "sources": [
+        {"label": "Dartmouth hiring post", "url": "https://www.linkedin.com/posts/tamngocvu_mpshiring-activity-7488334646502653952-UG5K"},
+        {"label": "Position summary", "url": "https://www.applykite.com/positions/postdoctoral-researcher-and-staff-scientist-opportunities-in-integrated-microphysiological-systems-imps-rk0le0htz1"}
+      ]
+    },
+    {
+      "title": "Viome acquires Sōlaria Biō as microbiome companies push from measurement into intervention",
+      "takeaway": "The microbiome business model is shifting from selling readouts toward owning products that act on the biology—a strategically important distinction for translational microbiome platforms.",
+      "what_happened": "Viome acquired Sōlaria Biō, adding a microbial biobank, AI-assisted discovery capabilities and clinically studied synbiotic/medical-food products to its RNA-based testing and personalized-nutrition platform. The combination is intended to expand Viome beyond microbiome measurement into targeted interventions for areas including bone loss, joint health and gut-barrier function.",
+      "why_it_matters": "For host–microbiome research, this illustrates the commercial value ladder: profiling a community is useful, identifying a functional mechanism is better, and turning that mechanism into a reproducible intervention is where a platform becomes much easier to monetize. That same logic favors experiments that reduce FMT effects to defined organisms, metabolites or pathways rather than stopping at taxonomic differences.",
+      "caveat": "The acquisition price was not disclosed, and consumer microbiome products still face a much lower evidentiary bar than therapeutics; combining datasets and product portfolios does not prove that personalized recommendations improve clinical outcomes.",
+      "tags": ["Microbiome industry", "M&A", "Precision health", "Synbiotics", "Gut barrier", "Translation"],
+      "sources": [
+        {"label": "Fitt Insider", "url": "https://insider.fitt.co/viome-acquires-solaria-bio/"},
+        {"label": "Boston Life Sciences Times", "url": "https://bostonlifesciencestimes.com/2026/10/viome-acquires-solaria-bio-to-expand-personalized-health-and-medical-food-portfolio/"}
+      ]
+    },
+    {
+      "title": "Crohn’s and Colitis Canada funds susceptibility–microbe mechanisms, including ATG16L1–STING signaling",
+      "takeaway": "A new IBD funding round is explicitly backing projects that connect host susceptibility, microbial exposure and early disease mechanisms rather than treating Crohn’s as a single-pathway inflammatory disorder.",
+      "what_happened": "Crohn’s and Colitis Canada announced C$1.5 million over three years for four research teams. Projects include early host–microbiome events preceding postoperative Crohn’s recurrence, how a Crohn’s-associated ATG16L1 variant may dysregulate cGAS–STING signaling, and whether Mycobacterium avium paratuberculosis contributes to disease in a subset of patients.",
+      "why_it_matters": "The portfolio closely mirrors a susceptibility × exposure framework: intrinsic host defects may remain latent until a microbial or environmental trigger is encountered. That framing is useful for positioning patient-derived gut-chip studies because the experimental advantage is the ability to independently vary epithelial genotype/phenotype and microbial exposure rather than accepting the confounding present in patient tissue.",
+      "caveat": "These are newly funded hypotheses, not validated mechanisms. In particular, the proposed role of MAP in Crohn’s disease remains controversial, and funding a question should not be mistaken for endorsing its answer.",
+      "tags": ["Crohn's disease", "IBD", "Funding", "ATG16L1", "STING", "Host-microbiome", "Disease susceptibility"],
+      "sources": [
+        {"label": "Crohn’s and Colitis Canada funding announcement", "url": "https://www.digitaljournal.com/pr/news/globenewswire/crohn-s-colitis-canada-invests-1-5-1562327683.html"}
+      ]
+    },
+    {
+      "title": "Charge-switching lipid nanoparticles aim to separate mRNA delivery from inflammation",
+      "takeaway": "A Nature Nanotechnology study attacks a core delivery trade-off by engineering lipid nanoparticles that change charge after doing the job required for cellular entry.",
+      "what_happened": "A UC Berkeley-led team engineered lipid nanoparticles whose charge can switch from positive to negative, seeking to retain efficient nucleic-acid delivery while reducing the inflammatory effects associated with cationic lipids. The work was reported October 1 alongside publication in Nature Nanotechnology.",
+      "why_it_matters": "This is a clean bioengineering lesson: instead of optimizing one static material property, make the property change across the delivery sequence. The broader principle applies to biomaterials and microphysiological systems too—devices can be designed around temporal state changes rather than assuming the same mechanical, chemical or transport condition is optimal throughout an experiment.",
+      "caveat": "Improved preclinical delivery and inflammatory profiles do not guarantee human tolerability, manufacturability or therapeutic index; nanoparticle platforms have repeatedly looked simpler in controlled models than they become at clinical scale.",
+      "tags": ["Bioengineering", "Drug delivery", "Lipid nanoparticles", "mRNA", "Biomaterials", "Nature Nanotechnology"],
+      "sources": [
+        {"label": "UC Berkeley Engineering", "url": "https://engineering.berkeley.edu/news/2026/10/solving-a-longstanding-problem-in-drug-delivery/"}
+      ]
+    },
+    {
+      "title": "A low-cost vascular organ-chip protocol prioritizes accessibility over bespoke microfabrication",
+      "takeaway": "A newly published JoVE method uses sacrificial 3D printing to create curved and aneurysm-like human vessels compatible with physiological flow and high-resolution imaging—showing how OOC adoption can advance by lowering the fabrication barrier.",
+      "what_happened": "Researchers published a September 30 protocol for generating perfusable 3D vascular models with an entry-level bioprinter and sacrificial ink. The system supports human endothelial culture, physiological shear and pressure, permeability measurements, high-resolution microscopy and ECM environments while allowing tortuous vessel geometries that are difficult to reproduce in conventional planar chips.",
+      "why_it_matters": "For organ-chip translation, accessibility can be as important as sophistication. A platform that another lab can fabricate without specialized cleanroom tooling has a better chance of spreading, generating inter-laboratory validation data and eventually becoming standardized—useful criteria when judging whether a new chip design is merely clever or actually adoptable.",
+      "caveat": "A methods paper demonstrates feasibility, not predictive superiority. Simplifying fabrication can introduce its own geometric and material variability, and vascular permeability is only one slice of the biology needed for regulatory qualification.",
+      "tags": ["Organ-on-chip", "NAMs", "Microfluidics", "3D printing", "Vascular model", "Standardization", "Reproducibility"],
+      "sources": [
+        {"label": "Journal of Visualized Experiments", "url": "https://visualize.jove.com/42813676-3d-printed-sacrificial-ink-platform-for-high-resolution-imaging-of-endothelial-cell-function-in-tortuous-vessels-and-aneurysms"}
+      ]
+    }
+  ]
+}
