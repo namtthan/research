@@ -1,0 +1,257 @@
+{
+  "date": "2026-10-07",
+  "stories": [
+    {
+      "title": "Barrier immune memory is programmed by intestinal epithelial cell presentation of cytosol-delivered bacterial antigens",
+      "authors_source": "C. Garrett Wilson et al. — Nature Immunology",
+      "publication_type": "Primary research article",
+      "takeaway": "Intestinal epithelial cells can present cytosol-delivered bacterial antigens and help program durable barrier immune memory, expanding the epithelium from a passive barrier to an active organizer of microbe-specific immunity.",
+      "what_happened": "The study dissects how bacterial antigens delivered into intestinal epithelial-cell cytosol are presented to immune cells and how this epithelial antigen-presentation route shapes subsequent barrier immune responses.",
+      "method": "Mechanistic host–microbe immunology using intestinal epithelial antigen delivery/presentation models, immune-cell phenotyping and spatial/tissue analyses.",
+      "why_it_matters": "This is highly relevant to the CD-chip susceptibility–exposure framework because it shows that epithelial exposure to microbes can leave an immune consequence that persists beyond the immediate exposure. It also defines a major capability missing from epithelial-only chips: antigen-specific immune memory.",
+      "read_first": "Start with the experiments establishing epithelial antigen presentation as necessary for the barrier-memory phenotype, then examine the spatial/tissue immune readouts.",
+      "caveat": "The immune-memory mechanism requires immune compartments that your current epithelial chip does not contain, so it is more useful for defining model boundaries and future immune-chip extensions than for directly interpreting current epithelial endpoints.",
+      "priority": "#1",
+      "tags": [
+        "Host-microbiome",
+        "Intestinal epithelium",
+        "Immune memory",
+        "Antigen presentation",
+        "IBD"
+      ],
+      "sources": [
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42816586/"
+        }
+      ]
+    },
+    {
+      "title": "Engineering human multi-organ tissue chip niches for drug absorption, distribution, metabolism, excretion and toxicity prediction",
+      "authors_source": "Jiawei Li, Sofia Madrigal Gamboa, Jade T. Chao, Sarah C. Heilshorn et al. — Nature Biomedical Engineering",
+      "publication_type": "High-quality review",
+      "takeaway": "Multi-organ tissue chips are framed as engineered physiological niches whose value depends on reproducing organ-specific microenvironments and inter-organ coupling needed for human ADME and toxicity prediction.",
+      "what_happened": "The review synthesizes how human tissue-chip modules can be designed and linked to model absorption, distribution, metabolism, excretion and toxicity, emphasizing engineering choices that determine translational usefulness.",
+      "method": "Critical review of human single- and multi-organ MPS design, niche engineering, inter-organ coupling and drug-development applications.",
+      "why_it_matters": "This is directly relevant to your multiplexing work. A 1-to-N manifold solves parallelization; a multi-organ MPS solves a different problem—physiological coupling. The review is useful for deciding when shared flow adds biological meaning versus merely shared plumbing.",
+      "read_first": "Read the sections and figures on inter-organ scaling/coupling and niche-specific design first, then the discussion of validation for ADME/Tox use.",
+      "caveat": "It is a review, and multi-organ systems can accumulate uncertainty from scaling, media compatibility and residence-time assumptions even when each individual module is strong.",
+      "priority": "#2",
+      "tags": [
+        "Organ-on-chip",
+        "MPS",
+        "Multi-organ",
+        "ADME",
+        "NAMs",
+        "Microfluidics"
+      ],
+      "sources": [
+        {
+          "label": "Nature Biomedical Engineering",
+          "url": "https://www.nature.com/articles/s41551-026-01806-4"
+        }
+      ]
+    },
+    {
+      "title": "Soluble adenylyl cyclase regulates tight junctions of human intestinal epithelial cells via claudin-4",
+      "authors_source": "Hang Lam Li, Kam Ho-Mok, Arthur Verhoeven & Ronald Oude Elferink — American Journal of Physiology-GI",
+      "publication_type": "Primary research article",
+      "takeaway": "Soluble adenylyl cyclase regulates human intestinal epithelial tight-junction function through claudin-4, identifying a defined signaling route that can alter barrier behavior.",
+      "what_happened": "The authors interrogated soluble adenylyl cyclase signaling in human intestinal epithelial cells and linked it mechanistically to claudin-4-dependent tight-junction regulation.",
+      "method": "Human intestinal epithelial-cell models with barrier/tight-junction assays and pathway perturbation focused on soluble adenylyl cyclase and CLDN4.",
+      "why_it_matters": "TEER is a central endpoint in your chips, but TEER alone says little about mechanism. This provides a specific signaling–junction axis that could help interpret barrier changes independently of overt cell death or morphology.",
+      "read_first": "Start with the functional barrier measurements under sAC perturbation, then the CLDN4 localization/expression and rescue/causality experiments.",
+      "caveat": "A tight-junction mechanism demonstrated in a reductionist epithelial model may behave differently under microbiota, inflammatory cytokines, flow and stretch.",
+      "priority": "#3",
+      "tags": [
+        "Intestinal barrier",
+        "Tight junction",
+        "Claudin-4",
+        "Epithelium",
+        "TEER"
+      ],
+      "sources": [
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42691479/"
+        }
+      ]
+    },
+    {
+      "title": "Junctional plakoglobin regulates intestinal epithelial cell proliferation via MAPK/ERK signaling",
+      "authors_source": "Marius Hörner et al. — Cell Communication and Signaling",
+      "publication_type": "Primary research article",
+      "takeaway": "Junctional plakoglobin links epithelial junction biology to MAPK/ERK-dependent proliferation, reinforcing that junctional proteins participate in growth-state regulation rather than functioning only as structural glue.",
+      "what_happened": "The study examines how perturbing junctional plakoglobin changes intestinal epithelial proliferation and maps the response to MAPK/ERK signaling.",
+      "method": "Intestinal epithelial models with junctional-protein perturbation, proliferation phenotyping and MAPK/ERK pathway analysis.",
+      "why_it_matters": "Your CD/FMT scRNA data show major differences in proliferative versus mature epithelial states. This paper offers a mechanistic bridge between epithelial architecture/junctions and proliferation that could help frame why barrier organization and cell-state composition move together.",
+      "read_first": "Read the proliferation phenotype and MAPK/ERK perturbation/rescue results first; then inspect how junction organization changes.",
+      "caveat": "Junctional signaling is highly context dependent; it should not be assumed to explain the MYC/E2F/TA phenotype in your dataset without direct testing.",
+      "priority": "#4",
+      "tags": [
+        "Intestinal epithelium",
+        "Junctions",
+        "MAPK/ERK",
+        "Proliferation",
+        "Barrier"
+      ],
+      "sources": [
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42829431/"
+        }
+      ]
+    },
+    {
+      "title": "Toward adaptive cyborg tissues",
+      "authors_source": "Qiang Li, Jeantine Lunshof & Jia Liu — Trends in Biotechnology",
+      "publication_type": "High-quality review/perspective",
+      "takeaway": "The field is moving from endpoint-only engineered tissues toward systems in which embedded electronics continuously sense tissue state and potentially drive adaptive interventions.",
+      "what_happened": "The article surveys bioelectronic integration with organoids and engineered tissues, emphasizing longitudinal sensing and closed-loop/adaptive tissue systems.",
+      "method": "Perspective/review of bioelectronics, engineered tissues, organoids, sensing and adaptive control.",
+      "why_it_matters": "This maps directly onto a future version of your multiplex chip: equal flow is open-loop engineering; continuous TEER/metabolite/oxygen sensing plus feedback-controlled flow or dosing would turn it into an adaptive platform.",
+      "read_first": "Read the framework distinguishing passive monitoring from adaptive/closed-loop tissue systems and the examples of interfaces that can operate chronically.",
+      "caveat": "The vision is ahead of routine biological validation; embedding electronics can add drift, calibration, biocompatibility and reproducibility problems faster than it adds useful biology.",
+      "priority": "#5",
+      "tags": [
+        "Bioelectronics",
+        "Organ-on-chip",
+        "Sensors",
+        "Closed-loop control",
+        "Organoids",
+        "Engineering"
+      ],
+      "sources": [
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42823209/"
+        }
+      ]
+    },
+    {
+      "title": "The milk fat globule membrane increases bacterial serotonin and exopolysaccharide production for maintenance of intestinal cell differentiation",
+      "authors_source": "Celeste Miller & Rafael Jiménez-Flores — Journal of Dairy Science",
+      "publication_type": "Primary research article",
+      "takeaway": "A dietary matrix component alters bacterial production of serotonin and exopolysaccharides in a way associated with maintenance of intestinal epithelial differentiation.",
+      "what_happened": "The work links a defined food-derived component to altered bacterial metabolite/biopolymer output and then to intestinal-cell differentiation, providing a host–microbe–diet functional chain.",
+      "method": "Bacterial culture/metabolite or exopolysaccharide measurements coupled to intestinal epithelial differentiation assays.",
+      "why_it_matters": "This is conceptually close to your FMT story: the important unit is not simply bacterial taxonomy but what the community produces under a given nutrient environment and how those products alter epithelial state.",
+      "read_first": "Start with the bacterial serotonin/EPS production data, then the epithelial differentiation experiments linking those outputs to host phenotype.",
+      "caveat": "Food-component and dairy-associated biology is far removed from Crohn’s FMT, and the causal contribution of serotonin versus EPS needs to be judged from the perturbation data rather than inferred from parallel changes.",
+      "priority": "#6",
+      "tags": [
+        "Host-microbiome",
+        "Microbial metabolites",
+        "Epithelial differentiation",
+        "Postbiotics",
+        "Diet"
+      ],
+      "sources": [
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42379368/"
+        }
+      ]
+    },
+    {
+      "title": "Polysaccharide-functionalized metal-polyphenol network-coated porous microspheres for improving the treatment of probiotics in ulcerative colitis",
+      "authors_source": "Congcong Xiao et al. — International Journal of Pharmaceutics",
+      "publication_type": "Primary research article",
+      "takeaway": "An engineered porous-microsphere coating strategy improves probiotic delivery and therapeutic performance in experimental ulcerative colitis.",
+      "what_happened": "The authors developed polysaccharide-functionalized, metal-polyphenol-coated porous microspheres to protect/deliver probiotics and evaluated their performance in colitis models.",
+      "method": "Biomaterial/probiotic formulation, physicochemical characterization, gastrointestinal delivery testing and experimental UC efficacy studies.",
+      "why_it_matters": "Your work asks whether beneficial microbiota can protect diseased epithelium; this paper tackles the complementary translational problem of how to deliver live microbes reliably through a hostile GI environment.",
+      "read_first": "Read the probiotic survival/release characterization first, then the in-vivo colitis efficacy and microbiome/barrier readouts.",
+      "caveat": "Improved delivery can make a mediocre probiotic look impressive in an animal model; separate the formulation effect from evidence that the chosen organism has a robust human mechanism.",
+      "priority": "#7",
+      "tags": [
+        "Probiotics",
+        "Ulcerative colitis",
+        "Drug delivery",
+        "Biomaterials",
+        "Microbiome"
+      ],
+      "sources": [
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42669319/"
+        }
+      ]
+    },
+    {
+      "title": "Next-generation probiotics and microbiome-based therapeutics highlighting Akkermansia muciniphila and Amuc_1100",
+      "authors_source": "Mansheen Kaur & Alok Kumar Mishra — World Journal of Microbiology and Biotechnology",
+      "publication_type": "Review",
+      "takeaway": "The review summarizes live Akkermansia and its Amuc_1100 protein as next-generation microbiome therapeutics, emphasizing barrier, immune and metabolic mechanisms and the possibility of moving from live organisms toward defined microbial products.",
+      "what_happened": "The authors synthesize evidence for A. muciniphila and Amuc_1100 across microbiome-associated disorders and discuss therapeutic development challenges.",
+      "method": "Narrative mechanistic and translational review.",
+      "why_it_matters": "For your FMT work, Amuc_1100 is a useful example of the progression from community-level benefit to a defined microbial effector—a route that could ultimately make an FMT-derived protective mechanism more experimentally tractable.",
+      "read_first": "Read the sections comparing live A. muciniphila with Amuc_1100 and the evidence for epithelial-barrier effects.",
+      "caveat": "The evidence base spans heterogeneous disease models, and enthusiasm for A. muciniphila often runs ahead of context-specific causal evidence in humans.",
+      "priority": "#8",
+      "tags": [
+        "Probiotics",
+        "Postbiotics",
+        "Akkermansia",
+        "Microbial products",
+        "Barrier"
+      ],
+      "sources": [
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42828644/"
+        }
+      ]
+    },
+    {
+      "title": "Borrelia burgdorferi disrupts gut barrier functions and microbiota-antibody interactions",
+      "authors_source": "Shilpa Sachan et al. — Journal of Experimental Medicine",
+      "publication_type": "Primary research article",
+      "takeaway": "A systemic infectious exposure can perturb gut barrier function and alter microbiota–antibody relationships, illustrating how host context can reshape intestinal ecology and barrier phenotype even when the initiating insult is not a canonical gut pathogen.",
+      "what_happened": "The study investigates intestinal barrier and microbiota-associated antibody changes during B. burgdorferi infection using mechanistic animal and human-relevant analyses.",
+      "method": "Infection models with gut-barrier phenotyping, microbiota analysis and antibody–microbiota interaction measurements.",
+      "why_it_matters": "This is useful for your susceptibility–exposure thinking because it shows that the gut phenotype can emerge from interactions among systemic host state, barrier biology and microbiota rather than from microbiota composition alone.",
+      "read_first": "Start with the gut permeability/barrier data, then the experiments connecting infection to altered microbiota-specific antibody interactions.",
+      "caveat": "Lyme infection is biologically distant from IBD, so this is a conceptual host-context paper rather than direct support for a Crohn’s mechanism.",
+      "priority": "#9",
+      "tags": [
+        "Intestinal barrier",
+        "Host-microbiome",
+        "Infection",
+        "Antibody",
+        "Microbial ecology"
+      ],
+      "sources": [
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42635742/"
+        }
+      ]
+    },
+    {
+      "title": "Cancer and the microbiome: from association to intervention",
+      "authors_source": "Ali Moradi, Rahul Winayak & Sumanta Kumar Pal — The Lancet Oncology",
+      "publication_type": "High-quality review",
+      "takeaway": "The review traces microbiome research from taxonomic associations toward interventions, emphasizing immune priming, host–microbial co-metabolism, drug biotransformation and epithelial barrier integrity as mechanistic routes.",
+      "what_happened": "The authors synthesize clinical and mechanistic evidence for microbiome effects on cancer-therapy efficacy and toxicity, especially immune checkpoint inhibition, and evaluate intervention strategies.",
+      "method": "Clinical/translational review of microbiome mechanisms, biomarkers and interventions.",
+      "why_it_matters": "Different disease, but the field-level lesson is highly relevant to FMT: taxonomy is the weakest endpoint; stronger claims connect community function to a host mechanism and then test an intervention. That is the same progression your CD/FMT program should aim for.",
+      "read_first": "Read the section moving from association to mechanistic intervention, particularly the discussion of metabolites, barrier effects and FMT/probiotic strategies.",
+      "caveat": "Cancer-treatment microbiomes are shaped by therapies, antibiotics and immune context that differ substantially from IBD, so specific taxa or response biomarkers should not be imported into Crohn’s biology.",
+      "priority": "#10",
+      "tags": [
+        "Microbiome",
+        "FMT",
+        "Microbial metabolites",
+        "Barrier",
+        "Translational research"
+      ],
+      "sources": [
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42805210/"
+        }
+      ]
+    }
+  ]
+}
