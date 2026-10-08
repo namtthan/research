@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-08",
+  "stories": [
+    {
+      "title": "argenx reports positive Phase 2 FB102 results in celiac disease",
+      "takeaway": "CD122 blockade improved villus architecture during gluten challenge.",
+      "what_happened": "A 126-person randomized Phase 2 study met its villus-height-to-crypt-depth primary endpoint (p=0.0176); argenx plans Phase 3.",
+      "why_it_matters": "Shows a clinically useful epithelial structural endpoint linking immunology to intestinal injury models.",
+      "caveat": "Only topline company results are available; durability and long-term safety are unknown.",
+      "tags": [
+        "Celiac",
+        "Biotech",
+        "Clinical trials"
+      ],
+      "sources": [
+        {
+          "label": "argenx release",
+          "url": "https://www.globenewswire.com/news-release/2026/10/08/3376936/0/en/argenx-announces-positive-topline-results-from-phase-2-study-of-fb102-in-celiac-disease.html"
+        }
+      ]
+    },
+    {
+      "title": "Biohub and partners back a $1.8B push for predictive cell biology",
+      "takeaway": "Large-scale perturbation datasets are becoming strategic AI infrastructure.",
+      "what_happened": "Biohub announced a $1.8B initiative combining its own funds, private investment, DOE support and NIH-coordinated datasets.",
+      "why_it_matters": "Standardized single-cell perturbation data could complement controlled host–microbiome and mechanical exposures on chips.",
+      "caveat": "The total includes existing federal investments; industry funders get temporary preferential data access.",
+      "tags": [
+        "Bioengineering",
+        "AI",
+        "Funding"
+      ],
+      "sources": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-government-google-join-zuckerberg-backed-biohub-18-billion-push-ai-biology-2026-10-07/"
+        }
+      ]
+    },
+    {
+      "title": "NIH's $7.1M QuSAFE challenge targets live sensing in NAMs",
+      "takeaway": "NIH is prioritizing non-destructive, longitudinal readouts inside organ chips.",
+      "what_happened": "The NCATS quantum-enabled sensing competition opens registration October 25 and offers $7.1M in prizes.",
+      "why_it_matters": "Scalable redox and barrier monitoring could strengthen multiplex gut-chip research and funding opportunities.",
+      "caveat": "A genuine quantum-enabled sensing modality is mandatory; ordinary TEER instrumentation alone is out of scope.",
+      "tags": [
+        "NIH",
+        "NAMs",
+        "Organ-on-chip",
+        "Funding"
+      ],
+      "sources": [
+        {
+          "label": "NIH challenge",
+          "url": "https://www.nih.gov/challenges/qusafe"
+        }
+      ]
+    },
+    {
+      "title": "Biotech IPOs rebound to 23 in 2026's first nine months",
+      "takeaway": "Biotech capital markets are reopening after a long drought.",
+      "what_happened": "Twenty-three biotech IPOs occurred through September, versus eight during all of 2025, according to William Blair data reported October 8.",
+      "why_it_matters": "Potentially favorable for translational-biotech financing and career mobility.",
+      "caveat": "IPO counts do not prove durable hiring, cash runway or drug-development success.",
+      "tags": [
+        "Biotech",
+        "IPOs",
+        "Careers"
+      ],
+      "sources": [
+        {
+          "label": "Wall Street Journal",
+          "url": "https://www.wsj.com/pro/venture-capital/biotech-ipos-charge-ahead-as-tech-deals-stall-989b34b9"
+        }
+      ]
+    },
+    {
+      "title": "Microbiota-supportive diet associates with lower IBD risk, not clearly Crohn's",
+      "takeaway": "A large cohort finds a 16% lower IBD incidence, driven mainly by ulcerative colitis.",
+      "what_happened": "A September 3 peer-reviewed study, newly highlighted October 8, followed 208,143 participants; none of nine candidate protein mediators survived multiple-testing correction.",
+      "why_it_matters": "Supports testing diet-derived substrates as controlled microbiome exposures while distinguishing UC from Crohn's responses.",
+      "caveat": "Observational associations are not causal; no significant Crohn's-specific association was established.",
+      "tags": [
+        "Microbiome",
+        "IBD",
+        "Proteomics"
+      ],
+      "sources": [
+        {
+          "label": "Journal of Translational Medicine",
+          "url": "https://link.springer.com/article/10.1186/s12967-026-08852-1"
+        }
+      ]
+    }
+  ]
+}
