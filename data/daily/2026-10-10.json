@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-10",
+  "stories": [
+    {
+      "title": "FDA approves Tecentriq plus chemotherapy for stage III dMMR colon cancer",
+      "takeaway": "Atezolizumab plus adjuvant chemotherapy halved the hazard of recurrence or death in the ATOMIC trial.",
+      "what_happened": "On October 8 FDA approved atezolizumab with fluoropyrimidine/oxaliplatin chemotherapy for resected stage III mismatch-repair-deficient colon cancer. ATOMIC randomized 712 patients; disease-free-survival HR was 0.50 (95% CI 0.35–0.73), with 36-month DFS of 86% versus 76%.",
+      "why_it_matters": "For CRC organ chips, this underscores the need for biomarker-stratified tissue and immune components to model immunotherapy; epithelial viability alone cannot predict PD-L1 blockade response.",
+      "caveat": "The trial was open-label, severe adverse events increased, and an overall-survival advantage remains unproven.",
+      "tags": [
+        "FDA",
+        "Colon cancer",
+        "Immunotherapy",
+        "dMMR",
+        "Regulatory"
+      ],
+      "sources": [
+        {
+          "label": "FDA",
+          "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-atezolizumab-combination-chemotherapy-stage-iii-mismatch-repair-deficient-colon-cancer"
+        },
+        {
+          "label": "Genentech",
+          "url": "https://www.gene.com/media/press-releases/15135/2026-10-08/fda-approves-genentechs-tecentriq-in-com"
+        }
+      ]
+    },
+    {
+      "title": "TRexBio prices $116.7M IPO for tissue-resident Treg immunology",
+      "takeaway": "An earlier IPO plan became a priced $14-per-share offering on October 9, a substantive financing milestone.",
+      "what_happened": "TRexBio priced 8,333,334 shares at $14 for roughly $116.7M gross proceeds, with trading expected under TRXB and closing expected October 13.",
+      "why_it_matters": "Tissue-resident regulatory T cells matter for intestinal immune tolerance; the financing also shows how translational immunology programs can access public capital.",
+      "caveat": "The offering is not yet closed, and financing does not validate clinical efficacy or prove tissue-specific immune modulation.",
+      "tags": [
+        "Biotech",
+        "IPO",
+        "Treg",
+        "Immunology",
+        "Funding"
+      ],
+      "sources": [
+        {
+          "label": "Pharmaceutical Executive",
+          "url": "https://www.pharmexec.com/view/roundup-trexbio-retension-pharmaceuticals-announce-ipo-pricing"
+        }
+      ]
+    },
+    {
+      "title": "Viatris agrees to acquire Pacira for $1.65B",
+      "takeaway": "Commercial non-opioid pain drugs and infrastructure command a premium compared with early-stage platform promises.",
+      "what_happened": "Viatris announced an all-cash $36.50-per-share deal to buy Pacira, adding marketed Exparel and Zilretta; closing is expected by year-end.",
+      "why_it_matters": "A commercialization lesson for MPS: validated outputs, scalable operations and customer-ready infrastructure can matter as much as device novelty.",
+      "caveat": "The acquisition has not closed, and a revenue-generating drug business is not directly comparable to a precommercial chip platform.",
+      "tags": [
+        "M&A",
+        "Biotech",
+        "Commercialization",
+        "Drug delivery"
+      ],
+      "sources": [
+        {
+          "label": "Viatris",
+          "url": "https://investor.viatris.com/news-releases/news-release-details/viatris-agrees-acquire-pacira-biosciences-advancing-its"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/litigation/viatris-acquire-pacira-biosciences-165-billion-deal-2026-10-08/"
+        }
+      ]
+    },
+    {
+      "title": "Four flavonoids show different microbiome and epithelial-barrier effects in colitis",
+      "takeaway": "Quercetin, kaempferol, luteolin and apigenin were not interchangeable in a new mouse colitis study.",
+      "what_happened": "An October 9 npj Science of Food paper found compound-specific effects: quercetin reduced FITC-dextran permeability, apigenin and luteolin increased tight-junction proteins, and kaempferol most strongly restored microbiome diversity.",
+      "why_it_matters": "A gut chip could separate direct epithelial barrier/ROS protection from microbiota-mediated benefits by testing these interventions with and without microbes.",
+      "caveat": "Mouse associations between gut, brain and microbiome outcomes are not proof of causal mediation or clinical IBD efficacy.",
+      "tags": [
+        "IBD",
+        "Microbiome",
+        "Barrier",
+        "Flavonoids",
+        "Research"
+      ],
+      "sources": [
+        {
+          "label": "npj Science of Food",
+          "url": "https://www.nature.com/articles/s41538-026-01191-x"
+        }
+      ]
+    },
+    {
+      "title": "Synbiotic yeast cell wall and H. coagulans increases butyrate in vitro",
+      "takeaway": "The combination produced more butyrate than either component in 48-hour fecal fermentation.",
+      "what_happened": "An October 9 Scientific Reports study compared yeast cell wall, Heyndrickxia coagulans SANK70258, their combination and control in healthy-donor fecal cultures. The combined treatment had the highest butyrate concentration.",
+      "why_it_matters": "In CD/FMT chip work, microbial metabolic output could be a more mechanistic readout than taxonomic composition; a chip can test whether extra butyrate actually protects epithelium.",
+      "caveat": "Healthy-donor short-term fermentation has no intestinal epithelium, does not establish cross-feeding causality, and is not evidence of clinical benefit.",
+      "tags": [
+        "Gut microbiome",
+        "Butyrate",
+        "Synbiotic",
+        "In-vitro model",
+        "FMT"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports",
+          "url": "https://www.nature.com/articles/s41598-026-74909-2"
+        }
+      ]
+    }
+  ]
+}
