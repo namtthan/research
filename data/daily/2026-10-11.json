@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-11",
+  "stories": [
+    {
+      "title": "GSK commits over $800M to Pennsylvania biologics hub, projecting 300 jobs",
+      "takeaway": "The October 9 plan combines biologics production, R&D, QC and digital operations.",
+      "what_happened": "GSK plans to expand Upper Merion, Pennsylvania with commercial-scale biologics manufacturing, a research pilot plant and a QC lab. Construction is slated for 2027; more than 300 jobs are projected over five years.",
+      "why_it_matters": "Signals demand for bioengineering skills in process development, automation, assay validation and manufacturing scale-up—relevant to translating organ-chip platforms.",
+      "caveat": "Planned spending and jobs are not yet completed projects or open positions.",
+      "tags": [
+        "Biotech",
+        "GSK",
+        "Manufacturing",
+        "Careers",
+        "Funding"
+      ],
+      "sources": [
+        {
+          "label": "Reuters, Oct 9",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/pennsylvania-says-gsk-invest-more-than-800-million-biopharma-hub-create-300-jobs-2026-10-09/"
+        }
+      ]
+    },
+    {
+      "title": "FDA approves Teva–Medincell monthly olanzapine depot",
+      "takeaway": "A second approved product validates the long-acting delivery platform’s repeatability.",
+      "what_happened": "FDA approved Weltruza on October 9 as a monthly subcutaneous olanzapine treatment for adults with schizophrenia. It follows the platform’s first approved product, Uzedy (2023).",
+      "why_it_matters": "Engineering platforms gain commercial value by repeatedly delivering products through clinical and regulatory milestones—an instructive comparison for organ chips.",
+      "caveat": "Approval does not prove superior real-world adherence or success with other molecules.",
+      "tags": [
+        "FDA",
+        "Bioengineering",
+        "Drug delivery",
+        "Teva",
+        "Medincell"
+      ],
+      "sources": [
+        {
+          "label": "Reuters, Oct 9",
+          "url": "https://www.reuters.com/legal/litigation/teva-wins-fda-approval-monthly-schizophrenia-injection-weltruza-2026-10-09/"
+        }
+      ]
+    },
+    {
+      "title": "Persistent epithelial death signaling may forecast IBD relapse",
+      "takeaway": "An October 8 expert analysis highlights pRIPK3 as a possible relapse marker in quiet intestinal tissue.",
+      "what_happened": "A Cell Research highlight revisits an August 27 Science study of more than 900 biopsies and patient-derived organoids: necroptotic signaling appeared in noninflamed IBD tissue, with later apoptosis and an association between pRIPK3 and relapse over 24–36 months. The new item is expert interpretation, not fresh primary data.",
+      "why_it_matters": "Suggests measuring pRIPK3, MLKL, iNOS and PUMA alongside ROS and apoptosis in Crohn’s gut chips to separate intrinsic epithelial susceptibility from microbial injury.",
+      "caveat": "Predictive association needs prospective validation; cytokine-organoid findings do not prove microbial ROS drives the pathway.",
+      "tags": [
+        "IBD",
+        "Crohn’s disease",
+        "Organoids",
+        "Cell death",
+        "Biomarkers"
+      ],
+      "sources": [
+        {
+          "label": "Cell Research, Oct 8",
+          "url": "https://www.nature.com/articles/s41422-026-01304-x"
+        },
+        {
+          "label": "Science original study",
+          "url": "https://doi.org/10.1126/science.aeh7112"
+        }
+      ]
+    },
+    {
+      "title": "Placenta-on-chip models cadmium transport and injury under flow",
+      "takeaway": "An October 9 Nature Biomedical Engineering paper pairs controlled exposure with barrier and transport endpoints.",
+      "what_happened": "A perfused human placental interface using primary trophoblasts, endothelial cells and fibroblasts measured cadmium transfer, TEER, permeability, injury, hormone secretion and glucose transport, with a Transwell comparison.",
+      "why_it_matters": "The NAM lesson for gut chips is to couple physiological exposure conditions with multiple quantitative functional readouts rather than morphology alone.",
+      "caveat": "The model is not a qualified regulatory assay or a validated predictor of pregnancy outcomes.",
+      "tags": [
+        "Organ-on-chip",
+        "NAMs",
+        "Toxicology",
+        "TEER",
+        "Bioengineering"
+      ],
+      "sources": [
+        {
+          "label": "Nature Biomedical Engineering, Oct 9",
+          "url": "https://www.nature.com/articles/s41551-026-01801-9"
+        }
+      ]
+    },
+    {
+      "title": "Iambic launches AI-drug-discovery IPO seeking up to $159.4M",
+      "takeaway": "A clinical-stage AI biotech entered the IPO market on October 8, but pricing is still prospective.",
+      "what_happened": "Iambic began marketing about 9.38 million shares at $15–$17, implying a possible $806 million valuation. It has a solid-tumor pipeline and pharma partnerships.",
+      "why_it_matters": "Unlike yesterday’s priced TRexBio IPO, this is a roadshow, not proceeds received. It reinforces the need for experimentally validated clinical assets behind platform claims.",
+      "caveat": "The offering may change or fail; AI-driven discovery has not yet demonstrated superior approval rates.",
+      "tags": [
+        "IPO",
+        "AI",
+        "Biotech funding",
+        "Drug discovery"
+      ],
+      "sources": [
+        {
+          "label": "Reuters, Oct 8",
+          "url": "https://www.reuters.com/legal/litigation/nvidia-backed-iambic-therapeutics-targets-up-806-million-valuation-us-ipo-2026-10-08/"
+        }
+      ]
+    }
+  ]
+}
