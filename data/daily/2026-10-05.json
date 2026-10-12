@@ -26,9 +26,9 @@
     },
     {
       "title": "Blocking neutrophil RAB27A suppresses ROS and NETosis in preclinical ulcerative colitis",
-      "takeaway": "A small-molecule RAB27A inhibitor directly attacks a neutrophil ROS/degranulation program—an immune-side counterpart to epithelial redox susceptibility in IBD.",
+      "takeaway": "A small-molecule RAB27A inhibitor targets neutrophil ROS generation and degranulation, offering an immune-focused approach to intestinal inflammation.",
       "what_happened": "An October-issue Inflammatory Bowel Diseases study reports IMYX-3, an oral small-molecule RAB27A inhibitor developed to reduce activated-neutrophil toxicity. The compound reduced neutrophil ROS, degranulation, NETosis and cytokine secretion and improved disease measures in DSS and IL10-knockout colitis models, including a model incorporating human IBD fecal transplantation. Preclinical toxicology was also reported.",
-      "why_it_matters": "This complements your susceptibility–exposure model from the opposite direction. Your CD-chip story emphasizes epithelial susceptibility plus a ROS-generating microbial exposure; this paper highlights an immune compartment that can itself amplify oxidative injury. A future epithelial–microbiota–neutrophil chip could distinguish microbial ROS from host inflammatory ROS and test whether they are additive, sequential or mutually reinforcing.",
+      "why_it_matters": "Relevant to intestinal inflammation and immune-inclusive disease models. The cited work motivates studying neutrophil activity alongside epithelial function in controlled experimental systems.",
       "caveat": "The efficacy evidence is still preclinical and relies heavily on mouse colitis models. Neutrophils also provide essential antimicrobial defense, so suppressing their secretory machinery could have liabilities that short animal studies do not reveal.",
       "tags": ["Ulcerative colitis", "IBD", "Neutrophils", "ROS", "RAB27A", "NETosis", "Host-microbe interaction"],
       "sources": [

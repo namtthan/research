@@ -105,7 +105,7 @@
       "title": "Tumor-on-chip combines hypoxia and lipid stress with single-cell NK-cell functional assays",
       "takeaway": "An integrated chip distinguishes two suppressive stresses that both impair NK killing but through different functional and kinetic patterns.",
       "what_happened": "A Lab on a Chip paper published online October 5 combined a tumor microenvironment chip with single-cell microfluidic measurements. Hypoxia broadly suppressed NK-cell cytotoxic programs, while lipid accumulation selectively altered effector outputs. The authors reported different killing kinetics and improved cytolytic function with dual interventions targeting both stressors.",
-      "why_it_matters": "The engineering idea transfers directly to Crohn's and radiation chips: separate controlled exposures, such as microbial ROS versus irradiated-medium ROS, then measure not just endpoint cell survival but time-resolved functional responses and cell-to-cell heterogeneity. This offers a clearer causal test than stacking multiple stressors in one condition.",
+      "why_it_matters": "Relevant to microfluidic experimental design: controlled exposures and time-resolved functional measurements can help study tissue responses and cellular heterogeneity.",
       "caveat": "The study is an in-vitro tumor model, and reported screening advantages do not establish patient-level predictive validity. Single-cell functional assays can add cost and sampling bias.",
       "tags": [
         "Organ-on-chip",

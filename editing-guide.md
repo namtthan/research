@@ -139,3 +139,8 @@ Either way — **always preview locally (double-click the HTML file) before you 
 1. Right-click → Inspect → check the **Console** tab for red error text.
 2. Count your braces `{ }` and tags `< >` in the section you just edited — an unclosed one is the #1 cause of "everything after this point looks wrong."
 3. If you're stuck, paste me the block you edited and I'll spot it.
+
+
+## Public daily and weekly briefing privacy rule
+
+All daily and weekly briefings are public, including legacy `data/daily.json` and `data/weekly.json`, dated shards under `data/daily/` and `data/weekly/`, and all rendered fields. Public `why_it_matters` text may refer only to broad public research interests or already-published work supported by a public source. Never disclose or strongly imply unpublished or private research findings, dataset contents, experimental conditions, marker changes, cell-state results, donor comparisons, mechanisms or manuscript conclusions. Do not use private conversations, manuscripts or analyses as public evidence or describe a cited paper as supporting private results. Apply this rule to titles, takeaways, summaries, caveats, tags and any equivalent rendered fields as well. Summarize the cited paper from public sources and clearly distinguish its findings from general relevance. When publication status is uncertain, omit the private detail and use broad relevance language. Before publishing, review every field for both explicit and indirect disclosures. Preserve dates, history, JSON structure and unrelated content when correcting past entries.

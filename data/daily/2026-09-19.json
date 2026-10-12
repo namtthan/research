@@ -50,7 +50,7 @@
       "title": "A systematic review maps where gut-on-chip host–microbiome models still fall short",
       "takeaway": "The field is expanding, but reproducibility, physiological validation and microbial-culture standardization remain the bottlenecks between clever devices and dependable host–microbiome models.",
       "what_happened": "A systematic review published September 15 in Microorganisms surveys gut-on-chip platforms used for host–microbiome studies, comparing how systems reproduce intestinal architecture, flow, oxygen conditions, microbial co-culture and host responses.",
-      "why_it_matters": "This is useful as a design audit for your own microbiota-chip work: adding microbiota is not itself the innovation. The stronger contribution is demonstrating what controlled co-culture reveals that organoids, Transwells or static assays cannot—especially barrier function, oxidative stress, spatial organization and patient-specific responses.",
+      "why_it_matters": "Relevant to host–microbiome model design: controlled co-culture can help evaluate barrier function, spatial organization and responses across donors alongside conventional culture methods.",
       "caveat": "A systematic review aggregates a heterogeneous and still relatively young literature; it cannot establish that gut chips predict clinical microbiome responses better than simpler models, and publication bias likely favors technically successful systems.",
       "tags": ["Gut-on-chip", "Microbiome", "Host-microbiome", "Organ-on-chip", "NAMs", "Review"],
       "sources": [

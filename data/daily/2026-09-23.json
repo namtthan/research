@@ -38,7 +38,7 @@
       "title": "Cell-free fecal filtrate improves gut and liver injury in experimental alcohol-associated liver disease",
       "takeaway": "Filtering out intact microbes did not erase the therapeutic signal, strengthening the case that non-cellular microbiome products can carry meaningful biological activity.",
       "what_happened": "A September 22 Microbiology Spectrum study administered 0.22-µm-filtered stool slurry from healthy mice to a murine alcohol-associated liver-disease model and assessed intestinal/hepatic injury, inflammation, microbiome composition and metabolomics after treatment.",
-      "why_it_matters": "For FMT-on-chip work, this offers a sharp mechanistic comparison: whole microbiota versus sterile filtrate. If a protective epithelial phenotype survives filtration, the causal search can move toward metabolites, phages, extracellular vesicles or other soluble/particle-associated products rather than requiring engraftment of an intact community.",
+      "why_it_matters": "Relevant to microbiome intervention research. Comparing whole communities with sterile filtrates can help distinguish effects of living organisms from soluble microbial products.",
       "caveat": "This is a mouse ALD model, not Crohn's disease, and filtration does not identify the active component. A 'cell-free' preparation is biologically complex and can still contain phages, vesicles, macromolecules and metabolites.",
       "tags": ["Gut microbiome", "FMT", "Fecal filtrate", "Metabolites", "Host-microbiome", "Barrier"],
       "sources": [

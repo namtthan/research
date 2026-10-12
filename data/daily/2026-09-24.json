@@ -27,7 +27,7 @@
       "title": "A commensal-derived sugar links one bacterial structural motif to host immunometabolism",
       "takeaway": "A Cell Host & Microbe study reduces a microbiome phenotype from 'which bacterium?' to a defined phosphocholine-modified exopolysaccharide and an IL-22-dependent mechanism.",
       "what_happened": "Researchers found that Clostridium immunis prevented and treated obesity in mice by secreting a phosphocholine-modified exopolysaccharide. Bacterial loss- and gain-of-function experiments implicated the licABC phosphocholine-biosynthesis locus, while host experiments showed dependence on IL-22 and group 3 innate lymphoid cells. Related phosphocholine-biosynthesis genes were less abundant in people with obesity or hypertriglyceridemia.",
-      "why_it_matters": "This is the kind of causal decomposition worth pursuing after an FMT phenotype: community -> organism -> molecule -> structural feature -> host pathway. For gut-chip work, defined microbial products can be much easier to dose, perturb and mechanistically dissect than whole communities.",
+      "why_it_matters": "Relevant to host–microbe mechanism research: defined organisms and microbial products can support controlled perturbations of host pathways.",
       "caveat": "The causal therapeutic evidence is primarily in mice, and the key mechanism involves immune cells that epithelial-only gut chips would not reproduce without an added immune compartment.",
       "tags": ["Gut microbiome", "Host-microbiome", "Microbial metabolites", "IL-22", "Mechanism"],
       "sources": [

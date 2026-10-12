@@ -39,7 +39,7 @@
       "title": "Persistent epithelial cell-death signaling predicts IBD relapse even during remission",
       "takeaway": "A large human-tissue study argues that apparently healed IBD epithelium can retain an intrinsic, relapse-associated death program beneath clinical remission.",
       "what_happened": "A Science study analyzing roughly 900 intestinal biopsies plus patient-derived organoids found RIPK1-independent necroptotic signaling in IBD tissue, including non-inflamed tissue, followed by iNOS-assisted mitochondrial apoptosis of absorptive cells and PUMA-mediated intestinal stem-cell death. Stronger cell-death signaling was associated with subsequent relapse.",
-      "why_it_matters": "This strongly supports a susceptibility component in intestinal disease rather than treating epithelial injury as merely a downstream consequence of dysbiosis or inflammation. For your CD-chip framework, a powerful experiment would ask whether patient-derived epithelium retains this stress-prone state before microbial exposure and whether healthy microbiota can suppress phenotype without erasing the underlying susceptibility.",
+      "why_it_matters": "Relevant to broad interests in intestinal epithelial biology and patient-derived disease models. Controlled models can help investigate how host biology and experimental conditions influence inflammatory responses.",
       "caveat": "Association with later relapse does not prove the death program is the initiating cause of disease, and organoid preservation of the phenotype still cannot reproduce the immune and microbial environment that shapes it in vivo.",
       "tags": ["IBD", "Crohn's disease", "Organoids", "Epithelial cell death", "Disease susceptibility"],
       "sources": [

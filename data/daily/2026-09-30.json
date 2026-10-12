@@ -38,7 +38,7 @@
       "title": "Paneth-cell proteostasis links a genetic protein-folding defect to intestinal inflammation",
       "takeaway": "A new study connects intracellular protein aggregation, ER stress and defective secretory-cell homeostasis to increased colitis susceptibility—and reproduces key features in human intestinal organoids.",
       "what_happened": "Researchers studying polymer-forming alpha-1 antitrypsin found accumulation in Paneth cells, ER stress, altered lysosomal and lysozyme handling, microbiota changes and greater DSS-colitis susceptibility in PiZ mice. ER-stress inhibition restored crypt homeostasis, while Pi*ZZ iPSC-derived intestinal organoids reproduced polymer accumulation and epithelial transcriptional abnormalities.",
-      "why_it_matters": "This is unusually close to the susceptibility-exposure logic in Crohn's disease: an epithelial-intrinsic defect creates a stressed baseline that becomes more pathological after an external challenge. It also connects ER stress, autophagy/lysosomal handling and microbiota composition—three axes that can be separated experimentally in patient-derived gut models.",
+      "why_it_matters": "Relevant to intestinal stress biology and organoid disease modeling. The cited study offers a public example of combining cellular assays with controlled perturbations to investigate inflammation.",
       "caveat": "The inflammatory evidence relies heavily on a specific alpha-1-antitrypsin-deficiency model plus DSS; the human intestinal evidence is mechanistic but limited, including tissue confirmation from only one affected individual.",
       "tags": ["Intestinal disease", "Paneth cells", "ER stress", "Organoids", "Host-microbiome", "Epithelial susceptibility"],
       "sources": [

@@ -38,7 +38,7 @@
       "title": "A 245,627-sample gut microbiome atlas shows IBD signatures change with epidemiologic context",
       "takeaway": "IBD microbiome signatures are not globally interchangeable: geography and population-level disease transition shape community structure, strain genetics and apparent biomarkers.",
       "what_happened": "A Cell Reports Medicine study assembled 245,627 microbiome profiles across countries at different IBD epidemiologic stages. The authors report declining alpha diversity with increasing IBD burden, stage-associated community structure, depletion of anabolic pathways in IBD, strain-level differences and a 19-genus microbial inflammatory risk score with reported AUC of 0.92.",
-      "why_it_matters": "This reinforces a key issue for FMT-on-chip experiments: 'healthy microbiota' is not a universal reference state. Donor geography, diet and strain background can materially change what counts as protective, making functional chip phenotyping a potentially useful complement to taxonomic labels when selecting or comparing FMT communities.",
+      "why_it_matters": "Relevant to microbiome study design: donor geography, diet and strain background deserve consideration when choosing reference communities and assessing reproducibility.",
       "caveat": "A very large atlas can make associations statistically impressive without making them mechanistically causal. The reported risk score also needs prospective validation across populations and sequencing pipelines before it should be treated as a transferable diagnostic signature.",
       "tags": ["IBD", "Gut microbiome", "FMT", "Metagenomics", "Epidemiology", "Strain variation"],
       "sources": [

@@ -870,7 +870,7 @@
           "title": "Crohn's anti-TNF response may depend more on cytokine networks than single cytokines",
           "takeaway": "A new bioRxiv systems-immunology analysis argues that coordinated cytokine rewiring, not one isolated pathway, better distinguishes anti-TNF response and resistance.",
           "what_happened": "Posted August 11, the preprint applied the CytokineLink framework to single-cell RNA-seq data from Crohn's patients sampled before and after anti-TNF treatment. The analysis focuses on interacting cytokine programs and compensatory inflammatory cascades associated with response versus non-response.",
-          "why_it_matters": "This fits your scRNA work especially well: pathway-level or network-level interpretation may be more biologically defensible than reading one cytokine or receptor in isolation. It also suggests a useful chip experiment—test whether disease versus FMT microbiota shift coordinated cytokine-response networks, not just IL-8 or TNF alone.",
+          "why_it_matters": "Relevant to single-cell and network analysis in intestinal inflammation. Coordinated pathway activity can offer useful context beyond individual cytokine or receptor measurements.",
           "caveat": "It is a preprint and computational inference of cytokine interactions is not direct proof of causal signaling. Validation in perturbation experiments is still needed.",
           "tags": [
             "Crohn's disease",
@@ -1109,7 +1109,7 @@
           "title": "Patient-matched 'mini-guts' show that bacterial strain identity can outweigh species labels in IBD",
           "takeaway": "A new patient-derived organoid workflow finds closely related mucosal bacterial isolates can provoke very different epithelial inflammatory responses.",
           "what_happened": "Researchers at Monash University and Hudson Institute created paired intestinal organoids and site-matched mucosa-associated bacterial isolate collections from newly diagnosed pediatric IBD patients. Bacteria were microinjected into the organoid lumen, allowing direct comparison of epithelial responses to isolates collected from the same anatomical sites.",
-          "why_it_matters": "This is directly relevant to host-microbiome chip design: 'healthy' versus 'disease' microbiota is too coarse if strain-level behavior differs substantially. It strengthens the case for preserving donor and strain provenance when interpreting Crohn's versus FMT microbiota effects.",
+          "why_it_matters": "Relevant to host–microbiome model design. Preserving donor and strain provenance supports reproducible interpretation of microbial interactions.",
           "caveat": "Microinjection gives precise apical access but is low-throughput, and cultured isolates represent only a subset of the mucosal ecosystem. Strain-specific effects in isolated organoids may also change under flow, mechanics and community competition.",
           "tags": [
             "IBD",
@@ -1769,7 +1769,7 @@
           "title": "Paediatric Crohn's microbiomes look less deterministic and more ecologically unstable",
           "takeaway": "A new peer-reviewed study finds Crohn's bacterial and fungal communities are structured more by stochastic processes, with treatment partly shifting community assembly back toward controls.",
           "what_happened": "Published online August 18 in Gut Microbiology, the study applied null-model community-assembly analysis, dynamic core microbiome methods and metabolomic integration to paediatric IBD. Crohn's communities were less homogeneous, had reduced alpha diversity and showed more stochastic assembly than controls, with Fusobacterium, Aggregatibacter and Clavispora-Candida among disease-associated taxa. Reduced disease activity after treatment coincided with lower stochasticity and a shift toward the control core microbiome.",
-          "why_it_matters": "This is highly relevant to microbiome-on-chip interpretation. If disease communities are intrinsically less stable, donor microbiota may diverge inside a chip even under identical culture conditions. That means community assembly dynamics—not just the starting taxonomic profile—could be an endpoint worth measuring when comparing Crohn's and FMT microbiota.",
+          "why_it_matters": "Relevant to microbial ecology in intestinal models. Longitudinal community measurements can complement starting taxonomic profiles when assessing reproducibility.",
           "caveat": "The study is observational and stool-based; stochasticity does not itself identify a causal disease mechanism, and stool ecology may not reproduce the mucosal community that directly interacts with epithelium in a gut chip.",
           "tags": [
             "Crohn's disease",

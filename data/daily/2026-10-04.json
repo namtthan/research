@@ -39,7 +39,7 @@
       "title": "A Crohn’s high-risk cohort links fermentable fiber intake to barrier and multi-omic signatures",
       "takeaway": "The newly published October issue of Gastroenterology reports that higher estimated β-glucan and inulin intake tracks with lower Crohn’s risk and more favorable barrier, inflammatory and microbiome features in people already at elevated risk.",
       "what_happened": "The CCC-GEM Consortium analyzed β-glucan and inulin intake in a high-risk Crohn’s cohort and associated dietary exposure with disease risk, gut-barrier and systemic-inflammatory markers, plus multi-omic signatures. The paper appears in the October 2026 issue of Gastroenterology and includes a large international IBD consortium.",
-      "why_it_matters": "For host–microbiome experiments, this strengthens the case for treating diet-derived substrate availability as an experimental variable rather than background noise. In a CD-versus-FMT chip, the same microbial community may produce different epithelial outcomes depending on what carbon sources it is given—an obvious axis for mechanistic follow-up with defined media or metabolites.",
+      "why_it_matters": "Relevant to microbiome model design. Defined nutrient conditions can support reproducible experiments on microbial metabolism and host responses.",
       "caveat": "This is association-heavy human evidence: estimated dietary intake covaries with many behaviors, and multi-omic correlations do not establish that β-glucan or inulin directly prevents Crohn’s disease. Controlled intervention and mechanistic experiments are still needed.",
       "tags": ["Crohn's disease", "Gut microbiome", "Diet", "Inulin", "Beta-glucan", "Barrier", "Multi-omics", "Gastroenterology"],
       "sources": [

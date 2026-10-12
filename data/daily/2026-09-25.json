@@ -27,7 +27,7 @@
       "title": "MeLSI uses metric learning to expose microbiome signals conventional statistics miss",
       "takeaway": "A new mSystems method learns a microbiome-specific distance metric instead of forcing every dataset through the same generic geometry.",
       "what_happened": "University of Missouri researchers introduced Metric Learning for Statistical Inference (MeLSI). Across previously published datasets, the method identified taxa driving sex-associated microbiome differences and detected a Western-versus-high-fiber diet effect that standard approaches missed.",
-      "why_it_matters": "This is directly relevant to microbiome analysis: a null Bray–Curtis or conventional differential-abundance result does not necessarily mean the biology is absent. For your CD-versus-FMT datasets, learned multivariate structure could complement rather than replace taxonomic and HUMAnN pathway analyses.",
+      "why_it_matters": "Relevant to computational microbiome analysis. Multivariate methods can complement conventional community-distance and differential-abundance analyses, with independent validation needed to assess biological meaning.",
       "caveat": "Finding a separable signal is not the same as discovering a causal mechanism, and flexible machine-learning metrics can manufacture convincing structure if validation and leakage controls are weak.",
       "tags": ["Gut microbiome", "Bioinformatics", "Machine learning", "Metagenomics", "Methods"],
       "sources": [
