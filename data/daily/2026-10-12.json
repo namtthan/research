@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-12",
+  "stories": [
+    {
+      "title": "First Tracks ANB033 protects celiac intestinal villi in Phase 1b",
+      "takeaway": "October 12: CD122 blockade reduced gluten-induced villus injury and symptoms in a 32-person cohort, distinct from the recent FB102 celiac report.",
+      "what_happened": "ANB033 improved the placebo-adjusted villus-height/crypt-depth change by +0.49 (p=0.009) and reduced intraepithelial lymphocyte density (p<0.001) after gluten challenge.",
+      "why_it_matters": "Supports immune–epithelial endpoints alongside TEER and ROS for gut-chip experiments.",
+      "caveat": "Company topline, small Phase 1b cohort; long-term mucosal healing unproven.",
+      "tags": [
+        "Celiac",
+        "Biotech",
+        "Phase 1b",
+        "Intestinal immunity"
+      ],
+      "sources": [
+        {
+          "label": "Source",
+          "url": "https://www.stocktitan.net/news/TRAX/first-tracks-biotherapeutics-announces-positive-top-line-results-for-9ur5twxy92i2.html"
+        }
+      ]
+    },
+    {
+      "title": "Mirum Phase 3 EXPAND positive for gut-targeted bile-acid drug",
+      "takeaway": "October 12: maralixibat met its itching endpoint and reduced serum bile acids; FDA supplemental filing planned in 2027.",
+      "what_happened": "In 52 patients, itch improved 0.98 points versus placebo (p=0.0004); serum bile acids showed a 69% treatment effect (p<0.0001).",
+      "why_it_matters": "Shows ileal transport can be manipulated therapeutically; bile-acid flux could enrich gut-chip functional readouts.",
+      "caveat": "Small trial; diarrhea in 64% on drug versus 11% on placebo; not yet approved for this use.",
+      "tags": [
+        "Phase 3",
+        "Bile acids",
+        "FDA pipeline",
+        "Intestinal transport"
+      ],
+      "sources": [
+        {
+          "label": "Source",
+          "url": "https://www.businesswire.com/news/home/20261012685221/en/"
+        }
+      ]
+    },
+    {
+      "title": "Merck $1.3B-acquired eye drug faces safety and differentiation concerns",
+      "takeaway": "New full Brunello data weaken the case for remigromig despite meeting noninferiority.",
+      "what_happened": "Proliferative diabetic retinopathy was 6.7%/6.1% versus 0.9% with ranibizumab; vision gains were 9.1/8.7 versus 11.8 letters.",
+      "why_it_matters": "Industry lesson for NAM validation: positive primary endpoints need comparator performance and safety context.",
+      "caveat": "Additional trial and long-term data are pending; adverse-event mechanisms remain uncertain.",
+      "tags": [
+        "Biotech industry",
+        "Clinical trials",
+        "Safety",
+        "Benchmarking"
+      ],
+      "sources": [
+        {
+          "label": "Source",
+          "url": "https://www.fiercebiotech.com/biotech/merck-co-data-raise-fears-eye-disease-drug-has-limited-potential"
+        }
+      ]
+    },
+    {
+      "title": "Perfused organ-chip chamber geometry changes spheroid growth and toxicity",
+      "takeaway": "October 7 ACS paper: round chambers outperformed rhombus and rectangle under standardized perfusion.",
+      "what_happened": "Flow simulations and HepG2 experiments linked geometry to intragel flow, viability and spheroid morphology; ECM altered function and chip versus plate toxicity responses differed.",
+      "why_it_matters": "Directly relevant to multiplex chip engineering: matching inlet flow does not ensure matched local shear or tissue exposure.",
+      "caveat": "HepG2 and 2D flow simulation limit generalizability to primary human intestinal tissue.",
+      "tags": [
+        "Organ-on-chip",
+        "NAMs",
+        "Microfluidics",
+        "Device design"
+      ],
+      "sources": [
+        {
+          "label": "Source",
+          "url": "https://pubs.acs.org/abseba/latest-articles"
+        }
+      ]
+    },
+    {
+      "title": "Dynamic fed-state gastric pH improves oral-drug PBPK predictions",
+      "takeaway": "October 9 paper: dynamic stomach-pH models predicted food effects better than static pH 5.",
+      "what_happened": "Dynamic multi-compartment and one-compartment models predicted effects for ibuprofen sodium, itraconazole and posaconazole; static pH misclassified itraconazole.",
+      "why_it_matters": "Highlights why realistic dynamic exposure conditions matter for translating intestinal chips into drug-testing tools.",
+      "caveat": "Only three compounds; computational prediction does not demonstrate chip-based human absorption prediction.",
+      "tags": [
+        "PBPK",
+        "NAMs",
+        "GI physiology",
+        "Drug absorption"
+      ],
+      "sources": [
+        {
+          "label": "Source",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42854976/"
+        }
+      ]
+    }
+  ]
+}
