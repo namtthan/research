@@ -147,7 +147,7 @@
       "method": "Polystyrene microfluidic NAM, endothelial–fibroblast co-culture, perfusion, trophoblast tri-culture, vascular imaging and permeability/secretome readouts.",
       "why_it_matters": "A transferable organ-chip engineering reference for material choice, perfusable multicellular networks, model-specific perturbations and quantitative validation.",
       "read_first": "Read the vascular network formation/perfusion figures, then hormone-dependent permeability and trophoblast integration comparisons.",
-      "caveat": "An early-generation in-vitro model; pregnancy-specific physiology and trophoblast cell lines limit direct extrapolation to clinical outcomes or other organs.",
+      "caveat": "An early-generation in-vitro model; pregnancy-specific physiology and trophoblast cell lines limit direct extrapolation to clinical outcomes or other organs. Briefing overlap: the 11 October daily brief covered a different placenta-on-chip toxicology study; this article addresses endometrial vascular remodeling instead.",
       "priority": "#6",
       "tags": [
         "Organ-on-chip",
@@ -176,7 +176,7 @@
       "method": "Interpretable AI applied to spatially resolved transcriptomics from human tumors and mouse heart, with cross-dataset benchmarking and biological validation analyses.",
       "why_it_matters": "Relevant to omics and multicellular tissue modeling as a way to generate hypotheses about spatial cell organization rather than relying on cell-type abundance alone.",
       "read_first": "Read Fig. 1 for model logic, then the T-cell recruitment and antigen-presentation benchmark figures.",
-      "caveat": "Inferred recruitment rules are not proof of causality, and the published applications are not intestinal disease models.",
+      "caveat": "Inferred recruitment rules are not proof of causality, and the published applications are not intestinal disease models. Briefing overlap: the 9 October daily brief discussed a disease tissue atlas and cell-communication inference; SPACER is a distinct spatial-recruitment method.",
       "priority": "#7",
       "tags": [
         "Spatial transcriptomics",
