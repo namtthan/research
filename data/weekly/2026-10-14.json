@@ -1,0 +1,271 @@
+{
+  "date": "2026-10-14",
+  "stories": [
+    {
+      "title": "Morganella morganii-derived histamine impairs intestinal barrier function via HRH4 and aggravates colitis",
+      "authors_source": "Youcai Yi, Rui Feng, Xueting Wu et al. — Inflammatory Bowel Diseases (9 October 2026)",
+      "publication_type": "Peer-reviewed primary research; advance online publication",
+      "takeaway": "The authors identify histamine secreted by Morganella morganii as a mediator of intestinal permeability and colitis through histamine receptor H4 (HRH4).",
+      "what_happened": "M. morganii worsened experimental colitis and impaired epithelial junction architecture. Fractionation and metabolomics implicated a low-molecular-weight secreted product, histamine; histamine exposure reproduced injury, while interventions targeting histamine synthesis or HRH4 improved experimental outcomes.",
+      "method": "Murine colitis, mouse colonic organoids, intestinal epithelial cells, <3-kDa bacterial supernatant fractionation, metabolomics and pharmacological perturbation.",
+      "why_it_matters": "A strong public example of moving from microbiome association to a testable microbial-metabolite–host-receptor mechanism using complementary intestinal models.",
+      "read_first": "Read the supernatant fractionation and histamine-identification results, then HRH4 inhibition and epithelial tight-junction/permeability experiments.",
+      "caveat": "The mechanistic evidence is primarily from experimental colitis and model systems; therapeutic efficacy and exposure levels in human Crohn's disease remain unestablished.",
+      "priority": "#1",
+      "tags": [
+        "Crohn's disease",
+        "Host–microbiome",
+        "Microbial metabolites",
+        "Intestinal barrier",
+        "Organoids"
+      ],
+      "sources": [
+        {
+          "label": "Oxford Academic — primary article",
+          "url": "https://doi.org/10.1093/ibd/izag201"
+        },
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42853997/"
+        }
+      ]
+    },
+    {
+      "title": "Modulation of dysregulated ATG5 and ATG16L1 expression in IBD by Akkermansia muciniphila and its extracellular vesicles (EVs)",
+      "authors_source": "Nesa Kazemifard, Maryam Farmani, Kimia Basiji et al. — Scientific Reports (12 October 2026)",
+      "publication_type": "Peer-reviewed primary research",
+      "takeaway": "Live Akkermansia muciniphila and its extracellular vesicles altered inflammation-associated ATG5 and ATG16L1 transcript patterns in an epithelial cell model.",
+      "what_happened": "Patient-sample qPCR identified differences in ATG5 and ATG16L1 expression in IBD relative to controls. In IL-1β-challenged Caco-2 cells, live bacteria and extracellular vesicles modulated these genes; vesicle responses varied with dose.",
+      "method": "Patient-derived clinical samples with qPCR, IL-1β-stimulated Caco-2 epithelial cultures, live bacterial and extracellular-vesicle exposures.",
+      "why_it_matters": "Relevant to microbiome therapeutics and epithelial stress biology because it compares live bacteria with defined bacteria-derived vesicle preparations.",
+      "read_first": "Start with the patient-sample expression comparison, then the live-bacteria-versus-vesicle dose-response plots for ATG5 and ATG16L1.",
+      "caveat": "Changes in ATG transcripts do not by themselves establish autophagic flux, epithelial functional rescue or therapeutic efficacy in people.",
+      "priority": "#2",
+      "tags": [
+        "IBD",
+        "Akkermansia",
+        "Extracellular vesicles",
+        "Autophagy",
+        "Postbiotics"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports",
+          "url": "https://www.nature.com/articles/s41598-026-75310-9"
+        }
+      ]
+    },
+    {
+      "title": "B cells regulate T cell transfer colitis by partially reconstituting luminal IgA and modulating the colonic microbiota",
+      "authors_source": "Josef Urrete, Margaret Kim, Amruth Chilukuri et al. — Inflammatory Bowel Diseases (12 October 2026)",
+      "publication_type": "Peer-reviewed primary research; advance online publication",
+      "takeaway": "Transferred B cells attenuated experimental T-cell-transfer colitis in association with restored secretory IgA and altered microbiota; IgA-deficient B cells did not reproduce the protection.",
+      "what_happened": "Wild-type B-cell cotransfer partially reconstituted luminal IgA, increased bacterial IgA coating and changed colonic microbial communities while reducing colitis severity. IgA-deficient donor B cells reconstituted peripheral compartments but did not protect comparably.",
+      "method": "RAG1-deficient mouse T-cell-transfer colitis, wild-type versus IgA-deficient B-cell cotransfer, histology, luminal IgA and microbial community measurements.",
+      "why_it_matters": "Provides a mechanistic immune–microbiome reference for understanding what additional biology immune-inclusive intestinal models can capture.",
+      "read_first": "Read the wild-type versus IgA-deficient B-cell transfer comparison, followed by luminal IgA coating and microbiota analyses.",
+      "caveat": "The lymphopenic adoptive-transfer model isolates a particular immune mechanism and should not be generalized to all IBD contexts or to epithelial-only systems.",
+      "priority": "#3",
+      "tags": [
+        "IBD",
+        "Mucosal immunity",
+        "IgA",
+        "Microbiome",
+        "Colitis"
+      ],
+      "sources": [
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42863135/"
+        },
+        {
+          "label": "Publisher DOI",
+          "url": "https://doi.org/10.1093/ibd/izag198"
+        }
+      ]
+    },
+    {
+      "title": "Hydrogen peroxide sensing and signaling in physiology and disease: implications for therapy",
+      "authors_source": "Ryan J. Mailloux — Signal Transduction and Targeted Therapy (12 October 2026)",
+      "publication_type": "Peer-reviewed review article",
+      "takeaway": "This review distinguishes damaging oxidant overload from physiological H2O2 signaling and organizes cellular signal transmission into floodgate, redox-relay and S-glutathionylation mechanisms.",
+      "what_happened": "The author synthesizes evidence that H2O2 acts as a spatially constrained second messenger through reversible protein-thiol chemistry, and considers how signaling distance and cellular antioxidant systems influence outcomes.",
+      "method": "Mechanistic review of redox biochemistry, H2O2 diffusion/signaling measurements and experimental approaches to thiol oxidation.",
+      "why_it_matters": "A useful conceptual framework for interpreting oxidant measurements and redox signaling in human-relevant cellular disease models without equating all ROS with damage.",
+      "read_first": "Read the three-mechanism overview (floodgate, redox relay, S-glutathionylation) and the discussion of H2O2 signaling distance.",
+      "caveat": "A broad mechanistic synthesis rather than an intestinal-specific experimental study; cellular compartment, oxidant dose and assay chemistry constrain translation.",
+      "priority": "#4",
+      "tags": [
+        "Redox biology",
+        "Hydrogen peroxide",
+        "Cell signaling",
+        "Oxidative stress",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Signal Transduction and Targeted Therapy",
+          "url": "https://www.nature.com/articles/s41392-026-02905-z"
+        }
+      ]
+    },
+    {
+      "title": "Differential long-term efficacy of biologic and small-molecule therapies by disease location in moderate-to-severe luminal Crohn's disease: a systematic review and network meta-analysis",
+      "authors_source": "Sóley Poulsen Dalsgarð, Kavini Kalinga Bandara Pkb, Jakob Benedict Seidelin et al. — Inflammatory Bowel Diseases (8 October 2026)",
+      "publication_type": "Peer-reviewed systematic review and Bayesian network meta-analysis",
+      "takeaway": "Across 18 randomized trials involving 4,697 patients, relative long-term treatment efficacy varied by Crohn's disease location for some agents, with isolated ileal disease generally showing lower remission rates.",
+      "what_happened": "The analysis stratified week-52 clinical remission and endoscopic response by ileal, colonic and ileocolonic disease. It reported location-dependent signals for selected treatments rather than a uniform effect across all agents.",
+      "method": "Systematic review of randomized controlled trials and Bayesian network meta-analysis stratified by Montreal disease location.",
+      "why_it_matters": "Offers clinical context for why intestinal disease models should specify anatomical region and avoid treating all Crohn's disease presentations as interchangeable.",
+      "read_first": "Read the disease-location subgroup results and the network-comparison tables, then inspect sensitivity analyses and trial-design stratification.",
+      "caveat": "Indirect comparisons and sparse location subgroups can destabilize treatment rankings; these estimates are not patient-level treatment rules.",
+      "priority": "#5",
+      "tags": [
+        "Crohn's disease",
+        "Clinical translation",
+        "Disease location",
+        "Systematic review",
+        "Therapeutics"
+      ],
+      "sources": [
+        {
+          "label": "Oxford Academic",
+          "url": "https://doi.org/10.1093/ibd/izag177"
+        },
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42850680/"
+        }
+      ]
+    },
+    {
+      "title": "A perfusable first-generation endometrial microvascular model to study human spiral artery remodeling in pregnancy",
+      "authors_source": "Sebastian Naranjo, Madison E. Fletcher, Noo Li Jeon et al. — Lab on a Chip (9 October 2026)",
+      "publication_type": "Peer-reviewed primary research; advance online publication",
+      "takeaway": "A modular polystyrene microfluidic system supports perfusable human endometrial microvessels and quantifies hormone- and trophoblast-associated vascular remodeling.",
+      "what_happened": "Self-assembled human endometrial endothelial cells and fibroblasts formed perfusable networks; hormonal exposures altered vascular features, and two trophoblast cell lines produced different effects on vascular barrier and cell survival.",
+      "method": "Polystyrene microfluidic NAM, endothelial–fibroblast co-culture, perfusion, trophoblast tri-culture, vascular imaging and permeability/secretome readouts.",
+      "why_it_matters": "A transferable organ-chip engineering reference for material choice, perfusable multicellular networks, model-specific perturbations and quantitative validation.",
+      "read_first": "Read the vascular network formation/perfusion figures, then hormone-dependent permeability and trophoblast integration comparisons.",
+      "caveat": "An early-generation in-vitro model; pregnancy-specific physiology and trophoblast cell lines limit direct extrapolation to clinical outcomes or other organs.",
+      "priority": "#6",
+      "tags": [
+        "Organ-on-chip",
+        "NAMs",
+        "Microfluidics",
+        "Perfusion",
+        "Barrier biology"
+      ],
+      "sources": [
+        {
+          "label": "Lab on a Chip DOI",
+          "url": "https://doi.org/10.1039/d6lc00513f"
+        },
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42852710/"
+        }
+      ]
+    },
+    {
+      "title": "Interpretable AI model reveals spatial codes of cell recruitment in tissues",
+      "authors_source": "Jia Yao, Ji Seon Shim, K. Wong et al. — Nature Biomedical Engineering (13 October 2026)",
+      "publication_type": "Peer-reviewed primary research / computational method",
+      "takeaway": "SPACER uses interpretable multi-instance learning to infer gene-level spatial recruitment rules from spatial transcriptomics, with demonstrations across 37 tissue datasets.",
+      "what_happened": "The framework improved recovery of known recruitment signals in benchmark tasks and associated local antigen presentation and mucin-related tissue features with immune-cell engagement in cancer datasets.",
+      "method": "Interpretable AI applied to spatially resolved transcriptomics from human tumors and mouse heart, with cross-dataset benchmarking and biological validation analyses.",
+      "why_it_matters": "Relevant to omics and multicellular tissue modeling as a way to generate hypotheses about spatial cell organization rather than relying on cell-type abundance alone.",
+      "read_first": "Read Fig. 1 for model logic, then the T-cell recruitment and antigen-presentation benchmark figures.",
+      "caveat": "Inferred recruitment rules are not proof of causality, and the published applications are not intestinal disease models.",
+      "priority": "#7",
+      "tags": [
+        "Spatial transcriptomics",
+        "AI",
+        "Cell communication",
+        "Tissue organization",
+        "Omics"
+      ],
+      "sources": [
+        {
+          "label": "Nature Biomedical Engineering",
+          "url": "https://www.nature.com/articles/s41551-026-01804-6"
+        }
+      ]
+    },
+    {
+      "title": "Gut guardians: the enteric neuroimmune-microbiota axis in health and disease",
+      "authors_source": "Ziwen Ma, Mengyan Dang, Wanting Hou et al. — Journal of Neuroinflammation (12 October 2026)",
+      "publication_type": "Peer-reviewed mechanistic review",
+      "takeaway": "The review organizes bidirectional signaling among enteric neurons/glia, mucosal immune cells and microbial metabolites across intestinal physiology and disease.",
+      "what_happened": "It surveys neuroimmune interactions, microbial signals including short-chain fatty acids and tryptophan derivatives, and proposed roles in IBD, enteritis, Hirschsprung's disease and colorectal cancer.",
+      "method": "Narrative mechanistic review of enteric nervous system biology, immune-cell interactions, microbiota signaling and experimental technologies.",
+      "why_it_matters": "Broadens the conceptual scope of intestinal model design to include neural and immune compartments in addition to epithelial and microbial components.",
+      "read_first": "Read the diagrams of neuroimmune–microbiota signaling and the IBD-specific section, followed by emerging experimental technologies.",
+      "caveat": "Integrates heterogeneous experimental systems and disease contexts; not every proposed circuit is causally established in humans.",
+      "priority": "#8",
+      "tags": [
+        "Enteric nervous system",
+        "Host–microbiome",
+        "IBD",
+        "Neuroimmune",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Journal of Neuroinflammation",
+          "url": "https://link.springer.com/article/10.1186/s12974-026-04085-7"
+        }
+      ]
+    },
+    {
+      "title": "Spatial confinement enables reproducible engineering of Staphylococcus aureus biofilms by 3D bioprinting",
+      "authors_source": "E. Roscetto, G. Balato, M. Aversa et al. — Scientific Reports (9 October 2026)",
+      "publication_type": "Peer-reviewed primary research",
+      "takeaway": "An alginate '3D-Sandwich' that spatially confines bacteria produced more rapid and organized biofilms than a homogeneously mixed 3D construct.",
+      "what_happened": "At 48 hours the confined construct achieved culturable counts comparable to a mixed construct at 96 hours; confocal and electron microscopy, nearest-neighbor analysis and Raman spectroscopy documented structural and biochemical differences.",
+      "method": "3D bioprinted alginate biofilm geometries versus 2D controls, bacterial counts, CLSM, SEM, spatial analysis and Raman spectroscopy.",
+      "why_it_matters": "Shows how initial microbial spatial architecture can change culture behavior and reproducibility, a general consideration in engineered host–microbe platforms.",
+      "read_first": "Read the 3D-Sandwich versus 3D-Mixed time-course comparisons and the microscopy/nearest-neighbor analyses.",
+      "caveat": "A single-species Staphylococcus infection/biofilm model, not a gut microbial consortium or host epithelial co-culture.",
+      "priority": "#9",
+      "tags": [
+        "Bioprinting",
+        "Biofilms",
+        "Spatial confinement",
+        "Microbial culture",
+        "Model reproducibility"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports",
+          "url": "https://www.nature.com/articles/s41598-026-75622-w"
+        }
+      ]
+    },
+    {
+      "title": "Engineering biocomputability in living and material systems",
+      "authors_source": "Ryan Gharios, Murial L. Ross, Annabella Li et al. — Nature Chemical Engineering (12 October 2026)",
+      "publication_type": "Peer-reviewed high-quality review",
+      "takeaway": "The review compares nucleic-acid, protein and synthetic-material logic circuits that enable living cells and biomaterials to sense and respond to combinations of inputs.",
+      "what_happened": "The authors categorize biocomputation strategies and survey programmable cell and material systems, including stimuli-responsive approaches relevant to tissue engineering.",
+      "method": "Cross-disciplinary review of synthetic biology, logic-gated biological circuits and responsive biomaterial design.",
+      "why_it_matters": "A forward-looking engineering reference for responsive tissue platforms, multiplex sensing and the distinction between passive measurements and programmable biological responses.",
+      "read_first": "Start with the circuit taxonomy and Figs. 2–6 comparing nucleic-acid, protein and material-based logic systems.",
+      "caveat": "Conceptual breadth is stronger than direct organ-chip validation; integration complexity, robustness and long-term biocompatibility require system-specific tests.",
+      "priority": "#10",
+      "tags": [
+        "Tissue engineering",
+        "Synthetic biology",
+        "Biomaterials",
+        "Multiplexing",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Nature Chemical Engineering",
+          "url": "https://www.nature.com/articles/s44286-026-00433-9"
+        }
+      ]
+    }
+  ]
+}
