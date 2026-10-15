@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-15",
+  "stories": [
+    {
+      "title": "AstraZeneca pays insitro $40M upfront for AI-driven liver and heart drug discovery",
+      "takeaway": "A new collaboration puts $40M upfront behind cellular-data-driven target discovery, with up to $1.46B more tied to milestones.",
+      "what_happened": "Announced October 15, the agreement applies insitro's Virtual Human platform to metabolic dysfunction-associated steatohepatitis (MASH) and cardiomyopathies. insitro will use integrated human and cellular data to nominate targets and advance programs to candidate selection; AstraZeneca will lead subsequent development. Potential discovery, development and commercial milestones total approximately $1.46B beyond the upfront payment.",
+      "why_it_matters": "The agreement illustrates growing commercial demand for rigorous human-cell models, quantitative phenotyping and computational biology in translational drug discovery—skills relevant across bioengineering and biotech R&D careers.",
+      "caveat": "The headline deal value is largely contingent, and AI-derived targets still need experimental and clinical validation.",
+      "tags": [
+        "Biotech",
+        "AI drug discovery",
+        "Human cellular models",
+        "Licensing",
+        "MASH",
+        "Careers"
+      ],
+      "sources": [
+        {
+          "label": "Fierce Biotech, October 15",
+          "url": "https://www.fiercebiotech.com/biotech/astrazeneca-inks-15b-insitro-deal-ai-enabled-target-discovery"
+        },
+        {
+          "label": "Reuters, October 15",
+          "url": "https://www.reuters.com/legal/litigation/astrazeneca-strikes-40-million-ai-drug-discovery-deal-with-insitro-2026-10-15/"
+        }
+      ]
+    },
+    {
+      "title": "Nature study engineers a myeloid-selective IL-10 receptor agonist for inflammatory disease",
+      "takeaway": "Receptor geometry enables anti-inflammatory IL-10 signaling in myeloid cells while limiting unwanted T-cell stimulation in preclinical models.",
+      "what_happened": "Published October 14 in Nature, researchers engineered a tetravalent nanobody-based IL-10 receptor agonist that makes signaling TYK2-dependent and more selective for monocytes, macrophages and dendritic cells. The agent reduced inflammation in humanized mouse models including colitis, while a humanized version showed durable myeloid effects without observed T-cell activation or hematologic toxicity in non-human primates.",
+      "why_it_matters": "The peer-reviewed work highlights cell-type-selective cytokine engineering as a possible route toward safer treatments for inflammatory bowel disease, and underscores the value of human-relevant immunology models in therapeutic assessment.",
+      "caveat": "These are preclinical results; neither efficacy nor long-term safety in patients with IBD has been demonstrated.",
+      "tags": [
+        "IBD",
+        "Crohn's disease",
+        "Immunoengineering",
+        "IL-10",
+        "Cytokine therapeutics",
+        "Peer-reviewed"
+      ],
+      "sources": [
+        {
+          "label": "Nature, October 14",
+          "url": "https://www.nature.com/articles/s41586-026-11176-1"
+        }
+      ]
+    },
+    {
+      "title": "OMass Therapeutics raises $310M Series C to advance endocrine and immunology drugs",
+      "takeaway": "A substantial private financing backs Phase 2 development and a separate immunology pipeline.",
+      "what_happened": "On October 15, Oxford-based OMass announced an oversubscribed $310M Series C co-led by Bain Capital Life Sciences, Forbion and Novo Holdings. Funding is earmarked for OMS1620, an MC2 receptor antagonist for congenital adrenal hyperplasia and ACTH-dependent Cushing's syndrome, and initial clinical work on an SLC15A4 inhibitor for lupus and related diseases.",
+      "why_it_matters": "The financing shows investor appetite for experimentally grounded drug-discovery platforms and the interdisciplinary path from analytical technology to clinical development, relevant to bioengineering commercialization and career planning.",
+      "caveat": "Funding does not establish clinical efficacy; the lead and follow-on programs still face substantial development risk.",
+      "tags": [
+        "Biotech",
+        "Series C",
+        "Funding",
+        "Immunology",
+        "Translational research",
+        "Careers"
+      ],
+      "sources": [
+        {
+          "label": "OMass financing announcement, October 15",
+          "url": "https://rss.globenewswire.com/news-release/2026/10/15/3381281/0/en/omass-therapeutics-announces-310-million-series-c-financing-to-advance-portfolio-of-small-molecule-therapeutics-in-endocrinology-and-immunology.html"
+        }
+      ]
+    },
+    {
+      "title": "Agilent agrees to acquire digital-pathology platform Proscia for $240M",
+      "takeaway": "An established lab-instrument company is integrating tissue imaging, workflow software and AI into its life-science portfolio.",
+      "what_happened": "Announced October 13, Agilent's proposed all-cash acquisition values Proscia at $240M at closing, plus up to $30M contingent on milestones. Proscia connects slide scanners, laboratory information systems and image-analysis tools; the parties expect the deal to close early in Agilent's fiscal 2027.",
+      "why_it_matters": "The move underscores demand for reproducible imaging pipelines, interoperable assay data and AI-assisted tissue analysis in translational research and diagnostics—adjacent opportunities for bioengineers building human-relevant test systems.",
+      "caveat": "The transaction has not yet closed, and software integration does not by itself establish clinical or regulatory performance for new applications.",
+      "tags": [
+        "Biotech industry",
+        "M&A",
+        "Digital pathology",
+        "AI",
+        "Tissue imaging",
+        "Careers"
+      ],
+      "sources": [
+        {
+          "label": "Agilent announcement, October 13",
+          "url": "https://www.agilent.com/about/newsroom/presrel/2026/13oct-gp26020.html"
+        },
+        {
+          "label": "Reuters, October 13",
+          "url": "https://www.reuters.com/legal/transactional/agilent-buy-pathology-software-maker-proscia-240-million-2026-10-13/"
+        }
+      ]
+    },
+    {
+      "title": "Lymphatics-on-chip study finds matrix stiffness changes VEGF receptor dependence",
+      "takeaway": "A 3D chip shows VEGF-C-driven lymphatic sprouting relies differently on VEGFR-2 and VEGFR-3 across matrix stiffnesses.",
+      "what_happened": "Published October 8 in Acta Biomaterialia, a peer-reviewed 3D lymphatics-on-a-chip study varied extracellular-matrix stiffness, VEGF ligands and receptor inhibitors. VEGF-C produced the strongest sprouting across conditions; VEGFR-3 inhibition was especially influential in soft matrices, whereas inhibiting either VEGFR-2 or VEGFR-3 reduced sprouting in stiff matrices. This paper is a recent research selection, not a new October 15 announcement.",
+      "why_it_matters": "It demonstrates how controllable mechanical environments in organ-on-chip systems can uncover context-dependent drug-target biology, a broadly useful design and validation principle for microphysiological systems.",
+      "caveat": "In-vitro lymphatic sprouting does not establish how these pathways behave in patients or validate the chip as a regulatory decision tool.",
+      "tags": [
+        "Organ-on-chip",
+        "NAMs",
+        "Microfluidics",
+        "Mechanobiology",
+        "ECM stiffness",
+        "Peer-reviewed"
+      ],
+      "sources": [
+        {
+          "label": "Acta Biomaterialia via PubMed, October 8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42849828/"
+        },
+        {
+          "label": "Publisher DOI",
+          "url": "https://doi.org/10.1016/j.actbio.2026.10.013"
+        }
+      ]
+    }
+  ]
+}
