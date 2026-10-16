@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-16",
+  "type": "academia_job_shortlist",
+  "title": "Academia Job Shortlist",
+  "scope": {
+    "geography": "Bay Area first; Ohio second; nationwide third",
+    "selection_rule": "Official institutional open postings; graduation timing handled as start-date issue. Older postings remain listed only if official page continues to advertise an opening."
+  },
+  "jobs": [
+    {
+      "priority": 1,
+      "recommendation": "APPLY_NOW",
+      "title": "Postdoctoral Fellow — Intestinal Tissue Immunity and IBD",
+      "company": "Stanford University — Schumacher Lab",
+      "location": "Palo Alto, CA",
+      "work_arrangement": "On-site",
+      "term": "One year, renewable",
+      "salary": {
+        "min_usd": 79056,
+        "max_usd": 79056,
+        "period": "year",
+        "note": "Listed salary on official posting; null if not specified"
+      },
+      "posting_status_checked": "2026-10-16",
+      "posting_status": "Exact official posting or official ATS page located in Oct 16 search; applications appear available",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://postdocs.stanford.edu/prospective/opportunities/open-postdoctoral-position-faculty-mentor-michael-schumacher-phd"
+        }
+      ],
+      "job_description": "Study mucosal immunology and intestinal epithelial remodeling in IBD with cell, organoid and animal models.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "Molecular and cell biology",
+        "Immunology/physiology",
+        "Independent research"
+      ],
+      "why_good_match": "Closest Bay Area match to intestinal disease and organoid-model research.",
+      "likely_gaps": [
+        "Mouse immunology",
+        "Flow cytometry depth"
+      ],
+      "tailor": "Emphasize human intestinal models, epithelial physiology and rigorous quantitative analysis.",
+      "immediate_action": "Email PI with CV, brief letter and three references; ask about 2027 start."
+    },
+    {
+      "priority": 2,
+      "recommendation": "CONTACT_FIRST",
+      "title": "Postdoctoral Scholar — IBD, Microbiome and Multi-Omics",
+      "company": "Stanford University — Sinha Lab",
+      "location": "Palo Alto, CA",
+      "work_arrangement": "On-site",
+      "term": "One year minimum",
+      "salary": {
+        "min_usd": 80000,
+        "max_usd": 85000,
+        "period": "year",
+        "note": "Listed salary on official posting; null if not specified"
+      },
+      "posting_status_checked": "2026-10-16",
+      "posting_status": "Official Stanford page still titled Open Postdoctoral position, but stated expected start was July 2026; confirm vacancy before investing in application.",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://postdocs.stanford.edu/prospective/opportunities/open-postdoctoral-position-faculty-mentor-sidhartha-sinha"
+        }
+      ],
+      "job_description": "Translational IBD projects integrating microbiome, metabolome, immunology and multi-omics.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "Microbiome or immunology",
+        "R/Python",
+        "Omics analysis"
+      ],
+      "why_good_match": "Strong GI disease and host–microbiome scientific match.",
+      "likely_gaps": [
+        "Spatial/metabolomic methods",
+        "Posted start was July 2026; availability should be confirmed"
+      ],
+      "tailor": "Emphasize human intestinal systems, microbiome and single-cell analysis.",
+      "immediate_action": "Email PI to confirm position still unfilled and whether 2027 start works."
+    },
+    {
+      "priority": 3,
+      "recommendation": "APPLY_SELECTIVELY",
+      "title": "Postdoctoral Fellow — Precision Therapeutics for Pediatric IBD",
+      "company": "Stanford University — Colman Lab",
+      "location": "Palo Alto, CA",
+      "work_arrangement": "On-site",
+      "term": "One year, renewable",
+      "salary": {
+        "min_usd": 79056,
+        "max_usd": 79056,
+        "period": "year",
+        "note": "Listed salary on official posting; null if not specified"
+      },
+      "posting_status_checked": "2026-10-16",
+      "posting_status": "Exact official posting or official ATS page located in Oct 16 search; applications appear available",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://postdocs.stanford.edu/prospective/opportunities/open-postdoctoral-position-faculty-mentor-ruben-colman"
+        }
+      ],
+      "job_description": "Combine IBD microbiome biomarkers, omics and pharmacokinetic/pharmacodynamic modeling.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "Omics bioinformatics",
+        "R/Python",
+        "Pharmacometrics aptitude"
+      ],
+      "why_good_match": "Excellent IBD translational research location, with computational growth potential.",
+      "likely_gaps": [
+        "NONMEM/PK-PD modeling",
+        "Clinical pharmacology"
+      ],
+      "tailor": "Focus on quantitative biology and reproducible computational analysis.",
+      "immediate_action": "Contact PI about computational track and start timing."
+    },
+    {
+      "priority": 4,
+      "recommendation": "APPLY",
+      "title": "Postdoctoral Fellow — 3D Tumor Models and Organ-on-a-Chip",
+      "company": "Stanford University — Jon Park Lab",
+      "location": "Palo Alto, CA",
+      "work_arrangement": "On-site",
+      "term": "Two to three years",
+      "salary": {
+        "min_usd": 79056,
+        "max_usd": 79056,
+        "period": "year",
+        "note": "Listed salary on official posting; null if not specified"
+      },
+      "posting_status_checked": "2026-10-16",
+      "posting_status": "Exact official posting or official ATS page located in Oct 16 search; applications appear available",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://postdocs.stanford.edu/prospective/opportunities/open-postdoctoral-position-faculty-mentor-jon-park"
+        }
+      ],
+      "job_description": "Build 3D in vitro and organ-on-chip models of tumor microenvironments and metastasis.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "3D culture or tissue engineering",
+        "Cell biology",
+        "Cancer interest"
+      ],
+      "why_good_match": "Newer October 7 Stanford listing with strong microphysiological model engineering relevance.",
+      "likely_gaps": [
+        "Metastasis-specific biology"
+      ],
+      "tailor": "Emphasize model engineering, cell culture and assay development.",
+      "immediate_action": "Email application with CV, cover letter and three references."
+    },
+    {
+      "priority": 5,
+      "recommendation": "APPLY",
+      "title": "Postdoctoral Fellow — Organ-on-Chip and Cancer Bioengineering",
+      "company": "Cleveland Clinic — Chao Ma Lab",
+      "location": "Cleveland, OH",
+      "work_arrangement": "On-site",
+      "term": "Postdoctoral appointment",
+      "salary": {
+        "min_usd": 63480,
+        "max_usd": 77076,
+        "period": "year",
+        "note": "Listed salary on official posting; null if not specified"
+      },
+      "posting_status_checked": "2026-10-16",
+      "posting_status": "Exact official posting or official ATS page located in Oct 16 search; applications appear available",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://jobs.clevelandclinic.org/job/23368284/postdoctoral-fellow-chao-ma-lab-cleveland-oh/"
+        }
+      ],
+      "job_description": "Organ-on-chip, microfluidics, 3D printing, stem-cell systems and cancer bioengineering.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "Microfluidics or tissue engineering",
+        "Independent research",
+        "Scientific writing"
+      ],
+      "why_good_match": "Highly direct MPS and engineering fit with external-lab research direction.",
+      "likely_gaps": [
+        "Hematologic malignancy biology",
+        "Immunotherapy-specific expertise"
+      ],
+      "tailor": "Emphasize device fabrication, microfluidic model design and translational collaboration.",
+      "immediate_action": "Send CV and two-page research interests/cover letter to PI."
+    },
+    {
+      "priority": 6,
+      "recommendation": "CONTACT_FIRST",
+      "title": "Postdoctoral Fellow — NHP Immunology and Organ Chips",
+      "company": "Harvard University — Wyss Institute",
+      "location": "Boston/Cambridge, MA",
+      "work_arrangement": "On-site",
+      "term": "One year, possible extension",
+      "salary": {
+        "min_usd": 72000,
+        "max_usd": 77500,
+        "period": "year",
+        "note": "Listed salary on official posting; null if not specified"
+      },
+      "posting_status_checked": "2026-10-16",
+      "posting_status": "Official Harvard recruitment page remains accessible with application form; Sep 9 encouraged date has passed, so current selection status needs confirmation.",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://academicpositions.harvard.edu/postings/16681"
+        }
+      ],
+      "job_description": "Use organ chips and spatial omics to study radiation toxicity and adaptive immunity in human and nonhuman-primate models.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "Immunological assays with NHP cells",
+        "Cell culture and multi-omics",
+        "Collaborative engineering"
+      ],
+      "why_good_match": "Excellent organ-chip and radiation-model overlap; adds regulatory-facing translational research.",
+      "likely_gaps": [
+        "NHP immunology is explicitly required",
+        "Suggested application date Sep 9 has passed"
+      ],
+      "tailor": "Emphasize organ-chip engineering, radiation model expertise and assay design; do not overstate immunology.",
+      "immediate_action": "Check whether review continues after the Sep 9 encouraged date before applying."
+    },
+    {
+      "priority": 7,
+      "recommendation": "FALLBACK",
+      "title": "Postdoctoral Fellow — Organ-on-Chip Microengineering",
+      "company": "Cleveland Clinic — Hyun Jung Kim Lab",
+      "location": "Cleveland, OH",
+      "work_arrangement": "On-site",
+      "term": "Postdoctoral appointment",
+      "salary": {
+        "min_usd": 63480,
+        "max_usd": 77076,
+        "period": "year",
+        "note": "Listed salary on official posting; null if not specified"
+      },
+      "posting_status_checked": "2026-10-16",
+      "posting_status": "Exact official posting or official ATS page located in Oct 16 search; applications appear available",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://jobs.clevelandclinic.org/job/23640789/postdoctoral-fellow-hyun-jung-kim-lab-cleveland-oh/"
+        }
+      ],
+      "job_description": "Microfluidics, scalable organ-chip engineering and host–microbiome model development.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "Microengineering or tissue engineering",
+        "Experimental design",
+        "Interdisciplinary collaboration"
+      ],
+      "why_good_match": "Near-perfect technical fit but limited new mentorship/network exposure because it is the existing environment.",
+      "likely_gaps": [
+        "Minimal scientific/network separation"
+      ],
+      "tailor": "Pursue only if continuity is a strategic priority.",
+      "immediate_action": "Keep as continuity fallback rather than preferred external postdoc."
+    }
+  ]
+}
