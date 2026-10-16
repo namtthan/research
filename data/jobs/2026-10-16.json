@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-16",
+  "type": "industry_job_shortlist",
+  "title": "Industry Role Shortlist",
+  "scope": {
+    "geography": "Greater Bay Area prioritized, then Ohio, then nationwide; nationwide expansion used",
+    "selection_rule": "Only exact official employer/ATS requisitions; degree timing not a hard exclusion. No private research results disclosed."
+  },
+  "jobs": [
+    {
+      "priority": 1,
+      "recommendation": "APPLY_NOW",
+      "title": "Scientist I/II, Functional Genomics",
+      "company": "Xaira Therapeutics",
+      "location": "South San Francisco, CA",
+      "work_arrangement": "On-site, five days/week",
+      "term": "Full-time",
+      "salary": {
+        "min_usd": 110000,
+        "max_usd": 155000,
+        "period": "year",
+        "note": "Listed salary on official posting; null if not specified"
+      },
+      "posting_status_checked": "2026-10-16",
+      "posting_status": "Exact official posting or official ATS page located in Oct 16 search; applications appear available",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://job-boards.greenhouse.io/xairatherapeutics/jobs/5198737007"
+        }
+      ],
+      "job_description": "Develop and scale organoid models for CRISPR screening and functional genomics with computational/AI teams.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "Hands-on organoid culture and characterization",
+        "CRISPR perturbation in 3D models",
+        "Screening/automation familiarity"
+      ],
+      "why_good_match": "Direct organoid, single-cell and assay reproducibility overlap in preferred location.",
+      "likely_gaps": [
+        "CRISPR delivery/screening in organoids",
+        "High-throughput automation"
+      ],
+      "tailor": "Lead with organoid culture, disease-model engineering, quantitative assays and data analysis.",
+      "immediate_action": "Apply through Greenhouse; discuss expected degree completion and 2027 start."
+    },
+    {
+      "priority": 2,
+      "recommendation": "APPLY",
+      "title": "Scientist 3 — Translational Medicine",
+      "company": "Genentech",
+      "location": "South San Francisco, CA",
+      "work_arrangement": "On-site",
+      "term": "Full-time",
+      "salary": {
+        "min_usd": 100400,
+        "max_usd": 186400,
+        "period": "year",
+        "note": "Listed salary on official posting; null if not specified"
+      },
+      "posting_status_checked": "2026-10-16",
+      "posting_status": "Exact role on official Genentech careers URL, with October 6 posting details indexed; page content partly dynamic.",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://careers.gene.com/us/en/job/202608-122156/Scientist-3-Translational-Medicine"
+        }
+      ],
+      "job_description": "Integrate translational wet-lab experiments and omics analysis for biomarker and mechanism studies.",
+      "key_must_have_requirements": [
+        "Relevant PhD or equivalent experience",
+        "Cell-based assays",
+        "Transcriptomics/NGS",
+        "R or Python"
+      ],
+      "why_good_match": "Combines experimental human cell systems with quantitative biology in the Bay Area.",
+      "likely_gaps": [
+        "Role is ophthalmology-focused",
+        "Clinical biomarker validation depth"
+      ],
+      "tailor": "Present human-model development, experimental design and reproducible omics analysis.",
+      "immediate_action": "Confirm requisition remains accepting applications and apply."
+    },
+    {
+      "priority": 3,
+      "recommendation": "APPLY_NOW",
+      "title": "Scientist II, Complex In Vitro Model",
+      "company": "AbbVie",
+      "location": "Worcester, MA",
+      "work_arrangement": "On-site",
+      "term": "Full-time",
+      "salary": {
+        "min_usd": 84500,
+        "max_usd": 162000,
+        "period": "year",
+        "note": "Listed salary on official posting; null if not specified"
+      },
+      "posting_status_checked": "2026-10-16",
+      "posting_status": "Exact official posting or official ATS page located in Oct 16 search; applications appear available",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://careers.abbvie.com/en/job/scientist-ii-complex-in-vitro-model-in-worcester-ma-jid-31723"
+        }
+      ],
+      "job_description": "Immunology R&D with primary cells, organoids, organ-on-chip, mechanism-of-action assays and quantitative readouts.",
+      "key_must_have_requirements": [
+        "Complex 3D in vitro models",
+        "Primary immune-cell culture",
+        "Cell signaling and functional assays",
+        "Imaging/flow/PCR"
+      ],
+      "why_good_match": "Highly direct advanced in vitro model and immunology fit; nationwide expansion.",
+      "likely_gaps": [
+        "Multicolor flow cytometry",
+        "Primary immune-cell assays and automation"
+      ],
+      "tailor": "Lead with organoid/chip culture, advanced co-culture systems, imaging and assay optimization.",
+      "immediate_action": "Apply on AbbVie official posting."
+    },
+    {
+      "priority": 4,
+      "recommendation": "STRETCH",
+      "title": "Senior Scientist, Analytical Immunology",
+      "company": "Parallel Bio",
+      "location": "San Francisco, CA",
+      "work_arrangement": "On-site",
+      "term": "Full-time",
+      "salary": {
+        "min_usd": 155000,
+        "max_usd": 170000,
+        "period": "year",
+        "note": "Listed salary on official posting; null if not specified"
+      },
+      "posting_status_checked": "2026-10-16",
+      "posting_status": "Exact official posting or official ATS page located in Oct 16 search; applications appear available",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://jobs.ashbyhq.com/parallel-bio/bbd7d6c2-beab-4aa6-8f52-23936363db5a/"
+        }
+      ],
+      "job_description": "Develop and qualify immune organoid assay readouts, controls, cross-donor reproducibility and automation interfaces.",
+      "key_must_have_requirements": [
+        "PhD or equivalent",
+        "5+ years measurement/assay development experience",
+        "Multiparameter flow cytometry",
+        "Quantitative analysis"
+      ],
+      "why_good_match": "Strong Bay Area human-organoid platform match, particularly quantitative assay design.",
+      "likely_gaps": [
+        "Explicit 5+ years assay validation experience",
+        "Deep flow cytometry/immunology"
+      ],
+      "tailor": "Emphasize assay validation, reproducibility, advanced human-cell systems and R/Python.",
+      "immediate_action": "Selective stretch application; highlight evidence of assay ownership rather than claiming post-PhD experience."
+    }
+  ]
+}
