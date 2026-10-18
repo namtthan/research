@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-18",
+  "stories": [
+    {
+      "title": "Mitosis remodels intestinal organoid epithelium",
+      "takeaway": "Mouse intestinal organoid imaging links mitotic cell shape changes to neighboring-cell rearrangement.",
+      "what_happened": "A Current Biology study used live imaging and modeling; daughter-cell reinsertion influenced epithelial packing.",
+      "why_it_matters": "Broad relevance to epithelial architecture and organoid mechanobiology.",
+      "caveat": "Mouse organoids; human generalizability remains uncertain.",
+      "tags": [
+        "Organoids",
+        "Mechanobiology"
+      ],
+      "sources": [
+        {
+          "label": "Source",
+          "url": "https://doi.org/10.1016/j.cub.2026.09.012"
+        }
+      ]
+    },
+    {
+      "title": "SpatialZoomer finds spatial transcriptomic patterns across scales",
+      "takeaway": "Graph-based filters reveal molecular organization at cell, niche and tissue scales.",
+      "what_happened": "The October 14 Nature Biomedical Engineering paper benchmarks a multiscale method on brain and cancer datasets.",
+      "why_it_matters": "A methodological reference for spatial omics in engineered tissues; distinct from the previously covered SPACER method.",
+      "caveat": "Not validated as a causal analysis or in intestinal disease models.",
+      "tags": [
+        "Spatial transcriptomics",
+        "Bioinformatics"
+      ],
+      "sources": [
+        {
+          "label": "Source",
+          "url": "https://www.nature.com/articles/s41551-026-01800-w"
+        }
+      ]
+    },
+    {
+      "title": "Gut microbiota can influence nanoparticle clearance by the liver",
+      "takeaway": "A new October 15 research highlight examines microbiome-linked changes in nanomedicine biodistribution.",
+      "what_happened": "The highlight discusses earlier mouse experiments connecting microbial bile acids, liver macrophages and nanoparticle uptake.",
+      "why_it_matters": "Broad relevance to host–microbiome biology and systemic drug delivery.",
+      "caveat": "Research highlight of an older primary study; not a new clinical result.",
+      "tags": [
+        "Microbiome",
+        "Drug delivery"
+      ],
+      "sources": [
+        {
+          "label": "Source",
+          "url": "https://www.nature.com/articles/s41551-026-01811-7"
+        }
+      ]
+    },
+    {
+      "title": "AI-designed proteases achieve selective laboratory cleavage",
+      "takeaway": "Two Nature studies demonstrate computationally designed cysteine and metalloprotease activity.",
+      "what_happened": "Protein designs were screened experimentally and active candidates optimized, as reported October 16.",
+      "why_it_matters": "Illustrates computational protein engineering and assay development.",
+      "caveat": "Early laboratory demonstrations, not clinical efficacy.",
+      "tags": [
+        "Protein engineering",
+        "AI"
+      ],
+      "sources": [
+        {
+          "label": "Source",
+          "url": "https://doi.org/10.1038/s41586-026-11143-w"
+        }
+      ]
+    },
+    {
+      "title": "FDA creates board for drug exclusivity decisions",
+      "takeaway": "The October 16 announcement aims to improve consistency in selected regulatory exclusivity decisions.",
+      "what_happened": "The new CDER board covers certain five-year, three-year and biologic-product exclusivity questions.",
+      "why_it_matters": "Relevant to commercialization and biotech regulatory strategy.",
+      "caveat": "Does not itself change approval standards or guarantee market exclusivity.",
+      "tags": [
+        "FDA",
+        "Regulatory affairs"
+      ],
+      "sources": [
+        {
+          "label": "Source",
+          "url": "https://www.reuters.com/legal/litigation/us-fda-sets-up-board-oversee-drug-exclusivity-determinations-2026-10-16/"
+        }
+      ]
+    }
+  ]
+}
