@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-19",
+  "stories": [
+    {
+      "title": "Gilead's oral α4β7 inhibitor meets Phase 2 ulcerative-colitis endpoint",
+      "takeaway": "Emvistegrast produced a 66% week-12 clinical response at 200 mg versus 37% with placebo in moderate-to-severe ulcerative colitis.",
+      "what_happened": "Gilead reported October 19 that once-daily emvistegrast met the trial's primary endpoint; 31% reached clinical remission versus 8% on placebo. The company plans a Phase 3 monotherapy study in 2027.",
+      "why_it_matters": "A clinically relevant example of targeting intestinal immune-cell trafficking with an oral therapeutic, informing the broader IBD treatment landscape.",
+      "caveat": "Mid-stage topline results; longer-term efficacy, durability, safety and independent peer-reviewed trial data remain to be established. This is UC evidence, not a Crohn's disease result.",
+      "tags": [
+        "IBD",
+        "Ulcerative colitis",
+        "Clinical trial",
+        "Integrins",
+        "Drug development"
+      ],
+      "sources": [
+        {
+          "label": "Reuters, Oct 19",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/gileads-pill-succeeds-mid-stage-bowel-disease-trial-2026-10-19/"
+        },
+        {
+          "label": "Trial registry NCT06290934",
+          "url": "https://clinicaltrials.gov/study/NCT06290934"
+        }
+      ]
+    },
+    {
+      "title": "Desulfovibrio genomic atlas separates disease-associated traits from genus-level labels",
+      "takeaway": "A 2,658-genome analysis identifies species-specific flagellin and other functional traits linked to intestinal inflammation.",
+      "what_happened": "An October 10 Nature Communications study integrated human metagenomes and cultured isolates across 37 Desulfovibrio species. D. desulfuricans flagellin activated TLR5 and altered TGF-β signaling in murine small-intestinal organoids; the authors also mapped sulfur-metabolism pathways in IBD-associated bacteria.",
+      "why_it_matters": "Demonstrates why microbiome functional variation and strain-level mechanisms matter beyond simple taxonomic abundance when studying host–microbiome interactions.",
+      "caveat": "Published October 10 and highlighted today after checking recent coverage. Cohort associations and murine organoid assays do not establish human disease causality; genomic capacity does not directly measure metabolite flux.",
+      "tags": [
+        "Microbiome",
+        "IBD",
+        "Metagenomics",
+        "Organoids",
+        "Host–microbe interactions"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications, Oct 10",
+          "url": "https://www.nature.com/articles/s41467-026-78314-1"
+        }
+      ]
+    },
+    {
+      "title": "Multiplexed sensor-array review maps trade-offs for physiological monitoring",
+      "takeaway": "A new review compares multiplexing strategies and practical constraints for recovering many physiological signals from shared hardware.",
+      "what_happened": "Published October 19 in npj Flexible Electronics, the review organizes time-, frequency-, spatial-, optical-, code- and hybrid-multiplexing around calibration, signal integrity, power, electronics and data handling.",
+      "why_it_matters": "Relevant to engineering scalable, quantitative monitoring systems and microphysiological-model instrumentation.",
+      "caveat": "Review and design framework, not a head-to-head validation of a specific organ-on-chip sensing platform.",
+      "tags": [
+        "Bioengineering",
+        "Sensors",
+        "Microphysiological systems",
+        "Instrumentation",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "npj Flexible Electronics, Oct 19",
+          "url": "https://www.nature.com/articles/s41528-026-00654-1"
+        }
+      ]
+    },
+    {
+      "title": "Eli Lilly and Metis TechBio sign tissue-targeted LNP delivery collaboration",
+      "takeaway": "The new AI-guided lipid nanoparticle partnership carries potential payments of up to roughly $1.1 billion, mostly contingent.",
+      "what_happened": "Metis TechBio announced an October 19 collaboration to optimize ionizable lipids and lipid nanoparticle architectures for tissue-specific drug delivery, with low-double-digit-million-dollar upfront consideration and downstream milestones and royalties.",
+      "why_it_matters": "A current biotech industry signal that tissue-selective delivery, materials optimization and computational experimental platforms remain commercially important.",
+      "caveat": "Headline value is dominated by contingent milestones; no new delivery efficacy or clinical outcomes were demonstrated in the announcement.",
+      "tags": [
+        "Biotech industry",
+        "Drug delivery",
+        "Lipid nanoparticles",
+        "AI",
+        "Partnerships"
+      ],
+      "sources": [
+        {
+          "label": "Reuters, Oct 19",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/metis-techbio-inks-up-11-billion-deal-with-eli-lilly-drug-delivery-tech-2026-10-19/"
+        }
+      ]
+    },
+    {
+      "title": "Macrophage nuclear mechanics help sustain phagocytosis in vivo",
+      "takeaway": "A Drosophila study links engulfment-induced nuclear deformation and Lamin B/LINC function to continued apoptotic-cell clearance.",
+      "what_happened": "An October 19 Nature Communications paper combined in vivo live imaging and genetic perturbations; engulfed apoptotic bodies deformed macrophage nuclei, and reducing Lamin B or LINC components impaired further engulfment.",
+      "why_it_matters": "Connects cell mechanics and immune-cell function, offering a general mechanobiology concept for engineered tissue and inflammatory microenvironments.",
+      "caveat": "Demonstrated in embryonic Drosophila macrophages; mammalian and intestinal relevance remains to be tested.",
+      "tags": [
+        "Mechanobiology",
+        "Immunology",
+        "Macrophages",
+        "Live imaging"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications, Oct 19",
+          "url": "https://www.nature.com/articles/s41467-026-78772-7"
+        }
+      ]
+    }
+  ]
+}
