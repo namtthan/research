@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-20",
+  "stories": [
+    {
+      "title": "Epithelial NF-κB can recruit protective Tregs and support colitis recovery",
+      "takeaway": "A new Nature Communications study finds that appropriately timed epithelial NF-κB signaling can support intestinal repair through CCL22-associated regulatory T-cell recruitment rather than simply amplifying inflammation.",
+      "what_happened": "Published October 20, Barleben and colleagues combined ulcerative-colitis patient biopsies, mouse colitis models, intestinal organoids, single-cell RNA sequencing and secretome assays. In their models, epithelial NF-κB-dependent signals recruited and conditioned protective regulatory T cells; UC-derived epithelial cells showed dysregulated rather than uniformly increased NF-κB responses.",
+      "why_it_matters": "Refines a central concept in mucosal immunology: the function of inflammatory signaling depends on cell compartment, timing and downstream immune communication. The findings offer publicly documented context for intestinal epithelial models and IBD research.",
+      "caveat": "Mechanistic evidence comes substantially from mice and organoids; it does not show that activating epithelial NF-κB is a safe or effective human therapy. NF-κB protein localization or phosphorylation alone may not report transcriptional activity.",
+      "tags": [
+        "IBD",
+        "Intestinal epithelium",
+        "NF-κB",
+        "Treg cells",
+        "Organoids",
+        "Mucosal immunity"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications, October 20, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78796-z"
+        }
+      ]
+    },
+    {
+      "title": "microDBiT spatially profiles host and microbial RNA together in the gut",
+      "takeaway": "A spatial transcriptomics platform jointly maps bacterial and host transcripts within intact mouse intestinal tissue, providing location-resolved host–microbe readouts.",
+      "what_happened": "In an October 19 Nature Communications paper, Tao, Song, Dong and colleagues described microDBiT, a method for spatially resolved profiling of host mRNA alongside bacterial mRNA and rRNA. They applied it to ileal and colonic tissue from germ-free, defined-community-colonized and DSS-colitis mouse models, observing location-specific host and microbial transcriptional changes.",
+      "why_it_matters": "Addresses a persistent measurement gap in host–microbiome research: bulk metagenomics and host single-cell assays often lose the physical relationship between microbes and adjacent tissue.",
+      "caveat": "Demonstrated in mouse tissues and experimental colitis; spatial RNA detection does not itself prove causal host–microbial interactions or validate performance in human clinical specimens.",
+      "tags": [
+        "Microbiome",
+        "Spatial transcriptomics",
+        "Host–microbe interactions",
+        "Gut",
+        "Methods",
+        "Colitis"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications, October 19, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78852-8"
+        }
+      ]
+    },
+    {
+      "title": "FDA grants accelerated approval to dostarlimab for selected locally advanced rectal cancers",
+      "takeaway": "Dostarlimab received an October 19 FDA accelerated approval for previously untreated stage II/III MSI-H or dMMR locally advanced rectal cancer, expanding a potential organ-preserving treatment option.",
+      "what_happened": "The FDA authorized this use based on the single-arm, open-label AZUR-1 trial of 154 patients, using sustained clinical complete response as a key efficacy measure. Patients with complete clinical responses could enter intensive non-operative surveillance rather than immediately receiving conventional local treatment.",
+      "why_it_matters": "A high-impact clinical translation of tumor biology and immune checkpoint therapy in gastrointestinal disease, illustrating how molecular stratification can change treatment pathways.",
+      "caveat": "Accelerated approval is indication-specific and is not evidence for all rectal cancers. The single-arm design and ongoing follow-up warrant caution about long-term outcomes; non-operative management requires close surveillance.",
+      "tags": [
+        "Gastrointestinal cancer",
+        "Immunotherapy",
+        "FDA",
+        "Clinical translation",
+        "Biomarkers"
+      ],
+      "sources": [
+        {
+          "label": "FDA approval notice, October 19, 2026",
+          "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer"
+        },
+        {
+          "label": "FDA press release, October 19, 2026",
+          "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-immunotherapy-may-allow-certain-patients-rectal-cancer-avoid-chemotherapy-radiation-and"
+        }
+      ]
+    },
+    {
+      "title": "Longitudinal antibody profiles reveal IBD-associated signals years before diagnosis",
+      "takeaway": "A 2,000-sample study found Crohn's disease- and ulcerative-colitis-associated antibody patterns in archived serum up to a decade before diagnosis; the work drew new attention during the October gastroenterology meeting.",
+      "what_happened": "Bourgonje and colleagues analyzed longitudinal sera from 200 future Crohn's cases, 200 future ulcerative-colitis cases and 100 controls using phage-display immunoprecipitation sequencing against approximately 357,000 peptides. Crohn's-associated patterns included anti-flagellin and Epstein–Barr-virus-directed responses, whereas UC showed a different combination of antimicrobial and autoantibody signals. The original Gut paper was published online July 23, 2026 and was highlighted in October 18–19 coverage.",
+      "why_it_matters": "Supports investigation of a prediagnostic immune phase in IBD and illustrates the potential of longitudinal biobanks for disease-risk research.",
+      "caveat": "Not a validated clinical screening test and does not establish that particular infections cause IBD. The paper is from July; the recent development is its October conference/news attention, not a newly published experiment.",
+      "tags": [
+        "IBD",
+        "Crohn's disease",
+        "Ulcerative colitis",
+        "Biomarkers",
+        "Longitudinal cohorts",
+        "Serology"
+      ],
+      "sources": [
+        {
+          "label": "Gut original research, published July 23, 2026",
+          "url": "https://gut.bmj.com/content/early/2026/07/23/gutjnl-2025-337762"
+        },
+        {
+          "label": "The Guardian, October 18–19, 2026",
+          "url": "https://www.theguardian.com/science/2026/oct/18/research-predict-inflammatory-bowel-disease-decade-before-diagnosis"
+        }
+      ]
+    },
+    {
+      "title": "Merck KGaA agrees to acquire siRNA developer Silence Therapeutics",
+      "takeaway": "The proposed $1.3 billion equity-value acquisition underscores continued investment in targeted RNA-silencing medicines and rare-disease development.",
+      "what_happened": "Announced October 19, the all-cash agreement offers $20 per Silence Therapeutics American depositary share. Silence's pipeline includes divesiran, an experimental siRNA therapy targeting TMPRSS6 for polycythemia vera; the companies expect closing in the first quarter of 2027, subject to approvals.",
+      "why_it_matters": "An industry signal for RNA therapeutics, precision delivery and translational development capabilities, with potential implications for biotechnology R&D priorities.",
+      "caveat": "The transaction has not closed and remains subject to shareholder, court and regulatory conditions. Divesiran is investigational; deal valuation does not demonstrate efficacy or approval.",
+      "tags": [
+        "Biotech industry",
+        "siRNA",
+        "Rare disease",
+        "Mergers and acquisitions",
+        "Drug development"
+      ],
+      "sources": [
+        {
+          "label": "Silence Therapeutics announcement, October 19, 2026",
+          "url": "https://silence-therapeutics.com/investors/press-releases/press-releases-details/2026/Silence-Therapeutics-Enters-into-Agreement-to-be-Acquired-by-Merck-KGaA-Darmstadt-Germany/default.aspx"
+        },
+        {
+          "label": "Merck KGaA announcement, October 19, 2026",
+          "url": "https://www.emdgroup.com/en/news/silence-therapeutics-19-10-2026.html"
+        }
+      ]
+    }
+  ]
+}
