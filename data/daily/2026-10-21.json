@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-21",
+  "stories": [
+    {
+      "title": "Gut-associated T follicular helper cells provide a local IL-2 niche that maintains immune tolerance",
+      "takeaway": "A Nature Immunology study identifies IL-2-producing T follicular helper cells as a local source of support for regulatory T cells in gut-associated lymphoid tissue.",
+      "what_happened": "Published October 21, Dave and colleagues used mouse genetic and immune-cell experiments to show that loss of this IL-2 source impaired gut-associated Treg homeostasis, caused colitis and systemic inflammation, and was partly alleviated by broad-spectrum antibiotics.",
+      "why_it_matters": "Shows how spatial organization of immune signals and commensal-antigen tolerance shape intestinal inflammation; relevant to public mucosal-immunology research and design of immune-inclusive human tissue models.",
+      "caveat": "Mouse mechanism, not proof of a human Crohn's disease therapy; antibiotic rescue does not isolate a single microbial cause.",
+      "tags": [
+        "Mucosal immunity",
+        "Gut microbiome",
+        "Treg",
+        "IL-2",
+        "Inflammation"
+      ],
+      "sources": [
+        {
+          "label": "Nature Immunology — October 21, 2026",
+          "url": "https://www.nature.com/articles/s41590-026-02690-5"
+        }
+      ]
+    },
+    {
+      "title": "Antibiotics can alter host immunity independently of microbiome depletion",
+      "takeaway": "A new Nature Microbiology resource separates microbiota-mediated antibiotic effects from direct or microbiota-independent effects on host physiology.",
+      "what_happened": "Published October 19, Zelik and colleagues combined conventional and germ-free mouse metagenomics/transcriptomics with the CompoRes analytical tool. They linked vancomycin-related feeding changes to altered diurnal MHC-II expression in the colon, even without a microbiota.",
+      "why_it_matters": "A useful experimental-design warning for studies treating antibiotic exposure as a microbiome-only perturbation; systemic and host-directed effects can confound interpretation.",
+      "caveat": "Findings emphasize mouse models and specific antibiotic exposures; the work does not imply all antibiotics have identical host effects.",
+      "tags": [
+        "Antibiotics",
+        "Microbiome",
+        "Germ-free models",
+        "Host physiology",
+        "Transcriptomics"
+      ],
+      "sources": [
+        {
+          "label": "Nature Microbiology — October 19, 2026",
+          "url": "https://www.nature.com/articles/s41564-026-02453-w"
+        }
+      ]
+    },
+    {
+      "title": "Lumen Bioscience reports Phase 2 recurrence reduction in C. difficile infection",
+      "takeaway": "Company-reported RePreve trial results suggest the oral investigational biologic LMN-201 may reduce C. difficile recurrence when added to standard antibiotics.",
+      "what_happened": "In an October 21 announcement, Lumen Bioscience reported 9.1% recurrence with LMN-201 versus 55.6% with placebo, and global cure of 83.3% versus 36.4%, with details planned for IDWeek 2026.",
+      "why_it_matters": "A notable clinical-stage example of oral biologic development for a gut pathogen, where microbiome disruption and infection recurrence are important challenges.",
+      "caveat": "Company press release rather than independently reviewed full trial report; verify sample sizes, endpoints, confidence intervals and adverse events before interpreting efficacy.",
+      "tags": [
+        "C. difficile",
+        "Clinical trials",
+        "Oral biologics",
+        "Gut infection",
+        "Biotech"
+      ],
+      "sources": [
+        {
+          "label": "Lumen Bioscience press release — October 21, 2026",
+          "url": "https://www.prnewswire.com/news-releases/lumen-bio-reports-positive-phase-2-results-from-the-repreve-clinical-trial-lmn-201-for-c-difficile-infection-302915046.html"
+        }
+      ]
+    },
+    {
+      "title": "Megabase-scale plasmids reveal hidden genetic capacity in gut-associated Enterobacteriaceae",
+      "takeaway": "A Nature Communications study reports unusually large plasmids, up to 1.58 Mb, in Enterobacteriaceae and detects related elements in hundreds of microbiome samples.",
+      "what_happened": "Published October 20, Guitor and colleagues reconstructed 21 complete megaplasmid genomes and identified transfer-related machinery, multidrug efflux systems and extensive tRNA repertoires. Related elements appeared in at least 400 gut and other microbiomes.",
+      "why_it_matters": "Expands the genomic context for microbial adaptation and horizontal gene transfer in human-associated bacterial communities.",
+      "caveat": "Predicted self-transmission, efflux and defense functions are not direct measurements of their activity or clinical impact in the human gut.",
+      "tags": [
+        "Microbial genomics",
+        "Enterobacteriaceae",
+        "Plasmids",
+        "Microbiome",
+        "Horizontal gene transfer"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — October 20, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78742-z"
+        }
+      ]
+    },
+    {
+      "title": "Human embryo spatial multi-omics atlas combines RNA and metabolite maps",
+      "takeaway": "A Nature Cell Biology resource co-registers spatial transcriptomics and metabolomics to chart early human organogenesis.",
+      "what_happened": "Published October 20, Wang and colleagues profiled one Carnegie stage 12 human embryo with Stereo-seq and MALDI mass-spectrometry imaging, integrating more than 150,000 spatial transcriptomic units with metabolite patterns.",
+      "why_it_matters": "Illustrates how tissue-scale biochemical context can complement gene-expression maps when benchmarking complex engineered human tissues.",
+      "caveat": "Single embryo and single developmental time point; spatial metabolite abundance is not metabolic flux or causal evidence of lineage specification.",
+      "tags": [
+        "Spatial multi-omics",
+        "Human development",
+        "Tissue engineering",
+        "Metabolomics",
+        "Single-cell methods"
+      ],
+      "sources": [
+        {
+          "label": "Nature Cell Biology — October 20, 2026",
+          "url": "https://www.nature.com/articles/s41556-026-02086-5"
+        }
+      ]
+    }
+  ]
+}
