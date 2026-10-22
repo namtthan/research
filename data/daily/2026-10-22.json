@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-22",
+  "stories": [
+    {
+      "title": "3D Cell Painting reveals drug-response differences obscured in 2D cultures",
+      "takeaway": "A scalable imaging workflow profiles individual cells within intact spheroids and distinguishes drug effects that are difficult to separate in monolayers.",
+      "what_happened": "In Nature Communications (October 21), researchers combined tissue clearing, automated focusing and spinning-disk confocal microscopy in 384-well plates. Profiling 52 drugs, they distinguished 5-fluorouracil from olaparib responses in spheroids, with supporting cell-cycle and DNA-damage assays.",
+      "why_it_matters": "Adds a reproducible, human-relevant phenotypic screening method for advanced 3D tissue models.",
+      "caveat": "Spheroid imaging and selected drug assays do not establish clinical predictive validity across tissues.",
+      "tags": [
+        "3D culture",
+        "High-content imaging",
+        "Drug screening",
+        "NAMs"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications, October 21, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78596-5"
+        }
+      ]
+    },
+    {
+      "title": "Synthetic recordanelles archive transient transcriptomic signals in human cells",
+      "takeaway": "Genetically encoded RNA-storing compartments preserve cellular transcriptional history for later single-cell analysis.",
+      "what_happened": "A Nature Biotechnology study (October 21) reports mitochondria-anchored synthetic condensates that recruit and protect endogenous mRNAs for days, capturing transient inducible and interferon responses.",
+      "why_it_matters": "Offers a potentially useful way to investigate dynamic cell-state responses beyond a conventional single-timepoint RNA-seq snapshot.",
+      "caveat": "This is a proof-of-concept engineering platform; performance across primary cells and complex tissues requires further validation.",
+      "tags": [
+        "Synthetic biology",
+        "Single-cell RNA-seq",
+        "Transcriptomics",
+        "Bioengineering"
+      ],
+      "sources": [
+        {
+          "label": "Nature Biotechnology, October 21, 2026",
+          "url": "https://www.nature.com/articles/s41587-026-03327-6"
+        }
+      ]
+    },
+    {
+      "title": "Review evaluates microphysiological models of human gastrointestinal disease",
+      "takeaway": "A new review synthesizes how organoids and organ-on-chip systems model inflammatory, infectious and neoplastic GI disorders.",
+      "what_happened": "Published online October 5 and included in the October issue of Nature Biomedical Engineering, the review by Peñarete-Acosta and colleagues surveys advances in human-relevant GI models, host microenvironments and translational barriers.",
+      "why_it_matters": "Provides a public framework for assessing physiological fidelity, scalability and complementary roles of engineered intestinal models.",
+      "caveat": "This is a review, not newly reported experimental efficacy; the online publication predates today's briefing.",
+      "tags": [
+        "Organ-on-chip",
+        "Gastrointestinal disease",
+        "Organoids",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "PubMed / Nature Biomedical Engineering",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42834084/"
+        }
+      ]
+    },
+    {
+      "title": "New editorial calls for more physiologically faithful human tissue models",
+      "takeaway": "Nature Biomedical Engineering emphasizes combining complementary experimental systems and improving tissue-specific context.",
+      "what_happened": "An October 15 editorial surveys organoids, organ chips and microphysiological models, highlighting the importance of mechanical, stromal, immune and barrier features while acknowledging that no single model captures whole-organism physiology.",
+      "why_it_matters": "A timely field-level perspective on validation and translational expectations for new approach methodologies.",
+      "caveat": "Editorial perspective rather than original data; published one week before this briefing.",
+      "tags": [
+        "NAMs",
+        "Tissue engineering",
+        "Model validation",
+        "Editorial"
+      ],
+      "sources": [
+        {
+          "label": "Nature Biomedical Engineering, October 15, 2026",
+          "url": "https://www.nature.com/articles/s41551-026-01824-2"
+        }
+      ]
+    },
+    {
+      "title": "New organ-on-chip microscopy workflow integrates intact-chip imaging and ultrastructure",
+      "takeaway": "A recently accepted methods paper proposes multiscale analysis of organ-on-chip tissue architecture.",
+      "what_happened": "Frontiers in Bioengineering and Biotechnology lists an October 18 acceptance for a methods article by Gierke and colleagues integrating intact-chip imaging, histopathology and electron microscopy.",
+      "why_it_matters": "Connects device-scale readouts with tissue morphology and ultrastructure, potentially strengthening characterization of engineered models.",
+      "caveat": "Accepted listing only; full peer-reviewed article details and final publication are not yet available from the cited listing.",
+      "tags": [
+        "Organ-on-chip",
+        "Imaging",
+        "Histopathology",
+        "Methods"
+      ],
+      "sources": [
+        {
+          "label": "Frontiers section article listing, accepted October 18, 2026",
+          "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/sections/organoids-and-organ-on-a-chip/articles"
+        }
+      ]
+    }
+  ]
+}
