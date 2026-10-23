@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-23",
+  "type": "industry_job_shortlist",
+  "title": "Industry Role Shortlist",
+  "scope": {
+    "geography": "Bay Area first; Cleveland/Ohio second; nationwide third. No equally well-verified Ohio roles met the selection criteria today.",
+    "selection_rule": "Only exact official employer/ATS requisitions with visible application form as of 2026-10-23; late-2026 PhD completion not treated as an automatic exclusion; publicly describable fit only."
+  },
+  "jobs": [
+    {
+      "priority": 1,
+      "recommendation": "APPLY_NOW",
+      "title": "Scientist I/II, Functional Genomics",
+      "company": "Xaira Therapeutics",
+      "location": "South San Francisco, CA",
+      "work_arrangement": "On-site; application asks about five days per week",
+      "term": "Full-time",
+      "salary": {
+        "min_usd": 110000,
+        "max_usd": 155000,
+        "period": "year",
+        "note": "Official posted base range"
+      },
+      "posting_status_checked": "2026-10-23",
+      "posting_status": "Exact official Greenhouse requisition has a live Apply form as of check.",
+      "posting_links": [
+        {
+          "label": "Official Greenhouse application",
+          "url": "https://job-boards.greenhouse.io/xairatherapeutics/jobs/5198737007"
+        }
+      ],
+      "job_description": "Develop and scale organoid models for CRISPR-based functional genomics and screening, integrating quantitative data with AI/ML discovery teams.",
+      "key_must_have_requirements": [
+        "Relevant PhD with 0–4 years of subsequent experience",
+        "Hands-on patient-derived or other organoid development and characterization",
+        "CRISPR perturbation in complex 3D models",
+        "High-throughput screening or automation familiarity"
+      ],
+      "why_good_match": "Very strong match to publicly describable organoid, tissue engineering and quantitative assay skills; Bay Area priority.",
+      "likely_gaps": [
+        "Direct CRISPR delivery and pooled screening in organoids may require upskilling",
+        "PhD must be complete before role start; confirm 2027 timing"
+      ],
+      "tailor": "Foreground organoid culture, human tissue model development, reproducible assay design and interdisciplinary data analysis; be specific about CRISPR experience level.",
+      "immediate_action": "Submit CV through official Greenhouse form; clarify expected PhD completion and feasible start date."
+    },
+    {
+      "priority": 2,
+      "recommendation": "APPLY",
+      "title": "Scientist II, High Throughput Biology",
+      "company": "Xaira Therapeutics",
+      "location": "South San Francisco, CA",
+      "work_arrangement": "On-site; five days per week",
+      "term": "Full-time",
+      "salary": {
+        "min_usd": 124000,
+        "max_usd": 155000,
+        "period": "year",
+        "note": "Official posted base range"
+      },
+      "posting_status_checked": "2026-10-23",
+      "posting_status": "Exact official Greenhouse requisition shows Apply form; listing explicitly welcomes recent PhD graduates with level adjustment.",
+      "posting_links": [
+        {
+          "label": "Official Greenhouse application",
+          "url": "https://job-boards.greenhouse.io/xairatherapeutics/jobs/5238009007"
+        }
+      ],
+      "job_description": "Design cell-based and molecular assays, scale high-throughput functional screening and automation, and analyze sequencing-based readouts.",
+      "key_must_have_requirements": [
+        "Relevant PhD; recent graduates explicitly considered",
+        "Molecular biology and cell-line engineering",
+        "Pooled screening and NGS-based readouts",
+        "R/Python and experimental troubleshooting"
+      ],
+      "why_good_match": "Quantitative cell models, assay development, experimental workflows and transcriptomic analysis are transferable to high-throughput discovery.",
+      "likely_gaps": [
+        "Pooled screening, flow cytometry and display-library workflows",
+        "Industry-scale automation experience"
+      ],
+      "tailor": "Frame expertise as a reproducible platform-development track record; highlight assay validation and scRNA-seq analysis, without asserting unverified screening experience.",
+      "immediate_action": "Apply via Greenhouse and ask recruiter about appropriate level for a late-2026 PhD completion."
+    },
+    {
+      "priority": 3,
+      "recommendation": "STRETCH",
+      "title": "Senior Scientist Single Cell Assay and Technology Development",
+      "company": "Xaira Therapeutics",
+      "location": "South San Francisco, CA",
+      "work_arrangement": "On-site",
+      "term": "Full-time",
+      "salary": {
+        "min_usd": 136000,
+        "max_usd": 170000,
+        "period": "year",
+        "note": "Official posted base range"
+      },
+      "posting_status_checked": "2026-10-23",
+      "posting_status": "Exact official Greenhouse requisition shows Apply form; posting says title may be adjusted for strong applicants with fewer years.",
+      "posting_links": [
+        {
+          "label": "Official Greenhouse application",
+          "url": "https://job-boards.greenhouse.io/xairatherapeutics/jobs/5271881007"
+        }
+      ],
+      "job_description": "Invent and optimize single-cell/NGS assay technologies, molecular readouts and scalable experimental workflows for drug discovery.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "Demonstrated single-cell or NGS assay invention or major improvement",
+        "NGS library preparation, assay chemistry and quality control",
+        "Mammalian cell assays and R/Python analysis"
+      ],
+      "why_good_match": "Broad single-cell, cell-model and bioengineering methods overlap; technology-development focus aligns with an engineering research trajectory.",
+      "likely_gaps": [
+        "Role asks for extensive hands-on NGS assay chemistry and single-cell technology invention",
+        "Seniority exceeds typical new-PhD level"
+      ],
+      "tailor": "Lead with documented assay/platform inventions, reproducibility, quantitative data and technology-transfer experience; do not overstate sequencing wet-lab depth.",
+      "immediate_action": "Apply only with a targeted assay-development CV and explicitly invite level adjustment."
+    }
+  ]
+}
