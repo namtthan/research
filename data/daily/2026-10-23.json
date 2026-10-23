@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-23",
+  "stories": [
+    {
+      "title": "Longitudinal metagenomics links IBD inflammation to loss of commensal persistence",
+      "takeaway": "A 4,839-metagenome meta-analysis finds that IBD dysbiosis is characterized more by commensal depletion and strain instability than by uniform pathogen expansion.",
+      "what_happened": "Ansorge and colleagues analyzed public gut metagenomes across individuals and timepoints, reporting greater within-person and between-person variation, reduced strain persistence and engraftment, and an inflammatory index associated with community composition. Published October 21 in Nature Communications.",
+      "why_it_matters": "Highlights the importance of time-resolved, strain-aware microbiome measurements and distinguishing inflammatory correlates from potential microbial drivers in human intestinal disease.",
+      "caveat": "Observational meta-analysis; association between inflammation and microbial instability does not establish the direction of causation or demonstrate that restoring strains treats IBD.",
+      "tags": [
+        "IBD",
+        "Gut microbiome",
+        "Metagenomics",
+        "Strain dynamics",
+        "Inflammation"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications, October 21, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78621-7"
+        }
+      ]
+    },
+    {
+      "title": "A soluble SIRPα ligand reshapes innate immune suppression and tumor immunity",
+      "takeaway": "SERPINA3 is reported to bind and activate inhibitory SIRPα on multiple immune-cell types, opening a new therapeutic axis beyond CD47.",
+      "what_happened": "A Nature Immunology study published October 22 combines ligand-binding assays, cell studies and preclinical inflammation, autoimmunity and tumor models; SERPINA3-based treatment suppresses inflammatory responses, whereas blocking tumor-associated SERPINA3 improves antitumor effects in models.",
+      "why_it_matters": "Provides a new mechanistic entry point for immune-receptor signaling and translational assay development across inflammatory disease and oncology.",
+      "caveat": "Therapeutic effects are preclinical; SERPINA3 biology is context dependent, including reported adverse inflammatory effects in some cell types.",
+      "tags": [
+        "Immunology",
+        "Innate immunity",
+        "SIRPα",
+        "Inflammation",
+        "Cancer"
+      ],
+      "sources": [
+        {
+          "label": "Nature Immunology, October 22, 2026",
+          "url": "https://www.nature.com/articles/s41590-026-02682-5"
+        }
+      ]
+    },
+    {
+      "title": "High-capture spatial transcriptomics resolves thin cell layers at micrometer scale",
+      "takeaway": "A sequencing-based spatial transcriptomics platform combines roughly 1-µm capture addresses with improved RNA capture efficiency.",
+      "what_happened": "Liao and colleagues report up to approximately 14,000 UMIs per 10 × 10 µm² in mouse testis at stated sequencing saturation and recover rare, single-cell-layer structures at effective 2-µm resolution. Published October 21 in Nature Communications.",
+      "why_it_matters": "May improve spatial molecular profiling in complex engineered tissues and studies of tissue organization where sparse transcript capture limits interpretation.",
+      "caveat": "Benchmark performance is tissue- and workflow-specific; reported mouse-testis capture rates should not be assumed to generalize to intestinal or chip-derived specimens.",
+      "tags": [
+        "Spatial transcriptomics",
+        "Single-cell",
+        "Tissue profiling",
+        "Methods",
+        "Bioengineering"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications, October 21, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78854-6"
+        }
+      ]
+    },
+    {
+      "title": "Silk fibroin instructs a regenerative keratinocyte program beyond passive scaffolding",
+      "takeaway": "A biomaterials study reports that silk fibroin can directly program keratinocytes into a migratory, paracrine state that coordinates skin repair.",
+      "what_happened": "In Nature Communications on October 21, Zhu and colleagues combined single-cell sequencing, proteomics and perturbations to implicate ITGA2–PI3K–Akt signaling and Ccl27 in epidermal–dermal communication and wound repair.",
+      "why_it_matters": "Demonstrates how biomaterial chemistry may actively shape cell states and cross-tissue signaling, a broadly relevant principle for tissue-engineered model design.",
+      "caveat": "Mechanistic and repair data concern skin models; they do not show equivalent effects in intestinal epithelium or clinical wound healing.",
+      "tags": [
+        "Biomaterials",
+        "Tissue engineering",
+        "Wound healing",
+        "Cell signaling",
+        "Single-cell"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications, October 21, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78745-w"
+        }
+      ]
+    },
+    {
+      "title": "Microfluidic control of Hes1 oscillations changes intestinal cell-fate balance",
+      "takeaway": "A Science study reports that the frequency—not just the level—of Notch-linked Hes1 oscillations influences absorptive versus secretory differentiation in intestinal models.",
+      "what_happened": "Weterings and colleagues tracked endogenous Hes1 oscillations along the crypt–villus axis and used a microfluidic system to perturb signaling dynamics in organoids. Published October 15 in Science; included today for its unusually direct organoid–microfluidics relevance.",
+      "why_it_matters": "Suggests a general design principle for dynamic microenvironmental control in organoid and microphysiological models.",
+      "caveat": "The mechanistic evidence is from intestinal experimental models; translation to human disease models or therapeutic manipulation remains to be established. Published eight days before this brief.",
+      "tags": [
+        "Organoids",
+        "Microfluidics",
+        "Intestinal biology",
+        "Notch",
+        "Cell differentiation"
+      ],
+      "sources": [
+        {
+          "label": "Science, October 15, 2026, PubMed record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42879562/"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1126/science.adt1928"
+        }
+      ]
+    }
+  ]
+}
