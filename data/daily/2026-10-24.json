@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-24",
+  "stories": [
+    {
+      "title": "Microbiota recolonization reveals CB1-dependent changes in gut motility",
+      "takeaway": "Gut transit and colonic motility recover differently after antibiotics depending on cannabinoid CB1 receptor signaling, even as measured microbiome diversity changes similarly.",
+      "what_happened": "A Scientific Reports study published October 23 compared wild-type and CB1-knockout mice after two weeks of antibiotics followed by two or four weeks of natural recolonization. Antibiotics slowed whole-gut transit and reduced enteric neuronal and glial density in both groups; recolonization restored enteric cell populations, while motility outcomes differed by genotype.",
+      "why_it_matters": "Highlights how host neurophysiology can shape functional responses to microbiota depletion and recolonization, an important consideration in human-relevant intestinal model design.",
+      "caveat": "Mouse knockout and antibiotic-perturbation results do not establish equivalent mechanisms in humans; microbial diversity measures cannot resolve all community functions.",
+      "tags": [
+        "Gut microbiome",
+        "Enteric nervous system",
+        "Motility",
+        "Endocannabinoid signaling",
+        "Microbiota recolonization"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — primary research, October 23, 2026",
+          "url": "https://www.nature.com/articles/s41598-026-77334-7"
+        }
+      ]
+    },
+    {
+      "title": "Stool immune and barrier biomarkers distinguish confirmed neonatal intestinal injury",
+      "takeaway": "In a multicenter cohort of 130 preterm infants, stool secretory IgA had the strongest single-marker discrimination for confirmed necrotizing enterocolitis (AUC 0.82); larger biomarker panels added only modest improvement.",
+      "what_happened": "A Pediatric Research study published October 23 analyzed six fecal biomarkers in 42 infants with confirmed necrotizing enterocolitis and 88 without it. A four-marker model reached AUC 0.83, while a six-marker complete-case model reached AUC 0.86 in 108 infants.",
+      "why_it_matters": "Illustrates the potential and limitations of noninvasive measurements spanning mucosal immunity, inflammation and epithelial barrier biology in intestinal disease.",
+      "caveat": "This was discrimination of confirmed disease from controls, not prospective diagnosis among infants with suspected disease; feeding-related confounding and external validation remain important.",
+      "tags": [
+        "Intestinal disease",
+        "Necrotizing enterocolitis",
+        "Mucosal immunity",
+        "Biomarkers",
+        "Epithelial barrier"
+      ],
+      "sources": [
+        {
+          "label": "Pediatric Research — clinical study, October 23, 2026",
+          "url": "https://www.nature.com/articles/s41390-026-05566-4"
+        }
+      ]
+    },
+    {
+      "title": "GradientScreen uses microfluidic drug ratios to profile pediatric leukemia response",
+      "takeaway": "Overlapping microfluidic drug gradients enabled ratiometric combination-response measurements associated with clinical response metrics in pediatric acute lymphoblastic leukemia.",
+      "what_happened": "In Nature Biomedical Engineering on October 23, Williams and colleagues described GradientScreen, a microfluidic assay for drug synergy and efficacy. Using diagnostic bone marrow samples and partial least squares regression, response metrics correlated with minimal residual disease and later clinical endpoints, and the assay was explored for alternative regimens.",
+      "why_it_matters": "Demonstrates a translational application of controlled microfluidic gradients and functional phenotyping for personalized therapy research.",
+      "caveat": "Clinical correlation does not establish that assay-guided treatment improves outcomes; larger prospective validation and workflow integration are still needed.",
+      "tags": [
+        "Microfluidics",
+        "Precision oncology",
+        "Functional screening",
+        "Drug combinations",
+        "Biomedical engineering"
+      ],
+      "sources": [
+        {
+          "label": "Nature Biomedical Engineering — primary research, October 23, 2026",
+          "url": "https://www.nature.com/articles/s41551-026-01818-0"
+        }
+      ]
+    },
+    {
+      "title": "Sustained-release collagen hydrogel recruits regulatory T-cell activity for bone repair",
+      "takeaway": "A collagen–laponite hydrogel prolongs local release of a regulatory T-cell-inducing compound and improves bone-defect healing in an experimental model.",
+      "what_happened": "A Nature Biomedical Engineering study published October 23 embedded the cyclin-dependent kinase inhibitor AS2863619 in collagen hydrogels, with laponite nanoparticles extending retention. In a calvarial defect model, local treatment increased regulatory T-cell activity, reduced pro-inflammatory macrophage responses and enhanced bone regeneration, including complete bridging in some cases.",
+      "why_it_matters": "Shows how biomaterial release kinetics can control local immune responses to support tissue regeneration without adoptive T-cell transfer.",
+      "caveat": "Preclinical bone-defect evidence; generalization to other tissues, long-term safety and clinical performance remain unknown.",
+      "tags": [
+        "Biomaterials",
+        "Controlled release",
+        "Regulatory T cells",
+        "Immunoengineering",
+        "Tissue regeneration"
+      ],
+      "sources": [
+        {
+          "label": "Nature Biomedical Engineering — primary research, October 23, 2026",
+          "url": "https://www.nature.com/articles/s41551-026-01817-1"
+        }
+      ]
+    },
+    {
+      "title": "Neuron-derived tyramine mediates radiation bystander signaling in worms",
+      "takeaway": "A Caenorhabditis elegans study implicates neuronal tyramine in communicating localized radiation exposure to distant tissues through intestinal hormone signaling.",
+      "what_happened": "In Nature Communications on October 23, Huang and colleagues used localized UV irradiation as their main model and localized X-ray irradiation as a supporting test. They identified a tyramine-dependent pathway involving gut insulin-like hormone release and stress and DNA-damage responses in non-irradiated tissues.",
+      "why_it_matters": "Adds a mechanistic example of inter-tissue communication after localized injury and illustrates the importance of separating direct radiation damage from secondary systemic signals.",
+      "caveat": "The primary experiments used worms and UV exposure; mammalian relevance and radiotherapy applications require separate confirmation.",
+      "tags": [
+        "Radiation biology",
+        "Bystander effects",
+        "Inter-organ signaling",
+        "Stress response",
+        "Mechanistic biology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — primary research, October 23, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78815-z"
+        }
+      ]
+    }
+  ]
+}
