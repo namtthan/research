@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-25",
+  "stories": [
+    {
+      "title": "Matrix stiffening drives Crohn's-associated mesenteric adipocyte dysfunction through Piezo1",
+      "takeaway": "A mechanistic study links stiffened mesenteric extracellular matrix to Piezo1-dependent calcium entry, mitochondrial dysfunction and inflammatory adipocyte behavior in Crohn's disease models.",
+      "what_happened": "Published October 23 in Journal of Crohn's and Colitis, investigators combined human mesenteric specimens, stiffness-tunable 3D hydrogels, primary adipocytes, pharmacologic perturbations and mouse models. Piezo1 activation promoted mitochondrial calcium overload and permeability-transition-pore opening; blocking these pathways reduced adipocyte injury and experimental colitis.",
+      "why_it_matters": "Illustrates how tissue mechanics and stromal metabolism can interact with intestinal inflammation, broadening mechanistic disease modeling beyond epithelial and immune compartments.",
+      "caveat": "The intervention evidence is experimental; efficacy and safety of targeting this pathway in people with Crohn's disease remain untested.",
+      "tags": [
+        "Crohn's disease",
+        "Mechanobiology",
+        "Mesenteric adipose tissue",
+        "Piezo1",
+        "Mitochondria"
+      ],
+      "sources": [
+        {
+          "label": "Journal of Crohn's and Colitis — 23 October 2026",
+          "url": "https://doi.org/10.1093/ecco-jcc/jjag169"
+        }
+      ]
+    },
+    {
+      "title": "Engineered gut bacteria deliver GLP-1 in response to diet in mouse obesity models",
+      "takeaway": "A diet-responsive bacterial gene circuit outperformed constitutive microbial GLP-1 delivery in a mouse obesity model and altered the abundance of bacteria with potential to inactivate GLP-1.",
+      "what_happened": "Published October 24 in Genome Medicine, the study engineered probiotic bacteria for programmable GLP-1 secretion, compared inducible and persistent delivery in obese mice, and profiled gut microbial enzymes capable of degrading the peptide.",
+      "why_it_matters": "Highlights a synthetic-biology strategy in which therapeutic dosing is coupled to a physiological input while accounting for microbial metabolism of the therapeutic payload.",
+      "caveat": "Preclinical obesity results do not establish human efficacy, safe colonization or reliable control of dosing in patients.",
+      "tags": [
+        "Synthetic biology",
+        "Gut microbiome",
+        "Engineered probiotics",
+        "GLP-1",
+        "Drug delivery"
+      ],
+      "sources": [
+        {
+          "label": "Genome Medicine — 24 October 2026",
+          "url": "https://doi.org/10.1186/s13073-026-01809-5"
+        }
+      ]
+    },
+    {
+      "title": "Review connects intestinal microbiome alterations with IBD-associated arthritis",
+      "takeaway": "A new synthesis compares microbial taxa, metabolites, barrier function and immune profiles across inflammatory bowel disease and spondyloarthritis.",
+      "what_happened": "Published October 24 in Communications Medicine, the review evaluates stool and mucosal microbiome evidence for shared features of IBD and inflammatory arthritis, including possible links to intestinal permeability and immune regulation.",
+      "why_it_matters": "Provides a cross-organ perspective on gut microbial ecology and systemic inflammatory disease, while clarifying priorities for causal studies.",
+      "caveat": "The literature remains dominated by associations and heterogeneous cohorts; shared microbiome signatures are not proof of a common causal pathway.",
+      "tags": [
+        "IBD",
+        "Spondyloarthritis",
+        "Gut microbiome",
+        "Extraintestinal manifestations",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Communications Medicine — 24 October 2026",
+          "url": "https://www.nature.com/articles/s43856-026-01919-6"
+        }
+      ]
+    },
+    {
+      "title": "IBS review argues for measuring stimulus-evoked enteroendocrine function rather than cell counts alone",
+      "takeaway": "A synthesis of human challenge studies and organoid research finds no universal IBS endocrine signature and emphasizes dynamic nutrient-response measurements.",
+      "what_happened": "Published October 23 in Frontiers in Medicine, the authors review enteroendocrine nutrient sensing, serotonin and gut-hormone handling, and downstream motor and sensory responses across IBS phenotypes.",
+      "why_it_matters": "Offers a practical conceptual framework for integrating cellular models with functional physiological readouts in intestinal disease research.",
+      "caveat": "This is a narrative review; proposed response profiling is not a validated IBS diagnostic test or established clinical endotype.",
+      "tags": [
+        "Enteroendocrine cells",
+        "Irritable bowel syndrome",
+        "Organoids",
+        "Gut-brain axis",
+        "Physiology"
+      ],
+      "sources": [
+        {
+          "label": "Frontiers in Medicine — 23 October 2026",
+          "url": "https://doi.org/10.3389/fmed.2026.1992567"
+        }
+      ]
+    },
+    {
+      "title": "Human multi-omics study links chronic psychosocial stress with gut microbial and lipid differences",
+      "takeaway": "In 117 premenopausal women, higher discrimination-related stress scores were associated with selected microbiome, lipidomic and resting-state brain-connectivity differences.",
+      "what_happened": "Published October 24 in Scientific Reports, investigators analyzed stool 16S profiles, blood lipidomics, MRI connectivity and psychosocial measures, reporting associations involving specific microbial groups, phospholipid species and neural connections.",
+      "why_it_matters": "Demonstrates an integrated observational approach to studying interactions among environmental stress, gut ecology and host physiology.",
+      "caveat": "Cross-sectional, exploratory associations in a specific cohort cannot establish causal mediation, directionality or generalizability to other populations.",
+      "tags": [
+        "Gut microbiome",
+        "Multi-omics",
+        "Lipidomics",
+        "Gut-brain axis",
+        "Observational study"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — 24 October 2026",
+          "url": "https://www.nature.com/articles/s41598-026-75747-y"
+        }
+      ]
+    }
+  ]
+}
