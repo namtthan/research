@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-26",
+  "stories": [
+    {
+      "title": "Personalized mRNA neoantigen therapy improves recurrence-free survival in Phase 3 melanoma trial",
+      "takeaway": "In the randomized INTerpath-001 study, individualized intismeran autogene plus pembrolizumab reduced the relative risk of melanoma recurrence or death by 42% versus pembrolizumab alone after surgery.",
+      "what_happened": "Merck and Moderna released detailed results on October 22 from 1,137 patients with completely resected stage IIB–IV melanoma. At a median 24.6-month follow-up, two-year recurrence-free survival was 82.2% with the combination versus 70.0% with pembrolizumab alone (HR 0.58; 95% CI 0.45–0.75). Distant-metastasis-free survival also improved; the results were scheduled for presentation at ESMO 2026.",
+      "why_it_matters": "A pivotal clinical test of patient-specific mRNA manufacturing and neoantigen immunotherapy, with implications for precision biotechnology and translational platform development.",
+      "caveat": "The therapy remains investigational; overall-survival data are immature, benefit in other cancers is unproven, and the report is a company-released trial readout rather than an independently evaluated full publication.",
+      "tags": [
+        "mRNA therapeutics",
+        "Personalized medicine",
+        "Phase 3",
+        "Cancer immunotherapy",
+        "Biotechnology"
+      ],
+      "sources": [
+        {
+          "label": "Merck and Moderna — Phase 3 detailed results, October 22, 2026",
+          "url": "https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/"
+        },
+        {
+          "label": "Reuters — October 22–23, 2026",
+          "url": "https://www.reuters.com/legal/litigation/merckmoderna-cancer-vaccine-cuts-risk-death-or-recurrence-melanoma-by-over-40-2026-10-22/"
+        }
+      ]
+    },
+    {
+      "title": "Microbiota-derived butyrate intersects with non-enzymatic IDO1 signaling in cardiac injury",
+      "takeaway": "A new mouse study links reduced gut-microbiota-derived butyrate with cardiac oxidative injury through a STAT1–IDO1–ANGPTL4 pathway, including a signaling function of IDO1 distinct from its enzymatic activity.",
+      "what_happened": "Published October 25 in Cell Death & Disease, Liu and colleagues used angiotensin II-treated mice and molecular perturbations to show that IDO1 Y111 phosphorylation engages SHP2 and relieves Notch1/HES1 repression, increasing ANGPTL4-associated oxidative damage. Butyrate acted through AHR/SOCS3-linked regulation and IDO1 degradation in the experimental system.",
+      "why_it_matters": "Illustrates how microbial metabolites can regulate host tissue signaling and redox responses beyond the intestine, motivating more mechanistically resolved host–microbe research.",
+      "caveat": "Primarily mechanistic mouse and experimental evidence; the proposed pathway is not an established clinical treatment target, and findings should not be extrapolated to intestinal disease.",
+      "tags": [
+        "Gut microbiome",
+        "Microbial metabolites",
+        "Butyrate",
+        "IDO1",
+        "Host–microbe signaling"
+      ],
+      "sources": [
+        {
+          "label": "Cell Death & Disease — October 25, 2026",
+          "url": "https://www.nature.com/articles/s41419-026-09358-w"
+        }
+      ]
+    },
+    {
+      "title": "GPR55 structures reveal glycosylation-dependent reversal of a ligand's activity",
+      "takeaway": "Structural and functional experiments show that changing an extracellular GPR55 glycosylation site can switch a ligand from inverse agonism to agonism.",
+      "what_happened": "In Nature Communications on October 24, Claff and colleagues resolved inactive and active cryo-EM structures of the lipid-sensing receptor GPR55, developed an improved tool compound, and used mutagenesis, glycoproteomics and HDX-MS to investigate an activation mechanism unlike the canonical GPCR helix-VI movement.",
+      "why_it_matters": "Demonstrates why receptor glycosylation and structural context matter for chemical-probe interpretation and development of drugs targeting inflammation- and metabolism-associated signaling.",
+      "caveat": "Receptor structural and assay findings do not yet demonstrate efficacy in inflammatory disease or establish a clinically validated GPR55 therapeutic.",
+      "tags": [
+        "GPCR",
+        "GPR55",
+        "Cryo-EM",
+        "Glycosylation",
+        "Drug discovery"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — October 24, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78538-1"
+        }
+      ]
+    },
+    {
+      "title": "Designed protein fiducials unlock cryo-EM views of difficult GPCR conformations",
+      "takeaway": "Generative protein design and ensemble prediction produced rigid fusion markers that enable cryo-EM analysis of small, flexible receptor states without conventional signaling partners.",
+      "what_happened": "Published October 24 in Nature Communications, Vo and colleagues determined inactive structures for four pharmacologically relevant GPCRs and engineered a beta2-adrenergic-receptor marker to examine intracellular rearrangements without G protein. The peer-reviewed publication follows a January 2026 preprint.",
+      "why_it_matters": "An enabling structural-bioengineering method that could expand access to receptor conformations important for mechanistic pharmacology and drug design.",
+      "caveat": "Demonstrated on selected receptors; performance and possible structural perturbations from fiducial fusions need case-specific assessment.",
+      "tags": [
+        "Protein engineering",
+        "Cryo-EM",
+        "GPCR",
+        "Generative design",
+        "Structural biology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — October 24, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78942-7"
+        }
+      ]
+    },
+    {
+      "title": "Protein language models predict residue electrostatics directly from sequence",
+      "takeaway": "KaML-ESM models estimate protein residue pKa values from sequence, achieving approximately 0.5-unit RMSE on several native-protein benchmarks.",
+      "what_happened": "Shen and colleagues reported in Nature Communications on October 24 that ESM-based models trained with augmented pKa data predicted ionization behavior across benchmark proteins and enabled proteome-scale exploration of potential functional sites. Performance was poorer for buried engineered mutations.",
+      "why_it_matters": "Provides a computational route to prioritize protein-engineering hypotheses and explore catalytic mechanisms without requiring full atomistic simulations for every candidate.",
+      "caveat": "Generalization to unusual engineered variants is weaker; predictions are not a substitute for experimental validation or explicit physical modeling.",
+      "tags": [
+        "Protein language models",
+        "Machine learning",
+        "Protein engineering",
+        "Electrostatics",
+        "Computational biology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — October 24, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78406-y"
+        }
+      ]
+    }
+  ]
+}
