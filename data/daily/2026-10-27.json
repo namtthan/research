@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-27",
+  "stories": [
+    {
+      "title": "Inflamed mouse colon transiently softens in ex-vivo magnetic resonance elastography",
+      "takeaway": "Acute Salmonella colitis reduced measured colonic stiffness, with recovery toward baseline as inflammation resolved.",
+      "what_happened": "In a Scientific Reports study published October 26, Maisch and colleagues measured ex-vivo colonic shear stiffness in infected mice at days 5, 16 and 30. Day-5 stiffness was 1.7 ± 0.7 kPa versus 5.5 ± 4.0 kPa in controls; tissue stiffness recovered by day 30 and tracked inflammatory pathology.",
+      "why_it_matters": "Connects tissue mechanics to intestinal inflammation and suggests a quantitative way to characterize changing gut biomechanics in experimental disease models.",
+      "caveat": "Ex-vivo measurements in a mouse infectious-colitis model; clinical diagnostic performance, chronic fibrotic disease and in-vivo applicability remain unproven.",
+      "tags": [
+        "Intestinal inflammation",
+        "Mechanobiology",
+        "Magnetic resonance elastography",
+        "Salmonella",
+        "IBD models"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — October 26, 2026",
+          "url": "https://www.nature.com/articles/s41598-026-77433-5"
+        }
+      ]
+    },
+    {
+      "title": "Review maps microbiome-sparing and anti-virulence options for C. difficile infection",
+      "takeaway": "A new synthesis distinguishes established toxin-directed evidence from earlier-stage strategies that preserve colonization resistance or reduce bacterial virulence.",
+      "what_happened": "Published October 26 in Scientific Reviews, Reznik and Crawford reviewed immune-based, narrow-spectrum, commensal and anti-virulence interventions for C. difficile infection. They highlight encouraging phase 2 results for nontoxigenic C. difficile and selected antibacterials, while noting that many host-directed and toxin-blocking candidates remain preclinical.",
+      "why_it_matters": "Clarifies the complementary goals of protecting intestinal tissue and preserving microbiome-mediated resistance to recurrent infection.",
+      "caveat": "Narrative review rather than a systematic meta-analysis or new clinical trial; evidence levels differ widely and some previously studied agents are no longer available.",
+      "tags": [
+        "C. difficile",
+        "Microbiome therapeutics",
+        "Anti-virulence",
+        "Colonization resistance",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reviews — October 26, 2026",
+          "url": "https://www.nature.com/articles/s44573-026-00016-y"
+        }
+      ]
+    },
+    {
+      "title": "Human evidence links exclusive parenteral nutrition to altered intestinal permeability",
+      "takeaway": "A systematic review found higher lactulose-to-mannitol permeability ratios during total parenteral nutrition, while short-term structural changes were less consistent.",
+      "what_happened": "A Scientific Reports systematic review and meta-analysis published October 26 evaluated 20 human studies. The pooled lactulose/mannitol ratio increased during parenteral nutrition relative to baseline and was higher than with enteral feeding; pooled short-term villus-height and crypt-depth changes over time were not significant.",
+      "why_it_matters": "Highlights the importance of luminal nutrient exposure and functional barrier measurements when evaluating intestinal health.",
+      "caveat": "Evidence quality was low to moderate, study populations were heterogeneous, and surgery or inflammation may confound the association; causality is not established.",
+      "tags": [
+        "Intestinal barrier",
+        "Parenteral nutrition",
+        "Permeability",
+        "Meta-analysis",
+        "Gastroenterology"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — October 26, 2026",
+          "url": "https://www.nature.com/articles/s41598-026-61675-4"
+        }
+      ]
+    },
+    {
+      "title": "Human lung organoid phenotype depends strongly on the culture platform",
+      "takeaway": "Animal-derived, animal-free and scaffold-free culture systems produced distinct organoid sizes, epithelial marker patterns and differentiation phenotypes.",
+      "what_happened": "Fletemeyer and colleagues compared human lung organoids across three cultivation systems and orientations in a Scientific Reports paper published October 26. Scaffold-free cultures were larger and showed elevated AQP5 or FOXJ1 in selected conditions; animal-free cultures exhibited advanced cilia maturation by imaging.",
+      "why_it_matters": "Reinforces that matrix and culture format are experimental variables, not interchangeable containers, when building human-relevant organoid models.",
+      "caveat": "Findings are specific to lung organoids and tested conditions; marker expression alone does not establish equivalent physiological function or transferability to other organs.",
+      "tags": [
+        "Organoids",
+        "3D culture",
+        "Extracellular matrix",
+        "NAMs",
+        "Tissue engineering"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — October 26, 2026",
+          "url": "https://www.nature.com/articles/s41598-026-77318-7"
+        }
+      ]
+    },
+    {
+      "title": "Clinical microbiome research needs common metadata and outcome standards",
+      "takeaway": "A new editorial emphasizes harmonized clinical metadata, microbiome endpoints and reproducibility as prerequisites for translating associations into care.",
+      "what_happened": "A Nature Reviews Gastroenterology & Hepatology editorial published October 26 discusses a previously published international Delphi consensus with 15 recommendations covering clinical microbiome-study metadata, sampling, endpoints and reporting. The consensus itself was first published in August 2026.",
+      "why_it_matters": "Better reporting and comparable endpoints can strengthen evaluation of microbiome diagnostics and interventions across independent clinical cohorts.",
+      "caveat": "The October publication is an editorial discussing an earlier consensus, not new experimental evidence or proof that adopting the standards improves patient outcomes.",
+      "tags": [
+        "Clinical microbiome",
+        "Research standards",
+        "Reproducibility",
+        "Metadata",
+        "Editorial"
+      ],
+      "sources": [
+        {
+          "label": "Nature Reviews Gastroenterology & Hepatology — October 26, 2026",
+          "url": "https://www.nature.com/articles/s41575-026-01266-w"
+        },
+        {
+          "label": "Original Delphi consensus — August 3, 2026",
+          "url": "https://doi.org/10.1038/s41575-026-01229-1"
+        }
+      ]
+    }
+  ]
+}
