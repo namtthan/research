@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-28",
+  "stories": [
+    {
+      "title": "Human gut methanogens strengthen mucus and protect mice from colitis",
+      "takeaway": "Two methanogenic archaea support epithelial barrier integrity and regulatory immune responses in mouse models.",
+      "what_happened": "Byrd and colleagues report in PNAS (online October 20; issue October 27) that Methanobrevibacter smithii and Methanosphaera stadtmanae expand goblet cells and mucus, promote Foxp3+ Treg cells and lessen DSS colitis, with species-specific immune dependencies.",
+      "why_it_matters": "Highlights often-overlooked nonbacterial members of the microbiome as contributors to mucosal health and potential targets for mechanistic study.",
+      "caveat": "Evidence is mainly from gnotobiotic and antibiotic-treated mice; protection and safety in human IBD are unproven. An earlier bioRxiv preprint exists.",
+      "tags": [
+        "Gut archaea",
+        "Mucosal barrier",
+        "Colitis",
+        "Microbiome",
+        "Immunology"
+      ],
+      "sources": [
+        {
+          "label": "PNAS / PubMed — issue October 27, 2026",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42900725/"
+        }
+      ]
+    },
+    {
+      "title": "Prior inflammation leaves regenerative memory in intestinal stem cells",
+      "takeaway": "Intestinal stem cells and descendants retain transcriptional and epigenetic memory of inflammation that improves repair after later injury.",
+      "what_happened": "Arozamena and colleagues used single-cell multiomics and injury models to identify IFN-gamma as a key signal establishing a persistent regenerative state (Nature Communications, October 27).",
+      "why_it_matters": "Separates transient injury responses from lasting epithelial adaptation, a useful conceptual distinction for intestinal regeneration research.",
+      "caveat": "Enhanced repair after experimental reinjury is not evidence that chronic inflammation is beneficial or that the response generalizes to patients.",
+      "tags": [
+        "Intestinal stem cells",
+        "Inflammatory memory",
+        "Epigenetics",
+        "Regeneration",
+        "Single-cell multiomics"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — October 27, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-79014-6"
+        }
+      ]
+    },
+    {
+      "title": "Human visceral adipose atlas identifies THBS1-driven fibro-inflammation",
+      "takeaway": "Human single-nucleus profiling and perturbation experiments implicate THBS1 in macrophage-dependent TGF-beta activation and metabolic tissue fibrosis.",
+      "what_happened": "Researchers compared human visceral adipose tissue across lean, obesity and type 2 diabetes states, then tested THBS1 function in human and mouse experimental systems (Nature Communications, October 27).",
+      "why_it_matters": "Demonstrates how cell atlases can be connected to functional intercellular signaling experiments in human-relevant tissue research.",
+      "caveat": "The cohort was ethnically homogeneous and biomarker performance needs broader independent clinical validation.",
+      "tags": [
+        "Single-nucleus RNA-seq",
+        "Fibrosis",
+        "TGF-beta",
+        "Metabolic disease",
+        "Cell communication"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — October 27, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-77107-w"
+        }
+      ]
+    },
+    {
+      "title": "Human 3D embryo–endometrium co-culture resolves reciprocal implantation-like signaling",
+      "takeaway": "A 3D assembloid co-culture enables time-resolved study of trophoblast and endometrial adaptation and implicates CSF3–CSF3R signaling.",
+      "what_happened": "Bi and colleagues combined human blastoids or blastocysts with endometrial assembloids, single-cell time courses and functional perturbation to identify stromal-dependent trophoblast states (Nature Cell Biology, October 27).",
+      "why_it_matters": "Shows how multicompartment human tissue models can test directional cell-cell signaling rather than only cataloging correlated cell states.",
+      "caveat": "Implantation-like interactions in vitro do not reproduce or predict pregnancy outcomes in vivo.",
+      "tags": [
+        "Human tissue models",
+        "3D co-culture",
+        "Assembloids",
+        "Single-cell transcriptomics",
+        "Development"
+      ],
+      "sources": [
+        {
+          "label": "Nature Cell Biology — October 27, 2026",
+          "url": "https://www.nature.com/articles/s41556-026-02106-4"
+        }
+      ]
+    },
+    {
+      "title": "Cyclic stretch and direct fibroblast contact improve hPSC-derived lung epithelial maturation",
+      "takeaway": "A microfluidic air-liquid interface platform with mechanical stretch supports more mature alveolar-like features in human stem-cell-derived lung epithelium.",
+      "what_happened": "Song and colleagues generated fetal lung progenitors and bud-tip organoids, tested direct fibroblast co-culture with Notch inhibition, and added cyclic stretch in a microfluidic culture system (Communications Biology, October 26).",
+      "why_it_matters": "Provides a recent example of testing biological contact and physical stimulation as distinct determinants of engineered tissue phenotype.",
+      "caveat": "The system retains fetal-like features; mature adult lung function and predictive clinical performance remain unproven.",
+      "tags": [
+        "Organ-on-chip",
+        "Cyclic stretch",
+        "Lung organoids",
+        "Stem cells",
+        "Mechanobiology"
+      ],
+      "sources": [
+        {
+          "label": "Communications Biology — October 26, 2026",
+          "url": "https://www.nature.com/articles/s42003-026-11176-x"
+        }
+      ]
+    }
+  ]
+}
