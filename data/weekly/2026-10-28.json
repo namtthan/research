@@ -1,0 +1,286 @@
+{
+  "date": "2026-10-28",
+  "stories": [
+    {
+      "title": "Methanogenic archaea Methanobrevibacter smithii and Methanosphaera stadtmanae promote mucosal homeostasis and protect from colitis",
+      "authors_source": "Emily E. Byrd, Benjamin W. Harris, Hongpan Zhang et al. — PNAS (online October 20; issue October 27, 2026)",
+      "publication_type": "Peer-reviewed primary research",
+      "takeaway": "Two human-associated methanogens enhance mucus, epithelial regeneration and regulatory T-cell responses in mice.",
+      "what_happened": "Gnotobiotic and antibiotic-treated mice showed goblet-cell expansion, thicker mucus, increased Treg cells and less DSS colitis; adaptive-immune requirements differed between species.",
+      "method": "Germ-free and antibiotic-treated mouse colonization, colonic transcriptomics, mucosal histology, immune profiling and DSS colitis.",
+      "why_it_matters": "Broadens the study of gut microbial function beyond bacteria, with directly testable epithelial and immune readouts.",
+      "read_first": "Compare methanogen-specific immune dependence and goblet-cell/mucus measurements.",
+      "caveat": "Mouse protection does not demonstrate clinical benefit or safety in human IBD.",
+      "priority": "#1",
+      "tags": [
+        "Gut archaea",
+        "Colitis",
+        "Mucosal barrier",
+        "Microbiome"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42900725/"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": true,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Inflammatory memory primes the intestine for enhanced regenerative potential",
+      "authors_source": "Borja Arozamena, Ilias Moraitis, Loris Mularoni et al. — Nature Communications (October 27, 2026)",
+      "publication_type": "Peer-reviewed primary research",
+      "takeaway": "Inflammation and plasticity imprint persistent stem-cell states that improve responses to subsequent injury.",
+      "what_happened": "Single-cell multiomics identifies transcriptional and epigenetic memory in intestinal stem cells and descendants, with IFN-gamma implicated as a driver.",
+      "method": "Intestinal injury and regeneration models with single-cell multiomic profiling and mechanistic inflammatory-signal analysis.",
+      "why_it_matters": "Provides a framework to distinguish transient epithelial stress from durable regeneration-associated programming.",
+      "read_first": "Read the single-cell memory comparisons and IFN-gamma perturbation experiments.",
+      "caveat": "Regenerative priming in models does not imply that prolonged inflammation is protective.",
+      "priority": "#2",
+      "tags": [
+        "Intestinal stem cells",
+        "Regeneration",
+        "Inflammatory memory",
+        "Epigenetics"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41467-026-79014-6"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Epithelial NF-κB shapes protective Treg cell responses to restrain intestinal inflammation",
+      "authors_source": "Luisa Barleben, Antony Julián Schneegans, Marina Kolesnichenko et al. — Nature Communications (October 20, 2026)",
+      "publication_type": "Peer-reviewed primary research",
+      "takeaway": "Epithelial NF-κB can coordinate protective Treg recruitment and conditioning during colitis recovery.",
+      "what_happened": "Mouse genetic models and human UC organoids link epithelial NF-κB activity to CCL22-mediated Treg recruitment and tissue-adapted immune suppression.",
+      "method": "UC biopsies, epithelial organoids, DSS mouse models, NF-κB reporters, scRNA-seq, secretomics, CellChat, transwell assays and Treg transfer.",
+      "why_it_matters": "Challenges the assumption that epithelial and immune NF-κB activation are functionally equivalent in intestinal inflammation.",
+      "read_first": "Focus on epithelial CCL22 loss-of-function, Treg transfer and human UC organoid responses.",
+      "caveat": "Most causal protection experiments are in mice; cell-type and timing specificity limit therapeutic extrapolation.",
+      "priority": "#3",
+      "tags": [
+        "IBD",
+        "NF-κB",
+        "Treg",
+        "Organoids",
+        "Epithelial-immune signaling"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41467-026-78796-z"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Directed differentiation with mechanical simulation enhances alveolar-like features in human pluripotent stem cell-derived lung epithelium",
+      "authors_source": "Yuetong Song, Jeremy Newton, Kimia Abedi et al. — Communications Biology (October 26, 2026)",
+      "publication_type": "Peer-reviewed primary research; early-view accepted article",
+      "takeaway": "Direct epithelial-fibroblast contact and microfluidic cyclic stretch improve differentiation toward alveolar-like states.",
+      "what_happened": "Researchers generated high-purity fetal lung progenitors, tested direct fibroblast co-culture with Notch inhibition, then added cyclic stretch at an air-liquid interface.",
+      "method": "hPSC differentiation, distal bud-tip organoids, epithelial-mesenchymal co-culture, microfluidic air-liquid interface, cyclic stretch and molecular/ultrastructural assays.",
+      "why_it_matters": "Shows why mechanical stimulation and direct stromal contact should be experimentally separated in human tissue engineering.",
+      "read_first": "Start with contact-versus-paracrine comparisons, then stretch and maturation readouts.",
+      "caveat": "Fetal-like cells and model-specific readouts do not establish fully adult alveolar function.",
+      "priority": "#4",
+      "tags": [
+        "Organ-on-chip",
+        "Mechanobiology",
+        "Lung organoids",
+        "Cyclic stretch"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s42003-026-11176-x"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "A three-dimensional human co-culture system reveals reciprocal embryo–endometrial adaptation at implantation onset",
+      "authors_source": "Yan Bi, Zhifen Tu, Xinbao Zhang et al. — Nature Cell Biology (October 27, 2026)",
+      "publication_type": "Peer-reviewed technical report",
+      "takeaway": "A human blastoid/endometrial assembloid co-culture resolves reciprocal cell-state adaptation and CSF3-dependent signaling.",
+      "what_happened": "Time-course single-cell profiles reveal stromal-dependent SDC1+MMP7+ trophoblast subsets, endometrial decidualization changes and CSF3–CSF3R contributions.",
+      "method": "3D endometrial assembloid co-culture with blastoids and blastocysts, time-series scRNA-seq, cell communication analysis and targeted perturbation.",
+      "why_it_matters": "Demonstrates a functional strategy to move from cell-interaction predictions to perturbation in complex human co-cultures.",
+      "read_first": "Read CSF3–CSF3R perturbation and cross-model validation of trophoblast states.",
+      "caveat": "Implantation-like culture states cannot be assumed to represent clinical pregnancy outcomes.",
+      "priority": "#5",
+      "tags": [
+        "Assembloids",
+        "3D co-culture",
+        "Cell communication",
+        "Single-cell"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41556-026-02106-4"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Single-cell landscape of human adipose tissue reveals THBS1 as a potential driver of fibro-inflammation in metabolic disease",
+      "authors_source": "Hejiao Zhang et al. not applicable; lead authors per journal article — Nature Communications (October 27, 2026)",
+      "publication_type": "Peer-reviewed primary research",
+      "takeaway": "THBS1-high adipose populations associate with obesity and diabetes and contribute to macrophage-mediated TGF-beta activation.",
+      "what_happened": "Human adipose atlases plus tissue and mouse perturbations support a THBS1-dependent fibro-inflammatory mechanism and candidate biomarker association.",
+      "method": "Human single-nucleus and bulk transcriptomics, primary cells, explants, mouse perturbations and antibody neutralization.",
+      "why_it_matters": "Illustrates combining tissue atlases with mechanistic validation of paracrine fibrosis signaling.",
+      "read_first": "Read the THBS1-high subpopulation definition and neutralization experiments.",
+      "caveat": "Ethnically homogeneous cohort and incomplete independent diagnostic validation limit generalizability.",
+      "priority": "#6",
+      "tags": [
+        "Single-cell atlas",
+        "Fibrosis",
+        "THBS1",
+        "Macrophages"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41467-026-77107-w"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Ureterovesical junction: a stem cell niche for ureteral urothelial renewal and bladder urothelial injury repair",
+      "authors_source": "Yi Liao, Fenglin Zhang, Y. Liu et al. — Nature Communications (October 26, 2026)",
+      "publication_type": "Peer-reviewed primary research; early-view accepted article",
+      "takeaway": "A Foxa2-expressing ureterovesical stem-cell niche contributes to bladder epithelial repair after severe injury.",
+      "what_happened": "Lineage tracing shows UVJ cells remain localized in homeostasis but migrate after severe bladder denudation, alongside TRKA/AKT activation.",
+      "method": "Label retention, lineage tracing, urothelial organoids and chemical/mechanical bladder injury models.",
+      "why_it_matters": "Offers a comparative example of niche-dependent epithelial plasticity and injury-threshold-dependent repair.",
+      "read_first": "Focus on lineage-tracing differences between mild and severe injury and TRKA/AKT experiments.",
+      "caveat": "Urinary tract regeneration should not be directly extrapolated to gut epithelium.",
+      "priority": "#7",
+      "tags": [
+        "Epithelial regeneration",
+        "Organoids",
+        "Stem-cell niche",
+        "Injury"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41467-026-78820-2"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Targeting CD44v6 and PI3K disrupts HGF-driven reprogramming of colorectal cancer stem cells",
+      "authors_source": "Kimiya Shams, Francesco Verona, Simone Di Franco et al. — Cell Death Discovery (October 26, 2026)",
+      "publication_type": "Peer-reviewed primary research",
+      "takeaway": "Combined blockade of HGF-associated stemness pathways and PI3K signaling reduces adaptive colorectal cancer cell responses in models.",
+      "what_happened": "HGF induces hybrid EMT-like programs; compensatory signaling persists under CD44v6/c-Met targeting, while apitolisib suppresses growth and increases in-vitro chemotherapy vulnerability.",
+      "method": "Colorectal cancer stem-cell assays, mouse avatars, pathway perturbation and drug-response testing.",
+      "why_it_matters": "Illustrates compensatory signaling and the need for multiple readouts in patient-relevant cancer models.",
+      "read_first": "Read HGF reprogramming and the inhibitor-combination response plots.",
+      "caveat": "Preclinical response does not establish patient benefit, and PI3K/mTOR inhibitors have tolerability considerations.",
+      "priority": "#8",
+      "tags": [
+        "Colorectal cancer",
+        "Cancer stem cells",
+        "PI3K",
+        "Drug resistance"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41420-026-03408-0"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Machine learning dataset and benchmark for accurate T cell receptor–pHLA binding prediction",
+      "authors_source": "Xinyuan Zhu, Jiadong Lu, Yeqing Lu et al. — Nature Computational Science (October 26, 2026)",
+      "publication_type": "Peer-reviewed research resource",
+      "takeaway": "Hi-TPH combines hierarchical binding data with protein language models to improve TCR–pHLA predictions on an external experimental benchmark.",
+      "what_happened": "Authors address biased negative data and incomplete receptor sequences; reported performance improves 19.2% over comparator tools on an external wet-lab set.",
+      "method": "Hierarchical immune-binding dataset curation, negative sampling, PLM fine-tuning and external benchmarking.",
+      "why_it_matters": "A useful example of dataset-design rigor and independent evaluation in computational immunology.",
+      "read_first": "Read negative-data generation and external wet-lab test-set design before performance claims.",
+      "caveat": "Performance depends on data composition and may not transfer to unrepresented HLA alleles or clinical use.",
+      "priority": "#9",
+      "tags": [
+        "Immunoinformatics",
+        "Protein language models",
+        "TCR",
+        "Benchmark"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s43588-026-01073-y"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Direct imaging elucidates ionic memory in two-dimensional nanochannels",
+      "authors_source": "Kalluvadi Veetil Saurav, Nathan Ronceray, Baptiste Coquinot et al. — Nature Materials (October 27, 2026)",
+      "publication_type": "Peer-reviewed primary research",
+      "takeaway": "Operando imaging reveals voltage-driven wall blistering as a physical origin of ionic-memory hysteresis in nanochannels.",
+      "what_happened": "Interferometric imaging and electrokinetics distinguish electrostatic and osmotic blister mechanisms in confined 2D channels.",
+      "method": "Operando interferometric imaging, nanofluidic transport measurements and electromechanical analysis.",
+      "why_it_matters": "Provides a physical micro/nanofluidics lesson on how deformable boundaries change flow and device behavior.",
+      "read_first": "Start with blister imaging under voltage and hysteresis correlations.",
+      "caveat": "Nanochannel ionic memristors are not direct evidence about biological microfluidic chips.",
+      "priority": "#10",
+      "tags": [
+        "Nanofluidics",
+        "Electromechanics",
+        "Imaging",
+        "Microdevices"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41563-026-02775-4"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    }
+  ]
+}
