@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-29",
+  "stories": [
+    {
+      "title": "Clostridium perfringens Delta toxin–CD9 axis links severe neonatal intestinal injury to brain inflammation",
+      "takeaway": "A Nature study identifies Delta toxin from a subset of C. perfringens strains as a candidate driver of necrotizing enterocolitis (NEC) and systemic injury through the host receptor CD9.",
+      "what_happened": "Published October 28, the authors combined clinical NEC samples, a genome-wide CRISPR screen, intestinal organoids, cell-specific Cd9-knockout mice and a neutralizing antibody. They report preferential macrophage targeting, inflammasome activation, blood–brain barrier disruption and protection by anti-Delta toxin in neonatal mouse infection models.",
+      "why_it_matters": "Provides a publicly documented example of connecting a microbial virulence factor to host-cell specificity and systemic inflammatory consequences, relevant to intestinal disease mechanisms and translational host–microbe modeling.",
+      "caveat": "The proposed mechanism concerns a subset of NEC, not all cases. Antibody protection is preclinical; larger clinical cohorts and an isogenic toxin-deletion strain are still needed.",
+      "tags": [
+        "Gut microbiome",
+        "Necrotizing enterocolitis",
+        "Microbial toxins",
+        "CD9",
+        "Intestinal inflammation"
+      ],
+      "sources": [
+        {
+          "label": "Nature — primary research, October 28, 2026",
+          "url": "https://www.nature.com/articles/s41586-026-11211-1"
+        }
+      ]
+    },
+    {
+      "title": "Caco-2 spheroids and an intestinal chip reveal nanoplastic-associated epithelial stress",
+      "takeaway": "A combined 3D spheroid and microfluidic intestinal model detected oxidative, inflammatory and epithelial changes after exposure to 20-nm polystyrene nanoplastics.",
+      "what_happened": "In an October 28 npj Science of Food article, researchers exposed Caco-2-derived cultures to polystyrene nanoparticles, measuring antioxidant capacity, inflammatory markers, Villin and ZO-1, and chip-effluent metabolites. Changes were reported at 40 and 400 micrograms per millilitre; computational analyses nominated ALOX5 as an exploratory candidate.",
+      "why_it_matters": "Shows how engineered epithelial culture systems can integrate structural, functional and metabolic endpoints in exposure assessment and food-safety research.",
+      "caveat": "The tested concentrations should not be assumed to reflect typical human exposure; ALOX5 involvement was computationally suggested, not causally established by the reported assays.",
+      "tags": [
+        "Organ-on-chip",
+        "Intestinal epithelium",
+        "Nanoplastics",
+        "Oxidative stress",
+        "Food safety"
+      ],
+      "sources": [
+        {
+          "label": "npj Science of Food — primary research, October 28, 2026",
+          "url": "https://www.nature.com/articles/s41538-026-01218-3"
+        }
+      ]
+    },
+    {
+      "title": "Patient-derived renal cancer assembloids reconstruct tumour–fibroblast–T-cell interactions",
+      "takeaway": "Mix-and-match tumour assembloids identify a WNT–activin A axis linking cancer-associated fibroblasts to CD8 T-cell state and response to PD-1 blockade.",
+      "what_happened": "Published October 28 in Nature, the study recombined renal tumour cells, cancer-associated fibroblasts and immune cells from patient samples. Six patient-derived assembloid models were compared with parental tumours and therapeutic responses, with engineered assembloids and humanized mice used to investigate WNT-responsive fibroblasts and activin A signaling.",
+      "why_it_matters": "Demonstrates the experimental value of reconstituting multiple human tissue compartments rather than studying epithelial or tumour cells in isolation.",
+      "caveat": "The initial patient-matched cohort was small, and predictive performance for routine treatment selection needs larger prospective validation.",
+      "tags": [
+        "Assembloids",
+        "Human tissue models",
+        "Tumour microenvironment",
+        "Immunotherapy",
+        "Stromal biology"
+      ],
+      "sources": [
+        {
+          "label": "Nature — primary research, October 28, 2026",
+          "url": "https://www.nature.com/articles/s41586-026-11208-w"
+        }
+      ]
+    },
+    {
+      "title": "Compact Cas12m system enables multiplex CRISPR gene activation from one AAV vector",
+      "takeaway": "An engineered naturally nuclease-dead Cas12m variant processes guide arrays and supports coordinated activation of endogenous genes within an all-in-one viral delivery design.",
+      "what_happened": "A Nature Biotechnology paper published October 28 describes denCas12m and the smCRISPRa platform. The system processes multiple guide RNAs from a single transcript and demonstrated phenotypic rescue in mouse models of Duchenne muscular dystrophy and Scn1a haploinsufficiency.",
+      "why_it_matters": "Expands the engineering toolbox for combinatorial gene regulation and may inform future programmable cell and gene therapies.",
+      "caveat": "The reported therapeutic demonstrations are in mice; delivery efficiency, off-target activity and durable safety require further evaluation in human settings.",
+      "tags": [
+        "CRISPRa",
+        "Gene engineering",
+        "Cas12m",
+        "AAV",
+        "Biotechnology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Biotechnology — primary research, October 28, 2026",
+          "url": "https://www.nature.com/articles/s41587-026-03352-5"
+        }
+      ]
+    },
+    {
+      "title": "Droplet long-read single-cell epigenomics scales chromatin profiling to thousands of cells",
+      "takeaway": "dscNanoATAC and dscNanoCUT combine droplet microfluidics with Nanopore sequencing to resolve allele-specific chromatin accessibility and histone modifications.",
+      "what_happened": "A Cell Discovery article published October 27 reports throughput of roughly 5,000 cells per experiment, profiling cultured mammalian cells and mouse brain. Long reads enabled analyses of regulatory elements in difficult-to-map regions, allele-specific Ube3a regulation and computational prediction of haplotype-resolved chromatin structure.",
+      "why_it_matters": "Offers a high-throughput approach to examining regulatory heterogeneity across cell populations and complements transcriptome-focused single-cell studies.",
+      "caveat": "The methods do not simultaneously capture gene expression, and long-read fragment yield and some cell-recovery metrics remain limiting.",
+      "tags": [
+        "Single-cell epigenomics",
+        "Droplet microfluidics",
+        "Long-read sequencing",
+        "Chromatin",
+        "Methods"
+      ],
+      "sources": [
+        {
+          "label": "Cell Discovery — primary research, October 27, 2026",
+          "url": "https://www.nature.com/articles/s41421-026-00928-y"
+        }
+      ]
+    }
+  ]
+}
