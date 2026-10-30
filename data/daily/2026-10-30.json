@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-30",
+  "stories": [
+    {
+      "title": "Polystyrene nanoplastics accelerate colorectal tumorigenesis through a microbiota–metabolite–Th17 pathway in mice",
+      "takeaway": "Chronic nanoplastic exposure promoted tumor development in an AOM/DSS mouse model alongside altered gut microbial composition, lower propionate and weaker Th17-associated responses.",
+      "what_happened": "A Molecular Cancer study published October 29 combined mouse exposure experiments, microbiome and metabolite analyses, and immune profiling. The authors implicated depletion of Faecalibaculum rodentium and propionic acid in reduced IL-17A-associated antitumor immunity; microplastics were also detected in patient samples. This addresses a different mechanistic question from the intestinal-chip nanoplastic exposure study covered October 29.",
+      "why_it_matters": "Highlights why environmental exposures, microbial metabolites and host immunity should be evaluated together when studying colorectal disease, rather than inferring mechanism from epithelial toxicity alone.",
+      "caveat": "Causality for human colorectal cancer is not established; the central tumorigenesis evidence comes from a chemically induced mouse model and exposure conditions may differ from typical human exposures. Patient microplastic detection is not proof of a cancer-causing effect.",
+      "tags": [
+        "Gut microbiome",
+        "Colorectal cancer",
+        "Nanoplastics",
+        "Microbial metabolites",
+        "Immunology"
+      ],
+      "sources": [
+        {
+          "label": "Molecular Cancer — primary research, October 29, 2026",
+          "url": "https://link.springer.com/article/10.1186/s12943-026-02823-2"
+        }
+      ]
+    },
+    {
+      "title": "Swedish hospital sewers show measurable selection for antibiotic-resistant bacteria",
+      "takeaway": "Wastewater from ten hospitals favored antibiotic-resistant E. coli, unlike corresponding municipal wastewater, with ciprofloxacin and β-lactam selection implicated.",
+      "what_happened": "In Nature Communications on October 29, investigators combined hospital and municipal wastewater assays, sewer biofilm sampling, culture and metagenomics, targeted mass spectrometry and isogenic bacterial resistance-gene rescue experiments. Ciprofloxacin was a consistent driver; the evidence for cefotaxime varied with sample handling.",
+      "why_it_matters": "Identifies a plausible environmental intervention point for antimicrobial-resistance prevention and illustrates how microbial selection pressures can be tested with orthogonal experimental readouts.",
+      "caveat": "Findings are based on Swedish sites and experimental selection assays, not direct proof of patient infections originating from sewer evolution. Freeze–thaw instability weakens some β-lactam concentration estimates.",
+      "tags": [
+        "Antimicrobial resistance",
+        "Environmental microbiology",
+        "Antibiotics",
+        "Metagenomics",
+        "Public health"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — primary research, October 29, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78836-8"
+        }
+      ]
+    },
+    {
+      "title": "Lawrence Livermore pairs interpretable microbiome prediction with human-relevant gut-chip development",
+      "takeaway": "An October 29 laboratory update describes curated metagenomic datasets and machine-learning methods for microbiome-associated health prediction, alongside experimental gut-on-chip work.",
+      "what_happened": "Lawrence Livermore National Laboratory reported hierarchical Bayesian models that propagate microbiome measurement uncertainty, image-based representations of microbial abundance, and disease-prediction projects; engineers are also building gut-on-chip systems to experimentally test perturbations. The update synthesizes multiple research efforts rather than announcing a single new validation study.",
+      "why_it_matters": "Connects microbiome bioinformatics with experimentally testable hypotheses and human-relevant platforms, while emphasizing data harmonization and interpretability.",
+      "caveat": "This is an institutional research update, not a new clinical validation trial. Cross-cohort batch effects, geography, diet and sparse species counts complicate generalization; gut-chip experiments are described as ongoing.",
+      "tags": [
+        "Gut microbiome",
+        "Machine learning",
+        "Gut-on-chip",
+        "Bioinformatics",
+        "Research infrastructure"
+      ],
+      "sources": [
+        {
+          "label": "Lawrence Livermore National Laboratory — October 29, 2026",
+          "url": "https://www.llnl.gov/article/55186/machine-learning-models-predict-human-health-microbiome-data"
+        }
+      ]
+    },
+    {
+      "title": "JEEPERS corrects cell-free DNA methylation errors caused by jagged fragment ends",
+      "takeaway": "A computational framework identifies and corrects end-repair-induced methylation artifacts while retaining duplex information for mutation and epigenetic analyses.",
+      "what_happened": "A Nature Methods article published October 29 introduces JEEPERS and evaluates it using plasma cfDNA, simulated tumor mixtures and cancer datasets. Correction improved recovery of tissue-specific methylation signals and supported allele-specific analysis of somatic variants.",
+      "why_it_matters": "Shows how sequencing-library chemistry can bias biological conclusions and why measurement-error correction matters for noninvasive biomarkers and multimodal assays.",
+      "caveat": "The method depends on suitable read support and sequencing depth; improvements in analytical signal do not alone establish prospective screening accuracy or clinical utility.",
+      "tags": [
+        "Cell-free DNA",
+        "Epigenomics",
+        "Molecular diagnostics",
+        "Sequencing methods",
+        "Bioinformatics"
+      ],
+      "sources": [
+        {
+          "label": "Nature Methods — primary research, October 29, 2026",
+          "url": "https://www.nature.com/articles/s41592-026-03278-5"
+        }
+      ]
+    },
+    {
+      "title": "Feedback-controlled vasopressor delivery stabilizes spinal cord blood flow after injury in animal models",
+      "takeaway": "A closed-loop system used real-time tissue blood-flow measurements to adjust norepinephrine dosing more directly than blood-pressure-guided care.",
+      "what_happened": "Published October 29 in Nature Biomedical Engineering, the researchers modeled vasopressor–pressure–perfusion dynamics, designed a feedback controller, and tested it in simulations, rats and pigs. It reduced flow deviations and supported functional outcomes in a rodent survival experiment.",
+      "why_it_matters": "Illustrates the value of measuring and controlling local tissue physiology instead of relying exclusively on systemic surrogate endpoints, a principle relevant across biomedical engineering.",
+      "caveat": "The evidence remains preclinical; clinical safety, implementation and efficacy in human spinal cord injury have not been demonstrated.",
+      "tags": [
+        "Biomedical engineering",
+        "Feedback control",
+        "Perfusion",
+        "Physiological monitoring",
+        "Preclinical models"
+      ],
+      "sources": [
+        {
+          "label": "Nature Biomedical Engineering — primary research, October 29, 2026",
+          "url": "https://www.nature.com/articles/s41551-026-01777-6"
+        }
+      ]
+    }
+  ]
+}
