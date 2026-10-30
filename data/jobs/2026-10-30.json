@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-30",
+  "type": "industry_job_shortlist",
+  "title": "Industry Role Shortlist",
+  "scope": {
+    "geography": "Bay Area first, Cleveland/Ohio second, nationwide third. Five directly verified Bay Area Greenhouse requisitions met relevance criteria; no Ohio role with comparably verified direct application was selected.",
+    "selection_rule": "Exact employer/official ATS requisition with visible application fields checked 2026-10-30; PhD completion expected late 2026 is not an automatic exclusion. Public research skills only. Previously listed open roles explicitly marked reverified."
+  },
+  "jobs": [
+    {
+      "priority": 1,
+      "recommendation": "APPLY",
+      "title": "Scientist I/II, Functional Genomics",
+      "company": "Xaira Therapeutics",
+      "location": "South San Francisco, CA",
+      "work_arrangement": "On-site, five days per week",
+      "term": "Full-time",
+      "salary": {
+        "min_usd": 110000,
+        "max_usd": 155000,
+        "period": "year",
+        "note": "Official posted base range"
+      },
+      "posting_status_checked": "2026-10-30",
+      "posting_status": "Exact Greenhouse requisition live with Apply and application fields on October 30; previously shortlisted October 23 and reverified.",
+      "posting_links": [
+        {
+          "label": "Official Greenhouse application",
+          "url": "https://job-boards.greenhouse.io/xairatherapeutics/jobs/5198737007"
+        }
+      ],
+      "job_description": "Develop and scale organoid systems for CRISPR functional genomics, high-throughput screening and quantitative phenotype analysis with computational and AI collaborators.",
+      "key_must_have_requirements": [
+        "Relevant PhD with 0–4 years postdoctoral or industry experience",
+        "Hands-on organoid culture and characterization",
+        "CRISPR perturbation in complex 3D models",
+        "High-throughput screening or miniaturization familiarity"
+      ],
+      "why_good_match": "Strong overlap with publicly describable organoid, human tissue-model and quantitative bioengineering skills; Bay Area preference.",
+      "likely_gaps": [
+        "Direct CRISPR perturbation and pooled screening in organoids is a substantive requirement",
+        "Completion of the PhD before start must be confirmed"
+      ],
+      "tailor": "Show documented organoid assay optimization, controls, reproducibility, interdisciplinary analysis and actual genetic perturbation experience without overstating it.",
+      "immediate_action": "Apply through the official requisition; state expected late-2026 degree conferral and realistic start availability."
+    },
+    {
+      "priority": 2,
+      "recommendation": "STRETCH_APPLY",
+      "title": "Senior Scientist — Bioengineering",
+      "company": "Vivodyne",
+      "location": "Brisbane, CA (San Francisco Bay Area)",
+      "work_arrangement": "Full-time, on-site five days per week",
+      "term": "Full-time",
+      "salary": {
+        "min_usd": 120000,
+        "max_usd": 160000,
+        "period": "year",
+        "note": "Official posted range"
+      },
+      "posting_status_checked": "2026-10-30",
+      "posting_status": "Exact Greenhouse requisition with active Apply form and required application fields checked October 30; new to this shortlist.",
+      "posting_links": [
+        {
+          "label": "Official Greenhouse application",
+          "url": "https://job-boards.greenhouse.io/vivodyne/jobs/5266252007"
+        }
+      ],
+      "job_description": "Own a human tissue-model program, develop primary-cell and 3D culture workflows, and scale them with robotics, imaging and multimodal characterization for drug discovery.",
+      "key_must_have_requirements": [
+        "Relevant PhD and typically 2–4 years post-PhD/postdoctoral or industry experience",
+        "Advanced primary human cell and 3D tissue culture",
+        "Confocal imaging, flow cytometry, omics and experimental interpretation",
+        "Independent technical program leadership"
+      ],
+      "why_good_match": "Excellent disease-model and organ-on-chip technology fit; the employer explicitly values intestinal model expertise and automated human-tissue platforms.",
+      "likely_gaps": [
+        "Posted 2–4 years post-PhD experience makes this a stretch",
+        "Industrial-scale robotics, assay transfer and some immune/omics wet-lab methods may need further experience"
+      ],
+      "tailor": "Lead with public organ-on-chip platform design, reproducible primary-cell models and multimodal readouts; quantify only publicly documented achievements.",
+      "immediate_action": "Submit targeted CV and technical accomplishment example; inquire about level flexibility for a late-2026 PhD."
+    },
+    {
+      "priority": 3,
+      "recommendation": "APPLY",
+      "title": "Scientist II, High Throughput Biology",
+      "company": "Xaira Therapeutics",
+      "location": "South San Francisco, CA",
+      "work_arrangement": "On-site, five days per week",
+      "term": "Full-time",
+      "salary": {
+        "min_usd": 124000,
+        "max_usd": 155000,
+        "period": "year",
+        "note": "Official posted base range"
+      },
+      "posting_status_checked": "2026-10-30",
+      "posting_status": "Exact Greenhouse requisition live with Apply form October 30; previously shortlisted October 23 and reverified. Listing explicitly allows level adjustment for recent PhDs.",
+      "posting_links": [
+        {
+          "label": "Official Greenhouse application",
+          "url": "https://job-boards.greenhouse.io/xairatherapeutics/jobs/5238009007"
+        }
+      ],
+      "job_description": "Develop mammalian cell and molecular assays for high-throughput screening, antibody binder discovery, automation and sequencing-based readouts.",
+      "key_must_have_requirements": [
+        "Relevant PhD; typical 2–4 years experience but recent PhDs considered",
+        "Molecular biology, flow cytometry and cell-line engineering",
+        "Pooled screening and NGS library preparation/QC",
+        "R/Python data analysis and cross-functional work"
+      ],
+      "why_good_match": "Quantitative cell assay development and bioengineering experience are transferable; level flexibility is explicitly advertised.",
+      "likely_gaps": [
+        "Pooled CRISPR screening and display-library experience",
+        "Direct sequencing library-preparation and high-throughput automation"
+      ],
+      "tailor": "Emphasize experimental workflow design, assay robustness and quantitative analysis; be explicit about hands-on versus computational sequencing experience.",
+      "immediate_action": "Apply via Greenhouse, noting degree timeline and asking about level adjustment."
+    },
+    {
+      "priority": 4,
+      "recommendation": "STRETCH",
+      "title": "Senior Scientist, Single Cell Assay and Technology Development",
+      "company": "Xaira Therapeutics",
+      "location": "South San Francisco, CA",
+      "work_arrangement": "On-site, five days per week",
+      "term": "Full-time",
+      "salary": {
+        "min_usd": 136000,
+        "max_usd": 170000,
+        "period": "year",
+        "note": "Official posted base range"
+      },
+      "posting_status_checked": "2026-10-30",
+      "posting_status": "Exact Greenhouse requisition live with Apply form October 30; previously shortlisted October 23 and reverified; level adjustment possible.",
+      "posting_links": [
+        {
+          "label": "Official Greenhouse application",
+          "url": "https://job-boards.greenhouse.io/xairatherapeutics/jobs/5271881007"
+        }
+      ],
+      "job_description": "Invent and scale single-cell sequencing assays, including barcoding, molecular assay chemistry, library preparation, QC and mammalian cell readouts.",
+      "key_must_have_requirements": [
+        "Relevant PhD; normally 4+ years including technology development",
+        "Direct NGS/single-cell assay invention or substantial optimization",
+        "Library chemistry, primers/barcodes and QC",
+        "Cell biology and R/Python analysis"
+      ],
+      "why_good_match": "Assay-platform engineering and single-cell analysis interests overlap with the role's experimental development focus.",
+      "likely_gaps": [
+        "Strong NGS wet-lab chemistry and technology invention track record are core requirements",
+        "Seniority and industry development expectations"
+      ],
+      "tailor": "Separate documented assay-development achievements from downstream sequencing analysis; do not imply library chemistry expertise without evidence.",
+      "immediate_action": "Apply only if direct single-cell assay development can be demonstrated; ask about lower title."
+    },
+    {
+      "priority": 5,
+      "recommendation": "LOWER_FIT_STRETCH",
+      "title": "Sr. Scientist, Spatial Biology",
+      "company": "Noetik",
+      "location": "South San Francisco, CA",
+      "work_arrangement": "Laboratory-based South San Francisco; exact weekly on-site requirement not stated",
+      "term": "Full-time",
+      "salary": null,
+      "posting_status_checked": "2026-10-30",
+      "posting_status": "Exact official Greenhouse requisition displays active application form October 30; new to shortlist.",
+      "posting_links": [
+        {
+          "label": "Official Greenhouse application",
+          "url": "https://job-boards.greenhouse.io/noetik/jobs/4407815009"
+        }
+      ],
+      "job_description": "Lead spatial transcriptomic/proteomic experiments on human tissue, assay troubleshooting and QC for an AI-driven oncology platform.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "2–5+ years industry hands-on spatial transcriptomics; CosMx preferred",
+        "Spatial proteomics and imaging quality control",
+        "Assay troubleshooting and mentoring"
+      ],
+      "why_good_match": "Human tissue analysis and single-cell/spatial biology are adjacent to publicly describable research interests.",
+      "likely_gaps": [
+        "Direct CosMx/Xenium/MERFISH production experience is a major hurdle",
+        "Industry seniority and spatial proteomics panel design"
+      ],
+      "tailor": "Use only verifiable spatial assay and analysis expertise; position as a secondary option rather than the main application target.",
+      "immediate_action": "Deprioritize unless strong direct spatial wet-lab experience can be documented; otherwise focus on higher-ranked openings."
+    }
+  ]
+}
