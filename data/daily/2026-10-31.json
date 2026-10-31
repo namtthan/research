@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-31",
+  "stories": [
+    {
+      "title": "ANO6-dependent membrane transfer links pancreatic cancer metabolism and immune suppression",
+      "takeaway": "Cancer-associated fibroblasts supply lipids to pancreatic cancer cells through contact-dependent trogocytosis, while related interactions dampen cytotoxic T-cell activity.",
+      "what_happened": "A Nature Cancer article published October 30 used co-cultures, imaging, lipid tracing, human and mouse tissue analyses and ANO6 perturbation to implicate calcium-dependent phosphatidylserine exposure in stromal membrane transfer. ANO6 blockade reduced tumor growth and immune suppression in experimental systems.",
+      "why_it_matters": "Shows how tissue microenvironment architecture and direct heterotypic cell contacts can shape both metabolism and immune function—features that simpler monocultures miss.",
+      "caveat": "Preclinical evidence; ANO6 depletion affects several fibroblast functions, so lipid-transfer-specific causality cannot be completely isolated.",
+      "tags": [
+        "Cancer microenvironment",
+        "Cell-cell interaction",
+        "Metabolism",
+        "Trogocytosis"
+      ],
+      "sources": [
+        {
+          "label": "Nature Cancer — October 30, 2026",
+          "url": "https://www.nature.com/articles/s43018-026-01265-5"
+        }
+      ]
+    },
+    {
+      "title": "Meta-analysis separates plasma extracellular vesicle cargo from isolation artifacts",
+      "takeaway": "A synthesis of 515 human plasma EV proteomes suggests much of the reproducible signal reflects surface coronas, platelet-derived material and co-isolates rather than vesicle-specific cargo.",
+      "what_happened": "A Communications Biology study published October 30 quantitatively decomposed plasma EV protein patterns using synthetic nanoparticle corona and platelet vesicle comparisons to identify likely origins of commonly detected proteins.",
+      "why_it_matters": "Raises an important assay-validation issue for extracellular-vesicle biomarkers and advanced tissue-model secretome studies: measured protein abundance is not automatically evidence of vesicle origin.",
+      "caveat": "Computational deconvolution across published datasets cannot fully resolve every isolation protocol or prove the provenance of every individual protein.",
+      "tags": [
+        "Extracellular vesicles",
+        "Proteomics",
+        "Biomarkers",
+        "Assay validation"
+      ],
+      "sources": [
+        {
+          "label": "Communications Biology — October 30, 2026",
+          "url": "https://www.nature.com/articles/s42003-026-11038-6"
+        }
+      ]
+    },
+    {
+      "title": "pH-responsive chitosan hydrogel advances experimental oral heparin delivery",
+      "takeaway": "An ultra-swelling hybrid hydrogel was designed to protect and release heparin in response to gastrointestinal pH.",
+      "what_happened": "A Scientific Reports paper published October 30 described synthesis and characterization of a chitosan/acrylic-acid/hydroxyethyl-methacrylate hydrogel, assessing swelling and pH-dependent drug-release behavior as an oral delivery platform.",
+      "why_it_matters": "Relevant to gastrointestinal drug-delivery design, where local chemical environments and transport barriers dictate formulation performance.",
+      "caveat": "Formulation characterization does not establish reliable human oral bioavailability, anticoagulant efficacy or clinical safety.",
+      "tags": [
+        "Drug delivery",
+        "Hydrogels",
+        "Gastrointestinal tract",
+        "Biomaterials"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — October 30, 2026",
+          "url": "https://www.nature.com/articles/s41598-026-78301-y"
+        }
+      ]
+    },
+    {
+      "title": "Cancer-associated fibroblast review emphasizes context-dependent protective and harmful states",
+      "takeaway": "A new review argues that fibroblasts in tumors are heterogeneous and may promote or restrain cancer depending on origin, activation cues and tissue context.",
+      "what_happened": "An October 30 review in Signal Transduction and Targeted Therapy synthesizes CAF origins, TGF-β and PDGF signaling, extracellular-matrix remodeling, immune regulation and therapeutic approaches.",
+      "why_it_matters": "Offers a framework for deciding which stromal cell states and matrix cues need to be represented in multicellular disease models.",
+      "caveat": "Review article, not new experimental validation; broad CAF-targeting strategies risk removing tumor-restraining populations.",
+      "tags": [
+        "Fibroblasts",
+        "Tissue microenvironment",
+        "Extracellular matrix",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Signal Transduction and Targeted Therapy — October 30, 2026",
+          "url": "https://www.nature.com/articles/s41392-026-02743-z"
+        }
+      ]
+    },
+    {
+      "title": "Targeted microRNA blockade reverses experimental atrial fibrosis",
+      "takeaway": "Blocking the interaction between miR-31-5p and calcitonin-receptor mRNA restored receptor expression and reduced fibrotic and arrhythmic phenotypes in experimental systems.",
+      "what_happened": "Nature Cardiovascular Research reported October 30 that atrial fibroblasts from persistent atrial-fibrillation patients had elevated miR-31-5p and suppressed CALCR; targeted intervention was tested in cellular and in vivo models.",
+      "why_it_matters": "Demonstrates a mechanism-focused strategy for modulating pathologic fibroblast behavior without globally suppressing microRNA signaling.",
+      "caveat": "Clinical effectiveness and delivery safety remain unproven; results concern cardiac fibrosis rather than gastrointestinal disease.",
+      "tags": [
+        "Fibrosis",
+        "MicroRNA",
+        "Cell signaling",
+        "Therapeutics"
+      ],
+      "sources": [
+        {
+          "label": "Nature Cardiovascular Research — October 30, 2026",
+          "url": "https://www.nature.com/articles/s44161-026-00897-1"
+        }
+      ]
+    }
+  ]
+}
