@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-01",
+  "stories": [
+    {
+      "title": "Human gut picobirnavirus reclassified within RNA bacteriophages",
+      "takeaway": "A gut-associated picobirnavirus provides evidence that Picobirnaviridae constitutes a third major clade of RNA bacteriophages.",
+      "what_happened": "A Nature Microbiology study published October 29 characterized a human gut-associated picobirnavirus and placed the family within the diversity of RNA phages.",
+      "why_it_matters": "Expands the catalog of viruses potentially interacting with bacterial communities in the human gut.",
+      "caveat": "Classification and host assignment do not establish a causal effect on human disease.",
+      "tags": [
+        "Gut virome",
+        "Bacteriophages",
+        "Microbiome"
+      ],
+      "sources": [
+        {
+          "label": "Peer-reviewed publication — October 2026",
+          "url": "https://www.nature.com/articles/s41564-026-02523-z"
+        }
+      ]
+    },
+    {
+      "title": "Global metagenomics maps CRISPR targeting across ecosystems",
+      "takeaway": "A planetary-scale analysis provides a broader view of microbial CRISPR targeting patterns in natural ecosystems.",
+      "what_happened": "Researchers reported a large-scale metagenomic survey of CRISPR targeting dynamics across diverse habitats in Nature Microbiology on October 29.",
+      "why_it_matters": "Offers a framework for understanding microbe–virus interactions and interpreting community-level metagenomic data.",
+      "caveat": "Environmental sequence patterns cannot by themselves prove all predicted host–virus interactions.",
+      "tags": [
+        "Metagenomics",
+        "CRISPR",
+        "Microbial ecology"
+      ],
+      "sources": [
+        {
+          "label": "Peer-reviewed publication — October 2026",
+          "url": "https://www.nature.com/articles/s41564-026-02480-7"
+        }
+      ]
+    },
+    {
+      "title": "Bacterial extracellular matrix yields a printable cytocompatible hydrogel",
+      "takeaway": "Extracellular matrix from Acinetobacter baylyi ADP1 can serve as a source material for a 3D-printable hydrogel.",
+      "what_happened": "A Communications Materials study published October 29 described fabrication and cytocompatibility characterization of a microbial extracellular-matrix-derived hydrogel.",
+      "why_it_matters": "Highlights alternative bioink feedstocks for engineering three-dimensional cellular environments.",
+      "caveat": "Printability and cytocompatibility are early feasibility measures, not evidence of long-term tissue function.",
+      "tags": [
+        "Bioprinting",
+        "Hydrogels",
+        "Biomaterials"
+      ],
+      "sources": [
+        {
+          "label": "Peer-reviewed publication — October 2026",
+          "url": "https://www.nature.com/articles/s43246-026-01399-0"
+        }
+      ]
+    },
+    {
+      "title": "Continuous-flow plasmonic immunoassay integrates fluorescence readout with LTCC microfluidics",
+      "takeaway": "A microfluidic competitive immunoassay exploits distance-dependent fluorescence modulation for sensing under continuous flow.",
+      "what_happened": "A Scientific Reports article published October 28 investigated plasmonic fluorescence behavior in a low-temperature co-fired ceramic integrated assay.",
+      "why_it_matters": "Provides a device-engineering example of coupling fluidic operation to optical assay performance.",
+      "caveat": "Analytical behavior in a prototype does not establish robust performance in heterogeneous clinical samples.",
+      "tags": [
+        "Microfluidics",
+        "Biosensors",
+        "Immunoassays"
+      ],
+      "sources": [
+        {
+          "label": "Peer-reviewed publication — October 2026",
+          "url": "https://www.nature.com/articles/s41598-026-78514-1"
+        }
+      ]
+    },
+    {
+      "title": "Zebrafish Sox9b-positive cells contribute to intestinal renewal",
+      "takeaway": "Lineage tracing and perturbation suggest Sox9b-positive cells support intestinal homeostasis and regeneration in zebrafish.",
+      "what_happened": "A Lab Animal research highlight published October 28 summarized knock-in tracking and functional studies of Sox9b-positive intestinal cells, citing Wu and colleagues in Cell Reports.",
+      "why_it_matters": "Illustrates how intestinal stem-cell organization can differ across vertebrates while preserving epithelial renewal.",
+      "caveat": "This is a secondary research highlight; zebrafish furrow anatomy differs from mammalian crypts.",
+      "tags": [
+        "Intestinal stem cells",
+        "Regeneration",
+        "Model organisms"
+      ],
+      "sources": [
+        {
+          "label": "Peer-reviewed publication — October 2026",
+          "url": "https://www.nature.com/articles/s41684-026-01820-8"
+        }
+      ]
+    }
+  ]
+}
