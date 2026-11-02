@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-02",
+  "stories": [
+    {
+      "title": "Single-chip spatial transcriptomics resolves full-length RNA isoforms alongside gene expression",
+      "takeaway": "A high-density spatial array combines short-read quantification and long-read isoform mapping at matched tissue coordinates.",
+      "what_happened": "Nature Communications published the peer-reviewed method on November 1, 2026. The team used combinatorial barcoding and split full-length cDNA for next-generation and long-read sequencing, identifying spatially localized isoforms and intron retention in plant grafts and mouse embryos.",
+      "why_it_matters": "Adding isoform-level information to spatial maps could help researchers characterize heterogeneous engineered tissues beyond gene-level expression.",
+      "caveat": "Validation centered on plant and mouse specimens; clinical tissue throughput, cost and reproducibility need independent benchmarking.",
+      "tags": [
+        "Spatial transcriptomics",
+        "Long-read sequencing",
+        "Microarrays",
+        "Tissue engineering"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — November 1, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-79323-w"
+        }
+      ]
+    },
+    {
+      "title": "Multi-organ human tissue chips support integrated ADMET assessment",
+      "takeaway": "A human multi-organ tissue-chip study advances interconnected in vitro modeling for drug absorption, distribution, metabolism, excretion and toxicity.",
+      "what_happened": "Nature Biomedical Engineering published the study on October 5, 2026, describing engineered human tissue niches for integrated pharmacology and safety assessment.",
+      "why_it_matters": "Multi-organ systems address limitations of isolated monocultures when investigating how tissue-specific processes combine to shape drug disposition.",
+      "caveat": "Cross-organ in vitro models require careful validation against clinical pharmacokinetics and cannot yet replace all systemic physiology.",
+      "tags": [
+        "Organ-on-chip",
+        "ADMET",
+        "Drug development",
+        "New approach methodologies"
+      ],
+      "sources": [
+        {
+          "label": "Nature Biomedical Engineering — October 5, 2026",
+          "url": "https://www.nature.com/articles/s41551-026-01806-4"
+        }
+      ]
+    },
+    {
+      "title": "Machine-vision-controlled microdroplets automate adaptive colorimetric sensing",
+      "takeaway": "Digital microfluidics combined with machine vision and feedback enables autonomous colorimetric biochemical measurements.",
+      "what_happened": "Nature Sensors published the research October 5, 2026. The platform uses image-driven feedback to manipulate microdroplets and adapt assay operations.",
+      "why_it_matters": "Closed-loop control could improve robustness and automation of miniaturized diagnostic and biochemical testing workflows.",
+      "caveat": "Demonstrated sensing workflows do not by themselves establish clinical-grade performance across complex specimens.",
+      "tags": [
+        "Digital microfluidics",
+        "Biosensors",
+        "Automation",
+        "Machine vision"
+      ],
+      "sources": [
+        {
+          "label": "Nature Sensors — October 5, 2026",
+          "url": "https://www.nature.com/subjects/lab-on-a-chip"
+        }
+      ]
+    },
+    {
+      "title": "Albumin-rich environments amplify Candida-triggered inflammasome responses",
+      "takeaway": "Local albumin abundance can intensify Candida albicans-associated inflammatory signaling in vulvovaginal candidiasis.",
+      "what_happened": "A Nature Communications paper published October 29, 2026 examined the link between local albumin excess, fungal challenge and inflammasome activation in a mucosal inflammatory setting.",
+      "why_it_matters": "Highlights how soluble tissue-environment components can alter host–microbe inflammatory responses, relevant to designing physiologically representative mucosal models.",
+      "caveat": "The work concerns vulvovaginal mucosa; mechanisms should not be assumed to generalize to intestinal inflammation.",
+      "tags": [
+        "Mucosal immunity",
+        "Host–microbe interaction",
+        "Inflammasome",
+        "Candida"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — October 29, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78761-w"
+        }
+      ]
+    },
+    {
+      "title": "Preterm-infant Clostridia transform milk oligosaccharides and affect intestinal organoids",
+      "takeaway": "Certain infant-associated Clostridia metabolize human milk oligosaccharides, suppress pathobionts and modulate intestinal organoid function.",
+      "what_happened": "A Nature Microbiology study published March 16, 2026 combined microbial metabolism and intestinal organoid experiments to investigate how early-life bacterial strains interact with dietary substrates and the host epithelium.",
+      "why_it_matters": "Connects microbial nutrient utilization to experimentally measurable host–microbe interactions, with potential implications for infant intestinal health.",
+      "caveat": "This is an older, high-relevance study rather than breaking news; organoid and laboratory observations do not establish clinical benefit in infants.",
+      "tags": [
+        "Gut microbiome",
+        "Intestinal organoids",
+        "Preterm infants",
+        "Human milk oligosaccharides"
+      ],
+      "sources": [
+        {
+          "label": "Nature Microbiology — March 16, 2026",
+          "url": "https://www.nature.com/articles/s41564-026-02297-4"
+        }
+      ]
+    }
+  ]
+}
