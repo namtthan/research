@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-03",
+  "stories": [
+    {
+      "title": "Prebiotic fibre responses vary across individuals and may become more predictable",
+      "takeaway": "A new review synthesizes why gut communities and clinical outcomes respond differently to the same fermentable fibre.",
+      "what_happened": "Nature Reviews Microbiology published a review November 2 discussing fibre chemistry, species interactions, baseline microbial functions, systems models and machine-learning approaches to predicting response.",
+      "why_it_matters": "Supports more precise, evidence-based microbiome nutrition strategies rather than assuming one fibre formulation works equally for everyone.",
+      "caveat": "This is a review, not a new intervention trial; predictive models and improved clinical efficacy still need prospective validation.",
+      "tags": [
+        "Gut microbiome",
+        "Prebiotics",
+        "Precision nutrition",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Nature Reviews Microbiology — November 2, 2026",
+          "url": "https://www.nature.com/articles/s41579-026-01383-y"
+        }
+      ]
+    },
+    {
+      "title": "Epithelial XIAP promotes inflammatory colorectal tumour progression in experimental models",
+      "takeaway": "XIAP expression correlates with survival in resected colorectal cancer, while epithelial XIAP manipulation changes colitis-associated tumour inflammation in mice.",
+      "what_happened": "A November 2 Cell Death & Disease paper combined patient survival analysis, intestinal epithelial-specific Xiap knockout/knock-in mice, patient-derived CRC organoids and tumour specimens; the authors implicate RIPK2-linked inflammatory signaling and neutrophil recruitment.",
+      "why_it_matters": "Connects epithelial signaling, immune-cell recruitment and tumour progression, underscoring the value of multicellular intestinal disease research.",
+      "caveat": "Patient associations and preclinical models do not establish XIAP inhibition as an effective or safe CRC treatment.",
+      "tags": [
+        "Colorectal cancer",
+        "Intestinal epithelium",
+        "Inflammation",
+        "Organoids"
+      ],
+      "sources": [
+        {
+          "label": "Cell Death & Disease — November 2, 2026",
+          "url": "https://www.nature.com/articles/s41419-026-09391-9"
+        }
+      ]
+    },
+    {
+      "title": "Infant-associated Bifidobacterium enzyme reveals selective milk glycopeptide nutrient access",
+      "takeaway": "Structural and biochemical work shows that a Bifidobacterium bifidum PNGaseA prefers glycans attached to short peptides over intact proteins.",
+      "what_happened": "Nature Communications published November 2 an enzyme study combining glycan cleavage assays, crystal structures, mutants and simulations; a beta-sheet cradle helps explain glycopeptide recognition.",
+      "why_it_matters": "Provides molecular detail on how infant-associated microbes can access host- and milk-derived glycans, beyond the better-known free milk oligosaccharides.",
+      "caveat": "The enzyme was characterized in defined assays; this does not establish infant health benefits or its contribution to nutrient flux in vivo.",
+      "tags": [
+        "Infant microbiome",
+        "Bifidobacterium",
+        "Glycans",
+        "Structural biology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — November 2, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78972-1"
+        }
+      ]
+    },
+    {
+      "title": "Human gut megaplasmids may shuttle prophages across distant bacterial lineages",
+      "takeaway": "Researchers identify large conjugative plasmids called Hodors associated with highly similar prophages across diverse gut bacteria.",
+      "what_happened": "A November 2 Nature Communications study analyzed gut microbial genomes and identified >300-kb conjugative megaplasmids with conserved transfer machinery, some containing intact prophage genomes.",
+      "why_it_matters": "Suggests a potential route for microbial gene mobility and viral ecology that conventional species inventories may overlook.",
+      "caveat": "The proposed cross-lineage transfer route is supported by genomic and activity signatures, not direct proof of all transfer steps in living human guts.",
+      "tags": [
+        "Gut virome",
+        "Horizontal gene transfer",
+        "Metagenomics",
+        "Plasmids"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — November 2, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-79223-z"
+        }
+      ]
+    },
+    {
+      "title": "Cryo-EM reveals coordinated relaxase action at the start of bacterial DNA transfer",
+      "takeaway": "A structural study explains how two TraI molecules coordinate DNA nicking and helicase loading during plasmid conjugation.",
+      "what_happened": "Nature Communications published November 3 cryo-EM and mechanistic evidence for a functionally asymmetric, DNA-mediated TraI dimer; host IHF helps delay nicking until helicase loading.",
+      "why_it_matters": "Clarifies molecular machinery underlying horizontal gene transfer, a major mechanism contributing to antibiotic-resistance dissemination.",
+      "caveat": "A mechanistic plasmid-system study does not directly quantify resistance spread in clinical or gut microbial communities.",
+      "tags": [
+        "Antibiotic resistance",
+        "Conjugation",
+        "Cryo-EM",
+        "Molecular microbiology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — November 3, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78888-w"
+        }
+      ]
+    }
+  ]
+}
