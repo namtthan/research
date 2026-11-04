@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-04",
+  "stories": [
+    {
+      "title": "A live biotherapeutic product for adult allogeneic hematopoietic cell transplantation recipients: a partially randomized, placebo-controlled phase 1b trial",
+      "takeaway": "A two-cohort phase 1b trial evaluated SER-155 for gut microbiome disruption and bloodstream infection risk after allogeneic transplantation.",
+      "what_happened": "Open-label and placebo-controlled cohorts with microbiome conditioning and follow-up.",
+      "why_it_matters": "An early clinical translation test of cultivated multi-strain microbiome therapy.",
+      "caveat": "Small phase 1b trial; efficacy and infection prevention require larger studies.",
+      "tags": [
+        "Microbiome therapeutics",
+        "Clinical trial"
+      ],
+      "sources": [
+        {
+          "label": "Nature Medicine (Nov 3, 2026)",
+          "url": "https://www.nature.com/articles/s41591-026-04686-y"
+        }
+      ]
+    },
+    {
+      "title": "Disease-specific alterations in plasma fatty acids and arachidonic acid metabolites in ulcerative colitis and crohn’s disease",
+      "takeaway": "Investigators report disease-associated differences in circulating fatty acids and arachidonic-acid metabolites across IBD groups.",
+      "what_happened": "Comparative plasma lipid/metabolite profiling in UC and Crohn's disease.",
+      "why_it_matters": "May refine metabolic biomarker hypotheses for intestinal inflammation.",
+      "caveat": "Observational metabolic signatures do not establish causality.",
+      "tags": [
+        "IBD",
+        "Lipidomics"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports (Nov 3, 2026)",
+          "url": "https://www.nature.com/articles/s41598-026-78013-3"
+        }
+      ]
+    },
+    {
+      "title": "Targeting hypersialylation in pancreatic cancer microfluidic models reverses its malignant phenotype and enhances CAR-T therapy",
+      "takeaway": "Microfluidic pancreatic cancer models were used to test targeting tumor hypersialylation alongside CAR-T treatment.",
+      "what_happened": "Cancer microfluidic modeling and therapeutic perturbation.",
+      "why_it_matters": "A translational demonstration of human-relevant microfluidic immunotherapy testing.",
+      "caveat": "Preclinical microfluidic responses do not establish patient efficacy.",
+      "tags": [
+        "Organ-on-chip",
+        "Immunotherapy"
+      ],
+      "sources": [
+        {
+          "label": "Cell Death & Disease (Nov 2, 2026)",
+          "url": "https://www.nature.com/articles/s41419-026-09354-0"
+        }
+      ]
+    },
+    {
+      "title": "Microwell-based nDEP multifunctional microfluidic system for single-cell capture and analysis",
+      "takeaway": "A microwell platform combines negative dielectrophoresis with microfluidics for single-cell handling.",
+      "what_happened": "Microwells, nDEP manipulation and cell-analysis measurements.",
+      "why_it_matters": "Expands controllable cell isolation methods for engineered biological platforms.",
+      "caveat": "Performance may depend on cell type and electrical operating conditions.",
+      "tags": [
+        "Microfluidics",
+        "Single-cell"
+      ],
+      "sources": [
+        {
+          "label": "Microsystems & Nanoengineering (Nov 2, 2026)",
+          "url": "https://www.nature.com/articles/s41378-026-01484-x"
+        }
+      ]
+    },
+    {
+      "title": "Functional readouts of neural organoids",
+      "takeaway": "Review compares calcium/voltage imaging, patch clamp and multielectrode array recordings in neural organoids.",
+      "what_happened": "Methodological review of electrophysiology and optical functional assays.",
+      "why_it_matters": "Highlights the need for functional validation beyond morphology in advanced in-vitro models.",
+      "caveat": "A review, not a new head-to-head benchmark.",
+      "tags": [
+        "Organoids",
+        "NAMs",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Nature Reviews Bioengineering (Nov 2, 2026)",
+          "url": "https://www.nature.com/articles/s44222-026-00507-6"
+        }
+      ]
+    }
+  ]
+}
