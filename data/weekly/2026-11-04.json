@@ -1,0 +1,268 @@
+{
+  "date": "2026-11-04",
+  "stories": [
+    {
+      "title": "A live biotherapeutic product for adult allogeneic hematopoietic cell transplantation recipients: a partially randomized, placebo-controlled phase 1b trial",
+      "authors_source": "Nature Medicine (Nov 3, 2026)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "A two-cohort phase 1b trial evaluated SER-155 for gut microbiome disruption and bloodstream infection risk after allogeneic transplantation.",
+      "what_happened": "A two-cohort phase 1b trial evaluated SER-155 for gut microbiome disruption and bloodstream infection risk after allogeneic transplantation.",
+      "method": "Open-label and placebo-controlled cohorts with microbiome conditioning and follow-up.",
+      "why_it_matters": "An early clinical translation test of cultivated multi-strain microbiome therapy.",
+      "read_first": "Review safety, engraftment and the randomized cohort denominators.",
+      "caveat": "Small phase 1b trial; efficacy and infection prevention require larger studies.",
+      "priority": "#1",
+      "tags": [
+        "Microbiome therapeutics",
+        "Clinical trial"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41591-026-04686-y"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Disease-specific alterations in plasma fatty acids and arachidonic acid metabolites in ulcerative colitis and crohn’s disease",
+      "authors_source": "Scientific Reports (Nov 3, 2026)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Investigators report disease-associated differences in circulating fatty acids and arachidonic-acid metabolites across IBD groups.",
+      "what_happened": "Investigators report disease-associated differences in circulating fatty acids and arachidonic-acid metabolites across IBD groups.",
+      "method": "Comparative plasma lipid/metabolite profiling in UC and Crohn's disease.",
+      "why_it_matters": "May refine metabolic biomarker hypotheses for intestinal inflammation.",
+      "read_first": "Inspect patient stratification and medication confounders.",
+      "caveat": "Observational metabolic signatures do not establish causality.",
+      "priority": "#2",
+      "tags": [
+        "IBD",
+        "Lipidomics"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41598-026-78013-3"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Targeting hypersialylation in pancreatic cancer microfluidic models reverses its malignant phenotype and enhances CAR-T therapy",
+      "authors_source": "Cell Death & Disease (Nov 2, 2026)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Microfluidic pancreatic cancer models were used to test targeting tumor hypersialylation alongside CAR-T treatment.",
+      "what_happened": "Microfluidic pancreatic cancer models were used to test targeting tumor hypersialylation alongside CAR-T treatment.",
+      "method": "Cancer microfluidic modeling and therapeutic perturbation.",
+      "why_it_matters": "A translational demonstration of human-relevant microfluidic immunotherapy testing.",
+      "read_first": "Inspect controls separating glycan perturbation from CAR-T effects.",
+      "caveat": "Preclinical microfluidic responses do not establish patient efficacy.",
+      "priority": "#3",
+      "tags": [
+        "Organ-on-chip",
+        "Immunotherapy"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41419-026-09354-0"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Microwell-based nDEP multifunctional microfluidic system for single-cell capture and analysis",
+      "authors_source": "Microsystems & Nanoengineering (Nov 2, 2026)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "A microwell platform combines negative dielectrophoresis with microfluidics for single-cell handling.",
+      "what_happened": "A microwell platform combines negative dielectrophoresis with microfluidics for single-cell handling.",
+      "method": "Microwells, nDEP manipulation and cell-analysis measurements.",
+      "why_it_matters": "Expands controllable cell isolation methods for engineered biological platforms.",
+      "read_first": "Assess capture efficiency, viability and throughput.",
+      "caveat": "Performance may depend on cell type and electrical operating conditions.",
+      "priority": "#4",
+      "tags": [
+        "Microfluidics",
+        "Single-cell"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41378-026-01484-x"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Functional readouts of neural organoids",
+      "authors_source": "Nature Reviews Bioengineering (Nov 2, 2026)",
+      "publication_type": "Peer-reviewed review",
+      "takeaway": "Review compares calcium/voltage imaging, patch clamp and multielectrode array recordings in neural organoids.",
+      "what_happened": "Review compares calcium/voltage imaging, patch clamp and multielectrode array recordings in neural organoids.",
+      "method": "Methodological review of electrophysiology and optical functional assays.",
+      "why_it_matters": "Highlights the need for functional validation beyond morphology in advanced in-vitro models.",
+      "read_first": "Start with measurement tradeoffs and electrode–tissue coupling.",
+      "caveat": "A review, not a new head-to-head benchmark.",
+      "priority": "#5",
+      "tags": [
+        "Organoids",
+        "NAMs",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s44222-026-00507-6"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Gut microbiome of children with Autism Spectrum Disorder associates with clinical severity",
+      "authors_source": "Nature Communications (Nov 3, 2026)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Shotgun metagenomics of 720 children with ASD and 151 matched controls examines microbiome associations with symptom heterogeneity.",
+      "what_happened": "Shotgun metagenomics of 720 children with ASD and 151 matched controls examines microbiome associations with symptom heterogeneity.",
+      "method": "Stool metagenomics and clinical severity stratification.",
+      "why_it_matters": "Illustrates the importance of phenotype-resolved microbiome cohort design.",
+      "read_first": "Inspect covariate control, subgroup sizes and external replication.",
+      "caveat": "Association does not imply microbial causation or treatment benefit.",
+      "priority": "#6",
+      "tags": [
+        "Gut microbiome",
+        "Metagenomics"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41467-026-79124-1"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Seasonal dynamics in lettuce phyllosphere microbiota and potential transfer to the human gut",
+      "authors_source": "npj Science of Food (Nov 3, 2026)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Study explores seasonal changes in lettuce-associated microbial communities and potential gut exposure.",
+      "what_happened": "Study explores seasonal changes in lettuce-associated microbial communities and potential gut exposure.",
+      "method": "Seasonal phyllosphere microbiome profiling and transfer-oriented analysis.",
+      "why_it_matters": "Links food-associated microbial ecology to questions of human microbial exposure.",
+      "read_first": "Examine evidence distinguishing exposure from stable gut colonization.",
+      "caveat": "Potential transfer is not proof of durable engraftment.",
+      "priority": "#7",
+      "tags": [
+        "Food microbiome",
+        "Microbial ecology"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41538-026-01228-1"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Integrative animal model and pilot clinical study reveal the therapeutic effects and mechanisms of Modified Wumei Pill against intestinal inflammation",
+      "authors_source": "Scientific Reports (Nov 3, 2026)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "DSS colitis experiments, CD4 T-cell assays and a small UC trial investigate Th17/glycolytic responses.",
+      "what_happened": "DSS colitis experiments, CD4 T-cell assays and a small UC trial investigate Th17/glycolytic responses.",
+      "method": "Mouse colitis, cell differentiation assays and randomized pilot clinical study.",
+      "why_it_matters": "Illustrates triangulation between mechanistic and preliminary human inflammatory endpoints.",
+      "read_first": "Inspect trial sample size, randomization, comparators and adverse events.",
+      "caveat": "Small pilot study cannot establish clinical efficacy or general safety.",
+      "priority": "#8",
+      "tags": [
+        "Ulcerative colitis",
+        "Th17",
+        "Pilot trial"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41598-026-77282-2"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Low-voltage, ultra-broadband wearable MEMS ultrasound: a frequency-merged, wafer-scale framework for continuous in vivo cardiovascular imaging and monitoring",
+      "authors_source": "Microsystems & Nanoengineering (Nov 2, 2026)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "A wearable pMUT array reports 81.7% bandwidth at 5 Vp drive.",
+      "what_happened": "A wearable pMUT array reports 81.7% bandwidth at 5 Vp drive.",
+      "method": "MEMS transducer design, fabrication and cardiovascular sensing characterization.",
+      "why_it_matters": "Shows advances in low-power, scalable biomedical instrumentation.",
+      "read_first": "Inspect comparisons against commercial imaging and longitudinal stability.",
+      "caveat": "Device performance is not equivalent to clinical outcome validation.",
+      "priority": "#9",
+      "tags": [
+        "Bioengineering",
+        "Wearable sensors"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41378-026-01451-6"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Genotoxic safety and long-term engraftment dynamics of efficient translational CRISPR/Cas9 therapeutics for β-haemoglobinopathies from bench to clinical trials",
+      "authors_source": "Gene Therapy (Nov 3, 2026)",
+      "publication_type": "Peer-reviewed review",
+      "takeaway": "Review examines safety and durability issues in genome-edited hematopoietic therapeutics.",
+      "what_happened": "Review examines safety and durability issues in genome-edited hematopoietic therapeutics.",
+      "method": "Literature synthesis of gene editing and long-term follow-up.",
+      "why_it_matters": "A useful translation and safety perspective for advanced biological therapeutics.",
+      "read_first": "Read genotoxicity testing and follow-up limitations.",
+      "caveat": "Review does not provide new prospective clinical outcomes.",
+      "priority": "#10",
+      "tags": [
+        "Gene editing",
+        "Safety",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication",
+          "url": "https://www.nature.com/articles/s41434-026-00656-8"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": false,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    }
+  ]
+}
