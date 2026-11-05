@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-05",
+  "stories": [
+    {
+      "title": "Microbiome-wide PheWAS links gut microbial SNVs to health and exposures",
+      "takeaway": "A strain-level analysis of 10,781 people identified 940 independent associations between microbial variants and host traits.",
+      "what_happened": "Researchers compared 12.8 million microbial SNVs with 244 phenotypes/exposures across six cohorts using population-structure-aware mixed models.",
+      "why_it_matters": "Provides a large public resource for studying microbiome genetic variation beyond species abundance.",
+      "caveat": "Associations are observational; protein structural interpretations do not prove causal effects.",
+      "tags": [
+        "Gut microbiome",
+        "Metagenomics",
+        "Population genetics"
+      ],
+      "sources": [
+        {
+          "label": "Nature — November 4, 2026",
+          "url": "https://www.nature.com/articles/s41586-026-11220-0"
+        }
+      ]
+    },
+    {
+      "title": "Engineering commensal Lachnospiraceae for programmable therapeutic delivery in the mouse gut",
+      "takeaway": "Researchers engineered a gut commensal from Lachnospiraceae to express and secrete therapeutic cargo in mice.",
+      "what_happened": "The Nature Microbiology study reports expression/secretion systems and experimental therapeutic delivery in mouse models of metabolic dysfunction-associated steatotic liver disease.",
+      "why_it_matters": "Expands the range of intestinal commensals available for programmable live biotherapeutics.",
+      "caveat": "Mouse proof of concept; human safety, colonization stability and efficacy remain unestablished.",
+      "tags": [
+        "Synthetic biology",
+        "Microbiome therapeutics",
+        "Gut bacteria"
+      ],
+      "sources": [
+        {
+          "label": "Nature Microbiology — November 4, 2026",
+          "url": "https://www.nature.com/articles/s41564-026-02527-9"
+        }
+      ]
+    },
+    {
+      "title": "Overconsumption of low-digestible sugars can increase susceptibility to Salmonella Typhimurium infection",
+      "takeaway": "Acute high-dose intake of selected poorly absorbed sugars weakened colonization resistance and increased Salmonella invasion in mice.",
+      "what_happened": "Dietary sugar challenges altered gut fermentation, pH and microbial ecology, favoring pathogen expansion and virulence-dependent tissue dissemination.",
+      "why_it_matters": "Shows why diet–microbe–pathogen interactions require context-specific infection-risk assessment.",
+      "caveat": "Large acute mouse doses (~5 g/kg) are not equivalent to ordinary human intake; moderate intake did not reproduce the effect.",
+      "tags": [
+        "Enteric infection",
+        "Diet",
+        "Microbiome",
+        "Salmonella"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — November 3, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78218-0"
+        }
+      ]
+    },
+    {
+      "title": "Differential methanogenic archaea-induced TLR8-dependent signaling engages gene classes regulated by NF-κB p65 and STAT1/2",
+      "takeaway": "Two common gut methanogens elicited different timing and strength of TLR8-dependent immune transcription in human blood cells.",
+      "what_happened": "Time-resolved PBMC RNA-seq, cellular uptake studies and ChIP-qPCR connected archaeal RNA sensing with NF-κB p65 and STAT1/2-associated gene programs.",
+      "why_it_matters": "Highlights the often-overlooked archaeome as a source of distinct innate immune signals.",
+      "caveat": "Ex vivo immune-cell stimulation does not establish disease effects or the same responses within intestinal tissue.",
+      "tags": [
+        "Gut archaeome",
+        "Innate immunity",
+        "TLR8"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — November 2, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-78885-z"
+        }
+      ]
+    },
+    {
+      "title": "Metabolic specialization in the gut microbiome of aquatic mammalian herbivores",
+      "takeaway": "Comparative microbiome research identified a microbial pathway for epilactose utilization associated with aquatic herbivory.",
+      "what_happened": "Researchers characterized the microbial and metabolic basis of aquatic mammalian herbivore gut carbohydrate metabolism.",
+      "why_it_matters": "Illustrates how ecological niches can reveal previously underappreciated microbial metabolic capabilities.",
+      "caveat": "Host ecology findings should not be assumed to transfer to human intestinal physiology.",
+      "tags": [
+        "Microbial metabolism",
+        "Comparative microbiome",
+        "Glycans"
+      ],
+      "sources": [
+        {
+          "label": "Nature Microbiology — November 2, 2026",
+          "url": "https://www.nature.com/articles/s41564-026-02520-2"
+        }
+      ]
+    }
+  ]
+}
