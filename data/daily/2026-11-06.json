@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-06",
+  "stories": [
+    {
+      "title": "Lifestyle-associated microbiome axes separate health and disease signatures",
+      "takeaway": "In 6,803 Japanese adults, investigators found opposing microbial mediation patterns linking lifestyle factors to health and chronic disease.",
+      "what_happened": "Shotgun metagenomics and mediation analysis connected diet and activity with a health-associated metabolic axis versus an oral-pathobiont-enriched disease axis.",
+      "why_it_matters": "Adds population-level evidence for testing microbiome-mediated lifestyle hypotheses without assuming causation.",
+      "caveat": "Observational mediation is sensitive to residual confounding; findings need replication across populations.",
+      "tags": [
+        "Gut microbiome",
+        "Epidemiology",
+        "Diet"
+      ],
+      "sources": [
+        {
+          "label": "Nature Medicine — November 5, 2026",
+          "url": "https://www.nature.com/articles/s41591-026-04744-5"
+        }
+      ]
+    },
+    {
+      "title": "Spatial multi-omics maps glioblastoma cell-state transitions",
+      "takeaway": "An atlas of 12 human glioblastomas suggests that regional cellular environments track developmental-like to injury-response and hypoxic cancer states.",
+      "what_happened": "Researchers combined single-cell transcriptomic, epigenomic and genomic profiling across spatially sampled tumor regions.",
+      "why_it_matters": "Demonstrates how tissue geography and multi-omics can refine disease-model interpretation.",
+      "caveat": "Observational human tumor atlas; trajectories are inferred and do not by themselves establish lineage causality.",
+      "tags": [
+        "Single-cell",
+        "Spatial omics",
+        "Cancer"
+      ],
+      "sources": [
+        {
+          "label": "Nature — November 4, 2026",
+          "url": "https://www.nature.com/articles/s41586-026-11234-8"
+        }
+      ]
+    },
+    {
+      "title": "Nectin-4 identified as a major rubella virus entry factor",
+      "takeaway": "Proximity proteomics and genetic perturbation identified nectin-4 as a functional receptor supporting rubella entry.",
+      "what_happened": "CRISPR loss-of-function and ectopic expression experiments linked nectin-4 to viral attachment and endocytosis in relevant cell systems.",
+      "why_it_matters": "Illustrates the value of receptor discovery and human-cell validation for infectious-disease modeling.",
+      "caveat": "Cellular entry mechanism does not alone establish clinical efficacy of receptor-targeted interventions.",
+      "tags": [
+        "Infection",
+        "CRISPR",
+        "Cell biology"
+      ],
+      "sources": [
+        {
+          "label": "Nature — November 4, 2026",
+          "url": "https://www.nature.com/articles/s41586-026-11248-2"
+        }
+      ]
+    },
+    {
+      "title": "Direct RNA sequencing reveals layers of aging-associated transcript regulation",
+      "takeaway": "Long-read direct RNA sequencing highlights transcript features that conventional short-read expression summaries can miss in aging studies.",
+      "what_happened": "The study profiles aging-associated transcriptome regulation using direct RNA sequencing.",
+      "why_it_matters": "Points to improved RNA characterization strategies for tissue engineering and disease models.",
+      "caveat": "The reported associations require functional validation; platform and sample context limit generalization.",
+      "tags": [
+        "Sequencing",
+        "Transcriptomics",
+        "Aging"
+      ],
+      "sources": [
+        {
+          "label": "npj Aging — November 4, 2026",
+          "url": "https://www.nature.com/articles/s41514-026-00554-8"
+        }
+      ]
+    },
+    {
+      "title": "Endothelial IDH2 lactylation investigated in diabetic atherosclerosis",
+      "takeaway": "Experimental work links IDH2 K272 lactylation and alpha-ketoglutarate metabolism with endothelial function in diabetic atherosclerosis.",
+      "what_happened": "The study investigates a specific post-translational modification and metabolic pathway in vascular disease models.",
+      "why_it_matters": "Broadens interest in metabolism–barrier interactions and mechanistic vascular tissue readouts.",
+      "caveat": "Disease-model findings should not be interpreted as a validated human treatment.",
+      "tags": [
+        "Vascular biology",
+        "Metabolism",
+        "Bioengineering"
+      ],
+      "sources": [
+        {
+          "label": "Cell Death & Disease — November 5, 2026",
+          "url": "https://www.nature.com/articles/s41419-026-09399-1"
+        }
+      ]
+    }
+  ]
+}
