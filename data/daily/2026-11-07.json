@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-07",
+  "stories": [
+    {
+      "title": "Human intestinal epithelium reveals divergent Salmonella cell tropism",
+      "takeaway": "Generalist and human-restricted Salmonella lineages show differing preferences for human intestinal epithelial cell targets.",
+      "what_happened": "Researchers compared intestinal epithelial interactions of Salmonella lineages with distinct host ranges, identifying divergence in cell tropism.",
+      "why_it_matters": "Human-relevant intestinal infection models can help test pathogen specificity beyond conventional animal-host assumptions.",
+      "caveat": "Cell tropism in experimental epithelial systems does not alone establish clinical severity or transmission differences.",
+      "tags": [
+        "Intestinal epithelium",
+        "Infection",
+        "Host–pathogen interactions"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — November 6, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-79067-7"
+        }
+      ]
+    },
+    {
+      "title": "Placenta-on-a-chip reveals sublethal functional injury from cadmium",
+      "takeaway": "A human placental microphysiological model detected impaired nutrient transport, hormone secretion and barrier function at exposures that did not cause overt cell death.",
+      "what_happened": "A perfused maternal–fetal interface chip incorporating human placental cells and vascularized tissue was challenged with cadmium; researchers measured transport, permeability, metabolism and protective BCRP activity.",
+      "why_it_matters": "Demonstrates why human organ-chip safety studies need functional endpoints in addition to cell viability.",
+      "caveat": "Preclinical chip results and candidate metabolic biomarkers require independent validation in pregnancy cohorts.",
+      "tags": [
+        "Organ-on-chip",
+        "New approach methodologies",
+        "Toxicology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Biomedical Engineering / Penn Engineering — November 5, 2026",
+          "url": "https://doi.org/10.1038/s41551-026-01801-9"
+        }
+      ]
+    },
+    {
+      "title": "Colorectal cancer review examines stem-cell niches and tumor heterogeneity",
+      "takeaway": "A new synthesis frames colorectal tumor initiation around stem-cell competition, crypt niche constraints and ectopic stem-cell states.",
+      "what_happened": "The review integrates evidence on intestinal crypt organization, cellular origins and regional heterogeneity in colorectal cancer.",
+      "why_it_matters": "Provides a conceptual framework for evaluating cell-state plasticity and niche context in human intestinal disease models.",
+      "caveat": "This is a review synthesizing diverse systems, not a single prospective experimental demonstration.",
+      "tags": [
+        "Colorectal cancer",
+        "Stem cells",
+        "Intestinal biology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Reviews Cancer — November 6, 2026",
+          "url": "https://www.nature.com/articles/s41568-026-00988-y"
+        }
+      ]
+    },
+    {
+      "title": "Gut microbial glycine lipids linked to mitochondrial metabolism in mice",
+      "takeaway": "Bacteroidota-derived glycine lipids were associated with improved liver or muscle mitochondrial responses in separate mouse studies.",
+      "what_happened": "Investigators studied microbiome-derived lipid metabolites in diet-associated mouse models, including liver steatosis and skeletal muscle bioenergetics.",
+      "why_it_matters": "Shows how microbial metabolites can influence host physiology outside the intestine and motivate mechanistic host–microbe studies.",
+      "caveat": "Animal models and specific lipid exposures do not establish therapeutic benefits in humans.",
+      "tags": [
+        "Gut microbiome",
+        "Microbial metabolites",
+        "Mitochondria"
+      ],
+      "sources": [
+        {
+          "label": "Gastro Hep Advances / Journal of Physiology — highlighted November 3, 2026",
+          "url": "https://phys.org/news/2026-11-microbiome-reveals-bacterial-lipids-liver.html"
+        }
+      ]
+    },
+    {
+      "title": "Microbial proline dipeptides illuminate rumen nitrogen efficiency",
+      "takeaway": "New work identifies rumen-microbe-derived proline-containing peptides associated with more efficient nitrogen utilization in dairy cattle.",
+      "what_happened": "Researchers investigated microbial peptide production and its contribution to ruminant nitrogen metabolism.",
+      "why_it_matters": "Highlights metabolite-resolved microbiome function and translational applications in sustainable biotechnology.",
+      "caveat": "Ruminant digestive physiology differs substantially from the human gut; human-health implications are speculative.",
+      "tags": [
+        "Microbiome",
+        "Microbial metabolism",
+        "Biotechnology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — November 6, 2026",
+          "url": "https://www.nature.com/subjects/microbiome"
+        }
+      ]
+    }
+  ]
+}
