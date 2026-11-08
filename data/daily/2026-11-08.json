@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-08",
+  "stories": [
+    {
+      "title": "Enteric lipid signaling couples gut motility to pathogen clearance in fruit flies",
+      "takeaway": "In infected Drosophila, intestinal diacylglycerol metabolism supports muscle contraction, defecation and bacterial expulsion.",
+      "what_happened": "Researchers combined lipidomics, enterocyte-specific genetic perturbations and motility/clearance assays; 1,2-diacylglycerols were linked to PKC–calcium signaling in visceral muscle.",
+      "why_it_matters": "Connects epithelial metabolism, physical microbial clearance and host defense, suggesting tractable questions for comparative intestinal physiology.",
+      "caveat": "This is a fruit-fly infection model; conservation of the mechanism and effects in human intestines remain untested.",
+      "tags": [
+        "Intestinal infection",
+        "Motility",
+        "Host–pathogen interactions"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — published November 5, 2026",
+          "url": "https://www.nature.com/articles/s41467-026-79306-x"
+        }
+      ]
+    },
+    {
+      "title": "Human multi-omics links intestinal microbiome profiles to fatty liver disease severity",
+      "takeaway": "A bariatric-surgery cohort study integrates hepatic transcriptomics, intestinal microbiome and metabolite profiles across metabolic liver disease states.",
+      "what_happened": "Investigators compared host liver gene-expression patterns, gut microbial composition and metabolites in patients with MASLD, MASH and fibrosis.",
+      "why_it_matters": "Illustrates opportunities and pitfalls of integrating human tissue transcriptomics with microbial and metabolite measurements.",
+      "caveat": "Associations in a selected surgical cohort cannot demonstrate microbial causality or generalize automatically to nonsurgical populations.",
+      "tags": [
+        "Gut microbiome",
+        "Multi-omics",
+        "Metabolic disease"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — published November 6, 2026",
+          "url": "https://www.nature.com/articles/s41598-026-79606-8"
+        }
+      ]
+    },
+    {
+      "title": "Microbial gene knockouts reveal a gut–brain signaling mechanism in nematodes",
+      "takeaway": "E. coli gene perturbations altered C. elegans aggregation through microbial agmatine and host nitric-oxide/cGMP–PKG signaling.",
+      "what_happened": "A bacterial single-gene knockout screen identified speB and narG as regulators of nematode social behavior, with mechanistic follow-up of agmatine and nitric oxide.",
+      "why_it_matters": "Shows why strain-level microbial genetics can reveal functional host effects missed by species-level microbiome profiling.",
+      "caveat": "Worm aggregation is not a proxy for human social behavior, and translation to mammalian gut–brain biology is unestablished.",
+      "tags": [
+        "Microbiome",
+        "Microbial genetics",
+        "Gut–brain axis"
+      ],
+      "sources": [
+        {
+          "label": "Cell Death Discovery — published November 7, 2026",
+          "url": "https://www.nature.com/articles/s41420-026-03449-5"
+        }
+      ]
+    },
+    {
+      "title": "Pairwise Cas12a screens map DNA-damage-response genetic dependencies",
+      "takeaway": "Combinatorial disruption of 233 DNA-repair genes uncovered synthetic-lethal and buffering interactions with potential cancer-therapy relevance.",
+      "what_happened": "Researchers used Cas12a pairwise knockout screens in cultured human cell lines and follow-up functional experiments to map DNA damage response interactions.",
+      "why_it_matters": "A useful platform example for systematic perturbation biology and identifying context-dependent therapeutic vulnerabilities.",
+      "caveat": "Genetic dependencies in selected cultured cell lines are not yet validated treatment responses in patients.",
+      "tags": [
+        "Functional genomics",
+        "CRISPR",
+        "DNA damage response"
+      ],
+      "sources": [
+        {
+          "label": "Nature Biotechnology — published November 6, 2026",
+          "url": "https://www.nature.com/articles/s41587-026-03339-2"
+        }
+      ]
+    },
+    {
+      "title": "Proteome cysteine reactivity emerges as a vulnerability of senescent cells",
+      "takeaway": "A study reports that altered cysteine redox chemistry in senescent cells can be exploited experimentally to promote senolysis.",
+      "what_happened": "Integrated proteomics and functional experiments linked glutathione-disulfide-associated proteostasis changes to susceptibility to vanadyl sulfate; mouse experiments assessed aging phenotypes.",
+      "why_it_matters": "Connects redox proteomics, cellular stress and therapeutic target discovery across aging-related biology.",
+      "caveat": "Mouse findings do not establish human efficacy or safety; vanadyl sulfate should not be treated as a clinically proven anti-aging supplement.",
+      "tags": [
+        "Redox biology",
+        "Proteomics",
+        "Aging"
+      ],
+      "sources": [
+        {
+          "label": "Nature Aging — published November 6, 2026",
+          "url": "https://www.nature.com/articles/s43587-026-01253-5"
+        }
+      ]
+    }
+  ]
+}
