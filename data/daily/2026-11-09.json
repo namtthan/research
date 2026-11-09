@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-09",
+  "stories": [
+    {
+      "title": "Patient-reported trajectories reveal heterogeneity in ulcerative colitis",
+      "takeaway": "A Nature Medicine study proposes an ulcerative-colitis taxonomy based on individual patient-reported response trajectories rather than a single pooled response endpoint.",
+      "what_happened": "Schreiber and colleagues analyzed longitudinal patient-reported treatment-response trajectories to classify patterns of ulcerative colitis response.",
+      "why_it_matters": "Highlights how longitudinal patient-level outcomes can reveal clinically relevant variation that average treatment responses may obscure.",
+      "caveat": "Trajectory-derived categories require evaluation for reproducibility, clinical decision value and generalizability; patient-reported measures are not interchangeable with endoscopic remission.",
+      "tags": [
+        "Ulcerative colitis",
+        "Clinical phenotyping",
+        "Precision medicine"
+      ],
+      "sources": [
+        {
+          "label": "Nature Medicine — November 9, 2026",
+          "url": "https://www.nature.com/articles/s41591-026-04741-8"
+        }
+      ]
+    },
+    {
+      "title": "Mammalian archaeome review maps an overlooked dimension of gut ecology",
+      "takeaway": "A new Nature Reviews Microbiology review synthesizes the diversity and potential physiological roles of mammalian-associated archaea, particularly methanogens.",
+      "what_happened": "Kumpitsch and colleagues review archaeal colonization, microbial syntrophy, diet and host associations across humans and ruminants.",
+      "why_it_matters": "Broadens microbiome analysis beyond bacterial abundance toward interkingdom metabolic interactions and host physiology.",
+      "caveat": "Many disease links remain associative; cross-species comparisons and methane-production phenotypes do not establish causal effects in human disease.",
+      "tags": [
+        "Gut microbiome",
+        "Archaea",
+        "Microbial ecology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Reviews Microbiology — November 9, 2026",
+          "url": "https://www.nature.com/articles/s41579-026-01388-7"
+        }
+      ]
+    },
+    {
+      "title": "Spaceflight microbiome review emphasizes longitudinal host–microbe measurements",
+      "takeaway": "A new Genome Watch article discusses how spaceflight changes microbiome dynamics and why integrated host and metabolite measurements matter.",
+      "what_happened": "Javaid and Mateeva survey spaceflight microbiome studies and highlight longitudinal multi-omics as a way to contextualize changes during missions.",
+      "why_it_matters": "Illustrates how environmental perturbations motivate integrated measurements of microbial communities and host physiology.",
+      "caveat": "This is a short synthesis rather than a new controlled experiment; small astronaut cohorts and concurrent exposures limit causal interpretation.",
+      "tags": [
+        "Microbiome",
+        "Multi-omics",
+        "Space biology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Reviews Microbiology — November 9, 2026",
+          "url": "https://www.nature.com/articles/s41579-026-01395-8"
+        }
+      ]
+    },
+    {
+      "title": "Endotrophin review connects extracellular matrix remodeling with fibroinflammation",
+      "takeaway": "Endotrophin, a collagen VI cleavage product, is discussed as a potential mediator and biomarker across fibrotic and metabolic diseases.",
+      "what_happened": "Maya-Ramos and colleagues synthesize preclinical and human evidence linking endotrophin with tissue remodeling, inflammation and metabolic dysfunction.",
+      "why_it_matters": "Offers a cross-organ framework for evaluating matrix-derived signals and fibrosis-related biomarkers in human tissue models.",
+      "caveat": "Biomarker association and experimental mechanistic evidence differ by disease; therapeutic targeting has not been broadly established in patients.",
+      "tags": [
+        "Tissue engineering",
+        "Extracellular matrix",
+        "Fibrosis"
+      ],
+      "sources": [
+        {
+          "label": "Nature Metabolism — November 9, 2026",
+          "url": "https://www.nature.com/articles/s42255-026-01657-y"
+        }
+      ]
+    },
+    {
+      "title": "Modular yeast biosynthesis advances routes to anticancer-drug precursors",
+      "takeaway": "A research highlight describes engineered yeast production of a direct precursor to etoposide and teniposide from glucose.",
+      "what_happened": "A Cell Discovery commentary discusses a Science study using a modular yeast biosynthesis platform for a plant-derived anticancer-drug precursor.",
+      "why_it_matters": "Shows how synthetic biology can diversify manufacturing routes for medically important small molecules.",
+      "caveat": "This is a commentary on another study, not independent validation; precursor synthesis does not itself demonstrate commercial-scale drug manufacture.",
+      "tags": [
+        "Synthetic biology",
+        "Biomanufacturing",
+        "Biotechnology"
+      ],
+      "sources": [
+        {
+          "label": "Cell Discovery — November 9, 2026",
+          "url": "https://www.nature.com/articles/s41421-026-00937-x"
+        }
+      ]
+    }
+  ]
+}
