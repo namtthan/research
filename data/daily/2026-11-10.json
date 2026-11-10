@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-10",
+  "stories": [
+    {
+      "title": "Microbiota-based cholesterol metabolism intervention investigated for colorectal cancer",
+      "takeaway": "A Nature Metabolism study examines microbiota-mediated changes in intratumoral cholesterol metabolism as a colorectal cancer treatment strategy.",
+      "what_happened": "Wu and colleagues report a microbiota-based approach to modifying cholesterol metabolism in colorectal tumors.",
+      "why_it_matters": "Links microbial activity to tumor metabolism and therapeutic design in intestinal cancer.",
+      "caveat": "Mechanistic and therapeutic generalizability, clinical efficacy and safety require independent validation.",
+      "tags": [
+        "Gut microbiome",
+        "Colorectal cancer",
+        "Tumor metabolism"
+      ],
+      "sources": [
+        {
+          "label": "Nature Metabolism — November 10, 2026",
+          "url": "https://www.nature.com/articles/s42255-026-01655-0"
+        }
+      ]
+    },
+    {
+      "title": "Randomized exercise trial measures gut microbiota changes in prediabetes",
+      "takeaway": "A 64-person randomized trial found higher gut microbial alpha-diversity after 12 weeks of HIIT than moderate continuous exercise.",
+      "what_happened": "Participants completed three supervised exercise sessions weekly for 12 weeks; investigators measured cardiometabolic outcomes and 16S rRNA microbiota profiles.",
+      "why_it_matters": "Demonstrates how a controlled lifestyle intervention can be paired with microbial ecology measurements in human participants.",
+      "caveat": "Microbiota was exploratory; 16S composition does not establish microbial mechanism, and the trial was small and short.",
+      "tags": [
+        "Gut microbiome",
+        "Clinical trial",
+        "Metabolic health"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — November 10, 2026",
+          "url": "https://www.nature.com/articles/s41598-026-78752-3"
+        }
+      ]
+    },
+    {
+      "title": "Engineered 3D cardiac tissues reviewed as functional biosensing platforms",
+      "takeaway": "A new engineering review integrates microfabrication, bioelectronics and tissue maturation for cardiac disease modeling and drug testing.",
+      "what_happened": "The review compares engineered cardiac tissue architectures and mechanical/electrical readouts within a micro- and nanoengineering framework.",
+      "why_it_matters": "Offers transferable principles for evaluating physiological fidelity and functional readouts in organ-on-chip and new approach methods.",
+      "caveat": "A synthesis of diverse model systems, not evidence that any single platform predicts patient outcomes.",
+      "tags": [
+        "Tissue engineering",
+        "Organ-on-chip",
+        "Biosensing"
+      ],
+      "sources": [
+        {
+          "label": "Microsystems & Nanoengineering — November 10, 2026",
+          "url": "https://www.nature.com/articles/s41378-026-01462-3"
+        }
+      ]
+    },
+    {
+      "title": "Image-based single-cell transcriptomics maps plasma cell clonality in situ",
+      "takeaway": "A Nature Methods study presents spatially resolved assessment of plasma cell clonality using image-based single-cell transcriptomics.",
+      "what_happened": "Yang and colleagues combine imaging-based transcriptomic measurements with methods for profiling plasma-cell clonal identities in intact tissue.",
+      "why_it_matters": "Extends the toolkit for relating immune-cell identity and clonal organization to tissue context.",
+      "caveat": "Performance and biological interpretation depend on assay sensitivity, sampling and tissue-specific validation.",
+      "tags": [
+        "Spatial transcriptomics",
+        "Single-cell methods",
+        "Immunology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Methods — November 10, 2026",
+          "url": "https://www.nature.com/articles/s41592-026-03296-3"
+        }
+      ]
+    },
+    {
+      "title": "3D matrix mechanics and small molecules jointly shape cardiac reprogramming",
+      "takeaway": "A new 3D study examines how extracellular-matrix biophysical cues interact with small molecules during fibroblast-to-cardiomyocyte reprogramming.",
+      "what_happened": "McCoy and colleagues evaluated combinations of matrix properties and chemical factors in three-dimensional cardiac reprogramming models.",
+      "why_it_matters": "Highlights why mechanical microenvironments and biochemical cues should be evaluated together in engineered tissue systems.",
+      "caveat": "Cell reprogramming outcomes in 3D experimental models do not establish mature tissue integration or clinical regeneration.",
+      "tags": [
+        "Biomaterials",
+        "Mechanobiology",
+        "Regenerative medicine"
+      ],
+      "sources": [
+        {
+          "label": "npj Biomedical Innovations — November 10, 2026",
+          "url": "https://www.nature.com/articles/s44385-026-00112-7"
+        }
+      ]
+    }
+  ]
+}
