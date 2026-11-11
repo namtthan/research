@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-11",
+  "stories": [
+    {
+      "title": "The small intestine microbiome: composition, host interactions and therapeutic potential",
+      "takeaway": "Synthesizes small-intestinal microbial ecology, host interactions and therapeutic opportunities.",
+      "what_happened": "Review of human small-intestine sampling, microbial composition and host-interaction literature.",
+      "why_it_matters": "Clarifies why stool-based observations cannot automatically represent the small bowel.",
+      "caveat": "Review, not a new interventional trial.",
+      "tags": [
+        "Gut microbiome",
+        "Small intestine",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Nature Reviews Microbiology — 2026-11-10",
+          "url": "https://www.nature.com/articles/s41579-026-01389-6"
+        }
+      ]
+    },
+    {
+      "title": "Flow-dependent TGF-β1 secretion from HCT116 cells following constriction-based microfluidic passage",
+      "takeaway": "Investigates how microfluidic constriction and flow affect TGF-β1 release from HCT116 colorectal cells.",
+      "what_happened": "Microfluidic constriction passage and TGF-β1/bioactivity measurements.",
+      "why_it_matters": "Shows why cell handling mechanics can alter biological assay readouts.",
+      "caveat": "Cell-line passage is not equivalent to intact intestinal tissue physiology.",
+      "tags": [
+        "Microfluidics",
+        "Mechanobiology",
+        "Cancer"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — 2026-11-10",
+          "url": "https://www.nature.com/articles/s41598-026-69804-9"
+        }
+      ]
+    },
+    {
+      "title": "Microplastics inhibit macrophage bioenergetics impairing homeostatic function and immune responsiveness",
+      "takeaway": "Examines how microplastic exposure changes pulmonary macrophage energy metabolism and immune responsiveness.",
+      "what_happened": "Experimental microplastic exposure and macrophage bioenergetic/immune assays.",
+      "why_it_matters": "Illustrates mechanistic links between environmental exposure and immune-cell metabolism.",
+      "caveat": "Experimental exposures may not represent typical human exposure.",
+      "tags": [
+        "Immunology",
+        "Bioenergetics"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — 2026-11-09",
+          "url": "https://www.nature.com/articles/s41598-026-76299-x"
+        }
+      ]
+    },
+    {
+      "title": "The FMR1 isoform landscape reveals new spliced variants in women’s blood and ovarian tissues",
+      "takeaway": "Reports alternative FMR1 transcript isoforms in blood and ovarian tissue.",
+      "what_happened": "Transcript-isoform profiling including long-read sequencing.",
+      "why_it_matters": "Demonstrates why transcript-level resolution matters beyond gene counts.",
+      "caveat": "Tissue-specific observations do not imply established functional effects.",
+      "tags": [
+        "Transcriptomics",
+        "Long-read sequencing"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — 2026-11-10",
+          "url": "https://www.nature.com/articles/s41598-026-78955-8"
+        }
+      ]
+    },
+    {
+      "title": "An AI-powered trisomy 21 Research Assistant",
+      "takeaway": "Introduces a literature-focused retrieval-augmented research assistant for trisomy 21.",
+      "what_happened": "Biomedical literature retrieval and language-model answer generation.",
+      "why_it_matters": "Relevant to traceable evidence synthesis across fast-moving biomedical literature.",
+      "caveat": "Automated answers require independent primary-source verification.",
+      "tags": [
+        "Bioinformatics",
+        "AI",
+        "Literature retrieval"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — 2026-11-10",
+          "url": "https://www.nature.com/articles/s41598-026-80099-8"
+        }
+      ]
+    }
+  ]
+}
