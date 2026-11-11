@@ -1,0 +1,270 @@
+{
+  "date": "2026-11-11",
+  "stories": [
+    {
+      "title": "The small intestine microbiome: composition, host interactions and therapeutic potential",
+      "authors_source": "Nachman, Wozniak, Danhof et al.; Nature Reviews Microbiology (2026-11-10)",
+      "publication_type": "Peer-reviewed review",
+      "takeaway": "Synthesizes small-intestinal microbial ecology, host interactions and therapeutic opportunities.",
+      "what_happened": "Synthesizes small-intestinal microbial ecology, host interactions and therapeutic opportunities.",
+      "method": "Review of human small-intestine sampling, microbial composition and host-interaction literature.",
+      "why_it_matters": "Clarifies why stool-based observations cannot automatically represent the small bowel.",
+      "read_first": "Start with sampling limitations and region-specific ecology.",
+      "caveat": "Review, not a new interventional trial.",
+      "priority": "#1",
+      "tags": [
+        "Gut microbiome",
+        "Small intestine",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication or publisher listing",
+          "url": "https://www.nature.com/articles/s41579-026-01389-6"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Flow-dependent TGF-β1 secretion from HCT116 cells following constriction-based microfluidic passage",
+      "authors_source": "Mashhadi Keshtiban, Asgari, Kavand et al.; Scientific Reports (2026-11-10)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Investigates how microfluidic constriction and flow affect TGF-β1 release from HCT116 colorectal cells.",
+      "what_happened": "Investigates how microfluidic constriction and flow affect TGF-β1 release from HCT116 colorectal cells.",
+      "method": "Microfluidic constriction passage and TGF-β1/bioactivity measurements.",
+      "why_it_matters": "Shows why cell handling mechanics can alter biological assay readouts.",
+      "read_first": "Inspect flow controls, secretion normalization and cell viability.",
+      "caveat": "Cell-line passage is not equivalent to intact intestinal tissue physiology.",
+      "priority": "#2",
+      "tags": [
+        "Microfluidics",
+        "Mechanobiology",
+        "Cancer"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication or publisher listing",
+          "url": "https://www.nature.com/articles/s41598-026-69804-9"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "An ulcerative colitis taxonomy defined by individual patient-reported response trajectories",
+      "authors_source": "Authors listed in primary publication; Nature Medicine (2026-11-09)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Patient-reported vedolizumab response trajectories were used to propose ulcerative-colitis response subtypes.",
+      "what_happened": "Patient-reported vedolizumab response trajectories were used to propose ulcerative-colitis response subtypes.",
+      "method": "Longitudinal patient-reported treatment-response trajectory analysis and molecular association.",
+      "why_it_matters": "Potential framework for studying response heterogeneity in intestinal disease.",
+      "read_first": "Check trajectory definitions, external validation and vascular-inflammation association.",
+      "caveat": "Proposed taxonomy and resistance hypothesis require independent validation.",
+      "priority": "#3",
+      "tags": [
+        "IBD",
+        "Clinical stratification"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication or publisher listing",
+          "url": "https://www.nature.com/subjects/inflammatory-bowel-disease/nm"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Opposing microbiome-mediated axes link modifiable lifestyles to health and chronic diseases",
+      "authors_source": "Authors listed in primary publication; Nature Medicine (2026-11-05)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Shotgun metagenomics of 6,803 adults identified opposing microbiome-linked lifestyle and disease axes, evaluated across external cohorts.",
+      "what_happened": "Shotgun metagenomics of 6,803 adults identified opposing microbiome-linked lifestyle and disease axes, evaluated across external cohorts.",
+      "method": "Population metagenomics, mediation analysis and independent-cohort prediction.",
+      "why_it_matters": "Provides a large-scale framework for microbiome–host epidemiology.",
+      "read_first": "Examine mediation assumptions, cohort composition and external validation.",
+      "caveat": "Observational mediation does not demonstrate causal benefit from altering microbes.",
+      "priority": "#4",
+      "tags": [
+        "Microbiome",
+        "Metagenomics",
+        "Population health"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication or publisher listing",
+          "url": "https://www.nature.com/articles/s41591-026-04744-5"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Microbiota-based cholesterol metabolism intervention investigated for colorectal cancer",
+      "authors_source": "Wu et al.; Nature Metabolism (2026-11-10)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Investigates microbiota-mediated modulation of tumor cholesterol metabolism in colorectal cancer.",
+      "what_happened": "Investigates microbiota-mediated modulation of tumor cholesterol metabolism in colorectal cancer.",
+      "method": "Experimental microbiome and tumor-metabolism investigation.",
+      "why_it_matters": "Connects microbial metabolic activity to intestinal cancer therapy hypotheses.",
+      "read_first": "Inspect controls linking microbial intervention to tumor cholesterol pathways.",
+      "caveat": "Clinical efficacy and safety have not been established.",
+      "priority": "#5",
+      "tags": [
+        "Gut microbiome",
+        "Colorectal cancer"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication or publisher listing",
+          "url": "https://www.nature.com/articles/s42255-026-01655-0"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Microplastics inhibit macrophage bioenergetics impairing homeostatic function and immune responsiveness",
+      "authors_source": "Authors listed in primary publication; Scientific Reports (2026-11-09)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Examines how microplastic exposure changes pulmonary macrophage energy metabolism and immune responsiveness.",
+      "what_happened": "Examines how microplastic exposure changes pulmonary macrophage energy metabolism and immune responsiveness.",
+      "method": "Experimental microplastic exposure and macrophage bioenergetic/immune assays.",
+      "why_it_matters": "Illustrates mechanistic links between environmental exposure and immune-cell metabolism.",
+      "read_first": "Check exposure concentrations and bioenergetic measurements.",
+      "caveat": "Experimental exposures may not represent typical human exposure.",
+      "priority": "#6",
+      "tags": [
+        "Immunology",
+        "Bioenergetics"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication or publisher listing",
+          "url": "https://www.nature.com/articles/s41598-026-76299-x"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "The mammalian archaeome: diversity, function and emerging roles in health and disease",
+      "authors_source": "Kumpitsch, Bauer, Arora et al.; Nature Reviews Microbiology (2026-11-09)",
+      "publication_type": "Peer-reviewed review",
+      "takeaway": "Reviews mammalian archaeal diversity, methanogenic syntrophy and possible host-health relationships.",
+      "what_happened": "Reviews mammalian archaeal diversity, methanogenic syntrophy and possible host-health relationships.",
+      "method": "Cross-species literature synthesis focused on Methanobrevibacter and gastrointestinal ecology.",
+      "why_it_matters": "Broadens microbiome assessment beyond bacteria.",
+      "read_first": "Read sections on human sampling and evidence for disease associations.",
+      "caveat": "Associations and cross-species observations do not prove causal roles.",
+      "priority": "#7",
+      "tags": [
+        "Archaea",
+        "Gut microbiome",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication or publisher listing",
+          "url": "https://www.nature.com/articles/s41579-026-01388-7"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "The FMR1 isoform landscape reveals new spliced variants in women’s blood and ovarian tissues",
+      "authors_source": "Ingravidi, Fernández, Caviglia et al.; Scientific Reports (2026-11-10)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Reports alternative FMR1 transcript isoforms in blood and ovarian tissue.",
+      "what_happened": "Reports alternative FMR1 transcript isoforms in blood and ovarian tissue.",
+      "method": "Transcript-isoform profiling including long-read sequencing.",
+      "why_it_matters": "Demonstrates why transcript-level resolution matters beyond gene counts.",
+      "read_first": "Inspect isoform validation and tissue/sample coverage.",
+      "caveat": "Tissue-specific observations do not imply established functional effects.",
+      "priority": "#8",
+      "tags": [
+        "Transcriptomics",
+        "Long-read sequencing"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication or publisher listing",
+          "url": "https://www.nature.com/articles/s41598-026-78955-8"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "An AI-powered trisomy 21 Research Assistant",
+      "authors_source": "Nandi, Sundararajan, Subirana-Granés et al.; Scientific Reports (2026-11-10)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Introduces a literature-focused retrieval-augmented research assistant for trisomy 21.",
+      "what_happened": "Introduces a literature-focused retrieval-augmented research assistant for trisomy 21.",
+      "method": "Biomedical literature retrieval and language-model answer generation.",
+      "why_it_matters": "Relevant to traceable evidence synthesis across fast-moving biomedical literature.",
+      "read_first": "Check source-grounding, evaluation metrics and hallucination tests.",
+      "caveat": "Automated answers require independent primary-source verification.",
+      "priority": "#9",
+      "tags": [
+        "Bioinformatics",
+        "AI",
+        "Literature retrieval"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication or publisher listing",
+          "url": "https://www.nature.com/articles/s41598-026-80099-8"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Randomized exercise trial measures gut microbiota changes in prediabetes",
+      "authors_source": "Authors listed in primary publication; Scientific Reports (2026-11-10)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "A 64-person exercise trial reported higher microbial alpha-diversity after 12 weeks of HIIT than moderate continuous exercise.",
+      "what_happened": "A 64-person exercise trial reported higher microbial alpha-diversity after 12 weeks of HIIT than moderate continuous exercise.",
+      "method": "Randomized exercise comparison with 16S rRNA microbiota profiling.",
+      "why_it_matters": "Pairs a controlled lifestyle intervention with microbiome outcomes.",
+      "read_first": "Inspect baseline differences and multiple-testing adjustments.",
+      "caveat": "Exploratory 16S endpoints do not establish microbial mediation.",
+      "priority": "#10",
+      "tags": [
+        "Gut microbiome",
+        "Clinical trial"
+      ],
+      "sources": [
+        {
+          "label": "Primary publication or publisher listing",
+          "url": "https://www.nature.com/articles/s41598-026-78752-3"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    }
+  ]
+}
