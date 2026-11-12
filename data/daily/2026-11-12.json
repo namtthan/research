@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-12",
+  "stories": [
+    {
+      "title": "Suppression of epithelial proliferation and tumorigenesis by IgA",
+      "takeaway": "Mouse and organoid experiments identify an IgA–DMBT1 pathway that restrains colonic epithelial proliferation and colorectal tumor susceptibility.",
+      "what_happened": "Researchers compared IgA-deficient mouse models, oral IgA supplementation, epithelial cultures, proteomics and targeted CRISPR screens; DMBT1 signaling emerged as a mediator of epithelial growth control.",
+      "why_it_matters": "Adds a direct epithelial homeostasis function to mucosal IgA beyond its established role in microbial binding.",
+      "caveat": "Evidence is largely from mice and reductionist cultures; human prevention or treatment benefits have not been established.",
+      "tags": [
+        "Gut immunity",
+        "Colorectal cancer",
+        "Organoids"
+      ],
+      "sources": [
+        {
+          "label": "Nature — 2026-11-11",
+          "url": "https://www.nature.com/articles/s41586-026-11264-2"
+        }
+      ]
+    },
+    {
+      "title": "Topographical mismatch sustains open microchannels in living soft tissue for non-destructive protein biopsy",
+      "takeaway": "A tissue-interfacing microchannel approach offers a route to protein sampling without destructive tissue removal.",
+      "what_happened": "A Nature Communications engineering study describes maintaining patent microchannels in living soft tissue using topographical mismatch for protein-biopsy applications.",
+      "why_it_matters": "Highlights a potentially useful tissue–device interface strategy for longitudinal biomolecular monitoring.",
+      "caveat": "Clinical reliability, tissue-specific performance and longer-term biocompatibility need validation; the source does not establish routine clinical use.",
+      "tags": [
+        "Bioengineering",
+        "Microchannels",
+        "Biosampling"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — 2026-11-11",
+          "url": "https://www.nature.com/articles/s41467-026-78755-8"
+        }
+      ]
+    },
+    {
+      "title": "Immortalized intestinal telocytes support stem cell niche function in vitro",
+      "takeaway": "An intestinal telocyte model offers a tractable mesenchymal component for studying epithelial stem-cell niches in vitro.",
+      "what_happened": "A Cellular and Molecular Gastroenterology and Hepatology study reports immortalized intestinal telocytes that support stem-cell niche function in culture.",
+      "why_it_matters": "Addresses the need for experimentally accessible stromal niche components in intestinal culture and organoid systems.",
+      "caveat": "Immortalization and in-vitro culture may alter native telocyte biology; physiological generalizability requires further testing.",
+      "tags": [
+        "Intestinal epithelium",
+        "Stem-cell niche",
+        "Cell culture"
+      ],
+      "sources": [
+        {
+          "label": "CMGH / PubMed — 2026-11-06",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42994593/"
+        }
+      ]
+    },
+    {
+      "title": "A human gut–BBB–brain microphysiological model for studying Alzheimer's disease",
+      "takeaway": "A multi-tissue microphysiological platform links gut, blood–brain barrier and brain compartments for experimental neurodegeneration research.",
+      "what_happened": "A Lab on a Chip paper describes a human gut–blood–brain barrier–brain microphysiological model developed for Alzheimer's disease studies.",
+      "why_it_matters": "Illustrates opportunities and engineering challenges in studying cross-organ communication with interconnected human tissue models.",
+      "caveat": "A model platform cannot by itself establish causal gut–brain mechanisms or predict clinical disease progression.",
+      "tags": [
+        "Organ-on-chip",
+        "Gut–brain axis",
+        "Neurodegeneration"
+      ],
+      "sources": [
+        {
+          "label": "Lab on a Chip / PubMed — 2026-11-05",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42986694/"
+        }
+      ]
+    },
+    {
+      "title": "A microfluidic mother machine for high-throughput single-cell analysis of human leukemia T cells",
+      "takeaway": "A CFD-optimized microchannel array permits long-term observation of non-adherent T-cell growth and division at single-cell resolution.",
+      "what_happened": "Investigators designed continuous-perfusion microchannels and tracked leukemia T-cell proliferation across generations, reporting slightly asymmetric division and size-control behavior.",
+      "why_it_matters": "Demonstrates how channel geometry and nutrient supply can enable controlled, time-resolved single-cell phenotyping.",
+      "caveat": "Demonstrated in leukemia T cells; broader primary immune-cell applications and throughput trade-offs need evaluation.",
+      "tags": [
+        "Microfluidics",
+        "Single-cell analysis",
+        "Cell mechanics"
+      ],
+      "sources": [
+        {
+          "label": "Communications Biology — 2026-11-05",
+          "url": "https://www.nature.com/articles/s42003-026-11236-2"
+        }
+      ]
+    }
+  ]
+}
