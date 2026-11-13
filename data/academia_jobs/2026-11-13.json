@@ -1,0 +1,226 @@
+{
+  "date": "2026-11-13",
+  "type": "academia_job_shortlist",
+  "title": "Academia Job Shortlist",
+  "scope": {
+    "geography": "Bay Area first, Cleveland/Ohio second, nationwide third; official positions checked 2026-11-13.",
+    "selection_rule": "Only official university/employer open-position pages; posted openings are not proof the role is unfilled; older preferred start dates flagged; public skills only."
+  },
+  "jobs": [
+    {
+      "priority": 1,
+      "recommendation": "APPLY",
+      "title": "Postdoctoral Scholar — Scalable hPSC-derived 3D Tissue Models",
+      "company": "Stanford University — Maneesh Kumar Misra Lab",
+      "location": "Stanford, CA",
+      "work_arrangement": "One year, flexible rolling start",
+      "term": "One year, flexible rolling start",
+      "salary": {
+        "min_usd": 79056,
+        "max_usd": 79056,
+        "period": "year",
+        "note": "Official posted base range or postdoc stipend; see posting"
+      },
+      "posting_status_checked": "2026-11-13",
+      "posting_status": "Official university/employer page still listed as an open position on 2026-11-13; confirm availability directly before investing in application.",
+      "posting_links": [
+        {
+          "label": "Official employer or ATS requisition",
+          "url": "https://postdocs.stanford.edu/prospective/opportunities/open-postdoctoral-position-faculty-mentor-maneesh-kumar-misra"
+        }
+      ],
+      "job_description": "Engineer scalable hPSC-derived 3D tissue models for human disease modeling and drug discovery.",
+      "key_must_have_requirements": [
+        "Relevant PhD or thesis nearing submission",
+        "3D cell/tissue models, organoids or microphysiological systems",
+        "Strong publication record"
+      ],
+      "why_good_match": "Very strong human tissue-model and microfluidics alignment; near-completion applicants explicitly welcomed.",
+      "likely_gaps": [
+        "hPSC differentiation depth",
+        "Immune assay and genome editing expertise"
+      ],
+      "tailor": "Highlight public tissue engineering methods and quantitative validation.",
+      "immediate_action": "Email tailored CV, cover letter and three references; propose early-2027 start."
+    },
+    {
+      "priority": 2,
+      "recommendation": "APPLY_OR_INQUIRE",
+      "title": "Postdoctoral Fellow — Intestinal Tissue Immunity and IBD",
+      "company": "Stanford University — Michael Schumacher Lab",
+      "location": "Palo Alto, CA",
+      "work_arrangement": "One year renewable; ASAP start",
+      "term": "One year renewable; ASAP start",
+      "salary": {
+        "min_usd": 79056,
+        "max_usd": 79056,
+        "period": "year",
+        "note": "Official posted base range or postdoc stipend; see posting"
+      },
+      "posting_status_checked": "2026-11-13",
+      "posting_status": "Official university/employer page still listed as an open position on 2026-11-13; confirm availability directly before investing in application. Posted ASAP start; inquire about early-2027 flexibility.",
+      "posting_links": [
+        {
+          "label": "Official employer or ATS requisition",
+          "url": "https://postdocs.stanford.edu/prospective/opportunities/open-postdoctoral-position-faculty-mentor-michael-schumacher-phd"
+        }
+      ],
+      "job_description": "Investigate epithelial–immune remodeling in inflammatory bowel disease with organoids and murine models.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "Intestinal biology, physiology or immunology",
+        "Cell and mouse model skills"
+      ],
+      "why_good_match": "Strong public research interests in intestinal biology and organoid-based disease models.",
+      "likely_gaps": [
+        "Murine immunology methods",
+        "ASAP start timing"
+      ],
+      "tailor": "Emphasize public intestinal tissue-engineering work and independent project leadership.",
+      "immediate_action": "Email combined application PDF; ask about 2027 start."
+    },
+    {
+      "priority": 3,
+      "recommendation": "CONSIDER",
+      "title": "Postdoctoral Scholar — IBD, Microbiome and Multi-Omics",
+      "company": "Stanford University — Sidhartha Sinha Lab",
+      "location": "Palo Alto, CA",
+      "work_arrangement": "One year minimum; old July 2026 preferred start",
+      "term": "One year minimum; old July 2026 preferred start",
+      "salary": {
+        "min_usd": 80000,
+        "max_usd": 85000,
+        "period": "year",
+        "note": "Official posted base range or postdoc stipend; see posting"
+      },
+      "posting_status_checked": "2026-11-13",
+      "posting_status": "Official university/employer page still listed as an open position on 2026-11-13; confirm availability directly before investing in application. Preferred July 2026 start date is past; vacancy status needs direct confirmation.",
+      "posting_links": [
+        {
+          "label": "Official employer or ATS requisition",
+          "url": "https://postdocs.stanford.edu/prospective/opportunities/open-postdoctoral-position-faculty-mentor-sidhartha-sinha"
+        }
+      ],
+      "job_description": "Study IBD clinical cohorts, microbiome, metabolome and intervention-response biomarkers.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "Quantitative multi-omics, R/Python",
+        "NIH training-grant citizenship/permanent residency preference"
+      ],
+      "why_good_match": "Very strong public IBD and host–microbiome topic alignment.",
+      "likely_gaps": [
+        "Clinical cohort and metabolomics specialization",
+        "Old preferred start and funding eligibility"
+      ],
+      "tailor": "Focus on public microbiome and bioengineering competencies; do not use private manuscript results.",
+      "immediate_action": "Confirm unfilled position and funding eligibility before full application."
+    },
+    {
+      "priority": 4,
+      "recommendation": "CONSIDER",
+      "title": "Postdoctoral Fellow — 3D Cancer Metastasis Models and Organ-on-a-Chip",
+      "company": "Stanford University — Jon Park Lab",
+      "location": "Palo Alto, CA",
+      "work_arrangement": "Two to three years; ASAP",
+      "term": "Two to three years; ASAP",
+      "salary": {
+        "min_usd": 79056,
+        "max_usd": 79056,
+        "period": "year",
+        "note": "Official posted base range or postdoc stipend; see posting"
+      },
+      "posting_status_checked": "2026-11-13",
+      "posting_status": "Official university/employer page still listed as an open position on 2026-11-13; confirm availability directly before investing in application. Posted ASAP start; inquire about early-2027 flexibility.",
+      "posting_links": [
+        {
+          "label": "Official employer or ATS requisition",
+          "url": "https://postdocs.stanford.edu/prospective/opportunities/open-postdoctoral-position-faculty-mentor-jon-park"
+        }
+      ],
+      "job_description": "Use 3D cultures and organ-on-chip platforms to investigate cancer metastasis.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "Interest in tumor microenvironment",
+        "3D culture or organ-on-chip advantageous"
+      ],
+      "why_good_match": "Strong engineering-platform fit and opportunity to expand disease area.",
+      "likely_gaps": [
+        "Cancer metastasis biology",
+        "ASAP start"
+      ],
+      "tailor": "Emphasize publicly documented microfluidic and 3D-model expertise.",
+      "immediate_action": "Send CV, cover letter and references; inquire about start flexibility."
+    },
+    {
+      "priority": 5,
+      "recommendation": "CONSIDER",
+      "title": "Postdoctoral Fellow — Organ-on-a-Chip and Cancer Bioengineering",
+      "company": "Cleveland Clinic — Chao Ma Lab",
+      "location": "Cleveland, OH",
+      "work_arrangement": "Full-time training, up to five years",
+      "term": "Full-time training, up to five years",
+      "salary": {
+        "min_usd": 63480,
+        "max_usd": 63480,
+        "period": "year",
+        "note": "Official posted base range or postdoc stipend; see posting"
+      },
+      "posting_status_checked": "2026-11-13",
+      "posting_status": "Official university/employer page still listed as an open position on 2026-11-13; confirm availability directly before investing in application.",
+      "posting_links": [
+        {
+          "label": "Official employer or ATS requisition",
+          "url": "https://jobs.clevelandclinic.org/job/23368284/postdoctoral-fellow-chao-ma-lab-cleveland-oh/"
+        }
+      ],
+      "job_description": "Build organ-on-chip and microfluidic systems for hematologic cancer and immune-engineering research.",
+      "key_must_have_requirements": [
+        "PhD by start",
+        "Bioengineering/microfluidic experience",
+        "Scientific writing and independent research"
+      ],
+      "why_good_match": "Strong technical fit in tissue engineering, microfluidics and fabrication.",
+      "likely_gaps": [
+        "Hematologic malignancy specialization",
+        "Consider scientific independence and mentor fit"
+      ],
+      "tailor": "Show public platform engineering, fabrication and assay reproducibility achievements.",
+      "immediate_action": "Email CV and two-page research/career statement to PI."
+    },
+    {
+      "priority": 6,
+      "recommendation": "CONSIDER",
+      "title": "Postdoctoral Scholar — Spatial Biology of Breast Cancer Progression",
+      "company": "Stanford University — Robert West Lab",
+      "location": "Stanford, CA",
+      "work_arrangement": "One year renewable, flexible start",
+      "term": "One year renewable, flexible start",
+      "salary": {
+        "min_usd": 79056,
+        "max_usd": 79056,
+        "period": "year",
+        "note": "Official posted base range or postdoc stipend; see posting"
+      },
+      "posting_status_checked": "2026-11-13",
+      "posting_status": "Official university/employer page still listed as an open position on 2026-11-13; confirm availability directly before investing in application.",
+      "posting_links": [
+        {
+          "label": "Official employer or ATS requisition",
+          "url": "https://postdocs.stanford.edu/prospective/opportunities/open-postdoctoral-position-faculty-mentor-robert-west"
+        }
+      ],
+      "job_description": "Use spatial transcriptomics and multiplexed imaging to study breast cancer progression.",
+      "key_must_have_requirements": [
+        "PhD by start",
+        "R/Python",
+        "Spatial proteomic/transcriptomic analysis"
+      ],
+      "why_good_match": "Quantitative human tissue biology and imaging overlap.",
+      "likely_gaps": [
+        "Deep spatial assays and oncology expertise"
+      ],
+      "tailor": "Show publicly documented imaging and analysis experience without inflating spatial wet-lab expertise.",
+      "immediate_action": "Consider inquiry after higher-fit applications."
+    }
+  ]
+}
