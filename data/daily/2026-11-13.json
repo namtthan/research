@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-13",
+  "stories": [
+    {
+      "title": "scMomer: a pretraining framework for inferring robust cellular representations from single-cell transcriptomes",
+      "takeaway": "A new single-cell representation-learning framework aims to improve the robustness of transcriptomic cell embeddings.",
+      "what_happened": "Researchers introduced scMomer, a pretraining approach to learn cellular representations from single-cell transcriptomes, published in Nature Communications on November 12.",
+      "why_it_matters": "Generalizable single-cell analysis tools may support cross-dataset interpretation of complex human tissue models.",
+      "caveat": "Performance in particular disease cohorts, laboratories and low-cell-count settings requires independent benchmarking; computational embeddings do not establish mechanisms.",
+      "tags": [
+        "Single-cell RNA-seq",
+        "Computational biology",
+        "Bioinformatics"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — 2026-11-12",
+          "url": "https://www.nature.com/articles/s41467-026-78811-3"
+        }
+      ]
+    },
+    {
+      "title": "Engineering CAR-Vδ2 T cells to boost persistence and anti-tumor function",
+      "takeaway": "A Fas88 signaling design improved stimulus-dependent expansion and persistence of engineered Vδ2 T cells in experimental cancer models.",
+      "what_happened": "Investigators combined IL-18 pathway engineering with protection from activation-induced cell death and evaluated CAR-Vδ2 T cells in vitro and in mouse xenografts; the peer-reviewed paper appeared November 12.",
+      "why_it_matters": "Illustrates how synthetic receptor design can address cell-therapy durability while attempting to constrain off-target inflammatory signaling.",
+      "caveat": "Evidence remains preclinical; human efficacy and inflammatory safety are unknown, and related findings appeared as a preprint earlier in 2026.",
+      "tags": [
+        "Cell therapy",
+        "Synthetic biology",
+        "Immunoengineering"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — 2026-11-12",
+          "url": "https://www.nature.com/articles/s41467-026-79155-8"
+        },
+        {
+          "label": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42039611/"
+        }
+      ]
+    },
+    {
+      "title": "Phylogeographic and functional assembly of population-level bacterial immunity",
+      "takeaway": "Phage-defense repertoires vary by bacterial geography and functional compatibility rather than simply by the number of defense systems.",
+      "what_happened": "Researchers compared 206 Xanthomonas oryzae genomes, tested 50 strains against 36 phages, and expressed 24 defense systems to examine core, accessory, synergistic and antagonistic defenses.",
+      "why_it_matters": "Provides a mechanistic example of how microbial communities and phage pressure shape defense diversity, relevant broadly to microbial ecology and phage biotechnology.",
+      "caveat": "This is a plant-pathogenic bacterial system; implications for human gut microbiota remain untested.",
+      "tags": [
+        "Microbial ecology",
+        "Phage biology",
+        "Comparative genomics"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — 2026-11-12",
+          "url": "https://www.nature.com/articles/s41467-026-79636-w"
+        }
+      ]
+    },
+    {
+      "title": "Scaling medical imaging report generation with multimodal reinforcement learning",
+      "takeaway": "A reinforcement-learning framework improved chest X-ray report generation on multiple benchmarks and external validation data.",
+      "what_happened": "The UNIRG-CXR team trained an 8-billion-parameter vision-language model on four public datasets and optimized clinical-error-aware rewards, reporting improved generalization and fewer significant reporting errors.",
+      "why_it_matters": "Shows how domain-specific evaluation and external testing can make biomedical AI more reliable than optimizing text similarity alone.",
+      "caveat": "Report-generation benchmarks do not establish autonomous clinical safety; a related arXiv preprint was posted in January 2026.",
+      "tags": [
+        "Biomedical AI",
+        "Medical imaging",
+        "Validation"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — 2026-11-12",
+          "url": "https://www.nature.com/articles/s41467-026-78767-4"
+        },
+        {
+          "label": "arXiv — January 2026 preprint",
+          "url": "https://arxiv.org/abs/2601.17151"
+        }
+      ]
+    },
+    {
+      "title": "Designing de novo metalloproteases",
+      "takeaway": "A November 12 research highlight describes computational design of zinc metalloproteases with programmable cleavage activity.",
+      "what_happened": "Nature Chemical Biology summarized a protein-design study using RFdiffusion-guided active-site scaffolds to create proteases that cleave intended peptide targets and can regulate engineered effectors.",
+      "why_it_matters": "Expands the repertoire of programmable protein tools for biotechnology and potentially therapeutic engineering.",
+      "caveat": "This is a research highlight summarizing another study, not a new primary experiment; designed enzymes still face catalytic-efficiency and translational challenges.",
+      "tags": [
+        "Protein engineering",
+        "AI-assisted design",
+        "Biotechnology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Chemical Biology — research highlight, 2026-11-12",
+          "url": "https://www.nature.com/articles/s41589-026-02409-5"
+        }
+      ]
+    }
+  ]
+}
