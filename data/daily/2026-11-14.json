@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-14",
+  "stories": [
+    {
+      "title": "Multiplexed node-pore sensing for high-throughput, label-free single-cell detection",
+      "takeaway": "Four encoded microfluidic channels enable parallel electrical detection of single cells without fluorescent labels.",
+      "what_happened": "A four-channel node-pore sensing device used distinct Manchester-coded channel signatures; a structural classifier identified channels with 99.3% accuracy across 1,480 labeled transit events.",
+      "why_it_matters": "Parallel, label-free cellular phenotyping could expand throughput for microfluidic bioengineering and eventual tissue-model assays.",
+      "caveat": "Channel identification was stronger than resolving multi-channel coincidences; mechanical phenotyping and clinical deployment remain future work.",
+      "tags": [
+        "Microfluidics",
+        "Single-cell analysis",
+        "Bioengineering"
+      ],
+      "sources": [
+        {
+          "label": "Microsystems & Nanoengineering — 2026-11-13",
+          "url": "https://www.nature.com/articles/s41378-026-01497-6"
+        }
+      ]
+    },
+    {
+      "title": "A microfluidic fluorescence lifetime screening platform bridges in vitro and in vivo formats and enables discovery of Amyloid β aggregation inhibitors",
+      "takeaway": "A nanoFLIM platform uses a shared fluorescence-lifetime sensor to compare amyloid aggregation across cell-free, cellular and organism models.",
+      "what_happened": "Researchers developed microfluidic fluorescence-lifetime screening and tested 445 compounds, identifying a candidate that inhibited amyloid-β self-assembly in several experimental formats.",
+      "why_it_matters": "Comparable readouts across model complexity may improve early-stage therapeutic screening and reduce assay translation gaps.",
+      "caveat": "Pilot screening and model-organism effects do not establish efficacy or safety in people with Alzheimer's disease.",
+      "tags": [
+        "Microfluidics",
+        "Drug discovery",
+        "Disease models"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — 2026-11-13",
+          "url": "https://www.nature.com/articles/s41467-026-78202-8"
+        }
+      ]
+    },
+    {
+      "title": "miProbe: microbial peptide repository of biological embeddings",
+      "takeaway": "An open microbial peptide resource provides more than one billion sequences and precomputed embeddings for computational discovery.",
+      "what_happened": "miProbe aggregates approximately 1.08 billion microbial peptides across habitats and supplies 8 TB of protein-language-model embeddings and APIs for peptide mining.",
+      "why_it_matters": "The platform could accelerate investigation of understudied microbial functions and discovery of candidate bioactive peptides.",
+      "caveat": "Computational embeddings and predicted functions are not equivalent to experimentally demonstrated biological activity.",
+      "tags": [
+        "Microbiome",
+        "Bioinformatics",
+        "Peptide discovery"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — 2026-11-13",
+          "url": "https://www.nature.com/articles/s41467-026-79455-z"
+        }
+      ]
+    },
+    {
+      "title": "A hierarchical metabolic flux orchestrates cell cycle transitions in bacteria",
+      "takeaway": "Cell-cycle progression in Caulobacter crescentus depends on temporally changing metabolic flux and cytosolic redox state.",
+      "what_happened": "Genetic perturbations and metabolic-flux tracing linked fatty-acid synthesis and reverse versus forward TCA flux to distinct redox states during bacterial cell-cycle transitions.",
+      "why_it_matters": "Connects microbial metabolic state with proliferation and highlights possible future targets for antimicrobial research.",
+      "caveat": "The mechanism was studied in a specific bacterial model and has not been shown to generalize to gut species or human pathogens.",
+      "tags": [
+        "Microbial physiology",
+        "Redox biology",
+        "Metabolism"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — 2026-11-13",
+          "url": "https://www.nature.com/articles/s41467-026-79068-6"
+        }
+      ]
+    },
+    {
+      "title": "Multiparametric assessment of TNNI3 variant phenotypes in human iPSC-cardiomyocytes correlates with disease severity in patients",
+      "takeaway": "A human iPSC-cardiomyocyte assay combines contractility and calcium measurements to assess genetic variants against clinical phenotypes.",
+      "what_happened": "Researchers quantified functional responses to cardiac troponin-I variants and related variant clusters to disease onset in a patient cohort.",
+      "why_it_matters": "Demonstrates the value of combining human cell models with multidimensional functional measurements for disease modeling and variant interpretation.",
+      "caveat": "Single-center clinical correlations need external replication; this work also appeared as a 2025 preprint.",
+      "tags": [
+        "iPSC",
+        "Functional genomics",
+        "Human disease models"
+      ],
+      "sources": [
+        {
+          "label": "Nature Cardiovascular Research — 2026-11-13",
+          "url": "https://www.nature.com/articles/s44161-026-00908-1"
+        }
+      ]
+    }
+  ]
+}
