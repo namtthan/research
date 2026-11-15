@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-15",
+  "stories": [
+    {
+      "title": "Exploratory GlycA-lipid metabolic profiles and long-term cardiovascular and mortality associations in inflammatory bowel disease",
+      "takeaway": "UK Biobank metabolic clustering linked a higher-GlycA/lower-lipid profile to increased cardiovascular and mortality risk in IBD.",
+      "what_happened": "Investigators combined proton-NMR metabolomics, CatBoost-SHAP and K-means clustering, then assessed adjusted outcomes; the higher-inflammation cluster showed elevated composite CVD and heart-failure associations in both Crohn's disease and ulcerative colitis.",
+      "why_it_matters": "Highlights the potential value of systemic metabolic phenotyping in inflammatory bowel disease risk research.",
+      "caveat": "Single-cohort observational analysis with modest, method-dependent cluster separation; no causal or clinically validated risk classification.",
+      "tags": [
+        "Inflammatory bowel disease",
+        "Metabolomics",
+        "Cardiovascular health"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — 2026-11-14",
+          "url": "https://www.nature.com/articles/s41598-026-78473-7"
+        }
+      ]
+    },
+    {
+      "title": "Tibetan dark tea alleviates ulcerative colitis through TXNRD-dependent ferroptosis and gut microbiota-metabolite modulation",
+      "takeaway": "A preclinical colitis study associated Tibetan dark tea with reduced intestinal injury, altered ferroptosis signaling and microbiome remodeling.",
+      "what_happened": "Researchers tested tea constituents in LPS-stimulated macrophages, DSS-treated mice and colonic epithelial ferroptosis models; reported TXNRD-linked protection and increased Akkermansia abundance.",
+      "why_it_matters": "Provides a testable example of intersecting intestinal inflammation, cellular redox regulation and microbial ecology.",
+      "caveat": "Cell and mouse experiments cannot establish dietary treatment efficacy, dose or safety in people with ulcerative colitis.",
+      "tags": [
+        "Ulcerative colitis",
+        "Gut microbiome",
+        "Redox biology"
+      ],
+      "sources": [
+        {
+          "label": "npj Science of Food — 2026-11-14",
+          "url": "https://www.nature.com/articles/s41538-026-01180-0"
+        }
+      ]
+    },
+    {
+      "title": "Integrated gut microbiome and plasma metabolomic profiling reveals distinct biological signatures of damjeok syndrome",
+      "takeaway": "Gut microbial composition and circulating metabolites differed between participants classified with damjeok syndrome and controls.",
+      "what_happened": "Full-length 16S profiling covered 114 participants and plasma metabolomics a 90-person subset, identifying 33 differential microbial species and 35 discriminatory metabolites.",
+      "why_it_matters": "Illustrates integrated microbiome–metabolome profiling of gastrointestinal symptom-associated phenotypes.",
+      "caveat": "Cross-sectional associations cannot establish causality; the syndrome definition and signatures require independent validation in broadly recognized clinical cohorts.",
+      "tags": [
+        "Gut microbiome",
+        "Metabolomics",
+        "Gastrointestinal health"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — 2026-11-14",
+          "url": "https://www.nature.com/articles/s41598-026-79250-2"
+        }
+      ]
+    },
+    {
+      "title": "A split RNA-guided Cas9 system for PAM-independent and cis-cleavage-free nucleic acid detection",
+      "takeaway": "A modular Cas9 assay detects several nucleic-acid types without the conventional PAM restriction for double-stranded DNA detection.",
+      "what_happened": "Splitting guide RNA into spacer and scaffold modules enabled picomolar amplification-free detection and attomolar sensitivity with amplification; researchers tested HPV16 and miR-21 in clinical specimens.",
+      "why_it_matters": "Broadens molecular-diagnostic engineering options, including potential applications to colorectal cancer biomarkers.",
+      "caveat": "Reported analytical sensitivity and specimen testing do not yet demonstrate robust point-of-care clinical performance across settings.",
+      "tags": [
+        "CRISPR diagnostics",
+        "Bioengineering",
+        "Molecular detection"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — 2026-11-14",
+          "url": "https://www.nature.com/articles/s41467-026-79722-z"
+        }
+      ]
+    },
+    {
+      "title": "Nanobody mimicry of a GPCR recognition site disrupts human C5a-C5aR1 signaling",
+      "takeaway": "Engineered nanobodies neutralized C5a-mediated receptor activation by structurally mimicking its receptor-binding interface.",
+      "what_happened": "Cell-based signaling assays and crystallography showed high-affinity C5a binding and competition with the receptor recognition surface.",
+      "why_it_matters": "Offers a protein-engineering strategy for investigating complement-driven inflammation and therapeutic antagonism.",
+      "caveat": "This is molecular and cellular evidence; efficacy, pharmacology and safety in patients have not been established.",
+      "tags": [
+        "Immunoengineering",
+        "Protein engineering",
+        "Inflammation"
+      ],
+      "sources": [
+        {
+          "label": "Communications Biology — 2026-11-14",
+          "url": "https://www.nature.com/articles/s42003-026-11320-7"
+        }
+      ]
+    }
+  ]
+}
