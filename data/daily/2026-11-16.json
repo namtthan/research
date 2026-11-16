@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-16",
+  "stories": [
+    {
+      "title": "GPR41 deficiency worsens experimental colitis and accompanies gut microbiota changes",
+      "takeaway": "Loss of the short-chain fatty-acid receptor GPR41 exacerbated DSS-induced colitis in an experimental model.",
+      "what_happened": "Tomikawa and colleagues investigated GPR41 deficiency during dextran sulfate sodium-induced colitis and reported more severe disease alongside altered gut microbial composition.",
+      "why_it_matters": "Adds mechanistic context to research on microbial metabolites, host sensing and intestinal inflammation.",
+      "caveat": "An experimental colitis model does not establish a therapeutic effect of GPR41 targeting in human IBD; microbial changes are associations.",
+      "tags": [
+        "Inflammatory bowel disease",
+        "Microbial metabolites",
+        "Host–microbiome"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — 2026-11-16",
+          "url": "https://www.nature.com/articles/s41598-026-80080-5"
+        }
+      ]
+    },
+    {
+      "title": "UniMAG assembles a cross-habitat catalogue of more than 581,000 microbial genomes",
+      "takeaway": "A new metagenomic reference integrates 581,345 quality-controlled genomes, including 342,875 from human gut samples.",
+      "what_happened": "Gautam and Marsh compiled published and publicly deposited metagenome-assembled genomes from human gut, animal gut and environmental sources into UniMAG v1.0.",
+      "why_it_matters": "A larger harmonized genome reference may help microbial taxonomy and comparative metagenomic analysis.",
+      "caveat": "Catalogue coverage reflects existing sampling and assembly biases; genome recovery does not demonstrate expression or function.",
+      "tags": [
+        "Metagenomics",
+        "Gut microbiome",
+        "Research resources"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Data — 2026-11-15",
+          "url": "https://www.nature.com/articles/s41597-026-08818-4"
+        }
+      ]
+    },
+    {
+      "title": "Clostridial Delta toxin implicated in intestinal and brain injury in necrotizing enterocolitis",
+      "takeaway": "A research highlight describes experimental evidence linking Clostridium perfringens Delta toxin to multiorgan NEC-like injury.",
+      "what_happened": "A Nature Reviews Microbiology highlight discusses Zhang and colleagues' genomic, organoid and animal work comparing toxin-positive and toxin-negative strains and testing purified toxin.",
+      "why_it_matters": "Points to a potentially important microbial virulence mechanism in neonatal intestinal disease.",
+      "caveat": "This is a commentary on another study; animal and organoid evidence does not establish that the toxin explains all clinical NEC cases.",
+      "tags": [
+        "Necrotizing enterocolitis",
+        "Microbial toxins",
+        "Intestinal organoids"
+      ],
+      "sources": [
+        {
+          "label": "Nature Reviews Microbiology — 2026-11-16",
+          "url": "https://www.nature.com/articles/s41579-026-01396-7"
+        },
+        {
+          "label": "Original Nature research",
+          "url": "https://doi.org/10.1038/s41586-026-11211-1"
+        }
+      ]
+    },
+    {
+      "title": "Candidalysin review examines fungal commensalism, epithelial injury and mucosal immunity",
+      "takeaway": "A decade-spanning review synthesizes how a Candida albicans peptide toxin participates in infection and host responses, including gut commensalism.",
+      "what_happened": "Richardson and colleagues review candidalysin as a virulence and commensal-associated factor, its epithelial immune signaling, and outstanding therapeutic questions.",
+      "why_it_matters": "Expands host–microbiome thinking beyond bacteria to fungal molecules and context-dependent epithelial responses.",
+      "caveat": "Review synthesis rather than a new experimental validation; mechanisms and consequences vary by tissue and disease model.",
+      "tags": [
+        "Mycobiome",
+        "Epithelial immunity",
+        "Microbial toxins"
+      ],
+      "sources": [
+        {
+          "label": "Nature Microbiology — 2026-11-16",
+          "url": "https://www.nature.com/articles/s41564-026-02528-8"
+        }
+      ]
+    },
+    {
+      "title": "Antimicrobial white light assessed in primary human cells and three-dimensional skin models",
+      "takeaway": "An experimental study reports antimicrobial illumination conditions without detectable cytotoxic or genotoxic injury in the tested skin models.",
+      "what_happened": "Bartolocci and colleagues evaluated broad-spectrum white light in primary keratinocytes, dermal fibroblasts and 3D human skin models to assess tissue homeostasis and photobiological safety.",
+      "why_it_matters": "Illustrates why antimicrobial technologies should be assessed alongside human-relevant tissue viability and damage endpoints.",
+      "caveat": "Results depend on illumination conditions and tested models; lack of detectable injury is not proof of universal clinical safety.",
+      "tags": [
+        "Human tissue models",
+        "Antimicrobial technology",
+        "Safety testing"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports — 2026-11-15",
+          "url": "https://www.nature.com/articles/s41598-026-79552-5"
+        }
+      ]
+    }
+  ]
+}
