@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-17",
+  "stories": [
+    {
+      "title": "Gut phageome variation is linked to microbial metabolites across a human population",
+      "takeaway": "A population-level study maps human gut bacteriophages and reports associations with microbial metabolite profiles.",
+      "what_happened": "Louca and colleagues characterized human gut phage communities and assessed how phage patterns relate to metabolites and microbial ecology.",
+      "why_it_matters": "Broadens microbiome research beyond bacteria and provides hypotheses for virus–bacterium–metabolite relationships.",
+      "caveat": "Cross-sectional associations do not demonstrate that phages cause changes in metabolite production.",
+      "tags": [
+        "Gut phageome",
+        "Metabolomics",
+        "Host–microbiome"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — 2026-11-17",
+          "url": "https://www.nature.com/articles/s41467-026-79230-0"
+        }
+      ]
+    },
+    {
+      "title": "Colonic epithelial cells can regain regenerative potential after radiation injury",
+      "takeaway": "A study identifies a p53–YSC–YAP signaling axis associated with enterocyte dedifferentiation during colonic regeneration after irradiation.",
+      "what_happened": "Zhang and colleagues investigated epithelial plasticity and regenerative responses after radiation, identifying a proposed signaling pathway involved in restoring colonic tissue.",
+      "why_it_matters": "Provides a public experimental framework for studying epithelial repair following radiation-induced intestinal injury.",
+      "caveat": "Mechanistic findings from experimental systems require validation across human disease settings.",
+      "tags": [
+        "Intestinal regeneration",
+        "Radiation injury",
+        "Epithelial plasticity"
+      ],
+      "sources": [
+        {
+          "label": "Cell Discovery — 2026-11-17",
+          "url": "https://www.nature.com/articles/s41421-026-00935-z"
+        }
+      ]
+    },
+    {
+      "title": "Four-dimensional mitochondrial morphology tracks epithelial development",
+      "takeaway": "Human lung and intestinal epithelial development is accompanied by distinct, potentially predictive mitochondrial-network phenotypes.",
+      "what_happened": "McMahon and colleagues analyzed mitochondrial-network changes across time and three-dimensional space during human epithelial development.",
+      "why_it_matters": "Links dynamic organelle architecture to epithelial maturation and offers quantitative phenotypes for tissue-model studies.",
+      "caveat": "Predictive morphology is not by itself evidence of a causal mitochondrial mechanism.",
+      "tags": [
+        "Intestinal epithelium",
+        "Mitochondria",
+        "Tissue development"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — 2026-11-16",
+          "url": "https://www.nature.com/articles/s41467-026-78762-9"
+        }
+      ]
+    },
+    {
+      "title": "Synthetic gene circuits could enable feedback-controlled cell therapies",
+      "takeaway": "A review surveys programmable sensor–processor–effector circuits intended to adjust treatment outputs to changing physiology.",
+      "what_happened": "Ye and Fussenegger synthesize advances in context-responsive and closed-loop gene and cell therapies, including designer cells and engineered microbes.",
+      "why_it_matters": "Connects synthetic biology, cellular engineering and future adaptive therapies for chronic disease.",
+      "caveat": "A review of emerging systems is not proof of clinical safety, durable control or effectiveness.",
+      "tags": [
+        "Synthetic biology",
+        "Cell therapy",
+        "Bioengineering"
+      ],
+      "sources": [
+        {
+          "label": "Signal Transduction and Targeted Therapy — 2026-11-17",
+          "url": "https://www.nature.com/articles/s41392-026-03122-4"
+        }
+      ]
+    },
+    {
+      "title": "Peptide microcondensates enable rapid intracellular delivery of engineered antibodies",
+      "takeaway": "Engineered IgG–peptide microcondensates delivered antibodies into cells under serum-containing conditions and modulated an intracellular target.",
+      "what_happened": "Kawaguchi and colleagues engineered anionic antibody tags and membrane-permeabilizing peptide assemblies, visualized uptake, and tested TDP-43 recruitment to stress granules.",
+      "why_it_matters": "Offers a possible research tool for accessing intracellular targets that conventional antibodies cannot readily reach.",
+      "caveat": "Cell-based delivery and target modulation do not establish in-vivo efficacy, tissue selectivity or therapeutic safety.",
+      "tags": [
+        "Drug delivery",
+        "Protein engineering",
+        "Cell biology"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications — 2026-11-16",
+          "url": "https://www.nature.com/articles/s41467-026-78720-5"
+        }
+      ]
+    }
+  ]
+}
