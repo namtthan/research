@@ -1,0 +1,275 @@
+{
+  "date": "2026-11-18",
+  "stories": [
+    {
+      "title": "Patient-derived organoids reveal strain-specific efficacy of engineered bacteria in colorectal cancer",
+      "authors_source": "O’Connor, Erkok, Wright et al.; Communications Medicine (2026-11-18)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Patient-derived colorectal tumor organoids show differing colonization and responses to engineered Salmonella versus probiotic E. coli.",
+      "what_happened": "Patient-derived colorectal tumor organoids show differing colonization and responses to engineered Salmonella versus probiotic E. coli.",
+      "method": "Patient-derived tumor and matched normal organoid co-culture with two engineered bacterial chassis.",
+      "why_it_matters": "Human-derived organoids provide a platform to compare microbial therapeutics before clinical testing.",
+      "read_first": "Compare tumor selectivity and donor-to-donor variation.",
+      "caveat": "Organoid results do not establish in-vivo safety or clinical efficacy.",
+      "priority": "#1",
+      "tags": [
+        "Organoids",
+        "Engineered microbes",
+        "Colorectal cancer"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s43856-026-01992-x"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Gut microbiota GABA regulation by intestinal pH osmolality and microbial consumption",
+      "authors_source": "Ye, Plüss, Moresi et al.; Nature Communications (2026-11-17)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Gut microbial GABA availability depends on physicochemical conditions and microbial production and consumption.",
+      "what_happened": "Gut microbial GABA availability depends on physicochemical conditions and microbial production and consumption.",
+      "method": "Microbial culture and gut-environment perturbations assessing GABA metabolism.",
+      "why_it_matters": "Shows why environmental controls matter when interpreting microbial metabolites.",
+      "read_first": "Review pH, osmolality and consumption experiments.",
+      "caveat": "In-vitro ecological regulation may differ from in-vivo host exposure.",
+      "priority": "#2",
+      "tags": [
+        "Gut microbiome",
+        "Metabolites",
+        "GABA"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41467-026-78313-2"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Macrophage Slfn4 attenuates colonic inflammation and tumorigenesis through Rac1-dependent phagocytosis and oxidative burst",
+      "authors_source": "Zheng, Guan, Zhao et al.; Communications Medicine (2026-11-17)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Slfn4 supports macrophage antibacterial activity and limits experimental colitis and colitis-associated cancer.",
+      "what_happened": "Slfn4 supports macrophage antibacterial activity and limits experimental colitis and colitis-associated cancer.",
+      "method": "Slfn4-deficient mouse models, macrophage phagocytosis and oxidative-burst assays.",
+      "why_it_matters": "Links immune bacterial clearance with intestinal inflammatory outcomes.",
+      "read_first": "Inspect genetic controls and Rac1 mechanism.",
+      "caveat": "Mouse and cell findings are not validated therapeutic targets in humans.",
+      "priority": "#3",
+      "tags": [
+        "IBD",
+        "Macrophages",
+        "Oxidative burst"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s43856-026-02012-8"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Designer mucin-responsive nanomedicine for enhanced solid tumour penetration and therapy",
+      "authors_source": "Yu, Gong, Liu et al.; Nature Biomedical Engineering (2026-11-18)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Mucin-triggered micelle disassembly improves delivery into experimental pancreatic tumors.",
+      "what_happened": "Mucin-triggered micelle disassembly improves delivery into experimental pancreatic tumors.",
+      "method": "Polymer micelle engineering and mouse pancreatic tumor penetration experiments.",
+      "why_it_matters": "Highlights mucin as a transport barrier and stimulus for drug delivery design.",
+      "read_first": "Check unimer formation and tissue penetration comparisons.",
+      "caveat": "Mouse tumor results do not prove clinical efficacy or gastrointestinal delivery.",
+      "priority": "#4",
+      "tags": [
+        "Mucins",
+        "Drug delivery",
+        "Bioengineering"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41551-026-01843-z"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Epigenetics in inflammatory bowel disease: from mechanistic insights to personalized therapeutic strategies",
+      "authors_source": "Antunes, Noble, Ramsteijn & Satsangi; Nature Reviews Gastroenterology & Hepatology (2026-11-16)",
+      "publication_type": "Peer-reviewed review",
+      "takeaway": "Reviews methylation signatures, exposures and potential IBD treatment-response stratification.",
+      "what_happened": "Reviews methylation signatures, exposures and potential IBD treatment-response stratification.",
+      "method": "Synthesis of blood and mucosal epigenetic studies, causal inference and multi-omics.",
+      "why_it_matters": "Separates systemic biomarkers from tissue-resolved disease biology.",
+      "read_first": "Read tissue versus blood comparisons and prospective validation discussion.",
+      "caveat": "Clinical prediction applications remain investigational.",
+      "priority": "#5",
+      "tags": [
+        "IBD",
+        "Epigenetics",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41575-026-01275-9"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": true,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Engineering commensal Lachnospiraceae for programmable therapeutic delivery in the mouse gut",
+      "authors_source": "Arnold, McClure, Glazier et al.; Nature Microbiology (2026-11-04)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Genetic toolkit enables engineered Coprococcus comes to secrete IL-22 in the mouse gut.",
+      "what_happened": "Genetic toolkit enables engineered Coprococcus comes to secrete IL-22 in the mouse gut.",
+      "method": "Anaerobe engineering with expression, integration and secretion systems; mouse experiments.",
+      "why_it_matters": "Expands engineered microbial therapeutics beyond conventional probiotic chassis.",
+      "read_first": "Inspect secretion stability and in-vivo colonization.",
+      "caveat": "Mouse proof of concept does not demonstrate human persistence or safety.",
+      "priority": "#6",
+      "tags": [
+        "Synthetic biology",
+        "Gut microbiome",
+        "Therapeutic delivery"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41564-026-02527-9"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "VapC40 diverts autophagic flux from xenophagy to mitophagy via ammonia-dependent metabolic toxicity",
+      "authors_source": "Ge, Liu, Wang et al.; Nature Communications (2026-11-18)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Mycobacterial toxin-induced ammonia accumulation disrupts macrophage lysosomes and mitochondria, diverting antimicrobial autophagy.",
+      "what_happened": "Mycobacterial toxin-induced ammonia accumulation disrupts macrophage lysosomes and mitochondria, diverting antimicrobial autophagy.",
+      "method": "Infected macrophages, metabolic and organelle assays, and bacterial mutant mouse infections.",
+      "why_it_matters": "Illustrates pathogen manipulation of host organelle quality control.",
+      "read_first": "Examine toxin-deficient controls and lysosomal pH measurements.",
+      "caveat": "Mycobacterial infection model does not directly generalize to gut disease.",
+      "priority": "#7",
+      "tags": [
+        "Host-pathogen",
+        "Autophagy",
+        "Metabolism"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41467-026-79313-y"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Nanopore epitranscriptomic profiling of influenza A infection in differentiated primary human airway epithelial cells",
+      "authors_source": "Islam, Pharo, Knox et al.; Scientific Reports (2026-11-17)",
+      "publication_type": "Peer-reviewed research",
+      "takeaway": "Direct RNA sequencing maps RNA modifications and poly(A) dynamics in infected differentiated human airway epithelium.",
+      "what_happened": "Direct RNA sequencing maps RNA modifications and poly(A) dynamics in infected differentiated human airway epithelium.",
+      "method": "Air–liquid-interface primary cell cultures and nanopore direct RNA sequencing.",
+      "why_it_matters": "Useful methodological example of molecular profiling in differentiated human tissue models.",
+      "read_first": "Inspect modification-calling validation and infection controls.",
+      "caveat": "Airway virus model is not intestinal physiology; computational modification calls need validation.",
+      "priority": "#8",
+      "tags": [
+        "Human tissue models",
+        "Nanopore",
+        "Transcriptomics"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41598-026-79770-x"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Recovery of 1,015 metagenome-assembled genomes from Asian elephant fecal metagenomes in China",
+      "authors_source": "Guo, Zhang, Li et al.; Scientific Data (2026-11-18)",
+      "publication_type": "Peer-reviewed data descriptor",
+      "takeaway": "A curated elephant gut genome catalog includes 994 bacterial and 21 archaeal MAGs.",
+      "what_happened": "A curated elephant gut genome catalog includes 994 bacterial and 21 archaeal MAGs.",
+      "method": "Assembly and quality filtering of metagenomes from 107 elephant fecal samples.",
+      "why_it_matters": "Expands comparative gut microbiome reference diversity.",
+      "read_first": "Check completeness, contamination and taxonomic novelty.",
+      "caveat": "Animal-specific dataset is not directly representative of human microbiomes.",
+      "priority": "#9",
+      "tags": [
+        "Metagenomics",
+        "Genome catalog",
+        "Gut microbiome"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41597-026-08795-8"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    },
+    {
+      "title": "Candidalysin: a decade of discovery",
+      "authors_source": "Richardson, Griffiths, Moyes et al.; Nature Microbiology (2026-11-16)",
+      "publication_type": "Peer-reviewed review",
+      "takeaway": "Synthesizes candidalysin roles in fungal infection, mucosal immunity and gut commensalism.",
+      "what_happened": "Synthesizes candidalysin roles in fungal infection, mucosal immunity and gut commensalism.",
+      "method": "Review of fungal virulence, host-response and experimental gut-model literature.",
+      "why_it_matters": "Broadens host-microbiome considerations to fungal factors.",
+      "read_first": "Read gut commensalism section and experimental model limitations.",
+      "caveat": "Review does not establish clinical intervention efficacy.",
+      "priority": "#10",
+      "tags": [
+        "Mycobiome",
+        "Mucosal immunity",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41564-026-02528-8"
+        }
+      ],
+      "is_preprint": false,
+      "has_earlier_preprint": null,
+      "overlap_with_daily": false,
+      "overlap_with_prior_weekly": false
+    }
+  ]
+}
