@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-18",
+  "stories": [
+    {
+      "title": "Patient-derived organoids reveal strain-specific efficacy of engineered bacteria in colorectal cancer",
+      "takeaway": "Patient-derived colorectal tumor organoids show differing colonization and responses to engineered Salmonella versus probiotic E. coli.",
+      "what_happened": "Patient-derived colorectal tumor organoids show differing colonization and responses to engineered Salmonella versus probiotic E. coli.",
+      "why_it_matters": "Human-derived organoids provide a platform to compare microbial therapeutics before clinical testing.",
+      "caveat": "Organoid results do not establish in-vivo safety or clinical efficacy.",
+      "tags": [
+        "Organoids",
+        "Engineered microbes",
+        "Colorectal cancer"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s43856-026-01992-x"
+        }
+      ]
+    },
+    {
+      "title": "Gut microbiota GABA regulation by intestinal pH osmolality and microbial consumption",
+      "takeaway": "Gut microbial GABA availability depends on physicochemical conditions and microbial production and consumption.",
+      "what_happened": "Gut microbial GABA availability depends on physicochemical conditions and microbial production and consumption.",
+      "why_it_matters": "Shows why environmental controls matter when interpreting microbial metabolites.",
+      "caveat": "In-vitro ecological regulation may differ from in-vivo host exposure.",
+      "tags": [
+        "Gut microbiome",
+        "Metabolites",
+        "GABA"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41467-026-78313-2"
+        }
+      ]
+    },
+    {
+      "title": "Macrophage Slfn4 attenuates colonic inflammation and tumorigenesis through Rac1-dependent phagocytosis and oxidative burst",
+      "takeaway": "Slfn4 supports macrophage antibacterial activity and limits experimental colitis and colitis-associated cancer.",
+      "what_happened": "Slfn4 supports macrophage antibacterial activity and limits experimental colitis and colitis-associated cancer.",
+      "why_it_matters": "Links immune bacterial clearance with intestinal inflammatory outcomes.",
+      "caveat": "Mouse and cell findings are not validated therapeutic targets in humans.",
+      "tags": [
+        "IBD",
+        "Macrophages",
+        "Oxidative burst"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s43856-026-02012-8"
+        }
+      ]
+    },
+    {
+      "title": "Designer mucin-responsive nanomedicine for enhanced solid tumour penetration and therapy",
+      "takeaway": "Mucin-triggered micelle disassembly improves delivery into experimental pancreatic tumors.",
+      "what_happened": "Mucin-triggered micelle disassembly improves delivery into experimental pancreatic tumors.",
+      "why_it_matters": "Highlights mucin as a transport barrier and stimulus for drug delivery design.",
+      "caveat": "Mouse tumor results do not prove clinical efficacy or gastrointestinal delivery.",
+      "tags": [
+        "Mucins",
+        "Drug delivery",
+        "Bioengineering"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41551-026-01843-z"
+        }
+      ]
+    },
+    {
+      "title": "Epigenetics in inflammatory bowel disease: from mechanistic insights to personalized therapeutic strategies",
+      "takeaway": "Reviews methylation signatures, exposures and potential IBD treatment-response stratification.",
+      "what_happened": "Reviews methylation signatures, exposures and potential IBD treatment-response stratification.",
+      "why_it_matters": "Separates systemic biomarkers from tissue-resolved disease biology.",
+      "caveat": "Clinical prediction applications remain investigational.",
+      "tags": [
+        "IBD",
+        "Epigenetics",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41575-026-01275-9"
+        }
+      ]
+    }
+  ]
+}
