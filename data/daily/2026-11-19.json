@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-19",
+  "stories": [
+    {
+      "title": "Host–microbe interactions in engineered immunocompetent human gut tissues",
+      "takeaway": "Researchers report engineered human gut tissue incorporating immune competence to investigate host–microbe interactions.",
+      "what_happened": "A Nature article published November 18 introduces an engineered human intestinal tissue approach for examining microbial interactions in an immune-containing context.",
+      "why_it_matters": "Integrating tissue and immune components may make human-relevant intestinal model systems more informative.",
+      "caveat": "Engineered tissues cannot fully reproduce systemic immunity or the full intestinal ecosystem.",
+      "tags": [
+        "Gut models",
+        "Host–microbe",
+        "New approach methodologies"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41586-026-11292-y"
+        }
+      ]
+    },
+    {
+      "title": "Closest relatives of poxviruses prevail in human and animal guts worldwide",
+      "takeaway": "Researchers identify a widespread group of large DNA viruses, termed egoviruses, in animal and human digestive systems.",
+      "what_happened": "A November 18 Nature paper describes diverse gut-associated egoviruses phylogenetically close to poxviruses, including a prevalent human-associated lineage.",
+      "why_it_matters": "Expands the known gut virome beyond commonly studied bacteriophages and raises new ecological questions.",
+      "caveat": "Genomic detection and evolutionary relatedness do not establish pathogenicity or effects on human health.",
+      "tags": [
+        "Gut virome",
+        "Metagenomics",
+        "Microbial ecology"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41586-026-11283-z"
+        }
+      ]
+    },
+    {
+      "title": "Space-map: 3D single-cell atlas reconstruction from serial sections",
+      "takeaway": "Space-map reconstructs three-dimensional tissue architecture from large spatial transcriptomic and proteomic datasets.",
+      "what_happened": "A November 19 Nature Methods paper reports computational alignment of serial sections, including millions of profiled cells from intestinal tissue and a colon polyp.",
+      "why_it_matters": "Three-dimensional mapping could improve interpretation of epithelial crypt organization and tissue heterogeneity.",
+      "caveat": "Reconstruction accuracy depends on section quality and registration; spatial mapping alone does not establish functional mechanisms.",
+      "tags": [
+        "Spatial omics",
+        "Intestinal tissue",
+        "Computational methods"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41592-026-03310-8"
+        }
+      ]
+    },
+    {
+      "title": "Intestinal goblet cell defect is linked to immune dysregulation in multiple sclerosis",
+      "takeaway": "A new study investigates associations between intestinal goblet-cell abnormalities and immune dysregulation in multiple sclerosis.",
+      "what_happened": "A November 19 Scientific Reports article examines an intestinal epithelial feature in the context of a systemic immune-mediated disease.",
+      "why_it_matters": "Highlights how mucosal epithelial biology can inform research beyond gastrointestinal disorders.",
+      "caveat": "The reported link should not be interpreted as proof that goblet-cell changes cause multiple sclerosis.",
+      "tags": [
+        "Goblet cells",
+        "Mucosal immunity",
+        "Gut–systemic axis"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41598-026-77533-2"
+        }
+      ]
+    },
+    {
+      "title": "A glucose-powered artificial neuroimmune axis for metabolic control",
+      "takeaway": "Researchers describe a synthetic glucose-responsive neuroimmune strategy for regulating metabolism.",
+      "what_happened": "A November 18 Nature article reports an engineered neuroimmune axis designed to connect glucose sensing with metabolic control.",
+      "why_it_matters": "Illustrates the expanding scope of engineered biological feedback systems and translational bioengineering.",
+      "caveat": "Experimental metabolic control does not establish long-term safety or effectiveness in patients.",
+      "tags": [
+        "Synthetic biology",
+        "Bioengineering",
+        "Metabolic control"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41586-026-11251-7"
+        }
+      ]
+    }
+  ]
+}
