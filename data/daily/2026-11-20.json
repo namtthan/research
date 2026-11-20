@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-20",
+  "stories": [
+    {
+      "title": "Human lung chip models macrophage-amplified viral injury and mechanical overdistension",
+      "takeaway": "A human lung-chip study models interactions among infection, macrophages, mechanical stress and secondary bacterial infection.",
+      "what_happened": "Published November 19 in Nature Communications, the study uses a human lung chip to investigate macrophage-exacerbated viral injury and mechanically driven bacterial superinfection.",
+      "why_it_matters": "Illustrates how controlled mechanical and immune inputs in organ chips can help separate contributors to respiratory injury.",
+      "caveat": "An in vitro lung model cannot establish patient-level clinical effects; full experimental detail was not independently accessible.",
+      "tags": [
+        "Organ-on-chip",
+        "Mechanobiology",
+        "Host–pathogen"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41467-026-78889-9"
+        }
+      ]
+    },
+    {
+      "title": "Fermentable fiber, colonic acidity and GPR65 signaling in blood-pressure control",
+      "takeaway": "A study links microbial fiber fermentation, intestinal pH and proton sensing to experimental blood-pressure regulation.",
+      "what_happened": "Published November 20, the study combines human genetic associations with mouse resistant-starch experiments and reports GPR65-associated signaling and inflammatory changes.",
+      "why_it_matters": "Provides a mechanistic connection between microbial metabolites, intestinal physiology and systemic cardiovascular biology.",
+      "caveat": "Mouse mechanistic effects and genetic associations do not establish an effective dietary hypertension treatment in humans.",
+      "tags": [
+        "Gut microbiome",
+        "Microbial metabolites",
+        "Mucosal immunity"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s44161-026-00914-3"
+        }
+      ]
+    },
+    {
+      "title": "Blautia and circulating butyrate associated with IgA nephropathy",
+      "takeaway": "A multicenter cross-sectional analysis reports gut microbial and metabolic signatures in kidney disease.",
+      "what_happened": "Published November 20 in Scientific Reports, investigators profiled fecal 16S data from 187 participants and a separate 142-person replication cohort, focusing on Blautia and butyrate.",
+      "why_it_matters": "Shows the potential for cross-organ microbiome studies to connect mucosal biology with systemic disease.",
+      "caveat": "Cross-sectional associations cannot determine causality or validate a microbiome-directed treatment.",
+      "tags": [
+        "Gut–kidney axis",
+        "Microbiome",
+        "Metabolomics"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41598-026-78793-8"
+        }
+      ]
+    },
+    {
+      "title": "Synthetic antigen-presenting cell viscoelasticity influences T-cell metabolism",
+      "takeaway": "A synthetic-cell platform independently varies mechanical relaxation to probe immune-cell activation.",
+      "what_happened": "Published November 20 in Nature Communications, researchers describe SynVAC artificial antigen-presenting cells with tunable stress relaxation independent of stiffness and ligand density.",
+      "why_it_matters": "An example of biomaterial mechanobiology informing cell manufacturing and engineered immune therapies.",
+      "caveat": "The accessible abstract does not establish comparative clinical outcomes or long-term manufacturing scalability.",
+      "tags": [
+        "Biomaterials",
+        "Mechanobiology",
+        "Cell therapy"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41467-026-78131-6"
+        }
+      ]
+    },
+    {
+      "title": "Norovirus capsid flexibility revealed by asymmetric antibody binding",
+      "takeaway": "Structural work shows that antibody interactions can expose flexibility in the human norovirus capsid.",
+      "what_happened": "Published November 19 in Nature Communications, the study examines symmetry-breaking antibody binding and capsid malleability in pandemic human norovirus.",
+      "why_it_matters": "Could inform interpretation of viral antigenicity and design of antiviral antibodies or vaccines.",
+      "caveat": "Structural findings alone do not demonstrate protection or vaccine efficacy in people.",
+      "tags": [
+        "Enteric viruses",
+        "Structural biology",
+        "Antibodies"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41467-026-79222-0"
+        }
+      ]
+    }
+  ]
+}
