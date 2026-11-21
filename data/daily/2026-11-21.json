@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-21",
+  "stories": [
+    {
+      "title": "Garcinol alleviates experimental colitis alongside microbiota and bile acid–FXR changes",
+      "takeaway": "A food-derived compound was associated with reduced colitis severity and changes in microbial and bile-acid signaling.",
+      "what_happened": "A November 20 npj Science of Food paper investigates garcinol in colitis models and reports changes in gut microbiota and bile acid–FXR signaling.",
+      "why_it_matters": "Connects intestinal inflammation, microbial ecology and host bile-acid sensing.",
+      "caveat": "Preclinical associations do not demonstrate efficacy in people or prove that microbiota changes mediate benefit.",
+      "tags": [
+        "Inflammatory bowel disease",
+        "Gut microbiome",
+        "Bile acids"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41538-026-01243-2"
+        }
+      ]
+    },
+    {
+      "title": "Probiotic encapsulation tested under simulated gastrointestinal stress",
+      "takeaway": "Water chestnut starch-based encapsulation was optimized to improve probiotic survival in simulated digestive conditions.",
+      "what_happened": "A November 20 Scientific Reports study evaluates starch-based formulations for protecting probiotics during laboratory gastrointestinal stress simulations.",
+      "why_it_matters": "Delivery stability is a practical barrier in translating live microbial products.",
+      "caveat": "Simulated digestion does not establish intestinal colonization, clinical delivery or therapeutic benefit.",
+      "tags": [
+        "Probiotics",
+        "Biomaterials",
+        "Drug delivery"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41598-026-74253-5"
+        }
+      ]
+    },
+    {
+      "title": "LMNA-mutant human iPSC cardiomyocytes show altered mechanosensing",
+      "takeaway": "Patient-relevant stem-cell-derived cardiac cells exhibit altered mechanical responsiveness and gene expression with a lamin A/C mutation.",
+      "what_happened": "A November 20 Scientific Reports paper examines mechanosensing and transcriptional changes in LMNA-mutant hiPSC-derived cardiomyocytes.",
+      "why_it_matters": "Highlights the value of mechanically informed human cell models in disease research.",
+      "caveat": "In vitro phenotypes do not capture full cardiac physiology or establish treatment efficacy.",
+      "tags": [
+        "Human iPSC",
+        "Mechanobiology",
+        "Disease modeling"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41598-026-73628-y"
+        }
+      ]
+    },
+    {
+      "title": "Multi-omics study links gut microbiota and inflammatory metabolism to developmental delay",
+      "takeaway": "Integrated molecular profiles identify an inflammatory microbiota–metabolite signature associated with global developmental delay.",
+      "what_happened": "A November 20 Translational Psychiatry paper uses integrated multi-omics to investigate microbial and metabolic differences in developmental delay.",
+      "why_it_matters": "Illustrates the promise and interpretation challenges of microbiome–metabolome studies beyond intestinal disease.",
+      "caveat": "Associations cannot establish causality, and confounding and independent validation remain important.",
+      "tags": [
+        "Microbiome",
+        "Multi-omics",
+        "Gut–brain axis"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41398-026-04420-9"
+        }
+      ]
+    },
+    {
+      "title": "Phages may reshape bacterial fitness beyond direct killing",
+      "takeaway": "A new perspective contrasts lytic-phage resistance trade-offs with prophage-driven regulation of host-associated bacterial traits.",
+      "what_happened": "A November 20 npj Biofilms and Microbiomes comment synthesizes ways phages may alter colonization, virulence and host interactions.",
+      "why_it_matters": "Offers a conceptual framework for studying phage–bacteria ecology in host-associated microbial communities.",
+      "caveat": "This is a commentary rather than new experimental evidence; effects are context-dependent.",
+      "tags": [
+        "Bacteriophages",
+        "Microbial ecology",
+        "Host–microbe"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41522-026-01201-6"
+        }
+      ]
+    }
+  ]
+}
