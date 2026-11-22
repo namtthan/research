@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-22",
+  "stories": [
+    {
+      "title": "Barley polysaccharide fermentates from Bifidobacterium longum investigated in colorectal cancer models",
+      "takeaway": "A food–microbe fermentation product was associated with colorectal cancer suppression in experimental models.",
+      "what_happened": "A November 21 npj Science of Food study reports that fermentates of barley polysaccharides produced by Bifidobacterium longum were associated with changes in Wnt/β-catenin signaling and metabolic profiles.",
+      "why_it_matters": "Connects microbial biotransformation of dietary polysaccharides to experimentally testable host responses in colorectal disease.",
+      "caveat": "The available publisher information does not establish human anticancer efficacy or isolate which fermentation products are causal.",
+      "tags": [
+        "Gut microbiome",
+        "Colorectal cancer",
+        "Microbial metabolites"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41538-026-01170-2"
+        }
+      ]
+    },
+    {
+      "title": "Microfluidic purpurin microparticles and thermosensitive hydrogel evaluated for periodontitis",
+      "takeaway": "Microfluidic particle fabrication was combined with a temperature-responsive hydrogel for localized experimental anti-inflammatory delivery.",
+      "what_happened": "A November 21 Scientific Reports paper describes a purpurin microparticle–hydrogel hybrid and reports reduced inflammation and alveolar bone loss in a rat periodontitis model.",
+      "why_it_matters": "Illustrates microfluidic formulation as a tool for localized biomaterial-based drug delivery.",
+      "caveat": "Rat outcomes cannot establish human dental efficacy, and formulation performance may vary with tissue context.",
+      "tags": [
+        "Microfluidics",
+        "Biomaterials",
+        "Drug delivery"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41598-026-80921-3"
+        }
+      ]
+    },
+    {
+      "title": "Dietary chitosan oligosaccharides linked to Salmonella resistance and mucosal IgA",
+      "takeaway": "Diet-associated microbial metabolism and IgA responses were examined alongside resistance to enteric infection.",
+      "what_happened": "A November 20 npj Biofilms and Microbiomes study investigates dietary chitosan oligosaccharides, indole metabolism and IgA responses in the context of Salmonella infection.",
+      "why_it_matters": "Highlights connections among dietary substrates, microbial metabolism and mucosal defense against intestinal pathogens.",
+      "caveat": "Associations and experimental context should not be interpreted as evidence that supplementation prevents Salmonella infection in humans.",
+      "tags": [
+        "Enteric infection",
+        "Gut microbiome",
+        "Mucosal immunity"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41522-026-01200-7"
+        }
+      ]
+    },
+    {
+      "title": "Population-based study examines aspirin exposure and metastatic colorectal cancer at diagnosis",
+      "takeaway": "Registry-based evidence evaluates whether low-dose aspirin use is associated with synchronous metastatic colorectal cancer.",
+      "what_happened": "A November 21 British Journal of Cancer article analyzes low-dose aspirin exposure and synchronous metastatic colorectal cancer using population-based registry data.",
+      "why_it_matters": "Offers a clinical epidemiology counterpart to experimental colorectal cancer studies and underscores the distinction between association and intervention.",
+      "caveat": "Observational data are vulnerable to confounding and do not establish that aspirin prevents metastatic disease.",
+      "tags": [
+        "Colorectal cancer",
+        "Epidemiology",
+        "Clinical research"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41416-026-03663-z"
+        }
+      ]
+    },
+    {
+      "title": "Review compares mechanical cues shaping mesenchymal stem cell differentiation",
+      "takeaway": "A structured review emphasizes that tensile strain, compression, shear and hydrostatic pressure have context-dependent effects on MSC fate.",
+      "what_happened": "Published November 20 in Communications Biology, the review synthesizes mechanotransduction studies and highlights cell-source, mechanical-dose, scaffold and donor variability.",
+      "why_it_matters": "Provides a broadly applicable framework for designing controlled human-relevant mechanobiology platforms.",
+      "caveat": "A narrative synthesis is not a meta-analysis; many reported effects are model-specific and clinical translation remains uncertain.",
+      "tags": [
+        "Mechanobiology",
+        "Stem cells",
+        "Tissue engineering"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s42003-026-11349-8"
+        }
+      ]
+    }
+  ]
+}
