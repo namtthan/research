@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-23",
+  "stories": [
+    {
+      "title": "Patient-matched pediatric tumor organoids expand renewable human cancer models",
+      "takeaway": "A scalable workflow produced matched 3D organoids, 2D cultures and xenografts to support preclinical studies.",
+      "what_happened": "A November 23 Nature Communications study reports 135 tumor-derived organoid models, 82 matched primary cultures and 20 cell lines, with single-cell profiling of more than 2.2 million cells.",
+      "why_it_matters": "Patient-matched model collections can improve reproducibility and comparisons across experimental formats in human-relevant disease research.",
+      "caveat": "Models were developed from xenografts and may select for particular cell populations; they do not reproduce an intact human immune environment.",
+      "tags": [
+        "Organoids",
+        "Patient-derived models",
+        "Single-cell genomics"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41467-026-79414-8"
+        }
+      ]
+    },
+    {
+      "title": "Colorectal cancer study identifies a GSDME–CCL2–macrophage feedback circuit",
+      "takeaway": "Tumor-cell pyroptosis may recruit immunosuppressive macrophages that subsequently constrain additional pyroptosis.",
+      "what_happened": "A November 23 Oncogene study combined 183 colorectal cancer patient samples with mechanistic and mouse experiments to investigate GSDME, CCL2 and tumor-associated macrophages.",
+      "why_it_matters": "The work highlights how inflammatory cell-death pathways and local immune-cell recruitment can produce counteracting effects in tumor tissues.",
+      "caveat": "Clinical correlations and mouse experiments do not establish that CCL2 inhibition improves chemotherapy outcomes in patients.",
+      "tags": [
+        "Colorectal cancer",
+        "Pyroptosis",
+        "Tumor microenvironment"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41388-026-04043-w"
+        }
+      ]
+    },
+    {
+      "title": "Pediatric tonsil organoids used to examine microplastic-associated immune responses",
+      "takeaway": "Human lymphoid aggregate organoids offer an experimental complement to chemical measurements of microplastics in tonsil tissue.",
+      "what_happened": "A November 23 npj Emerging Contaminants study analyzed 30 surgically excised pediatric tonsils using pyrolysis GC–MS and fluorescence microscopy and investigated immunomodulatory effects in organoid models.",
+      "why_it_matters": "Combining human tissue analysis with organoid assays can help distinguish contaminant detection from testable biological responses.",
+      "caveat": "The analytical methods do not directly size nanoplastics, and the findings do not establish clinical consequences of exposure.",
+      "tags": [
+        "Human organoids",
+        "Environmental health",
+        "Immunology"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s44454-026-00068-8"
+        }
+      ]
+    },
+    {
+      "title": "Engineered membraneless organelles enable modular cellular compartmentalization",
+      "takeaway": "Synthetic biomolecular condensates can be designed to tune cellular composition and function.",
+      "what_happened": "A November 23 Nature Chemical Biology article reports modular strategies to control the components and functions of membraneless intracellular organelles.",
+      "why_it_matters": "Programmable compartmentalization provides a general synthetic-biology approach for controlling biochemical activity inside living cells.",
+      "caveat": "Application to complex tissues, long-term stability and therapeutic use require additional validation.",
+      "tags": [
+        "Synthetic biology",
+        "Biomolecular condensates",
+        "Cell engineering"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s41589-026-02352-5"
+        }
+      ]
+    },
+    {
+      "title": "Review examines opposing inflammasome cytokine roles in upper gastrointestinal cancers",
+      "takeaway": "IL-1β and IL-18 can have disease-stage- and cell-context-dependent effects rather than uniformly promoting inflammation or cancer.",
+      "what_happened": "A November 23 Communications Biology mini-review synthesizes evidence on inflammasome-associated cytokines in gastric and pancreatic cancer, including the challenges of measuring active cytokine forms.",
+      "why_it_matters": "Context-specific immune signaling is important when interpreting inflammatory biomarkers and designing human-relevant gastrointestinal models.",
+      "caveat": "This is a review rather than a new experimental validation; clinical utility of these cytokines as biomarkers or targets remains uncertain.",
+      "tags": [
+        "Gastrointestinal disease",
+        "Inflammasome",
+        "Cancer immunology"
+      ],
+      "sources": [
+        {
+          "label": "Primary publisher article",
+          "url": "https://www.nature.com/articles/s42003-026-11416-0"
+        }
+      ]
+    }
+  ]
+}
