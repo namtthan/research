@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-24",
+  "stories": [
+    {
+      "title": "Fibroblast alignment guides intestinal epithelial wound closure",
+      "takeaway": "Physical stromal guidance complements biochemical repair signals.",
+      "what_happened": "An engineered gap-closure model showed that aligned fibroblasts and their deposited matrix guide coordinated organoid-derived epithelial migration.",
+      "why_it_matters": "Provides a tractable approach to studying intestinal restitution.",
+      "caveat": "Model findings require validation in living human tissue.",
+      "tags": [
+        "Intestinal repair",
+        "Organoids",
+        "Mechanobiology"
+      ],
+      "sources": [
+        {
+          "label": "Development, November 2026",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42929485/"
+        }
+      ]
+    },
+    {
+      "title": "Defined synthetic matrices separate intestinal organoid responses to stiffness and adhesion",
+      "takeaway": "Defined substrates permit controlled investigation of matrix-dependent cell states.",
+      "what_happened": "Researchers replaced animal-derived matrix with recombinant substrates and PEG hydrogels and compared epithelial and mesenchymal responses.",
+      "why_it_matters": "Useful for reproducible organoid culture and fibrosis modeling.",
+      "caveat": "The organoids retained fetal-like transcriptional characteristics.",
+      "tags": [
+        "Organoids",
+        "Biomaterials",
+        "Fibrosis"
+      ],
+      "sources": [
+        {
+          "label": "Advanced Materials, November 9, 2026",
+          "url": "https://doi.org/10.1002/adma.75649"
+        }
+      ]
+    },
+    {
+      "title": "Microfluidic engineering across the organoid workflow",
+      "takeaway": "Perfusion and sensing address distinct limitations of static organoid culture.",
+      "what_happened": "A review maps droplet generation, confinement, perfusion, mechanical stimulation and integrated sensing to organoid engineering needs.",
+      "why_it_matters": "Useful for comparing platform architectures and monitoring strategies.",
+      "caveat": "A review does not establish comparative performance across devices.",
+      "tags": [
+        "Microfluidics",
+        "Organoids",
+        "Review"
+      ],
+      "sources": [
+        {
+          "label": "Frontiers in Bioengineering and Biotechnology, November 4, 2026",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43054676/"
+        }
+      ]
+    }
+  ]
+}
