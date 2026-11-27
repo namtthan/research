@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-27",
+  "stories": [
+    {
+      "title": "Engineered bacteria map sialic acid availability in inflamed gut",
+      "takeaway": "Local microbial nutrient exposure differs from bulk measurements.",
+      "what_happened": "A bacterial reporter mapped sialic acid in mouse inflammation models and revealed spatial separation between peak sensing and injury.",
+      "why_it_matters": "Spatial biosensors could improve studies of host–microbe metabolism.",
+      "caveat": "Mouse models; human validation is needed.",
+      "tags": [
+        "Microbiome",
+        "Biosensors",
+        "Colitis"
+      ],
+      "sources": [
+        {
+          "label": "Nature Communications, Nov 26",
+          "url": "https://www.nature.com/articles/s41467-026-79508-3"
+        }
+      ]
+    },
+    {
+      "title": "Inflammatory signaling alters pediatric Crohn’s organoid metabolism",
+      "takeaway": "Cytokine stimulation can change epithelial energy metabolism.",
+      "what_happened": "Ten donor-derived ileal organoid lines were examined using biochemical assays, imaging and LC-MS; cytokine exposure increased GLUT1 protein while reducing ATP.",
+      "why_it_matters": "Human epithelial models help isolate metabolic responses to inflammation.",
+      "caveat": "Small donor cohort and in vitro exposure constrain generalization.",
+      "tags": [
+        "Crohn’s disease",
+        "Organoids",
+        "Metabolism"
+      ],
+      "sources": [
+        {
+          "label": "Scientific Reports, Nov 26",
+          "url": "https://www.nature.com/articles/s41598-026-77639-7"
+        }
+      ]
+    },
+    {
+      "title": "Scoping review of microbiome research with intestinal organoids",
+      "takeaway": "Organoid co-cultures enable mechanistic investigation of microbial effects.",
+      "what_happened": "The review surveys organoid and chip approaches for epithelial regeneration, barrier function and microbial interactions.",
+      "why_it_matters": "Useful orientation for selecting intestinal disease models.",
+      "caveat": "Scoping review, not a quantitative comparison of platform performance.",
+      "tags": [
+        "Gut microbiome",
+        "Organoids",
+        "Organ-on-chip"
+      ],
+      "sources": [
+        {
+          "label": "Gut Pathogens, Nov 26",
+          "url": "https://doi.org/10.1186/s13099-026-00903-8"
+        }
+      ]
+    },
+    {
+      "title": "AI-guided design of brain organoid matrices",
+      "takeaway": "Defined hydrogels could improve control of tissue-specific cues.",
+      "what_happened": "A review proposes computational optimization of scaffold mechanics, transport and biochemical signaling using iterative experimental feedback.",
+      "why_it_matters": "The design framework is relevant to reproducible engineered tissue systems.",
+      "caveat": "A proposed framework does not establish superiority of AI-designed scaffolds.",
+      "tags": [
+        "Biomaterials",
+        "AI",
+        "Organoids"
+      ],
+      "sources": [
+        {
+          "label": "Advanced Materials, Nov 24",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43075901/"
+        }
+      ]
+    },
+    {
+      "title": "Multimodal profiling for organoid characterization",
+      "takeaway": "Combining molecular and functional measurements may better establish model fidelity.",
+      "what_happened": "A review organizes emerging organoid profiling technologies and discusses integration of genomic, molecular and physiological measurements.",
+      "why_it_matters": "Useful for designing characterization and validation strategies for advanced tissue models.",
+      "caveat": "Review published Nov 11; integration and standardization remain unresolved.",
+      "tags": [
+        "Organoids",
+        "Multiomics",
+        "Validation"
+      ],
+      "sources": [
+        {
+          "label": "Nature Methods, Nov 11",
+          "url": "https://www.nature.com/articles/s41592-026-03320-6"
+        }
+      ]
+    }
+  ]
+}
