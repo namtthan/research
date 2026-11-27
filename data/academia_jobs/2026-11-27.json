@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-27",
+  "type": "academia_job_shortlist",
+  "title": "Academia Job Shortlist",
+  "scope": {
+    "geography": "Bay Area prioritized; broader geographic search incomplete.",
+    "selection_rule": "Official currently listed roles only; gaps are points to assess, not confirmed deficiencies."
+  },
+  "jobs": [
+    {
+      "priority": 1,
+      "recommendation": "APPLY",
+      "title": "Postdoctoral Scholar — Scalable 3D Tissue Models",
+      "company": "Stanford University — Maneesh Kumar Misra Lab",
+      "location": "Stanford, CA",
+      "work_arrangement": "One year; rolling start",
+      "term": "One year; rolling start",
+      "salary": {
+        "min_usd": 79056,
+        "max_usd": 79056,
+        "period": "year",
+        "note": "Official posted compensation"
+      },
+      "posting_status_checked": "2026-11-27",
+      "posting_status": "Official requisition or open-position page accessible; actual unfilled status subject to employer confirmation.",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://postdocs.stanford.edu/prospective/opportunities/open-postdoctoral-position-faculty-mentor-maneesh-kumar-misra"
+        }
+      ],
+      "job_description": "Develop scalable stem-cell-derived tissue models.",
+      "key_must_have_requirements": [
+        "Relevant PhD or thesis nearing submission",
+        "3D tissue model expertise",
+        "Publication record"
+      ],
+      "why_good_match": "Strong microphysiological systems overlap",
+      "likely_gaps": [
+        "Stem-cell differentiation and immune assays"
+      ],
+      "tailor": "Highlight publicly documented microfluidics and tissue engineering.",
+      "immediate_action": "Email CV, cover letter and three references."
+    }
+  ]
+}
