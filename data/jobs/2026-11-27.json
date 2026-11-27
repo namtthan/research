@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-27",
+  "type": "industry_job_shortlist",
+  "title": "Industry Role Shortlist",
+  "scope": {
+    "geography": "Bay Area prioritized; broader geographic search incomplete.",
+    "selection_rule": "Official currently listed roles only; gaps are points to assess, not confirmed deficiencies."
+  },
+  "jobs": [
+    {
+      "priority": 1,
+      "recommendation": "APPLY",
+      "title": "Scientist I/II, Functional Genomics",
+      "company": "Xaira Therapeutics",
+      "location": "South San Francisco, CA",
+      "work_arrangement": "Full-time",
+      "term": "Full-time",
+      "salary": {
+        "min_usd": 110000,
+        "max_usd": 155000,
+        "period": "year",
+        "note": "Official posted compensation"
+      },
+      "posting_status_checked": "2026-11-27",
+      "posting_status": "Official requisition or open-position page accessible; actual unfilled status subject to employer confirmation.",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://job-boards.greenhouse.io/xairatherapeutics/jobs/5198737007"
+        }
+      ],
+      "job_description": "Scale organoid models for CRISPR screening.",
+      "key_must_have_requirements": [
+        "Relevant PhD, 0–4 years experience",
+        "Organoid culture",
+        "CRISPR perturbation"
+      ],
+      "why_good_match": "Organoid and assay engineering",
+      "likely_gaps": [
+        "CRISPR screening experience"
+      ],
+      "tailor": "Highlight publicly documented tissue-model engineering.",
+      "immediate_action": "Apply through ATS."
+    },
+    {
+      "priority": 2,
+      "recommendation": "INQUIRE",
+      "title": "Senior Scientist",
+      "company": "Vivodyne",
+      "location": "Brisbane, CA",
+      "work_arrangement": "Full-time onsite",
+      "term": "Full-time onsite",
+      "salary": {
+        "min_usd": 120000,
+        "max_usd": 160000,
+        "period": "year",
+        "note": "Official posted compensation"
+      },
+      "posting_status_checked": "2026-11-27",
+      "posting_status": "Official requisition or open-position page accessible; actual unfilled status subject to employer confirmation.",
+      "posting_links": [
+        {
+          "label": "Official posting",
+          "url": "https://job-boards.greenhouse.io/vivodyne/jobs/5266252007"
+        }
+      ],
+      "job_description": "Develop and scale advanced human tissue models.",
+      "key_must_have_requirements": [
+        "Relevant PhD",
+        "2–4 years industry or postdoctoral experience",
+        "Advanced cell culture"
+      ],
+      "why_good_match": "Strong thematic fit in human tissue engineering",
+      "likely_gaps": [
+        "Post-PhD experience requirement"
+      ],
+      "tailor": "Emphasize public tissue-model development and reproducibility.",
+      "immediate_action": "Inquire about flexibility on seniority."
+    }
+  ]
+}
